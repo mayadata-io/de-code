@@ -6,7 +6,7 @@ module.exports = function(environment) {
     modulePrefix: 'maya-light',
     environment,
     rootURL: '/maya-light',
-    locationType = 'hash',
+    locationType: 'hash',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
