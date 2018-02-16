@@ -3,7 +3,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'light',
+    modulePrefix: 'maya-light',
     environment,
     rootURL: '/maya-light',
     locationType = 'hash',
@@ -45,7 +45,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     ENV.locationType = 'hash';
-    ENV.rootURL = '/light/';
+    ENV.rootURL = '/maya-light/';
     // here you can enable a production-specific feature
   }
 
