@@ -3,7 +3,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'light',
+    modulePrefix: 'maya-light',
     environment,
     rootURL: '/maya-light',
     locationType: 'hash',
