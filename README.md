@@ -35,12 +35,12 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Building
 
-* `ember build` (development)
 * `ember build --environment production` (production)
+* `cp -R dist/* ./` (copy dist to root)
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+https://mayadata-io.github.io/maya-light/
 
 ## Further Reading / Useful Links
 
