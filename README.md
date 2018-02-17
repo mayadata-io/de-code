@@ -1,7 +1,5 @@
 # maya-light
-
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Maya-light is an Desing system that powers the MayaOnline. It includes all the UI components, desing patterns and principles to develop the Maya - UI.
 
 ## Prerequisites
 
