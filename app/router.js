@@ -3,7 +3,9 @@ import config from './config/environment';
 
 const Router = EmberRouter.extend({
     location: config.locationType,
-    rootURL: config.rootURL
+    rootURL: config.rootURL,
+    gitbase: config.gitBase
+
 });
 
 Router.map(function () {
@@ -34,7 +36,6 @@ Router.map(function () {
         this.route('progress');
         this.route('tables');
         this.route('tooltips');
-
     });
     this.route('home');
 });
