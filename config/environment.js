@@ -19,6 +19,7 @@ module.exports = function(environment) {
     },
 
     APP: {
+      gitBase:"https://github.com/mayadata-io/maya-light/blob/master/app/styles/"
       // Here you can pass flags/options to your application instance
       // when it is created
     }

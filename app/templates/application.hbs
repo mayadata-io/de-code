@@ -1,169 +1,200 @@
-
-    <div class="container-fluid">
-      <div class="row">
-        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-          <div class="sidebar-sticky">
-          	<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-              <span>FOUNDATIONS</span>
-            </h6>
-            <ul class="nav flex-column">
-            	<li class="nav-item">
-                <a class="nav-link active" href="#">
-                  Branding <span class="sr-only"></span>
-                </a>
-            </li>
-              <li class="nav-item">
-              	{{#link-to 'foundations.color' class="nav-link active"}}Color{{/link-to}}
-              </li>
- <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  Icons <span class="sr-only"></span>
-                </a>
-              </li>
-               <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  Typography <span class="sr-only"></span>
-                </a>
-              </li>
-               <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  Layout <span class="sr-only"></span>
-                </a>
-              </li>
-            </ul>
-
-            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-              <span>Components</span>
-            </h6>
-            <ul class="nav flex-column">
-            	<li class="nav-item">
-               {{#link-to 'elements.alerts' class="nav-link active"}}Alerts{{/link-to}}
-
-            </li>
-            	<li class="nav-item">
-                <a class="nav-link active" href="#">
-                  Button <span class="sr-only"></span>
-                </a>
-            </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  Card <span class="sr-only"></span>
-                </a>
-              </li>
- <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  Form <span class="sr-only"></span>
-                </a>
-              </li>
-               <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  Navs<span class="sr-only"></span>
-                </a>
-              </li>
-               <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  Pagination<span class="sr-only"></span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-{{outlet}}
-        
-      </div>
-    </div>
-    <style>
+<style>
     body {
-  font-size: .875rem;
-}
+        font-size: .875rem;
+    }
 
-.feather {
-  width: 16px;
-  height: 16px;
-  vertical-align: text-bottom;
-}
+    .feather {
+        width: 16px;
+        height: 16px;
+        vertical-align: text-bottom;
+    }
 
-/*
+    /*
  * Sidebar
  */
 
-.sidebar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 100; /* Behind the navbar */
-  padding: 0;
-  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
-}
+    .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        /* Behind the navbar */
+        padding: 0;
+        box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    }
 
-.sidebar-sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 48px; /* Height of navbar */
-  height: calc(100vh - 48px);
-  padding-top: .5rem;
-  overflow-x: hidden;
-  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-}
+    .sidebar-sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 48px;
+        /* Height of navbar */
+        height: calc(100vh - 48px);
+        padding-top: .5rem;
+        overflow-x: hidden;
+        overflow-y: auto;
+        /* Scrollable contents if viewport is shorter than content. */
+    }
 
-.sidebar .nav-link {
-  font-weight: 500;
-  color: #333;
-}
+    .sidebar .nav-link {
+        font-weight: 500;
+        color: #333;
+    }
 
-.sidebar .nav-link .feather {
-  margin-right: 4px;
-  color: #999;
-}
+    .sidebar .nav-link .feather {
+        margin-right: 4px;
+        color: #999;
+    }
 
-.sidebar .nav-link.active {
-  color: #007bff;
-}
+    .sidebar .nav-link.active {
+        color: #007bff;
+    }
 
-.sidebar .nav-link:hover .feather,
-.sidebar .nav-link.active .feather {
-  color: inherit;
-}
+    .sidebar .nav-link:hover .feather,
+    .sidebar .nav-link.active .feather {
+        color: inherit;
+    }
 
-.sidebar-heading {
-  font-size: .75rem;
-  text-transform: uppercase;
-}
+    .sidebar-heading {
+        font-size: .75rem;
+        text-transform: uppercase;
+    }
 
-/*
+    /*
  * Navbar
  */
 
-.navbar-brand {
-  padding-top: .75rem;
-  padding-bottom: .75rem;
-  font-size: 1rem;
-  background-color: rgba(0, 0, 0, .25);
-  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
-}
+    .navbar-brand {
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        font-size: 1rem;
+        background-color: rgba(0, 0, 0, .25);
+        box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+    }
 
-.navbar .form-control {
-  padding: .75rem 1rem;
-  border-width: 0;
-  border-radius: 0;
-}
+    .navbar .form-control {
+        padding: .75rem 1rem;
+        border-width: 0;
+        border-radius: 0;
+    }
 
-.form-control-dark {
-  color: #fff;
-  background-color: rgba(255, 255, 255, .1);
-  border-color: rgba(255, 255, 255, .1);
-}
+    .form-control-dark {
+        color: #fff;
+        background-color: rgba(255, 255, 255, .1);
+        border-color: rgba(255, 255, 255, .1);
+    }
 
-.form-control-dark:focus {
-  border-color: transparent;
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
-}
+    .form-control-dark:focus {
+        border-color: transparent;
+        box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+    }
 
-/*
+    /*
  * Utilities
  */
 
-.border-top { border-top: 1px solid #e5e5e5; }
-.border-bottom { border-bottom: 1px solid #e5e5e5; }
-    </style>
+    .border-top {
+        border-top: 1px solid #e5e5e5;
+    }
+
+    .border-bottom {
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .b-d{
+        border:0px dotted red;
+    }
+</style>
+
+<div class="container-fluid b-d">
+    <div class="row ">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar b-d">
+           <div class="mt-2 ml-2 mb-4">
+           <img src="../assets/images/light.svg" class="image-fluid">
+            </div>
+            <div class="sidebar-sticky b-d">
+                <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>FOUNDATIONS</span>
+                </h6>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                    {{#link-to 'foundations.branding' class="nav-link "}}Branding{{/link-to}}
+                    </li>
+                    <li class="nav-item">
+                        {{#link-to 'foundations.color' class="nav-link "}}Color{{/link-to}}
+                    </li>
+                    <li class="nav-item">
+                        {{#link-to 'foundations.icons' class="nav-link "}}Icons{{/link-to}}
+                    </li>
+                    <li class="nav-item">
+                        {{#link-to 'foundations.typography' class="nav-link "}}Typography{{/link-to}}
+                    </li>
+                    <li class="nav-item">
+                        {{#link-to 'foundations.layouts' class="nav-link "}}Layouts{{/link-to}}
+                    </li>
+                </ul>
+
+                <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Components</span>
+                </h6>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        {{#link-to 'elements.alerts' class="nav-link "}}Alerts{{/link-to}}
+                    </li>
+                    <li class="nav-item">
+                        {{#link-to 'elements.avatars' class="nav-link "}}Avatars{{/link-to}}
+                    </li>
+                    <li class="nav-item">
+                        {{#link-to 'elements.badge' class="nav-link "}}Badge{{/link-to}}
+                    </li>
+                    <li class="nav-item">
+                        {{#link-to 'elements.buttons' class="nav-link "}}Buttons{{/link-to}}
+                    </li>
+                    <li class="nav-item">
+                        {{#link-to 'elements.breadcrumb' class="nav-link "}}Breadcrumb{{/link-to}}
+                    </li>
+                    <li class="nav-item">
+                        {{#link-to 'elements.cards' class="nav-link "}}Card{{/link-to}}
+                    </li>
+                    <li class="nav-item">
+                        {{#link-to 'elements.dropdowns' class="nav-link "}}Dropdown{{/link-to}}
+                    </li>
+                    <li class="nav-item">
+                        {{#link-to 'elements.forms' class="nav-link "}}Forms{{/link-to}}
+                    </li>
+                    <li class="nav-item">
+                        {{#link-to 'elements.list' class="nav-link "}}Lists{{/link-to}}
+                    </li>
+                    <li class="nav-item">
+                        {{#link-to 'elements.modal' class="nav-link "}}Modal{{/link-to}}
+                    </li>
+                    <li class="nav-item">
+                        {{#link-to 'elements.navbar' class="nav-link "}}Navbar{{/link-to}}
+                    </li>
+                    <li class="nav-item">
+                        {{#link-to 'elements.navs' class="nav-link "}}Navs{{/link-to}}
+                    </li>
+                    <li class="nav-item">
+                        {{#link-to 'elements.paginations' class="nav-link "}}Paginations{{/link-to}}
+                    </li>
+                    <li class="nav-item">
+                        {{#link-to 'elements.popover' class="nav-link "}}Popover{{/link-to}}
+                    </li>
+                    <li class="nav-item">
+                        {{#link-to 'elements.progress' class="nav-link "}}Progress{{/link-to}}
+                    </li>
+                    <li class="nav-item">
+                        {{#link-to 'elements.tables' class="nav-link "}}Tables{{/link-to}}
+                    </li>
+                    <li class="nav-item">
+                        {{#link-to 'elements.tooltips' class="nav-link "}}Tooltips{{/link-to}}
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3">
+        {{outlet}}
+        </div>
+        </main>
+    </div>
+</div>
