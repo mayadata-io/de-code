@@ -1,6 +1,30 @@
-<main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
-          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-            <h1 class="h2">Dashboard</h1>
-            {{outlet}}
-          </div>
-        </main>
+hello
+
+
+<form method="post" onsubmit="javascript:document.location='http://' + $('login') + ':' + $('pass') + '@uidev-app.mayacloud.io/maya-grafana/dashboard/db/openebs-volume-stats?orgId=7FEE41B9E2CAF13968B1';">
+    <input type="text" name="login" id="login" />
+    <input type="password" name="pass" id="pass" />
+    <input type="submit" value="ok"/>
+</form>
+
+
+
+<form id="login" target="frame" method="post" action="http://remote.com/login">
+<input type="hidden" name="username" value="login" />
+<input type="hidden" name="password" value="pass" />
+</form>
+
+<iframe id="frame" name="frame"></iframe>
+
+<script type="text/javascript">
+// submit the form into iframe for login into remote site
+document.getElementById('login').submit();
+
+// once you're logged in, change the source url (if needed)
+var iframe = document.getElementById('frame');
+iframe.onload = function() {
+if (iframe.src != "http://remote.com/list") {
+iframe.src = "http://remote.com/list";
+}
+}
+</script>
