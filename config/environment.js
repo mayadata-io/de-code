@@ -5,7 +5,7 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'maya-light',
     environment,
-    rootURL: '/',
+    rootURL: 'rui',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
