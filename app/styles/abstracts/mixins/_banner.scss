@@ -1,0 +1,16 @@
+@mixin banner-variant($bg) {
+  color: color-yiq($bg);
+  background-color: $bg;
+
+.banner-link {
+    color:color-yiq($bg);
+  }
+
+  &[href] {
+    @include hover-focus {
+      color: color-yiq($bg);
+      text-decoration: none;
+      background-color: darken($bg, 10%);
+    }
+  }
+}

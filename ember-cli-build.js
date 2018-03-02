@@ -5,6 +5,10 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
+    'ember-prism': {
+    'components': ['scss', 'javascript'], //needs to be an array, or undefined.
+    'plugins': ['line-highlight']
+  }
     // Add options here
   });
 
