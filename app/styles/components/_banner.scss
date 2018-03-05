@@ -2,52 +2,54 @@
 // Base styles
 //
 .banner {
-position: relative;
-max-height: 52px;
-overflow: hidden;
-text-align: center;
--webkit-box-align: center;
-align-items: center;
-display: flex;
-font-weight: $banner-font-weight;
--webkit-box-pack: center;
-justify-content: center;
-text-align: center;
-padding: $banner-padding;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    max-height: 52px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: $banner-padding;
 }
+.banner-text{
+    font-weight: $banner-font-weight;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 0 1 auto;
+    overflow: hidden;
 
+}
 
 // Provide class for links that match banner
 .banner-link {
-//font-weight: $alert-link-font-weight;
-text-decoration: underline;
+    //font-weight: $alert-link-font-weight;
+    text-decoration: underline;
 }
 
 // Dismissible banner
 //
 // Expand the right padding and account for the close button's positioning.
-
 .banner-dismissible {
-  padding-right: ($close-font-size + $banner-padding-x * 2);
-
-  // Adjust close link position
-  .close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: $alert-padding-y $alert-padding-x;
-    color: inherit;
-  }
+    padding-right: ($close-font-size + $banner-padding-x * 2); // Adjust close link position
+    .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: $alert-padding-y $alert-padding-x;
+        color: inherit;
+    }
 }
 
 
 // Alternate styles
 //
 // Generate contextual modifier classes for colorizing the banner.
-
-
-@each $color, $value in $theme-colors {
-  .banner-#{$color} {
-    @include banner-variant($value);
-  }
+@each $color,
+$value in $theme-colors {
+    .banner-#{$color} {
+        @include banner-variant($value);
+    }
 }
