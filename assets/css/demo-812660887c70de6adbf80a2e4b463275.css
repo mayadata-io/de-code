@@ -130,5 +130,14 @@
 }
 
 .fs1 {
-  font-size: 32px;
+  font-size: 16px;
+  padding: 1.5em;
+  background-color: #DFE1E6;
+  margin: 1em;
+  text-align: center;
+}
+
+.footer {
+  margin-bottom: 2em;
+  align-items: center;
 }
