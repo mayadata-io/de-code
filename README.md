@@ -1,5 +1,5 @@
 # maya-light
-Maya-light is a Desing system that powers the MayaOnline. It includes all the UI components, desing patterns and principles to develop the Maya - UI.
+Maya-light is a Desing system that powers the MayaOnline. It includes all the UI components, design patterns and principles to develop the Maya - UI.
 
 ## Prerequisites
 
