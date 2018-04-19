@@ -37,6 +37,7 @@ Router.map(function () {
       this.route('tables');
       this.route('tooltips');
       this.route('banner');
+      this.route('noty');
     });
     this.route('home');
 });
