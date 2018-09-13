@@ -1,53 +1,54 @@
-// Google Font Downloader thing: https://google-webfonts-helper.herokuapp.com/
-
-
-/* open-sans-300 - latin */
+/* lato-100 - latin */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Lato Hairline'), local('Lato-Hairline'),
+       url('fonts/lato/lato-v14-latin-100.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/lato/lato-v14-latin-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-300 - latin */
+@font-face {
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
-  src: local('Open Sans Light'), local('OpenSans-Light'),
-       url('fonts/open-sans-v15-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/open-sans-v15-latin-300.woff') format('woff'), /* Modern Browsers */
-       
+  src: local('Lato Light'), local('Lato-Light'),
+       url('fonts/lato/lato-v14-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/lato/lato-v14-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* open-sans-regular - latin */
+/* lato-regular - latin */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'),
-       url('fonts/open-sans-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/open-sans-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
-       
+  src: local('Lato Regular'), local('Lato-Regular'),
+       url('fonts/lato/lato-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/lato/lato-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* open-sans-600 - latin */
+/* lato-italic - latin */
 @font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
-       url('fonts/open-sans-v15-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/open-sans-v15-latin-500.woff') format('woff'), /* Modern Browsers */
-      
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'),
+       url('fonts/lato/lato-v14-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/lato/lato-v14-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* open-sans-600 - latin */
+/* lato-700 - latin */
 @font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
-       url('fonts/open-sans-v15-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/open-sans-v15-latin-600.woff') format('woff'), /* Modern Browsers */
-      
-}
-/* open-sans-700 - latin */
-@font-face {
-  font-family: 'Open Sans';
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'),
-       url('fonts/open-sans-v15-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/open-sans-v15-latin-700.woff') format('woff'), /* Modern Browsers */
-      
+  src: local('Lato Bold'), local('Lato-Bold'),
+       url('fonts/lato/lato-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/lato/lato-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-900 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'),
+       url('fonts/lato/lato-v14-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/lato/lato-v14-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }

@@ -7,27 +7,33 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {{content-for "head"}}
-    {{content-for "test-head"}}
+    
+<meta name="de-code/config/environment" content="%7B%22modulePrefix%22%3A%22de-code%22%2C%22environment%22%3A%22test%22%2C%22rootURL%22%3A%22/rui/%22%2C%22locationType%22%3A%22none%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%7D%2C%22APP%22%3A%7B%22gitBase%22%3A%22https%3A//github.com/mayadata-io/de-code/blob/master/app/styles/%22%2C%22LOG_ACTIVE_GENERATION%22%3Afalse%2C%22LOG_VIEW_LOOKUPS%22%3Afalse%2C%22rootElement%22%3A%22%23ember-testing%22%2C%22name%22%3A%22de-code%22%2C%22version%22%3A%221.0.1+385a6cf6%22%7D%2C%22exportApplicationGlobal%22%3Atrue%7D" />
+    
 
-    <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
-    <link rel="stylesheet" href="{{rootURL}}assets/maya-light.css">
-    <link rel="stylesheet" href="{{rootURL}}assets/test-support.css">
+    <link rel="stylesheet" href="/rui/assets/vendor.css">
+    <link rel="stylesheet" href="/rui/assets/maya-light.css">
+    <link rel="stylesheet" href="/rui/assets/test-support.css">
 
-    {{content-for "head-footer"}}
-    {{content-for "test-head-footer"}}
+    
+    
   </head>
   <body>
-    {{content-for "body"}}
-    {{content-for "test-body"}}
+    
+    <div id="qunit"></div>
+<div id="qunit-fixture"></div>
+
+<div id="ember-testing-container">
+  <div id="ember-testing"></div>
+</div>
 
     <script src="/testem.js" integrity=""></script>
-    <script src="{{rootURL}}assets/vendor.js"></script>
-    <script src="{{rootURL}}assets/test-support.js"></script>
-    <script src="{{rootURL}}assets/maya-light.js"></script>
-    <script src="{{rootURL}}assets/tests.js"></script>
+    <script src="/rui/assets/vendor.js"></script>
+    <script src="/rui/assets/test-support.js"></script>
+    <script src="/rui/assets/maya-light.js"></script>
+    <script src="/rui/assets/tests.js"></script>
 
-    {{content-for "body-footer"}}
-    {{content-for "test-body-footer"}}
+    
+    <script>Ember.assert('The tests file was not loaded. Make sure your tests index.html includes "assets/tests.js".', EmberENV.TESTS_FILE_LOADED);</script>
   </body>
 </html>
