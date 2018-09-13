@@ -774,6 +774,6 @@ catch(err) {
 });
 
 if (!runningTests) {
-  require("de-code/app")["default"].create({"gitBase":"https://github.com/mayadata-io/de-code/blob/master/app/styles/","name":"de-code","version":"1.0.1+385a6cf6"});
+  require("de-code/app")["default"].create({"gitBase":"https://github.com/mayadata-io/de-code/blob/master/app/styles/","name":"de-code","version":"1.0.1+9c206fa7"});
 }
 //# sourceMappingURL=de-code.map
