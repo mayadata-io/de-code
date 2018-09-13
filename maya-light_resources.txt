@@ -1,9 +1,0 @@
-# maya-light resources
-
-FOUNDATIONS
-
-COMPONENTS
-
-Icons:
-https://github.com/feathericons/feather
-
