@@ -1,5 +1,5 @@
-# maya-light
-Maya-light is a Desing system that powers the MayaOnline. It includes all the UI components, design patterns and principles to develop the Maya - UI.
+# De-code
+De-code is a Design system that powers the MayaData products. It includes all the UI components, design patterns and principles.
 
 ## Prerequisites
 
