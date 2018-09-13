@@ -20,6 +20,9 @@
         padding: 0;
         box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
     }
+      .sidebar_wrapper {
+        margin:12px 16px;
+      }
 
     .sidebar-sticky {
         position: -webkit-sticky;
@@ -44,7 +47,10 @@
     }
 
     .sidebar .nav-link.active {
-        color: #007bff;
+      color: #262B3E;
+      background: #EBEBFE;
+      border-radius: 6px;
+
     }
 
     .sidebar .nav-link:hover .feather,
@@ -54,6 +60,8 @@
 
     .sidebar-heading {
         font-size: .75rem;
+        font-weight: 600;
+        margin-bottom: 16px;
         text-transform: uppercase;
     }
 
@@ -62,12 +70,12 @@
  */
 
 
-    
+
     /*
  * Utilities
  */
 
-    
+
     .b-d{
         border:0px dotted red;
     }
@@ -75,23 +83,24 @@
         width: 208px;
         height: 116px;
     }
-    
-    
+
+
 </style>
 
 <div class="container-fluid b-d">
-    <div class="row ">
-        <nav class="col-md-2 d-none d-md-block bg-light sidebar b-d">
+    <div class="row">
+        <nav class="col-md-2 sidebar b-d">
+          <div class="sidebar_wrapper">
            <div class="mt-2 ml-2 mb-4">
-           <img src="https://mayadata-io.github.io/maya-light/assets/images/light.svg" class="image-fluid">
+           <img src="{{app.baseAssets}}/rui/assets/images/de-code_logo.svg" class="image-fluid">
             </div>
             <div class="sidebar-sticky b-d">
                 <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                    <span>FOUNDATIONS</span>
+                    <span class="sidebar-heading">FOUNDATIONS</span>
                 </h6>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                    {{#link-to 'foundations.branding' class="nav-link "}}Branding{{/link-to}}
+                    {{#link-to 'foundations.branding' class="nav-link"}}Branding{{/link-to}}
                     </li>
                     <li class="nav-item">
                         {{#link-to 'foundations.color' class="nav-link "}}Color{{/link-to}}
@@ -108,7 +117,7 @@
                 </ul>
 
                 <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                    <span>Components</span>
+                    <span class="sidebar-heading">Components</span>
                 </h6>
                 <ul class="nav flex-column">
                     <li class="nav-item">
@@ -170,9 +179,10 @@
                     </li>
                 </ul>
             </div>
+          </div>
         </nav>
         <div class="col-md-10">
-        <div class="container">
+        <div class="container-fluid">
         {{outlet}}
         </div>
         </div>

@@ -1,19 +1,19 @@
 {
-  "name": "maya-light",
-  "version": "0.0.0",
+  "name": "de-code",
+  "version": "1.0.1",
   "private": true,
-  "description": "Small description for maya-light goes here",
+  "description": "The design system from MayaData",
   "license": "MIT",
-  "author": "",
+  "author": "hello@mayadata.io",
   "directories": {
-    "doc": "doc",
     "test": "tests"
   },
   "repository": "",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember test"
+    "test": "ember test",
+    "clean": "rm -rf node_modules dist temp"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",

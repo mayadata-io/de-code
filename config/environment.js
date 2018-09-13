@@ -3,7 +3,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'maya-light',
+    modulePrefix: 'de-code',
     environment,
     rootURL: 'rui',
     locationType: 'auto',
@@ -19,7 +19,7 @@ module.exports = function(environment) {
     },
 
     APP: {
-      gitBase:"https://github.com/mayadata-io/maya-light/blob/master/app/styles/"
+      gitBase:"https://github.com/mayadata-io/de-code/blob/master/app/styles/"
       // Here you can pass flags/options to your application instance
       // when it is created
     }
@@ -46,7 +46,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
-    ENV.rootURL = '/maya-light';
+    ENV.rootURL = '/de-code';
     ENV.locationType = 'hash';
   }
 
