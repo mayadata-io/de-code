@@ -38,6 +38,7 @@ Router.map(function () {
       this.route('tooltips');
       this.route('banner');
       this.route('noty');
+      this.route('code');
     });
     this.route('home');
 });

@@ -811,6 +811,20 @@ $close-color:                       $black !default;
 $close-text-shadow:                 0 1px 0 $white !default;
 
 // Code
+//command-block
+
+$command-block-border-width:       $border-width;
+$command-block-border-color:       $border-color;
+$command-block-border-radius:      $border-radius;
+$command-block-background:         $gray-800;
+$command-block-font-faimily:       $font-family-monospace;
+
+$command-block-padding:            20px 10px;
+
+$command-block-font-size:          $font-size-base;
+$command-block-font-color:         $white;
+
+//code utility
 
 $code-font-size:                    87.5% !default;
 $code-color:                        $pink !default;

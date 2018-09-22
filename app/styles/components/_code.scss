@@ -1,10 +1,21 @@
-// Inline and block code styles
-code,
-kbd,
-pre,
-samp {
-  font-family: $font-family-monospace;
+// command block
+// terminal comand and ssh keys wrapper with copy Button
+.command-block {
+  border: $command-block-border-width solid $command-block-border-color;
+  border-radius: $command-block-border-radius;
+  background: $command-block-background;
+  font-family: $command-block-font-faimily;
 }
+.command-block-wrapper {
+  padding: $command-block-padding;
+}
+.command-block_text {
+  word-break:break-all;
+  font-size: $command-block-font-size;
+  color: $command-block-font-color;
+}
+
+//code utility
 
 // Inline code
 code {
