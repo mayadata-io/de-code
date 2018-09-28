@@ -39,6 +39,7 @@ Router.map(function () {
       this.route('banner');
       this.route('noty');
       this.route('code');
+      this.route('loader');
     });
     this.route('home');
 });

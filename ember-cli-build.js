@@ -8,7 +8,12 @@ module.exports = function(defaults) {
     'ember-prism': {
     'components': ['scss', 'javascript'], //needs to be an array, or undefined.
     'plugins': ['line-highlight']
-  }
+  },
+  sassLint: {
+   configPath: '.sass-lint.yml',
+   shouldThrowExceptions: true,
+   shouldLog: true
+ }
     // Add options here
   });
 
