@@ -40,6 +40,7 @@ Router.map(function () {
       this.route('noty');
       this.route('code');
       this.route('loader');
+      this.route('outlet-header');
     });
     this.route('home');
 });

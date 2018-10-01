@@ -1,0 +1,16 @@
+.outlet-header {
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+    .outlet-header_title {
+      font-size: 24px;
+      color: $gray-800;
+  }
+}
+.outlet-content {
+  display: flex;
+  flex-direction: row;
+  padding-left: 12px;
+}
