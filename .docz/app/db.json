@@ -95,6 +95,23 @@
         }
       ]
     },
+    "pages/banners.mdx": {
+      "name": "Banners",
+      "id": "50781b1b835abc3938c2a9998e4fe138",
+      "filepath": "pages/banners.mdx",
+      "link": null,
+      "slug": "pages-banners",
+      "route": "/pages-banners",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "banners",
+          "value": "Banners"
+        }
+      ]
+    },
     "pages/badge.mdx": {
       "name": "Badge",
       "id": "aa5434a42694e18703c845943ff4db45",
@@ -122,23 +139,6 @@
         }
       ]
     },
-    "pages/banners.mdx": {
-      "name": "Banners",
-      "id": "50781b1b835abc3938c2a9998e4fe138",
-      "filepath": "pages/banners.mdx",
-      "link": null,
-      "slug": "pages-banners",
-      "route": "/pages-banners",
-      "order": 0,
-      "menu": null,
-      "headings": [
-        {
-          "depth": 1,
-          "slug": "banners",
-          "value": "Banners"
-        }
-      ]
-    },
     "pages/branding.mdx": {
       "name": "Branding",
       "id": "2af071c7115fd1592e661252c47dc1e6",
@@ -153,23 +153,6 @@
           "depth": 1,
           "slug": "branding",
           "value": "Branding"
-        }
-      ]
-    },
-    "pages/breadcrumb.mdx": {
-      "name": "Breadcrumb",
-      "id": "856d2a7bd84a52c980532bb5c480067c",
-      "filepath": "pages/breadcrumb.mdx",
-      "link": null,
-      "slug": "pages-breadcrumb",
-      "route": "/pages-breadcrumb",
-      "order": 0,
-      "menu": null,
-      "headings": [
-        {
-          "depth": 1,
-          "slug": "breadcrumb",
-          "value": "Breadcrumb"
         }
       ]
     },
@@ -217,6 +200,23 @@
           "depth": 3,
           "slug": "dark",
           "value": "Dark"
+        }
+      ]
+    },
+    "pages/breadcrumb.mdx": {
+      "name": "Breadcrumb",
+      "id": "856d2a7bd84a52c980532bb5c480067c",
+      "filepath": "pages/breadcrumb.mdx",
+      "link": null,
+      "slug": "pages-breadcrumb",
+      "route": "/pages-breadcrumb",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "breadcrumb",
+          "value": "Breadcrumb"
         }
       ]
     },
@@ -288,23 +288,6 @@
         }
       ]
     },
-    "pages/modal.mdx": {
-      "name": "Modal",
-      "id": "a40a61d83077227dfdd7d82773b9f084",
-      "filepath": "pages/modal.mdx",
-      "link": null,
-      "slug": "pages-modal",
-      "route": "/pages-modal",
-      "order": 0,
-      "menu": null,
-      "headings": [
-        {
-          "depth": 1,
-          "slug": "modals",
-          "value": "Modals"
-        }
-      ]
-    },
     "pages/list.mdx": {
       "name": "Lists",
       "id": "c0cb7926a8c65938ae12e554a9961e4b",
@@ -322,6 +305,23 @@
         }
       ]
     },
+    "pages/modal.mdx": {
+      "name": "Modal",
+      "id": "a40a61d83077227dfdd7d82773b9f084",
+      "filepath": "pages/modal.mdx",
+      "link": null,
+      "slug": "pages-modal",
+      "route": "/pages-modal",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "modals",
+          "value": "Modals"
+        }
+      ]
+    },
     "pages/navs.mdx": {
       "name": "Navigations",
       "id": "c5a52d30ca3b347d9fe33ea7984bc5f0",
@@ -336,23 +336,6 @@
           "depth": 1,
           "slug": "navigations",
           "value": "Navigations"
-        }
-      ]
-    },
-    "pages/pagination.mdx": {
-      "name": "Paginations",
-      "id": "7da9887744ca53a3db54fa2960454fd0",
-      "filepath": "pages/pagination.mdx",
-      "link": null,
-      "slug": "pages-pagination",
-      "route": "/pages-pagination",
-      "order": 0,
-      "menu": null,
-      "headings": [
-        {
-          "depth": 1,
-          "slug": "paginations",
-          "value": "Paginations"
         }
       ]
     },
@@ -387,6 +370,23 @@
           "depth": 1,
           "slug": "tables",
           "value": "Tables"
+        }
+      ]
+    },
+    "pages/pagination.mdx": {
+      "name": "Paginations",
+      "id": "7da9887744ca53a3db54fa2960454fd0",
+      "filepath": "pages/pagination.mdx",
+      "link": null,
+      "slug": "pages-pagination",
+      "route": "/pages-pagination",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "paginations",
+          "value": "Paginations"
         }
       ]
     },
