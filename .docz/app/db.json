@@ -1,0 +1,411 @@
+{
+  "config": {
+    "title": "De - code",
+    "description": "Style guide for MayaData products.",
+    "menu": [],
+    "ordering": "descending",
+    "version": "1.0.1",
+    "repository": null,
+    "native": false,
+    "codeSandbox": false,
+    "themeConfig": {},
+    "indexHtml": "docs/index.html",
+    "hashRouter": true,
+    "port": "9999",
+    "src": "docs",
+    "dest": "dist/docs",
+    "plugins": [
+      {}
+    ]
+  },
+  "entries": {
+    "index.mdx": {
+      "name": "Home",
+      "route": "/",
+      "id": "73498ad0e1e62a714b08085d318f9de1",
+      "filepath": "index.mdx",
+      "link": null,
+      "slug": "index",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "de---code",
+          "value": "De - code"
+        }
+      ]
+    },
+    "pages/alerts.mdx": {
+      "name": "Alerts",
+      "id": "d5ea13bf9375b8c2ba1f2ca73bba0ef9",
+      "filepath": "pages/alerts.mdx",
+      "link": null,
+      "slug": "pages-alerts",
+      "route": "/pages-alerts",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "alerts",
+          "value": "Alerts"
+        },
+        {
+          "depth": 2,
+          "slug": "alert-variations",
+          "value": "Alert variations"
+        }
+      ]
+    },
+    "pages/avatars.mdx": {
+      "name": "Avatars",
+      "id": "a36293546090f17ecf1d561a4a7e3e0e",
+      "filepath": "pages/avatars.mdx",
+      "link": null,
+      "slug": "pages-avatars",
+      "route": "/pages-avatars",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "avatars",
+          "value": "Avatars"
+        },
+        {
+          "depth": 2,
+          "slug": "avatar-variations",
+          "value": "Avatar variations"
+        },
+        {
+          "depth": 3,
+          "slug": "sizes",
+          "value": "Sizes"
+        },
+        {
+          "depth": 3,
+          "slug": "avatar-placeholder",
+          "value": "Avatar placeholder"
+        },
+        {
+          "depth": 4,
+          "slug": "avatar-placeholder-with-themes",
+          "value": "Avatar placeholder with themes"
+        }
+      ]
+    },
+    "pages/badge.mdx": {
+      "name": "Badge",
+      "id": "aa5434a42694e18703c845943ff4db45",
+      "filepath": "pages/badge.mdx",
+      "link": null,
+      "slug": "pages-badge",
+      "route": "/pages-badge",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "badge",
+          "value": "Badge"
+        },
+        {
+          "depth": 2,
+          "slug": "badge-variations",
+          "value": "Badge variations"
+        },
+        {
+          "depth": 3,
+          "slug": "pill-badges",
+          "value": "Pill badges"
+        }
+      ]
+    },
+    "pages/banners.mdx": {
+      "name": "Banners",
+      "id": "50781b1b835abc3938c2a9998e4fe138",
+      "filepath": "pages/banners.mdx",
+      "link": null,
+      "slug": "pages-banners",
+      "route": "/pages-banners",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "banners",
+          "value": "Banners"
+        }
+      ]
+    },
+    "pages/branding.mdx": {
+      "name": "Branding",
+      "id": "2af071c7115fd1592e661252c47dc1e6",
+      "filepath": "pages/branding.mdx",
+      "link": null,
+      "slug": "pages-branding",
+      "route": "/pages-branding",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "branding",
+          "value": "Branding"
+        }
+      ]
+    },
+    "pages/breadcrumb.mdx": {
+      "name": "Breadcrumb",
+      "id": "856d2a7bd84a52c980532bb5c480067c",
+      "filepath": "pages/breadcrumb.mdx",
+      "link": null,
+      "slug": "pages-breadcrumb",
+      "route": "/pages-breadcrumb",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "breadcrumb",
+          "value": "Breadcrumb"
+        }
+      ]
+    },
+    "pages/buttons.mdx": {
+      "name": "Buttons",
+      "id": "f8a74e22f9d533059f0dd26f2f10b903",
+      "filepath": "pages/buttons.mdx",
+      "link": null,
+      "slug": "pages-buttons",
+      "route": "/pages-buttons",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "buttons",
+          "value": "Buttons"
+        },
+        {
+          "depth": 2,
+          "slug": "button-variations",
+          "value": "Button variations"
+        },
+        {
+          "depth": 3,
+          "slug": "primary",
+          "value": "Primary"
+        },
+        {
+          "depth": 3,
+          "slug": "secondary",
+          "value": "Secondary"
+        },
+        {
+          "depth": 3,
+          "slug": "warning",
+          "value": "Warning"
+        },
+        {
+          "depth": 3,
+          "slug": "danger",
+          "value": "Danger"
+        },
+        {
+          "depth": 3,
+          "slug": "dark",
+          "value": "Dark"
+        }
+      ]
+    },
+    "pages/cards.mdx": {
+      "name": "Cards",
+      "id": "4235bee273c6cf9e20ce0b4ea42027f4",
+      "filepath": "pages/cards.mdx",
+      "link": null,
+      "slug": "pages-cards",
+      "route": "/pages-cards",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "cards",
+          "value": "Cards"
+        }
+      ]
+    },
+    "pages/colors.mdx": {
+      "name": "Colors",
+      "id": "8f782b918f1643cdae76583577aa064d",
+      "filepath": "pages/colors.mdx",
+      "link": null,
+      "slug": "pages-colors",
+      "route": "/pages-colors",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "colors",
+          "value": "Colors"
+        }
+      ]
+    },
+    "pages/dropdown.mdx": {
+      "name": "Dropdown",
+      "id": "1e4dfc4268a527953831eb5e56d8dc71",
+      "filepath": "pages/dropdown.mdx",
+      "link": null,
+      "slug": "pages-dropdown",
+      "route": "/pages-dropdown",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "dropdown-menu",
+          "value": "Dropdown menu"
+        }
+      ]
+    },
+    "pages/input.mdx": {
+      "name": "Inputs",
+      "id": "d0f8cdcc3895d0fc0f64366ea851e40d",
+      "filepath": "pages/input.mdx",
+      "link": null,
+      "slug": "pages-input",
+      "route": "/pages-input",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "inputs",
+          "value": "Inputs"
+        }
+      ]
+    },
+    "pages/modal.mdx": {
+      "name": "Modal",
+      "id": "a40a61d83077227dfdd7d82773b9f084",
+      "filepath": "pages/modal.mdx",
+      "link": null,
+      "slug": "pages-modal",
+      "route": "/pages-modal",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "modals",
+          "value": "Modals"
+        }
+      ]
+    },
+    "pages/list.mdx": {
+      "name": "Lists",
+      "id": "c0cb7926a8c65938ae12e554a9961e4b",
+      "filepath": "pages/list.mdx",
+      "link": null,
+      "slug": "pages-list",
+      "route": "/pages-list",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "lists",
+          "value": "Lists"
+        }
+      ]
+    },
+    "pages/navs.mdx": {
+      "name": "Navigations",
+      "id": "c5a52d30ca3b347d9fe33ea7984bc5f0",
+      "filepath": "pages/navs.mdx",
+      "link": null,
+      "slug": "pages-navs",
+      "route": "/pages-navs",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "navigations",
+          "value": "Navigations"
+        }
+      ]
+    },
+    "pages/pagination.mdx": {
+      "name": "Paginations",
+      "id": "7da9887744ca53a3db54fa2960454fd0",
+      "filepath": "pages/pagination.mdx",
+      "link": null,
+      "slug": "pages-pagination",
+      "route": "/pages-pagination",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "paginations",
+          "value": "Paginations"
+        }
+      ]
+    },
+    "pages/popover.mdx": {
+      "name": "Popover",
+      "id": "1539d37d92f39f23670e4621b1571a76",
+      "filepath": "pages/popover.mdx",
+      "link": null,
+      "slug": "pages-popover",
+      "route": "/pages-popover",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "popovers",
+          "value": "Popovers"
+        }
+      ]
+    },
+    "pages/table.mdx": {
+      "name": "Tables",
+      "id": "afc5f2e9350c2b2819a0b135881e2f3a",
+      "filepath": "pages/table.mdx",
+      "link": null,
+      "slug": "pages-table",
+      "route": "/pages-table",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "tables",
+          "value": "Tables"
+        }
+      ]
+    },
+    "pages/tooltip.mdx": {
+      "name": "Tooltips",
+      "id": "b37ad672220baebd4bdbf4cd277cc0b0",
+      "filepath": "pages/tooltip.mdx",
+      "link": null,
+      "slug": "pages-tooltip",
+      "route": "/pages-tooltip",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "tooltips",
+          "value": "Tooltips"
+        }
+      ]
+    }
+  }
+}
