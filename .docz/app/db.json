@@ -1,6 +1,6 @@
 {
   "config": {
-    "title": "De - code",
+    "title": " 🎄  De - code",
     "description": "Style guide for MayaData products.",
     "menu": [],
     "ordering": "descending",
@@ -8,7 +8,21 @@
     "repository": null,
     "native": false,
     "codeSandbox": false,
-    "themeConfig": {},
+    "themeConfig": {
+      "mode": "light",
+      "colors": {
+        "sidebarBg": "white"
+      },
+      "styles": {
+        "body": {
+          "fontFamily": "-apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif"
+        },
+        "h1": {
+          "fontSize": "4em",
+          "fontWeight": 800
+        }
+      }
+    },
     "indexHtml": "docs/index.html",
     "hashRouter": true,
     "port": "9999",
@@ -20,7 +34,7 @@
   },
   "entries": {
     "index.mdx": {
-      "name": "Home",
+      "name": "Get started",
       "route": "/",
       "id": "73498ad0e1e62a714b08085d318f9de1",
       "filepath": "index.mdx",
@@ -31,20 +45,105 @@
       "headings": [
         {
           "depth": 1,
-          "slug": "de---code",
-          "value": "De - code"
+          "slug": "get-started",
+          "value": "Get started"
         }
       ]
     },
-    "pages/alerts.mdx": {
-      "name": "Alerts",
-      "id": "d5ea13bf9375b8c2ba1f2ca73bba0ef9",
-      "filepath": "pages/alerts.mdx",
+    "marketing/buttons.mdx": {
+      "name": "Buttons",
+      "menu": "Marketing",
+      "id": "a435ce2e1b38acbe5f297ac668922011",
+      "filepath": "marketing/buttons.mdx",
       "link": null,
-      "slug": "pages-alerts",
-      "route": "/pages-alerts",
+      "slug": "marketing-buttons",
+      "route": "/marketing-buttons",
       "order": 0,
-      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "buttons",
+          "value": "Buttons"
+        }
+      ]
+    },
+    "marketing/colors.mdx": {
+      "name": "Colors",
+      "menu": "Marketing",
+      "id": "8090dda17e8d30fa6a7dd44640960c06",
+      "filepath": "marketing/colors.mdx",
+      "link": null,
+      "slug": "marketing-colors",
+      "route": "/marketing-colors",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "colors",
+          "value": "Colors"
+        }
+      ]
+    },
+    "marketing/forms.mdx": {
+      "name": "Forms",
+      "menu": "Marketing",
+      "id": "06115b648db36b3c1e4dd364c8db79cf",
+      "filepath": "marketing/forms.mdx",
+      "link": null,
+      "slug": "marketing-forms",
+      "route": "/marketing-forms",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "forms",
+          "value": "Forms"
+        }
+      ]
+    },
+    "marketing/logos.mdx": {
+      "name": "Logos",
+      "menu": "Marketing",
+      "id": "767b10bc78651e0cb8040456d8b93181",
+      "filepath": "marketing/logos.mdx",
+      "link": null,
+      "slug": "marketing-logos",
+      "route": "/marketing-logos",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "logos",
+          "value": "Logos"
+        }
+      ]
+    },
+    "marketing/typography.mdx": {
+      "name": "Typography",
+      "menu": "Marketing",
+      "id": "4061c11d950e37b6c44a56bf914f6a29",
+      "filepath": "marketing/typography.mdx",
+      "link": null,
+      "slug": "marketing-typography",
+      "route": "/marketing-typography",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "typography",
+          "value": "Typography"
+        }
+      ]
+    },
+    "products/alerts.mdx": {
+      "name": "Alerts",
+      "menu": "Product",
+      "id": "d08742ffde09dc143a830489122ae7cf",
+      "filepath": "products/alerts.mdx",
+      "link": null,
+      "slug": "products-alerts",
+      "route": "/products-alerts",
+      "order": 0,
       "headings": [
         {
           "depth": 1,
@@ -58,15 +157,15 @@
         }
       ]
     },
-    "pages/avatars.mdx": {
+    "products/avatars.mdx": {
       "name": "Avatars",
-      "id": "a36293546090f17ecf1d561a4a7e3e0e",
-      "filepath": "pages/avatars.mdx",
+      "menu": "Product",
+      "id": "5477cf87ad66dcff943afd9380c01dce",
+      "filepath": "products/avatars.mdx",
       "link": null,
-      "slug": "pages-avatars",
-      "route": "/pages-avatars",
+      "slug": "products-avatars",
+      "route": "/products-avatars",
       "order": 0,
-      "menu": null,
       "headings": [
         {
           "depth": 1,
@@ -95,32 +194,15 @@
         }
       ]
     },
-    "pages/banners.mdx": {
-      "name": "Banners",
-      "id": "50781b1b835abc3938c2a9998e4fe138",
-      "filepath": "pages/banners.mdx",
-      "link": null,
-      "slug": "pages-banners",
-      "route": "/pages-banners",
-      "order": 0,
-      "menu": null,
-      "headings": [
-        {
-          "depth": 1,
-          "slug": "banners",
-          "value": "Banners"
-        }
-      ]
-    },
-    "pages/badge.mdx": {
+    "products/badge.mdx": {
       "name": "Badge",
-      "id": "aa5434a42694e18703c845943ff4db45",
-      "filepath": "pages/badge.mdx",
+      "menu": "Product",
+      "id": "a9ff82e63b1afb97cba60eccc74d3950",
+      "filepath": "products/badge.mdx",
       "link": null,
-      "slug": "pages-badge",
-      "route": "/pages-badge",
+      "slug": "products-badge",
+      "route": "/products-badge",
       "order": 0,
-      "menu": null,
       "headings": [
         {
           "depth": 1,
@@ -139,32 +221,49 @@
         }
       ]
     },
-    "pages/branding.mdx": {
-      "name": "Branding",
-      "id": "2af071c7115fd1592e661252c47dc1e6",
-      "filepath": "pages/branding.mdx",
+    "products/banners.mdx": {
+      "name": "Banners",
+      "menu": "Product",
+      "id": "63a30fd19ad7f477daa8c62fa0cff7de",
+      "filepath": "products/banners.mdx",
       "link": null,
-      "slug": "pages-branding",
-      "route": "/pages-branding",
+      "slug": "products-banners",
+      "route": "/products-banners",
       "order": 0,
-      "menu": null,
       "headings": [
         {
           "depth": 1,
-          "slug": "branding",
-          "value": "Branding"
+          "slug": "banners",
+          "value": "Banners"
         }
       ]
     },
-    "pages/buttons.mdx": {
-      "name": "Buttons",
-      "id": "f8a74e22f9d533059f0dd26f2f10b903",
-      "filepath": "pages/buttons.mdx",
+    "products/breadcrumb.mdx": {
+      "name": "Breadcrumb",
+      "menu": "Product",
+      "id": "a2b324d91abca57e126b8a532f2f5464",
+      "filepath": "products/breadcrumb.mdx",
       "link": null,
-      "slug": "pages-buttons",
-      "route": "/pages-buttons",
+      "slug": "products-breadcrumb",
+      "route": "/products-breadcrumb",
       "order": 0,
-      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "breadcrumb",
+          "value": "Breadcrumb"
+        }
+      ]
+    },
+    "products/buttons.mdx": {
+      "name": "Buttons",
+      "menu": "Product",
+      "id": "74d89e962d1578d76b83edfeb77c6326",
+      "filepath": "products/buttons.mdx",
+      "link": null,
+      "slug": "products-buttons",
+      "route": "/products-buttons",
+      "order": 0,
       "headings": [
         {
           "depth": 1,
@@ -203,32 +302,15 @@
         }
       ]
     },
-    "pages/breadcrumb.mdx": {
-      "name": "Breadcrumb",
-      "id": "856d2a7bd84a52c980532bb5c480067c",
-      "filepath": "pages/breadcrumb.mdx",
-      "link": null,
-      "slug": "pages-breadcrumb",
-      "route": "/pages-breadcrumb",
-      "order": 0,
-      "menu": null,
-      "headings": [
-        {
-          "depth": 1,
-          "slug": "breadcrumb",
-          "value": "Breadcrumb"
-        }
-      ]
-    },
-    "pages/cards.mdx": {
+    "products/cards.mdx": {
       "name": "Cards",
-      "id": "4235bee273c6cf9e20ce0b4ea42027f4",
-      "filepath": "pages/cards.mdx",
+      "menu": "Product",
+      "id": "ec2c2268f352aa93a021aec4da89379b",
+      "filepath": "products/cards.mdx",
       "link": null,
-      "slug": "pages-cards",
-      "route": "/pages-cards",
+      "slug": "products-cards",
+      "route": "/products-cards",
       "order": 0,
-      "menu": null,
       "headings": [
         {
           "depth": 1,
@@ -237,15 +319,15 @@
         }
       ]
     },
-    "pages/colors.mdx": {
+    "products/colors.mdx": {
       "name": "Colors",
-      "id": "8f782b918f1643cdae76583577aa064d",
-      "filepath": "pages/colors.mdx",
+      "menu": "Product",
+      "id": "cab2878c920936a5321544fb2363ca1e",
+      "filepath": "products/colors.mdx",
       "link": null,
-      "slug": "pages-colors",
-      "route": "/pages-colors",
+      "slug": "products-colors",
+      "route": "/products-colors",
       "order": 0,
-      "menu": null,
       "headings": [
         {
           "depth": 1,
@@ -254,15 +336,15 @@
         }
       ]
     },
-    "pages/dropdown.mdx": {
+    "products/dropdown.mdx": {
       "name": "Dropdown",
-      "id": "1e4dfc4268a527953831eb5e56d8dc71",
-      "filepath": "pages/dropdown.mdx",
+      "menu": "Product",
+      "id": "df6af32483158b6d7ce348a23289d016",
+      "filepath": "products/dropdown.mdx",
       "link": null,
-      "slug": "pages-dropdown",
-      "route": "/pages-dropdown",
+      "slug": "products-dropdown",
+      "route": "/products-dropdown",
       "order": 0,
-      "menu": null,
       "headings": [
         {
           "depth": 1,
@@ -271,15 +353,15 @@
         }
       ]
     },
-    "pages/input.mdx": {
+    "products/input.mdx": {
       "name": "Inputs",
-      "id": "d0f8cdcc3895d0fc0f64366ea851e40d",
-      "filepath": "pages/input.mdx",
+      "menu": "Product",
+      "id": "2b80fd8ee4c4ac632c2c90ceeec8561e",
+      "filepath": "products/input.mdx",
       "link": null,
-      "slug": "pages-input",
-      "route": "/pages-input",
+      "slug": "products-input",
+      "route": "/products-input",
       "order": 0,
-      "menu": null,
       "headings": [
         {
           "depth": 1,
@@ -288,15 +370,15 @@
         }
       ]
     },
-    "pages/list.mdx": {
+    "products/list.mdx": {
       "name": "Lists",
-      "id": "c0cb7926a8c65938ae12e554a9961e4b",
-      "filepath": "pages/list.mdx",
+      "menu": "Product",
+      "id": "59900f5aea6bac4e20b479c9d7aa9991",
+      "filepath": "products/list.mdx",
       "link": null,
-      "slug": "pages-list",
-      "route": "/pages-list",
+      "slug": "products-list",
+      "route": "/products-list",
       "order": 0,
-      "menu": null,
       "headings": [
         {
           "depth": 1,
@@ -305,15 +387,15 @@
         }
       ]
     },
-    "pages/modal.mdx": {
+    "products/modal.mdx": {
       "name": "Modal",
-      "id": "a40a61d83077227dfdd7d82773b9f084",
-      "filepath": "pages/modal.mdx",
+      "menu": "Product",
+      "id": "d2a1ef74a7520711eab645effc9c7af4",
+      "filepath": "products/modal.mdx",
       "link": null,
-      "slug": "pages-modal",
-      "route": "/pages-modal",
+      "slug": "products-modal",
+      "route": "/products-modal",
       "order": 0,
-      "menu": null,
       "headings": [
         {
           "depth": 1,
@@ -322,15 +404,15 @@
         }
       ]
     },
-    "pages/navs.mdx": {
+    "products/navs.mdx": {
       "name": "Navigations",
-      "id": "c5a52d30ca3b347d9fe33ea7984bc5f0",
-      "filepath": "pages/navs.mdx",
+      "menu": "Product",
+      "id": "90122dfdae152fe1b7fec49d89f672fb",
+      "filepath": "products/navs.mdx",
       "link": null,
-      "slug": "pages-navs",
-      "route": "/pages-navs",
+      "slug": "products-navs",
+      "route": "/products-navs",
       "order": 0,
-      "menu": null,
       "headings": [
         {
           "depth": 1,
@@ -339,49 +421,15 @@
         }
       ]
     },
-    "pages/popover.mdx": {
-      "name": "Popover",
-      "id": "1539d37d92f39f23670e4621b1571a76",
-      "filepath": "pages/popover.mdx",
-      "link": null,
-      "slug": "pages-popover",
-      "route": "/pages-popover",
-      "order": 0,
-      "menu": null,
-      "headings": [
-        {
-          "depth": 1,
-          "slug": "popovers",
-          "value": "Popovers"
-        }
-      ]
-    },
-    "pages/table.mdx": {
-      "name": "Tables",
-      "id": "afc5f2e9350c2b2819a0b135881e2f3a",
-      "filepath": "pages/table.mdx",
-      "link": null,
-      "slug": "pages-table",
-      "route": "/pages-table",
-      "order": 0,
-      "menu": null,
-      "headings": [
-        {
-          "depth": 1,
-          "slug": "tables",
-          "value": "Tables"
-        }
-      ]
-    },
-    "pages/pagination.mdx": {
+    "products/pagination.mdx": {
       "name": "Paginations",
-      "id": "7da9887744ca53a3db54fa2960454fd0",
-      "filepath": "pages/pagination.mdx",
+      "menu": "Product",
+      "id": "9a446fcf84a21ce8e81bb139d23fbd22",
+      "filepath": "products/pagination.mdx",
       "link": null,
-      "slug": "pages-pagination",
-      "route": "/pages-pagination",
+      "slug": "products-pagination",
+      "route": "/products-pagination",
       "order": 0,
-      "menu": null,
       "headings": [
         {
           "depth": 1,
@@ -390,15 +438,49 @@
         }
       ]
     },
-    "pages/tooltip.mdx": {
-      "name": "Tooltips",
-      "id": "b37ad672220baebd4bdbf4cd277cc0b0",
-      "filepath": "pages/tooltip.mdx",
+    "products/popover.mdx": {
+      "name": "Popover",
+      "menu": "Product",
+      "id": "18168e173122383d905cb97384d1970e",
+      "filepath": "products/popover.mdx",
       "link": null,
-      "slug": "pages-tooltip",
-      "route": "/pages-tooltip",
+      "slug": "products-popover",
+      "route": "/products-popover",
       "order": 0,
-      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "popovers",
+          "value": "Popovers"
+        }
+      ]
+    },
+    "products/table.mdx": {
+      "name": "Tables",
+      "menu": "Product",
+      "id": "98f823e645ebaa81e07699e92dc67e3f",
+      "filepath": "products/table.mdx",
+      "link": null,
+      "slug": "products-table",
+      "route": "/products-table",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "tables",
+          "value": "Tables"
+        }
+      ]
+    },
+    "products/tooltip.mdx": {
+      "name": "Tooltips",
+      "menu": "Product",
+      "id": "37d18e9fa52dbf13bef998f6d447fa87",
+      "filepath": "products/tooltip.mdx",
+      "link": null,
+      "slug": "products-tooltip",
+      "route": "/products-tooltip",
+      "order": 0,
       "headings": [
         {
           "depth": 1,
