@@ -333,6 +333,11 @@
           "depth": 1,
           "slug": "colors",
           "value": "Colors"
+        },
+        {
+          "depth": 2,
+          "slug": "palattes",
+          "value": "Palattes"
         }
       ]
     },

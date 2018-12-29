@@ -2,11 +2,11 @@ import React from 'react';
 
 function ColorBlock(props) {
     return (
-      <div>
+      <div className="color-block-wrapper">
         { props.name.map((color) =>
           <div className={`color-variant-block bg-${ color.name }`} key={ color.name }>
             <div class="color-details">
-            {color.name}
+              {color.name}
             </div>
           </div>
         )

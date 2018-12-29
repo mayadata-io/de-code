@@ -11,4 +11,76 @@ export const blue = [
   {'name':'blue-700', 'hax':'#0C0C58', 'rgb':''},
   {'name':'blue-800', 'hax':'#040449', 'rgb':''},
   {'name':'blue-900', 'hax':'#020224', 'rgb':''},
-]
+];
+export const gray = [
+  {'name':'gray-000', 'hax':'#FAFAFA', 'rgb':''},
+  {'name':'gray-100', 'hax':'#E8EAF1', 'rgb':''},
+  {'name':'gray-200', 'hax':'#D0D3E2', 'rgb':''},
+  {'name':'gray-300', 'hax':'#ABB2CC', 'rgb':''},
+  {'name':'gray-400', 'hax':'#8790B5', 'rgb':''},
+  {'name':'gray-500', 'hax':'#626F9F', 'rgb':''},
+  {'name':'gray-600', 'hax':'#4B557B', 'rgb':''},
+  {'name':'gray-700', 'hax':'#262B3E', 'rgb':''},
+  {'name':'gray-800', 'hax':'#171A26', 'rgb':''},
+  {'name':'gray-900', 'hax':'#010101', 'rgb':''},
+];
+export const green = [
+  {'name':'green-000', 'hax':'#F5F9EF', 'rgb':''},
+  {'name':'green-100', 'hax':'#ECF4E0', 'rgb':''},
+  {'name':'green-200', 'hax':'#DBEBC3', 'rgb':''},
+  {'name':'green-300', 'hax':'#C9E1AF', 'rgb':''},
+  {'name':'green-400', 'hax':'#B7D788', 'rgb':''},
+  {'name':'green-500', 'hax':'#A6CD6B', 'rgb':''},
+  {'name':'green-600', 'hax':'#80AE3B', 'rgb':''},
+  {'name':'green-700', 'hax':'#6A9131', 'rgb':''},
+  {'name':'green-800', 'hax':'#3F561d', 'rgb':''},
+  {'name':'green-900', 'hax':'#1F2A0A', 'rgb':''},
+];
+export const red = [
+  {'name':'red-000', 'hax':'#FEF2F2', 'rgb':''},
+  {'name':'red-100', 'hax':'#FCE0E0', 'rgb':''},
+  {'name':'red-200', 'hax':'#F9BCBC', 'rgb':''},
+  {'name':'red-300', 'hax':'#F38686', 'rgb':''},
+  {'name':'red-400', 'hax':'#EE5151', 'rgb':''},
+  {'name':'red-500', 'hax':'#EB3333', 'rgb':''},
+  {'name':'red-600', 'hax':'#E91B1B', 'rgb':''},
+  {'name':'red-700', 'hax':'#C91313', 'rgb':''},
+  {'name':'red-800', 'hax':'#A61010', 'rgb':''},
+  {'name':'red-900', 'hax':'#700B0B', 'rgb':''},
+];
+export const yellow = [
+  {'name':'yellow-000', 'hax':'#F9F6E3', 'rgb':''},
+  {'name':'yellow-100', 'hax':'#FCFAD5', 'rgb':''},
+  {'name':'yellow-200', 'hax':'#F9F6B0', 'rgb':''},
+  {'name':'yellow-300', 'hax':'#F5F079', 'rgb':''},
+  {'name':'yellow-400', 'hax':'#EFE61E', 'rgb':''},
+  {'name':'yellow-500', 'hax':'#E8DF11', 'rgb':''},
+  {'name':'yellow-600', 'hax':'#D6CD10', 'rgb':''},
+  {'name':'yellow-700', 'hax':'#B1AA0D', 'rgb':''},
+  {'name':'yellow-800', 'hax':'#8D870A', 'rgb':''},
+  {'name':'yellow-900', 'hax':'#565206', 'rgb':''},
+];
+export const orange = [
+  {'name':'orange-000', 'hax':'#FFF6EB', 'rgb':''},
+  {'name':'orange-100', 'hax':'#FFEDD8', 'rgb':''},
+  {'name':'orange-200', 'hax':'#FFD39D', 'rgb':''},
+  {'name':'orange-300', 'hax':'#FFB862', 'rgb':''},
+  {'name':'orange-400', 'hax':'#FF9E27', 'rgb':''},
+  {'name':'orange-500', 'hax':'#FF8C00', 'rgb':''},
+  {'name':'orange-600', 'hax':'#EB8100', 'rgb':''},
+  {'name':'orange-700', 'hax':'#C46C00', 'rgb':''},
+  {'name':'orange-800', 'hax':'#764100', 'rgb':''},
+  {'name':'orange-900', 'hax':'#3B2000', 'rgb':''},
+];
+export const cyan = [
+  {'name':'cyan-000', 'hax':'#F3F9F9', 'rgb':''},
+  {'name':'cyan-100', 'hax':'#E1F5F3', 'rgb':''},
+  {'name':'cyan-200', 'hax':'#C4EAE7', 'rgb':''},
+  {'name':'cyan-300', 'hax':'#99DBD5', 'rgb':''},
+  {'name':'cyan-400', 'hax':'#7CD1C8', 'rgb':''},
+  {'name':'cyan-500', 'hax':'#42BCB0', 'rgb':''},
+  {'name':'cyan-600', 'hax':'#389F95', 'rgb':''},
+  {'name':'cyan-700', 'hax':'#2E827A', 'rgb':''},
+  {'name':'cyan-800', 'hax':'#23655E', 'rgb':''},
+  {'name':'cyan-900', 'hax':'#143936', 'rgb':''},
+];
