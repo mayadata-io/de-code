@@ -1,6 +1,6 @@
 export const imports = {
-  'index.mdx': () =>
-    import(/* webpackPrefetch: true, webpackChunkName: "index" */ 'index.mdx'),
+  'getstarted.mdx': () =>
+    import(/* webpackPrefetch: true, webpackChunkName: "getstarted" */ 'getstarted.mdx'),
   'marketing/buttons.mdx': () =>
     import(/* webpackPrefetch: true, webpackChunkName: "marketing-buttons" */ 'marketing/buttons.mdx'),
   'marketing/colors.mdx': () =>
