@@ -1,6 +1,7 @@
 .DS_Store
 /tmp
 /dist
+/css
 logs
 *.log
 npm-debug.log*

@@ -9,7 +9,7 @@ export default {
   hashRouter: true,
   port: '9999',
   src: 'docs',
-  dest: 'dist/docs',
+  dest: 'dist',
 
   plugins: [
     css({

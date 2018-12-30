@@ -27,7 +27,7 @@
     "hashRouter": true,
     "port": "9999",
     "src": "docs",
-    "dest": "dist/docs",
+    "dest": "dist",
     "plugins": [
       {}
     ]
@@ -255,6 +255,28 @@
         }
       ]
     },
+    "products/colors.mdx": {
+      "name": "Colors",
+      "menu": "Product",
+      "id": "cab2878c920936a5321544fb2363ca1e",
+      "filepath": "products/colors.mdx",
+      "link": null,
+      "slug": "products-colors",
+      "route": "/products-colors",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "colors",
+          "value": "Colors"
+        },
+        {
+          "depth": 2,
+          "slug": "palattes",
+          "value": "Palattes"
+        }
+      ]
+    },
     "products/buttons.mdx": {
       "name": "Buttons",
       "menu": "Product",
@@ -319,25 +341,20 @@
         }
       ]
     },
-    "products/colors.mdx": {
-      "name": "Colors",
+    "products/input.mdx": {
+      "name": "Inputs",
       "menu": "Product",
-      "id": "cab2878c920936a5321544fb2363ca1e",
-      "filepath": "products/colors.mdx",
+      "id": "2b80fd8ee4c4ac632c2c90ceeec8561e",
+      "filepath": "products/input.mdx",
       "link": null,
-      "slug": "products-colors",
-      "route": "/products-colors",
+      "slug": "products-input",
+      "route": "/products-input",
       "order": 0,
       "headings": [
         {
           "depth": 1,
-          "slug": "colors",
-          "value": "Colors"
-        },
-        {
-          "depth": 2,
-          "slug": "palattes",
-          "value": "Palattes"
+          "slug": "inputs",
+          "value": "Inputs"
         }
       ]
     },
@@ -358,20 +375,20 @@
         }
       ]
     },
-    "products/input.mdx": {
-      "name": "Inputs",
+    "products/modal.mdx": {
+      "name": "Modal",
       "menu": "Product",
-      "id": "2b80fd8ee4c4ac632c2c90ceeec8561e",
-      "filepath": "products/input.mdx",
+      "id": "d2a1ef74a7520711eab645effc9c7af4",
+      "filepath": "products/modal.mdx",
       "link": null,
-      "slug": "products-input",
-      "route": "/products-input",
+      "slug": "products-modal",
+      "route": "/products-modal",
       "order": 0,
       "headings": [
         {
           "depth": 1,
-          "slug": "inputs",
-          "value": "Inputs"
+          "slug": "modals",
+          "value": "Modals"
         }
       ]
     },
@@ -389,23 +406,6 @@
           "depth": 1,
           "slug": "lists",
           "value": "Lists"
-        }
-      ]
-    },
-    "products/modal.mdx": {
-      "name": "Modal",
-      "menu": "Product",
-      "id": "d2a1ef74a7520711eab645effc9c7af4",
-      "filepath": "products/modal.mdx",
-      "link": null,
-      "slug": "products-modal",
-      "route": "/products-modal",
-      "order": 0,
-      "headings": [
-        {
-          "depth": 1,
-          "slug": "modals",
-          "value": "Modals"
         }
       ]
     },
