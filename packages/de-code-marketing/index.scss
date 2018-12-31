@@ -5,49 +5,5 @@
  */
 
 /// Main scss files, include marketing styles.
-//Abstracts
-@import "../sass/abstracts/functions";
-@import "../sass/abstracts/mixins";
-@import "../sass/abstracts/variables";
-@import "../sass/abstracts/root";
-@import "../sass/abstracts/print";
-
-//Base
-@import "../sass/base/reboot.scss";
-@import "../sass/base/type";
-
-//Layout
-@import "../sass/layout/navbar";
-@import "../sass/layout/nav";
-@import "../sass/layout/grid";
-
-//Components
-@import "../sass/components/avatar";
-@import "../sass/components/banner";
-@import "../sass/components/images";
-@import "../sass/components/code";
-@import "../sass/components/tables";
-@import "../sass/components/forms";
-@import "../sass/components/buttons";
-@import "../sass/components/transitions";
-@import "../sass/components/dropdown";
-@import "../sass/components/button-group";
-@import "../sass/components/input-group";
-@import "../sass/components/custom-forms";
-@import "../sass/components/card";
-@import "../sass/components/breadcrumb";
-@import "../sass/components/pagination";
-@import "../sass/components/badge";
-@import "../sass/components/jumbotron";
-@import "../sass/components/alert";
-@import "../sass/components/progress";
-@import "../sass/components/media";
-@import "../sass/components/list-group";
-@import "../sass/components/close";
-@import "../sass/components/modal";
-@import "../sass/components/tooltip";
-@import "../sass/components/popover";
-@import "../sass/components/carousel";
-
-//Utilities
-@import "../sass/utilities/utilities";
+@import "../../scss/core.scss";
+@import "../../scss/marketing.scss";

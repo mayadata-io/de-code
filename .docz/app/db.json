@@ -50,91 +50,6 @@
         }
       ]
     },
-    "marketing/buttons.mdx": {
-      "name": "Buttons",
-      "menu": "Marketing",
-      "id": "a435ce2e1b38acbe5f297ac668922011",
-      "filepath": "marketing/buttons.mdx",
-      "link": null,
-      "slug": "marketing-buttons",
-      "route": "/marketing-buttons",
-      "order": 0,
-      "headings": [
-        {
-          "depth": 1,
-          "slug": "buttons",
-          "value": "Buttons"
-        }
-      ]
-    },
-    "marketing/colors.mdx": {
-      "name": "Colors",
-      "menu": "Marketing",
-      "id": "8090dda17e8d30fa6a7dd44640960c06",
-      "filepath": "marketing/colors.mdx",
-      "link": null,
-      "slug": "marketing-colors",
-      "route": "/marketing-colors",
-      "order": 0,
-      "headings": [
-        {
-          "depth": 1,
-          "slug": "colors",
-          "value": "Colors"
-        }
-      ]
-    },
-    "marketing/forms.mdx": {
-      "name": "Forms",
-      "menu": "Marketing",
-      "id": "06115b648db36b3c1e4dd364c8db79cf",
-      "filepath": "marketing/forms.mdx",
-      "link": null,
-      "slug": "marketing-forms",
-      "route": "/marketing-forms",
-      "order": 0,
-      "headings": [
-        {
-          "depth": 1,
-          "slug": "forms",
-          "value": "Forms"
-        }
-      ]
-    },
-    "marketing/logos.mdx": {
-      "name": "Logos",
-      "menu": "Marketing",
-      "id": "767b10bc78651e0cb8040456d8b93181",
-      "filepath": "marketing/logos.mdx",
-      "link": null,
-      "slug": "marketing-logos",
-      "route": "/marketing-logos",
-      "order": 0,
-      "headings": [
-        {
-          "depth": 1,
-          "slug": "logos",
-          "value": "Logos"
-        }
-      ]
-    },
-    "marketing/typography.mdx": {
-      "name": "Typography",
-      "menu": "Marketing",
-      "id": "4061c11d950e37b6c44a56bf914f6a29",
-      "filepath": "marketing/typography.mdx",
-      "link": null,
-      "slug": "marketing-typography",
-      "route": "/marketing-typography",
-      "order": 0,
-      "headings": [
-        {
-          "depth": 1,
-          "slug": "typography",
-          "value": "Typography"
-        }
-      ]
-    },
     "products/alerts.mdx": {
       "name": "Alerts",
       "menu": "Product",
@@ -255,28 +170,6 @@
         }
       ]
     },
-    "products/colors.mdx": {
-      "name": "Colors",
-      "menu": "Product",
-      "id": "cab2878c920936a5321544fb2363ca1e",
-      "filepath": "products/colors.mdx",
-      "link": null,
-      "slug": "products-colors",
-      "route": "/products-colors",
-      "order": 0,
-      "headings": [
-        {
-          "depth": 1,
-          "slug": "colors",
-          "value": "Colors"
-        },
-        {
-          "depth": 2,
-          "slug": "palattes",
-          "value": "Palattes"
-        }
-      ]
-    },
     "products/buttons.mdx": {
       "name": "Buttons",
       "menu": "Product",
@@ -341,20 +234,25 @@
         }
       ]
     },
-    "products/input.mdx": {
-      "name": "Inputs",
+    "products/colors.mdx": {
+      "name": "Colors",
       "menu": "Product",
-      "id": "2b80fd8ee4c4ac632c2c90ceeec8561e",
-      "filepath": "products/input.mdx",
+      "id": "cab2878c920936a5321544fb2363ca1e",
+      "filepath": "products/colors.mdx",
       "link": null,
-      "slug": "products-input",
-      "route": "/products-input",
+      "slug": "products-colors",
+      "route": "/products-colors",
       "order": 0,
       "headings": [
         {
           "depth": 1,
-          "slug": "inputs",
-          "value": "Inputs"
+          "slug": "colors",
+          "value": "Colors"
+        },
+        {
+          "depth": 2,
+          "slug": "palattes",
+          "value": "Palattes"
         }
       ]
     },
@@ -375,20 +273,20 @@
         }
       ]
     },
-    "products/modal.mdx": {
-      "name": "Modal",
+    "products/input.mdx": {
+      "name": "Inputs",
       "menu": "Product",
-      "id": "d2a1ef74a7520711eab645effc9c7af4",
-      "filepath": "products/modal.mdx",
+      "id": "2b80fd8ee4c4ac632c2c90ceeec8561e",
+      "filepath": "products/input.mdx",
       "link": null,
-      "slug": "products-modal",
-      "route": "/products-modal",
+      "slug": "products-input",
+      "route": "/products-input",
       "order": 0,
       "headings": [
         {
           "depth": 1,
-          "slug": "modals",
-          "value": "Modals"
+          "slug": "inputs",
+          "value": "Inputs"
         }
       ]
     },
@@ -406,6 +304,23 @@
           "depth": 1,
           "slug": "lists",
           "value": "Lists"
+        }
+      ]
+    },
+    "products/modal.mdx": {
+      "name": "Modal",
+      "menu": "Product",
+      "id": "d2a1ef74a7520711eab645effc9c7af4",
+      "filepath": "products/modal.mdx",
+      "link": null,
+      "slug": "products-modal",
+      "route": "/products-modal",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "modals",
+          "value": "Modals"
         }
       ]
     },
@@ -491,6 +406,91 @@
           "depth": 1,
           "slug": "tooltips",
           "value": "Tooltips"
+        }
+      ]
+    },
+    "marketing/buttons.mdx": {
+      "name": "Buttons",
+      "menu": "Marketing",
+      "id": "a435ce2e1b38acbe5f297ac668922011",
+      "filepath": "marketing/buttons.mdx",
+      "link": null,
+      "slug": "marketing-buttons",
+      "route": "/marketing-buttons",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "buttons",
+          "value": "Buttons"
+        }
+      ]
+    },
+    "marketing/colors.mdx": {
+      "name": "Colors",
+      "menu": "Marketing",
+      "id": "8090dda17e8d30fa6a7dd44640960c06",
+      "filepath": "marketing/colors.mdx",
+      "link": null,
+      "slug": "marketing-colors",
+      "route": "/marketing-colors",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "colors",
+          "value": "Colors"
+        }
+      ]
+    },
+    "marketing/forms.mdx": {
+      "name": "Forms",
+      "menu": "Marketing",
+      "id": "06115b648db36b3c1e4dd364c8db79cf",
+      "filepath": "marketing/forms.mdx",
+      "link": null,
+      "slug": "marketing-forms",
+      "route": "/marketing-forms",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "forms",
+          "value": "Forms"
+        }
+      ]
+    },
+    "marketing/logos.mdx": {
+      "name": "Logos",
+      "menu": "Marketing",
+      "id": "767b10bc78651e0cb8040456d8b93181",
+      "filepath": "marketing/logos.mdx",
+      "link": null,
+      "slug": "marketing-logos",
+      "route": "/marketing-logos",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "logos",
+          "value": "Logos"
+        }
+      ]
+    },
+    "marketing/typography.mdx": {
+      "name": "Typography",
+      "menu": "Marketing",
+      "id": "4061c11d950e37b6c44a56bf914f6a29",
+      "filepath": "marketing/typography.mdx",
+      "link": null,
+      "slug": "marketing-typography",
+      "route": "/marketing-typography",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "typography",
+          "value": "Typography"
         }
       ]
     }

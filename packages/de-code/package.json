@@ -3,7 +3,8 @@
   "version": "0.0.9",
   "description": "De-code css package",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:scss": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 index.scss -o css/"
   },
   "dependencies": {
     "demo-de-code-marketing": "^0.0.9",

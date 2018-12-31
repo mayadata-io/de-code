@@ -12,16 +12,17 @@
   "scripts": {
     "docz:dev": "docz dev",
     "docz:build": "docz build",
-    "build:css": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 app/styles/ -o css/",
+    "build:css": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 index.scss -o css/",
     "clean": "rm -rf node_modules dist temp",
     "bootstrap": "lerna bootstrap",
-    "publish": "lerna publish"
+    "publish": "yarn run build:css && lerna publish"
   },
   "devDependencies": {
     "docz": "^0.13.7",
     "docz-plugin-css": "^0.11.0",
     "docz-theme-default": "^0.13.7",
-    "lerna": "^3.4.3"
+    "lerna": "^3.4.3",
+    "npm-run-all": "^4.1.5"
   },
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"

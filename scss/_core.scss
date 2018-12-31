@@ -1,0 +1,19 @@
+
+//Abstracts
+@import "core/abstracts/functions";
+@import "core/abstracts/mixins";
+@import "core/abstracts/variables";
+@import "core/abstracts/root";
+@import "core/abstracts/print";
+
+//Basecore/
+@import "core/base/reboot.scss";
+@import "core/base/type";
+
+//Layoutcore/
+@import "core/layout/navbar";
+@import "core/layout/nav";
+@import "core/layout/grid";
+
+//Utiliticore/es
+@import "core/utilities/utilities";
