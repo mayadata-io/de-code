@@ -8,9 +8,6 @@
   "directories": {
     "test": "docs"
   },
-  "publishConfig": {
-  "access": "public"
-  },
   "repository": "",
   "scripts": {
     "docz:dev": "docz dev",

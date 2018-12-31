@@ -1,6 +1,6 @@
 {
   "name": "de-code-product",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "De-code product package",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -8,5 +8,5 @@
   },
   "author": "MayaData, Inc.",
   "license": "MIT",
-  "gitHead": "2dd9c6a24feb84c69854163d3612c385a3a5fdbe"
+  "gitHead": "7116f74adf76508f41457cfece3a6a50e1d491d0"
 }
