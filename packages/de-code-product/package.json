@@ -1,6 +1,6 @@
 {
   "name": "demo-de-code-product",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "De-code product package",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
