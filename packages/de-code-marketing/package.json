@@ -1,10 +1,10 @@
 {
   "name": "demo-de-code-marketing",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "De-code marketing package",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:scss": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 index.scss -o css/"
+    "build:css": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 index.scss -o css/"
 
   },
   "author": "MayaData, Inc.",

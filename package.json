@@ -15,7 +15,7 @@
     "build:css": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 index.scss -o css/",
     "clean": "rm -rf node_modules dist temp",
     "bootstrap": "lerna bootstrap",
-    "publish": "yarn run build:css && lerna publish"
+    "publish": "lerna run build:css && lerna publish"
   },
   "devDependencies": {
     "docz": "^0.13.7",
