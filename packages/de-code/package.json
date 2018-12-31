@@ -1,5 +1,5 @@
 {
-  "name": "@mayadata/de-code",
+  "name": "de-code",
   "version": "1.0.1",
   "description": "De-code css package",
   "scripts": {
@@ -12,5 +12,5 @@
   },
   "author": "MayaData, Inc.",
   "license": "MIT",
-  "gitHead": "4e765a0dd8f972b9b5e1a723abf4e17ba97fb00c"
+  "gitHead": "2dd9c6a24feb84c69854163d3612c385a3a5fdbe"
 }
