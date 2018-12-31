@@ -1,6 +1,6 @@
 {
-  "name": "@mayadata/demo-de-code",
-  "version": "1.0.1",
+  "name": "@mayadata/de-code",
+  "version": "1.0.0",
   "description": "De-code css package",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,5 +11,6 @@
     "demo-de-code-product": "^1.0.0"
   },
   "author": "MayaData, Inc.",
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "4e765a0dd8f972b9b5e1a723abf4e17ba97fb00c"
 }
