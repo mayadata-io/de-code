@@ -1,13 +1,13 @@
 {
   "name": "demo-de-code",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "De-code css package",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "demo-de-code-marketing": "0.0.8",
-    "demo-de-code-product": "0.0.8"
+    "demo-de-code-marketing": "^0.0.9",
+    "demo-de-code-product": "^0.0.9"
   },
   "author": "MayaData, Inc.",
   "license": "MIT"
