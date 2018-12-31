@@ -1,0 +1,42 @@
+---
+name: Colors
+menu: Product
+---
+import { blue, gray, green, yellow, red, orange, cyan} from '../utils/colors.js'
+import ColorBlock from './components/colorblock.js'
+
+# Colors
+
+<div class="row">
+  <div class="col-sm-3 color-base-block bg-primary"></div>
+  <div class="col-sm-3 color-base-block bg-success"></div>
+  <div class="col-sm-3 color-base-block bg-warning"></div>
+  <div class="col-sm-3 color-base-block bg-danger"></div>
+  <div class="col-sm-3 color-base-block bg-info"></div>
+  <div class="col-sm-3 color-base-block bg-orange"></div>
+</div>
+
+## Palattes
+<div class="row">
+  <div class="col-sm-3">
+    <ColorBlock name={gray} />
+  </div>
+  <div class="col-sm-3">
+    <ColorBlock name={blue} />
+  </div>
+  <div class="col-sm-3">
+    <ColorBlock name={green} />
+  </div>
+  <div class="col-sm-3">
+    <ColorBlock name={yellow} />
+  </div>
+  <div class="col-sm-3">
+    <ColorBlock name={red} />
+  </div>
+  <div class="col-sm-3">
+    <ColorBlock name={orange} />
+  </div>
+  <div class="col-sm-3">
+    <ColorBlock name={cyan} />
+  </div>
+</div>

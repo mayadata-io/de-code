@@ -1,0 +1,270 @@
+//
+// Color system
+//
+
+// stylelint-disable
+// Gray palettes
+$white:    #FEFEFE !default;
+$gray-000: #FAFAFA !default;
+$gray-100: #E8EAF1 !default;
+$gray-200: #D0D3E2 !default;
+$gray-300: #ABB2CC !default;
+$gray-400: #8790B5 !default;
+$gray-500: #626F9F !default;
+$gray-600: #4B557B !default;
+$gray-700: #262B3E !default;
+$gray-800: #171A26 !default;
+$gray-900: #010101 !default;
+
+// blue palette
+$blue-000: #F4F4F8 !default;
+$blue-100: #EBEBFE !default;
+$blue-200: #CFCFFC !default;
+$blue-300: #8D8DF9 !default;
+$blue-400: #7D88f4 !default;
+$blue-500: #6976F4 !default;
+$blue-600: #0808A7 !default;
+$blue-700: #0C0C58 !default;
+$blue-800: #040449 !default;
+$blue-900: #020224 !default;
+
+// red palette
+$red-000: #FEF2F2 !default;
+$red-100: #FCE0E0 !default;
+$red-200: #F9BCBC !default;
+$red-300: #F38686 !default;
+$red-400: #EE5151 !default;
+$red-500: #EB3333 !default;
+$red-600: #E91B1B !default;
+$red-700: #C91313 !default;
+$red-800: #A61010 !default;
+$red-900: #700B0B !default;
+
+// green palette
+$green-000: #F5F9EF !default;
+$green-100: #ECF4E0 !default;
+$green-200: #DBEBC3 !default;
+$green-300: #C9E1AF !default;
+$green-400: #B7D788 !default;
+$green-500: #A6CD6B !default;
+$green-600: #80AE3B !default;
+$green-700: #6A9131 !default;
+$green-800: #3F561d !default;
+$green-900: #1F2A0A !default;
+
+// yellow palette
+$yellow-000: #F9F6E3 !default;
+$yellow-100: #FCFAD5 !default;
+$yellow-200: #F9F6B0 !default;
+$yellow-300: #F5F079 !default;
+$yellow-400: #EFE61E !default;
+$yellow-500: #E8DF11 !default;
+$yellow-600: #D6CD10 !default;
+$yellow-700: #B1AA0D !default;
+$yellow-800: #8D870A !default;
+$yellow-900: #565206 !default;
+
+// orange palette
+$orange-000: #FFF6EB !default;
+$orange-100: #FFEDD8 !default;
+$orange-200: #FFD39D !default;
+$orange-300: #FFB862 !default;
+$orange-400: #FF9E27 !default;
+$orange-500: #FF8C00 !default;
+$orange-600: #EB8100 !default;
+$orange-700: #C46C00 !default;
+$orange-800: #764100 !default;
+$orange-900: #3B2000 !default;
+
+// cyan palette
+$cyan-000: #F3F9F9 !default;
+$cyan-100: #E1F5F3 !default;
+$cyan-200: #C4EAE7 !default;
+$cyan-300: #99DBD5 !default;
+$cyan-400: #7CD1C8 !default;
+$cyan-500: #42BCB0 !default;
+$cyan-600: #389F95 !default;
+$cyan-700: #2E827A !default;
+$cyan-800: #23655E !default;
+$cyan-900: #143936 !default;
+
+// purple palette
+$purple-000: #EFE7F7 !default;
+$purple-100: #EDE1F9 !default;
+$purple-200: #DCCAED !default;
+$purple-300: #BE9EDF !default;
+$purple-400: #A172D0 !default;
+$purple-500: #8346C1 !default;
+$purple-600: #663399 !default;
+$purple-700: #3F1F5E !default;
+$purple-800: #2B1641 !default;
+$purple-900: #180C23 !default;
+
+
+$blue:    $blue-500 !default;
+$indigo:  #6610f2 !default;
+$purple:  #6554C0 !default;
+$pink:    #e83e8c !default;
+$red:     $red-600 !default;
+$orange:  $orange-600 !default;
+$yellow:  $yellow-600 !default;
+$green:   $green-600 !default;
+$teal:    #20c997 !default;
+$teal-blue:#084766;
+$cyan:    $cyan-600 !default;
+$black:   $gray-700 !default;
+
+$colors: () !default;
+$colors: map-merge((
+
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal-blue":  $teal-blue,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+), $colors);
+
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-600 !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge((
+  "teal-blue":  $teal-blue,
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "white":      $white,
+), $theme-colors);
+
+
+$grays: () !default;
+$grays: map-merge((
+  "000": $gray-000,
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+), $grays);
+
+$blues: () !default;
+$blues: map-merge((
+  "000": $blue-000,
+  "100": $blue-100,
+  "200": $blue-200,
+  "300": $blue-300,
+  "400": $blue-400,
+  "500": $blue-500,
+  "600": $blue-600,
+  "700": $blue-700,
+  "800": $blue-800,
+  "900": $blue-900
+), $blues);
+
+$greens: () !default;
+$greens: map-merge((
+  "000": $green-000,
+  "100": $green-100,
+  "200": $green-200,
+  "300": $green-300,
+  "400": $green-400,
+  "500": $green-500,
+  "600": $green-600,
+  "700": $green-700,
+  "800": $green-800,
+  "900": $green-900
+), $greens);
+
+$reds: () !default;
+$reds: map-merge((
+  "000": $red-000,
+  "100": $red-100,
+  "200": $red-200,
+  "300": $red-300,
+  "400": $red-400,
+  "500": $red-500,
+  "600": $red-600,
+  "700": $red-700,
+  "800": $red-800,
+  "900": $red-900
+), $reds);
+
+$yellows: () !default;
+$yellows: map-merge((
+  "000": $yellow-000,
+  "100": $yellow-100,
+  "200": $yellow-200,
+  "300": $yellow-300,
+  "400": $yellow-400,
+  "500": $yellow-500,
+  "600": $yellow-600,
+  "700": $yellow-700,
+  "800": $yellow-800,
+  "900": $yellow-900
+), $yellows);
+
+$cyans: () !default;
+$cyans: map-merge((
+  "000": $cyan-000,
+  "100": $cyan-100,
+  "200": $cyan-200,
+  "300": $cyan-300,
+  "400": $cyan-400,
+  "500": $cyan-500,
+  "600": $cyan-600,
+  "700": $cyan-700,
+  "800": $cyan-800,
+  "900": $cyan-900
+), $cyans);
+
+$purples: () !default;
+$purples: map-merge((
+  "000": $purple-000,
+  "100": $purple-100,
+  "200": $purple-200,
+  "300": $purple-300,
+  "400": $purple-400,
+  "500": $purple-500,
+  "600": $purple-600,
+  "700": $purple-700,
+  "800": $purple-800,
+  "900": $purple-900
+), $purples);
+
+$oranges: () !default;
+$oranges: map-merge((
+  "000": $orange-000,
+  "100": $orange-100,
+  "200": $orange-200,
+  "300": $orange-300,
+  "400": $orange-400,
+  "500": $orange-500,
+  "600": $orange-600,
+  "700": $orange-700,
+  "800": $orange-800,
+  "900": $orange-900
+), $oranges);

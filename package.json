@@ -1,44 +1,28 @@
 {
-  "name": "de-code",
+  "name": "@mayadata/de-code",
   "version": "1.0.1",
-  "private": true,
+  "private": false,
   "description": "The design system from MayaData",
   "license": "MIT",
   "author": "hello@mayadata.io",
   "directories": {
-    "test": "tests"
+    "test": "docs"
   },
   "repository": "",
   "scripts": {
-    "build": "ember build --environment=production",
-    "start": "ember server",
-    "test": "ember test",
-    "copy-dist": "cp -R dist/* ./",
-    "clean": "rm -rf node_modules dist temp"
+    "docz:dev": "docz dev",
+    "docz:build": "docz build",
+    "build:css": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 index.scss -o css/",
+    "clean": "rm -rf node_modules dist temp",
+    "bootstrap": "lerna bootstrap",
+    "publish": "lerna run build:css && lerna publish"
   },
   "devDependencies": {
-    "broccoli-asset-rev": "^2.4.5",
-    "ember-ajax": "^3.0.0",
-    "ember-cli": "~2.16.2",
-    "ember-cli-app-version": "^3.0.0",
-    "ember-cli-babel": "^6.6.0",
-    "ember-cli-dependency-checker": "^2.0.0",
-    "ember-cli-eslint": "^4.0.0",
-    "ember-cli-htmlbars": "^2.0.1",
-    "ember-cli-htmlbars-inline-precompile": "^1.0.0",
-    "ember-cli-inject-live-reload": "^1.4.1",
-    "ember-cli-qunit": "^4.0.0",
-    "ember-cli-sass": "^7.1.5",
-    "ember-cli-shims": "^1.1.0",
-    "ember-cli-sri": "^2.1.0",
-    "ember-cli-uglify": "^2.0.0",
-    "ember-data": "~2.16.2",
-    "ember-export-application-global": "^2.0.0",
-    "ember-load-initializers": "^1.0.0",
-    "ember-prism": "^0.2.0",
-    "ember-resolver": "^4.0.0",
-    "ember-source": "~2.16.0",
-    "loader.js": "^4.2.3"
+    "docz": "^0.13.7",
+    "docz-plugin-css": "^0.11.0",
+    "docz-theme-default": "^0.13.7",
+    "lerna": "^3.4.3",
+    "npm-run-all": "^4.1.5"
   },
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"

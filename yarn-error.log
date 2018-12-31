@@ -1,0 +1,57 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.9.4/libexec/bin/yarn.js install
+
+PATH: 
+  /Users/rakeshsingh/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/rakeshsingh/.rvm/bin
+
+Yarn version: 
+  1.9.4
+
+Node version: 
+  8.11.4
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/rakeshsingh/Desktop/mayaonline/De-code/package.json: Unexpected token } in JSON at position 604
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.9.4/libexec/lib/cli.js:1130:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.9.4/libexec/lib/cli.js:92:30)
+      at /usr/local/Cellar/yarn/1.9.4/libexec/lib/cli.js:103:13
+      at <anonymous>
+
+npm manifest: 
+  {
+    "name": "de-code",
+    "version": "1.0.1",
+    "private": false,
+    "description": "The design system from MayaData",
+    "license": "MIT",
+    "author": "hello@mayadata.io",
+    "directories": {
+      "test": "docs"
+    },
+    "repository": "",
+    "scripts": {
+      "clean": "rm -rf node_modules dist temp",
+      "css": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 app/styles/ -o css/",
+      "docz:dev": "docz dev",
+      "docz:build": "docz build"
+    },
+    "devDependencies": {
+      "docz": "^0.13.7",
+      "docz-plugin-css": "^0.11.0",
+      "docz-theme-default": "^0.13.7",
+    },
+    "engines": {
+      "node": "^4.5 || 6.* || >= 7.*"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

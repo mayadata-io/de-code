@@ -1,0 +1,12 @@
+{
+  "name": "de-code-product",
+  "version": "1.0.1",
+  "description": "De-code product package",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 index.scss -o css/"
+  },
+  "author": "MayaData, Inc.",
+  "license": "MIT",
+  "gitHead": "7116f74adf76508f41457cfece3a6a50e1d491d0"
+}
