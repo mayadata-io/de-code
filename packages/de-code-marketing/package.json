@@ -1,6 +1,6 @@
 {
-  "name": "demo-de-code-marketing",
-  "version": "0.0.11",
+  "name": "@mayadata/demo-de-code-marketing",
+  "version": "1.0.0",
   "description": "De-code marketing package",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

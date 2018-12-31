@@ -1,5 +1,5 @@
 {
-  "name": "de-code",
+  "name": "@mayadata/de-code",
   "version": "1.0.1",
   "private": false,
   "description": "The design system from MayaData",
@@ -7,6 +7,9 @@
   "author": "hello@mayadata.io",
   "directories": {
     "test": "docs"
+  },
+  "publishConfig": {
+  "access": "public"
   },
   "repository": "",
   "scripts": {
