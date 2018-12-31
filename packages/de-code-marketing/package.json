@@ -1,0 +1,10 @@
+{
+  "name": "demo-de-code-marketing",
+  "version": "0.0.8",
+  "description": "De-code marketing package",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MayaData, Inc.",
+  "license": "MIT"
+}
