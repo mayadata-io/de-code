@@ -4,7 +4,7 @@
     "description": "Style guide for MayaData products.",
     "menu": [],
     "ordering": "descending",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "repository": null,
     "native": false,
     "codeSandbox": false,
@@ -319,28 +319,6 @@
         }
       ]
     },
-    "products/colors.mdx": {
-      "name": "Colors",
-      "menu": "Product",
-      "id": "cab2878c920936a5321544fb2363ca1e",
-      "filepath": "products/colors.mdx",
-      "link": null,
-      "slug": "products-colors",
-      "route": "/products-colors",
-      "order": 0,
-      "headings": [
-        {
-          "depth": 1,
-          "slug": "colors",
-          "value": "Colors"
-        },
-        {
-          "depth": 2,
-          "slug": "palattes",
-          "value": "Palattes"
-        }
-      ]
-    },
     "products/dropdown.mdx": {
       "name": "Dropdown",
       "menu": "Product",
@@ -389,6 +367,28 @@
           "depth": 1,
           "slug": "lists",
           "value": "Lists"
+        }
+      ]
+    },
+    "products/colors.mdx": {
+      "name": "Colors",
+      "menu": "Product",
+      "id": "cab2878c920936a5321544fb2363ca1e",
+      "filepath": "products/colors.mdx",
+      "link": null,
+      "slug": "products-colors",
+      "route": "/products-colors",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "colors",
+          "value": "Colors"
+        },
+        {
+          "depth": 2,
+          "slug": "palattes",
+          "value": "Palattes"
         }
       ]
     },
