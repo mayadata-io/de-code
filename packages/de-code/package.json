@@ -1,14 +1,14 @@
 {
   "name": "@mayadata/de-code",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "De-code css package",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 index.scss -o css/"
   },
   "dependencies": {
-    "de-code-marketing": "^1.0.1",
-    "de-code-product": "^1.0.1"
+    "de-code-marketing": "^1.0.2",
+    "de-code-product": "^1.0.2"
   },
   "author": "MayaData, Inc.",
   "license": "MIT",
