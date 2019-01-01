@@ -1,6 +1,6 @@
 {
   "name": "de-code-marketing",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "De-code marketing package",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
