@@ -7,5 +7,6 @@
     "build:css": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 index.scss -o css/"
   },
   "author": "MayaData, Inc.",
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "eae7fe58bd1220b358396debd65c514020e9d2e0"
 }
