@@ -12,6 +12,7 @@ You will need the following things properly installed on your computer.
 
 * `git clone <repository-url>` this repository
 * `cd de-code`
+* `yarn install`
 
 ## Running / Development
 
