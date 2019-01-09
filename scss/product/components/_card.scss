@@ -40,11 +40,7 @@
 
 .card-title {
   margin-bottom: $card-spacer-y;
-}
-
-.card-subtitle {
-  margin-top: -($card-spacer-y / 2);
-  margin-bottom: 0;
+  color: $white;
 }
 
 .card-text:last-child {
@@ -69,7 +65,7 @@
   padding: $card-spacer-y $card-spacer-x;
   margin-bottom: 0; // Removes the default margin-bottom of <hN>
   background-color: $card-cap-bg;
-  border-bottom: $card-border-width solid $card-border-color;
+  padding: 10px;
 
   &:first-child {
     @include border-radius($card-inner-border-radius $card-inner-border-radius 0 0);
