@@ -7,7 +7,6 @@ function ColorBlock(props) {
           <div className={`color-variant-block bg-${ color.name }`} key={ color.name }>
             <div class="color-details">
               <div className="">{color.name}</div>
-              <div>{color.hax}</div>
             </div>
           </div>
         )

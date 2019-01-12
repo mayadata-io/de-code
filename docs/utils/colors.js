@@ -84,3 +84,15 @@ export const cyan = [
   {'name':'cyan-800', 'hax':'#23655E', 'rgb':''},
   {'name':'cyan-900', 'hax':'#143936', 'rgb':''},
 ];
+export const purple = [
+  {'name':'purple-000', 'hax':'#F3F9F9', 'rgb':''},
+  {'name':'purple-100', 'hax':'#E1F5F3', 'rgb':''},
+  {'name':'purple-200', 'hax':'#C4EAE7', 'rgb':''},
+  {'name':'purple-300', 'hax':'#99DBD5', 'rgb':''},
+  {'name':'purple-400', 'hax':'#7CD1C8', 'rgb':''},
+  {'name':'purple-500', 'hax':'#42BCB0', 'rgb':''},
+  {'name':'purple-600', 'hax':'#389F95', 'rgb':''},
+  {'name':'purple-700', 'hax':'#2E827A', 'rgb':''},
+  {'name':'purple-800', 'hax':'#23655E', 'rgb':''},
+  {'name':'purple-900', 'hax':'#143936', 'rgb':''},
+];

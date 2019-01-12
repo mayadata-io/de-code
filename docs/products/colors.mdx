@@ -2,7 +2,7 @@
 name: Colors
 menu: Product
 ---
-import { blue, gray, green, yellow, red, orange, cyan} from '../utils/colors.js'
+import { blue, gray, green, yellow, red, orange, cyan, purple} from '../utils/colors.js'
 import ColorBlock from './components/colorblock.js'
 
 # Colors
@@ -13,6 +13,7 @@ import ColorBlock from './components/colorblock.js'
   <div class="col-sm-3 color-base-block bg-warning"></div>
   <div class="col-sm-3 color-base-block bg-danger"></div>
   <div class="col-sm-3 color-base-block bg-info"></div>
+  <div class="col-sm-3 color-base-block bg-purple"></div>
   <div class="col-sm-3 color-base-block bg-orange"></div>
 </div>
 
@@ -23,6 +24,9 @@ import ColorBlock from './components/colorblock.js'
   </div>
   <div class="col-sm-3">
     <ColorBlock name={blue} />
+  </div>
+  <div class="col-sm-3">
+    <ColorBlock name={purple} />
   </div>
   <div class="col-sm-3">
     <ColorBlock name={green} />
@@ -39,4 +43,5 @@ import ColorBlock from './components/colorblock.js'
   <div class="col-sm-3">
     <ColorBlock name={cyan} />
   </div>
+
 </div>
