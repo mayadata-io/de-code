@@ -1,4 +1,7 @@
 // docs specific custom styles
+
+@import "../scss/app";
+
 .color-block-wrapper {
   flex: 1 1 auto!important;
   border-radius: 4px;
@@ -29,5 +32,19 @@
 }
 .css-pw2o4y {
   font-size: 14px !important;
-
+}
+.logobox {
+  border: 1px solid $gray-200;
+  border-radius:4px;
+}
+.logobox-header {
+  display: flex;
+  flex-grow: row;
+  justify-content: center;
+  padding: 8px 16px;
+  background: $gray-200;
+}
+.logobox-content {
+ padding: 36px 12px;
+ text-align:center;
 }
