@@ -2,28 +2,39 @@
 name: Colors
 menu: Product
 ---
-import { blue, gray, green, yellow, red, orange, cyan, purple} from '../utils/colors.js'
+import { blue, gray, green, yellow, red, orange, cyan, purple, violet, pink, aqua} from '../utils/colors.js'
 import ColorBlock from './components/colorblock.js'
 
 # Colors
 
+## Primary
 <div class="row">
   <div class="col-sm-3 color-base-block bg-primary"></div>
+  <div class="col-sm-3 color-base-block bg-violet"></div>
+</div>
+
+## Secondary
+<div class="row">
+  <div class="col-sm-3 color-base-block bg-aqua"></div>
   <div class="col-sm-3 color-base-block bg-success"></div>
   <div class="col-sm-3 color-base-block bg-warning"></div>
   <div class="col-sm-3 color-base-block bg-danger"></div>
   <div class="col-sm-3 color-base-block bg-info"></div>
   <div class="col-sm-3 color-base-block bg-purple"></div>
-  <div class="col-sm-3 color-base-block bg-orange"></div>
+  <div class="col-sm-3 color-base-block bg-pink"></div>
 </div>
 
 ## Palattes
+
 <div class="row">
   <div class="col-sm-3">
     <ColorBlock name={gray} />
   </div>
   <div class="col-sm-3">
     <ColorBlock name={blue} />
+  </div>
+  <div class="col-sm-3">
+    <ColorBlock name={violet} />
   </div>
   <div class="col-sm-3">
     <ColorBlock name={purple} />
@@ -41,7 +52,12 @@ import ColorBlock from './components/colorblock.js'
     <ColorBlock name={orange} />
   </div>
   <div class="col-sm-3">
+    <ColorBlock name={pink} />
+  </div>
+  <div class="col-sm-3">
     <ColorBlock name={cyan} />
   </div>
-
+  <div class="col-sm-3">
+    <ColorBlock name={aqua} />
+  </div>
 </div>

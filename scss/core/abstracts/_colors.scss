@@ -4,111 +4,150 @@
 
 // stylelint-disable
 // Gray palettes
-$white:    #FEFEFE !default;
-$gray-000: #FAFAFA !default;
-$gray-100: #E8EAF1 !default;
-$gray-200: #D0D3E2 !default;
-$gray-300: #ABB2CC !default;
-$gray-400: #8790B5 !default;
-$gray-500: #626F9F !default;
-$gray-600: #4B557B !default;
-$gray-700: #262B3E !default;
-$gray-800: #171A26 !default;
-$gray-900: #010101 !default;
+$white:    #FFFFFF !default;
+$gray-000: #EFEFF2 !default;
+$gray-100: #D1D2D9 !default;
+$gray-200: #B5B5C0 !default;
+$gray-300: #999AA7 !default;
+$gray-400: #7D7E8D !default;
+$gray-500: #626372 !default;
+$gray-600: #4D4E5A !default;
+$gray-700: #383842 !default;
+$gray-800: #23232A !default;
+$gray-900: #0F0F11 !default;
 
 // blue palette
-$blue-000: #fff !default;
-$blue-100: #D9E7FF !default;
-$blue-200: #ADCDFF !default;
-$blue-300: #82B4FF !default;
-$blue-400: #579BFF !default;
-$blue-500: #2B83FF !default;
-$blue-600: #006CFD !default;
-$blue-700: #004FCA !default;
-$blue-800: #003594 !default;
-$blue-900: #001E5E !default;
+$blue-000: #E6EDFF !default;
+$blue-100: #B8CFFF !default;
+$blue-200: #8AB1FF !default;
+$blue-300: #5C95FF !default;
+$blue-400: #2E7BFF !default;
+$blue-500: #0063FF !default;
+$blue-600: #004ED6 !default;
+$blue-700: #003AAC !default;
+$blue-800: #002883 !default;
+$blue-900: #001959 !default;
+
+// Aqua palette
+$aqua-000: #E6FCFF !default;
+$aqua-100: #B8F3FF !default;
+$aqua-200: #8AE6FF !default;
+$aqua-300: #5CD6FF !default;
+$aqua-400: #2EC2FF !default;
+$aqua-500: #00ABFF !default;
+$aqua-600: #008CD6 !default;
+$aqua-700: #006EAC !default;
+$aqua-800: #005183 !default;
+$aqua-900: #003659 !default;
 
 // red palette
-$red-000: #fff !default;
-$red-100: #FFD9DA !default;
-$red-200: #FFADB3 !default;
-$red-300: #FF8491 !default;
-$red-400: #FB6473 !default;
-$red-500: #EC4A59 !default;
-$red-600: #D83544 !default;
-$red-700: #AE2730 !default;
-$red-800: #821A1E !default;
-$red-900: #540F10 !default;
+$red-000: #FFE6E6 !default;
+$red-100: #FFB8BD !default;
+$red-200: #FF8C98 !default;
+$red-300: #FB6977 !default;
+$red-400: #EC4C5B !default;
+$red-500: #D83544 !default;
+$red-600: #B72A34 !default;
+$red-700: #962026 !default;
+$red-800: #73171A !default;
+$red-900: #500F0F !default;
 
 // green palette
-$green-000: #fff !default;
-$green-100: #D9FEEF !default;
-$green-200: #ADF7DC !default;
-$green-300: #82EBC6 !default;
-$green-400: #57DAAE !default;
-$green-500: #2BC394 !default;
-$green-600: #03A678 !default;
-$green-700: #008664 !default;
-$green-800: #00654D !default;
-$green-900: #004234 !default;
+$green-000: #E6FEF5 !default;
+$green-100: #B8F8E0 !default;
+$green-200: #8AEDCA !default;
+$green-300: #5CDBB1 !default;
+$green-400: #2EC396 !default;
+$green-500: #03A678 !default;
+$green-600: #008D69 !default;
+$green-700: #007458 !default;
+$green-800: #005A45 !default;
+$green-900: #003E31 !default;
 
 // yellow palette
-$yellow-000: #fff !default;
-$yellow-100: #FFFDD9 !default;
-$yellow-200: #FFF8AD !default;
-$yellow-300: #FFEE82 !default;
-$yellow-400: #FFE157 !default;
-$yellow-500: #FFD02B !default;
-$yellow-600: #F8BB00 !default;
-$yellow-700: #C99C00 !default;
-$yellow-800: #947900 !default;
-$yellow-900: #5E5100 !default;
+$yellow-000: #FFFEE6 !default;
+$yellow-100: #FFF8B8 !default;
+$yellow-200: #FFEF8A !default;
+$yellow-300: #FFE25C !default;
+$yellow-400: #FFD12E !default;
+$yellow-500: #F8BB00 !default;
+$yellow-600: #D3A300 !default;
+$yellow-700: #AC8900 !default;
+$yellow-800: #836C00 !default;
+$yellow-900: #594D00 !default;
 
 // orange palette
-$orange-000: #fff !default;
-$orange-100: #FFE6D9 !default;
-$orange-200: #FFCBAD !default;
-$orange-300: #FFB282 !default;
-$orange-400: #FF9A57 !default;
-$orange-500: #FF832B !default;
-$orange-600: #F26D00 !default;
-$orange-700: #C45B00 !default;
-$orange-800: #934700 !default;
-$orange-900: #5E3000 !default;
+$orange-000: #FFEEE6 !default;
+$orange-100: #FFD2B8 !default;
+$orange-200: #FFB78A !default;
+$orange-300: #FF9D5C !default;
+$orange-400: #FF852E !default;
+$orange-500: #F26D00 !default;
+$orange-600: #CE5F00 !default;
+$orange-700: #A95000 !default;
+$orange-800: #834000 !default;
+$orange-900: #592E00 !default;
 
 // cyan palette
-$cyan-000: #fff !default;
-$cyan-100: #D9FFFF !default;
-$cyan-200: #ADFFFF !default;
-$cyan-300: #82FFFF !default;
-$cyan-400: #57FFFF !default;
-$cyan-500: #31F6FB !default;
-$cyan-600: #1BE0E6 !default;
-$cyan-700: #12B0B9 !default;
-$cyan-800: #0A808B !default;
-$cyan-900: #05515A !default;
+$cyan-000: #E6FFFF !default;
+$cyan-100: #B8FFFF !default;
+$cyan-200: #8AFFFF !default;
+$cyan-300: #5CFFFF !default;
+$cyan-400: #33F6FB !default;
+$cyan-500: #1BE0E6 !default;
+$cyan-600: #14BBC4 !default;
+$cyan-700: #0D96A0 !default;
+$cyan-800: #08717B !default;
+$cyan-900: #054C56 !default;
 
 // purple palette
-$purple-000: #fff !default;
-$purple-100: #DAD9FF !default;
-$purple-200: #B5ADFF !default;
-$purple-300: #9582FF !default;
-$purple-400: #7A5DFF !default;
-$purple-500: #6445FF !default;
-$purple-600: #5333FF !default;
-$purple-700: #4425CA !default;
-$purple-800: #341894 !default;
-$purple-900: #220E5E !default;
+$purple-000: #FCE6FF !default;
+$purple-100: #F5B8FF !default;
+$purple-200: #EA8AFF !default;
+$purple-300: #DD5CFF !default;
+$purple-400: #CB2EFF !default;
+$purple-500: #B602FF !default;
+$purple-600: #9F00D6 !default;
+$purple-700: #8500AC !default;
+$purple-800: #690083 !default;
+$purple-900: #4B0059 !default;
+
+// violet palette
+$violet-000: #E6E6FF !default;
+$violet-100: #BEB8FF !default;
+$violet-200: #9B8AFF !default;
+$violet-300: #7E62FF !default;
+$violet-400: #6647FF !default;
+$violet-500: #5333FF !default;
+$violet-600: #4728D6 !default;
+$violet-700: #3B1EAC !default;
+$violet-800: #2E1583 !default;
+$violet-900: #200D59 !default;
+
+// pink palette
+$pink-000: #FFE6F3 !default;
+$pink-100: #FFB8DC !default;
+$pink-200: #FF8AC4 !default;
+$pink-300: #FF5CAD !default;
+$pink-400: #F92E94 !default;
+$pink-500: #E3147C !default;
+$pink-600: #C10E64 !default;
+$pink-700: #9E094E !default;
+$pink-800: #7A0538 !default;
+$pink-900: #550225 !default;
+
 
 // Base colors
-$blue:    $blue-600 !default;
+$blue:    $blue-500 !default;
+$violet:  $violet-500 !default;
 $indigo:  #6610f2 !default;
-$purple:  $purple-600 !default;
-$pink:    #e83e8c !default;
-$red:     $red-600 !default;
-$orange:  $orange-600 !default;
-$yellow:  $yellow-600 !default;
-$green:   $green-600 !default;
+$purple:  $purple-500 !default;
+$pink:    $pink-500 !default;
+$aqua:    $aqua-500 !default;
+$red:     $red-500 !default;
+$orange:  $orange-500 !default;
+$yellow:  $yellow-500 !default;
+$green:   $green-500 !default;
 $teal:    #20c997 !default;
 $teal-blue:#084766;
 $cyan:    $cyan-600 !default;
@@ -118,8 +157,10 @@ $colors: () !default;
 $colors: map-merge((
 
   "blue":       $blue,
+  "violet":     $violet,
   "indigo":     $indigo,
   "purple":     $purple,
+  "aqua":       $aqua,
   "pink":       $pink,
   "red":        $red,
   "orange":     $orange,
@@ -140,8 +181,8 @@ $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-600 !default;
+$light:         $white !default;
+$dark:          $gray-800 !default;
 
 //Color maps
 $theme-colors: () !default;
@@ -157,6 +198,9 @@ $theme-colors: map-merge((
   "white":      $white,
   "orange":     $orange,
   "purple":     $purple,
+  "violet":     $violet,
+  "pink":       $pink,
+  "aqua":       $aqua,
 
 ), $theme-colors);
 
@@ -187,6 +231,20 @@ $blues: map-merge((
   "800": $blue-800,
   "900": $blue-900
 ), $blues);
+
+$violets: () !default;
+$violets: map-merge((
+  "000": $violet-000,
+  "100": $violet-100,
+  "200": $violet-200,
+  "300": $violet-300,
+  "400": $violet-400,
+  "500": $violet-500,
+  "600": $violet-600,
+  "700": $violet-700,
+  "800": $violet-800,
+  "900": $violet-900
+), $violets);
 
 $greens: () !default;
 $greens: map-merge((
@@ -244,6 +302,20 @@ $cyans: map-merge((
   "900": $cyan-900
 ), $cyans);
 
+$aquas: () !default;
+$aquas: map-merge((
+  "000": $aqua-000,
+  "100": $aqua-100,
+  "200": $aqua-200,
+  "300": $aqua-300,
+  "400": $aqua-400,
+  "500": $aqua-500,
+  "600": $aqua-600,
+  "700": $aqua-700,
+  "800": $aqua-800,
+  "900": $aqua-900
+), $aquas);
+
 $purples: () !default;
 $purples: map-merge((
   "000": $purple-000,
@@ -257,6 +329,20 @@ $purples: map-merge((
   "800": $purple-800,
   "900": $purple-900
 ), $purples);
+
+$pinks: () !default;
+$pinks: map-merge((
+  "000": $pink-000,
+  "100": $pink-100,
+  "200": $pink-200,
+  "300": $pink-300,
+  "400": $pink-400,
+  "500": $pink-500,
+  "600": $pink-600,
+  "700": $pink-700,
+  "800": $pink-800,
+  "900": $pink-900
+), $pinks);
 
 $oranges: () !default;
 $oranges: map-merge((
