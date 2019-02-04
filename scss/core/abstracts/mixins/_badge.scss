@@ -10,3 +10,29 @@
     }
   }
 }
+@mixin badge-gradient-variant($color) {
+  @if $color == primary {
+    background-color: $blue-100;
+    color:            $blue-800;
+  }
+  @else if $color == secondary{
+    background-color: $gray-100;
+    color:            $gray-900;
+  }
+  @else if $color == success{
+    background-color: $green-100;
+    color:            $green-900;
+  }
+  @else if $color == danger{
+    background-color: $red-100;
+    color:            $red-900;
+  }
+  @else if $color == warning{
+    background-color: $yellow-100;
+    color:            $yellow-900;
+  }
+  @else if $color == info{
+    background-color: $cyan-100;
+    color:            $cyan-900;
+  }
+}

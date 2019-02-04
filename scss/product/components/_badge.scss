@@ -46,9 +46,17 @@
   }
 }
 
+// Gradient badges
+
+@each $color, $value in $theme-colors {
+  .badge-gradient-#{$color} {
+    @include badge-gradient-variant($color);
+  }
+}
+
 // Circle badges
 
-.badge-circle-wrapper{
+.badge-circle-wrapper {
   align-items: baseline;
 }
 .badge-circle {
@@ -62,15 +70,15 @@
   margin-left: 4px;
   vertical-align: middle;
 }
-.badge-circle-sm{
+.badge-circle-sm {
   height: 8px;
   width: 8px;
 }
-.badge-circle-md{
+.badge-circle-md {
   height: 12px;
   width: 12px;
 }
-.badge-circle-lg{
+.badge-circle-lg {
   height: 14px;
   width: 14px;
 }
