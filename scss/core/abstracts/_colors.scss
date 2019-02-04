@@ -170,6 +170,7 @@ $colors: map-merge((
   "teal":       $teal,
   "cyan":       $cyan,
   "white":      $white,
+  "light":      $gray-100,
   "gray":       $gray-600,
   "gray-dark":  $gray-800
 ), $colors);
@@ -181,7 +182,7 @@ $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $white !default;
+$light:         $gray-000 !default;
 $dark:          $gray-800 !default;
 
 //Color maps
