@@ -4,5 +4,194 @@ menu: Product
 
 ---
 import { Playground, PropsTable } from 'docz'
+import digitalocean from '../../resources/images/clusters/digitalocean.png'
+import azure from '../../resources/images/clusters/azure.png'
+import gke from '../../resources/images/clusters/gke.png'
+import minikube from '../../resources/images/clusters/minikube.png'
+import openshift from '../../resources/images/clusters/openshift.png'
+
 
 # Tables
+
+## Default table
+<Playground>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Status</th>
+        <th scope="col">K8s version</th>
+        <th scope="col">Nodes</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Dev-cluster-yg238
+        </td>
+        <td><span class="badge badge-gradient-success badge-pill">Active</span></td>
+        <td>v1.10.11-gke.1</td>
+        <td>12</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>
+          Testing-cluster-tr33d
+        </td>
+        <td><span class="badge badge-gradient-danger badge-pill">Inactive</span></td>
+        <td>v1.10</td>
+        <td>3</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>
+          Staging-setup-df12s
+        </td>
+        <td><span class="badge badge-gradient-warning badge-pill">Degrated</span></td>
+        <td>v1.10.11</td>
+        <td>6</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>
+          Monitor-cluster-8hjq7
+        </td>
+        <td><span class="badge badge-gradient-success badge-pill">Active</span></td>
+        <td>v1.13.2</td>
+        <td>12</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>
+          Asia-scope-72dr4
+        </td>
+        <td><span class="badge badge-gradient-danger badge-pill">Offline</span></td>
+        <td>v1.10.13</td>
+        <td>12</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</Playground>
+
+## Table with avatar
+<Playground>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Status</th>
+        <th scope="col">K8s version</th>
+        <th scope="col">Nodes</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div class="table-avatar">
+            <div><img class="table-avatar-image" src={gke} /></div>
+            <span class="table-avatar-label">Dev-cluster-yg238</span>
+          </div>
+        </td>
+        <td><span class="badge badge-gradient-success badge-pill">Active</span></td>
+        <td>v1.10.11-gke.1</td>
+        <td>12</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="table-avatar">
+            <div><img class="table-avatar-image" src={azure} /></div>
+            <span class="table-avatar-label">Testing-cluster-tr33d</span>
+          </div>
+        </td>
+        <td><span class="badge badge-gradient-danger badge-pill">Inactive</span></td>
+        <td>v1.10</td>
+        <td>3</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="table-avatar">
+            <div><img class="table-avatar-image" src={minikube} /></div>
+            <span class="table-avatar-label">Staging-setup-df12s</span>
+          </div>
+        </td>
+        <td><span class="badge badge-gradient-warning badge-pill">Degrated</span></td>
+        <td>v1.10.11</td>
+        <td>6</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="table-avatar">
+            <div><img class="table-avatar-image" src={digitalocean} /></div>
+            <span class="table-avatar-label">Monitor-cluster-8hjq7</span>
+          </div>
+        </td>
+        <td><span class="badge badge-gradient-success badge-pill">Active</span></td>
+        <td>v1.13.2</td>
+        <td>12</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="table-avatar">
+            <div><img class="table-avatar-image" src={openshift} /></div>
+            <span class="table-avatar-label">Asia-scope-72dr4</span>
+          </div>
+        </td>
+        <td><span class="badge badge-gradient-danger badge-pill">Offline</span></td>
+        <td>v1.10.13</td>
+        <td>12</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</Playground>
+
+## Table with actions
+<Playground>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Status</th>
+        <th scope="col">K8s version</th>
+        <th scope="col">Nodes</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Asia-scope-72dr4
+        </td>
+        <td><span class="badge badge-gradient-danger badge-pill">Offline</span></td>
+        <td>v1.10.13</td>
+        <td>12</td>
+        <td>
+          <div class="table-action">
+            <div class="table-action_item">
+              <div class="table-action_link">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="table-action_item">
+              <div class="table-action_link">
+                <i class="fa fa-area-chart" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="table-action_item">
+              <div class="table-action_link">
+                <i class="fa fa-trash"></i>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</Playground>

@@ -11,7 +11,7 @@
   th,
   td {
     padding: $table-cell-padding;
-    vertical-align: top;
+    vertical-align: middle;
     border-top: $table-border-width solid $table-border-color;
   }
 
@@ -86,6 +86,33 @@
   }
 }
 
+// Avatar images in td
+.table-avatar {
+  display: flex;
+  align-items: center;
+  .table-avatar-image {
+    border:1px solid $gray-200;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .table-avatar-label {
+    margin-left: 12px;
+  }
+}
+
+// Action bottons or links in row
+.table-action {
+  display: flex;
+  flex-direction: row;
+}
+.table-action_item {
+  margin: 0 8px;
+}
+
+.table-action_link {
+  cursor: pointer;
+}
 
 // Table backgrounds
 //
