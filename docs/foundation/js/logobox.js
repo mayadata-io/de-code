@@ -1,15 +1,49 @@
 import React from 'react';
 
-const LogoBox = (props) => (
-  <div class="logobox">
-    <div class="logobox-header">
-      <div class="ml-auto">
-        <a href={props.light} target="_blank"><span class="fa fa-download"></span></a>
+class LogoBox extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      theme:     'logo-light', //default
+      logo:       props.light, //default
+      download:   props.download,
+      logoLight:  props.light,
+      logoDark:   props.dark,
+    }
+  }
+  changeTheme() {
+    let currentTheme = this.state.theme;
+    console.log('currentTheme', currentTheme, 'logo', this.state.logo)
+    if(currentTheme === 'logo-dark') {
+      this.setState({theme: 'logo-light', logo: this.state.logoLight})
+    }
+    else {
+      this.setState({theme: 'logo-dark', logo: this.state.logoDark})
+    }
+  }
+  download() {
+    console.log('download', this.state.download);
+    window.open(this.state.download);
+  }
+  render() {
+    return(
+      <div className="logobox">
+        <div className="logobox-header">
+          <div className="ml-auto">
+            <span>
+             <button className="btn btn-link" onClick={this.download.bind(this)}><span className="fa fa-download"></span></button>
+            </span>
+            <span>
+             <button className="btn btn-link" onClick={this.changeTheme.bind(this)}><span className="fa fa-adjust"></span></button>
+            </span>
+          </div>
+        </div>
+        <div className={`logobox-content ${this.state.theme}`}>
+         <img src={this.state.logo} className="img-fluid"/>
+        </div>
       </div>
-    </div>
-    <div class="logobox-content">
-     <img src={props.light} class="img-fluid"/>
-    </div>
-  </div>
-)
+    );
+  }
+}
+
 export default LogoBox;
