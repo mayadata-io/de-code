@@ -36,15 +36,25 @@
 .logobox {
   border: 1px solid $gray-200;
   border-radius:4px;
+  overflow: hidden;
 }
 .logobox-header {
   display: flex;
   flex-grow: row;
   justify-content: center;
-  padding: 8px 16px;
-  background: $gray-200;
+  background: $gray-100;
 }
 .logobox-content {
  padding: 36px 12px;
  text-align:center;
+}
+.logobox-footer {
+  background: $gray-100;
+  overflow: hidden;
+}
+.logo-light {
+  background: $white;
+}
+.logo-dark {
+  background: $gray-300;
 }

@@ -3,17 +3,28 @@ name: Logos
 menu: Foundation
 ---
 import LogoBox from './js/logobox'
+
 import MayaDataLight from '../../resources/logos/mayadata-light.svg'
+import MayaDataDark from '../../resources/logos/mayadata-dark.svg'
+
 import MDAPLight from '../../resources/logos/mdap-light.svg'
+import MDAPDark from '../../resources/logos/mdap-dark.svg'
+
 import MayaOnlineLight from '../../resources/logos/mayaonline-light.svg'
-import OpenEBS from '../../resources/logos/openebs.svg'
-import Litums from '../../resources/logos/litmus.svg'
+import MayaOnlineDark from '../../resources/logos/mayaonline-dark.svg'
+
+import OpenEBSLight from '../../resources/logos/openebs.svg'
+import OpenEBSDark from '../../resources/logos/openebs-dark.svg'
+
+import LitumsLight from '../../resources/logos/litmus.svg'
+import LitumsDark from '../../resources/logos/litmus-dark.svg'
+
 
 # Logos
 ## MayaData
 <div class="row">
   <div class="col-4">
-    <LogoBox light={MayaDataLight} dark={MayaDataLight}/>
+    <LogoBox light={MayaDataLight} dark={MayaDataDark} download={MayaDataLight}/>
     <div class="m-4"></div>
   </div>
 </div>
@@ -21,11 +32,11 @@ import Litums from '../../resources/logos/litmus.svg'
 ## MayaData product
 <div class="row">
   <div class="col-4">
-    <LogoBox light={MDAPLight} dark={MDAPLight}/>
+    <LogoBox light={MDAPLight} dark={MDAPDark} download={MDAPLight}/>
     <div class="m-4"></div>
   </div>
     <div class="col-4">
-      <LogoBox light={MayaOnlineLight} dark={MayaOnlineLight}/>
+      <LogoBox light={MayaOnlineLight} dark={MayaOnlineDark} download={MayaOnlineLight}/>
       <div class="m-4"></div>
     </div>
 </div>
@@ -33,11 +44,11 @@ import Litums from '../../resources/logos/litmus.svg'
 ## Open source projects
 <div class="row">
   <div class="col-4">
-    <LogoBox light={OpenEBS} dark={OpenEBS}/>
+    <LogoBox light={OpenEBSLight} dark={OpenEBSDark} download={OpenEBSLight}/>
     <div class="m-4"></div>
   </div>
     <div class="col-4">
-      <LogoBox light={Litums} dark={Litums}/>
+      <LogoBox light={LitumsLight} dark={LitumsDark} download={LitumsLight}/>
       <div class="m-4"></div>
     </div>
 </div>
