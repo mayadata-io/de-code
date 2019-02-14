@@ -40,7 +40,7 @@ export default {
     styles: {
       body: {
         fontFamily: '-apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif',
-        fintSize: 14, //default
+        fontSize: 14, //default
       },
       h1: {
         fontSize: '4em',
