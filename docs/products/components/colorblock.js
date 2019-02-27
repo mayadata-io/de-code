@@ -14,6 +14,7 @@ function ColorBlock(props) {
           <div className={`color-variant-block bg-${ color.name }`} key={ color.name }>
             <div className="color-details">
               <div className={yiq(color.hax)}><span className="font-weight-normal">{color.name}</span></div>
+              <div className={yiq(color.hax)}><span className="font-weight-normal">{color.hax}</span></div>
             </div>
           </div>
         )
