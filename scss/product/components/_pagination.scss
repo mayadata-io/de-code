@@ -11,11 +11,15 @@
   line-height: $pagination-line-height;
   color: $pagination-color;
   background-color: $pagination-bg;
+  -webkit-transition: $transition-base; /* Safari */
+  transition: $transition-base;
   @include border-radius($border-radius);
 
   &:hover {
     text-decoration: none;
     background-color: $pagination-hover-bg;
+    -webkit-transition: $transition-base; /* Safari */
+    transition: $transition-base;
   }
 
   &:focus {
