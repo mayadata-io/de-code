@@ -13,7 +13,6 @@
   color: $input-color;
   background-color: $input-bg;
   background-clip: padding-box;
-  //border: $input-border-width solid $input-border-color;
   border:0px;
 
   // Note: This has no effect on <select>s in some browsers, due to the limited stylability of `<select>`s in CSS.
@@ -200,6 +199,23 @@ select.form-control-lg {
   > [class*="col-"] {
     padding-right: 5px;
     padding-left: 5px;
+  }
+}
+
+//advaced input fields
+// Search icon with input
+.input-search-icon_wrapper {
+  .input-search-icon {
+    position: absolute;
+    left: 36px;
+    width:18px;
+    height:32px;
+    background: $input-search-icon-bg;
+    background-position-y: center;
+    background-repeat: no-repeat;
+  }
+  input {
+    padding-left:30px;
   }
 }
 
