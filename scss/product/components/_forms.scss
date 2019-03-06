@@ -207,11 +207,12 @@ select.form-control-lg {
 .input-search-icon_wrapper {
   .input-search-icon {
     position: absolute;
-    bottom: 32px;
     left: 36px;
-    svg {
-      fill: $gray-400;
-    }
+    width:18px;
+    height:32px;
+    background: $input-search-icon-bg;
+    background-position-y: center;
+    background-repeat: no-repeat;
   }
   input {
     padding-left:30px;

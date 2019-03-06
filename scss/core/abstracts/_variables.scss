@@ -355,6 +355,8 @@ $input-height-lg:                       calc(#{$input-height-inner-lg} + #{$inpu
 
 $input-transition:                      border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 
+$input-search-icon-bg:                  str-replace(url("data:image/svg+xml;utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='#{$gray-400}' viewBox='0 0 16 16'%3E%3Cpath d='M10.125 9.054l3.536 3.536c.321.321.339.839.054 1.143-.304.268-.804.25-1.125-.071l-3.536-3.536c-.732.5-1.625.875-2.589.875-2.464 0-4.464-2.054-4.464-4.518s2-4.482 4.464-4.482 4.464 2.018 4.464 4.482c0 .982-.304 1.839-.804 2.571zM3.5 6.482c0 1.661 1.321 2.982 2.964 2.982s3-1.321 3-2.982c0-1.625-1.357-2.982-3-2.982S3.5 4.857 3.5 6.482z'/%3E%3C/svg%3E"), "#", "%23") !default;
+
 $form-text-margin-top:                  .25rem !default;
 
 $form-check-input-gutter:               1.25rem !default;
