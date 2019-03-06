@@ -338,9 +338,9 @@ $input-focus-bg:                        $white !default;
 $input-focus-border-color:              lighten($component-active-bg, 25%) !default;
 $input-focus-color:                     $input-color !default;
 $input-focus-width:                     $input-btn-focus-width !default;
-$input-focus-box-shadow:                $input-btn-focus-box-shadow !default;
+$input-focus-box-shadow:                inset 0 0 0 2px $primary !default;
 
-$input-placeholder-color:               $gray-600 !default;
+$input-placeholder-color:               $gray-500 !default;
 
 $input-height-border:                   $input-border-width * 2 !default;
 
