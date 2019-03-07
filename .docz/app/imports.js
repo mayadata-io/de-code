@@ -1,16 +1,10 @@
 export const imports = {
   'getstarted.mdx': () =>
     import(/* webpackPrefetch: true, webpackChunkName: "getstarted" */ 'getstarted.mdx'),
-  'marketing/buttons.mdx': () =>
-    import(/* webpackPrefetch: true, webpackChunkName: "marketing-buttons" */ 'marketing/buttons.mdx'),
-  'marketing/colors.mdx': () =>
-    import(/* webpackPrefetch: true, webpackChunkName: "marketing-colors" */ 'marketing/colors.mdx'),
-  'marketing/forms.mdx': () =>
-    import(/* webpackPrefetch: true, webpackChunkName: "marketing-forms" */ 'marketing/forms.mdx'),
-  'marketing/logos.mdx': () =>
-    import(/* webpackPrefetch: true, webpackChunkName: "marketing-logos" */ 'marketing/logos.mdx'),
-  'marketing/typography.mdx': () =>
-    import(/* webpackPrefetch: true, webpackChunkName: "marketing-typography" */ 'marketing/typography.mdx'),
+  'foundation/logos.mdx': () =>
+    import(/* webpackPrefetch: true, webpackChunkName: "foundation-logos" */ 'foundation/logos.mdx'),
+  'foundation/typography.mdx': () =>
+    import(/* webpackPrefetch: true, webpackChunkName: "foundation-typography" */ 'foundation/typography.mdx'),
   'products/alerts.mdx': () =>
     import(/* webpackPrefetch: true, webpackChunkName: "products-alerts" */ 'products/alerts.mdx'),
   'products/avatars.mdx': () =>
@@ -19,14 +13,12 @@ export const imports = {
     import(/* webpackPrefetch: true, webpackChunkName: "products-badge" */ 'products/badge.mdx'),
   'products/banners.mdx': () =>
     import(/* webpackPrefetch: true, webpackChunkName: "products-banners" */ 'products/banners.mdx'),
-  'products/buttons.mdx': () =>
-    import(/* webpackPrefetch: true, webpackChunkName: "products-buttons" */ 'products/buttons.mdx'),
   'products/breadcrumb.mdx': () =>
     import(/* webpackPrefetch: true, webpackChunkName: "products-breadcrumb" */ 'products/breadcrumb.mdx'),
+  'products/buttons.mdx': () =>
+    import(/* webpackPrefetch: true, webpackChunkName: "products-buttons" */ 'products/buttons.mdx'),
   'products/cards.mdx': () =>
     import(/* webpackPrefetch: true, webpackChunkName: "products-cards" */ 'products/cards.mdx'),
-  'products/checkbox.mdx': () =>
-    import(/* webpackPrefetch: true, webpackChunkName: "products-checkbox" */ 'products/checkbox.mdx'),
   'products/colors.mdx': () =>
     import(/* webpackPrefetch: true, webpackChunkName: "products-colors" */ 'products/colors.mdx'),
   'products/dropdown.mdx': () =>

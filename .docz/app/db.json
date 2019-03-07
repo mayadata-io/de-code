@@ -11,11 +11,25 @@
     "themeConfig": {
       "mode": "light",
       "colors": {
-        "sidebarBg": "white"
+        "white": "#FFFFFF",
+        "grayExtraLight": "#EEF1F5",
+        "grayLight": "#CED4DE",
+        "gray": "#7D899C",
+        "grayDark": "#383842",
+        "grayExtraDark": "#0F0F11",
+        "dark": "#23232A",
+        "blue": "#0063FF",
+        "primary": "#0063FF",
+        "text": "#383842",
+        "link": "#0063FF",
+        "sidebarBg": "white",
+        "footerText": "#383842",
+        "sidebarText": "#23232A"
       },
       "styles": {
         "body": {
-          "fontFamily": "-apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif"
+          "fontFamily": "-apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+          "fontSize": 14
         },
         "h1": {
           "fontSize": "4em",
@@ -28,6 +42,7 @@
     "port": "9999",
     "src": "docs",
     "dest": "dist",
+    "base": "/de-code/",
     "plugins": [
       {}
     ]
@@ -47,85 +62,64 @@
           "depth": 1,
           "slug": "get-started",
           "value": "Get started"
-        }
-      ]
-    },
-    "marketing/buttons.mdx": {
-      "name": "Buttons",
-      "menu": "Marketing",
-      "id": "a435ce2e1b38acbe5f297ac668922011",
-      "filepath": "marketing/buttons.mdx",
-      "link": null,
-      "slug": "marketing-buttons",
-      "route": "/marketing-buttons",
-      "order": 0,
-      "headings": [
+        },
         {
-          "depth": 1,
-          "slug": "buttons",
-          "value": "Buttons"
-        }
-      ]
-    },
-    "marketing/colors.mdx": {
-      "name": "Colors",
-      "menu": "Marketing",
-      "id": "8090dda17e8d30fa6a7dd44640960c06",
-      "filepath": "marketing/colors.mdx",
-      "link": null,
-      "slug": "marketing-colors",
-      "route": "/marketing-colors",
-      "order": 0,
-      "headings": [
+          "depth": 2,
+          "slug": "installation",
+          "value": "Installation"
+        },
         {
-          "depth": 1,
-          "slug": "colors",
-          "value": "Colors"
-        }
-      ]
-    },
-    "marketing/forms.mdx": {
-      "name": "Forms",
-      "menu": "Marketing",
-      "id": "06115b648db36b3c1e4dd364c8db79cf",
-      "filepath": "marketing/forms.mdx",
-      "link": null,
-      "slug": "marketing-forms",
-      "route": "/marketing-forms",
-      "order": 0,
-      "headings": [
+          "depth": 2,
+          "slug": "usages",
+          "value": "Usages"
+        },
         {
-          "depth": 1,
-          "slug": "forms",
-          "value": "Forms"
+          "depth": 3,
+          "slug": "cdn",
+          "value": "CDN"
         }
       ]
     },
-    "marketing/logos.mdx": {
+    "foundation/logos.mdx": {
       "name": "Logos",
-      "menu": "Marketing",
-      "id": "767b10bc78651e0cb8040456d8b93181",
-      "filepath": "marketing/logos.mdx",
+      "menu": "Foundation",
+      "id": "f102cc9e898ddcd9c88660eb9ea56356",
+      "filepath": "foundation/logos.mdx",
       "link": null,
-      "slug": "marketing-logos",
-      "route": "/marketing-logos",
+      "slug": "foundation-logos",
+      "route": "/foundation-logos",
       "order": 0,
       "headings": [
         {
           "depth": 1,
           "slug": "logos",
           "value": "Logos"
+        },
+        {
+          "depth": 2,
+          "slug": "mayadata",
+          "value": "MayaData"
+        },
+        {
+          "depth": 2,
+          "slug": "mayadata-product",
+          "value": "MayaData product"
+        },
+        {
+          "depth": 2,
+          "slug": "open-source-projects",
+          "value": "Open source projects"
         }
       ]
     },
-    "marketing/typography.mdx": {
+    "foundation/typography.mdx": {
       "name": "Typography",
-      "menu": "Marketing",
-      "id": "4061c11d950e37b6c44a56bf914f6a29",
-      "filepath": "marketing/typography.mdx",
+      "menu": "Foundation",
+      "id": "0d87ddf8d8c40de6791174ffa8d48509",
+      "filepath": "foundation/typography.mdx",
       "link": null,
-      "slug": "marketing-typography",
-      "route": "/marketing-typography",
+      "slug": "foundation-typography",
+      "route": "/foundation-typography",
       "order": 0,
       "headings": [
         {
@@ -191,6 +185,21 @@
           "depth": 4,
           "slug": "avatar-placeholder-with-themes",
           "value": "Avatar placeholder with themes"
+        },
+        {
+          "depth": 2,
+          "slug": "examples",
+          "value": "Examples"
+        },
+        {
+          "depth": 3,
+          "slug": "cluster-locations",
+          "value": "Cluster locations"
+        },
+        {
+          "depth": 3,
+          "slug": "openebs-workloads",
+          "value": "OpenEBS workloads"
         }
       ]
     },
@@ -210,14 +219,29 @@
           "value": "Badge"
         },
         {
-          "depth": 2,
-          "slug": "badge-variations",
-          "value": "Badge variations"
+          "depth": 3,
+          "slug": "default-badge",
+          "value": "Default badge"
         },
         {
           "depth": 3,
-          "slug": "pill-badges",
-          "value": "Pill badges"
+          "slug": "gradient-badge",
+          "value": "Gradient badge"
+        },
+        {
+          "depth": 3,
+          "slug": "pill-badge",
+          "value": "Pill badge"
+        },
+        {
+          "depth": 3,
+          "slug": "circle-badge",
+          "value": "Circle badge"
+        },
+        {
+          "depth": 3,
+          "slug": "sizes",
+          "value": "sizes"
         }
       ]
     },
@@ -299,6 +323,21 @@
           "depth": 3,
           "slug": "dark",
           "value": "Dark"
+        },
+        {
+          "depth": 2,
+          "slug": "button-group",
+          "value": "Button group"
+        },
+        {
+          "depth": 3,
+          "slug": "button-group-with-icons",
+          "value": "Button group with icons"
+        },
+        {
+          "depth": 3,
+          "slug": "button-group-with-text",
+          "value": "Button group with text"
         }
       ]
     },
@@ -316,6 +355,38 @@
           "depth": 1,
           "slug": "cards",
           "value": "Cards"
+        }
+      ]
+    },
+    "products/colors.mdx": {
+      "name": "Colors",
+      "menu": "Product",
+      "id": "cab2878c920936a5321544fb2363ca1e",
+      "filepath": "products/colors.mdx",
+      "link": null,
+      "slug": "products-colors",
+      "route": "/products-colors",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "colors",
+          "value": "Colors"
+        },
+        {
+          "depth": 2,
+          "slug": "primary",
+          "value": "Primary"
+        },
+        {
+          "depth": 2,
+          "slug": "secondary",
+          "value": "Secondary"
+        },
+        {
+          "depth": 2,
+          "slug": "palattes",
+          "value": "Palattes"
         }
       ]
     },
@@ -350,6 +421,31 @@
           "depth": 1,
           "slug": "inputs",
           "value": "Inputs"
+        },
+        {
+          "depth": 2,
+          "slug": "text",
+          "value": "Text"
+        },
+        {
+          "depth": 3,
+          "slug": "advanced",
+          "value": "Advanced"
+        },
+        {
+          "depth": 4,
+          "slug": "search-input-field",
+          "value": "Search input field"
+        },
+        {
+          "depth": 2,
+          "slug": "checkbox",
+          "value": "Checkbox"
+        },
+        {
+          "depth": 2,
+          "slug": "radio",
+          "value": "Radio"
         }
       ]
     },
@@ -367,28 +463,6 @@
           "depth": 1,
           "slug": "lists",
           "value": "Lists"
-        }
-      ]
-    },
-    "products/colors.mdx": {
-      "name": "Colors",
-      "menu": "Product",
-      "id": "cab2878c920936a5321544fb2363ca1e",
-      "filepath": "products/colors.mdx",
-      "link": null,
-      "slug": "products-colors",
-      "route": "/products-colors",
-      "order": 0,
-      "headings": [
-        {
-          "depth": 1,
-          "slug": "colors",
-          "value": "Colors"
-        },
-        {
-          "depth": 2,
-          "slug": "palattes",
-          "value": "Palattes"
         }
       ]
     },
@@ -440,6 +514,31 @@
           "depth": 1,
           "slug": "paginations",
           "value": "Paginations"
+        },
+        {
+          "depth": 3,
+          "slug": "default-centerd",
+          "value": "Default centerd"
+        },
+        {
+          "depth": 3,
+          "slug": "disabled-and-active-states",
+          "value": "Disabled and active states"
+        },
+        {
+          "depth": 2,
+          "slug": "sizes",
+          "value": "Sizes"
+        },
+        {
+          "depth": 4,
+          "slug": "small",
+          "value": "Small"
+        },
+        {
+          "depth": 4,
+          "slug": "large",
+          "value": "Large"
         }
       ]
     },
@@ -474,6 +573,21 @@
           "depth": 1,
           "slug": "tables",
           "value": "Tables"
+        },
+        {
+          "depth": 2,
+          "slug": "default-table",
+          "value": "Default table"
+        },
+        {
+          "depth": 2,
+          "slug": "table-with-avatar",
+          "value": "Table with avatar"
+        },
+        {
+          "depth": 2,
+          "slug": "table-with-actions",
+          "value": "Table with actions"
         }
       ]
     },
