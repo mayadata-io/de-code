@@ -30,3 +30,22 @@
 .outlet-header__bottom-bat-items {
   margin-right: 16px;
 }
+
+// section header
+
+.section-header {
+  margin-bottom: 16px;
+  .section-header_title {
+      margin-bottom: 4px;
+    .section-header_title__text{
+      font-size: 18px;
+    }
+  }
+  .section-header-controls {
+    display: flex;
+    align-items: center;
+    .section-header-controls_item {
+      padding-right: 12px;
+    }
+  }
+}
