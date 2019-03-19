@@ -1,0 +1,140 @@
+---
+name: Header
+menu: Product
+---
+
+import { Playground, PropsTable } from 'docz'
+
+# Headers
+## Page Header
+### Example one
+
+<Playground>
+  <div class="outlet-header">
+    <div class="outlet-header__top-bar">
+      <div class="outlet-header__top-bar-title">
+        <span>Clusters</span>
+      </div>
+    </div>
+  </div>
+</Playground>
+
+### Example two
+##### Page header with an global level action button
+
+<Playground>
+  <div class="outlet-header">
+    <div class="outlet-header__top-bar">
+      <div class="outlet-header__top-bar-title">
+        <span>Clusters</span>
+      </div>
+      <div class="outlet-header__actions ml-auto">
+        <div>
+          <button class="btn btn-primary" title="Import new cluster">Connect a new Cluster</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</Playground>
+
+### Example three
+##### Page header with back button
+
+
+<Playground>
+  <div class="outlet-header">
+    <div class="outlet-header__top-bar">
+      <div class="outlet-header__top-bar-title">
+        <span>Overview</span>
+      </div>
+    </div>
+    <div class="outlet-header-meta-block">
+      <span class="outlet-header-meta-block_content">Dev-cluster-23u72</span>
+      <span class="badge badge-gradient-success badge-pill">Active</span>
+    </div>
+  </div>
+</Playground>
+
+### Example four
+##### Page header with a back navigation button
+
+
+<Playground>
+  <div class="outlet-header">
+    <div class="outlet-header-navigation">
+      <div class="outlet-header-navigation_button">
+        <span class="fa fa-arrow-left outlet-header-navigation_icon"></span>
+        <span>Back</span>
+      </div>
+    </div>
+    <div class="outlet-header__top-bar">
+      <div class="outlet-header__top-bar-title">
+        <span>Overview</span>
+      </div>
+    </div>
+    <div class="outlet-header-meta-block">
+      <span class="outlet-header-meta-block_content">Dev-cluster-23u72</span>
+      <span class="badge badge-gradient-success badge-pill">Active</span>
+    </div>
+  </div>
+</Playground>
+
+
+### Example five
+##### Section header
+<Playground>
+  <div class="section-header">
+    <div class="section-header_title">
+      <span class="section-header_title__text">Volumes</span>
+    </div>
+    <div class="section-header-controls">
+      <div class="section-header-controls_item">
+        <input type="text" class="form-control" placeholder="Find an application..."/>
+      </div>
+      <div class="section-header-controls_item">
+        <button class="btn btn-secondary"><span class="fa fa-edit"></span></button>
+      </div>
+      <div class="section-header-controls_item">
+        <button class="btn btn-secondary"><span class="fa fa-filter"></span></button>
+      </div>
+      <div class="section-header-controls_item ml-auto">
+        <button class="btn btn-primary">Primary action</button>
+      </div>
+    </div>
+  </div>
+</Playground>
+
+### Example six
+##### Page header, section header and contents
+<Playground>
+  <div class="outlet-header">
+    <div class="outlet-header__top-bar">
+      <div class="outlet-header__top-bar-title">
+        <span>Overview</span>
+      </div>
+    </div>
+    <div class="outlet-header-meta-block">
+      <span class="outlet-header-meta-block_content">Dev-cluster-23u72</span>
+      <span class="badge badge-gradient-success badge-pill">Active</span>
+    </div>
+  </div>
+  <div class="section-header">
+    <div class="section-header_title">
+      <span class="section-header_title__text">Volumes</span>
+    </div>
+    <div class="section-header-controls">
+      <div class="section-header-controls_item">
+        <input type="text" class="form-control" placeholder="Find an application..."/>
+      </div>
+      <div class="section-header-controls_item">
+        <button class="btn btn-secondary"><span class="fa fa-edit"></span></button>
+      </div>
+      <div class="section-header-controls_item">
+        <button class="btn btn-secondary"><span class="fa fa-filter"></span></button>
+      </div>
+      <div class="section-header-controls_item ml-auto">
+        <button class="btn btn-primary">Primary action</button>
+      </div>
+    </div>
+  </div>
+</Playground>
