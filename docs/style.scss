@@ -59,3 +59,18 @@
 .logo-dark {
   background: $gray-300;
 }
+
+//icons page
+.icon-box-content:not(:last-child) {
+  flex:1 1 auto!important;
+}
+.icon-box-content {
+  background: $gray-000;
+  padding: 14px 18px;
+  margin:4px;
+  border-radius:4px;
+  min-width: 202px;
+  span {
+    vertical-align:middle;
+  }
+}
