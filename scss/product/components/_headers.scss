@@ -11,11 +11,19 @@
   .outlet-header-navigation_button {
     cursor: pointer;
     color: $link-color;
+    background: none;
+    border: 0;
     text-decoration: $link-decoration;
+    padding: 0;
 
     &:hover {
       color: $link-hover-color;
       text-decoration: $link-decoration;
+    }
+
+    &:focus {
+      outline: 0;
+      box-shadow: 0;
     }
 
     .outlet-header-navigation_icon {
