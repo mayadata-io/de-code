@@ -6,13 +6,134 @@ menu: Product
 import { Playground, PropsTable } from 'docz'
 
 # Cards
+### Example
+#### Card with no contents.
 <Playground>
-<div class="card">
-  <div class="card-header">
-    <span class="card-title">Title</span>
+  <div class="card">
+    <div class="card-body">
+      Card body
+    </div>
   </div>
-  <div class="card-body">
-    card contents
+</Playground>
+
+### Example two
+#### Card with section header
+<Playground>
+  <div class="card">
+    <div class="card-body">
+      <div class="section-header">
+        <div class="section-header_title">
+          <span class="section-header_title__text">Volumes</span>
+        </div>
+        <div class="section-header-controls">
+          <div class="section-header-controls_item">
+            <input class="form-control" placeholder="Find an application" />
+          </div>
+          <div class="section-header-controls_item">
+            <button class="btn btn-secondary">
+              <span class="fa fa-edit" />
+            </button>
+          </div>
+          <div class="section-header-controls_item">
+            <button class="btn btn-secondary">
+              <span class="fa fa-filter" />
+            </button>
+          </div>
+          <div class="section-header-controls_item ml-auto">
+            <button class="btn btn-primary">Primary action</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</Playground>
+
+### Example three
+#### Card with section header and content
+<Playground>
+  <div class="card">
+    <div class="card-body">
+      <div class="section-header">
+        <div class="section-header_title">
+          <span class="section-header_title__text">Volumes</span>
+        </div>
+        <div class="section-header-controls">
+          <div class="section-header-controls_item">
+            <input class="form-control" placeholder="Find an application" />
+          </div>
+          <div class="section-header-controls_item">
+            <button class="btn btn-secondary">
+              <span class="fa fa-edit" />
+            </button>
+          </div>
+          <div class="section-header-controls_item">
+            <button class="btn btn-secondary">
+              <span class="fa fa-filter" />
+            </button>
+          </div>
+          <div class="section-header-controls_item ml-auto">
+            <button class="btn btn-primary">Primary action</button>
+          </div>
+        </div>
+      </div>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Status</th>
+            <th scope="col">K8s version</th>
+            <th scope="col">Nodes</th>
+            <th scope="col" />
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dev-cluster-yg238</td>
+            <td>
+              <span class="badge badge-gradient-success badge-pill">Active</span>
+            </td>
+            <td>v1.10.11-gke.1</td>
+            <td>12</td>
+            <td />
+          </tr>
+          <tr>
+            <td>Testing-cluster-tr33d</td>
+            <td>
+              <span class="badge badge-gradient-danger badge-pill">Inactive</span>
+            </td>
+            <td>v1.10</td>
+            <td>3</td>
+            <td />
+          </tr>
+          <tr>
+            <td>Staging-setup-df12s</td>
+            <td>
+              <span class="badge badge-gradient-warning badge-pill">Degrated</span>
+            </td>
+            <td>v1.10.11</td>
+            <td>6</td>
+            <td />
+          </tr>
+          <tr>
+            <td>Monitor-cluster-8hjq7</td>
+            <td>
+              <span class="badge badge-gradient-success badge-pill">Active</span>
+            </td>
+            <td>v1.13.2</td>
+            <td>12</td>
+            <td />
+          </tr>
+          <tr>
+            <td>Asia-scope-72dr4</td>
+            <td>
+              <span class="badge badge-gradient-danger badge-pill">Offline</span>
+            </td>
+            <td>v1.10.13</td>
+            <td>12</td>
+            <td />
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </Playground>
