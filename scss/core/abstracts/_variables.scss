@@ -224,6 +224,14 @@ $hr-margin-y:                 $spacer !default;
 
 $header-top-bar-title:      $gray-700 !default;
 
+
+// Metadata 
+
+$metadata-line-color:               $gray-200 !default;
+$metadata-title-font-size:          14px !default;
+$metadata-value-font-size:          18px !default;
+$metadata-title-font-style:         italic !default;
+
 // Tables
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
@@ -773,13 +781,6 @@ $thumbnail-box-shadow:              0 1px 2px rgba($black, .075) !default;
 
 $figure-caption-font-size:          90% !default;
 $figure-caption-color:              $gray-600 !default;
-
-// Metadata 
-
-$metadata-line-color:               $gray-200 !default;
-$metadata-title-font-size:          14px !default;
-$metadata-value-font-size:          18px !default;
-
 
 // Breadcrumbs
 

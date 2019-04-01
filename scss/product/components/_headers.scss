@@ -52,7 +52,7 @@
   }
 }
 
-.outlet-header-meta-bar {
+.outlet-header-meta-bar_item {
   display: grid;
   flex-direction: column;
   justify-content: center;
@@ -61,12 +61,11 @@
   text-justify: inter-word;
   flex: auto;
   .outlet-header-meta-bar_title {
-    font-style: italic;
+    font-style: $metadata-title-font-style;
     font-size: $metadata-title-font-size;
   }
-  .outlet-header__meta-bar-text {
-    font-size: 18px;
-    color: $metadata-value-font-size;
+  .outlet-header-meta-bar_value {
+    font-size:  $metadata-value-font-size;
 }
 }
 
