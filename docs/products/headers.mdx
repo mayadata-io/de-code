@@ -146,3 +146,269 @@ import { Playground, PropsTable } from 'docz'
     </div>
   </div>
 </Playground>
+
+### Example seven
+##### Metadata bar
+
+
+<Playground>
+ <div class="outlet-header-bar">
+    <div class="outlet-header-meta-bar_item">
+      <div class="outlet-header-meta-bar_title">
+        <span>Schedule</span>
+      </div>
+      <div class="outlet-header-meta-bar_value">
+        <span>SCH-1</span>
+    </div>
+    </div>
+    <div class="outlet-header-meta-bar_item">
+      <div class="outlet-header-meta-bar_title">
+        <span>Cluster</span>
+      </div>
+      <div class="outlet-header-meta-bar_value">
+        <span>WhiteWeather</span>
+      </div>
+  </div>
+  </div>
+</Playground>
+
+### Example eight
+##### Page header , metadata bar 
+
+
+<Playground>
+    <div class="outlet-header">
+    <div class="outlet-header__top-bar">
+      <div class="outlet-header__top-bar-title">
+        <span>Clusters</span>
+      </div>
+    </div>
+  </div>
+  <div class="outlet-header-bar">
+    <div class="outlet-header-meta-bar_item">
+      <div class="outlet-header-meta-bar_title">
+        <span>Schedule</span>
+      </div>
+      <div class="outlet-header-meta-bar_value">
+        <span>SCH-1</span>
+    </div>
+    </div>
+    <div class="outlet-header-meta-bar_item">
+      <div class="outlet-header-meta-bar_title">
+        <span>Cluster</span>
+      </div>
+      <div class="outlet-header-meta-bar_value">
+        <span>WhiteWeather</span>
+      </div>
+  </div>
+      <div class="outlet-header-meta-bar_item">
+      <div class="outlet-header-meta-bar_title">
+        <span>Application</span>
+      </div>
+      <div class="outlet-header-meta-bar_value">
+        <span>Redis</span>
+      </div>
+  </div>
+  </div>
+</Playground>
+
+### Example nine
+##### Page header , metadata bar, Table contents 
+
+
+<Playground>
+    <div class="outlet-header">
+    <div class="outlet-header__top-bar">
+      <div class="outlet-header__top-bar-title">
+        <span>Clusters</span>
+      </div>
+    </div>
+  </div>
+  <div class="outlet-header-bar">
+    <div class="outlet-header-meta-bar_item">
+      <div class="outlet-header-meta-bar_title">
+        <span>Schedule</span>
+      </div>
+      <div class="outlet-header-meta-bar_value">
+        <span>SCH-1</span>
+    </div>
+    </div>
+    <div class="outlet-header-meta-bar_item">
+      <div class="outlet-header-meta-bar_title">
+        <span>Cluster</span>
+      </div>
+      <div class="outlet-header-meta-bar_value">
+        <span>WhiteWeather</span>
+      </div>
+  </div>
+      <div class="outlet-header-meta-bar_item">
+      <div class="outlet-header-meta-bar_title">
+        <span>Application</span>
+      </div>
+      <div class="outlet-header-meta-bar_value">
+        <span>Redis</span>
+      </div>
+  </div>
+  </div>
+  <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Status</th>
+      <th scope="col">K8s version</th>
+      <th scope="col">Nodes</th>
+      <th scope="col" />
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dev-cluster-yg238</td>
+      <td>
+        <span class="badge badge-gradient-success badge-pill">Active</span>
+      </td>
+      <td>v1.10.11-gke.1</td>
+      <td>12</td>
+      <td />
+    </tr>
+    <tr>
+      <td>Testing-cluster-tr33d</td>
+      <td>
+        <span class="badge badge-gradient-danger badge-pill">Inactive</span>
+      </td>
+      <td>v1.10</td>
+      <td>3</td>
+      <td />
+    </tr>
+    <tr>
+      <td>Staging-setup-df12s</td>
+      <td>
+        <span class="badge badge-gradient-warning badge-pill">Degrated</span>
+      </td>
+      <td>v1.10.11</td>
+      <td>6</td>
+      <td />
+    </tr>
+    <tr>
+      <td>Monitor-cluster-8hjq7</td>
+      <td>
+        <span class="badge badge-gradient-success badge-pill">Active</span>
+      </td>
+      <td>v1.13.2</td>
+      <td>12</td>
+      <td />
+    </tr>
+    <tr>
+      <td>Asia-scope-72dr4</td>
+      <td>
+        <span class="badge badge-gradient-danger badge-pill">Offline</span>
+      </td>
+      <td>v1.10.13</td>
+      <td>12</td>
+      <td />
+    </tr>
+  </tbody>
+</table>
+</Playground>
+
+
+### Example Ten
+##### Page header, bredcrumbs, metadata bar, Table contents 
+
+
+<Playground>
+<div class="outlet-header">
+  <div class="outlet-header__top-bar">
+    <div class="outlet-header__top-bar-title">
+      <span>Overview</span>
+    </div>
+  </div>
+  <div class="outlet-header-meta-block">
+    <span class="outlet-header-meta-block_content">Dev-cluster-23u72</span>
+    <span class="badge badge-gradient-success badge-pill">Active</span>
+  </div>
+</div>
+  <div class="outlet-header-bar">
+    <div class="outlet-header-meta-bar_item">
+      <div class="outlet-header-meta-bar_title">
+        <span>Schedule</span>
+      </div>
+      <div class="outlet-header-meta-bar_value">
+        <span>SCH-1</span>
+    </div>
+    </div>
+    <div class="outlet-header-meta-bar_item">
+      <div class="outlet-header-meta-bar_title">
+        <span>Cluster</span>
+      </div>
+      <div class="outlet-header-meta-bar_value">
+        <span>WhiteWeather</span>
+      </div>
+  </div>
+      <div class="outlet-header-meta-bar_item">
+      <div class="outlet-header-meta-bar_title">
+        <span>Application</span>
+      </div>
+      <div class="outlet-header-meta-bar_value">
+        <span>Redis</span>
+      </div>
+  </div>
+  </div>
+  <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Status</th>
+      <th scope="col">K8s version</th>
+      <th scope="col">Nodes</th>
+      <th scope="col" />
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dev-cluster-yg238</td>
+      <td>
+        <span class="badge badge-gradient-success badge-pill">Active</span>
+      </td>
+      <td>v1.10.11-gke.1</td>
+      <td>12</td>
+      <td />
+    </tr>
+    <tr>
+      <td>Testing-cluster-tr33d</td>
+      <td>
+        <span class="badge badge-gradient-danger badge-pill">Inactive</span>
+      </td>
+      <td>v1.10</td>
+      <td>3</td>
+      <td />
+    </tr>
+    <tr>
+      <td>Staging-setup-df12s</td>
+      <td>
+        <span class="badge badge-gradient-warning badge-pill">Degrated</span>
+      </td>
+      <td>v1.10.11</td>
+      <td>6</td>
+      <td />
+    </tr>
+    <tr>
+      <td>Monitor-cluster-8hjq7</td>
+      <td>
+        <span class="badge badge-gradient-success badge-pill">Active</span>
+      </td>
+      <td>v1.13.2</td>
+      <td>12</td>
+      <td />
+    </tr>
+    <tr>
+      <td>Asia-scope-72dr4</td>
+      <td>
+        <span class="badge badge-gradient-danger badge-pill">Offline</span>
+      </td>
+      <td>v1.10.13</td>
+      <td>12</td>
+      <td />
+    </tr>
+  </tbody>
+</table>
+</Playground>
