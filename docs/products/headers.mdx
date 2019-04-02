@@ -173,14 +173,20 @@ import { Playground, PropsTable } from 'docz'
 </Playground>
 
 ### Example eight
-##### Page header , metadata bar 
+##### Page header , Metadata bar 
 
 
 <Playground>
     <div class="outlet-header">
+      <div class="outlet-header-navigation">
+    <button class="outlet-header-navigation_button">
+      <span class="fa fa-arrow-left outlet-header-navigation_icon" />
+      <span>Back</span>
+    </button>
+  </div>
     <div class="outlet-header__top-bar">
       <div class="outlet-header__top-bar-title">
-        <span>Clusters</span>
+        <span>DMaaS</span>
       </div>
     </div>
   </div>
@@ -213,14 +219,14 @@ import { Playground, PropsTable } from 'docz'
 </Playground>
 
 ### Example nine
-##### Page header , metadata bar, Table contents 
+##### Page header , Metadata bar, Table contents 
 
 
 <Playground>
     <div class="outlet-header">
     <div class="outlet-header__top-bar">
       <div class="outlet-header__top-bar-title">
-        <span>Clusters</span>
+        <span>DMaaS</span>
       </div>
     </div>
   </div>
@@ -248,6 +254,11 @@ import { Playground, PropsTable } from 'docz'
       <div class="outlet-header-meta-bar_value">
         <span>Redis</span>
       </div>
+  </div>
+  </div>
+    <div class="section-header">
+  <div class="section-header_title">
+    <span class="section-header_title__text">List of Backups</span>
   </div>
   </div>
   <table class="table table-hover">
@@ -312,14 +323,14 @@ import { Playground, PropsTable } from 'docz'
 
 
 ### Example Ten
-##### Page header, bredcrumbs, metadata bar, Table contents 
+##### Page header, Bredcrumbs, Metadata bar, Table contents 
 
 
 <Playground>
 <div class="outlet-header">
   <div class="outlet-header__top-bar">
     <div class="outlet-header__top-bar-title">
-      <span>Overview</span>
+      <span>Application Overview</span>
     </div>
   </div>
   <div class="outlet-header-meta-block">
@@ -330,29 +341,55 @@ import { Playground, PropsTable } from 'docz'
   <div class="outlet-header-bar">
     <div class="outlet-header-meta-bar_item">
       <div class="outlet-header-meta-bar_title">
-        <span>Schedule</span>
+        <span>Type</span>
       </div>
       <div class="outlet-header-meta-bar_value">
-        <span>SCH-1</span>
+        <a href="/"><span>statefulset</span></a>
     </div>
     </div>
     <div class="outlet-header-meta-bar_item">
       <div class="outlet-header-meta-bar_title">
-        <span>Cluster</span>
+        <span>Kind</span>
       </div>
       <div class="outlet-header-meta-bar_value">
-        <span>WhiteWeather</span>
+        <span>ns-elasticsearch</span>
       </div>
   </div>
       <div class="outlet-header-meta-bar_item">
       <div class="outlet-header-meta-bar_title">
-        <span>Application</span>
+        <span>Replica</span>
       </div>
       <div class="outlet-header-meta-bar_value">
-        <span>Redis</span>
+        <span>3</span>
       </div>
   </div>
   </div>
+  <div class="section-header">
+  <div class="section-header_title">
+    <span class="section-header_title__text">Volumes in statefulset</span>
+  </div>
+  <div class="section-header-controls">
+    <div class="section-header-controls_item">
+      <div class="input-search-icon_wrapper">
+        <div class="input-search-icon" />
+        <input class="form-control" placeholder="search" />
+      </div>
+    </div>
+    <div class="section-header-controls_item">
+      <button class="btn btn-secondary">
+        <span class="fa fa-edit" />
+      </button>
+    </div>
+    <div class="section-header-controls_item">
+      <button class="btn btn-secondary">
+        <span class="fa fa-filter" />
+      </button>
+    </div>
+    <div class="section-header-controls_item ml-auto">
+      <button class="btn btn-primary">Primary action</button>
+    </div>
+  </div>
+</div>
   <table class="table table-hover">
   <thead>
     <tr>
