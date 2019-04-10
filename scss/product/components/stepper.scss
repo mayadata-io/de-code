@@ -1,0 +1,118 @@
+  .onboarding-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: auto;
+    text-align: center;
+    .onboarding-indicator-step {
+      &.indicator-active {
+        .onboarding-indicator-step_mark {
+          .onboarding-indicator-step_mark__circle {
+            background-color: $primary;
+            border-color: $primary;
+          }
+          .onboarding-indicator-step_mark__line {
+            background-color: $primary;
+          }
+        }
+      }
+      &.indicator-default {
+        .onboarding-indicator-step_mark {
+          .onboarding-indicator-step_mark__circle {
+            background-color: $gray-100;
+          }
+          .onboarding-indicator-step_mark__line {
+            background-color: $gray-100;
+          }
+        }
+      }
+      &.indicator-pending {
+        .onboarding-indicator-step_mark {
+          .onboarding-indicator-step_mark__circle {
+            border-color: $gray-200;
+            background-color: $white;
+          }
+          .onboarding-indicator-step_mark__line {
+            background-color: $gray-200;
+          }
+        }
+      }
+      &.indicator-completed {
+        .onboarding-indicator-step_mark {
+          .onboarding-indicator-step_mark__circle {
+            background-color: $blue-200;
+            border-color:  $blue-200;
+          }
+          .onboarding-indicator-step_mark__line {
+            background-color: $blue-200;
+          }
+        }
+      }
+      &.onboarding-indicator-step_mark {
+          .onboarding-indicator-step_mark__name {
+            background-color: $gray-700;
+            border-color: $gray-700;
+          }
+        }
+    }
+
+    .onboarding-indicator-step_mark {
+        display: flex;
+        flex-direction: row;
+        flex: auto;
+
+        .onboarding-indicator-step_mark__outline-circle {
+            background-color: none;
+            border-color: $blue-200;
+            border-radius: 50%;
+            margin: 8px 0;
+            height: 32px;
+            width: 32px;
+          }  
+
+      .onboarding-indicator-step_mark__line {
+        background-color: $gray-100;
+        margin-left:8px;
+        height: 6px;
+        width: -webkit-fill-available;
+        margin-top: 16px;
+      }
+    }
+  }
+
+    
+  .onboarding-indicator-step_mark__circle {
+    background-color: $gray-100;
+    border-radius: 50%;
+    margin: 8px 0;
+    height: 24px;
+    width: 24px;
+  }
+  
+  .onboarding-content {
+  .onboarding-content-header {
+    margin-bottom: 18px;
+    .onboarding-content-header_title {
+      margin-bottom: 12px;
+      .onboarding-content-header_title__text {
+        font-size: 36px;
+      }
+    }
+  }
+  .onboarding-content-body {
+    .onboarding-content-body-node {
+      margin-bottom: 32px;
+      .onboarding-content-body-node__text {
+        font-style: italic;
+      }
+    }
+  
+  }
+  }
+
+ .list-items {
+    list-style: none;
+    padding-left: 16px;
+    text-align: center;
+    text-align: -webkit-center;
+ }
