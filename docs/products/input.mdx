@@ -1,39 +1,54 @@
 ---
 name: Inputs
 menu: Product
-
 ---
-import { Playground, PropsTable } from 'docz'
+
+import { Playground, PropsTable } from "docz";
 
 # Inputs
 
 ## Text
+
 <Playground>
-  <input class="form-control" placeholder="Name"/>
+  <input class="form-control" placeholder="Name" />
 </Playground>
 
 ### Advanced
+
 #### Search input field
+
 <Playground>
-  <div class="input-search-icon_wrapper">
-    <div class="input-search-icon">
-    </div>
-    <input class="form-control" placeholder="Find an application"/>
-  </div>
+    <div class="input-with-icon input-with-icon-left">
+      <input class="form-control" placeholder="Find an application" />
+        <div class="input-with-icon_wrapper">
+            <span class="mi mi-search" />
+        </div>
+     </div>
 </Playground>
 
 ## Checkbox
+
 <Playground>
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheck1"/>
-  <label class="custom-control-label" for="customCheck1">Label</label>
-</div>
+  <div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="customCheck1" />
+    <label class="custom-control-label" for="customCheck1">
+      Label
+    </label>
+  </div>
 </Playground>
 
 ## Radio
+
 <Playground>
-<div class="custom-control custom-radio">
-  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input"/>
-  <label class="custom-control-label" for="customRadio1">Label</label>
-</div>
+  <div class="custom-control custom-radio">
+    <input
+      type="radio"
+      id="customRadio1"
+      name="customRadio"
+      class="custom-control-input"
+    />
+    <label class="custom-control-label" for="customRadio1">
+      Label
+    </label>
+  </div>
 </Playground>

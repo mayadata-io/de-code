@@ -1,0 +1,55 @@
+// 
+// Time picker
+// Time picker supports only hh:mm
+//
+
+.picker {
+  width: 128px;
+}
+.time-picker {
+  position: absolute;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.time-lists_wrapper::before {
+  content: "";
+  display: table;
+}
+.time-lists_wrapper::after {
+  clear: both;
+}
+.time-lists-content:last-child {
+  border-left: 1px solid $gray-100;
+}
+.time-lists-content {
+  overflow: auto;
+  box-sizing: border-box;
+  float: left;
+  max-height: 180px;
+  width: 56px;
+}
+.time-lists-content ul {
+  list-style: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 160px;
+}
+.time-lists-content ul li {
+  overflow: auto;
+  box-sizing: border-box;
+  padding-right: 12px;
+  line-height: 32px;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-align: left;
+  padding: 0 0 0 20px;
+  height: 32px;
+  margin: 0;
+}
+.time-lists-content ul li:hover {
+  background: $gray-100;
+}
