@@ -1,0 +1,46 @@
+// Segmented radio
+// https://github.com/springload/segmented-control
+
+.segmented-control {
+  display: table;
+  width: 100%;
+  padding: 0;
+}
+
+.segmented-control__item {
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.segmented-control__input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.segmented-control__label {
+  box-shadow: $segment-control-color-box-shadow;
+  color: $segment-control-color;
+  display: block;
+  margin: 0 -1px -1px 0; /* -1px margin removes double-thickness borders between items */
+  padding: 10px 16px;
+  text-align: center;
+  cursor: pointer;
+}
+.segmented-control__item:first-child .segmented-control__label {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.segmented-control__item:last-child .segmented-control__label {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.segmented-control__label:hover {
+  background: $segment-control-color-hover-bg;
+}
+
+.segmented-control__input:checked + .segmented-control__label {
+  background: $segment-control-color-active-color-bg;
+  color: $segment-control-color-active-color;
+}
