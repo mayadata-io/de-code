@@ -10,7 +10,7 @@
 (function() {
 	function addIcon(el, entity) {
 		var html = el.innerHTML;
-		el.innerHTML = '<span style="font-family: \'maya-icon\'">' + entity + '</span>' + html;
+		el.innerHTML = '<span style="font-family: \'maya-icons\'">' + entity + '</span>' + html;
 	}
 	var icons = {
 		'mi-rocket-share': '&#xe90a;',
@@ -66,6 +66,8 @@
 		'mi-chart-bar-up': '&#xe92e;',
 		'mi-frequency': '&#xe92f;',
 		'mi-cluster': '&#xe931;',
+		'mi-clock': '&#xe930;',
+		'mi-upgrade': '&#xe93f;',
 		'0': 0
 		},
 		els = document.getElementsByTagName('*'),

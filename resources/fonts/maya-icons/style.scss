@@ -2,16 +2,16 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?7kctlj');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?7kctlj#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?7kctlj') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?7kctlj') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?7kctlj##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?9obksz');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?9obksz#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?9obksz') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?9obksz') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?9obksz##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="mi-"], [class*=" mi-"] {
+.mi {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: '#{$icomoon-font-family}' !important;
   speak: none;
@@ -28,268 +28,280 @@
 .mi-1x {
   font-size:1.4em;
 }
+
 .mi-rocket-share {
   &:before {
-    content: $mi-rocket-share;
+    content: $mi-rocket-share; 
   }
 }
 .mi-settings {
   &:before {
-    content: $mi-settings;
+    content: $mi-settings; 
   }
 }
 .mi-tree-network {
   &:before {
-    content: $mi-tree-network;
+    content: $mi-tree-network; 
   }
 }
 .mi-chevrons-right {
   &:before {
-    content: $mi-chevrons-right;
+    content: $mi-chevrons-right; 
   }
 }
 .mi-chevrons-left {
   &:before {
-    content: $mi-chevrons-left;
+    content: $mi-chevrons-left; 
   }
 }
 .mi-chevron-right {
   &:before {
-    content: $mi-chevron-right;
+    content: $mi-chevron-right; 
   }
 }
 .mi-chevron-left {
   &:before {
-    content: $mi-chevron-left;
+    content: $mi-chevron-left; 
   }
 }
 .mi-chevron-up {
   &:before {
-    content: $mi-chevron-up;
+    content: $mi-chevron-up; 
   }
 }
 .mi-chevron-down {
   &:before {
-    content: $mi-chevron-down;
+    content: $mi-chevron-down; 
   }
 }
 .mi-x {
   &:before {
-    content: $mi-x;
+    content: $mi-x; 
   }
 }
 .mi-user-switch {
   &:before {
-    content: $mi-user-switch;
+    content: $mi-user-switch; 
   }
 }
 .mi-application {
   &:before {
-    content: $mi-application;
+    content: $mi-application; 
   }
 }
 .mi-mail {
   &:before {
-    content: $mi-mail;
+    content: $mi-mail; 
   }
 }
 .mi-check-list {
   &:before {
-    content: $mi-check-list;
+    content: $mi-check-list; 
   }
 }
 .mi-file {
   &:before {
-    content: $mi-file;
+    content: $mi-file; 
   }
 }
 .mi-bell {
   &:before {
-    content: $mi-bell;
+    content: $mi-bell; 
   }
 }
 .mi-play-square {
   &:before {
-    content: $mi-play-square;
+    content: $mi-play-square; 
   }
 }
 .mi-logs {
   &:before {
-    content: $mi-logs;
+    content: $mi-logs; 
   }
 }
 .mi-dashboard {
   &:before {
-    content: $mi-dashboard;
+    content: $mi-dashboard; 
   }
 }
 .mi-search {
   &:before {
-    content: $mi-search;
+    content: $mi-search; 
   }
 }
 .mi-alert-triangle {
   &:before {
-    content: $mi-alert-triangle;
+    content: $mi-alert-triangle; 
   }
 }
 .mi-slack {
   &:before {
-    content: $mi-slack;
+    content: $mi-slack; 
   }
 }
 .mi-align-left {
   &:before {
-    content: $mi-align-left;
+    content: $mi-align-left; 
   }
 }
 .mi-arrow-right-curve {
   &:before {
-    content: $mi-arrow-right-curve;
+    content: $mi-arrow-right-curve; 
   }
 }
 .mi-arrow-left-curve {
   &:before {
-    content: $mi-arrow-left-curve;
+    content: $mi-arrow-left-curve; 
   }
 }
 .mi-key {
   &:before {
-    content: $mi-key;
+    content: $mi-key; 
   }
 }
 .mi-cloud-reload {
   &:before {
-    content: $mi-cloud-reload;
+    content: $mi-cloud-reload; 
   }
 }
 .mi-cloud-up-down {
   &:before {
-    content: $mi-cloud-up-down;
+    content: $mi-cloud-up-down; 
   }
 }
 .mi-eye {
   &:before {
-    content: $mi-eye;
+    content: $mi-eye; 
   }
 }
 .mi-circle-info {
   &:before {
-    content: $mi-circle-info;
+    content: $mi-circle-info; 
   }
 }
 .mi-check-circle {
   &:before {
-    content: $mi-check-circle;
+    content: $mi-check-circle; 
   }
 }
 .mi-id-card {
   &:before {
-    content: $mi-id-card;
+    content: $mi-id-card; 
   }
 }
 .mi-lightbulb {
   &:before {
-    content: $mi-lightbulb;
+    content: $mi-lightbulb; 
   }
 }
 .mi-x-circle {
   &:before {
-    content: $mi-x-circle;
+    content: $mi-x-circle; 
   }
 }
 .mi-home {
   &:before {
-    content: $mi-home;
+    content: $mi-home; 
   }
 }
 .mi-check-square {
   &:before {
-    content: $mi-check-square;
+    content: $mi-check-square; 
   }
 }
 .mi-database {
   &:before {
-    content: $mi-database;
+    content: $mi-database; 
   }
 }
 .mi-form {
   &:before {
-    content: $mi-form;
+    content: $mi-form; 
   }
 }
 .mi-litmus {
   &:before {
-    content: $mi-litmus;
+    content: $mi-litmus; 
   }
 }
 .mi-arrow-down-circle {
   &:before {
-    content: $mi-arrow-down-circle;
+    content: $mi-arrow-down-circle; 
   }
 }
 .mi-arrow-up-circle {
   &:before {
-    content: $mi-arrow-up-circle;
+    content: $mi-arrow-up-circle; 
   }
 }
 .mi-arrow-right-circle {
   &:before {
-    content: $mi-arrow-right-circle;
+    content: $mi-arrow-right-circle; 
   }
 }
 .mi-arrow-left-circle {
   &:before {
-    content: $mi-arrow-left-circle;
+    content: $mi-arrow-left-circle; 
   }
 }
 .mi-book {
   &:before {
-    content: $mi-book;
+    content: $mi-book; 
   }
 }
 .mi-plug-connect {
   &:before {
-    content: $mi-plug-connect;
+    content: $mi-plug-connect; 
   }
 }
 .mi-ellipsis-horizontal {
   &:before {
-    content: $mi-ellipsis-horizontal;
+    content: $mi-ellipsis-horizontal; 
   }
 }
 .mi-ellipsis-vertical {
   &:before {
-    content: $mi-ellipsis-vertical;
+    content: $mi-ellipsis-vertical; 
   }
 }
 .mi-edit {
   &:before {
-    content: $mi-edit;
+    content: $mi-edit; 
   }
 }
 .mi-clipboard-pen {
   &:before {
-    content: $mi-clipboard-pen;
+    content: $mi-clipboard-pen; 
   }
 }
 .mi-trash {
   &:before {
-    content: $mi-trash;
+    content: $mi-trash; 
   }
 }
 .mi-chart-bar-up {
   &:before {
-    content: $mi-chart-bar-up;
+    content: $mi-chart-bar-up; 
   }
 }
 .mi-frequency {
   &:before {
-    content: $mi-frequency;
+    content: $mi-frequency; 
   }
 }
 .mi-cluster {
   &:before {
-    content: $mi-cluster;
+    content: $mi-cluster; 
   }
 }
+.mi-clock {
+  &:before {
+    content: $mi-clock; 
+  }
+}
+.mi-upgrade {
+  &:before {
+    content: $mi-upgrade; 
+  }
+}
+

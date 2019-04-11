@@ -157,4 +157,10 @@
 .mi-cluster {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe931;');
 }
+.mi-clock {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe930;');
+}
+.mi-upgrade {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe93f;');
+}
 
