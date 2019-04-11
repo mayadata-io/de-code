@@ -7,14 +7,39 @@ import { Playground, PropsTable } from 'docz'
 import logo from '../../resources/images/clusters/loading-logo.svg'
 
 # Spinner 
+#### Spinner is used to display loading page os MayaOnline.
+### Example 1
 <Playground>
-
-<center>
-
+<div className="style">
 <div className="loader"></div>
   <div className="loading-logo">
     <img src= {logo} />
   </div>
+</div>
+</Playground>
 
-</center>
+### Example 2
+#### Spinner in different size[Small,Medium,Large]
+
+<Playground>
+<div class="flex-container">
+<div className="small">
+<div className="loader"></div>
+  <div className="loading-logo">
+    <img src= {logo} />
+  </div>
+</div>
+<div className="medium">
+<div className="loader"></div>
+  <div className="loading-logo">
+    <img src= {logo} />
+  </div>
+</div>
+<div className="large">
+<div className="loader"></div>
+  <div className="loading-logo">
+    <img src= {logo} />
+  </div>
+</div>
+</div>
 </Playground>
