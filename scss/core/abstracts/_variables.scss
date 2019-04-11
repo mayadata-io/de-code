@@ -460,6 +460,11 @@ $custom-file-text: (
   en: "Browse"
 ) !default;
 
+// Segment controls
+$segment-control-color-hover-bg:         $gray-000 !default;
+$segment-control-color-active-color-bg:  $primary !default;
+$segment-control-color-active-color:     $white !default;
+
 
 // Form validation
 $form-feedback-margin-top:          $form-text-margin-top !default;
