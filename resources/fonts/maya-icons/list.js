@@ -211,4 +211,12 @@ export const IconLists = [
     name: "mi-cluster",
     label: "cluster"
   },
+  {
+    name: "mi-clock",
+    label: "Clock"
+  },
+  {
+    name: "mi-upgrade",
+    label: "Upgrade"
+  },
 ];

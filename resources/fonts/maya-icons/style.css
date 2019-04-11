@@ -1,17 +1,17 @@
 @font-face {
-  font-family: 'maya-icon';
-  src:  url('fonts/maya-icon.eot?7kctlj');
-  src:  url('fonts/maya-icon.eot?7kctlj#iefix') format('embedded-opentype'),
-    url('fonts/maya-icon.ttf?7kctlj') format('truetype'),
-    url('fonts/maya-icon.woff?7kctlj') format('woff'),
-    url('fonts/maya-icon.svg?7kctlj#maya-icon') format('svg');
+  font-family: 'maya-icons';
+  src:  url('fonts/maya-icons.eot?9obksz');
+  src:  url('fonts/maya-icons.eot?9obksz#iefix') format('embedded-opentype'),
+    url('fonts/maya-icons.ttf?9obksz') format('truetype'),
+    url('fonts/maya-icons.woff?9obksz') format('woff'),
+    url('fonts/maya-icons.svg?9obksz#maya-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="mi-"], [class*=" mi-"] {
+.mi {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'maya-icon' !important;
+  font-family: 'maya-icons' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -182,4 +182,10 @@
 }
 .mi-cluster:before {
   content: "\e931";
+}
+.mi-clock:before {
+  content: "\e930";
+}
+.mi-upgrade:before {
+  content: "\e93f";
 }
