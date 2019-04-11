@@ -20,12 +20,13 @@
 }
 
 .segmented-control__label {
+  box-shadow: $segment-control-color-box-shadow;
+  color: $segment-control-color;
   display: block;
-  margin: 0 -2px -2px 0; /* -1px margin removes double-thickness borders between items */
+  margin: 0 -1px -1px 0; /* -1px margin removes double-thickness borders between items */
   padding: 10px 16px;
   text-align: center;
   cursor: pointer;
-  @include box-shadow($input-box-shadow);
 }
 .segmented-control__item:first-child .segmented-control__label {
   border-top-left-radius: 4px;

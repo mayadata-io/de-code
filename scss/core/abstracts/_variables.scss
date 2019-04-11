@@ -461,6 +461,8 @@ $custom-file-text: (
 ) !default;
 
 // Segment controls
+$segment-control-color-box-shadow:       inset 0 0 0 1px $primary !default;
+$segment-control-color:                  $primary !default; 
 $segment-control-color-hover-bg:         $gray-000 !default;
 $segment-control-color-active-color-bg:  $primary !default;
 $segment-control-color-active-color:     $white !default;
