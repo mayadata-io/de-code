@@ -78,7 +78,13 @@
       margin: 8px 0;
       height: 24px;
       width: 24px;
-    }
+}
+
+.indicator-pending {
+.stepper-indicator-step_mark__line {
+  background-color: $primary;
+     }
+}
 
  .indicator-circle-failed {
       background-color: $red-500;
@@ -88,8 +94,6 @@
       width: 24px;
     }
 
-
-  
     .indicator-circle-completed{
       background-color: $blue-900;
       border-radius: 50%;
@@ -103,6 +107,17 @@
 
     .indicator-circle{
       background-color: $blue-900;
+    }
+    .stepper-indicator-step_mark__line{
+      background-color: $blue-900;
+    }
+  }
+
+
+  .indicator-completed-green {
+
+    .indicator-circle{
+      background-color: $green-500;
     }
     .stepper-indicator-step_mark__line{
       background-color: $blue-900;
