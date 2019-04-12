@@ -10,61 +10,60 @@ import { Playground, PropsTable } from 'docz'
 #### Default stepper
 <Playground>
 
-    <div class="onboarding-indicator">
-        <div class="onboarding-indicator-step_mark">
+  <div class="stepper-indicator indicator-default">
+    <div class="stepper-indicator-step_mark">
             <div class="list-items">
-          <li><div class="onboarding-indicator-step_mark__circle"></div></li>
-         <li> <span class="onboarding-indicator-step_mark__name">hello</span></li>
+          <li><div class="indicator-circle"></div></li>
+         <li> <span class="stepper-indicator-step_mark__name">Text</span></li>
           </div>
-             <span class="onboarding-indicator-step_mark__line"></span>
+             <span class="stepper-indicator-step_mark__line"></span>
         </div>
         
-                <div class="onboarding-indicator-step_mark">
+                <div class="stepper-indicator-step_mark">
             <div class="list-items">
-          <li><div class="onboarding-indicator-step_mark__circle"></div></li>
-         <li> <span class="onboarding-indicator-step_mark__name">hello</span></li>
+          <li><div class="indicator-circle"></div></li>
+         <li> <span class="stepper-indicator-step_mark__name">Text</span></li>
           </div>
-          <span class="onboarding-indicator-step_mark__line"></span>
+          <span class="stepper-indicator-step_mark__line"></span>
         </div>
-                <div class="onboarding-indicator-step_mark">
+                <div class="stepper-indicator-step_mark">
             <div class="list-items">
-          <li><div class="onboarding-indicator-step_mark__circle"></div></li>
-         <li> <span class="onboarding-indicator-step_mark__name">hello</span></li>
+          <li><div class="indicator-circle"></div></li>
+         <li> <span class="stepper-indicator-step_mark__name">Text</span></li>
           </div>
-           <span class="onboarding-indicator-step_mark__line"></span>
+           <span class="stepper-indicator-step_mark__line"></span>
         </div>
             <div class="list-items">
-          <li><div class="onboarding-indicator-step_mark__circle"></div></li>
-         <li> <span class="onboarding-indicator-step_mark__name">hello</span></li>
-          </div>
-                
-    </div>
+          <li><div class="indicator-circle"></div></li>
+         <li> <span class="stepper-indicator-step_mark__name">Text</span></li>
+      </div> 
+   </div>  
 
 </Playground>
 
 ### Example 2
-#### success stepper
+#### Success stepper
 <Playground>
 
-    <div class="onboarding-indicator">
-        <div class="onboarding-indicator-step_mark">
+    <div class="stepper-indicator indicator-completed">
+        <div class="stepper-indicator-step_mark">
             <div class="list-items">
-          <li><div class="onboarding-indicator-step_mark__circle"></div></li>
-         <li> <span class="onboarding-indicator-step_mark__name">hello</span></li>
+          <li><div class="indicator-circle"></div></li>
+         <li> <span class="stepper-indicator-step_mark__name">Text</span></li>
           </div>
-          <span class="onboarding-indicator-step_mark__line"></span>
+          <span class="stepper-indicator-step_mark__line"></span>
         </div>
-                <div class="onboarding-indicator-step_mark">
+                <div class="stepper-indicator-step_mark">
             <div class="list-items">
-          <li><div class="onboarding-indicator-step_mark__circle"></div></li>
-         <li> <span class="onboarding-indicator-step_mark__name">hello</span></li>
+          <li><div class="indicator-circle"></div></li>
+         <li> <span class="stepper-indicator-step_mark__name">Text</span></li>
           </div>
-          <span class="onboarding-indicator-step_mark__line defadivt"></span>
+          <span class="stepper-indicator-step_mark__line"></span>
         </div>
               
             <div class="list-items">
-          <li><div class="onboarding-indicator-step_mark__circle"></div></li>
-         <li> <span class="onboarding-indicator-step_mark__name">hello</span></li>
+          <li><div class="indicator-circle"></div></li>
+         <li> <span class="stepper-indicator-step_mark__name">Text</span></li>
           </div>
         </div>
 
@@ -75,85 +74,55 @@ import { Playground, PropsTable } from 'docz'
 #### Failed stepper
 <Playground>
 
-    <div class="onboarding-indicator">
-        <div class="onboarding-indicator-step_mark">
+    <div class="stepper-indicator">
+        <div class="stepper-indicator-step_mark indicator-completed">
             <div class="list-items">
-          <li><div class="onboarding-indicator-step_mark__circle"></div></li>
-         <li> <span class="onboarding-indicator-step_mark__name">hello</span></li>
+          <li><div class="indicator-circle"></div></li>
+         <li> <span class="stepper-indicator-step_mark__name">Text</span></li>
           </div>
-          <span class="onboarding-indicator-step_mark__line"></span>
+          <span class="stepper-indicator-step_mark__line"></span>
         </div>
-                <div class="onboarding-indicator-step_mark">
+                <div class="stepper-indicator-step_mark indicator-completed">
             <div class="list-items">
-          <li><div class="onboarding-indicator-step_mark__circle"></div></li>
-         <li> <span class="onboarding-indicator-step_mark__name">hello</span></li>
+          <li><div class="indicator-circle"></div></li>
+         <li> <span class="stepper-indicator-step_mark__name">Text</span></li>
           </div>
-          <span class="onboarding-indicator-step_mark__line"></span>
+          <span class="stepper-indicator-step_mark__line"></span>
         </div>
               
             <div class="list-items">
-          <li><div class="onboarding-indicator-step_mark__circle"></div></li>
-         <li> <span class="onboarding-indicator-step_mark__name">hello</span></li>
+          <li><div class="indicator-circle-failed"></div></li>
+         <li> <span class="stepper-indicator-step_mark__name">Text</span></li>
         </div>
     </div>
 
 </Playground>
 
 ### Example 4
-#### Defadivt stepper
+#### Pending stepper
 <Playground>
 
-    <div class="onboarding-indicator">
-        <div class="onboarding-indicator-step_mark">
+    <div class="stepper-indicator">
+        <div class="stepper-indicator-step_mark indicator-completed">
             <div class="list-items">
-          <li><div class="onboarding-indicator-step_mark__circle"></div></li>
-         <li> <span class="onboarding-indicator-step_mark__name">hello</span></li>
+          <li><div class="indicator-circle"></div></li>
+         <li> <span class="stepper-indicator-step_mark__name">Text</span></li>
           </div>
-          <span class="onboarding-indicator-step_mark__line"></span>
+          <span class="stepper-indicator-step_mark__line"></span>
         </div>
-                <div class="onboarding-indicator-step_mark">
+                <div class="stepper-indicator-step_mark ">
             <div class="list-items">
-          <li><div class="onboarding-indicator-step_mark__circle"></div></li>
-         <li> <span class="onboarding-indicator-step_mark__name">hello</span></li>
+          <li><div class="indicator-circle-pending"></div></li>
+         <li> <span class="stepper-indicator-step_mark__name">Text</span></li>
           </div>
-          <span class="onboarding-indicator-step_mark__line"></span>
+          <span class="stepper-indicator-step_mark__line"></span>
         </div>
             
             <div class="list-items">
-          <li><div class="onboarding-indicator-step_mark__circle"></div></li>
-         <li> <span class="onboarding-indicator-step_mark__name">hello</span></li>
+          <li><div class="indicator-circle"></div></li>
+         <li> <span class="stepper-indicator-step_mark__name">Text</span></li>
           </div>
   
-    </div>
-
-</Playground>
-
-
-### Example 5
-#### Default stepper
-<Playground>
-
-    <div class="onboarding-indicator">
-        <div class="onboarding-indicator-step_mark">
-            <div class="list-items">
-          <li><div class="onboarding-indicator-step_mark__circle"></div></li>
-         <li> <span class="onboarding-indicator-step_mark__name">hello</span></li>
-          </div>
-          <span class="onboarding-indicator-step_mark__line"></span>
-        </div>
-                <div class="onboarding-indicator-step_mark">
-            <div class="list-items">
-          <li><div class="onboarding-indicator-step_mark__circle"></div></li>
-         <li> <span class="onboarding-indicator-step_mark__name">hello</span></li>
-          </div>
-          <span class="onboarding-indicator-step_mark__line"></span>
-        </div>
-                
-            <div class="list-items">
-          <li><div class="onboarding-indicator-step_mark__circle"></div></li>
-         <li> <span class="onboarding-indicator-step_mark__name">hello</span></li>
- 
-        </div>
     </div>
 
 </Playground>

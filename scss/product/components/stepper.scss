@@ -1,87 +1,32 @@
-  .onboarding-indicator {
+  .stepper-indicator {
     display: flex;
     align-items: center;
     justify-content: center;
     flex: auto;
     text-align: center;
-    .onboarding-indicator-step {
-      &.indicator-active {
-        .onboarding-indicator-step_mark {
-          .onboarding-indicator-step_mark__circle {
-            background-color: $primary;
-            border-color: $primary;
-          }
-          .onboarding-indicator-step_mark__line {
-            background-color: $primary;
-          }
-        }
-      }
-      &.indicator-default {
-        .onboarding-indicator-step_mark {
-          .onboarding-indicator-step_mark__circle {
-            background-color: $gray-100;
-          }
-          .onboarding-indicator-step_mark__line {
-            background-color: $gray-100;
-          }
-        }
-      }
-      &.indicator-pending {
-        .onboarding-indicator-step_mark {
-          .onboarding-indicator-step_mark__circle {
-            border-color: $gray-200;
-            background-color: $white;
-          }
-          .onboarding-indicator-step_mark__line {
-            background-color: $gray-200;
-          }
-        }
-      }
-      &.indicator-completed {
-        .onboarding-indicator-step_mark {
-          .onboarding-indicator-step_mark__circle {
-            background-color: $blue-200;
-            border-color:  $blue-200;
-          }
-          .onboarding-indicator-step_mark__line {
-            background-color: $blue-200;
-          }
-        }
-      }
-      &.onboarding-indicator-step_mark {
-          .onboarding-indicator-step_mark__name {
+
+      &.stepper-indicator-step_mark {
+          .stepper-indicator-step_mark__name {
             background-color: $gray-700;
             border-color: $gray-700;
           }
         }
-    }
 
-    .onboarding-indicator-step_mark {
+    .stepper-indicator-step_mark {
         display: flex;
         flex-direction: row;
-        flex: auto;
-
-        .onboarding-indicator-step_mark__outline-circle {
-            background-color: none;
-            border-color: $blue-200;
-            border-radius: 50%;
-            margin: 8px 0;
-            height: 32px;
-            width: 32px;
-          }  
-
-      .onboarding-indicator-step_mark__line {
-        background-color: $gray-100;
-        margin-left:8px;
-        height: 6px;
-        width: -webkit-fill-available;
-        margin-top: 16px;
-      }
+        flex: auto; 
     }
-  }
-
+    .stepper-indicator-step_mark__line {
+      background-color: $gray-100;
+      margin-left:16px;
+      height: 6px;
+      width: -webkit-fill-available;
+      width: -moz-available;
+      margin-top: 16px;
+    }
     
-  .onboarding-indicator-step_mark__circle {
+  .indicator-circle {
     background-color: $gray-100;
     border-radius: 50%;
     margin: 8px 0;
@@ -89,26 +34,27 @@
     width: 24px;
   }
   
-  .onboarding-content {
-  .onboarding-content-header {
+  .stepper-content {
+  .stepper-content-header {
     margin-bottom: 18px;
-    .onboarding-content-header_title {
+    .stepper-content-header_title {
       margin-bottom: 12px;
-      .onboarding-content-header_title__text {
+      .stepper-content-header_title__text {
         font-size: 36px;
       }
     }
   }
-  .onboarding-content-body {
-    .onboarding-content-body-node {
+  .stepper-content-body {
+    .stepper-content-body-node {
       margin-bottom: 32px;
-      .onboarding-content-body-node__text {
+      .stepper-content-body-node__text {
         font-style: italic;
       }
     }
   
   }
   }
+}
 
  .list-items {
     list-style: none;
@@ -116,3 +62,70 @@
     text-align: center;
     text-align: -webkit-center;
  }
+
+ .indicator-active {
+    .stepper-indicator-step_mark__circle {
+      background-color: $primary;
+    }
+    .stepper-indicator-step_mark__line {
+      background-color: $red-500;
+    }
+}
+
+.indicator-circle-pending {
+      background-color: $primary;
+      border-radius: 50%;
+      margin: 8px 0;
+      height: 24px;
+      width: 24px;
+    }
+
+ .indicator-circle-failed {
+      background-color: $red-500;
+      border-radius: 50%;
+      margin: 8px 0;
+      height: 24px;
+      width: 24px;
+    }
+
+
+  
+    .indicator-circle-completed{
+      background-color: $blue-900;
+      border-radius: 50%;
+      margin: 8px 0;
+      height: 24px;
+      width: 24px;
+      
+    }
+
+  .indicator-completed {
+
+    .indicator-circle{
+      background-color: $blue-900;
+    }
+    .stepper-indicator-step_mark__line{
+      background-color: $blue-900;
+    }
+  }
+   
+
+.indicator-failed {
+
+    .stepper-indicator-step_mark__circle {
+      background-color: $red-500;
+    }
+    .stepper-indicator-step_mark__line {
+      background-color: $blue-900;
+    }
+  }
+
+.indicator-default {
+ 
+    .stepper-indicator-step_mark__circle {
+      background-color: $gray-100;
+    }
+    .stepper-indicator-step_mark__line {
+      background-color: $gray-100;
+    }
+  }
