@@ -456,6 +456,16 @@
           "depth": 1,
           "slug": "dropdown-menu",
           "value": "Dropdown menu"
+        },
+        {
+          "depth": 3,
+          "slug": "example-1",
+          "value": "Example 1"
+        },
+        {
+          "depth": 3,
+          "slug": "example-2",
+          "value": "Example 2"
         }
       ]
     },
@@ -750,8 +760,8 @@
         },
         {
           "depth": 4,
-          "slug": "spinner-is-used-to-display-loading-page-os-mayaonline",
-          "value": "Spinner is used to display loading page os MayaOnline."
+          "slug": "spinner-is-used-to-display-loading-page-on-mayaonline",
+          "value": "Spinner is used to display loading page on MayaOnline."
         },
         {
           "depth": 3,
