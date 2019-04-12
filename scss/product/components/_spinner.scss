@@ -6,6 +6,7 @@
     height: 44px;
     -webkit-animation: spin 1s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;
     animation: spin 1s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;
+
   }
   
   .loading-logo {
@@ -42,7 +43,7 @@
     width: 3em ;
 
  }
- .small {margin: 10px;
+ .sm {margin: 10px;
     .loader {
         
         width: 24px;
@@ -58,7 +59,7 @@
       }
 
 }
-.medium{ margin: 10px;
+.md { margin: 10px;
     .loader {
        
         width: 44px;
@@ -75,7 +76,7 @@
       }
 
 }
-.large{ margin: 10px;
+.lr{ margin: 10px;
     .loader { 
 
         width: 64px;
