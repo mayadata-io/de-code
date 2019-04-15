@@ -7,151 +7,67 @@ import { Playground, PropsTable } from 'docz'
 
 # Stepper
 ### Example 1
-#### Default stepper
+#### unvisited stepper
 <Playground>
 
-  <div class="stepper-indicator indicator-default">
+  <div class="stepper-indicator unvisited">
     <div class="stepper-indicator-step_mark">
-            <div class="list-items">
-          <li><div class="indicator-circle"></div></li>
-         <li> <span class="stepper-indicator-step_mark__name">setting cluster</span></li>
-          </div>
-             <span class="stepper-indicator-step_mark__line"></span>
-        </div>
-        
-                <div class="stepper-indicator-step_mark">
-            <div class="list-items">
-          <li><div class="indicator-circle"></div></li>
-         <li> <span class="stepper-indicator-step_mark__name">Activating</span></li>
-          </div>
+      <div class="d-flex">
+        <div class="indicator-circle"></div>
           <span class="stepper-indicator-step_mark__line"></span>
         </div>
-                <div class="stepper-indicator-step_mark">
-            <div class="list-items">
-          <li><div class="indicator-circle"></div></li>
-         <li> <span class="stepper-indicator-step_mark__name">Loading</span></li>
-          </div>
-           <span class="stepper-indicator-step_mark__line"></span>
-        </div>
-            <div class="list-items">
-          <li><div class="indicator-circle"></div></li>
-         <li> <span class="stepper-indicator-step_mark__name">Loading</span></li>
-      </div> 
-   </div>  
+      <div class="stepper-indicator-step_mark__name">Setting cluster</div>
+    </div>
+  </div>  
 
 </Playground>
 
 ### Example 2
-#### Success stepper
+#### visited stepper
 <Playground>
 
-    <div class="stepper-indicator indicator-completed">
-        <div class="stepper-indicator-step_mark">
-            <div class="list-items">
-          <li><div class="indicator-circle"></div></li>
-         <li> <span class="stepper-indicator-step_mark__name">setting cluster</span></li>
-          </div>
+  <div class="stepper-indicator visited">
+    <div class="stepper-indicator-step_mark">
+      <div class="d-flex">
+        <div class="indicator-circle"></div>
           <span class="stepper-indicator-step_mark__line"></span>
         </div>
-                <div class="stepper-indicator-step_mark">
-            <div class="list-items">
-          <li><div class="indicator-circle"></div></li>
-         <li> <span class="stepper-indicator-step_mark__name">Activating</span></li>
-          </div>
-          <span class="stepper-indicator-step_mark__line"></span>
-        </div>
-              
-            <div class="list-items">
-          <li><div class="indicator-circle"></div></li>
-         <li> <span class="stepper-indicator-step_mark__name">Loading</span></li>
-          </div>
-        </div>
-
-
+      <div class="stepper-indicator-step_mark__name">Loading</div>
+    </div>
+  </div> 
+  
 </Playground>
 
+
 ### Example 3
-#### Success stepper 2
+#### Error stepper
 <Playground>
 
-    <div class="stepper-indicator indicator-completed-green">
-        <div class="stepper-indicator-step_mark">
-            <div class="list-items">
-          <li><div class="indicator-circle"></div></li>
-         <li> <span class="stepper-indicator-step_mark__name">setting cluster</span></li>
-          </div>
+  <div class="stepper-indicator failed-step">
+    <div class="stepper-indicator-step_mark">
+      <div class="d-flex">
+        <div class="indicator-circle"></div>
           <span class="stepper-indicator-step_mark__line"></span>
         </div>
-                <div class="stepper-indicator-step_mark">
-            <div class="list-items">
-          <li><div class="indicator-circle"></div></li>
-         <li> <span class="stepper-indicator-step_mark__name">Activating</span></li>
-          </div>
-          <span class="stepper-indicator-step_mark__line"></span>
-        </div>
-              
-            <div class="list-items">
-          <li><div class="indicator-circle"></div></li>
-         <li> <span class="stepper-indicator-step_mark__name">Loading</span></li>
-          </div>
-        </div>
+      <div class="stepper-indicator-step_mark__name">Activating</div>
+    </div>
+  </div> 
 
 </Playground>
 
 ### Example 4
-#### Failed stepper
-<Playground>
-
-    <div class="stepper-indicator">
-        <div class="stepper-indicator-step_mark indicator-completed">
-            <div class="list-items">
-          <li><div class="indicator-circle"></div></li>
-         <li> <span class="stepper-indicator-step_mark__name">setting cluster</span></li>
-          </div>
-          <span class="stepper-indicator-step_mark__line"></span>
-        </div>
-                <div class="stepper-indicator-step_mark indicator-completed">
-            <div class="list-items">
-          <li><div class="indicator-circle"></div></li>
-         <li> <span class="stepper-indicator-step_mark__name">Activating</span></li>
-          </div>
-          <span class="stepper-indicator-step_mark__line"></span>
-        </div>
-              
-            <div class="list-items">
-          <li><div class="indicator-circle-failed"></div></li>
-         <li> <span class="stepper-indicator-step_mark__name">Loading</span></li>
-        </div>
-    </div>
-
-</Playground>
-
-### Example 5
 #### Pending stepper
 <Playground>
 
-    <div class="stepper-indicator">
-        <div class="stepper-indicator-step_mark indicator-completed">
-            <div class="list-items">
-             <li><div class="indicator-circle"></div></li>
-         <li> <span class="stepper-indicator-step_mark__name">setting Cluster</span></li>
-          </div>
+  <div class="stepper-indicator current-step ">
+    <div class="stepper-indicator-step_mark">
+      <div class="d-flex">
+        <div class="indicator-circle"></div>
           <span class="stepper-indicator-step_mark__line"></span>
         </div>
-                <div class="stepper-indicator-step_mark indicator-pending">
-            <div class="list-items">
-          <li><div class="indicator-circle-pending"></div></li>
-         <li> <span class="stepper-indicator-step_mark__name">Activating</span></li>
-          </div>
-          <span class="stepper-indicator-step_mark__line"></span>
-        </div>
-            
-            <div class="list-items">
-          <li><div class="indicator-circle"></div></li>
-         <li> <span class="stepper-indicator-step_mark__name">Loading</span></li>
-          </div>
-  
+      <div class="stepper-indicator-step_mark__name">loading</div>
     </div>
+  </div> 
 
 </Playground>
 
