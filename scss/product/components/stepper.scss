@@ -18,7 +18,7 @@
   }
 
 
-  .stepper-indicator-current-step {
+  .stepper-indicator-current {
     .stepper-indicator-step_mark__line {
       background-color: $gray-100;
     }
@@ -29,7 +29,7 @@
   }
 
 
-  .stepper-indicator-failed-step {
+  .stepper-indicator-failed {
 
     .stepper-indicator-step_mark__line {
       background-color: $gray-100;
