@@ -1,97 +1,100 @@
-  .stepper-indicator {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.stepper-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+
+  .stepper-indicator-wrapper {
     flex: auto;
-    text-align: center;
+  }
 
-      &.stepper-indicator-step_mark {
-          .stepper-indicator-step_mark__name {
-            background-color: $gray-700;
-            border-color: $gray-700;
-          }
-        }
 
-    .stepper-indicator-step_mark {
-        display: block;
-        flex-direction: row;
-        flex: auto;
-        text-align: start;
+  &.stepper-indicator-step_mark {
+    .stepper-indicator-step_mark__name {
+      background-color: $gray-700;
+      border-color: $gray-700;
     }
+  }
+
+
+  .stepper-indicator-current-step {
     .stepper-indicator-step_mark__line {
       background-color: $gray-100;
-      margin-left:16px;
-      height: 6px;
-      width: -webkit-fill-available;
-      width: -moz-available;
-      margin-top: 16px;
     }
-    
+
+    .indicator-circle {
+      background-color: $primary;
+    }
+  }
+
+
+  .stepper-indicator-failed-step {
+
+    .stepper-indicator-step_mark__line {
+      background-color: $gray-100;
+    }
+
+    .indicator-circle {
+      background-color: $red-500;
+    }
+  }
+
+  .stepper-indicator-visited {
+
+    .indicator-circle {
+      background-color: $blue-900;
+    }
+
+    .stepper-indicator-step_mark__line {
+      background-color: $blue-900;
+    }
+  }
+
+  .stepper-indicator-unvisited {
+
+    .stepper-indicator-step_mark__circle {
+      background-color: $gray-100;
+    }
+
+    .stepper-indicator-step_mark__line {
+      background-color: $gray-100;
+    }
+  }
+
+  .stepper-indicator-step_mark {
+    display: block;
+    flex-direction: row;
+    flex: auto;
+    text-align: start;
+  }
+
+  .stepper-indicator-step_mark__line {
+    background-color: $gray-100;
+    height: 6px;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    margin-top: 16px;
+  }
+
   .indicator-circle {
     background-color: $gray-100;
     border-radius: 50%;
     margin: 8px 0;
     height: 24px;
     width: 26px;
-    margin-left: 16px;
+
   }
-  
-  .stepper-content {
-  .stepper-content-header {
-    margin-bottom: 18px;
-    .stepper-content-header_title {
-      margin-bottom: 12px;
-      .stepper-content-header_title__text {
-        font-size: 36px;
-      }
-    }
-  }
-  .stepper-content-body {
-    .stepper-content-body-node {
-      margin-bottom: 32px;
-      .stepper-content-body-node__text {
-        font-style: italic;
-      }
-    }
-  
-  }
-  }
+
 }
 
-.current-step {
-.stepper-indicator-step_mark__line {
-  background-color: $gray-100;
-     }
-     .indicator-circle {
-      background-color: $primary;
-}
+.stepper-text {
+  text-align: center;
 }
 
-
-.failed-step {
-  .stepper-indicator-step_mark__line {
-    background-color:  $gray-100;
-       }
-       .indicator-circle {
-        background-color:  $red-500;
-    }
-  }
-  .visited {
-
-    .indicator-circle{
-      background-color: $blue-900;
-    }
-    .stepper-indicator-step_mark__line{
-      background-color: $blue-900;
-    }
-  }
-
-.unvisited{
- 
-    .stepper-indicator-step_mark__circle {
-      background-color: $gray-100;
-    }
-    .stepper-indicator-step_mark__line {
-      background-color: $gray-100;
-    }
-  }
+.stepper-fixed {
+  text-align: -webkit-center;
+  text-align: -moz-center;
+  width: 60px;
+  height: 60px;
+}

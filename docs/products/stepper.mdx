@@ -10,15 +10,25 @@ import { Playground, PropsTable } from 'docz'
 #### unvisited stepper
 <Playground>
 
-  <div class="stepper-indicator unvisited">
-    <div class="stepper-indicator-step_mark">
-      <div class="d-flex">
-        <div class="indicator-circle"></div>
-          <span class="stepper-indicator-step_mark__line"></span>
+<div class="stepper-indicator">
+  <div class="stepper-indicator-wrapper">
+<div class="stepper-indicator-unvisited">
+  <div class="stepper-indicator-step_mark">
+    <div class="d-flex">
+      <div class="stepper-fixed">
+        <div class="indicator-circle" />
+        <div class="stepper-text">
+          <span class="stepper-indicator-step_mark__name">
+            Setting cluster
+          </span>
         </div>
-      <div class="stepper-indicator-step_mark__name">Setting cluster</div>
+      </div>
+      <span class="stepper-indicator-step_mark__line" />
     </div>
-  </div>  
+  </div>
+  </div>
+</div>
+</div>
 
 </Playground>
 
@@ -26,15 +36,25 @@ import { Playground, PropsTable } from 'docz'
 #### visited stepper
 <Playground>
 
-  <div class="stepper-indicator visited">
-    <div class="stepper-indicator-step_mark">
-      <div class="d-flex">
-        <div class="indicator-circle"></div>
-          <span class="stepper-indicator-step_mark__line"></span>
+<div class="stepper-indicator">
+  <div class="stepper-indicator-wrapper">
+<div class="stepper-indicator-visited">
+  <div class="stepper-indicator-step_mark">
+    <div class="d-flex">
+      <div class="stepper-fixed">
+        <div class="indicator-circle" />
+        <div class="stepper-text">
+          <span class="stepper-indicator-step_mark__name">
+            Application
+          </span>
         </div>
-      <div class="stepper-indicator-step_mark__name">Loading</div>
+      </div>
+      <span class="stepper-indicator-step_mark__line" />
     </div>
-  </div> 
+  </div>
+  </div>
+</div>
+</div>
   
 </Playground>
 
@@ -43,31 +63,52 @@ import { Playground, PropsTable } from 'docz'
 #### Error stepper
 <Playground>
 
-  <div class="stepper-indicator failed-step">
-    <div class="stepper-indicator-step_mark">
-      <div class="d-flex">
-        <div class="indicator-circle"></div>
-          <span class="stepper-indicator-step_mark__line"></span>
+<div class="stepper-indicator">
+  <div class="stepper-indicator-wrapper">
+<div class="stepper-indicator-failed-step">
+  <div class="stepper-indicator-step_mark">
+    <div class="d-flex">
+      <div class="stepper-fixed">
+        <div class="indicator-circle" />
+        <div class="stepper-text">
+          <span class="stepper-indicator-step_mark__name">
+            Loading
+          </span>
         </div>
-      <div class="stepper-indicator-step_mark__name">Activating</div>
+      </div>
+      <span class="stepper-indicator-step_mark__line" />
     </div>
-  </div> 
+  </div>
+  </div>
+</div>
+</div>
 
 </Playground>
+
 
 ### Example 4
 #### Pending stepper
 <Playground>
 
-  <div class="stepper-indicator current-step ">
-    <div class="stepper-indicator-step_mark">
-      <div class="d-flex">
-        <div class="indicator-circle"></div>
-          <span class="stepper-indicator-step_mark__line"></span>
+<div class="stepper-indicator">
+  <div class="stepper-indicator-wrapper">
+<div class="stepper-indicator-current-step">
+  <div class="stepper-indicator-step_mark">
+    <div class="d-flex">
+      <div class="stepper-fixed">
+        <div class="indicator-circle" />
+        <div class="stepper-text">
+          <span class="stepper-indicator-step_mark__name">
+              Loading
+          </span>
         </div>
-      <div class="stepper-indicator-step_mark__name">loading</div>
+      </div>
+      <span class="stepper-indicator-step_mark__line" />
     </div>
-  </div> 
+  </div>
+  </div>
+</div>
+</div>
 
 </Playground>
 
@@ -75,28 +116,58 @@ import { Playground, PropsTable } from 'docz'
 #### Completed stepper
 <Playground>
 
-  <div class="stepper-indicator visited">
-    <div class="stepper-indicator-step_mark">
-      <div class="d-flex">
-        <div class="indicator-circle"></div>
-          <span class="stepper-indicator-step_mark__line"></span>
+<div class="stepper-indicator">
+  <div class="stepper-indicator-wrapper">
+    <div class="stepper-indicator-visited">
+      <div class="stepper-indicator-step_mark">
+        <div class="d-flex">
+          <div class="stepper-fixed">
+            <div class="indicator-circle" />
+            <div class="stepper-text">
+              <span class="stepper-indicator-step_mark__name">
+                Application hello
+              </span>
+            </div>
+          </div>
+          <span class="stepper-indicator-step_mark__line" />
         </div>
-      <div class="stepper-indicator-step_mark__name">Loading</div>
+      </div>
     </div>
-        <div class="stepper-indicator-step_mark">
-      <div class="d-flex">
-        <div class="indicator-circle"></div>
-          <span class="stepper-indicator-step_mark__line"></span>
+  </div>
+  <div class="stepper-indicator-wrapper">
+    <div class="stepper-indicator-visited">
+      <div class="stepper-indicator-step_mark">
+        <div class="d-flex">
+          <div class="stepper-fixed">
+            <div class="indicator-circle" />
+            <div class="stepper-text">
+              <span class="stepper-indicator-step_mark__name">
+                Application
+              </span>
+            </div>
+          </div>
+          <span class="stepper-indicator-step_mark__line" />
         </div>
-      <div class="stepper-indicator-step_mark__name">Loading</div>
+      </div>
     </div>
-        <div class="">
-      <div class="d-flex">
-        <div class="indicator-circle"></div>
-        </div>
-      <div class="stepper-indicator-step_mark__name">Loading</div>
+  </div>
+    <div class="stepper-indicator-visited">
+      <div class="stepper-indicator-step_mark">
+        <div class="d-flex">
+          <div class="stepper-fixed">
+            <div class="indicator-circle" />
+            <div class="stepper-text">
+              <span class="stepper-indicator-step_mark__name">
+                Application
+              </span>
+            </div>
+          </div>
+      </div>
     </div>
-  </div> 
+  </div>
+</div>
+      
+
   
 </Playground>
 
@@ -105,28 +176,56 @@ import { Playground, PropsTable } from 'docz'
 #### Error stepper
 <Playground>
 
-  <div class="stepper-indicator failed-step">
-    <div class="stepper-indicator-step_mark">
-      <div class="d-flex">
-        <div class="indicator-circle"></div>
-          <span class="stepper-indicator-step_mark__line"></span>
+<div class="stepper-indicator">
+  <div class="stepper-indicator-wrapper">
+    <div class="stepper-indicator-failed-step">
+      <div class="stepper-indicator-step_mark">
+        <div class="d-flex">
+          <div class="stepper-fixed">
+            <div class="indicator-circle" />
+            <div class="stepper-text">
+              <span class="stepper-indicator-step_mark__name">
+                Setting cluster
+              </span>
+            </div>
+          </div>
+          <span class="stepper-indicator-step_mark__line" />
         </div>
-      <div class="stepper-indicator-step_mark__name">Activating</div>
+      </div>
     </div>
-        <div class="stepper-indicator-step_mark">
-      <div class="d-flex">
-        <div class="indicator-circle"></div>
-          <span class="stepper-indicator-step_mark__line"></span>
+  </div>
+    <div class="stepper-indicator-wrapper">
+    <div class="stepper-indicator-unvisited">
+      <div class="stepper-indicator-step_mark">
+        <div class="d-flex">
+          <div class="stepper-fixed">
+            <div class="indicator-circle" />
+            <div class="stepper-text">
+              <span class="stepper-indicator-step_mark__name">
+                  Loading
+              </span>
+            </div>
+          </div>
+          <span class="stepper-indicator-step_mark__line" />
         </div>
-      <div class="stepper-indicator-step_mark__name">Activating</div>
+      </div>
     </div>
-        <div class="">
-      <div class="d-flex">
-        <div class="indicator-circle"></div>
+  </div>
+    <div class="stepper-indicator-unvisited">
+      <div class="stepper-indicator-step_mark">
+        <div class="d-flex">
+          <div class="stepper-fixed">
+            <div class="indicator-circle" />
+            <div class="stepper-text">
+              <span class="stepper-indicator-step_mark__name">
+                Setting cluster
+              </span>
+            </div>
+          </div>
         </div>
-      <div class="stepper-indicator-step_mark__name">Activating</div>
+      </div>
     </div>
-  </div> 
+</div>
 
 </Playground>
 
@@ -134,28 +233,56 @@ import { Playground, PropsTable } from 'docz'
 #### Pending stepper
 <Playground>
 
-  <div class="stepper-indicator current-step ">
-    <div class="stepper-indicator-step_mark">
-      <div class="d-flex">
-        <div class="indicator-circle"></div>
-          <span class="stepper-indicator-step_mark__line"></span>
+<div class="stepper-indicator">
+  <div class="stepper-indicator-wrapper">
+    <div class="stepper-indicator-current-step">
+      <div class="stepper-indicator-step_mark">
+        <div class="d-flex">
+          <div class="stepper-fixed">
+            <div class="indicator-circle" />
+            <div class="stepper-text">
+              <span class="stepper-indicator-step_mark__name">
+                Setting cluster
+              </span>
+            </div>
+          </div>
+          <span class="stepper-indicator-step_mark__line" />
         </div>
-      <div class="stepper-indicator-step_mark__name">loading</div>
+      </div>
     </div>
-        <div class="stepper-indicator-step_mark">
-      <div class="d-flex">
-        <div class="indicator-circle"></div>
-          <span class="stepper-indicator-step_mark__line"></span>
+  </div>
+    <div class="stepper-indicator-wrapper">
+    <div class="stepper-indicator-unvisited">
+      <div class="stepper-indicator-step_mark">
+        <div class="d-flex">
+          <div class="stepper-fixed">
+            <div class="indicator-circle" />
+            <div class="stepper-text">
+              <span class="stepper-indicator-step_mark__name">
+                 Loading
+              </span>
+            </div>
+          </div>
+          <span class="stepper-indicator-step_mark__line" />
         </div>
-      <div class="stepper-indicator-step_mark__name">loading</div>
+      </div>
     </div>
-        <div class="">
-      <div class="d-flex">
-        <div class="indicator-circle"></div>
+  </div>
+    <div class="stepper-indicator-unvisited">
+      <div class="stepper-indicator-step_mark">
+        <div class="d-flex">
+          <div class="stepper-fixed">
+            <div class="indicator-circle" />
+            <div class="stepper-text">
+              <span class="stepper-indicator-step_mark__name">
+                 Loading
+              </span>
+            </div>
+          </div>
         </div>
-      <div class="stepper-indicator-step_mark__name">loading</div>
+      </div>
     </div>
-  </div> 
+</div>
 
 </Playground>
 
