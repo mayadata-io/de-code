@@ -1,75 +1,75 @@
-.stepper-indicator {
+.stepper {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 
 
-  .stepper-indicator-wrapper {
+  .stepper-steps-wrapper {
     flex: auto;
   }
 
 
-  &.stepper-indicator-step_mark {
-    .stepper-indicator-step_mark__name {
+  &.stepper-step_mark {
+    .stepper-step_mark__name {
       background-color: $gray-700;
       border-color: $gray-700;
     }
   }
 
 
-  .stepper-indicator-current {
-    .stepper-indicator-step_mark__line {
+  .stepper-step-current {
+    .stepper-step_mark__line {
       background-color: $gray-100;
     }
 
-    .indicator-circle {
+    .circle {
       background-color: $primary;
     }
   }
 
 
-  .stepper-indicator-failed {
+  .stepper-step-error {
 
-    .stepper-indicator-step_mark__line {
+    .stepper-step_mark__line {
       background-color: $gray-100;
     }
 
-    .indicator-circle {
+    .circle {
       background-color: $red-500;
     }
   }
 
-  .stepper-indicator-visited {
+  .stepper-step-visited {
 
-    .indicator-circle {
+    .circle {
       background-color: $blue-900;
     }
 
-    .stepper-indicator-step_mark__line {
+    .stepper-step_mark__line {
       background-color: $blue-900;
     }
   }
 
-  .stepper-indicator-unvisited {
+  .stepper-step--unvisited {
 
-    .stepper-indicator-step_mark__circle {
+    .stepper-step_mark__circle {
       background-color: $gray-100;
     }
 
-    .stepper-indicator-step_mark__line {
+    .stepper-step_mark__line {
       background-color: $gray-100;
     }
   }
 
-  .stepper-indicator-step_mark {
+  .stepper-step_mark {
     display: block;
     flex-direction: row;
     flex: auto;
     text-align: start;
   }
 
-  .stepper-indicator-step_mark__line {
+  .stepper-step_mark__line {
     background-color: $gray-100;
     height: 6px;
     width: -webkit-fill-available;
@@ -77,12 +77,12 @@
     margin-top: 16px;
   }
 
-  .indicator-circle {
+  .circle {
     background-color: $gray-100;
     border-radius: 50%;
     margin: 8px 0;
     height: 24px;
-    width: 26px;
+    width: 24px;
 
   }
 
