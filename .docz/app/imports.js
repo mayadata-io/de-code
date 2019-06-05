@@ -27,14 +27,14 @@ export const imports = {
     import(/* webpackPrefetch: true, webpackChunkName: "products-colors" */ 'products/colors.mdx'),
   'products/dropdown.mdx': () =>
     import(/* webpackPrefetch: true, webpackChunkName: "products-dropdown" */ 'products/dropdown.mdx'),
+  'products/forms.mdx': () =>
+    import(/* webpackPrefetch: true, webpackChunkName: "products-forms" */ 'products/forms.mdx'),
   'products/headers.mdx': () =>
     import(/* webpackPrefetch: true, webpackChunkName: "products-headers" */ 'products/headers.mdx'),
-  'products/input.mdx': () =>
-    import(/* webpackPrefetch: true, webpackChunkName: "products-input" */ 'products/input.mdx'),
-  'products/list.mdx': () =>
-    import(/* webpackPrefetch: true, webpackChunkName: "products-list" */ 'products/list.mdx'),
   'products/modal.mdx': () =>
     import(/* webpackPrefetch: true, webpackChunkName: "products-modal" */ 'products/modal.mdx'),
+  'products/list.mdx': () =>
+    import(/* webpackPrefetch: true, webpackChunkName: "products-list" */ 'products/list.mdx'),
   'products/navs.mdx': () =>
     import(/* webpackPrefetch: true, webpackChunkName: "products-navs" */ 'products/navs.mdx'),
   'products/pagination.mdx': () =>

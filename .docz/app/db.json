@@ -11,11 +11,25 @@
     "themeConfig": {
       "mode": "light",
       "colors": {
-        "sidebarBg": "white"
+        "white": "#FFFFFF",
+        "grayExtraLight": "#EEF1F5",
+        "grayLight": "#CED4DE",
+        "gray": "#7D899C",
+        "grayDark": "#383842",
+        "grayExtraDark": "#0F0F11",
+        "dark": "#23232A",
+        "blue": "#0063FF",
+        "primary": "#0063FF",
+        "text": "#383842",
+        "link": "#0063FF",
+        "sidebarBg": "white",
+        "footerText": "#383842",
+        "sidebarText": "#23232A"
       },
       "styles": {
         "body": {
-          "fontFamily": "-apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif"
+          "fontFamily": "-apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+          "fontSize": 14
         },
         "h1": {
           "fontSize": "4em",
@@ -28,6 +42,7 @@
     "port": "9999",
     "src": "docs",
     "dest": "dist",
+    "base": "/de-code/",
     "plugins": [
       {}
     ]
@@ -47,85 +62,86 @@
           "depth": 1,
           "slug": "get-started",
           "value": "Get started"
+        },
+        {
+          "depth": 2,
+          "slug": "installation",
+          "value": "Installation"
+        },
+        {
+          "depth": 2,
+          "slug": "usages",
+          "value": "Usages"
+        },
+        {
+          "depth": 3,
+          "slug": "cdn",
+          "value": "CDN"
         }
       ]
     },
-    "marketing/buttons.mdx": {
-      "name": "Buttons",
-      "menu": "Marketing",
-      "id": "a435ce2e1b38acbe5f297ac668922011",
-      "filepath": "marketing/buttons.mdx",
+    "foundation/icons.mdx": {
+      "name": "Icons",
+      "menu": "Foundation",
+      "id": "fdfdd4a46703921ff1830d479bff6001",
+      "filepath": "foundation/icons.mdx",
       "link": null,
-      "slug": "marketing-buttons",
-      "route": "/marketing-buttons",
+      "slug": "foundation-icons",
+      "route": "/foundation-icons",
       "order": 0,
       "headings": [
         {
           "depth": 1,
-          "slug": "buttons",
-          "value": "Buttons"
-        }
-      ]
-    },
-    "marketing/colors.mdx": {
-      "name": "Colors",
-      "menu": "Marketing",
-      "id": "8090dda17e8d30fa6a7dd44640960c06",
-      "filepath": "marketing/colors.mdx",
-      "link": null,
-      "slug": "marketing-colors",
-      "route": "/marketing-colors",
-      "order": 0,
-      "headings": [
+          "slug": "icons",
+          "value": "Icons"
+        },
         {
-          "depth": 1,
-          "slug": "colors",
-          "value": "Colors"
+          "depth": 2,
+          "slug": "usages",
+          "value": "Usages"
         }
       ]
     },
-    "marketing/forms.mdx": {
-      "name": "Forms",
-      "menu": "Marketing",
-      "id": "06115b648db36b3c1e4dd364c8db79cf",
-      "filepath": "marketing/forms.mdx",
-      "link": null,
-      "slug": "marketing-forms",
-      "route": "/marketing-forms",
-      "order": 0,
-      "headings": [
-        {
-          "depth": 1,
-          "slug": "forms",
-          "value": "Forms"
-        }
-      ]
-    },
-    "marketing/logos.mdx": {
+    "foundation/logos.mdx": {
       "name": "Logos",
-      "menu": "Marketing",
-      "id": "767b10bc78651e0cb8040456d8b93181",
-      "filepath": "marketing/logos.mdx",
+      "menu": "Foundation",
+      "id": "f102cc9e898ddcd9c88660eb9ea56356",
+      "filepath": "foundation/logos.mdx",
       "link": null,
-      "slug": "marketing-logos",
-      "route": "/marketing-logos",
+      "slug": "foundation-logos",
+      "route": "/foundation-logos",
       "order": 0,
       "headings": [
         {
           "depth": 1,
           "slug": "logos",
           "value": "Logos"
+        },
+        {
+          "depth": 2,
+          "slug": "mayadata",
+          "value": "MayaData"
+        },
+        {
+          "depth": 2,
+          "slug": "mayadata-product",
+          "value": "MayaData product"
+        },
+        {
+          "depth": 2,
+          "slug": "open-source-projects",
+          "value": "Open source projects"
         }
       ]
     },
-    "marketing/typography.mdx": {
+    "foundation/typography.mdx": {
       "name": "Typography",
-      "menu": "Marketing",
-      "id": "4061c11d950e37b6c44a56bf914f6a29",
-      "filepath": "marketing/typography.mdx",
+      "menu": "Foundation",
+      "id": "0d87ddf8d8c40de6791174ffa8d48509",
+      "filepath": "foundation/typography.mdx",
       "link": null,
-      "slug": "marketing-typography",
-      "route": "/marketing-typography",
+      "slug": "foundation-typography",
+      "route": "/foundation-typography",
       "order": 0,
       "headings": [
         {
@@ -191,6 +207,21 @@
           "depth": 4,
           "slug": "avatar-placeholder-with-themes",
           "value": "Avatar placeholder with themes"
+        },
+        {
+          "depth": 2,
+          "slug": "examples",
+          "value": "Examples"
+        },
+        {
+          "depth": 3,
+          "slug": "cluster-locations",
+          "value": "Cluster locations"
+        },
+        {
+          "depth": 3,
+          "slug": "openebs-workloads",
+          "value": "OpenEBS workloads"
         }
       ]
     },
@@ -210,14 +241,29 @@
           "value": "Badge"
         },
         {
-          "depth": 2,
-          "slug": "badge-variations",
-          "value": "Badge variations"
+          "depth": 3,
+          "slug": "default-badge",
+          "value": "Default badge"
         },
         {
           "depth": 3,
-          "slug": "pill-badges",
-          "value": "Pill badges"
+          "slug": "gradient-badge",
+          "value": "Gradient badge"
+        },
+        {
+          "depth": 3,
+          "slug": "pill-badge",
+          "value": "Pill badge"
+        },
+        {
+          "depth": 3,
+          "slug": "circle-badge",
+          "value": "Circle badge"
+        },
+        {
+          "depth": 3,
+          "slug": "sizes",
+          "value": "sizes"
         }
       ]
     },
@@ -299,6 +345,21 @@
           "depth": 3,
           "slug": "dark",
           "value": "Dark"
+        },
+        {
+          "depth": 2,
+          "slug": "button-group",
+          "value": "Button group"
+        },
+        {
+          "depth": 3,
+          "slug": "button-group-with-icons",
+          "value": "Button group with icons"
+        },
+        {
+          "depth": 3,
+          "slug": "button-group-with-text",
+          "value": "Button group with text"
         }
       ]
     },
@@ -316,57 +377,58 @@
           "depth": 1,
           "slug": "cards",
           "value": "Cards"
+        },
+        {
+          "depth": 3,
+          "slug": "example",
+          "value": "Example"
+        },
+        {
+          "depth": 4,
+          "slug": "card-with-no-contents",
+          "value": "Card with no contents."
+        },
+        {
+          "depth": 3,
+          "slug": "example-two",
+          "value": "Example two"
+        },
+        {
+          "depth": 4,
+          "slug": "card-with-section-header",
+          "value": "Card with section header"
+        },
+        {
+          "depth": 3,
+          "slug": "example-three",
+          "value": "Example three"
+        },
+        {
+          "depth": 4,
+          "slug": "card-with-section-header-and-content",
+          "value": "Card with section header and content"
         }
       ]
     },
-    "products/dropdown.mdx": {
-      "name": "Dropdown",
+    "products/chooser.mdx": {
+      "name": "Chooser",
       "menu": "Product",
-      "id": "df6af32483158b6d7ce348a23289d016",
-      "filepath": "products/dropdown.mdx",
+      "id": "9eb3975d288a0dc760c999ded56b5e55",
+      "filepath": "products/chooser.mdx",
       "link": null,
-      "slug": "products-dropdown",
-      "route": "/products-dropdown",
+      "slug": "products-chooser",
+      "route": "/products-chooser",
       "order": 0,
       "headings": [
         {
           "depth": 1,
-          "slug": "dropdown-menu",
-          "value": "Dropdown menu"
-        }
-      ]
-    },
-    "products/input.mdx": {
-      "name": "Inputs",
-      "menu": "Product",
-      "id": "2b80fd8ee4c4ac632c2c90ceeec8561e",
-      "filepath": "products/input.mdx",
-      "link": null,
-      "slug": "products-input",
-      "route": "/products-input",
-      "order": 0,
-      "headings": [
+          "slug": "chooser",
+          "value": "Chooser"
+        },
         {
-          "depth": 1,
-          "slug": "inputs",
-          "value": "Inputs"
-        }
-      ]
-    },
-    "products/list.mdx": {
-      "name": "Lists",
-      "menu": "Product",
-      "id": "59900f5aea6bac4e20b479c9d7aa9991",
-      "filepath": "products/list.mdx",
-      "link": null,
-      "slug": "products-list",
-      "route": "/products-list",
-      "order": 0,
-      "headings": [
-        {
-          "depth": 1,
-          "slug": "lists",
-          "value": "Lists"
+          "depth": 2,
+          "slug": "tab-chooser",
+          "value": "Tab chooser"
         }
       ]
     },
@@ -387,8 +449,204 @@
         },
         {
           "depth": 2,
+          "slug": "primary",
+          "value": "Primary"
+        },
+        {
+          "depth": 2,
+          "slug": "secondary",
+          "value": "Secondary"
+        },
+        {
+          "depth": 2,
           "slug": "palattes",
           "value": "Palattes"
+        }
+      ]
+    },
+    "products/dropdown.mdx": {
+      "name": "Dropdown",
+      "menu": "Product",
+      "id": "df6af32483158b6d7ce348a23289d016",
+      "filepath": "products/dropdown.mdx",
+      "link": null,
+      "slug": "products-dropdown",
+      "route": "/products-dropdown",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "dropdown-menu",
+          "value": "Dropdown menu"
+        }
+      ]
+    },
+    "products/forms.mdx": {
+      "name": "Forms",
+      "menu": "Product",
+      "id": "61127e7289c0c665c139cbd4c59ff75d",
+      "filepath": "products/forms.mdx",
+      "link": null,
+      "slug": "products-forms",
+      "route": "/products-forms",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "inputs",
+          "value": "Inputs"
+        },
+        {
+          "depth": 2,
+          "slug": "text",
+          "value": "Text"
+        },
+        {
+          "depth": 3,
+          "slug": "sizes",
+          "value": "Sizes"
+        },
+        {
+          "depth": 3,
+          "slug": "advanced",
+          "value": "Advanced"
+        },
+        {
+          "depth": 4,
+          "slug": "search-input-field",
+          "value": "Search input field"
+        },
+        {
+          "depth": 2,
+          "slug": "checkbox",
+          "value": "Checkbox"
+        },
+        {
+          "depth": 2,
+          "slug": "radio",
+          "value": "Radio"
+        },
+        {
+          "depth": 2,
+          "slug": "segmented-controls",
+          "value": "Segmented controls"
+        }
+      ]
+    },
+    "products/headers.mdx": {
+      "name": "Header",
+      "menu": "Product",
+      "id": "c35141a43119220faf8347780acac47b",
+      "filepath": "products/headers.mdx",
+      "link": null,
+      "slug": "products-headers",
+      "route": "/products-headers",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "headers",
+          "value": "Headers"
+        },
+        {
+          "depth": 2,
+          "slug": "page-header",
+          "value": "Page Header"
+        },
+        {
+          "depth": 3,
+          "slug": "example-one",
+          "value": "Example one"
+        },
+        {
+          "depth": 3,
+          "slug": "example-two",
+          "value": "Example two"
+        },
+        {
+          "depth": 5,
+          "slug": "page-header-with-an-global-level-action-button",
+          "value": "Page header with an global level action button"
+        },
+        {
+          "depth": 3,
+          "slug": "example-three",
+          "value": "Example three"
+        },
+        {
+          "depth": 5,
+          "slug": "page-header-with-back-button",
+          "value": "Page header with back button"
+        },
+        {
+          "depth": 3,
+          "slug": "example-four",
+          "value": "Example four"
+        },
+        {
+          "depth": 5,
+          "slug": "page-header-with-a-back-navigation-button",
+          "value": "Page header with a back navigation button"
+        },
+        {
+          "depth": 3,
+          "slug": "example-five",
+          "value": "Example five"
+        },
+        {
+          "depth": 5,
+          "slug": "section-header",
+          "value": "Section header"
+        },
+        {
+          "depth": 3,
+          "slug": "example-six",
+          "value": "Example six"
+        },
+        {
+          "depth": 5,
+          "slug": "page-header-section-header-and-contents",
+          "value": "Page header, section header and contents"
+        },
+        {
+          "depth": 3,
+          "slug": "example-seven",
+          "value": "Example seven"
+        },
+        {
+          "depth": 5,
+          "slug": "metadata-bar",
+          "value": "Metadata bar"
+        },
+        {
+          "depth": 3,
+          "slug": "example-eight",
+          "value": "Example eight"
+        },
+        {
+          "depth": 5,
+          "slug": "page-header--metadata-bar",
+          "value": "Page header , Metadata bar"
+        },
+        {
+          "depth": 3,
+          "slug": "example-nine",
+          "value": "Example nine"
+        },
+        {
+          "depth": 5,
+          "slug": "page-header--metadata-bar-table-contents",
+          "value": "Page header , Metadata bar, Table contents"
+        },
+        {
+          "depth": 3,
+          "slug": "example-ten",
+          "value": "Example Ten"
+        },
+        {
+          "depth": 5,
+          "slug": "page-header-bredcrumbs-metadata-bar-table-contents",
+          "value": "Page header, Bredcrumbs, Metadata bar, Table contents"
         }
       ]
     },
@@ -409,6 +667,23 @@
         }
       ]
     },
+    "products/list.mdx": {
+      "name": "Lists",
+      "menu": "Product",
+      "id": "59900f5aea6bac4e20b479c9d7aa9991",
+      "filepath": "products/list.mdx",
+      "link": null,
+      "slug": "products-list",
+      "route": "/products-list",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "lists",
+          "value": "Lists"
+        }
+      ]
+    },
     "products/navs.mdx": {
       "name": "Navigations",
       "menu": "Product",
@@ -423,6 +698,16 @@
           "depth": 1,
           "slug": "navigations",
           "value": "Navigations"
+        },
+        {
+          "depth": 3,
+          "slug": "default-nav",
+          "value": "Default nav"
+        },
+        {
+          "depth": 3,
+          "slug": "segmented-nav",
+          "value": "Segmented nav"
         }
       ]
     },
@@ -440,6 +725,31 @@
           "depth": 1,
           "slug": "paginations",
           "value": "Paginations"
+        },
+        {
+          "depth": 3,
+          "slug": "default-centerd",
+          "value": "Default centerd"
+        },
+        {
+          "depth": 3,
+          "slug": "disabled-and-active-states",
+          "value": "Disabled and active states"
+        },
+        {
+          "depth": 2,
+          "slug": "sizes",
+          "value": "Sizes"
+        },
+        {
+          "depth": 4,
+          "slug": "small",
+          "value": "Small"
+        },
+        {
+          "depth": 4,
+          "slug": "large",
+          "value": "Large"
         }
       ]
     },
@@ -460,6 +770,93 @@
         }
       ]
     },
+    "products/stepper.mdx": {
+      "name": "Stepper",
+      "menu": "Product",
+      "id": "0812010962f3a3973aab83e412503983",
+      "filepath": "products/stepper.mdx",
+      "link": null,
+      "slug": "products-stepper",
+      "route": "/products-stepper",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "stepper",
+          "value": "Stepper"
+        },
+        {
+          "depth": 3,
+          "slug": "example-1",
+          "value": "Example 1"
+        },
+        {
+          "depth": 4,
+          "slug": "unvisited-stepper",
+          "value": "unvisited stepper"
+        },
+        {
+          "depth": 3,
+          "slug": "example-2",
+          "value": "Example 2"
+        },
+        {
+          "depth": 4,
+          "slug": "visited-stepper",
+          "value": "visited stepper"
+        },
+        {
+          "depth": 3,
+          "slug": "example-3",
+          "value": "Example 3"
+        },
+        {
+          "depth": 4,
+          "slug": "error-stepper",
+          "value": "Error stepper"
+        },
+        {
+          "depth": 3,
+          "slug": "example-4",
+          "value": "Example 4"
+        },
+        {
+          "depth": 4,
+          "slug": "pending-stepper",
+          "value": "Pending stepper"
+        },
+        {
+          "depth": 3,
+          "slug": "example-5",
+          "value": "Example 5"
+        },
+        {
+          "depth": 4,
+          "slug": "completed-stepper",
+          "value": "Completed stepper"
+        },
+        {
+          "depth": 3,
+          "slug": "example-6",
+          "value": "Example 6"
+        },
+        {
+          "depth": 4,
+          "slug": "error-stepper-1",
+          "value": "Error stepper"
+        },
+        {
+          "depth": 3,
+          "slug": "example-7",
+          "value": "Example 7"
+        },
+        {
+          "depth": 4,
+          "slug": "pending-stepper-1",
+          "value": "Pending stepper"
+        }
+      ]
+    },
     "products/table.mdx": {
       "name": "Tables",
       "menu": "Product",
@@ -474,6 +871,21 @@
           "depth": 1,
           "slug": "tables",
           "value": "Tables"
+        },
+        {
+          "depth": 2,
+          "slug": "default-table",
+          "value": "Default table"
+        },
+        {
+          "depth": 2,
+          "slug": "table-with-avatar",
+          "value": "Table with avatar"
+        },
+        {
+          "depth": 2,
+          "slug": "table-with-actions",
+          "value": "Table with actions"
         }
       ]
     },
