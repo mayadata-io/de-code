@@ -1,10 +1,13 @@
 .tab-chooser {
   height: 100%;
   list-style: none;
+  margin: 0 -.5rem;
+  padding: 0;
 }
 
 .tab-chooser-item {
-  border: 1px solid $gray-100;
+  background-color: $tab-chooser-item-background;
+  border: $border-width solid $gray-100;
   border-radius: 4px;
   cursor: pointer;
   display: block;
@@ -13,21 +16,27 @@
   float: left;
   margin: 4px;
   text-align: center;
-  width: 14%;
+  width: $tab-chooser-item-width;
+
+  &:first-child {
+    margin-left: 0;
+  }
 
   &:hover {
     background-color: $gray-000;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
   }
 
   &.active {
-    background: $blue-000;
+    background: $tab-chooser-item-background-active;
     border-color: $primary;
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
 
     .tab-chooser-label {
-      border-color: $primary;
-      color: $primary;
+      border-color: $tab-chooser-item-label-border-color-active;
+      color: $tab-chooser-item-label-color-active;
     }
   }
 }
@@ -42,6 +51,6 @@
 }
 
 .tab-chooser-label {
-  border-top: 1px solid $gray-100;
+  border-top: $tab-chooser-item-label-border;
   padding: 4px;
 }
