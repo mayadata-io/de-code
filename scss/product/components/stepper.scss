@@ -1,0 +1,123 @@
+.stepper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+
+  .stepper-steps-wrapper {
+    flex: auto;
+  }
+
+
+  &.stepper-step_mark {
+    .stepper-step_mark__name {
+      background-color: $gray-700;
+      border-color: $gray-700;
+    }
+  }
+
+
+  .stepper-step-current {
+    .stepper-step_mark__line {
+      background-color: $gray-100;
+    }
+
+    .circle {
+      background-color: $primary;
+    }
+    .circle-active {
+      border: 1px solid $blue-900;
+    }
+  }
+
+
+  .stepper-step-error {
+
+    .stepper-step_mark__line {
+      background-color: $gray-100;
+    }
+
+    .circle {
+      background-color: $red-500;
+    }
+
+    .circle-active {
+      border: 1px solid $blue-900;
+    }
+  }
+
+  .stepper-step-visited {
+
+    .circle {
+      background-color: $blue-900;
+    }
+
+    .stepper-step_mark__line {
+      background-color: $blue-900;
+    }
+    .circle-active {
+      border: none;
+    }
+  }
+
+  .stepper-step-unvisited {
+
+    .stepper-step_mark__circle {
+      background-color: $gray-100;
+    }
+
+    .stepper-step_mark__line {
+      background-color: $gray-100;
+    }
+    .circle-active {
+      border: none;
+    }
+  }
+
+  .stepper-step_mark {
+    display: block;
+    flex-direction: row;
+    flex: auto;
+    text-align: start;
+  }
+
+  .stepper-step_mark__line {
+    background-color: $gray-100;
+    height: 6px;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    margin-top: 16px;
+  }
+
+  .circle {
+    background-color: $gray-100;
+    border-radius: 50%;
+    margin: 8px 0;
+    height: 24px;
+    width: 24px;
+  }
+  .circle-active {
+    background-color: transparent;
+    border-radius: 50%;
+    margin: 8px 0;
+    height: 30px;
+    width: 30px;
+    border: 1px solid $blue-900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+.stepper-text {
+  text-align: center;
+}
+
+.stepper-fixed {
+  text-align: -webkit-center;
+  text-align: -moz-center;
+  width: 60px;
+  height: 60px;
+}

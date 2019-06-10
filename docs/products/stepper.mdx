@@ -1,0 +1,317 @@
+---
+name: Stepper
+menu: Product
+
+---
+import { Playground, PropsTable } from 'docz'
+
+# Stepper
+### Example 1
+#### unvisited stepper
+<Playground>
+
+<div class="stepper">
+  <div class="stepper-steps-wrapper">
+<div class="stepper-step-unvisited">
+  <div class="stepper-step_mark">
+    <div class="d-flex">
+      <div class="stepper-fixed">
+       <div class="circle-active">
+        <div class="circle" />
+        </div>
+        <div class="stepper-text">
+          <span class="stepper-step_mark__name">
+            Setting cluster
+          </span>
+        </div>
+      </div>
+      <span class="stepper-step_mark__line" />
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+
+</Playground>
+
+### Example 2
+#### visited stepper
+<Playground>
+
+<div class="stepper">
+  <div class="stepper-steps-wrapper">
+<div class="stepper-step-visited">
+  <div class="stepper-step_mark">
+    <div class="d-flex">
+      <div class="stepper-fixed">
+            <div class="circle-active">
+        <div class="circle" />
+        </div>
+        <div class="stepper-text">
+          <span class="stepper-step_mark__name">
+            Application
+          </span>
+        </div>
+      </div>
+      <span class="stepper-step_mark__line" />
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+  
+</Playground>
+
+
+### Example 3
+#### Error stepper
+<Playground>
+
+<div class="stepper">
+  <div class="stepper-steps-wrapper">
+<div class="stepper-step-error">
+  <div class="stepper-step_mark">
+    <div class="d-flex">
+      <div class="stepper-fixed">
+            <div class="circle-active">
+        <div class="circle" />
+        </div>
+        <div class="stepper-text">
+          <span class="stepper-step_mark__name">
+            Loading
+          </span>
+        </div>
+      </div>
+      <span class="stepper-step_mark__line" />
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+
+</Playground>
+
+
+### Example 4
+#### Pending stepper
+<Playground>
+
+<div class="stepper">
+  <div class="stepper-steps-wrapper">
+<div class="stepper-step-current">
+  <div class="stepper-step_mark">
+    <div class="d-flex">
+      <div class="stepper-fixed">
+            <div class="circle-active">
+        <div class="circle" />
+        </div>
+        <div class="stepper-text">
+          <span class="stepper-step_mark__name">
+              Loading
+          </span>
+        </div>
+      </div>
+      <span class="stepper-step_mark__line" />
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+
+</Playground>
+
+### Example 5
+#### Completed stepper
+<Playground>
+
+<div class="stepper">
+  <div class="stepper-steps-wrapper">
+    <div class="stepper-step-visited">
+      <div class="stepper-step_mark">
+        <div class="d-flex">
+          <div class="stepper-fixed">
+                <div class="circle-active">
+        <div class="circle" />
+        </div>
+            <div class="stepper-text">
+              <span class="stepper-step_mark__name">
+                Application hello
+              </span>
+            </div>
+          </div>
+          <span class="stepper-step_mark__line" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="stepper-steps-wrapper">
+    <div class="stepper-step-visited">
+      <div class="stepper-step_mark">
+        <div class="d-flex">
+          <div class="stepper-fixed">
+                <div class="circle-active">
+        <div class="circle" />
+        </div>
+            <div class="stepper-text">
+              <span class="stepper-step_mark__name">
+                Application
+              </span>
+            </div>
+          </div>
+          <span class="stepper-step_mark__line" />
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="stepper-step-visited">
+      <div class="stepper-step_mark">
+        <div class="d-flex">
+          <div class="stepper-fixed">
+                <div class="circle-active">
+        <div class="circle" />
+        </div>
+            <div class="stepper-text">
+              <span class="stepper-step_mark__name">
+                Application
+              </span>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+
+  
+</Playground>
+
+
+### Example 6
+#### Error stepper
+<Playground>
+
+<div class="stepper">
+  <div class="stepper-steps-wrapper">
+    <div class="stepper-step-error">
+      <div class="stepper-step_mark">
+        <div class="d-flex">
+          <div class="stepper-fixed">
+                <div class="circle-active">
+        <div class="circle" />
+        </div>
+            <div class="stepper-text">
+              <span class="stepper-step_mark__name">
+                Setting cluster
+              </span>
+            </div>
+          </div>
+          <span class="stepper-step_mark__line" />
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="stepper-steps-wrapper">
+    <div class="stepper-step-unvisited">
+      <div class="stepper-step_mark">
+        <div class="d-flex">
+          <div class="stepper-fixed">
+                <div class="circle-active">
+        <div class="circle" />
+        </div>
+            <div class="stepper-text">
+              <span class="stepper-step_mark__name">
+                  Loading
+              </span>
+            </div>
+          </div>
+          <span class="stepper-step_mark__line" />
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="stepper-step-unvisited">
+      <div class="stepper-step_mark">
+        <div class="d-flex">
+          <div class="stepper-fixed">
+                <div class="circle-active">
+        <div class="circle" />
+        </div>
+            <div class="stepper-text">
+              <span class="stepper-step_mark__name">
+                Setting cluster
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+</Playground>
+
+### Example 7
+#### Pending stepper
+<Playground>
+
+<div class="stepper">
+  <div class="stepper-steps-wrapper">
+    <div class="stepper-step-current">
+      <div class="stepper-step_mark">
+        <div class="d-flex">
+          <div class="stepper-fixed">
+                <div class="circle-active">
+        <div class="circle" />
+        </div>
+            <div class="stepper-text">
+              <span class="stepper-step_mark__name">
+                Setting cluster
+              </span>
+            </div>
+          </div>
+          <span class="stepper-step_mark__line" />
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="stepper-steps-wrapper">
+    <div class="stepper-step-unvisited">
+      <div class="stepper-step_mark">
+        <div class="d-flex">
+          <div class="stepper-fixed">
+                <div class="circle-active">
+        <div class="circle" />
+        </div>
+            <div class="stepper-text">
+              <span class="stepper-step_mark__name">
+                 Loading
+              </span>
+            </div>
+          </div>
+          <span class="stepper-step_mark__line" />
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="stepper-step-unvisited">
+      <div class="stepper-step_mark">
+        <div class="d-flex">
+          <div class="stepper-fixed">
+                <div class="circle-active">
+        <div class="circle" />
+        </div>
+            <div class="stepper-text">
+              <span class="stepper-step_mark__name">
+                 Loading
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+</Playground>
+
+
+
+
