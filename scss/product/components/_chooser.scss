@@ -1,0 +1,37 @@
+.tab-chooser {
+  list-style: none !important;
+  height: 100%;
+}
+
+.tab-chooser-items {
+  border: 1px solid $gray-100;
+  border-radius: 4px;
+  float: left;
+  display: block;
+  width: 14%;
+  text-align: center;
+  margin:4px;
+  cursor:pointer;
+  &:hover {
+    background-color: $gray-000;
+  }
+  &.active {
+    background: $blue-000;
+    border-color: $primary;
+    .tab-chooser-label {
+      border-color:$primary;
+    }
+  }
+}
+.tab-chooser-logo {
+  padding:8px 4px;
+}
+.tab-chooser-logo img {
+  height: 40px;
+  width: 40px;
+}
+
+.tab-chooser-label {
+  border-top: 1px solid $gray-100;
+  padding:4px;
+}
