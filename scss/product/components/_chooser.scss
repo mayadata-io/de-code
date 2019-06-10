@@ -1,37 +1,47 @@
 .tab-chooser {
-  list-style: none !important;
   height: 100%;
+  list-style: none;
 }
 
-.tab-chooser-items {
+.tab-chooser-item {
   border: 1px solid $gray-100;
   border-radius: 4px;
-  float: left;
+  cursor: pointer;
   display: block;
-  width: 14%;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  float: left;
+  margin: 4px;
   text-align: center;
-  margin:4px;
-  cursor:pointer;
+  width: 14%;
+
   &:hover {
     background-color: $gray-000;
   }
+
   &.active {
     background: $blue-000;
     border-color: $primary;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+
     .tab-chooser-label {
-      border-color:$primary;
+      border-color: $primary;
+      color: $primary;
     }
   }
 }
+
 .tab-chooser-logo {
-  padding:8px 4px;
-}
-.tab-chooser-logo img {
-  height: 40px;
-  width: 40px;
+  padding: 8px 4px;
+
+  img {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 .tab-chooser-label {
   border-top: 1px solid $gray-100;
-  padding:4px;
+  padding: 4px;
 }
