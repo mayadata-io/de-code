@@ -1,0 +1,15 @@
+.collapse-panel summary {
+  padding-bottom: 12px;
+}
+.collapse-panel[open] {
+  background-color: $blue-000;
+}
+.collapse-panel summary:focus {
+  outline: 0;
+}
+details>summary {
+  list-style: none;
+}
+details>summary::-webkit-details-marker {
+  display: none;
+}
