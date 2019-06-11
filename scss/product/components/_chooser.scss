@@ -1,7 +1,8 @@
 .tab-chooser {
+  display: flex;
+  flex-wrap: wrap;
   height: 100%;
   list-style: none;
-  margin: 0 -.5rem;
   padding: 0;
 }
 
@@ -13,7 +14,6 @@
   display: block;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
-  float: left;
   margin: 4px;
   text-align: center;
   width: $tab-chooser-item-width;
@@ -45,8 +45,8 @@
   padding: 8px 4px;
 
   img {
-    height: 40px;
-    width: 40px;
+    height: 2.5rem;
+    width: 2.5rem;
   }
 }
 
