@@ -52,5 +52,7 @@
 
 .tab-chooser-label {
   border-top: $tab-chooser-item-label-border;
+  overflow: hidden;
   padding: 4px;
+  text-overflow: ellipsis;
 }
