@@ -1,0 +1,74 @@
+---
+name: Chooser
+menu: Product
+---
+
+import { Playground, PropsTable } from 'docz'
+import openshift from '../../resources/images/clusters/openshift.png'
+import gcp from '../../resources/images/clusters/gcp.png'
+import ibm from '../../resources/images/clusters/ibm.png'
+import icp from '../../resources/images/clusters/icp.png'
+import iks from '../../resources/images/clusters/iks.png'
+import stackpointcloud from '../../resources/images/clusters/stackpointcloud.png'
+import onpremise from '../../resources/images/clusters/onpremise.png'
+import packet from '../../resources/images/clusters/packet.png'
+
+
+# Chooser
+
+## Tab chooser
+
+Tab Chooser are selector component, it can be used to create a choose compoent with a label and logo.
+Tab Chooser can be used to create a cluster location and cloud provider selector.
+<Playground>
+  <ul class="tab-chooser">
+    <li class="tab-chooser-item active">
+      <div class="tab-chooser-logo">
+        <img class="" src={openshift} />
+      </div>
+      <div class="tab-chooser-label">
+        OpenShift
+      </div>
+    </li>
+    <li class="tab-chooser-item">
+      <div class="tab-chooser-logo">
+        <img class="" src={gcp} />
+      </div>
+      <div class="tab-chooser-label">
+        GCP
+      </div>
+    </li>
+    <li class="tab-chooser-item">
+      <div class="tab-chooser-logo">
+        <img class="" src={ibm} />
+      </div>
+      <div class="tab-chooser-label">
+        ICP
+      </div>
+    </li>
+    <li class="tab-chooser-item">
+      <div class="tab-chooser-logo">
+        <img class="" src={iks} />
+      </div>
+      <div class="tab-chooser-label">
+        IKS
+      </div>
+    </li>
+    <li class="tab-chooser-item">
+      <div class="tab-chooser-logo">
+        <img class="" src={packet} />
+      </div>
+      <div class="tab-chooser-label">
+        Packet
+      </div>
+    </li>
+    <li class="tab-chooser-item">
+      <div class="tab-chooser-logo">
+        <img class="" src={onpremise} />
+      </div>
+      <div class="tab-chooser-label">
+        On-prem
+      </div>
+    </li>
+  </ul>
+</Playground>
