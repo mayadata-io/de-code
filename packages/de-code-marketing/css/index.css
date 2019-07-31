@@ -962,9 +962,9 @@ mark,
 .nav {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 0;
-  margin-bottom: 0;
   list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .nav-link {
@@ -999,16 +999,16 @@ mark,
 }
 
 .nav-tabs .nav-link.disabled {
-  color: #4D4E5A;
   background-color: transparent;
   border-color: transparent;
+  color: #4D4E5A;
 }
 
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-item.show .nav-link {
-  color: #383842;
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
   background-color: #FFFFFF;
   border-color: #999AA7 #999AA7 #FFFFFF;
+  color: #383842;
 }
 
 .nav-tabs .dropdown-menu {
@@ -1017,14 +1017,61 @@ mark,
   border-top-right-radius: 0;
 }
 
+.nav-default {
+  border-bottom: 1px solid #D1D2D9;
+}
+
+.nav-default .nav-link {
+  color: #383842;
+  cursor: pointer;
+  font-size: 16px;
+  height: 30px;
+  line-height: 20px;
+  margin-right: 22px;
+  padding: 0;
+}
+
+.nav-default .nav-link.active {
+  border-bottom: 2px solid #0063FF;
+  color: #0063FF;
+}
+
+.nav-segmented .nav-link {
+  box-shadow: inset 0 0 0 1px #0063FF;
+  color: #0063FF;
+  cursor: pointer;
+  display: block;
+  margin: 0 -1px -1px 0;
+  text-align: center;
+}
+
+.nav-segmented .nav-link:hover {
+  background: #EFEFF2;
+}
+
+.nav-segmented .nav-link.active {
+  background: #0063FF;
+  color: #FFFFFF;
+}
+
+.nav-segmented .nav-link:first-child {
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.nav-segmented .nav-link:last-child {
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
 .nav-pills .nav-link {
   border-radius: 0.25rem;
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #FFFFFF;
   background-color: #0063FF;
+  color: #FFFFFF;
 }
 
 .nav-fill .nav-item {
@@ -3543,6 +3590,26 @@ button.bg-orange-900:focus {
   flex-wrap: wrap-reverse !important;
 }
 
+.flex-fill {
+  flex: 1 1 auto !important;
+}
+
+.flex-grow-0 {
+  flex-grow: 0 !important;
+}
+
+.flex-grow-1 {
+  flex-grow: 1 !important;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0 !important;
+}
+
+.flex-shrink-1 {
+  flex-shrink: 1 !important;
+}
+
 .justify-content-start {
   justify-content: flex-start !important;
 }
@@ -3653,6 +3720,21 @@ button.bg-orange-900:focus {
   .flex-sm-wrap-reverse {
     flex-wrap: wrap-reverse !important;
   }
+  .flex-sm-fill {
+    flex: 1 1 auto !important;
+  }
+  .flex-sm-grow-0 {
+    flex-grow: 0 !important;
+  }
+  .flex-sm-grow-1 {
+    flex-grow: 1 !important;
+  }
+  .flex-sm-shrink-0 {
+    flex-shrink: 0 !important;
+  }
+  .flex-sm-shrink-1 {
+    flex-shrink: 1 !important;
+  }
   .justify-content-sm-start {
     justify-content: flex-start !important;
   }
@@ -3742,6 +3824,21 @@ button.bg-orange-900:focus {
   }
   .flex-md-wrap-reverse {
     flex-wrap: wrap-reverse !important;
+  }
+  .flex-md-fill {
+    flex: 1 1 auto !important;
+  }
+  .flex-md-grow-0 {
+    flex-grow: 0 !important;
+  }
+  .flex-md-grow-1 {
+    flex-grow: 1 !important;
+  }
+  .flex-md-shrink-0 {
+    flex-shrink: 0 !important;
+  }
+  .flex-md-shrink-1 {
+    flex-shrink: 1 !important;
   }
   .justify-content-md-start {
     justify-content: flex-start !important;
@@ -3833,6 +3930,21 @@ button.bg-orange-900:focus {
   .flex-lg-wrap-reverse {
     flex-wrap: wrap-reverse !important;
   }
+  .flex-lg-fill {
+    flex: 1 1 auto !important;
+  }
+  .flex-lg-grow-0 {
+    flex-grow: 0 !important;
+  }
+  .flex-lg-grow-1 {
+    flex-grow: 1 !important;
+  }
+  .flex-lg-shrink-0 {
+    flex-shrink: 0 !important;
+  }
+  .flex-lg-shrink-1 {
+    flex-shrink: 1 !important;
+  }
   .justify-content-lg-start {
     justify-content: flex-start !important;
   }
@@ -3922,6 +4034,21 @@ button.bg-orange-900:focus {
   }
   .flex-xl-wrap-reverse {
     flex-wrap: wrap-reverse !important;
+  }
+  .flex-xl-fill {
+    flex: 1 1 auto !important;
+  }
+  .flex-xl-grow-0 {
+    flex-grow: 0 !important;
+  }
+  .flex-xl-grow-1 {
+    flex-grow: 1 !important;
+  }
+  .flex-xl-shrink-0 {
+    flex-shrink: 0 !important;
+  }
+  .flex-xl-shrink-1 {
+    flex-shrink: 1 !important;
   }
   .justify-content-xl-start {
     justify-content: flex-start !important;
