@@ -15,7 +15,7 @@ import openshift from '../../resources/images/clusters/openshift.png'
 
 ## Default table
 <Playground>
-  <table class="table table-hover">
+  <table class="table  table-striped">
     <thead>
       <tr>
         <th scope="col">Name</th>
@@ -194,4 +194,92 @@ import openshift from '../../resources/images/clusters/openshift.png'
       </tr>
     </tbody>
   </table>
+</Playground>
+
+## Nested table rows
+<Playground>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Status</th>
+        <th scope="col">K8s version</th>
+        <th scope="col">Nodes</th>
+        <th scope="col">Nodes</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Dev-cluster-yg238
+        </td>
+        <td><span class="badge badge-gradient-success badge-pill">Active</span></td>
+        <td>v1.10.11-gke.1</td>
+        <td>12</td>
+        <td>12</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>
+          Testing-cluster-tr33d
+        </td>
+        <td><span class="badge badge-gradient-danger badge-pill">Inactive</span></td>
+        <td>v1.10</td>
+        <td>3</td>
+        <td></td>
+      </tr>
+      <tr>
+      <td colspan="5" >
+      <div class="table-expendable">
+      <div class="section-header">
+        <div class="section-header_title">
+          <span class="section-header_title__text">Volumes</span>
+        </div>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Status</th>
+            <th scope="col">K8s version</th>
+            <th scope="col">Nodes</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Dev-cluster-yg238
+            </td>
+            <td><span class="badge badge-gradient-success badge-pill">Active</span></td>
+            <td>v1.10.11-gke.1</td>
+            <td>12</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              Testing-cluster-tr33d
+            </td>
+            <td><span class="badge badge-gradient-danger badge-pill">Inactive</span></td>
+            <td>v1.10</td>
+            <td>3</td>
+            <td></td>
+          </tr>
+            </tbody>
+          </table>
+          </div>
+      </td>
+      </tr>
+      <tr>
+        <td>
+          Dev-cluster-yg238
+        </td>
+        <td><span class="badge badge-gradient-success badge-pill">Active</span></td>
+        <td>v1.10.11-gke.1</td>
+        <td>12</td>
+        <td></td>
+      </tr>
+        </tbody>
+      </table>
 </Playground>

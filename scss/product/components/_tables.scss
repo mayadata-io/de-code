@@ -3,21 +3,23 @@
 //
 
 .table {
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: $spacer;
   background-color: $table-bg; // Reset for nesting within parents with `background-color`.
+  border-spacing: 0;
+  border-collapse: unset;
+  margin-bottom: $spacer;
+  max-width: 100%;
+  width: 100%;
 
-  th,
-  td {
+  td,
+  th {
     padding: $table-cell-padding;
     vertical-align: middle;
-    border-top: $table-border-width solid $table-border-color;
   }
 
   thead th {
-    vertical-align: bottom;
     border-bottom: (2 * $table-border-width) solid $table-border-color;
+    border-top: (2 * $table-border-width) solid $table-border-color;
+    vertical-align: bottom;
   }
 
   tbody + tbody {
@@ -28,20 +30,16 @@
     background-color: $body-bg;
   }
 }
-
-
 //
 // Condensed table w/ half padding
 //
 
 .table-sm {
-  th,
-  td {
+  td,
+  th {
     padding: $table-cell-padding-sm;
   }
 }
-
-
 // Bordered version
 //
 // Add borders all around the table and between all the columns.
@@ -49,31 +47,27 @@
 .table-bordered {
   border: $table-border-width solid $table-border-color;
 
-  th,
-  td {
+  td,
+  th {
     border: $table-border-width solid $table-border-color;
   }
 
   thead {
-    th,
-    td {
+    td,
+    th {
       border-bottom-width: (2 * $table-border-width);
     }
   }
 }
-
-
 // Zebra-striping
 //
 // Default zebra-stripe styles (alternating gray and transparent backgrounds)
 
 .table-striped {
-  tbody tr:nth-of-type(odd) {
+  tbody tr:nth-of-type(even) {
     background-color: $table-accent-bg;
   }
 }
-
-
 // Hover effect
 //
 // Placed here since it has to come after the potential zebra striping
@@ -85,27 +79,28 @@
     }
   }
 }
-
 // Avatar images in td
 .table-avatar {
-  display: flex;
   align-items: center;
+  display: flex;
+
   .table-avatar-image {
-    border:1px solid $gray-200;
+    border: 1px solid $gray-200;
     border-radius: 50%;
-    width: 2.5rem;
     height: 2.5rem;
+    width: 2.5rem;
   }
+
   .table-avatar-label {
     margin-left: 12px;
   }
 }
-
 // Action bottons or links in row
 .table-action {
   display: flex;
   flex-direction: row;
 }
+
 .table-action_item {
   margin: 0 8px;
 }
@@ -113,23 +108,17 @@
 .table-action_link {
   cursor: pointer;
 }
-
 // Table backgrounds
 //
 // Exact selectors below required to override `.table-striped` and prevent
 // inheritance to nested tables.
-
 @each $color, $value in $theme-colors {
   @include table-row-variant($color, theme-color-level($color, -9));
 }
-
 @include table-row-variant(active, $table-active-bg);
-
-
 // Dark styles
 //
 // Same table markup, but inverted color scheme: dark background and light text.
-
 // stylelint-disable-next-line no-duplicate-selectors
 .table {
   .thead-dark {
@@ -153,8 +142,8 @@
   color: $table-dark-color;
   background-color: $table-dark-bg;
 
-  th,
   td,
+  th,
   thead th {
     border-color: $table-dark-border-color;
   }
@@ -177,8 +166,6 @@
     }
   }
 }
-
-
 // Responsive tables
 //
 // Generate series of `.table-responsive-*` classes for configuring the screen
@@ -196,7 +183,6 @@
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         -ms-overflow-style: -ms-autohiding-scrollbar; // See https://github.com/twbs/bootstrap/pull/10057
-
         // Prevent double border on horizontal scroll due to use of `display: block;`
         > .table-bordered {
           border: 0;
@@ -204,4 +190,29 @@
       }
     }
   }
+}
+
+.collapse-panel {
+  margin: -12px;
+}
+ .collapse-panel summary:focus {
+   outline: 0;
+ }
+ details>summary {
+   list-style: none;
+ }
+ details>summary::-webkit-details-marker {
+   display: none;
+ }
+
+//Expendable tables
+
+.row-expendable {
+  cursor: pointer;
+}
+
+.table-expendable {
+  border: 2px solid #B8CFFF;
+  border-radius: 4px;
+  padding: 8px;
 }
