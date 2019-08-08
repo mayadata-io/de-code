@@ -1,5 +1,4 @@
 // stylelint-disable selector-no-qualifying-type
-
 //
 // Base styles
 //
@@ -14,32 +13,29 @@
   border: $btn-border-width solid transparent;
   @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
-
   // Share hover and focus styles
   @include hover-focus {
     text-decoration: none;
   }
 
-  &:focus,
-  &.focus {
+  &.focus,
+  &:focus {
     outline: 0;
     box-shadow: $btn-focus-box-shadow;
   }
-
   // Disabled comes first so active can properly restyle
   &.disabled,
   &:disabled {
     opacity: $btn-disabled-opacity;
     @include box-shadow(none);
   }
-
   // Opinionated: add "hand" cursor to non-disabled .btn elements
   &:not(:disabled):not(.disabled) {
     cursor: pointer;
   }
 
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active {
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):active {
     background-image: none;
     @include box-shadow($btn-active-box-shadow);
 
@@ -48,41 +44,34 @@
     }
   }
 }
-
 // Future-proof disabling of clicks on `<a>` elements
+
 a.btn.disabled,
 fieldset:disabled a.btn {
   pointer-events: none;
 }
-
-
 //
 // Alternate buttons
 //
-
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
     @include button-variant($value, $value);
   }
 }
-
 @each $color, $value in $theme-colors {
   .btn-outline-#{$color} {
     @include button-outline-variant($value);
   }
 }
-
-
 //
 // Link buttons
 //
-
 // Make a button look and behave like a link
+
 .btn-link {
   font-weight: $font-weight-normal;
   color: $link-color;
   background-color: transparent;
-
   @include hover {
     color: $link-hover-color;
     text-decoration: $link-hover-decoration;
@@ -90,22 +79,64 @@ fieldset:disabled a.btn {
     border-color: transparent;
   }
 
-  &:focus,
-  &.focus {
+  &.focus,
+  &:focus {
     text-decoration: $link-hover-decoration;
     border-color: transparent;
     box-shadow: none;
   }
 
-  &:disabled,
-  &.disabled {
+  &.disabled,
+  &:disabled {
     color: $btn-link-disabled-color;
   }
-
   // No need for an active state here
 }
+//
+// Floating buttons
+//
 
+.btn-floating {
+  background-color: transparent;
+  border-radius: 50%;
+  color: $gray-600;
+  height: 32px;
+  text-align: center;
+  width: 32px;
+  padding: 6px;
+  font-size: 19px;
+  @include hover {
+    background-color: $blue-000;
+    border-color: transparent;
+    color: $gray-800;
+  }
 
+  &.focus,
+  &:focus {
+    background-color: $blue-000;
+    border-color: transparent;
+    box-shadow: 0 0 0 .1rem $blue-200;
+  }
+
+  i {
+    display: block;
+    vertical-align: middle;
+  }
+
+  + .btn-floating-sm {
+    height: 26px;
+    width: 26px;
+    padding: 4px;
+    font-size: 14px;
+  }
+
+  + .btn-floating-lg {
+    height: 36px;
+    width: 36px;
+    padding: 4px;
+    font-size: 24px;
+  }
+}
 //
 // Button Sizes
 //
@@ -117,8 +148,6 @@ fieldset:disabled a.btn {
 .btn-sm {
   @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
 }
-
-
 //
 // Block button
 //
@@ -126,14 +155,13 @@ fieldset:disabled a.btn {
 .btn-block {
   display: block;
   width: 100%;
-
   // Vertically space out multiple block buttons
   + .btn-block {
     margin-top: $btn-block-spacing-y;
   }
 }
-
 // Specificity overrides
+
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
