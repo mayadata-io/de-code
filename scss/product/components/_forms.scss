@@ -85,7 +85,9 @@ select.form-control {
 //
 // Labels
 //
-
+.form-control-label {
+  color: $form-control-lable-text-color;
+}
 // For use with horizontal and inline forms, when you need the label (or legend)
 // text to align with the form controls.
 .col-form-label {
