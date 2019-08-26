@@ -1,5 +1,5 @@
 ---
-name: Inputs
+name: Forms
 menu: Product
 
 ---
@@ -9,8 +9,22 @@ import { Playground, PropsTable } from 'docz'
 
 ## Text
 <Playground>
-  <input class="form-control" placeholder="Name"/>
+<div class="form-group">
+   <label for="exampleInputEmail1" class="form-control-label">Email address</label>
+   <input class="form-control" placeholder="Name"/>
+</div>
 </Playground>
+
+### Sizes
+<div class="form-group">
+   <input class="form-control form-control-sm" placeholder="form-control-sm"/>
+</div>
+<div class="form-group">
+   <input class="form-control" placeholder="form-control"/>
+</div>
+<div class="form-group">
+   <input class="form-control form-control-lg" placeholder="form-control-lg"/>
+</div>
 
 ### Advanced
 #### Search input field
@@ -46,16 +60,16 @@ A Segment Control is a horizontal control made of multiple segments. It provides
 <Playground>
 <ul class="segmented-control">
 	<li class="segmented-control__item">
-		<input class="segmented-control__input" type="radio" value="3"   name="option" id="option-3"/>  
-		<label class="segmented-control__label" for="option-3">Hourly</label> 
+		<input class="segmented-control__input" type="radio" value="3"   name="option" id="option-3"/>
+		<label class="segmented-control__label" for="option-3">Hourly</label>
 	</li>
-	<li class="segmented-control__item"> 
-		<input class="segmented-control__input" type="radio" value="4"   name="option" id="option-4" />  		
-		<label class="segmented-control__label" for="option-4">Daily</label> 
+	<li class="segmented-control__item">
+		<input class="segmented-control__input" type="radio" value="4"   name="option" id="option-4" />
+		<label class="segmented-control__label" for="option-4">Daily</label>
 	</li>
-	<li class="segmented-control__item"> 
-		<input class="segmented-control__input" type="radio" value="5"   name="option" id="option-5" />  	
-		<label class="segmented-control__label" for="option-5">Monthly</label> 
+	<li class="segmented-control__item">
+		<input class="segmented-control__input" type="radio" value="5"   name="option" id="option-5" />
+		<label class="segmented-control__label" for="option-5">Monthly</label>
 	</li>
 </ul>
 </Playground>
