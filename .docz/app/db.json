@@ -43,9 +43,7 @@
     "src": "docs",
     "dest": "dist",
     "base": "/de-code/",
-    "plugins": [
-      {}
-    ]
+    "plugins": [{}]
   },
   "entries": {
     "getstarted.mdx": {
@@ -125,6 +123,11 @@
         {
           "depth": 2,
           "slug": "mayadata-product",
+          "value": "MayaData product"
+        },
+        {
+          "depth": 2,
+          "slug": "mayadata-product-1",
           "value": "MayaData product"
         },
         {
@@ -410,28 +413,6 @@
         }
       ]
     },
-    "products/chooser.mdx": {
-      "name": "Chooser",
-      "menu": "Product",
-      "id": "9eb3975d288a0dc760c999ded56b5e55",
-      "filepath": "products/chooser.mdx",
-      "link": null,
-      "slug": "products-chooser",
-      "route": "/products-chooser",
-      "order": 0,
-      "headings": [
-        {
-          "depth": 1,
-          "slug": "chooser",
-          "value": "Chooser"
-        },
-        {
-          "depth": 2,
-          "slug": "tab-chooser",
-          "value": "Tab chooser"
-        }
-      ]
-    },
     "products/colors.mdx": {
       "name": "Colors",
       "menu": "Product",
@@ -478,58 +459,6 @@
           "depth": 1,
           "slug": "dropdown-menu",
           "value": "Dropdown menu"
-        }
-      ]
-    },
-    "products/forms.mdx": {
-      "name": "Forms",
-      "menu": "Product",
-      "id": "61127e7289c0c665c139cbd4c59ff75d",
-      "filepath": "products/forms.mdx",
-      "link": null,
-      "slug": "products-forms",
-      "route": "/products-forms",
-      "order": 0,
-      "headings": [
-        {
-          "depth": 1,
-          "slug": "inputs",
-          "value": "Inputs"
-        },
-        {
-          "depth": 2,
-          "slug": "text",
-          "value": "Text"
-        },
-        {
-          "depth": 3,
-          "slug": "sizes",
-          "value": "Sizes"
-        },
-        {
-          "depth": 3,
-          "slug": "advanced",
-          "value": "Advanced"
-        },
-        {
-          "depth": 4,
-          "slug": "search-input-field",
-          "value": "Search input field"
-        },
-        {
-          "depth": 2,
-          "slug": "checkbox",
-          "value": "Checkbox"
-        },
-        {
-          "depth": 2,
-          "slug": "radio",
-          "value": "Radio"
-        },
-        {
-          "depth": 2,
-          "slug": "segmented-controls",
-          "value": "Segmented controls"
         }
       ]
     },
@@ -647,6 +576,100 @@
           "depth": 5,
           "slug": "page-header-bredcrumbs-metadata-bar-table-contents",
           "value": "Page header, Bredcrumbs, Metadata bar, Table contents"
+        }
+      ]
+    },
+    "products/input.mdx": {
+      "name": "Inputs",
+      "menu": "Product",
+      "id": "61127e7289c0c665c139cbd4c59ff75d",
+      "filepath": "products/forms.mdx",
+      "link": null,
+      "slug": "products-forms",
+      "route": "/products-forms",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "inputs",
+          "value": "Inputs"
+        },
+        {
+          "depth": 2,
+          "slug": "text",
+          "value": "Text"
+        },
+        {
+          "depth": 3,
+          "slug": "advanced",
+          "value": "Advanced"
+        },
+        {
+          "depth": 4,
+          "slug": "search-input-field",
+          "value": "Search input field"
+        },
+        {
+          "depth": 2,
+          "slug": "checkbox",
+          "value": "Checkbox"
+        },
+        {
+          "depth": 2,
+          "slug": "radio",
+          "value": "Radio"
+        },
+        {
+          "depth": 2,
+          "slug": "segmented-controls",
+          "value": "Segmented controls"
+        }
+      ]
+    },
+    "products/list.mdx": {
+      "name": "Lists",
+      "menu": "Product",
+      "id": "59900f5aea6bac4e20b479c9d7aa9991",
+      "filepath": "products/list.mdx",
+      "link": null,
+      "slug": "products-list",
+      "route": "/products-list",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 2,
+          "slug": "text",
+          "value": "Text"
+        },
+        {
+          "depth": 3,
+          "slug": "sizes",
+          "value": "Sizes"
+        },
+        {
+          "depth": 3,
+          "slug": "advanced",
+          "value": "Advanced"
+        },
+        {
+          "depth": 4,
+          "slug": "search-input-field",
+          "value": "Search input field"
+        },
+        {
+          "depth": 2,
+          "slug": "checkbox",
+          "value": "Checkbox"
+        },
+        {
+          "depth": 2,
+          "slug": "radio",
+          "value": "Radio"
+        },
+        {
+          "depth": 2,
+          "slug": "segmented-controls",
+          "value": "Segmented controls"
         }
       ]
     },
