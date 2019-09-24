@@ -3,7 +3,7 @@
 @import "../scss/app";
 
 .color-block-wrapper {
-  flex: 1 1 auto!important;
+  flex: 1 1 auto !important;
   border-radius: 4px;
   margin-bottom: 12px;
 }
@@ -16,17 +16,17 @@
   border-bottom-left-radius: 4px;
 }
 .color-base-block {
-  height:100px;
-  margin:10px;
+  height: 100px;
+  margin: 10px;
   border-radius: 2px;
 }
 .color-variant-block {
-  padding:10px;
+  padding: 10px;
 }
 .color-details {
-  display:flex;
+  display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 .body {
   font-size: 14px !important;
@@ -36,7 +36,7 @@
 }
 .logobox {
   border: 1px solid $gray-200;
-  border-radius:4px;
+  border-radius: 4px;
   overflow: hidden;
 }
 .logobox-header {
@@ -46,8 +46,8 @@
   background: $gray-100;
 }
 .logobox-content {
- padding: 36px 12px;
- text-align:center;
+  padding: 36px 36px;
+  text-align: center;
 }
 .logobox-footer {
   background: $gray-100;
@@ -62,15 +62,15 @@
 
 //icons page
 .icon-box-content:not(:last-child) {
-  flex:1 1 auto!important;
+  flex: 1 1 auto !important;
 }
 .icon-box-content {
   background: $gray-000;
   padding: 14px 18px;
-  margin:4px;
-  border-radius:4px;
+  margin: 4px;
+  border-radius: 4px;
   min-width: 202px;
   span {
-    vertical-align:middle;
+    vertical-align: middle;
   }
 }
