@@ -2,53 +2,102 @@
 name: Logos
 menu: Foundation
 ---
-import LogoBox from './js/logobox'
 
-import MayaDataLight from '../../resources/logos/mayadata-light.svg'
-import MayaDataDark from '../../resources/logos/mayadata-dark.svg'
+import LogoBox from "./js/logobox";
 
-import MDAPLight from '../../resources/logos/mdap-light.svg'
-import MDAPDark from '../../resources/logos/mdap-dark.svg'
+import MayaDataLight from "../../resources/logos/mayadata/mayadata-white.svg";
+import MayaDataDark from "../../resources/logos/mayadata/mayadata-dark.svg";
 
-import MayaOnlineLight from '../../resources/logos/mayaonline-light.svg'
-import MayaOnlineDark from '../../resources/logos/mayaonline-dark.svg'
+import OpenEBSEnterprisePlatformLight from "../../resources/logos/openebs-enterprise-platform/openebs-enterprise-platform-white.svg";
+import OpenEBSEnterprisePlatformDark from "../../resources/logos/openebs-enterprise-platform/openebs-enterprise-platform-dark.svg";
 
-import OpenEBSLight from '../../resources/logos/openebs.svg'
-import OpenEBSDark from '../../resources/logos/openebs-dark.svg'
+import DirectorOnlineLight from "../../resources/logos/director-online/directoronline-white.svg";
+import DirectorOnlineDark from "../../resources/logos/director-online/directoronline-dark.svg";
 
-import LitumsLight from '../../resources/logos/litmus.svg'
-import LitumsDark from '../../resources/logos/litmus-dark.svg'
+import DirectorOnPremLight from "../../resources/logos/director-onprem/directoronprem-white.svg";
+import DirectorOnPremDark from "../../resources/logos/director-onprem/directoronprem-dark.svg";
 
+import OpenEBSLight from "../../resources/logos/openebs/openebs-white.svg";
+import OpenEBSDark from "../../resources/logos/openebs/openebs-dark.svg";
+
+import LitumsLight from "../../resources/logos/litmus/litmus-white.svg";
+import LitumsDark from "../../resources/logos/litmus/litmus-dark.svg";
 
 # Logos
+
+#### Notes\*
+
+> When you download any of logos, you will get PNG and SVG version of that logo in colored, white and (grey/black) formats.
+
 ## MayaData
+
 <div class="row">
   <div class="col-4">
-    <LogoBox light={MayaDataLight} dark={MayaDataDark} download={MayaDataLight}/>
-    <div class="m-4"></div>
+    <LogoBox
+      light={MayaDataDark}
+      dark={MayaDataLight}
+      download="https://github.com/mayadata-io/de-code/tree/master/public-resources/branding/mayadata.zip"
+    />
+    <div class="m-4" />
   </div>
 </div>
 
-## MayaData product
+## MayaData product - OpenEBS Enterprise Platform
+
 <div class="row">
   <div class="col-4">
-    <LogoBox light={MDAPLight} dark={MDAPDark} download={MDAPLight}/>
-    <div class="m-4"></div>
+    <LogoBox
+      light={OpenEBSEnterprisePlatformDark}
+      dark={OpenEBSEnterprisePlatformLight}
+      download="https://github.com/mayadata-io/de-code/tree/master/public-resources/branding/openebs-enterprise-platform.zip"
+    />
+    <div class="m-4" />
   </div>
-    <div class="col-4">
-      <LogoBox light={MayaOnlineLight} dark={MayaOnlineDark} download={MayaOnlineLight}/>
-      <div class="m-4"></div>
-    </div>
+</div>
+
+## OpenEBS Director Online
+
+<div class="row">
+  <div class="col-4">
+    <LogoBox
+      light={DirectorOnlineDark}
+      dark={DirectorOnlineLight}
+      download="https://github.com/mayadata-io/de-code/tree/master/public-resources/branding/director-online.zip"
+    />
+    <div class="m-4" />
+  </div>
+</div>
+
+## OpenEBS Director OnPrem
+
+<div class="row">
+  <div class="col-4">
+    <LogoBox
+      light={DirectorOnPremDark}
+      dark={DirectorOnPremLight}
+      download="https://github.com/mayadata-io/de-code/tree/master/public-resources/branding/director-onprem.zip"
+    />
+    <div class="m-4" />
+  </div>
 </div>
 
 ## Open source projects
+
 <div class="row">
   <div class="col-4">
-    <LogoBox light={OpenEBSLight} dark={OpenEBSDark} download={OpenEBSLight}/>
-    <div class="m-4"></div>
+    <LogoBox
+      light={OpenEBSDark}
+      dark={OpenEBSLight}
+      download="https://github.com/mayadata-io/de-code/tree/master/public-resources/branding/openebs.zip"
+    />
+    <div class="m-4" />
   </div>
-    <div class="col-4">
-      <LogoBox light={LitumsLight} dark={LitumsDark} download={LitumsLight}/>
-      <div class="m-4"></div>
-    </div>
+  <div class="col-4">
+    <LogoBox
+      light={LitumsDark}
+      dark={LitumsLight}
+      download="https://github.com/mayadata-io/de-code/tree/master/public-resources/branding/litmus.zip"
+    />
+    <div class="m-4" />
+  </div>
 </div>
