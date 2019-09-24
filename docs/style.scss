@@ -34,6 +34,7 @@
 .css-8rimd0 {
   font-size: 14px !important;
 }
+
 .logobox {
   border: 1px solid $gray-200;
   border-radius: 4px;
@@ -44,6 +45,10 @@
   flex-grow: row;
   justify-content: center;
   background: $gray-100;
+  .logobox-header-title {
+    color: $gray-900;
+    font-size: 12px !important;
+  }
 }
 .logobox-content {
   padding: 36px 36px;
