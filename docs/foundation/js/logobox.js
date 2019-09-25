@@ -27,17 +27,23 @@ class LogoBox extends React.Component {
     return (
       <div className={`logobox h-100 ${this.state.theme}`}>
         <div className="logobox-header">
-          <div className="my-auto mr-auto ml-3">
+          <div>
             <span className="logobox-header-title">{this.props.name}</span>
           </div>
           <div className="ml-auto">
             <span>
-              <button className="btn btn-link" onClick={this.download}>
+              <button
+                className="btn btn-link pl-2 pr-1"
+                onClick={this.download}
+              >
                 <span className="fa fa-download" />
               </button>
             </span>
             <span>
-              <button className="btn btn-link" onClick={this.changeTheme}>
+              <button
+                className="btn btn-link pl-1 pr-2"
+                onClick={this.changeTheme}
+              >
                 <span className="fa fa-adjust" />
               </button>
             </span>

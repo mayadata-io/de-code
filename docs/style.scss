@@ -44,10 +44,11 @@
   display: flex;
   flex-grow: row;
   justify-content: center;
+  align-items: center;
   background: $gray-100;
   .logobox-header-title {
     color: $gray-900;
-    font-size: 12px !important;
+    padding-left: 8px !important;
   }
 }
 .logobox-content {
