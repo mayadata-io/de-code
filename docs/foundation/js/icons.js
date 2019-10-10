@@ -6,7 +6,7 @@ class Icons extends React.Component {
     super(props);
     this.state = {
       icons: "icons",
-      version: "v1.55",
+      version: "v1.72",
       iconFiles: "https://github.com/mayadata-io/de-code/tree/master/resources/fonts/maya-icons",
     };
   }
