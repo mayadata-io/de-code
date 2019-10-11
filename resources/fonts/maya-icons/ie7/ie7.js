@@ -13,6 +13,22 @@
 		el.innerHTML = '<span style="font-family: \'maya-icons\'">' + entity + '</span>' + html;
 	}
 	var icons = {
+		'mi-star': '&#xe93c;',
+		'mi-wave': '&#xe946;',
+		'mi-link': '&#xe947;',
+		'mi-view': '&#xe944;',
+		'mi-table': '&#xe943;',
+		'mi-add-user': '&#xe93d;',
+		'mi-share': '&#xe942;',
+		'mi-container': '&#xe940;',
+		'mi-filter': '&#xe93b;',
+		'mi-arrow-up-down': '&#xe93e;',
+		'mi-user': '&#xe941;',
+		'mi-loader': '&#xe932;',
+		'mi-hamburger': '&#xe92d;',
+		'mi-circle-add': '&#xe90b;',
+		'mi-circle-minus': '&#xe928;',
+		'mi-clock1': '&#xe92b;',
 		'mi-rocket-share': '&#xe90a;',
 		'mi-settings': '&#xe93a;',
 		'mi-tree-network': '&#xe92a;',
@@ -68,6 +84,7 @@
 		'mi-cluster': '&#xe931;',
 		'mi-clock': '&#xe930;',
 		'mi-upgrade': '&#xe93f;',
+		'mi-disable': '&#xe945;',
 		'0': 0
 		},
 		els = document.getElementsByTagName('*'),

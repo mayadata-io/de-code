@@ -213,10 +213,74 @@ export const IconLists = [
   },
   {
     name: "mi-clock",
-    label: "Clock"
+    label: "clock"
+  },
+  {
+    name: "mi-upgrade",
+    label: "upgrade"
+  },
+  {
+    name: "mi-star",
+    label: "star"
+  },
+  {
+    name: "mi-wave",
+    label: "wave"
+  },
+  {
+    name: "mi-view",
+    label: "view"
+  },
+  {
+    name: "mi-table",
+    label: "table"
+  },
+  {
+    name: "mi-add-user",
+    label: "add-user"
+  },
+  {
+    name: "mi-share",
+    label: "share"
+  },
+  {
+    name: "mi-container",
+    label: "container"
+  },
+  {
+    name: "mi-filter",
+    label: "filter"
+  },
+  {
+    name: "mi-arrow-up-down ",
+    label: "arrow-up-down"
+  },
+  {
+    name: "mi-user",
+    label: "user"
+  },
+  {
+    name: "mi-loader",
+    label: "loader"
+  },
+  {
+    name: "mi-hamburger ",
+    label: "hamburger"
+  },
+  {
+    name: "mi-circle-add",
+    label: "circle-add"
+  },
+  {
+    name: "mi-circle-minus",
+    label: "circle-minus"
   },
   {
     name: "mi-upgrade",
     label: "Upgrade"
   },
+  {
+    name: "mi-disable",
+    label: "disable"
+  }
 ];
