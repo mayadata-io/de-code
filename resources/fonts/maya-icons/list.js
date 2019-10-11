@@ -221,7 +221,7 @@ export const IconLists = [
   },
   {
     name: "mi-star",
-    label: "start"
+    label: "star"
   },
   {
     name: "mi-wave",
