@@ -66,6 +66,10 @@
   background: $gray-300;
 }
 
+.icon .logobox .logobox-content img {
+  max-width: 50px;
+}
+
 //icons page
 .icon-box-content:not(:last-child) {
   flex: 1 1 auto !important;
