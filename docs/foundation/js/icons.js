@@ -1,5 +1,5 @@
 import React from "react";
-import { IconLists } from "../../../resources/fonts/maya-icons/list.js";
+import { IconLists } from "../../../icons/list.js";
 
 class Icons extends React.Component {
   constructor(props) {
@@ -7,11 +7,12 @@ class Icons extends React.Component {
     this.state = {
       icons: "icons",
       version: "v1.72",
-      iconFiles: "https://github.com/mayadata-io/de-code/tree/master/resources/fonts/maya-icons",
+      iconFiles:
+        "https://github.com/mayadata-io/de-code/tree/master/resources/fonts/maya-icons"
     };
   }
   download() {
-    console.log('download', this.state.iconFiles);
+    console.log("download", this.state.iconFiles);
     window.open(this.state.iconFiles);
   }
   render() {
@@ -25,7 +26,10 @@ class Icons extends React.Component {
             <span>{this.state.version}</span>
           </div>
           <div>
-          <button className="btn btn-link" onClick={this.download.bind(this)}><span className="fa fa-download mr-1"></span>Download</button>
+            <button className="btn btn-link" onClick={this.download.bind(this)}>
+              <span className="fa fa-download mr-1" />
+              Download
+            </button>
           </div>
         </div>
         <div className="d-flex flex-wrap">
