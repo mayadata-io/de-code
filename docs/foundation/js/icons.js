@@ -8,7 +8,7 @@ class Icons extends React.Component {
       icons: "icons",
       version: "v1.72",
       iconFiles:
-        "https://github.com/mayadata-io/de-code/tree/master/resources/fonts/maya-icons"
+        "https://github.com/mayadata-io/de-code/tree/master/icons/maya-icons-v1.72.zip"
     };
   }
   download() {
