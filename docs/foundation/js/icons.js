@@ -5,31 +5,16 @@ class Icons extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      icons: "icons",
-      version: "v1.72",
-      iconFiles:
-        "https://github.com/mayadata-io/de-code/tree/master/icons/maya-icons-v1.72.zip"
+      icons: "icons"
     };
   }
-  download() {
-    console.log("download", this.state.iconFiles);
-    window.open(this.state.iconFiles);
-  }
+
   render() {
     return (
       <div>
         <div className="d-flex align-items-center">
           <div className="flex-fill">
             <h3>{IconLists.length} Icons</h3>
-          </div>
-          <div className="mr-2 ">
-            <span>{this.state.version}</span>
-          </div>
-          <div>
-            <button className="btn btn-link" onClick={this.download.bind(this)}>
-              <span className="fa fa-download mr-1" />
-              Download
-            </button>
           </div>
         </div>
         <div className="d-flex flex-wrap">

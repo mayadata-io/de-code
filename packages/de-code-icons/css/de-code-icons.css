@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'maya-icons';
-  src:  url('fonts/maya-icons.eot?gt0xn0');
-  src:  url('fonts/maya-icons.eot?gt0xn0#iefix') format('embedded-opentype'),
-    url('fonts/maya-icons.ttf?gt0xn0') format('truetype'),
-    url('fonts/maya-icons.woff?gt0xn0') format('woff'),
-    url('fonts/maya-icons.svg?gt0xn0#maya-icons') format('svg');
+  font-family: "maya-icons";
+  src: url("../fonts/maya-icons.eot?gt0xn0");
+  src: url("../fonts/maya-icons.eot?gt0xn0#iefix") format("embedded-opentype"),
+    url("../fonts/maya-icons.ttf?gt0xn0") format("truetype"),
+    url("../fonts/maya-icons.woff?gt0xn0") format("woff"),
+    url("../fonts/maya-icons.svg?gt0xn0#maya-icons") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -12,7 +12,7 @@
 
 .mi {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'maya-icons' !important;
+  font-family: "maya-icons" !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
