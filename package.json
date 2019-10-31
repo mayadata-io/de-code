@@ -13,7 +13,7 @@
     "docz:dev": "docz dev",
     "docz:build": "docz build",
     "build:css": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 index.scss -o css/",
-    "build:icon": "mkdirp packages/de-code-icons/fonts && cp icons/fonts/* packages/de-code-icons/fonts/ && cp icons/selection.json packages/de-code-icons/ && cp icons/style.css packages/de-code-icons/",
+    "build:icon": "mkdirp packages/de-code-icons/fonts && cp icons/fonts/* packages/de-code-icons/fonts/ && cp icons/style.css packages/de-code-icons/de-code-icons.css",
     "clean": "rm -rf node_modules dist temp",
     "bootstrap": "lerna bootstrap",
     "publish": "lerna run build:css && lerna publish",
