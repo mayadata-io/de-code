@@ -1,8 +1,31 @@
 {
   "name": "de-code-icons",
   "version": "1.0.0",
-  "description": "De-code icons",
+  "description": "de-code-icons is an open source css icon library, build for modern DevOps SaaS platforms.",
+  "main": "css/de-code-icons.css",
   "author": "MayaData, Inc.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayadata.io/de-code.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mayadata.io/de-code/issues"
+  },
+  "keywords": [
+    "icons",
+    "de-code",
+    "open source icons",
+    "css icons",
+    "storage icons",
+    "kubernetes icons",
+    "font icons",
+    "font",
+    "icons-library",
+    "icons-set",
+    "web-font",
+    "web-icons",
+    "font-library"
+  ],
   "gitHead": "a192177f720cb83f9a29ce24e63c25e4d9ed05da"
 }
