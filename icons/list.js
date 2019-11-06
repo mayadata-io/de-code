@@ -1,286 +1,286 @@
 export const IconLists = [
   {
-    name: "mi-chevrons-right",
+    name: "dci-chevrons-right",
     label: "chevrons-right"
   },
   {
-    name: "mi-chevrons-left",
+    name: "dci-chevrons-left",
     label: "chevrons-left"
   },
   {
-    name: "mi-chevron-right",
+    name: "dci-chevron-right",
     label: "chevron-right"
   },
   {
-    name: "mi-chevron-left",
+    name: "dci-chevron-left",
     label: "chevron-left"
   },
   {
-    name: "mi-chevron-up",
+    name: "dci-chevron-up",
     label: "chevron-up"
   },
   {
-    name: "mi-chevron-down",
+    name: "dci-chevron-down",
     label: "chevron-down"
   },
   {
-    name: "mi-x",
+    name: "dci-x",
     label: "x"
   },
   {
-    name: "mi-user-switch",
+    name: "dci-user-switch",
     label: "user-switch"
   },
   {
-    name: "mi-application",
+    name: "dci-application",
     label: "application"
   },
   {
-    name: "mi-mail",
+    name: "dci-mail",
     label: "mail"
   },
   {
-    name: "mi-check-list",
+    name: "dci-check-list",
     label: "check-list"
   },
   {
-    name: "mi-file",
+    name: "dci-file",
     label: "file"
   },
   {
-    name: "mi-bell",
+    name: "dci-bell",
     label: "bell"
   },
   {
-    name: "mi-play-square",
+    name: "dci-play-square",
     label: "play-square"
   },
   {
-    name: "mi-logs",
+    name: "dci-logs",
     label: "logs"
   },
   {
-    name: "mi-dashboard",
+    name: "dci-dashboard",
     label: "dashboard"
   },
   {
-    name: "mi-search",
+    name: "dci-search",
     label: "search"
   },
   {
-    name: "mi-alert-triangle",
+    name: "dci-alert-triangle",
     label: "alert-triangle"
   },
   {
-    name: "mi-settings",
+    name: "dci-settings",
     label: "settings"
   },
   {
-    name: "mi-rocket-share",
+    name: "dci-rocket-share",
     label: "rocket-share"
   },
   {
-    name: "mi-slack",
+    name: "dci-slack",
     label: "slack"
   },
   {
-    name: "mi-align-left",
+    name: "dci-align-left",
     label: "align-left"
   },
   {
-    name: "mi-arrow-right-curve",
+    name: "dci-arrow-right-curve",
     label: "arrow-right-curve"
   },
   {
-    name: "mi-arrow-left-curve",
+    name: "dci-arrow-left-curve",
     label: "arrow-left-curve"
   },
   {
-    name: "mi-key",
+    name: "dci-key",
     label: "key"
   },
   {
-    name: "mi-cloud-reload",
+    name: "dci-cloud-reload",
     label: "cloud-reload"
   },
   {
-    name: "mi-cloud-up-down",
+    name: "dci-cloud-up-down",
     label: "cloud-up-down"
   },
   {
-    name: "mi-eye",
+    name: "dci-eye",
     label: "eye"
   },
   {
-    name: "mi-circle-info",
+    name: "dci-circle-info",
     label: "circle-info"
   },
   {
-    name: "mi-check-circle",
+    name: "dci-check-circle",
     label: "check-circle"
   },
   {
-    name: "mi-id-card",
+    name: "dci-id-card",
     label: "id-card"
   },
   {
-    name: "mi-lightbulb",
+    name: "dci-lightbulb",
     label: "lightbulb"
   },
   {
-    name: "mi-x-circle",
+    name: "dci-x-circle",
     label: "x-circle"
   },
   {
-    name: "mi-home",
+    name: "dci-home",
     label: "home"
   },
   {
-    name: "mi-check-square",
+    name: "dci-check-square",
     label: "check-square"
   },
   {
-    name: "mi-database",
+    name: "dci-database",
     label: "database"
   },
   {
-    name: "mi-form",
+    name: "dci-form",
     label: "form"
   },
   {
-    name: "mi-litmus",
+    name: "dci-litmus",
     label: "litmus"
   },
   {
-    name: "mi-arrow-down-circle",
+    name: "dci-arrow-down-circle",
     label: "arrow-down-circle"
   },
   {
-    name: "mi-arrow-up-circle",
+    name: "dci-arrow-up-circle",
     label: "arrow-up-circle"
   },
   {
-    name: "mi-arrow-right-circle",
+    name: "dci-arrow-right-circle",
     label: "arrow-right-circle"
   },
   {
-    name: "mi-arrow-left-circle",
+    name: "dci-arrow-left-circle",
     label: "arrow-left-circle"
   },
   {
-    name: "mi-book",
+    name: "dci-book",
     label: "book"
   },
   {
-    name: "mi-plug-connect",
+    name: "dci-plug-connect",
     label: "plug-connect"
   },
   {
-    name: "mi-ellipsis-horizontal",
+    name: "dci-ellipsis-horizontal",
     label: "ellipsis-horizontal"
   },
   {
-    name: "mi-ellipsis-vertical",
+    name: "dci-ellipsis-vertical",
     label: "ellipsis-vertical"
   },
   {
-    name: "mi-edit",
+    name: "dci-edit",
     label: "edit"
   },
   {
-    name: "mi-tree-network",
+    name: "dci-tree-network",
     label: "tree-network"
   },
   {
-    name: "mi-clipboard-pen",
+    name: "dci-clipboard-pen",
     label: "clipboard-pen"
   },
   {
-    name: "mi-trash",
+    name: "dci-trash",
     label: "Trash"
   },
   {
-    name: "mi-chart-bar-up",
+    name: "dci-chart-bar-up",
     label: "chart-bar-up"
   },
   {
-    name: "mi-frequency",
+    name: "dci-frequency",
     label: "frequency"
   },
   {
-    name: "mi-cluster",
+    name: "dci-cluster",
     label: "cluster"
   },
   {
-    name: "mi-clock",
+    name: "dci-clock",
     label: "clock"
   },
   {
-    name: "mi-upgrade",
+    name: "dci-upgrade",
     label: "upgrade"
   },
   {
-    name: "mi-star",
+    name: "dci-star",
     label: "star"
   },
   {
-    name: "mi-wave",
+    name: "dci-wave",
     label: "wave"
   },
   {
-    name: "mi-view",
+    name: "dci-view",
     label: "view"
   },
   {
-    name: "mi-table",
+    name: "dci-table",
     label: "table"
   },
   {
-    name: "mi-add-user",
+    name: "dci-add-user",
     label: "add-user"
   },
   {
-    name: "mi-share",
+    name: "dci-share",
     label: "share"
   },
   {
-    name: "mi-container",
+    name: "dci-container",
     label: "container"
   },
   {
-    name: "mi-filter",
+    name: "dci-filter",
     label: "filter"
   },
   {
-    name: "mi-arrow-up-down ",
+    name: "dci-arrow-up-down ",
     label: "arrow-up-down"
   },
   {
-    name: "mi-user",
+    name: "dci-user",
     label: "user"
   },
   {
-    name: "mi-loader",
+    name: "dci-loader",
     label: "loader"
   },
   {
-    name: "mi-hamburger ",
+    name: "dci-hamburger ",
     label: "hamburger"
   },
   {
-    name: "mi-circle-add",
+    name: "dci-circle-add",
     label: "circle-add"
   },
   {
-    name: "mi-circle-minus",
+    name: "dci-circle-minus",
     label: "circle-minus"
   },
   {
-    name: "mi-upgrade",
+    name: "dci-upgrade",
     label: "Upgrade"
   },
   {
-    name: "mi-disable",
+    name: "dci-disable",
     label: "disable"
   }
 ];

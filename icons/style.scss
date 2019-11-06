@@ -1,391 +1,393 @@
 @import "variables";
 
 @font-face {
-  font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?gt0xn0');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?gt0xn0#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?gt0xn0') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?gt0xn0') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?gt0xn0##{$icomoon-font-family}') format('svg');
+  font-family: "#{$icomoon-font-family}";
+  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.eot?wmqxly");
+  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.eot?wmqxly#iefix")
+      format("embedded-opentype"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?wmqxly")
+      format("truetype"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.woff?wmqxly")
+      format("woff"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.svg?wmqxly##{$icomoon-font-family}")
+      format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-.mi {
+.dci {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: '#{$icomoon-font-family}' !important;
+  font-family: "#{$icomoon-font-family}" !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
+  line-height: 1;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.mi-1x {
-  font-size:1.4em;
-}
 
-.mi-star {
+.dci-star {
   &:before {
-    content: $mi-star;
+    content: $dci-star;
   }
 }
-.mi-wave {
+.dci-wave {
   &:before {
-    content: $mi-wave;
+    content: $dci-wave;
   }
 }
-.mi-link {
+.dci-link {
   &:before {
-    content: $mi-link;
+    content: $dci-link;
   }
 }
-.mi-view {
+.dci-view {
   &:before {
-    content: $mi-view;
+    content: $dci-view;
   }
 }
-.mi-table {
+.dci-table {
   &:before {
-    content: $mi-table;
+    content: $dci-table;
   }
 }
-.mi-add-user {
+.dci-add-user {
   &:before {
-    content: $mi-add-user;
+    content: $dci-add-user;
   }
 }
-.mi-share {
+.dci-share {
   &:before {
-    content: $mi-share;
+    content: $dci-share;
   }
 }
-.mi-container {
+.dci-container {
   &:before {
-    content: $mi-container;
+    content: $dci-container;
   }
 }
-.mi-filter {
+.dci-filter {
   &:before {
-    content: $mi-filter;
+    content: $dci-filter;
   }
 }
-.mi-arrow-up-down {
+.dci-arrow-up-down {
   &:before {
-    content: $mi-arrow-up-down;
+    content: $dci-arrow-up-down;
   }
 }
-.mi-user {
+.dci-user {
   &:before {
-    content: $mi-user;
+    content: $dci-user;
   }
 }
-.mi-loader {
+.dci-loader {
   &:before {
-    content: $mi-loader;
+    content: $dci-loader;
   }
 }
-.mi-hamburger {
+.dci-hamburger {
   &:before {
-    content: $mi-hamburger;
+    content: $dci-hamburger;
   }
 }
-.mi-circle-add {
+.dci-circle-add {
   &:before {
-    content: $mi-circle-add;
+    content: $dci-circle-add;
   }
 }
-.mi-circle-minus {
+.dci-circle-minus {
   &:before {
-    content: $mi-circle-minus;
+    content: $dci-circle-minus;
   }
 }
-.mi-clock1 {
+.dci-clock1 {
   &:before {
-    content: $mi-clock1;
+    content: $dci-clock1;
   }
 }
-.mi-rocket-share {
+.dci-rocket-share {
   &:before {
-    content: $mi-rocket-share;
+    content: $dci-rocket-share;
   }
 }
-.mi-settings {
+.dci-settings {
   &:before {
-    content: $mi-settings;
+    content: $dci-settings;
   }
 }
-.mi-tree-network {
+.dci-tree-network {
   &:before {
-    content: $mi-tree-network;
+    content: $dci-tree-network;
   }
 }
-.mi-chevrons-right {
+.dci-chevrons-right {
   &:before {
-    content: $mi-chevrons-right;
+    content: $dci-chevrons-right;
   }
 }
-.mi-chevrons-left {
+.dci-chevrons-left {
   &:before {
-    content: $mi-chevrons-left;
+    content: $dci-chevrons-left;
   }
 }
-.mi-chevron-right {
+.dci-chevron-right {
   &:before {
-    content: $mi-chevron-right;
+    content: $dci-chevron-right;
   }
 }
-.mi-chevron-left {
+.dci-chevron-left {
   &:before {
-    content: $mi-chevron-left;
+    content: $dci-chevron-left;
   }
 }
-.mi-chevron-up {
+.dci-chevron-up {
   &:before {
-    content: $mi-chevron-up;
+    content: $dci-chevron-up;
   }
 }
-.mi-chevron-down {
+.dci-chevron-down {
   &:before {
-    content: $mi-chevron-down;
+    content: $dci-chevron-down;
   }
 }
-.mi-x {
+.dci-x {
   &:before {
-    content: $mi-x;
+    content: $dci-x;
   }
 }
-.mi-user-switch {
+.dci-user-switch {
   &:before {
-    content: $mi-user-switch;
+    content: $dci-user-switch;
   }
 }
-.mi-application {
+.dci-application {
   &:before {
-    content: $mi-application;
+    content: $dci-application;
   }
 }
-.mi-mail {
+.dci-mail {
   &:before {
-    content: $mi-mail;
+    content: $dci-mail;
   }
 }
-.mi-check-list {
+.dci-check-list {
   &:before {
-    content: $mi-check-list;
+    content: $dci-check-list;
   }
 }
-.mi-file {
+.dci-file {
   &:before {
-    content: $mi-file;
+    content: $dci-file;
   }
 }
-.mi-bell {
+.dci-bell {
   &:before {
-    content: $mi-bell;
+    content: $dci-bell;
   }
 }
-.mi-play-square {
+.dci-play-square {
   &:before {
-    content: $mi-play-square;
+    content: $dci-play-square;
   }
 }
-.mi-logs {
+.dci-logs {
   &:before {
-    content: $mi-logs;
+    content: $dci-logs;
   }
 }
-.mi-dashboard {
+.dci-dashboard {
   &:before {
-    content: $mi-dashboard;
+    content: $dci-dashboard;
   }
 }
-.mi-search {
+.dci-search {
   &:before {
-    content: $mi-search;
+    content: $dci-search;
   }
 }
-.mi-alert-triangle {
+.dci-alert-triangle {
   &:before {
-    content: $mi-alert-triangle;
+    content: $dci-alert-triangle;
   }
 }
-.mi-slack {
+.dci-slack {
   &:before {
-    content: $mi-slack;
+    content: $dci-slack;
   }
 }
-.mi-align-left {
+.dci-align-left {
   &:before {
-    content: $mi-align-left;
+    content: $dci-align-left;
   }
 }
-.mi-arrow-right-curve {
+.dci-arrow-right-curve {
   &:before {
-    content: $mi-arrow-right-curve;
+    content: $dci-arrow-right-curve;
   }
 }
-.mi-arrow-left-curve {
+.dci-arrow-left-curve {
   &:before {
-    content: $mi-arrow-left-curve;
+    content: $dci-arrow-left-curve;
   }
 }
-.mi-key {
+.dci-key {
   &:before {
-    content: $mi-key;
+    content: $dci-key;
   }
 }
-.mi-cloud-reload {
+.dci-cloud-reload {
   &:before {
-    content: $mi-cloud-reload;
+    content: $dci-cloud-reload;
   }
 }
-.mi-cloud-up-down {
+.dci-cloud-up-down {
   &:before {
-    content: $mi-cloud-up-down;
+    content: $dci-cloud-up-down;
   }
 }
-.mi-eye {
+.dci-eye {
   &:before {
-    content: $mi-eye;
+    content: $dci-eye;
   }
 }
-.mi-circle-info {
+.dci-circle-info {
   &:before {
-    content: $mi-circle-info;
+    content: $dci-circle-info;
   }
 }
-.mi-check-circle {
+.dci-check-circle {
   &:before {
-    content: $mi-check-circle;
+    content: $dci-check-circle;
   }
 }
-.mi-id-card {
+.dci-id-card {
   &:before {
-    content: $mi-id-card;
+    content: $dci-id-card;
   }
 }
-.mi-lightbulb {
+.dci-lightbulb {
   &:before {
-    content: $mi-lightbulb;
+    content: $dci-lightbulb;
   }
 }
-.mi-x-circle {
+.dci-x-circle {
   &:before {
-    content: $mi-x-circle;
+    content: $dci-x-circle;
   }
 }
-.mi-home {
+.dci-home {
   &:before {
-    content: $mi-home;
+    content: $dci-home;
   }
 }
-.mi-check-square {
+.dci-check-square {
   &:before {
-    content: $mi-check-square;
+    content: $dci-check-square;
   }
 }
-.mi-database {
+.dci-database {
   &:before {
-    content: $mi-database;
+    content: $dci-database;
   }
 }
-.mi-form {
+.dci-form {
   &:before {
-    content: $mi-form;
+    content: $dci-form;
   }
 }
-.mi-litmus {
+.dci-litmus {
   &:before {
-    content: $mi-litmus;
+    content: $dci-litmus;
   }
 }
-.mi-arrow-down-circle {
+.dci-arrow-down-circle {
   &:before {
-    content: $mi-arrow-down-circle;
+    content: $dci-arrow-down-circle;
   }
 }
-.mi-arrow-up-circle {
+.dci-arrow-up-circle {
   &:before {
-    content: $mi-arrow-up-circle;
+    content: $dci-arrow-up-circle;
   }
 }
-.mi-arrow-right-circle {
+.dci-arrow-right-circle {
   &:before {
-    content: $mi-arrow-right-circle;
+    content: $dci-arrow-right-circle;
   }
 }
-.mi-arrow-left-circle {
+.dci-arrow-left-circle {
   &:before {
-    content: $mi-arrow-left-circle;
+    content: $dci-arrow-left-circle;
   }
 }
-.mi-book {
+.dci-book {
   &:before {
-    content: $mi-book;
+    content: $dci-book;
   }
 }
-.mi-plug-connect {
+.dci-plug-connect {
   &:before {
-    content: $mi-plug-connect;
+    content: $dci-plug-connect;
   }
 }
-.mi-ellipsis-horizontal {
+.dci-ellipsis-horizontal {
   &:before {
-    content: $mi-ellipsis-horizontal;
+    content: $dci-ellipsis-horizontal;
   }
 }
-.mi-ellipsis-vertical {
+.dci-ellipsis-vertical {
   &:before {
-    content: $mi-ellipsis-vertical;
+    content: $dci-ellipsis-vertical;
   }
 }
-.mi-edit {
+.dci-edit {
   &:before {
-    content: $mi-edit;
+    content: $dci-edit;
   }
 }
-.mi-clipboard-pen {
+.dci-clipboard-pen {
   &:before {
-    content: $mi-clipboard-pen;
+    content: $dci-clipboard-pen;
   }
 }
-.mi-trash {
+.dci-trash {
   &:before {
-    content: $mi-trash;
+    content: $dci-trash;
   }
 }
-.mi-chart-bar-up {
+.dci-chart-bar-up {
   &:before {
-    content: $mi-chart-bar-up;
+    content: $dci-chart-bar-up;
   }
 }
-.mi-frequency {
+.dci-frequency {
   &:before {
-    content: $mi-frequency;
+    content: $dci-frequency;
   }
 }
-.mi-cluster {
+.dci-cluster {
   &:before {
-    content: $mi-cluster;
+    content: $dci-cluster;
   }
 }
-.mi-clock {
+.dci-clock {
   &:before {
-    content: $mi-clock;
+    content: $dci-clock;
   }
 }
-.mi-upgrade {
+.dci-upgrade {
   &:before {
-    content: $mi-upgrade;
+    content: $dci-upgrade;
   }
 }
-.mi-disable {
+.dci-disable {
   &:before {
-    content: $mi-disable;
+    content: $dci-disable;
   }
 }
