@@ -14,11 +14,11 @@
     "docz:build": "docz build",
     "build:css": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 index.scss -o css/",
     "build:icon": "yarn run clean:icon && mkdirp packages/de-code-icons/fonts && mkdirp packages/de-code-icons/css && cp icons/fonts/* packages/de-code-icons/fonts/ && cp icons/css/style.css packages/de-code-icons/css/de-code-icons.css",
+    "build": "lerna run build:css && yarn run build:icon",
     "clean": "rm -rf node_modules dist temp",
     "clean:icon": "mkdirp tmp && mv packages/de-code-icons/*.json packages/de-code-icons/*.md tmp && rm -rf packages/de-code-icons/ && mkdirp packages/de-code-icons && mv tmp/* packages/de-code-icons/ && rm -rf tmp",
     "bootstrap": "lerna bootstrap",
-    "publish": "lerna run build:css && lerna publish",
-    "publish:icon": "lerna run build:icon && lerna publish --force-publish de-code-icons",
+    "publish": "lerna publish",
     "publish:docs": "yarn run docz:build && gh-pages -d dist -b gh-pages -r https://github.com/mayadata-io/de-code"
   },
   "devDependencies": {
