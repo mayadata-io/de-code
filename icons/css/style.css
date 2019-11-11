@@ -1,0 +1,244 @@
+@font-face {
+  font-family: "de-code-icons";
+  src: url("../fonts/de-code-icons.eot?wmqxly");
+  src: url("../fonts/de-code-icons.eot?wmqxly#iefix")
+      format("embedded-opentype"),
+    url("../fonts/de-code-icons.ttf?wmqxly") format("truetype"),
+    url("../fonts/de-code-icons.woff?wmqxly") format("woff"),
+    url("../fonts/de-code-icons.svg?wmqxly#de-code-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.dci {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "de-code-icons" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dci-star:before {
+  content: "\e93c";
+}
+.dci-wave:before {
+  content: "\e946";
+}
+.dci-link:before {
+  content: "\e947";
+}
+.dci-view:before {
+  content: "\e944";
+}
+.dci-table:before {
+  content: "\e943";
+}
+.dci-add-user:before {
+  content: "\e93d";
+}
+.dci-share:before {
+  content: "\e942";
+}
+.dci-container:before {
+  content: "\e940";
+}
+.dci-filter:before {
+  content: "\e93b";
+}
+.dci-arrow-up-down:before {
+  content: "\e93e";
+}
+.dci-user:before {
+  content: "\e941";
+}
+.dci-loader:before {
+  content: "\e932";
+}
+.dci-hamburger:before {
+  content: "\e92d";
+}
+.dci-circle-add:before {
+  content: "\e90b";
+}
+.dci-circle-minus:before {
+  content: "\e928";
+}
+.dci-clock1:before {
+  content: "\e92b";
+}
+.dci-rocket-share:before {
+  content: "\e90a";
+}
+.dci-settings:before {
+  content: "\e93a";
+}
+.dci-tree-network:before {
+  content: "\e92a";
+}
+.dci-chevrons-right:before {
+  content: "\e904";
+}
+.dci-chevrons-left:before {
+  content: "\e914";
+}
+.dci-chevron-right:before {
+  content: "\e933";
+}
+.dci-chevron-left:before {
+  content: "\e934";
+}
+.dci-chevron-up:before {
+  content: "\e935";
+}
+.dci-chevron-down:before {
+  content: "\e937";
+}
+.dci-x:before {
+  content: "\e916";
+}
+.dci-user-switch:before {
+  content: "\e938";
+}
+.dci-application:before {
+  content: "\e901";
+}
+.dci-mail:before {
+  content: "\e900";
+}
+.dci-check-list:before {
+  content: "\e902";
+}
+.dci-file:before {
+  content: "\e903";
+}
+.dci-bell:before {
+  content: "\e905";
+}
+.dci-play-square:before {
+  content: "\e906";
+}
+.dci-logs:before {
+  content: "\e907";
+}
+.dci-dashboard:before {
+  content: "\e936";
+}
+.dci-search:before {
+  content: "\e908";
+}
+.dci-alert-triangle:before {
+  content: "\e909";
+}
+.dci-slack:before {
+  content: "\e90c";
+}
+.dci-align-left:before {
+  content: "\e90d";
+}
+.dci-arrow-right-curve:before {
+  content: "\e90e";
+}
+.dci-arrow-left-curve:before {
+  content: "\e90f";
+}
+.dci-key:before {
+  content: "\e910";
+}
+.dci-cloud-reload:before {
+  content: "\e911";
+}
+.dci-cloud-up-down:before {
+  content: "\e912";
+}
+.dci-eye:before {
+  content: "\e913";
+}
+.dci-circle-info:before {
+  content: "\e915";
+}
+.dci-check-circle:before {
+  content: "\e917";
+}
+.dci-id-card:before {
+  content: "\e918";
+}
+.dci-lightbulb:before {
+  content: "\e919";
+}
+.dci-x-circle:before {
+  content: "\e91a";
+}
+.dci-home:before {
+  content: "\e91b";
+}
+.dci-check-square:before {
+  content: "\e91c";
+}
+.dci-database:before {
+  content: "\e91d";
+}
+.dci-form:before {
+  content: "\e91e";
+}
+.dci-litmus:before {
+  content: "\e91f";
+}
+.dci-arrow-down-circle:before {
+  content: "\e920";
+}
+.dci-arrow-up-circle:before {
+  content: "\e921";
+}
+.dci-arrow-right-circle:before {
+  content: "\e922";
+}
+.dci-arrow-left-circle:before {
+  content: "\e923";
+}
+.dci-book:before {
+  content: "\e924";
+}
+.dci-plug-connect:before {
+  content: "\e925";
+}
+.dci-ellipsis-horizontal:before {
+  content: "\e926";
+}
+.dci-ellipsis-vertical:before {
+  content: "\e927";
+}
+.dci-edit:before {
+  content: "\e929";
+}
+.dci-clipboard-pen:before {
+  content: "\e92c";
+}
+.dci-trash:before {
+  content: "\e939";
+}
+.dci-chart-bar-up:before {
+  content: "\e92e";
+}
+.dci-frequency:before {
+  content: "\e92f";
+}
+.dci-cluster:before {
+  content: "\e931";
+}
+.dci-clock:before {
+  content: "\e930";
+}
+.dci-upgrade:before {
+  content: "\e93f";
+}
+.dci-disable:before {
+  content: "\e945";
+}
