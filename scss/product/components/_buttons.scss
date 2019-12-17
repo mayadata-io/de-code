@@ -43,6 +43,12 @@
       @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
     }
   }
+
+  .btn-icon{
+    font-size: 1.3rem;
+    vertical-align: middle;
+    margin-right: 0.2em;
+  }
 }
 // Future-proof disabling of clicks on `<a>` elements
 
@@ -106,7 +112,7 @@ fieldset:disabled a.btn {
   padding: 6px;
   font-size: 19px;
   @include hover {
-    background-color: $blue-000;
+    background-color: $gray-000;
     border-color: transparent;
     color: $gray-800;
   }
@@ -143,10 +149,18 @@ fieldset:disabled a.btn {
 
 .btn-lg {
   @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-lg, $btn-line-height-lg, $btn-border-radius-lg);
+  .btn-icon{
+    font-size: 1.6rem;
+    vertical-align: middle;
+    margin-right: 0.2em;
+  }
 }
 
 .btn-sm {
   @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
+  .btn-icon{
+    font-size: 1rem;
+  }
 }
 //
 // Block button
