@@ -1,0 +1,73 @@
+.drawer {
+  animation: antdDrawerFadeIn 0.3s cubic-bezier(0.7, 0.3, 0.1, 1);
+  background: rgba($black, 0.42);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1200;
+
+  @-webkit-keyframes antdDrawerFadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes antdDrawerFadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  &__underlay {
+    position: fixed;
+  }
+
+  &__container-wrapper {
+    background: #fff;
+    height: 100%;
+    max-width: 800px;
+    overflow: auto;
+    padding: 24px;
+    transition: transform 0.3s cubic-bezier(0.7, 0.3, 0.1, 1),
+      box-shadow 0.3s cubic-bezier(0.7, 0.3, 0.1, 1),
+      -webkit-transform 0.3s cubic-bezier(0.7, 0.3, 0.1, 1),
+      -webkit-box-shadow 0.3s cubic-bezier(0.7, 0.3, 0.1, 1);
+  }
+
+  &__container {
+    padding: 14px;
+  }
+
+  &__container img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.drawer-header {
+  margin-bottom: 24px;
+
+  &__title {
+    color: $black;
+    font-size: 32px;
+  }
+}
+
+.drawer-body {
+  padding: 12px 0;
+}
+
+.example-diagram-box {
+  padding: 2px;
+
+  &__label {
+    font-size: 24px;
+    padding-bottom: 12px;
+  }
+}
