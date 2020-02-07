@@ -50,3 +50,28 @@
     @include alert-variant(theme-color-level($color, $alert-bg-level), theme-color-level($color, $alert-border-level), theme-color-level($color, $alert-color-level));
   }
 }
+
+.alert-primary {
+  border: 1px solid $blue-300;
+}
+.alert-secondary {
+  border: 1px solid $gray-200;
+}
+.alert-success {
+  border: 1px solid $green-500;
+}
+.alert-danger {
+  border: 1px solid $red-300;
+}
+.alert-warning {
+  border: 1px solid $yellow-600;
+}
+.alert-info{
+  border: 1px solid $cyan-700;
+}
+.alert-light {
+  border: 1px solid $gray-200;
+}
+.alert-dark {
+  border: 1px solid $gray-400;
+}
