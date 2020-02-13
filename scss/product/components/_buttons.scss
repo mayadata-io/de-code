@@ -141,3 +141,32 @@ input[type="button"] {
     width: 100%;
   }
 }
+.btn-pill-switch {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 48px;
+  height: 28px;
+}
+
+.pill-toggle {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align:center;
+  padding-top:4px;
+  background-color: white;
+}
+.pill-round {
+  border-radius: 34px;
+  border:1px solid gray;
+}
+
+input:checked + .pill-toggle {
+  background-color: blue;
+  color:white;
+  border:1px solid blue;
+}
