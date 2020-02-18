@@ -1,17 +1,16 @@
 .drawer {
   animation: antdDrawerFadeIn 0.3s cubic-bezier(0.7, 0.3, 0.1, 1);
-  background: rgba($black, 0.42);
-  height: 100%;
-  left: 0;
+  height: 0%;
+  right: 0;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 0%;
   z-index: 1200;
-
   @-webkit-keyframes antdDrawerFadeIn {
     0% {
       opacity: 0;
     }
+
     100% {
       opacity: 1;
     }
@@ -20,54 +19,113 @@
     0% {
       opacity: 0;
     }
+
     100% {
       opacity: 1;
     }
   }
-  &__underlay {
-    position: fixed;
-  }
 
-  &__container-wrapper {
-    background: #fff;
+  &__backdrop {
+    background: rgba($gray-500,0.55);
     height: 100%;
-    max-width: 800px;
-    overflow: auto;
-    padding: 24px;
-    transition: transform 0.3s cubic-bezier(0.7, 0.3, 0.1, 1),
-      box-shadow 0.3s cubic-bezier(0.7, 0.3, 0.1, 1),
-      -webkit-transform 0.3s cubic-bezier(0.7, 0.3, 0.1, 1),
-      -webkit-box-shadow 0.3s cubic-bezier(0.7, 0.3, 0.1, 1);
-  }
-
-  &__container {
-    padding: 14px;
-  }
-
-  &__container img {
-    height: auto;
+    position: absolute;
     width: 100%;
+  }
+
+  &__content-wrapper {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    transform: translateX(100%);
+    width: 480px;
+  }
+
+  &__content {
+    position: relative;
+    background-color: $white;
+    height: 100%;
+  }
+
+  &__content-body {
+    height: 100%;
+    overflow: auto;
+    box-shadow: 0 0 10px 0 rgba($gray-100,0.50);
+  }
+}
+// Positions
+
+.drawer-right {
+  right: 0;
+
+  .drawer__content-wrapper {
+    right: 0;
+  }
+}
+
+.drawer-left {
+  left: 0;
+
+  .drawer__content-wrapper {
+    left: 0;
   }
 }
 
 .drawer-header {
-  margin-bottom: 24px;
+  border-bottom: 1px solid $gray-100;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: $white;
+  padding: 14px 12px;
 
   &__title {
-    color: $black;
-    font-size: 32px;
+    color: $gray-700;
+    font-size: 18px;
+    font-weight: bold;
   }
 }
 
 .drawer-body {
-  padding: 12px 0;
+  padding: 14px 14px 52px;
+}
+// Footer for actions(Close, Save)
+
+.drawer-footer {
+  border-top: 1px solid $gray-100;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  background-color: gray;
+  padding: 14px 16px;
+  background: rgb(255, 255, 255);
 }
 
-.example-diagram-box {
-  padding: 2px;
+.drawer > * {
+  transition: -webkit-transform 0.3s cubic-bezier(0.7, 0.3, 0.1, 1), -webkit-box-shadow 0.3s cubic-bezier(0.7, 0.3, 0.1, 1);
+  transition: transform 0.3s cubic-bezier(0.7, 0.3, 0.1, 1), box-shadow 0.3s cubic-bezier(0.7, 0.3, 0.1, 1);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.7, 0.3, 0.1, 1), -webkit-box-shadow 0.3s cubic-bezier(0.7, 0.3, 0.1, 1);
+}
+// sizes
+.drawer-sm {
+  .drawer__content-wrapper {
+    width: 320px;
+  }
+}
+.drawer-md {
+  .drawer__content-wrapper {
+    width: 640px;
+  }
+}
+.drawer-lg {
+  .drawer__content-wrapper {
+    width: 720px;
+  }}
+// open style
+.drawer-open {
+  height: 100%;
+  width: 100%;
 
-  &__label {
-    font-size: 24px;
-    padding-bottom: 12px;
+  .drawer__content-wrapper {
+    transform: none;
   }
 }
