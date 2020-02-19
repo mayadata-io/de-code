@@ -10,7 +10,7 @@ export default {
   port: '9999',
   src: 'docs',
   dest: 'dist',
-  base: '/de-code/', //gh-page
+  base: '/', //gh-page
 
   plugins: [
     css({
