@@ -30,7 +30,7 @@ class Drawer extends Component  {
               <div className="drawer__content">
                 <div className="drawer__content-body">
                   <div className="drawer-header">
-                    <h1 className="drawer-header__title">Title goes here</h1>
+                    <span className="drawer-header__title">Title goes here</span>
                     {isClosable &&
                       <button className="btn btn-light ml-auto" onClick={this.toggleDrawer}>
                         <i className="fa fa-times" aria-hidden="true"></i>
