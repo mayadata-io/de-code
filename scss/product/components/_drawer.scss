@@ -19,13 +19,13 @@
     position: absolute;
     right: 0;
     transform: translateX(100%);
-    width: 680px;
   }
 
   &__content {
     position: relative;
     background-color: $drawer-content-bg;
     height: 100%;
+    width: 680px;
   }
 
   &__content-body {
@@ -64,11 +64,17 @@
     color: $drawer-header-title-font-color;
     font-size: $drawer-header-title-font-size;
     font-weight: $drawer-header-title-font-weight;
+    padding: $drawer-header-title-padding;
+  }
+
+  &__close-button {
+    cursor: pointer;
+    padding: 12px;
   }
 }
 
 .drawer-body {
-  padding: 14px 14px 52px;
+  padding: $drawer-content-body-padding;
 }
 // Footer for actions(Close, Save)
 
@@ -78,7 +84,7 @@
   width: 100%;
   position: absolute;
   background-color: $drawer-footer-background-color;
-  padding: $drawer-header-padding;
+  padding: $drawer-footer-padding;
 }
 
 .drawer > * {
@@ -91,12 +97,11 @@
 //
 @each $size, $value in $drawer-sizes {
   .drawer-#{$size} {
-    .drawer__content-wrapper {
-      @include drawer-size($value);
-    }
+    @include drawer-size($value);
   }
 }
 // open style
+
 .drawer-open {
   height: 100%;
   width: 100%;
@@ -105,6 +110,7 @@
     transform: none;
   }
 }
+
 @-webkit-keyframes drawerFadeIn {
   0% {
     opacity: 0;

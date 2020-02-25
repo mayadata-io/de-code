@@ -23,11 +23,11 @@ class Drawer extends Component  {
     return (
       <>
         <button className="btn btn-primary" onClick={this.toggleDrawer}>Open</button>
-        <div className={`drawer drawer-${position} ${openStyles} ${size}`}>
+        <div className={`drawer drawer-${position} ${openStyles}`}>
           <div className="drawer__backdrop"></div>
           <div className="drawer__content-wrapper">
             {this.state.open &&
-              <div className="drawer__content">
+              <div className="drawer__content ${size}">
                 <div className="drawer__content-body">
                   <div className="drawer-header">
                     <span className="drawer-header__title">Title goes here</span>
