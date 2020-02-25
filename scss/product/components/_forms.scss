@@ -204,6 +204,62 @@ select.form-control-lg {
   }
 }
 
+//counter input fields
+//
+
+.counter-input {
+  position: relative;
+  display: inline-flex;
+  justify-content:center;
+  vertical-align: middle; // match .btn alignment given font-size hack above
+  border: 2px solid $gray-200;
+  border-radius: 4px;
+  width: 200px;
+  > .btn {
+    position: relative;
+    flex: 1 1 auto;
+    color: $gray-200;
+    // Bring the hover, focused, and "active" buttons to the front to overlay
+    // the borders properly
+    @include hover {
+      z-index: 1;
+    }
+    &:focus,
+    &:active,
+    &.active {
+      z-index: 1;
+    }
+  }
+  // Prevent double borders when buttons are next to each other
+  > .btn:not(:first-child),
+  > .btn-group:not(:first-child) {
+    margin-left: -$btn-border-width;
+  }
+
+  // Reset rounded corners
+  > .btn:not(:last-child):not(.dropdown-toggle),
+  > .btn-group:not(:last-child) > .btn {
+    @include border-right-radius(0);
+  }
+
+> .form-control {
+  box-shadow: none;
+  text-align: center;
+  @include border-right-radius(0);
+  @include border-left-radius(0);
+}
+
+> .counter-input-select {
+  border-left: 2px solid $gray-200;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+  > .btn:not(:first-child),
+  > .btn-group:not(:first-child) > .btn {
+    @include border-left-radius(0);
+  }
+}
 //advaced input fields
 // Search icon with input
 .input-search-icon_wrapper {
