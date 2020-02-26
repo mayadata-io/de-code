@@ -253,6 +253,18 @@ select.form-control-lg {
   }
 }
 
+//sizes
+//
+ .chooser-input-lg {
+   .form-control {
+     padding: $input-padding-y-lg $input-padding-x-lg;
+     font-size: $font-size-lg;
+     line-height: $input-line-height-lg;
+   }
+   .counter-input-select {
+     height: 100% !important;
+   }
+ }
 //advaced input fields
 // Search icon with input
 
