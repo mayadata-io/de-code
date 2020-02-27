@@ -66,6 +66,7 @@ select.form-control {
   }
 }
 // Make file inputs better match text inputs by forcing them to new lines.
+
 .form-control-file,
 .form-control-range {
   display: block;
@@ -181,7 +182,7 @@ select.form-control-lg {
   margin-left: -5px;
 
   > [class*="col-"],
-  > .col {
+   > .col {
     padding-right: 5px;
     padding-left: 5px;
   }
@@ -196,7 +197,6 @@ select.form-control-lg {
   vertical-align: middle; // match .btn alignment given font-size hack above
   border: 2px solid $gray-200;
   border-radius: 4px;
-  width: 200px;
 
   > .btn {
     position: relative;
@@ -218,18 +218,18 @@ select.form-control-lg {
     }
   }
   // Prevent double borders when buttons are next to each other
-  > .btn-group:not(:first-child),
-  > .btn:not(:first-child) {
+  > .btn:not(:first-child),
+  > .btn-group:not(:first-child) {
     margin-left: -$btn-border-width;
   }
   // Reset rounded corners
-  > .btn-group:not(:last-child) > .btn,
-  > .btn:not(:last-child):not(.dropdown-toggle) {
+  > .btn:not(:last-child):not(.dropdown-toggle),
+  > .btn-group:not(:last-child) > .btn {
     @include border-right-radius(0);
   }
 
-  > .btn-group:not(:first-child) > .btn,
-  > .btn:not(:first-child) {
+  > .btn:not(:first-child),
+  > .btn-group:not(:first-child) > .btn {
     @include border-left-radius(0);
   }
 
@@ -240,31 +240,35 @@ select.form-control-lg {
     @include border-left-radius(0);
   }
 
-  .counter-input-number-field { }
-
+  .counter-input-number-field {}
   // turn off the number input spinners
   @include input-number-spinner-off;
 
   .counter-input-select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
     border-left: 2px solid $gray-200;
     min-width: 50px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    //https://stackoverflow.com/a/60236111
+    text-align: center;
+    -moz-text-align-last: center;
+    text-align-last: center;
   }
 }
-
 //sizes
 //
- .chooser-input-lg {
-   .form-control {
-     padding: $input-padding-y-lg $input-padding-x-lg;
-     font-size: $font-size-lg;
-     line-height: $input-line-height-lg;
-   }
-   .counter-input-select {
-     height: 100% !important;
-   }
- }
+
+.chooser-input-lg {
+  .form-control {
+    padding: $input-padding-y-lg $input-padding-x-lg;
+    font-size: $font-size-lg;
+    line-height: $input-line-height-lg;
+  }
+
+  .counter-input-select {
+    height: 100% !important;
+  }
+}
 //advaced input fields
 // Search icon with input
 
@@ -327,8 +331,7 @@ select.form-control-lg {
 // pseudo-classes but also includes `.is-invalid` and `.is-valid` classes for
 // server side validation.
 @include form-validation-state("valid", $form-feedback-valid-color);
-@include form-validation-state("invalid", $form-feedback-invalid-color);
-// Inline forms
+@include form-validation-state("invalid", $form-feedback-invalid-color); // Inline forms
 //
 // Make forms appear inline(-block) by adding the `.form-inline` class. Inline
 // forms begin stacked on extra small (mobile) devices and then go inline when
