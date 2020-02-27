@@ -59,6 +59,22 @@ fieldset[disabled] a.btn {
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
     @include button-variant($value, $value);
+
+    //Flat buttons
+    &.btn-flat {
+      @include button-flat-variant($value);
+      border: none;
+      box-shadow: none;
+      @if $color == "secondary" {
+        color: color-yiq($value);
+      }
+    }
+
+    //Disabled button
+    &.btn-disabled {
+      @include button-disabled-variant($value);
+      cursor: not-allowed !important;
+    }
   }
 }
 
@@ -69,14 +85,22 @@ fieldset[disabled] a.btn {
     } @else {
       @include button-outline-variant($value, $white);
     }
+    @if $color == "secondary" {
+      color: color-yiq($value);
+    }
 
     &:hover {
-      background: inherit;
-      color: inherit;
+      @if $color == "secondary" {
+        color: color-yiq($value);
+      }
     }
   }
 }
 
+// Button pills
+.btn-pill {
+  border-radius: 100px;
+}
 
 //
 // Link buttons
@@ -108,37 +132,7 @@ fieldset[disabled] a.btn {
   &.disabled {
     color: $btn-link-disabled-color;
   }
-  &.btn-link-dark{
-    color: $gray-900;
-    font-weight: $btn-font-weight;
-    &:hover{
-      text-decoration: none;
-    }
-  }
-    &.btn-link-primary{
-      color: $primary;
-      font-weight: $btn-font-weight;
-      &:hover{
-        text-decoration: none;
-      }
-  }
   // No need for an active state here
-}
-
-//Disabled button
-.btn-disabled {
-  pointer-events: none;
-  opacity: 0.5;
-  outline: none;
-
-  &.gray {
-    background: $gray-100;
-    color: $gray-800;
-  }
-
-  &:focus {
-    outline: none;
-  }
 }
 
 // Inverse button
@@ -206,10 +200,6 @@ input[type="button"] {
     width: 100%;
   }
 }
-// Button pills
-.btn-pill {
-  border-radius: 100px;
-}
 
 //Login button
 .btn-login {
@@ -223,11 +213,16 @@ input[type="button"] {
 }
 
 //Login button for agents: Google and Gthub
-.btn-login-agent {
-  -webkit-transition-duration: 0.1s;
-  transition-duration: 0.1s;
-  -webkit-transition-property: box-shadow, transform;
-  transition-property: box-shadow, transform;
+  
+  .btn-google {
+    color: $gray-700;
+    background-color: $white;
+    border-color: $gray-100;
+    width: 100%;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
 
   &:hover {
     box-shadow: 0 3px 8px 0 $gray-200;
@@ -238,6 +233,7 @@ input[type="button"] {
   .btn-login-text {
     vertical-align: middle;
     margin-left: 8px;
+    color: $gray-700;
   }
 
   img {
@@ -245,37 +241,43 @@ input[type="button"] {
     margin-top: 4px;
   }
 
-  &.btn-google {
-    color: $gray-700;
-    background-color: $white;
-    border-color: $gray-100;
-    width: 100%;
-  
-    .btn-login-text {
-      color: $gray-700;
-    }
   }
-  &.btn-github {
+  .btn-github {
     color: $white;
     background-color: $btn-github;
     width: 100%;
-  
-    .btn-login-text {
-      color: $white;
-    }
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+
+  &:hover {
+    box-shadow: 0 3px 8px 0 $gray-200;
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+  }
+
+  .btn-login-text {
+    vertical-align: middle;
+    margin-left: 8px;
+    color: $white;
+  }
+
+  img {
+    float: left;
+    margin-top: 4px;
+  }
 
   }
-}
 
-// Litmus secondary button
-.btn-secondary-text-primary{
+// Highlight button
+.btn-highlight{
   background: $gray-000;
   border: 1px solid $gray-000;
   border-radius: 4px;
   color: $primary;
   
-
   &:hover{
-    color: inherit;
+    background: $blue-000;
   }
 }

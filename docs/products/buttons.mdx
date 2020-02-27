@@ -4,134 +4,103 @@ menu: Components
 
 ---
 import { Playground, PropsTable } from 'docz'
+import github from '../../resources/images/workloads/github.svg'
+import google from '../../resources/images/workloads/google.svg'
 
 # Buttons
 
-## Solid buttons
+## Basic buttons
 
-### Primary
+### Solid
 <Playground>
-  <button class="btn btn-primary">Primary</button>
-</Playground>
-
-### Secondary
-<Playground>
-  <button class="btn btn-secondary">Secondary</button>
-</Playground>
-
-### Warning
-<Playground>
-  <button class="btn btn-warning">Warning</button>
-</Playground>
-
-### Danger
-<Playground>
+  <button class="btn btn-primary mr-2">Primary</button>
+  <button class="btn btn-secondary mr-2">Secondary</button>
   <button class="btn btn-danger">Danger</button>
 </Playground>
 
-### Dark
+### Outline
 <Playground>
-  <button class="btn btn-dark">Dark</button>
+  <button class="btn btn-outline-primary mr-2">Primary</button>
+  <button class="btn btn-outline-secondary mr-2">Secondary</button>
+  <button class="btn btn-outline-danger">Danger</button>
 </Playground>
 
-## Flat Buttons
-
-### Flat Regular
+### Flat
 <Playground>
-   <button class="btn btn-link">Flat Regular</button>
+  <button class="btn btn-primary btn-flat mr-2">Primary</button>
+  <button class="btn btn-secondary btn-flat mr-2">Secondary</button>
+  <button class="btn btn-danger btn-flat">Danger</button>
 </Playground>
-
-### Flat Primary
-<Playground>
-   <button class="btn btn-link btn-link-primary">Flat Primary</button>
-</Playground>
-
-### Flat Dark
-<Playground>
-   <button class="btn btn-link btn-link-dark">Flat Dark</button>
-</Playground>
-
-## Outline buttons
-
-### btn-outline-primary
-<Playground>
-    <button class="btn btn-outline-primary">Primary</button>
-</Playground>
-
-### btn-outline-primary
-<Playground>
-    <button class="btn btn-outline-secondary">Secondary</button>
-</Playground>
-
-## Button variations
 
 ### Disabled
 <Playground>
-   <button class="btn btn-disabled">Disabled</button>
+  <button class="btn btn-primary btn-disabled mr-2">Primary</button>
+  <button class="btn btn-secondary btn-disabled mr-2">Secondary</button>
+  <button class="btn btn-danger btn-disabled">Danger</button>
 </Playground>
 
-### Inverse button
+### Pill
+<Playground>
+  <button class="btn btn-primary btn-pill mr-2">Primary</button>
+  <button class="btn btn-secondary btn-pill mr-2">Secondary</button>
+  <button class="btn btn-danger btn-pill mr-2">Danger</button>
+  <button class="btn btn-outline-primary btn-pill mr-2">Primary</button>
+  <button class="btn btn-outline-secondary btn-pill mr-2">Secondary</button>
+  <button class="btn btn-outline-danger btn-pill">Danger</button>
+</Playground>
 
+## Special Buttons
+
+### Link
+<Playground>
+   <button class="btn btn-link">Button</button>
+</Playground>
+
+### Highlight
+<Playground>
+   <button class="btn btn-highlight">Button</button>
+</Playground>
+
+### Inverse
 <Playground>
    <button class="btn btn-inverse">Inverse</button>
 </Playground>
 
-### Toggle button
-<Playground>
-   <button class="btn btn-toggle">Toggle</button>
-</Playground>
+## OAuth button
 
-### Pill button
+### Google
 <Playground>
-   <button class="btn btn-primary btn-pill">Pill</button>
-</Playground>
-
-### Secondary button with primary text
-<Playground>
-   <button class="btn btn-secondary-text-primary">Button</button>
-</Playground>
-
-### Login button
-<Playground>
-   <button class="btn btn-block btn-login">Login</button>
-</Playground>
-
-### Google login button
-<Playground>
-   <button class="btn btn-login-agent btn-google btn-lg">
-    
+   <button class="btn btn-google btn-lg">
+    <img src={google}/>
     <span class="btn-login-text">Google</span>
   </button>
 </Playground>
 
-### GitHub login button
+### GitHub
 <Playground>
-   <button class="btn btn-login-agent btn-github btn-lg">GitHub</button>
+   <button class="btn btn-github btn-lg">
+    <img src={github}/>
+    <span>GitHub</span>
+   </button>
 </Playground>
 
 ## Sizes
-
-### Small
 
 <Playground>
    <button class="btn btn-primary btn-sm">Small</button>
 </Playground>
 
-
-
-### Large
+<Playground>
+   <button class="btn btn-primary">Medium</button>
+</Playground>
 
 <Playground>
    <button class="btn btn-primary btn-lg">Large</button>
 </Playground>
 
-### Wide
-
 <Playground>
-   <button class="btn btn-primary btn-wide">Wide</button>
+   <button class="btn btn-primary btn-wide">Wide</button><br/>
 </Playground>
-
-### Full width
 
 <Playground>
    <button class="btn btn-primary btn-block">Block</button>
@@ -155,15 +124,5 @@ import { Playground, PropsTable } from 'docz'
   <button type="button" class="btn btn-secondary">Left</button>
   <button type="button" class="btn btn-secondary">Middle</button>
   <button type="button" class="btn btn-secondary">Right</button>
-</div>
-</Playground>
-
-### Vertical button group with text
-
-<Playground>
-<div class="btn-group-vertical bd-r-3">
-    <button type="button" class="btn btn-secondary mt-2 mb-2 bd-r-3">Top</button>
-    <button type="button" class="btn btn-secondary mt-2 mb-2 bd-r-3">Middle</button>
-    <button type="button" class="btn btn-secondary mt-2 mb-2 bd-r-3">Bottom</button>
 </div>
 </Playground>
