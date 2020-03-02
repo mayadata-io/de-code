@@ -9,25 +9,6 @@
   }
 }
 
-.collapse {
-  display: none;
-  &.show {
-    display: block;
-  }
-}
-
-tr {
-  &.collapse.show {
-    display: table-row;
-  }
-}
-
-tbody {
-  &.collapse.show {
-    display: table-row-group;
-  }
-}
-
 .collapsing {
   position: relative;
   height: 0;

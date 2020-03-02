@@ -1,0 +1,35 @@
+---
+name: Collapse
+menu: Product
+
+---
+import { Playground, PropsTable } from 'docz'
+
+# Collapse
+
+<Playground>
+  <div class="collapse">
+    <div class="collapse-item show">
+      <div class="collapse-header">
+          This is header content
+          <div class="collapse-arrow">
+            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+          </div>
+        </div>
+      <div class="collapse-content">
+        collapse contents...
+      </div>
+    </div>
+    <div class="collapse-item bg-grey mt-4">
+      <div class="collapse-header">
+          This is header content
+          <div class="collapse-arrow">
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </div>
+        </div>
+      <div class="collapse-content">
+        contents
+      </div>
+    </div>
+  </div>
+</Playground>
