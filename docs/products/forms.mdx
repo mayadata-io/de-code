@@ -52,6 +52,59 @@ import { Playground, PropsTable } from 'docz'
 </div>
 </Playground>
 
+## Counter input
+
+A Counter is a Form Element containing a label and a number Input that can be increased or decreased using companion Button Icons.
+
+<Playground>
+<div class="counter-input">
+  <button class="btn"><i class="fa fa-minus" aria-hidden="true"></i></button>
+    <input type="number" class="form-control" value="10"/>
+    <button class="btn"><i class="fa fa-plus" aria-hidden="true"></i></button>
+</div>
+
+<div class="counter-input ml-4">
+  <button class="btn"><i class="fa fa-minus" aria-hidden="true"></i></button>
+    <input type="number" class="form-control counter-input-number-field" value="12"/>
+    <button class="btn"><i class="fa fa-plus" aria-hidden="true"></i></button>
+    <select id="sizes" class="form-control counter-input-select">
+      <option value="MB">MB</option>
+      <option value="GB">GB</option>
+      <option value="TB">TB</option>
+    </select>
+</div>
+</Playground>
+
+### Sizes
+
+<ul>
+  <li>Medium ( default, doesn't require additional class )</li>
+  <li>Large ( .counter-input-lg)</li>
+</ul>
+
+<Playground>
+<div class="counter-input ml-4">
+  <button class="btn"><i class="fa fa-minus" aria-hidden="true"></i></button>
+    <input type="number" class="form-control counter-input-number-field" value="12"/>
+    <button class="btn"><i class="fa fa-plus" aria-hidden="true"></i></button>
+    <select id="sizes" class="form-control counter-input-select">
+      <option value="MB">MB</option>
+      <option value="GB">GB</option>
+      <option value="TB">TB</option>
+    </select>
+</div>
+<div class="counter-input chooser-input-lg ml-4">
+  <button class="btn"><i class="fa fa-minus" aria-hidden="true"></i></button>
+    <input type="number" class="form-control counter-input-number-field" value="12"/>
+    <button class="btn"><i class="fa fa-plus" aria-hidden="true"></i></button>
+    <select id="sizes" class="form-control counter-input-select">
+      <option value="MB">MB</option>
+      <option value="GB">GB</option>
+      <option value="TB">TB</option>
+    </select>
+</div>
+</Playground>
+
 
 ## Segmented controls
 
