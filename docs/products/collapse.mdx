@@ -9,6 +9,17 @@ import { Playground, PropsTable } from 'docz'
 
 <Playground>
   <div class="collapse">
+  <div class="collapse-item">
+    <div class="collapse-header">
+        This is header content
+        <div class="collapse-arrow">
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </div>
+      </div>
+    <div class="collapse-content">
+      contents
+    </div>
+  </div>
     <div class="collapse-item show">
       <div class="collapse-header">
           This is header content
@@ -20,16 +31,49 @@ import { Playground, PropsTable } from 'docz'
         collapse contents...
       </div>
     </div>
-    <div class="collapse-item bg-grey mt-4">
-      <div class="collapse-header">
-          This is header content
-          <div class="collapse-arrow">
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-          </div>
-        </div>
-      <div class="collapse-content">
-        contents
-      </div>
-    </div>
   </div>
 </Playground>
+
+
+### Examples
+
+<div class="collapse">
+  <div class="collapse-item show">
+    <div class="collapse-header">
+      <table class="w-100">
+        <tr>
+          <td>
+            <div class="d-inline-flex flex-row align-items-center">
+              <div class="custom-control custom-checkbox mr-4">
+                <input type="checkbox" class="custom-control-input" id="customCheck2"/>
+                <label class="custom-control-label" for="customCheck2"></label>
+              </div>
+              <div>
+                <div class="mb-2 text-muted">Node name</div>
+                <div class="font-weight-bold">Worker-0</div>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="mb-2 text-muted">Capacity</div>
+          <div class="font-weight-bold">70GB</div>
+          </td>
+          <td>
+            <div class="mb-2 text-muted">Disk count</div>
+            <div class="font-weight-bold">10</div>
+          </td>
+          <td>
+            <div class="mb-2 text-muted">Disk count</div>
+            <div class="font-weight-bold">10</div>
+          </td>
+        </tr>
+      </table>
+        <div class="collapse-arrow">
+          <i class="fa fa-chevron-up" aria-hidden="true"></i>
+        </div>
+      </div>
+    <div class="collapse-content">
+      collapse contents...
+    </div>
+  </div>
+</div>
