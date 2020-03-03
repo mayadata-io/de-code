@@ -22,45 +22,7 @@
     color: $nav-link-disabled-color;
   }
 }
-//
-// Tabs
-//
 
-.nav-tabs {
-  border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color;
-
-  .nav-item {
-    margin-bottom: -$nav-tabs-border-width;
-  }
-
-  .nav-link {
-    border: $nav-tabs-border-width solid transparent;
-    @include border-top-radius($nav-tabs-border-radius);
-    @include hover-focus {
-      border-color: $nav-tabs-link-hover-border-color;
-    }
-
-    &.disabled {
-      background-color: transparent;
-      border-color: transparent;
-      color: $nav-link-disabled-color;
-    }
-  }
-
-  .nav-item.show .nav-link,
-  .nav-link.active {
-    background-color: $nav-tabs-link-active-bg;
-    border-color: $nav-tabs-link-active-border-color;
-    color: $nav-tabs-link-active-color;
-  }
-
-  .dropdown-menu {
-    // Make dropdown border overlap tab border
-    margin-top: -$nav-tabs-border-width;
-    // Remove the top rounded corners here since there is a hard edge above the menu
-    @include border-top-radius(0);
-  }
-}
 //
 /// Default
 /// default tab with a line on bottom of each nav-link
@@ -117,38 +79,7 @@
     border-top-right-radius: 4px;
   }
 }
-// Pills
-//
 
-.nav-pills {
-  .nav-link {
-    @include border-radius($nav-pills-border-radius);
-  }
-
-  .nav-link.active,
-  .show > .nav-link {
-    background-color: $nav-pills-link-active-bg;
-    color: $nav-pills-link-active-color;
-  }
-}
-//
-// Justified variants
-//
-
-.nav-fill {
-  .nav-item {
-    flex: 1 1 auto;
-    text-align: center;
-  }
-}
-
-.nav-justified {
-  .nav-item {
-    flex-basis: 0;
-    flex-grow: 1;
-    text-align: center;
-  }
-}
 // Tabbable tabs
 //
 // Hide tabbable panes to start, show them when `.active`
@@ -160,5 +91,18 @@
 
   > .active {
     display: block;
+  }
+}
+
+// Nav card
+.nav-card {
+  border-radius: 4px;
+  border: 0px;
+  box-shadow: 0px 0px 10px -1px rgba($gray-100, 0.8);
+  padding: $nav-card-padding-y $nav-card-padding-x;
+  cursor:pointer;
+
+  &.active {
+    border-bottom: 4px solid $primary;
   }
 }
