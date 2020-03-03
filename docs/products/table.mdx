@@ -152,6 +152,125 @@ import openshift from '../../resources/images/clusters/openshift.png'
   </table>
 </Playground>
 
+## Table with select
+<Playground>
+  <table class="table table-hover">
+  <colgroup>
+  <col class="table-selection-col" />
+  <col />
+  <col />
+  <col />
+  </colgroup>
+    <thead>
+      <tr>
+        <th scope="col">
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck"/>
+            <label class="custom-control-label" for="customCheck"></label>
+          </div>
+        </th>
+        <th scope="col">Name</th>
+        <th scope="col">Status</th>
+        <th scope="col">K8s version</th>
+        <th scope="col">Nodes</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <td>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck2"/>
+          <label class="custom-control-label" for="customCheck2"></label>
+        </div>
+      </td>
+        <td>
+          <div class="table-avatar">
+            <div><img class="table-avatar-image" src={gke} /></div>
+            <span class="table-avatar-label">Dev-cluster-yg238</span>
+          </div>
+        </td>
+        <td><span class="badge badge-gradient-success badge-pill">Active</span></td>
+        <td>v1.10.11-gke.1</td>
+        <td>12</td>
+        <td></td>
+      </tr>
+      <tr>
+      <td>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck3"/>
+          <label class="custom-control-label" for="customCheck3"></label>
+        </div>
+      </td>
+        <td>
+          <div class="table-avatar">
+            <div><img class="table-avatar-image" src={azure} /></div>
+            <span class="table-avatar-label">Testing-cluster-tr33d</span>
+          </div>
+        </td>
+        <td><span class="badge badge-gradient-danger badge-pill">Inactive</span></td>
+        <td>v1.10</td>
+        <td>3</td>
+        <td></td>
+      </tr>
+      <tr>
+      <td>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck4"/>
+          <label class="custom-control-label" for="customCheck4"></label>
+        </div>
+      </td>
+        <td>
+          <div class="table-avatar">
+            <div><img class="table-avatar-image" src={minikube} /></div>
+            <span class="table-avatar-label">Staging-setup-df12s</span>
+          </div>
+        </td>
+        <td><span class="badge badge-gradient-warning badge-pill">Degrated</span></td>
+        <td>v1.10.11</td>
+        <td>6</td>
+        <td></td>
+      </tr>
+      <tr>
+      <td>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck5"/>
+          <label class="custom-control-label" for="customCheck5"></label>
+        </div>
+      </td>
+        <td>
+          <div class="table-avatar">
+            <div><img class="table-avatar-image" src={digitalocean} /></div>
+            <span class="table-avatar-label">Monitor-cluster-8hjq7</span>
+          </div>
+        </td>
+        <td><span class="badge badge-gradient-success badge-pill">Active</span></td>
+        <td>v1.13.2</td>
+        <td>12</td>
+        <td></td>
+      </tr>
+      <tr>
+      <td>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck6"/>
+          <label class="custom-control-label" for="customCheck6"></label>
+        </div>
+      </td>
+        <td>
+          <div class="table-avatar">
+            <div><img class="table-avatar-image" src={openshift} /></div>
+            <span class="table-avatar-label">Asia-scope-72dr4</span>
+          </div>
+        </td>
+        <td><span class="badge badge-gradient-danger badge-pill">Offline</span></td>
+        <td>v1.10.13</td>
+        <td>12</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</Playground>
+
 ## Table with actions
 <Playground>
   <table class="table table-hover">
