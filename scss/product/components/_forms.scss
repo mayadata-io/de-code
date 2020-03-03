@@ -240,7 +240,6 @@ select.form-control-lg {
     @include border-left-radius(0);
   }
 
-  .counter-input-number-field {}
   // turn off the number input spinners
   @include input-number-spinner-off;
 
