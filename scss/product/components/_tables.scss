@@ -197,21 +197,7 @@
   }
 }
 
-//Table select item
-.table-selection-col {
-  max-width: 60px;
-}
 
-.table-row-selected {
-  background-color: $table-row-selected-bg-color;
-   td {
-    border-top: $table-border-width solid $table-row-selected-border-color;
-  }
-
-  & .table-expendable {
-    background: red;
-  }
-}
 // Responsive tables
 //
 // Generate series of `.table-responsive-*` classes for configuring the screen
