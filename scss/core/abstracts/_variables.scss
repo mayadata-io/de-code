@@ -533,9 +533,10 @@ $zindex-dropdown:                   1000 !default;
 $zindex-sticky:                     1020 !default;
 $zindex-fixed:                      1030 !default;
 $zindex-modal-backdrop:             1040 !default;
-$zindex-modal:                      1050 !default;
-$zindex-popover:                    1060 !default;
-$zindex-tooltip:                    1070 !default;
+$zindex-drawer:                     1060 !default;
+$zindex-modal:                      1070 !default;
+$zindex-popover:                    1080 !default;
+$zindex-tooltip:                    1090 !default;
 
 // Navs
 $nav-link-color:                    $gray-600 !default;
@@ -740,6 +741,36 @@ $modal-sm:                          300px !default;
 
 $modal-transition:                  transform .3s ease-out !default;
 
+// Drawer
+//
+$drawer-content-bg:             $white !default;
+$drawer-content-box-shadow:     0 0 10px 0 rgba($gray-100, .50) !default;
+
+$drawer-backdrop-bg:                $gray-300 !default;
+$drawer-backdrop-opacity:           .55 !default;
+
+$drawer-header-background-color:    $white !default;
+$drawer-header-border-color:        $gray-100 !default;
+$drawer-header-title-font-color:    $body-color !default;
+$drawer-header-title-font-size:     18px !default;
+$drawer-header-title-font-weight:   $font-weight-bold !default;
+$drawer-header-border-width:        $border-width !default;
+
+$drawer-footer-border-color:        $modal-header-border-color !default;
+$drawer-footer-border-width:        $modal-header-border-width !default;
+$drawer-footer-background-color:    $drawer-header-background-color !default;
+$drawer-header-padding:             0px 12px !default;
+$drawer-header-title-padding:       14px 0px !default;
+$drawer-footer-padding:             14px 12px !default;
+
+$drawer-content-body-padding:       14px 14px 52px !default;
+
+$drawer-sizes: () !default;
+$drawer-sizes: map-merge((
+  lg: 720px,
+  md: 640px,
+  sm: 320px,
+), $drawer-sizes);
 
 // Alerts
 //

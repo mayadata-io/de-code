@@ -1,0 +1,131 @@
+.drawer {
+  animation: drawerFadeIn 0.3s cubic-bezier(.7, .3, .1, 1);
+  height: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 0;
+  z-index: $zindex-drawer;
+
+  &__backdrop {
+    background: rgba($drawer-backdrop-bg, $drawer-backdrop-opacity);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+
+  &__content-wrapper {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    transform: translateX(100%);
+  }
+
+  &__content {
+    position: relative;
+    background-color: $drawer-content-bg;
+    height: 100%;
+    width: 680px;
+  }
+
+  &__content-body {
+    box-shadow: $drawer-content-box-shadow;
+    height: 100%;
+    overflow: auto;
+  }
+}
+
+// Positions
+.drawer-right {
+  right: 0;
+
+  .drawer__content-wrapper {
+    right: 0;
+  }
+}
+
+.drawer-left {
+  left: 0;
+
+  .drawer__content-wrapper {
+    left: 0;
+  }
+}
+
+.drawer-header {
+  border-bottom: $drawer-header-border-width solid $drawer-header-border-color;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: $drawer-header-background-color;
+  padding: $drawer-header-padding;
+
+  &__title {
+    color: $drawer-header-title-font-color;
+    font-size: $drawer-header-title-font-size;
+    font-weight: $drawer-header-title-font-weight;
+    padding: $drawer-header-title-padding;
+  }
+
+  &__close-button {
+    cursor: pointer;
+    padding: 12px;
+  }
+}
+
+.drawer-body {
+  padding: $drawer-content-body-padding;
+}
+// Footer for actions(Close, Save)
+
+.drawer-footer {
+  border-top: $drawer-footer-border-width solid $drawer-footer-border-color;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  background-color: $drawer-footer-background-color;
+  padding: $drawer-footer-padding;
+}
+
+.drawer > * {
+  transition: -webkit-transform 0.3s cubic-bezier(0.7, 0.3, 0.1, 1), -webkit-box-shadow 0.3s cubic-bezier(0.7, 0.3, 0.1, 1);
+  transition: transform 0.3s cubic-bezier(0.7, 0.3, 0.1, 1), box-shadow 0.3s cubic-bezier(0.7, 0.3, 0.1, 1);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.7, 0.3, 0.1, 1), -webkit-box-shadow 0.3s cubic-bezier(0.7, 0.3, 0.1, 1);
+}
+
+// Sizes
+//
+@each $size, $value in $drawer-sizes {
+  .drawer-#{$size} {
+    @include drawer-size($value);
+  }
+}
+// open style
+
+.drawer-open {
+  height: 100%;
+  width: 100%;
+
+  .drawer__content-wrapper {
+    transform: none;
+  }
+}
+
+@-webkit-keyframes drawerFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes drawerFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
