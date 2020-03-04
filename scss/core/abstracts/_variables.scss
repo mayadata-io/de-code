@@ -639,6 +639,8 @@ $card-spacer-x:                     1.25rem !default;
 $card-border-width:                 $border-width !default;
 $card-border-radius:                $border-radius !default;
 $card-border-color:                 $gray-000 !default;
+$card-group-border-color:           $gray-100 !default;
+$card-deck-border-color:           $gray-100 !default;   
 $card-box-shadow:                   0 0 5px 0 $gray-000;
 $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width}) !default;
 $card-cap-bg:                       $blue-700 !default;

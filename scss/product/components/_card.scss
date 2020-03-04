@@ -142,6 +142,7 @@
     margin-bottom: $card-deck-margin;
     box-shadow: none;
     border-radius: 4px;
+    border: $card-border-width solid $card-deck-border-color;
 
     p {
       font-size: 12px;
@@ -192,7 +193,7 @@
   // to display properly.
   > .card {
     margin-bottom: $card-group-margin;
-
+    border: $card-border-width solid $card-group-border-color;
     box-shadow: none;
 
     p {
