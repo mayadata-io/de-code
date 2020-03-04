@@ -11,25 +11,25 @@
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
-  border: $btn-border-width solid transparent;
-  @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius);
+  border: $input-btn-border-width solid transparent;
+  @include button-size($input-btn-padding-y, $input-btn-padding-x, $font-size-base, $input-btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
 
   // Share hover and focus styles
   @include hover-focus {
     text-decoration: none;
   }
-
   &:focus,
   &.focus {
     outline: 0;
-    box-shadow: $btn-focus-box-shadow;
+    box-shadow: $input-btn-focus-box-shadow;
   }
 
   // Disabled comes first so active can properly restyle
   &.disabled,
   &:disabled {
-    opacity: $btn-disabled-opacity;
+    opacity: .65;
+    cursor: not-allowed;
     @include box-shadow(none);
   }
 
@@ -38,20 +38,16 @@
     cursor: pointer;
   }
 
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active {
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled).active {
     background-image: none;
-    @include box-shadow($btn-active-box-shadow);
-
-    &:focus {
-      @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
-    }
+    @include box-shadow($input-btn-focus-box-shadow, $btn-active-box-shadow);
   }
 }
 
 // Future-proof disabling of clicks on `<a>` elements
 a.btn.disabled,
-fieldset:disabled a.btn {
+fieldset[disabled] a.btn {
   pointer-events: none;
 }
 
@@ -63,15 +59,48 @@ fieldset:disabled a.btn {
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
     @include button-variant($value, $value);
+
+    //Flat buttons
+    &.btn-flat {
+      @include button-flat-variant($value);
+      border: none;
+      box-shadow: none;
+      @if $color == "secondary" {
+        color: color-yiq($value);
+      }
+    }
+
+    //Disabled button
+    &.btn-disabled {
+      @include button-disabled-variant($value);
+      cursor: not-allowed !important;
+    }
   }
 }
 
 @each $color, $value in $theme-colors {
   .btn-outline-#{$color} {
-    @include button-outline-variant($value);
+    @if $color == "light" {
+      @include button-outline-variant($value, $gray-900);
+    } @else {
+      @include button-outline-variant($value, $white);
+    }
+    @if $color == "secondary" {
+      color: color-yiq($value);
+    }
+
+    &:hover {
+      @if $color == "secondary" {
+        color: color-yiq($value);
+      }
+    }
   }
 }
 
+// Button pills
+.btn-pill {
+  border-radius: 100px;
+}
 
 //
 // Link buttons
@@ -85,14 +114,16 @@ fieldset:disabled a.btn {
 
   @include hover {
     color: $link-hover-color;
-    text-decoration: $link-hover-decoration;
+    text-decoration: none;
     background-color: transparent;
     border-color: transparent;
   }
-
+  
+  &:hover{
+    text-decoration: underline;
+  }
   &:focus,
   &.focus {
-    text-decoration: $link-hover-decoration;
     border-color: transparent;
     box-shadow: none;
   }
@@ -101,24 +132,52 @@ fieldset:disabled a.btn {
   &.disabled {
     color: $btn-link-disabled-color;
   }
-
   // No need for an active state here
 }
 
+// Inverse button
+.btn-inverse{
+  // color: $blue-600;
+  font-weight: normal;
+  background: none;
+  &:hover{
+    background: $gray-000;
+  }
+  &.active{
+    background: $gray-000;
+    box-shadow: none !important;
+  }
+  &:focus{
+    box-shadow: none !important;
+  }
+}
+ //Toggle button
+ .btn-toggle{
+  font-weight: normal;
+  background: none;
+  &.active{
+    color: $blue-600;
+    background: none;
+    box-shadow: none !important;
+  }
+}
 
 //
 // Button Sizes
 //
 
 .btn-lg {
-  @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-lg, $btn-line-height-lg, $btn-border-radius-lg);
+  @include button-size($input-btn-padding-y-lg, $input-btn-padding-x-lg, $font-size-lg, $input-btn-line-height-lg, $btn-border-radius-lg);
 }
 
 .btn-sm {
-  @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
+  @include button-size($input-btn-padding-y-sm, $input-btn-padding-x-sm, $font-size-sm, $input-btn-line-height-sm, $btn-border-radius-sm);
 }
 
-
+.btn-wide{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
 //
 // Block button
 //
@@ -126,11 +185,11 @@ fieldset:disabled a.btn {
 .btn-block {
   display: block;
   width: 100%;
+}
 
-  // Vertically space out multiple block buttons
-  + .btn-block {
-    margin-top: $btn-block-spacing-y;
-  }
+// Vertically space out multiple block buttons
+.btn-block + .btn-block {
+  margin-top: $btn-block-spacing-y;
 }
 
 // Specificity overrides
@@ -139,5 +198,86 @@ input[type="reset"],
 input[type="button"] {
   &.btn-block {
     width: 100%;
+  }
+}
+
+//Login button
+.btn-login {
+  background-color: $aqua-500;
+  color: $white;
+
+  .btn-login-text {
+    vertical-align: middle;
+    margin-left: 8px;
+  }
+}
+
+//Login button for agents: Google and Gthub
+  
+  .btn-google {
+    color: $gray-700;
+    background-color: $white;
+    border-color: $gray-100;
+    width: 100%;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+
+  &:hover {
+    box-shadow: 0 3px 8px 0 $gray-200;
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+  }
+
+  .btn-login-text {
+    vertical-align: middle;
+    margin-left: 8px;
+    color: $gray-700;
+  }
+
+  img {
+    float: left;
+    margin-top: 4px;
+  }
+
+  }
+  .btn-github {
+    color: $white;
+    background-color: $btn-github;
+    width: 100%;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+
+  &:hover {
+    box-shadow: 0 3px 8px 0 $gray-200;
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+  }
+
+  .btn-login-text {
+    vertical-align: middle;
+    margin-left: 8px;
+    color: $white;
+  }
+
+  img {
+    float: left;
+    margin-top: 4px;
+  }
+
+  }
+
+// Highlight button
+.btn-highlight{
+  background: $gray-000;
+  border: 1px solid $gray-000;
+  border-radius: 4px;
+  color: $primary;
+  
+  &:hover{
+    background: $blue-000;
   }
 }

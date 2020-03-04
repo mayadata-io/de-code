@@ -95,6 +95,16 @@
   }
 }
 
+@mixin button-flat-variant($color) {
+  color: $color;
+  background-color: transparent;
+}
+
+@mixin button-disabled-variant($color) {
+  background-color: rgba($color, $alpha: 0.7);
+  border-color: rgba($color, $alpha: 0.2);
+}
+
 // Button sizes
 @mixin button-size($padding-y, $padding-x, $font-size, $line-height, $border-radius) {
   padding: $padding-y $padding-x;
