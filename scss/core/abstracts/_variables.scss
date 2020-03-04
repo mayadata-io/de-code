@@ -653,6 +653,17 @@ $card-columns-count:                3 !default;
 $card-columns-gap:                  1.25rem !default;
 $card-columns-margin:               $card-spacer-y !default;
 
+//gradiant bg
+
+$healthy-gradiant: linear-gradient(
+    90deg,
+    $healthy-primary 0%,
+    $healthy-secondary 100%
+);
+$unhealthy-gradiant: linear-gradient(90deg, #d83544 0%, #fb6977 100%);
+
+//box-shadow
+$grid-shadow: 0 0 5px 0 $grid-shadow-color;
 
 // Tooltips
 

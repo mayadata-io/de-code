@@ -4,6 +4,9 @@ menu: Product
 
 ---
 import { Playground, PropsTable } from 'docz'
+import openebs from '../../resources/images/icons/openebs-icon-white.svg'
+import disks from '../../resources/images/icons/disks.svg'
+import Shape from '../../resources/images/icons/Shape.svg'
 
 # Cards
 ### Example
@@ -136,4 +139,104 @@ import { Playground, PropsTable } from 'docz'
       </table>
     </div>
   </div>
+</Playground>
+
+
+## Card Groups
+
+##### Use card groups to render cards as a single, attached element with equal width and height columns.
+
+<Playground>
+<div class="d-flex flex-row flex-wrap card-group">
+    <div class="card col-4 p-3">
+        <div class="card-body p-0 d-flex align-items-center">
+          <div class="status-square icon-healthy">
+            <img src={openebs}/>
+          </div>  
+          <div class="pl-3">
+              <div class="d-flex flex-row align-items-center">
+                  <h3 class="pr-2">1</h3>
+                  <span>out of 2</span>
+              </div>
+              <p class="mb-0">MALFUNCTIONING OPENEBS COMPONENTS</p>
+          </div>
+        </div>
+    </div>
+    <div class="card col-4 p-3">
+        <div class="card-body p-0 d-flex align-items-center">
+          <div class="status-square icon-healthy">
+            <img src={disks}/>
+          </div>  
+          <div class="pl-3">
+              <div class="d-flex flex-row align-items-center">
+                  <h3 class="pr-2">0</h3>
+                  <span>out of 0</span>
+              </div>
+              <p class="mb-0">VOLUMES NEED YOUR ATTENTION</p>
+          </div>
+        </div>
+    </div>
+    <div class="card col-4 p-3">
+        <div class="card-body p-0 d-flex align-items-center">
+          <div class="status-square icon-healthy">
+            <img src={Shape}/>
+          </div>  
+          <div class="pl-3">
+              <div class="d-flex flex-row align-items-center">
+                  <h3 class="pr-2">0</h3>
+                  <span>out of 24</span>
+              </div>
+              <p class="mb-0">MALFUNCTIONING DO COMPONENTS</p>
+          </div>
+        </div>
+    </div>
+</div>
+</Playground>
+
+
+## Card Decks
+
+##### Need a set of equal width and height cards that aren’t attached to one another? Use card decks.
+
+<Playground>
+<div class="d-flex flex-row align-items-center justify-content-between flex-wrap card-deck">
+    <div class="card col p-4">
+        <div class="card-body p-0">
+            <div class="d-flex flex-row align-items-center">
+                <h3 class="pr-2 text-primary">0 Bytes</h3>
+            </div>
+            <p class="mb-0">Total Capacity</p>
+        </div>
+    </div>
+    <div class="card col p-4">
+        <div class="card-body p-0">
+            <div class="d-flex flex-row align-items-center">
+                <h3 class="pr-2 text-info">0</h3>
+            </div>
+            <p class="mb-0">Total Volumes</p>
+        </div>
+    </div>
+    <div class="card col p-4">
+        <div class="card-body p-0">
+            <div class="d-flex flex-row align-items-center text-secondary">
+                <h3 class="pr-2 text-success">
+                    0
+                </h3>
+                out of 2
+            </div>
+            <p class="mb-0">Healthy Volumes</p>
+        </div>
+    </div>
+    <div class="card col p-4">
+        <div class="card-body p-0">
+            <div class="d-flex flex-row align-items-center text-secondary">
+                <h3 class="pr-2 text-danger">
+                    0
+                </h3>
+               out of 4
+            </div>
+            <p class="mb-0">Unhealthy Volumes</p>
+        </div>
+    </div>
+</div>
 </Playground>

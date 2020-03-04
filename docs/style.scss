@@ -84,3 +84,21 @@
     vertical-align: middle;
   }
 }
+
+.status-square {
+  min-height: 40px;
+  min-width: 40px;
+  border-radius: 4px;
+  box-shadow: $grid-shadow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.icon-healthy {
+    background: $healthy-gradiant;
+  }
+
+  &.icon-unhealthy {
+    background: $unhealthy-gradiant;
+  }
+}
