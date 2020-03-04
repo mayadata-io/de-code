@@ -142,7 +142,10 @@
     margin-bottom: $card-deck-margin;
     box-shadow: none;
     border-radius: 4px;
-    font-size: 13px;
+
+    p {
+      font-size: 12px;
+    }
 
     a {
       color: inherit;
