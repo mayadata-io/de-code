@@ -655,6 +655,20 @@ $card-columns-count:                3 !default;
 $card-columns-gap:                  1.25rem !default;
 $card-columns-margin:               $card-spacer-y !default;
 
+// Colors
+$grid-shadow-color: rgba($gray-700,0.1);
+$text-gray: $gray-700;
+$healthy-primary : $green-500;
+$healthy-secondary :$green-300;
+$unhealthy-primary : $red-500;
+$unhealthy-secondary : $red-300;
+$link-color : $blue-500;
+$btn-github:$gray-800;
+$code-wrap-bg:$gray-000;
+$active-code-block-shadow:$violet-400;
+$font-color-gray:$gray-700;
+$bg-g:rgba($gray-000, 0.5);
+
 //gradiant bg
 
 $healthy-gradiant: linear-gradient(

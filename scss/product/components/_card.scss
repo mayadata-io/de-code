@@ -144,7 +144,7 @@
     border-radius: 4px;
     border: $card-border-width solid $card-deck-border-color;
 
-    p {
+    .sub-heading {
       font-size: 12px;
     }
 
@@ -196,12 +196,12 @@
     border: $card-border-width solid $card-group-border-color;
     box-shadow: none;
 
-    p {
+    .sub-heading {
       font-size: 12px;
       color: $gray-700;
     }
 
-    h3 {
+    .heading {
       color: $gray-700;
     }
 
