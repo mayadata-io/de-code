@@ -71,8 +71,16 @@ fieldset[disabled] a.btn {
       @include button-flat-variant($value);
       border: none;
       box-shadow: none;
+      &:focus,
+      &.focus{
+        color: $value !important;
+      }
       @if $color == "secondary" {
         color: color-yiq($value);
+        &:focus,
+        &.focus{
+          color: color-yiq($value) !important;
+        }
       }
     }
 
