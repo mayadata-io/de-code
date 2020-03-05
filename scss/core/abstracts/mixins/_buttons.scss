@@ -98,11 +98,22 @@
 @mixin button-flat-variant($color) {
   color: $color;
   background-color: transparent;
+  &:focus,
+  &.focus{
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
 }
 
 @mixin button-disabled-variant($color) {
   background-color: rgba($color, $alpha: 0.7);
   border-color: rgba($color, $alpha: 0.2);
+  &:focus,
+  &.focus{
+    background-color: rgba($color, $alpha: 0.7) !important;
+    border-color: rgba($color, $alpha: 0.2) !important;
+    box-shadow: none !important;
+  }
 }
 
 // Button sizes
