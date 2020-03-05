@@ -19,7 +19,7 @@ $theme-color-interval:      8% !default;
 $yiq-contrasted-threshold: 150 !default;
 
 // Customize the light and dark text colors for use in our YIQ color contrast function.
-$yiq-text-dark: $gray-900 !default;
+$yiq-text-dark: $gray-700 !default;
 $yiq-text-light: $white !default;
 
 // Options
@@ -165,6 +165,7 @@ $font-size-sm:                ($font-size-base * .875) !default;
 
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
+$font-weight-semi-bold:       600 !default;
 $font-weight-bold:            700 !default;
 
 $font-weight-base:            $font-weight-normal !default;
@@ -318,7 +319,7 @@ $btn-line-height-lg:          $input-btn-line-height-lg !default;
 
 $btn-border-width:            $input-btn-border-width !default;
 
-$btn-font-weight:             $font-weight-normal !default;
+$btn-font-weight:             $font-weight-semi-bold !default;
 $btn-box-shadow:              0 1px 0 0 rgba(33,37,54,.1)!default;
 
 $btn-focus-width:             $input-btn-focus-width !default;
@@ -336,7 +337,7 @@ $btn-border-radius-lg:        $border-radius-lg !default;
 $btn-border-radius-sm:        $border-radius-sm !default;
 
 $btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
-
+$btn-github:$gray-800;
 
 // Forms
 

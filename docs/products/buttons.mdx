@@ -4,34 +4,128 @@ menu: Components
 
 ---
 import { Playground, PropsTable } from 'docz'
+import github from '../../resources/images/workloads/github.svg'
+import google from '../../resources/images/workloads/google.svg'
 
 # Buttons
 
-## Button variations
+## Basic buttons
 
-### Primary
+### Solid
 <Playground>
-  <button class="btn btn-primary">Primary</button>
-</Playground>
-
-### Secondary
-<Playground>
-  <button class="btn btn-secondary">Secondary</button>
-</Playground>
-
-### Warning
-<Playground>
-  <button class="btn btn-warning">Warning</button>
-</Playground>
-
-### Danger
-<Playground>
+  <button class="btn btn-primary mr-2">Primary</button>
+  <button class="btn btn-secondary mr-2">Secondary</button>
   <button class="btn btn-danger">Danger</button>
 </Playground>
 
-### Dark
+### Outline
 <Playground>
-  <button class="btn btn-dark">Dark</button>
+  <button class="btn btn-outline-primary mr-2">Primary</button>
+  <button class="btn btn-outline-secondary mr-2">Secondary</button>
+  <button class="btn btn-outline-danger">Danger</button>
+</Playground>
+
+### Flat
+<Playground>
+  <button class="btn btn-primary btn-flat mr-2">Primary</button>
+  <button class="btn btn-secondary btn-flat mr-2">Secondary</button>
+  <button class="btn btn-danger btn-flat">Danger</button>
+</Playground>
+
+### Disabled
+<Playground>
+  <button class="btn btn-primary btn-disabled mr-2">Primary</button>
+  <button class="btn btn-secondary btn-disabled mr-2">Secondary</button>
+  <button class="btn btn-danger btn-disabled">Danger</button>
+</Playground>
+
+### Pill
+<Playground>
+  <button class="btn btn-primary btn-pill mr-2">Primary</button>
+  <button class="btn btn-secondary btn-pill mr-2">Secondary</button>
+  <button class="btn btn-danger btn-pill mr-2">Danger</button>
+  <button class="btn btn-outline-primary btn-pill mr-2">Primary</button>
+  <button class="btn btn-outline-secondary btn-pill mr-2">Secondary</button>
+  <button class="btn btn-outline-danger btn-pill">Danger</button>
+</Playground>
+
+## Special Buttons
+
+### Link
+<Playground>
+   <button class="btn btn-link">Button</button>
+</Playground>
+
+### Highlight
+<Playground>
+   <button class="btn btn-highlight">Button</button>
+</Playground>
+
+### Inverse
+<Playground>
+   <button class="btn btn-inverse">Inverse</button>
+</Playground>
+
+### Icon buttons
+
+<Playground>
+<button type="button" class="btn btn-icon btn-sm mr-2"><i class="dci dci-trash" aria-hidden="true" /> </button>
+<button type="button" class="btn btn-icon btn-md mr-2"><i class="dci dci-trash" aria-hidden="true" /> </button>
+<button type="button" class="btn btn-icon btn-lg mr-2"><i class="dci dci-trash" aria-hidden="true" /> </button>
+</Playground>
+
+### Buttons with icon and text
+
+<Playground>
+<button type="button" class="btn btn-secondary btn-sm mr-2"><i class="dci dci-check-list" aria-hidden="true" /><span>Report</span> </button>
+<button type="button" class="btn btn-secondary btn-md mr-2"><i class="dci dci-check-list" aria-hidden="true" /><span>Report</span> </button>
+<button type="button" class="btn btn-secondary btn-lg mr-2"><i class="dci dci-check-list" aria-hidden="true" /><span>Report</span> </button>
+</Playground>
+
+
+## OAuth buttons
+
+### Google
+<Playground>
+   <button class="btn btn-google btn-lg">
+    <img src={google}/>
+    <span class="btn-login-text">Google</span>
+  </button>
+</Playground>
+
+### GitHub
+<Playground>
+   <button class="btn btn-github btn-lg">
+    <img src={github}/>
+    <span>GitHub</span>
+   </button>
+</Playground>
+
+## Sizes
+
+### Small:
+<Playground>
+   <button class="btn btn-primary btn-sm">Button</button>
+</Playground>
+
+### Medium:
+<Playground>
+   <button class="btn btn-primary">Button</button>
+</Playground>
+
+### Large:
+<Playground>
+   <button class="btn btn-primary btn-lg">Button</button>
+</Playground>
+
+### Wide:
+<Playground>
+   <button class="btn btn-primary btn-wide">Button</button><br/>
+</Playground>
+
+### Block:
+<Playground>
+   <button class="btn btn-primary btn-block">Button</button>
 </Playground>
 
 ## Button group
