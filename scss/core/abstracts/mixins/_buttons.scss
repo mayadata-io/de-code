@@ -113,6 +113,9 @@
     background-color: rgba($color, $alpha: 0.7) !important;
     border-color: rgba($color, $alpha: 0.2) !important;
     box-shadow: none !important;
+    @if $color == "secondary" {
+      color: $gray-400;
+    }
   }
 }
 

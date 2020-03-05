@@ -96,6 +96,13 @@ fieldset[disabled] a.btn {
     &.btn-disabled {
       @include button-disabled-variant($value);
       cursor: not-allowed !important;
+      @if $color == "secondary" {
+        color: $gray-300;
+        &:focus,
+        &.focus{
+          color: $gray-300 !important;
+        }
+      }
     }
   }
 }
