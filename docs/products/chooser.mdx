@@ -12,6 +12,8 @@ import iks from '../../resources/images/clusters/iks.png'
 import stackpointcloud from '../../resources/images/clusters/stackpointcloud.png'
 import onpremise from '../../resources/images/clusters/onpremise.png'
 import packet from '../../resources/images/clusters/packet.png'
+import gke from '../../resources/images/clusters/gke.png'
+import eks from '../../resources/images/clusters/eks.png'
 
 
 # Chooser
@@ -71,4 +73,25 @@ Tab Chooser can be used to create a cluster location and cloud provider selector
       </div>
     </li>
   </ul>
+</Playground>
+
+## Tab chooser - Large
+
+<Playground>
+<ul class="tab-chooser tab-chooser-lg">
+  <li class="tab-chooser-item active">
+      <div class="tab-chooser-logo">
+        <img src={gke} />
+      </div>
+      <div class="tab-chooser-label tab-chooser-head">Application</div> 
+        <span>Setup chaos for specific application</span>
+  </li>
+  <li class="tab-chooser-item disabled">
+      <div class="tab-chooser-logo">
+        <img src={eks} />
+      </div>
+      <div class="tab-chooser-label tab-chooser-head">Infra</div> 
+        <span>Setup chaos for infrastructure component</span>
+  </li>
+</ul>
 </Playground>
