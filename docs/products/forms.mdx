@@ -5,26 +5,79 @@ menu: Components
 ---
 import { Playground, PropsTable } from 'docz'
 
-# Inputs
+# Forms
 
-## Text
 <Playground>
-<div class="form-group">
-   <label for="exampleInputEmail1" class="form-control-label">Email address</label>
-   <input class="form-control" placeholder="Name"/>
-</div>
+<form>
+    <div class="form-group">
+        <label class="form-control-label">
+            Username
+        </label>
+        <input type="text" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label class="form-control-label">
+            Password
+        </label>
+        <input type="password" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label class="form-control-label">
+            Email address
+        </label>
+        <input type="email" class="form-control" />
+        <span class="small"><i>eg. abc@gmaill.com</i></span>
+    </div>
+    <div class="form-group">
+        <label class="form-control-label">
+            Phone Number
+        </label>
+        <input type="number" class="form-control" />
+    </div>
+    <div class="form-group">
+        <span class="font-italic">      
+                <input type="checkbox" /> Terms and conditions
+        </span>
+    </div>
+    <button class="btn btn-primary" data-dismiss="modal">
+        Submit
+    </button>
+</form>
 </Playground>
 
-### Sizes
-<div class="form-group">
-   <input class="form-control form-control-sm" placeholder="form-control-sm"/>
-</div>
-<div class="form-group">
-   <input class="form-control" placeholder="form-control"/>
-</div>
-<div class="form-group">
-   <input class="form-control form-control-lg" placeholder="form-control-lg"/>
-</div>
+## Form controls
+<Playground>
+<form>
+    <div class="form-group">
+      <label>Email address</label>
+      <input type="email" class="form-control" placeholder="Email Address" />
+    </div>
+    <div class="form-group">
+    <label for="exampleFormControlSelect1">Example select</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect2">Example multiple select</label>
+    <select multiple class="form-control" id="exampleFormControlSelect2">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Please enter your comments" rows="3"></textarea>
+  </div>
+</form>
+</Playground>
 
 ### Advanced
 #### Search input field
@@ -34,6 +87,21 @@ import { Playground, PropsTable } from 'docz'
     </div>
     <input class="form-control" placeholder="Find an application"/>
   </div>
+</Playground>
+
+## Sizes
+Set heights using classes like .form-control-lg and .form-control-sm.
+
+<Playground>
+<div class="form-group">
+   <input class="form-control form-control-sm" placeholder="form-control-sm"/>
+</div>
+<div class="form-group">
+   <input class="form-control" placeholder="form-control"/>
+</div>
+<div class="form-group">
+   <input class="form-control form-control-lg" placeholder="form-control-lg"/>
+</div>
 </Playground>
 
 ## Checkbox
