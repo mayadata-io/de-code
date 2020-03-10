@@ -1,5 +1,5 @@
 ---
-name: Chooser
+name: Chooser card
 menu: Components
 ---
 
@@ -16,81 +16,80 @@ import gke from '../../resources/images/clusters/gke.png'
 import eks from '../../resources/images/clusters/eks.png'
 
 
-# Chooser
+# Chooser card
 
-## Tab chooser
 
 Tab Chooser are selector component, it can be used to create a choose compoent with a label and logo.
 Tab Chooser can be used to create a cluster location and cloud provider selector.
 <Playground>
-  <ul class="tab-chooser">
-    <li class="tab-chooser-item active">
-      <div class="tab-chooser-logo">
+  <ul class="chooser-card">
+    <li class="chooser-card-item active">
+      <div class="chooser-card-logo">
         <img class="" src={openshift} />
       </div>
-      <div class="tab-chooser-label">
+      <div class="chooser-card-label">
         OpenShift
       </div>
     </li>
-    <li class="tab-chooser-item">
-      <div class="tab-chooser-logo">
+    <li class="chooser-card-item">
+      <div class="chooser-card-logo">
         <img class="" src={gcp} />
       </div>
-      <div class="tab-chooser-label">
+      <div class="chooser-card-label">
         GCP
       </div>
     </li>
-    <li class="tab-chooser-item">
-      <div class="tab-chooser-logo">
+    <li class="chooser-card-item">
+      <div class="chooser-card-logo">
         <img class="" src={ibm} />
       </div>
-      <div class="tab-chooser-label">
+      <div class="chooser-card-label">
         ICP
       </div>
     </li>
-    <li class="tab-chooser-item">
-      <div class="tab-chooser-logo">
+    <li class="chooser-card-item">
+      <div class="chooser-card-logo">
         <img class="" src={iks} />
       </div>
-      <div class="tab-chooser-label">
+      <div class="chooser-card-label">
         IKS
       </div>
     </li>
-    <li class="tab-chooser-item">
-      <div class="tab-chooser-logo">
+    <li class="chooser-card-item">
+      <div class="chooser-card-logo">
         <img class="" src={packet} />
       </div>
-      <div class="tab-chooser-label">
+      <div class="chooser-card-label">
         Packet
       </div>
     </li>
-    <li class="tab-chooser-item">
-      <div class="tab-chooser-logo">
+    <li class="chooser-card-item">
+      <div class="chooser-card-logo">
         <img class="" src={onpremise} />
       </div>
-      <div class="tab-chooser-label">
+      <div class="chooser-card-label">
         On-prem
       </div>
     </li>
   </ul>
 </Playground>
 
-## Tab chooser - Large
+## Chooser card - Large
 
 <Playground>
-<ul class="tab-chooser tab-chooser-lg">
-  <li class="tab-chooser-item active">
-      <div class="tab-chooser-logo">
+<ul class="chooser-card chooser-card-lg">
+  <li class="chooser-card-item active">
+      <div class="chooser-card-logo">
         <img src={gke} />
       </div>
-      <div class="tab-chooser-label tab-chooser-head">Application</div> 
+      <div class="chooser-card-label chooser-card-head">Application</div> 
         <span>Setup chaos for specific application</span>
   </li>
-  <li class="tab-chooser-item disabled">
-      <div class="tab-chooser-logo">
+  <li class="chooser-card-item disabled">
+      <div class="chooser-card-logo">
         <img src={eks} />
       </div>
-      <div class="tab-chooser-label tab-chooser-head">Infra</div> 
+      <div class="chooser-card-label chooser-card-head">Infra</div> 
         <span>Setup chaos for infrastructure component</span>
   </li>
 </ul>

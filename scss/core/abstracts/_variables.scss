@@ -241,17 +241,17 @@ $stepper-value-font-size:          18px !default;
 $stepper-title-font-style:         italic !default;
 
 
-//Choosers
+//Chooser cards
 
-$tab-chooser-item-border:          $border-width solid $gray-100 !default;
-$tab-chooser-item-width:           14% !default;
-$tab-chooser-item-background:      $white !default;
-$tab-chooser-item-label-border:    $tab-chooser-item-border !default;
-$tab-chooser-item-label-color:     $gray-800 !default;
+$chooser-card-item-border:          $border-width solid $gray-100 !default;
+$chooser-card-item-width:           14% !default;
+$chooser-card-item-background:      $white !default;
+$chooser-card-item-label-border:    $chooser-card-item-border !default;
+$chooser-card-item-label-color:     $gray-800 !default;
 
-$tab-chooser-item-background-active:         $blue-000 !default;
-$tab-chooser-item-label-border-color-active: $primary !default;
-$tab-chooser-item-label-color-active:        $primary !default;
+$chooser-card-item-background-active:         $blue-000 !default;
+$chooser-card-item-label-border-color-active: $primary !default;
+$chooser-card-item-label-color-active:        $primary !default;
 
 // Tables
 //

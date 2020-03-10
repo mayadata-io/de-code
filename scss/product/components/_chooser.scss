@@ -1,10 +1,10 @@
-.tab-chooser {
+.chooser-card {
   display: flex;
   flex-wrap: wrap;
   height: 100%;
   list-style: none;
   padding: 0;
-  .tab-chooser-name {
+  .chooser-card-name {
     margin: 5px 0;
 
     h5 {
@@ -12,8 +12,8 @@
     }
   }
 }
-.tab-chooser-lg{
-  .tab-chooser-item{
+.chooser-card-lg{
+  .chooser-card-item{
     font-size:1rem;
     width: 31.33%;
     &:nth-child(3n){
@@ -22,13 +22,13 @@
     >div{
       padding:10px;
     }
-    .tab-chooser-label{
+    .chooser-card-label{
       font-size:1rem;
     }
   }  
 }
-.tab-chooser-item {
-  background-color: $tab-chooser-item-background;
+.chooser-card-item {
+  background-color: $chooser-card-item-background;
   border: $border-width solid $gray-100;
   border-radius: 4px;
   cursor: pointer;
@@ -37,9 +37,9 @@
   filter: grayscale(1);
   margin: 4px;
   text-align: center;
-  width: $tab-chooser-item-width;
+  width: $chooser-card-item-width;
 
-  .tab-chooser-head {
+  .chooser-card-head {
     font-size: 16px;
   }
 
@@ -61,25 +61,25 @@
   }
 
   &.active {
-    background: $tab-chooser-item-background-active;
+    background: $chooser-card-item-background-active;
     border-color: $primary;
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
 
-    .tab-chooser-label {
-      border-color: $tab-chooser-item-label-border-color-active;
-      color: $tab-chooser-item-label-color-active;
+    .chooser-card-label {
+      border-color: $chooser-card-item-label-border-color-active;
+      color: $chooser-card-item-label-color-active;
     }
   }
-  &.tab-chooser-col-5 {
+  &.chooser-card-col-5 {
     width: 20%;
   }
 }
-.tab-chooser-item.disabled{
+.chooser-card-item.disabled{
   pointer-events: none;
   opacity: .5;
 }
-.tab-chooser-logo {
+.chooser-card-logo {
   padding: 8px 4px;
   span{
     height: 2.5rem;
@@ -92,16 +92,16 @@
   }
 }
 
-.tab-chooser-label {
-  border-top: $tab-chooser-item-label-border;
+.chooser-card-label {
+  border-top: $chooser-card-item-label-border;
   overflow: hidden;
   padding: 4px;
   text-overflow: ellipsis;
   font-size: 12px;
 }
 
-.tab-chooser-disabled-item {
-  background-color: $tab-chooser-item-background;
+.chooser-card-disabled-item {
+  background-color: $chooser-card-item-background;
   border: $border-width solid $gray-100;
   border-radius: 4px;
   cursor: not-allowed;
@@ -110,29 +110,29 @@
   filter: grayscale(1);
   margin: 4px;
   text-align: center;
-  width: $tab-chooser-item-width;
+  width: $chooser-card-item-width;
 
   &:first-child {
     margin-left: 0;
   }
 }
 
-.tab-chooser.with-bg .tab-chooser-item{
+.chooser-card.with-bg .chooser-card-item{
   background:$blue-000
 }
-.tab-chooser.with-bg .tab-chooser-item.active {
+.chooser-card.with-bg .chooser-card-item.active {
   background: $blue-800;
   border-color: $blue-800;
 }
-.with-bg .tab-chooser-item.active .avatar{
+.with-bg .chooser-card.active .avatar{
   background-color: $white;
 }
-.with-bg .tab-chooser-item.active .tab-chooser-label{
+.with-bg .chooser-card-item.active .chooser-card-label{
   color: $white;
   border-color: $white;
 }
 
-.tab-chooser {
+.chooser-card {
   .editfieldSection {
     font-size: 12px;
     margin-top: 10px;
