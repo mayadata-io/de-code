@@ -24,73 +24,93 @@ Tab Chooser can be used to create a cluster location and cloud provider selector
 <Playground>
   <ul class="chooser-card">
     <li class="chooser-card-item active">
-      <div class="chooser-card-logo">
+      <div class="chooser-card-head">
         <img class="" src={openshift} />
       </div>
-      <div class="chooser-card-label">
+      <div class="chooser-card-body">
+        <div class="chooser-card-label">
         OpenShift
-      </div>
+        </div>
+      </div>  
     </li>
     <li class="chooser-card-item">
-      <div class="chooser-card-logo">
+      <div class="chooser-card-head">
         <img class="" src={gcp} />
       </div>
-      <div class="chooser-card-label">
+      <div class="chooser-card-body">
+        <div class="chooser-card-label">
         GCP
+        </div>
       </div>
     </li>
     <li class="chooser-card-item">
-      <div class="chooser-card-logo">
+      <div class="chooser-card-head">
         <img class="" src={ibm} />
       </div>
-      <div class="chooser-card-label">
+      <div class="chooser-card-body">
+        <div class="chooser-card-label">
         ICP
+        </div>
       </div>
     </li>
     <li class="chooser-card-item">
-      <div class="chooser-card-logo">
+      <div class="chooser-card-head">
         <img class="" src={iks} />
       </div>
-      <div class="chooser-card-label">
+      <div class="chooser-card-body">
+        <div class="chooser-card-label">
         IKS
+        </div>
       </div>
     </li>
     <li class="chooser-card-item">
-      <div class="chooser-card-logo">
+      <div class="chooser-card-head">
         <img class="" src={packet} />
       </div>
-      <div class="chooser-card-label">
+      <div class="chooser-card-body">
+        <div class="chooser-card-label">
         Packet
+        </div>
       </div>
     </li>
     <li class="chooser-card-item">
-      <div class="chooser-card-logo">
+      <div class="chooser-card-head">
         <img class="" src={onpremise} />
       </div>
-      <div class="chooser-card-label">
+      <div class="chooser-card-body">
+        <div class="chooser-card-label">
         On-prem
+        </div>
       </div>
     </li>
   </ul>
 </Playground>
 
-## Chooser card - Large
+## Chooser card - Wide
 
 <Playground>
-<ul class="chooser-card chooser-card-lg">
+<ul class="chooser-card chooser-card-wide">
   <li class="chooser-card-item active">
-      <div class="chooser-card-logo">
+      <div class="chooser-card-head">
         <img src={gke} />
       </div>
-      <div class="chooser-card-label chooser-card-head">Application</div> 
+      <div class="chooser-card-body">
+        <div class="chooser-card-label chooser-card-head">
+          Application
+        </div> 
         <span>Setup chaos for specific application</span>
+      </div>    
   </li>
   <li class="chooser-card-item disabled">
-      <div class="chooser-card-logo">
+      <div class="chooser-card-head">
         <img src={eks} />
       </div>
-      <div class="chooser-card-label chooser-card-head">Infra</div> 
+      <div class="chooser-card-body">
+        <div class="chooser-card-label chooser-card-head">
+          Infra
+        </div> 
         <span>Setup chaos for infrastructure component</span>
+      </div>  
   </li>
 </ul>
 </Playground>

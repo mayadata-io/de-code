@@ -4,174 +4,92 @@
   height: 100%;
   list-style: none;
   padding: 0;
-  .chooser-card-name {
-    margin: 5px 0;
 
-    h5 {
+  .chooser-card-item {
+    background-color: $chooser-card-item-background;
+    border: $border-width solid $gray-100;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    margin: 4px;
+    text-align: center;
+    width: $chooser-card-item-width;
+  
+    .chooser-card-head {
       font-size: 16px;
+      padding: 8px 6px;
+      span{
+        height: 2.5rem;
+        width: 2.5rem;
+        margin:15px 0;
+      }
+      img {
+        height: 2.5rem;
+        width: 2.5rem;
+      }
     }
-  }
-}
-.chooser-card-lg{
-  .chooser-card-item{
-    font-size:1rem;
-    width: 31.33%;
-    &:nth-child(3n){
-      margin-right:0
-    }
-    >div{
-      padding:10px;
-    }
-    .chooser-card-label{
-      font-size:1rem;
-    }
-  }  
-}
-.chooser-card-item {
-  background-color: $chooser-card-item-background;
-  border: $border-width solid $gray-100;
-  border-radius: 4px;
-  cursor: pointer;
-  display: block;
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
-  margin: 4px;
-  text-align: center;
-  width: $chooser-card-item-width;
+    
+    .chooser-card-body{
+      border-top: $chooser-card-item-body-border;
+      overflow: hidden;
+      padding: 6px;
+      text-overflow: ellipsis;
 
-  .chooser-card-head {
-    font-size: 16px;
-  }
-
-  span {
-    font-size: 14px;
-    margin-bottom: 10px;
-    color: $gray-700;
-    display: inline-block;
-  }
-
-  &:first-child {
-    margin-left: 0;
-  }
-
-  &:hover {
-    background-color: $gray-000;
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
-  }
-
-  &.active {
-    background: $chooser-card-item-background-active;
-    border-color: $primary;
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
-
-    .chooser-card-label {
-      border-color: $chooser-card-item-label-border-color-active;
-      color: $chooser-card-item-label-color-active;
-    }
-  }
-  &.chooser-card-col-5 {
-    width: 20%;
-  }
-}
-.chooser-card-item.disabled{
-  pointer-events: none;
-  opacity: .5;
-}
-.chooser-card-logo {
-  padding: 8px 4px;
-  span{
-    height: 2.5rem;
-    width: 2.5rem;
-    margin:15px 0;
-  }
-  img {
-    height: 2.5rem;
-    width: 2.5rem;
-  }
-}
-
-.chooser-card-label {
-  border-top: $chooser-card-item-label-border;
-  overflow: hidden;
-  padding: 4px;
-  text-overflow: ellipsis;
-  font-size: 12px;
-}
-
-.chooser-card-disabled-item {
-  background-color: $chooser-card-item-background;
-  border: $border-width solid $gray-100;
-  border-radius: 4px;
-  cursor: not-allowed;
-  display: block;
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
-  margin: 4px;
-  text-align: center;
-  width: $chooser-card-item-width;
-
-  &:first-child {
-    margin-left: 0;
-  }
-}
-
-.chooser-card.with-bg .chooser-card-item{
-  background:$blue-000
-}
-.chooser-card.with-bg .chooser-card-item.active {
-  background: $blue-800;
-  border-color: $blue-800;
-}
-.with-bg .chooser-card.active .avatar{
-  background-color: $white;
-}
-.with-bg .chooser-card-item.active .chooser-card-label{
-  color: $white;
-  border-color: $white;
-}
-
-.chooser-card {
-  .editfieldSection {
-    font-size: 12px;
-    margin-top: 10px;
-
-    label {
-        margin: 0;
-        text-align: left;
-        width: 100%;
-        color: $gray-500;
+      .chooser-card-label{
+        font-size: 12px;
+        color: $chooser-card-item-label-color;
+        padding: 0;
+        padding-bottom: 6px;
+      }
     }
 
-    .editablefield {
-        position: relative;
+    &:first-child {
+      margin-left: 0;
+    }
+  
+    &:hover {
+      background-color: $gray-000;
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0);
+    }
+  
+    &.active {
+      background: $chooser-card-item-background-active;
+      border-color: $primary;
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0);
 
-        input {
-            padding: 5px 20px;
-            width: 100%;
-            text-align: center;
+      .chooser-card-body{
+        border-top: $chooser-card-item-body-border-color-active;
+
+        .chooser-card-label {  
+          color: $chooser-card-item-label-color-active;  
         }
-
-        .minus,
-        .plus {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 20px;
-            margin: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .minus {
-            left: 0;
-        }
-
-        .plus {
-            right: 0;
-        }
+      }
+  
     }
+    &.chooser-card-col-5 {
+      width: 20%;
+    }
+
+    &.disabled{
+      pointer-events: none;
+      opacity: .5;
+    }
+
+  } 
+  &.chooser-card-wide{
+    .chooser-card-item{
+       width: 300px;
+    
+      .chooser-card-body{
+        .chooser-card-label{
+          font-size:14px;
+        }
+      }
+     
+   }
   }
 }
