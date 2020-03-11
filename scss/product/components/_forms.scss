@@ -382,8 +382,9 @@ select.form-control-lg {
     // Allow folks to *not* use `.form-group`
     .form-control {
       display: inline-block;
-      width: auto; // Prevent labels from stacking above inputs in `.form-group`
+      width: 80px;
       vertical-align: middle;
+      margin: 0 7px;
     }
     // Make static controls behave like regular ones
     .form-control-plaintext {
