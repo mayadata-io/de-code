@@ -96,8 +96,22 @@
     width: 2.5rem;
     height: 2.5rem;
   }
+  .table-avatar-sm {
+    .table-avatar-image {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
   .table-avatar-label {
-    margin-left: 12px;
+    color: $link-color;
+    margin-left: 14px;
+  }
+  .not-a-link-label {
+    color: $gray-700;
+
+    &:hover {
+      color: $gray-700 !important;
+    }
   }
 }
 
