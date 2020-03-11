@@ -20,15 +20,14 @@
     .chooser-card-head {
       font-size: 16px;
       padding: 8px 6px;
-      span{
-        height: 2.5rem;
-        width: 2.5rem;
-        margin:15px 0;
+
+      .chooser-card-logo{
+        img {
+          height: 2.5rem;
+          width: 2.5rem;
+        }
       }
-      img {
-        height: 2.5rem;
-        width: 2.5rem;
-      }
+  
     }
     
     .chooser-card-body{
