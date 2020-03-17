@@ -9,6 +9,12 @@
   @include caret;
 }
 
+//three dot menu toggle for drop down
+.dot-menu{
+margin-top:-10%;
+cursor: pointer;
+}
+
 // The dropdown menu
 .dropdown-menu {
   position: absolute;
@@ -27,9 +33,61 @@
   background-color: $dropdown-bg;
   background-clip: padding-box;
   border: $dropdown-border-width solid $dropdown-border-color;
-  @include border-radius($dropdown-border-radius);
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  @include border-radius($border-radius);
   @include box-shadow($dropdown-box-shadow);
+
+
+    //set cursor as pointer in list
+    .li{
+        cursor: pointer;
+    }
 }
+
+
+  .dropdown-menu{
+  box-shadow: 0 6px 30px 0 rgba($gray-700, 0.2);
+  border-radius:4px;
+  border: 1px solid $gray-000 !important;
+      label{
+          white-space: nowrap;
+          font-size: 16px;
+          // text-transform: uppercase;
+          display: inline-flex;
+          align-items: center;
+          line-height: 24px;
+      }
+      .button-group{
+          padding: 0 15px 10px 0;
+          .btn{
+              +.btn{
+                  margin-left: 10px;
+              }
+          }
+      }
+      &::before{
+          content: '';
+          position: absolute;
+          bottom: 100%;
+          right: 10px;
+          border:10px solid transparent;
+          border-bottom-color: $white;
+      }
+  }
+  .toggle-items{ 
+      display: flex;
+      flex-wrap: wrap;
+      min-width: 380px;
+      padding: 10px;
+      padding-bottom: 0;
+      max-height: 400px;
+      >div{
+          width: 50%;
+          &:nth-child(2n){
+              padding-left: 25px;
+          }
+      }
+  }
 
 // Allow for dropdowns to go bottom up (aka, dropup-menu)
 // Just add .dropup after the standard .dropdown class and you're set.
@@ -41,34 +99,6 @@
 
   .dropdown-toggle {
     @include caret(up);
-  }
-}
-
-.dropright {
-  .dropdown-menu {
-    margin-top: 0;
-    margin-left: $dropdown-spacer;
-  }
-
-  .dropdown-toggle {
-    @include caret(right);
-    &::after {
-      vertical-align: 0;
-    }
-  }
-}
-
-.dropleft {
-  .dropdown-menu {
-    margin-top: 0;
-    margin-right: $dropdown-spacer;
-  }
-
-  .dropdown-toggle {
-    @include caret(left);
-    &::before {
-      vertical-align: 0;
-    }
   }
 }
 
@@ -89,9 +119,9 @@
   color: $dropdown-link-color;
   text-align: inherit; // For `<button>`s
   white-space: nowrap; // prevent links from randomly breaking onto new lines
-  background-color: transparent; // For `<button>`s
+  background: none; // For `<button>`s
   border: 0; // For `<button>`s
-
+  cursor: pointer;
   @include hover-focus {
     color: $dropdown-link-hover-color;
     text-decoration: none;
@@ -115,6 +145,9 @@
     }
   }
 }
+.dropdown-item.line-separated:not(:last-child){
+  border-bottom: 1px solid $gray-100;
+}
 
 .dropdown-menu.show {
   display: block;
@@ -128,4 +161,56 @@
   font-size: $font-size-sm;
   color: $dropdown-header-color;
   white-space: nowrap; // as with > li > a
+}
+
+
+//basic-dropdown
+$ember-basic-dropdown-content-background-color: #FFF !default;
+$ember-basic-dropdown-content-z-index: 1000 !default;
+$ember-basic-dropdown-overlay-background: rgba(0,0,0, 0.5) !default;
+$ember-basic-dropdown-overlay-pointer-events: none !default;
+
+.ember-basic-dropdown {
+  position: relative;
+}
+.ember-basic-dropdown, .ember-basic-dropdown-content, .ember-basic-dropdown-content * {
+  box-sizing: border-box;
+}
+.ember-basic-dropdown-content {
+  position: absolute;
+  width: auto;
+  z-index: $ember-basic-dropdown-content-z-index;
+
+  min-width: $dropdown-min-width;
+  padding: $dropdown-padding-y 0;
+  margin: $dropdown-spacer 0 0; // override default ul
+  font-size: $font-size-base; // Redeclare because nesting can cause inheritance issues
+  color: $body-color;
+  text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
+  list-style: none;
+  background-color: $dropdown-bg;
+  background-clip: padding-box;
+  border: $dropdown-border-width solid $dropdown-border-color;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  @include border-radius($border-radius);
+  @include box-shadow($dropdown-box-shadow);
+
+}
+.ember-basic-dropdown-content--left { left: 0; }
+.ember-basic-dropdown-content--right { right: 0; }
+
+
+.ember-basic-dropdown-overlay {
+  position: fixed;
+  background: $ember-basic-dropdown-overlay-background;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  pointer-events: $ember-basic-dropdown-overlay-pointer-events;
+}
+
+.ember-basic-dropdown-content-wormhole-origin {
+  display: inline;
 }
