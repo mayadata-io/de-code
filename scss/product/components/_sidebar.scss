@@ -1,0 +1,225 @@
+#navigation-app {
+    height: 100%;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+    transition-delay: initial;
+    transition-property: height;
+    display: flex;
+    flex-direction: row;
+    // position: fixed; /* need to add this in actual code */
+    // left: 0; /* need to add this in actual code */
+    z-index: 300;
+}
+
+.max {
+    width: 246px;
+
+    .link-text {
+        display: inline;
+    }
+}
+
+.min {
+    width: 65px;
+
+    .link-text {
+        display: none;
+    }
+}
+
+.sidebar {
+    background: $sidebar-background-color;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: $white;
+
+    .sidebar-logo {
+        padding: 20px 14px;
+        cursor: pointer;
+        max-height: 100px;
+        text-align: center;
+    
+        img {
+            height: $sidebar-logo-image-height;
+            width: $sidebar-logo-image-width;
+        }
+    }
+
+    .sidebar-divider {
+        border-bottom: 1px solid $sidebar-divider-border-color;
+        margin: 0 10px;
+    }
+
+    .sidebar-header {
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        margin: 16px 12px;
+    
+        .cluster-provider_avatar {
+            display: flex;
+            height: 34px;
+            min-width: 34px;
+            border-radius: 4px;
+            background: $cluster-location_avatar-bg;
+            align-items: center;
+            justify-content: center;
+            color: $gray-700;
+    
+            .mi {
+                font-size: 24px;
+            }
+        }
+        
+        .cluster-provider_avatar-clusterLevel {
+            height: auto;
+            width: 34px;
+            border-radius: 4px;
+            background: $cluster-location_avatar-clusterLevel-bg;
+            text-align: center;
+        }
+    
+        .sidebar-header-content {
+            color: $sidebar-header-color;
+            padding-left: 16px;
+            width: 100%;
+        }
+    
+        .sidebar-header-sub-heading {
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 160px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    
+        .sidebar-header-item-cluster_name {
+            font-size: 18px;
+            display: inline-flex;
+        }
+    
+    
+        .sidebar-header-item-control {
+            margin-left: 8px;
+            opacity: 0;
+            -webkit-transition-duration: 0.1s;
+            /* Safari */
+            -webkit-transition-delay: 0.1s;
+            /* Safari */
+            transition-delay: 0.1s;
+            transition-duration: 0.1s;
+        }
+    
+        .sidebar-header-item-project_name:hover {
+            .sidebar-header-item-control {
+                opacity: 1;
+            }
+        }
+    }
+
+    .sidebar-body{
+        -webkit-box-flex: 1;
+        flex-shrink: 1;
+        flex-basis: 0;
+        flex-shrink: 0;
+        height: 100%;
+        opacity: 1;
+        transition-duration: 200ms, 200ms;
+        transition-timing-function: initial, initial;
+        transition-delay: initial, initial;
+        transition-property: height, opacity;
+        margin: 16px 0px;        
+    }
+
+    .sidebar-items {
+        margin: 4px 0px;
+        color: $sidebar-items-color;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: 7px 12px;
+        
+        .sidebar-icon{
+            margin-right: 16px;
+        }
+        i {
+            font-size: 24px;
+        }  
+
+        &:hover {
+            background-color: $sidebar-items-background-color-hover;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            color: $sidebar-items-color-hover;
+            text-decoration: none;
+        }
+
+        .active {
+            background-color: $sidebar-items-background-color-active;
+            color: $sidebar-items-color-active;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+        .link-text {
+            font-size: 14px;
+        }
+    }
+
+    .sidebar-footer{
+        margin: 16px 0px;
+
+        .progress{
+            margin: 10px;
+        }
+    }
+}
+
+
+/**
+* Mobile sidebar
+**/
+.sidebar-mobile {
+    min-width: 300px;
+    background: $black;
+    position: absolute;
+    height: 100vh;
+    left: 0;
+    z-index: 100;
+  }
+
+.sidebar-mobile .sidebar-mobile-container {
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    color: $white;
+  }
+
+.nav-sidebar .nav-link {
+    color: $white;
+    padding: 0.7rem 0;
+  }
+
+// Cluster page
+.sidebar-plan-card {
+    background: $white;
+    border-radius: 2px;
+    color: $gray-700;
+    cursor: pointer;
+    margin: 16px;
+    padding: 8px;
+  }
+
+  .sidebar-plan-card_header {
+    border-bottom: 1px solid $gray-700;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+  }
