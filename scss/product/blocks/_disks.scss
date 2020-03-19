@@ -4,6 +4,7 @@
 }
 
 .block-disks-item {
+  background-color: $white;
   border: 1px solid $gray-200;
   border-radius: 4px;
   margin: 12px 12px 0 0;
@@ -20,8 +21,17 @@
 }
 
 //grouped disk items
+.block-disks-wrapper {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .block-disks-grouped {
+  margin: 12px 12px 0 0;
   .block-disks-item {
+    background-color: $white;
+    border-color: $success;
     border-radius: 0;
     margin: 0 0 0 -1px;
 
