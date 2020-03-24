@@ -369,7 +369,7 @@ select.form-control-lg {
     // Allow folks to *not* use `.form-group`
     .form-control {
       display: inline-block;
-      width: 80px;
+      width: auto;
       vertical-align: middle;
       margin: 0 7px;
     }
