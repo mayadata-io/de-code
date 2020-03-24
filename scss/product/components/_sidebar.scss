@@ -261,6 +261,9 @@
                 display: none;
             }
         }
+        .link-text{
+            visibility: hidden;
+        }
         .sidebar-footer{
             .text-center{
                 display: none;
@@ -274,6 +277,9 @@
                 .sidebar-header-content{
                     display: unset;
                 }
+            }
+            .link-text{
+                visibility: visible;
             }
             .sidebar-footer{
                 .text-center{
