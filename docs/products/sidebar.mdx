@@ -9,14 +9,15 @@ import DirectorOnlineLight from "../../resources/logos/director-online/director-
 # Sidebar
 
 <Playground>
-<div id="navigation-app" class="max">
-    <div class="sidebar">
-        <div class="sidebar-logo" title="Director Online">
-            <a href="">   
-                <img src={DirectorOnlineLight} alt="Director Online" title="Home" />
-            </a>
-        </div>
-        <div class="sidebar-divider"></div>
+<div id="navigation-app">
+    <div class="max">
+        <div class="sidebar">
+            <div class="sidebar-logo" title="Director Online">
+                <a href="">   
+                    <img src={DirectorOnlineLight} alt="Director Online" title="Home" />
+                </a>
+            </div>
+            <div class="sidebar-divider"></div>
             <div class="sidebar-header dropdown" id="dropdownMenuProject" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
                 <div class="cluster-provider_avatar">
@@ -42,86 +43,109 @@ import DirectorOnlineLight from "../../resources/logos/director-online/director-
             <div class="sidebar-divider"></div>
             <div class="sidebar-body">
                 <div class="sidebar-items">
-                    <span class="sidebar-icon">
-                        <i class="dci dci-home"></i>
-                    </span>
-                    <span class="link-text">Home</span>
-                </div>
-                <div class="sidebar-items">
-                    <span class="sidebar-icon">
-                        <i class="dci dci-cluster"></i>
-                    </span>
-                    <span class="link-text">Clusters</span>
-                </div>
-                <div class="sidebar-items">
-                    <span class="sidebar-icon">
-                        <i class="dci dci-slack"></i>
-                    </span>
-                    <span class="link-text">Slack</span>
-                </div>
-                <div class="sidebar-items">
-                    <span class="sidebar-icon">
-                        <i class="dci dci-chart-bar-up"></i>
-                    </span>
-                    <span class="link-text">Cross Cloud Monitoring</span>
-                </div>
-                <div class="sidebar-items">
-                    <span class="sidebar-icon">
-                        <i class="dci dci-cloud-up-down"></i>
-                    </span>
-                    <span class="link-text">DMaaS</span>
-                    <div class="ml-auto">
-                        <span class="badge badge-gradient-info">Beta</span>
+                    <div class="sidebar-links">
+                        <span class="sidebar-icon">
+                            <i class="dci dci-home"></i>
+                        </span>
+                        <span class="link-text">Home</span>
                     </div>
                 </div>
                 <div class="sidebar-items">
-                    <span class="sidebar-icon">
-                        <i class="dci dci-user"></i>
-                    </span>
-                    <span class="link-text">Users and Roles</span>
+                    <div class="sidebar-links">
+                        <span class="sidebar-icon">
+                            <i class="dci dci-cluster"></i>
+                        </span>
+                        <span class="link-text">Clusters</span>
+                    </div>
+                </div>
+                <div class="sidebar-items">
+                    <div class="sidebar-links">
+                        <span class="sidebar-icon">
+                            <i class="dci dci-slack"></i>
+                        </span>
+                        <span class="link-text">Slack</span>
+                    </div>
+                </div>
+                <div class="sidebar-items">
+                    <div class="sidebar-links">
+                        <span class="sidebar-icon">
+                            <i class="dci dci-chart-bar-up"></i>
+                        </span>
+                        <span class="link-text">Cross Cloud Monitoring</span>
+                    </div>
+                </div>
+                <div class="sidebar-items">
+                    <div class="sidebar-links">
+                        <span class="sidebar-icon">
+                            <i class="dci dci-cloud-up-down"></i>
+                        </span>
+                        <span class="link-text">DMaaS</span>
+                        <div class="ml-auto">
+                            <span class="badge badge-gradient-info">Beta</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-items">
+                    <div class="sidebar-links">
+                        <span class="sidebar-icon">
+                            <i class="dci dci-user"></i>
+                        </span>
+                        <span class="link-text">Users and Roles</span>
+                    </div>
                 </div>
             </div>
             
             <div class="sidebar-divider"></div>
             <div class="sidebar-footer">
-                <div class="sidebar-items">
-                    <span class="sidebar-icon">
-                    <span class="avatar avatar-blue avatar-sm">AB</span>
-                    </span>
-                    <span class="link-text">User Name</span>
+                <div class="sidebar-items pt-2 pb-2">
+                    <div class="sidebar-links">
+                        <span class="sidebar-icon">
+                        <span class="avatar avatar-blue avatar-sm">AB</span>
+                        </span>
+                        <span class="link-text">User Name</span>
+                    </div>
                 </div>
-                <div class="progress mb-2">
-                <div class="progress-bar" role="progressbar"></div>
+                
+                <div class="text-center mb-3">
+                    <div class="progress mb-2">
+                    <div class="progress-bar" role="progressbar"></div>
+                    </div>
+                    <small class="text-white">Profile Status 40%</small>
                 </div>
-                <div class="text-white text-center small mb-4">Profile Status 40%</div>
             
             <div class="sidebar-divider"></div>
                 <div class="sidebar-items mt-4">
-                    <a href="" target="_blank" rel="noreferrer noopener" class="text-white">
-                    <span class="sidebar-icon">
-                        <i class="dci dci-lightbulb"></i>
-                    </span>
-                    <span class="link-text">Solutions</span>
-                    </a>
+                    <div class="sidebar-links">
+                        <a href="" target="_blank" rel="noreferrer noopener" class="text-white">
+                        <span class="sidebar-icon">
+                            <i class="dci dci-lightbulb"></i>
+                        </span>
+                        <span class="link-text">Solutions</span>
+                        </a>
+                    </div>
                 </div>
                 <div class="sidebar-items">
-                    <a href="" target="_blank" rel="noreferrer noopener" class="text-white">
-                    <span class="sidebar-icon">
-                        <i class="dci dci-book"></i>
-                    </span>
-                    <span class="link-text">Docs</span>
-                    </a>
+                    <div class="sidebar-links">
+                        <a href="" target="_blank" rel="noreferrer noopener" class="text-white">
+                        <span class="sidebar-icon">
+                            <i class="dci dci-book"></i>
+                        </span>
+                        <span class="link-text">Docs</span>
+                        </a>
+                    </div>
                 </div>
                 <div class="sidebar-items">
-                    <a href="" target="_blank" rel="noreferrer noopener" class="text-white">
-                    <span class="sidebar-icon">
-                        <i class="dci dci-play-square"></i>
-                    </span>
-                    <span class="link-text">Take tour</span>
-                    </a>
+                    <div class="sidebar-links">
+                        <a href="" target="_blank" rel="noreferrer noopener" class="text-white">
+                        <span class="sidebar-icon">
+                            <i class="dci dci-play-square"></i>
+                        </span>
+                        <span class="link-text">Take tour</span>
+                        </a>
+                    </div>
                 </div>
             </div>
-            
+        </div>    
     </div>
 </div>
 </Playground>
