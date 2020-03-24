@@ -11,6 +11,14 @@
 .mw-100 { max-width: 100% !important; }
 .mh-100 { max-height: 100% !important; }
 
+//Widths in percentage
+
+@for $size from 1 through 100 {
+  .w-#{$size} {
+    width : #{1% * $size} !important;
+  }
+}
+
 // Maya icon sizes
 
 .dci {
