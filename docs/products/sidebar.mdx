@@ -5,6 +5,7 @@ menu: Components
 ---
 import { Playground, PropsTable } from 'docz'
 import DirectorOnlineLight from "../../resources/logos/director-online/director-online-white.svg";
+import gke from '../../resources/images/clusters/gke.png'
 
 # Sidebar
 
@@ -20,7 +21,7 @@ import DirectorOnlineLight from "../../resources/logos/director-online/director-
             <div class="sidebar-divider"></div>
             <div class="sidebar-header dropdown" id="dropdownMenuProject" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
-                <div class="cluster-provider_avatar">
+                <div class="sidebar-project-icon">
                     <span class="dci dci-clipboard-pen dci-1x"></span>
                 </div>
             <div class="sidebar-header-content">
@@ -151,3 +152,268 @@ import DirectorOnlineLight from "../../resources/logos/director-online/director-
 </Playground>
 
 
+## Cluster level sidebar
+
+<div id="navigation-app">
+    <div class="max">
+        <div class="sidebar">
+            <div class="sidebar-cluster">
+                <div class="project">
+                    <div class="sidebar-logo" title="Director Online">
+                        <a href="">   
+                            <img src={DirectorOnlineLight} alt="Director Online" title="Home" />
+                        </a>
+                    </div>
+                    <div class="sidebar-divider"></div>
+                    <div class="sidebar-header dropdown" id="dropdownMenuProject" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                        <div class="sidebar-project-icon">
+                            <span class="dci dci-clipboard-pen dci-1x"></span>
+                        </div>
+                        <div class="sidebar-header-content">
+                            <div class="small">Project</div>
+                            <div class="sidebar-header-sub-heading">Project one<div>
+                                <span class="dci dci-chevron-down dci-1x float-right"></span>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuProject">
+                            <li class="dropdown-item" role="button">Project one</li>
+                            <li class="dropdown-item" role="button">Project two</li>
+                            <li class="dropdown-item" role="button">Project three</li>
+                        <div class="dropdown-divider"></div>
+                            <a href="" class="dropdown-item" role="button">Manage projects </a>
+                        </div>
+                    </div>
+                    <div class="sidebar-divider"></div>
+                    <div class="sidebar-body">
+                        <div class="sidebar-items">
+                            <div class="sidebar-links">
+                                <span class="sidebar-icon">
+                                    <i class="dci dci-home"></i>
+                                </span>
+                                <span class="link-text">Home</span>
+                            </div>
+                        </div>
+                        <div class="sidebar-items">
+                            <div class="sidebar-links">
+                                <span class="sidebar-icon">
+                                    <i class="dci dci-cluster"></i>
+                                </span>
+                                <span class="link-text">Clusters</span>
+                            </div>
+                        </div>
+                        <div class="sidebar-items">
+                            <div class="sidebar-links">
+                                <span class="sidebar-icon">
+                                    <i class="dci dci-slack"></i>
+                                </span>
+                                <span class="link-text">Slack</span>
+                            </div>
+                        </div>
+                        <div class="sidebar-items">
+                            <div class="sidebar-links">
+                                <span class="sidebar-icon">
+                                    <i class="dci dci-chart-bar-up"></i>
+                                </span>
+                                <span class="link-text">Cross Cloud Monitoring</span>
+                            </div>
+                        </div>
+                        <div class="sidebar-items">
+                            <div class="sidebar-links">
+                                <span class="sidebar-icon">
+                                    <i class="dci dci-cloud-up-down"></i>
+                                </span>
+                                <span class="link-text">DMaaS</span>
+                                <div class="ml-auto">
+                                    <span class="badge badge-gradient-info">Beta</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar-items">
+                            <div class="sidebar-links">
+                                <span class="sidebar-icon">
+                                    <i class="dci dci-user"></i>
+                                </span>
+                                <span class="link-text">Users and Roles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-divider"></div>
+                    <div class="sidebar-footer">
+                        <div class="sidebar-items pt-2 pb-2">
+                            <div class="sidebar-links">
+                                <span class="sidebar-icon">
+                                <span class="avatar avatar-blue avatar-sm">AB</span>
+                                </span>
+                                <span class="link-text">User Name</span>
+                            </div>
+                        </div>
+                        <div class="text-center mb-3">
+                            <div class="progress mb-2">
+                            <div class="progress-bar" role="progressbar"></div>
+                            </div>
+                            <small class="text-white">Profile Status 40%</small>
+                        </div>
+                        <div class="sidebar-divider"></div>
+                        <div class="sidebar-items mt-4">
+                            <div class="sidebar-links">
+                                <a href="" target="_blank" rel="noreferrer noopener" class="text-white">
+                                <span class="sidebar-icon">
+                                    <i class="dci dci-lightbulb"></i>
+                                </span>
+                                <span class="link-text">Solutions</span>
+                                </a>
+                            </div>
+                        </div>
+                                                <div class="sidebar-items">
+                            <div class="sidebar-links">
+                                <a href="" target="_blank" rel="noreferrer noopener" class="text-white">
+                                <span class="sidebar-icon">
+                                    <i class="dci dci-book"></i>
+                                </span>
+                                <span class="link-text">Docs</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="sidebar-items">
+                            <div class="sidebar-links">
+                                <a href="" target="_blank" rel="noreferrer noopener" class="text-white">
+                                <span class="sidebar-icon">
+                                    <i class="dci dci-play-square"></i>
+                                </span>
+                                <span class="link-text">Take tour</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cluster">
+                    <div class="sidebar-logo">
+                        <a href="">
+                            <button type="button" class="btn btn-icon mr-2">
+                            <i class="dci dci-arrow-left-circle" aria-hidden="true" />
+                            </button>
+                        </a>
+                    </div>
+                    <div class="sidebar-header">
+                        <div class="sidebar-cluster-icon">
+                            <img src={gke} alt="Director Online" title="Home" />
+                        </div>
+                        <div class="sidebar-header-content">
+                            <div class="small">Cluster</div>
+                            <div class="sidebar-header-sub-heading" data-toggle="tooltip" data-placement="bottom"
+                            title="cluster-name">cluster-name</div>
+                            <div class="badge-circle-wrapper">
+                                <span class="cluster-name text-capitalize">
+                                <span class="badge badge-pill badge-gradient-danger">Pending</span>
+                                </span>
+                            </div>
+                        </div>
+                            <div class="btn-group dropright">
+                            <button class="btn btn-icon btn-flat" role="button" data-toggle="dropdown">
+                                <i class="dci dci-chevron-right dci-2x" />
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="">
+                                
+                            </div>
+                            </div>
+                    </div>
+                    <div class="sidebar-body">
+                        <div class="sidebar-items">
+                            <a href="" class="sidebar-links active">
+                                <span class="sidebar-icon">
+                                    <i class="dci dci-dashboard"></i>
+                                </span>
+                                <span class="link-text">Overview</span>
+                            </a>
+                        </div>
+                        <div class="sidebar-items">
+                            <a href="" class="sidebar-links">
+                                <span class="sidebar-icon">
+                                    <i class="dci dci-application"></i>
+                                </span>
+                                <span class="link-text">Applications</span>
+                            </a>
+                        </div>
+                        <div class="sidebar-items">
+                            <a href="" class="sidebar-links">
+                                <span class="sidebar-icon">
+                                    <i class="dci dci-pool"></i>
+                                </span>
+                                <span class="link-text">Pools</span>
+                            </a>
+                        </div>
+                        <div class="sidebar-items">
+                            <a href="" class="sidebar-links">
+                                <span class="sidebar-icon">
+                                    <i class="dci dci-database"></i>
+                                </span>
+                                <span class="link-text">Volumes</span>
+                            </a>
+                        </div>
+                        <div class="sidebar-items">
+                            <a href="" class="sidebar-links">
+                                <span class="sidebar-icon">
+                                    <i class="dci dci-tree-network"></i>
+                                </span>
+                                <span class="link-text">Topology</span>
+                            </a>
+                        </div>
+                        <div class="sidebar-items">
+                            <a href="" class="sidebar-links">
+                                <span class="sidebar-icon">
+                                    <i class="dci dci-chart-bar-up"></i>
+                                </span>
+                                <span class="link-text">Monitor</span>
+                            </a>
+                        </div>
+                        <div class="sidebar-items">
+                            <a href="" class="sidebar-links">
+                                <span class="sidebar-icon">
+                                    <i class="dci dci-logs"></i>
+                                </span>
+                                <span class="link-text">Logs</span>
+                            </a>
+                        </div>
+                        <div class="sidebar-items">
+                            <a href="" class="sidebar-links">
+                                <span class="sidebar-icon">
+                                    <i class="dci dci-alert-triangle"></i>
+                                </span>
+                                <span class="link-text">Alerts</span>
+                            </a>
+                        </div>
+                        <div class="sidebar-items">
+                            <a href="" class="sidebar-links">
+                                <span class="sidebar-icon">
+                                    <i class="dci dci-litmus"></i>
+                                </span>
+                                <span class="link-text">Litmus</span>
+                            </a>
+                        </div>
+                        <div class="sidebar-items">
+                            <a href="" class="sidebar-links">
+                                <span class="sidebar-icon">
+                                    <i class="dci dci-container"></i>
+                                </span>
+                                <span class="link-text">OpenEBS</span>
+                            </a>
+                        </div>
+                        <div class="sidebar-divider"></div>
+                        <div class="sidebar-plan-card mt-4">
+                            <div class="sidebar-plan-card_header">
+                                <span>Start Premium plan</span>
+                            </div>
+                        <div>
+                            <div>This Cluster is running free edition of Director Online.
+                            </div>
+                            <div class="font-weight-bold"><u>Upgrade</u></div>
+                        </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
