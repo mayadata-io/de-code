@@ -266,7 +266,7 @@ import gke from '../../resources/images/clusters/gke.png'
                                 </a>
                             </div>
                         </div>
-                                                <div class="sidebar-items">
+                        <div class="sidebar-items">
                             <div class="sidebar-links">
                                 <a href="" target="_blank" rel="noreferrer noopener" class="text-white">
                                 <span class="sidebar-icon">
@@ -290,29 +290,60 @@ import gke from '../../resources/images/clusters/gke.png'
                 </div>
                 <div class="cluster">
                     <div class="sidebar-logo">
-                        <a href="">
-                            <button type="button" class="btn btn-icon mr-2">
-                            <i class="dci dci-arrow-left-circle" aria-hidden="true" />
-                            </button>
-                        </a>
+                    <a href="">
+                        <button type="button" class="btn btn-icon mr-2">
+                        <i class="dci dci-arrow-left-circle" aria-hidden="true" />
+                        </button>
+                    </a>
                     </div>
                     <div class="sidebar-header">
-                        <div class="sidebar-cluster-icon">
-                            <img src={gke} alt="Director Online" title="Home" />
+                    <div class="sidebar-cluster-icon">
+                        <img src={gke} alt="Director Online"/>
+                    </div>
+                    <div class="sidebar-header-content">
+                    <div class="small">Cluster</div>
+                    <div class="sidebar-header-sub-heading" data-toggle="tooltip" data-placement="bottom">
+                        cluster-name
+                    </div>
+                    </div>
+                    <div class="btn-group dropright">
+                    <button
+                        class="btn btn-icon btn-flat"
+                        role="button"
+                        data-toggle="dropdown">
+                        <i class="dci dci-chevron-right dci-2x" />
+                    </button>
+                    <div class="dropdown-menu active-clusters" aria-labelledby="">
+                        <div class="dropdown-menu-title">
+                            <span class="circle"></span>
+                                Active Clusters
                         </div>
-                        <div class="sidebar-header-content">
-                            <div class="small">Cluster</div>
-                            <div class="sidebar-header-sub-heading" data-toggle="tooltip" data-placement="bottom"
-                            title="cluster-name">cluster-name</div>
-                        </div>
-                            <div class="btn-group dropright">
-                            <button class="btn btn-icon btn-flat" role="button" data-toggle="dropdown">
-                                <i class="dci dci-chevron-right dci-2x" />
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="">
                                 
+                            <div class="sidebar-items">
+                                <a href="">
+                                <span class="sidebar-dropdown-cluster-icon">
+                                    <img src={gke} alt="Director Online" />
+                                </span>
+                                <span class="link-text">Cluster name</span>
+                                </a>
+                            </div>
+                            <div class="sidebar-items">
+                                <a href="">
+                                <span class="sidebar-dropdown-cluster-icon">
+                                    <img src={gke} alt="Director Online" />
+                                </span>
+                                <span class="link-text">Cluster name</span>
+                                </a>
+                            </div>
+                                
+                            <div class="sidebar-divider"></div>
+                            <div class="dropdown-menu-footer">
+                                <div class="sidebar-items">
+                                <span class="link-text">View all</span>
                             </div>
                             </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="sidebar-body">
                         <div class="sidebar-items">
@@ -329,14 +360,6 @@ import gke from '../../resources/images/clusters/gke.png'
                                     <i class="dci dci-application"></i>
                                 </span>
                                 <span class="link-text">Applications</span>
-                            </a>
-                        </div>
-                        <div class="sidebar-items">
-                            <a href="" class="sidebar-links">
-                                <span class="sidebar-icon">
-                                    <i class="dci dci-pool"></i>
-                                </span>
-                                <span class="link-text">Pools</span>
                             </a>
                         </div>
                         <div class="sidebar-items">
@@ -361,6 +384,9 @@ import gke from '../../resources/images/clusters/gke.png'
                                     <i class="dci dci-chart-bar-up"></i>
                                 </span>
                                 <span class="link-text">Monitor</span>
+                                <span class="">
+                                    <i class="dci dci-chevron-down"></i>
+                                </span>
                             </a>
                         </div>
                         <div class="sidebar-items">
