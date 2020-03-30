@@ -1,5 +1,4 @@
 // The dropdown wrapper (`<div>`)
-.dropup,
 .dropdown {
   position: relative;
 }
@@ -7,12 +6,6 @@
 .dropdown-toggle {
   // Generate the caret automatically
   @include caret;
-}
-
-//three dot menu toggle for drop down
-.dot-menu{
-margin-top:-10%;
-cursor: pointer;
 }
 
 // The dropdown menu
