@@ -158,15 +158,6 @@
         .navbar-nav {
           flex-direction: row;
 
-          .dropdown-menu {
-            position: absolute;
-          }
-
-          .dropdown-menu-right {
-            right: 0;
-            left: auto; // Reset the default from `.dropdown-menu`
-          }
-
           .nav-link {
             padding-right: $navbar-nav-link-padding-x;
             padding-left: $navbar-nav-link-padding-x;
@@ -190,12 +181,6 @@
           display: none;
         }
 
-        .dropup {
-          .dropdown-menu {
-            top: auto;
-            bottom: 100%;
-          }
-        }
       }
     }
   }
