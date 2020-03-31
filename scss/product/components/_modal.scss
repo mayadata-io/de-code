@@ -38,6 +38,8 @@
 // Container that the modal scrolls within
 .modal {
   // position: fixed;
+  max-width: $modal-md;
+  margin: auto;
   top: 0;
   right: 0;
   bottom: 0;
@@ -78,6 +80,7 @@
     @include box-shadow($modal-content-box-shadow-xs); // Remove focus outline from opened modal
     outline: 0;
     padding: $modal-inner-padding;
+    margin: 1%;
   }
 
   // Modal header
@@ -143,24 +146,14 @@
   }
 }
 
-// Scale up the modal
-@include media-breakpoint-up(sm) {
-  // Automatically set modal's width for larger viewports
-  .modal-dialog {
-    max-width: $modal-md;
-    margin: $modal-dialog-margin;
-  }
-
-  .modal-content {
-    @include box-shadow($modal-content-box-shadow-sm-up);
-  }
-
-  .modal-sm {
+// Sizes
+.modal{
+  &.modal-sm{
     max-width: $modal-sm;
+    margin: auto;
   }
-}
-@include media-breakpoint-up(lg) {
-  .modal-lg {
+  &.modal-lg{
     max-width: $modal-lg;
+    margin:auto;
   }
 }
