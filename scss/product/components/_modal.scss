@@ -37,14 +37,14 @@
 
 // Container that the modal scrolls within
 .modal {
-  // position: fixed;
+  position: fixed;
   max-width: $modal-md;
   margin: auto;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  // display: none;
+  display: none;
   overflow: hidden; // Prevent Chrome on Windows from adding a focus outline. For details, see
   // https://github.com/twbs/bootstrap/pull/10951.
   outline: 0; // We deliberately don't use `-webkit-overflow-scrolling: touch;` due to a
@@ -93,8 +93,9 @@
         background: transparent;
       }
       .close {
-        // auto on the left force icon to the right even when there is no .modal-title
-        margin: -29px -5px -15px auto;
+        position: absolute;
+        top: 15px;
+        right: 15px;
       }
 
       .close:hover {
@@ -105,15 +106,15 @@
     .modal-title {
       margin-bottom: 0;
       line-height: $modal-title-line-height;
-      font-size: 16px;
-      font-weight: bold;
+      font-size: 18px;
+      margin-right: 20px;
     }
 
     .modal-sub-title {
-      font-size: 14px;
+      font-size: 15px;
       padding-top: $modal-sub-title-padding;
       color: $modal-sub-title-color;
-      max-width: 500px;
+      margin-right: 20px;
     }
   }
 
@@ -155,5 +156,12 @@
   &.modal-lg{
     max-width: $modal-lg;
     margin:auto;
+  }
+}
+
+.de-code{
+  .modal {
+    position: unset !important;
+    display: block !important;
   }
 }
