@@ -10,6 +10,18 @@ import { Playground, PropsTable } from 'docz'
 Dropdowns are toggleable, contextual overlays for displaying lists of links
 
 ## Dropdown Button
+
+<div class="de-code">
+    <div class="d-flex align-items-center dropdown"> 
+        <button class="btn btn-secondary btn-flat" role="button">Dropdown Button<i class="dci dci-chevron-down"></i></button>
+        <ui class="dropdown-menu">
+            <li class="dropdown-item" role="button">Option 1</li>
+            <li class="dropdown-item" role="button">Option 2</li>
+            <li class="dropdown-item" role="button">Option 3</li>
+        </ui>
+    </div>
+</div>
+
 <Playground>
 <div class="d-flex align-items-center dropdown"> 
     <button class="btn btn-secondary btn-flat" role="button">Dropdown Button<i class="dci dci-chevron-down"></i></button>
@@ -21,10 +33,22 @@ Dropdowns are toggleable, contextual overlays for displaying lists of links
 </div>
 </Playground>
 
-## Menu alignment
+## Menu alignment - Right
 
 By default, a dropdown menu is automatically positioned 100% from the top and along the left side
- of its parent. Add .dropdown-menu-right to a .dropdown-menu to right align the dropdown menu.
+of its parent. Add .dropdown-menu-right to a .dropdown-menu to right align the dropdown menu.
+
+<div class="de-code">
+    <div class="btn-group"> 
+        <button class="btn btn-secondary btn-flat" role="button" data-toggle="dropdown">Dropdown Button<i class="dci dci-chevron-down"></i></button>
+        <div class="dropdown-menu dropdown-menu-right">
+            <button class="dropdown-item" role="button">Option 1</button>
+            <button class="dropdown-item" role="button">Option 2</button>
+            <button class="dropdown-item" role="button">Option 3</button>
+        </div>
+    </div>
+</div>
+
 <Playground>
 <div class="btn-group"> 
     <button class="btn btn-secondary btn-flat" role="button" data-toggle="dropdown">Dropdown Button<i class="dci dci-chevron-down"></i></button>
