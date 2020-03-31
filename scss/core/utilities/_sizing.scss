@@ -11,34 +11,6 @@
 .mw-100 { max-width: 100% !important; }
 .mh-100 { max-height: 100% !important; }
 
-//Widths
-
-$widths: (
-  "xxs" : 0.25,
-  "xs"  : 0.5,
-  "sm"  : 0.75,
-  "md"  : 1,
-  "lg"  : 1.5,
-  "xl"  :  2,
-  "2xl" :  3,
-  "3xl" :  4,
-  "4xl" :  6,
-  "5xl" :  8,
-  "6xl" :  12,
-  "7xl" :  16,
-  "8xl" :  24,
-  "9xl" :  32,
-  "10xl":  40,
-  "11xl":  48,
-);
-
-@each $size, $value in $widths {
-  @debug 1rem * $value;
-  .w-#{$size} {
-    width: 1rem * $value !important;
-  }
-}
-
 // Maya icon sizes
 
 .dci {
