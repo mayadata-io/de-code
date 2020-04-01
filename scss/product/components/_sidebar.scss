@@ -19,8 +19,8 @@
     transition-timing-function: ease-in-out;
     transition-delay: initial;
     transition-property: height;
-    // position: fixed;
-    // left: 0;
+    position: fixed;
+    left: 0;
     width: inherit;
     z-index: 300;
     background: $sidebar-background-color;
@@ -333,6 +333,8 @@
     .project{
         width: 20%;
         background: $blue-800;
+        border-right: 1px solid $white;
+        height:120vh;
     
         .sidebar-logo{
             padding: 20px 7px;
@@ -375,7 +377,6 @@
     .cluster{
         width: 80%;
         background: $sidebar-background-color;
-        border-left: 1px solid $white;
         overflow-x: hidden;
     
         .btn-icon{
@@ -406,6 +407,20 @@
         }
         .hide{
             display: none;
+        }
+    }
+}
+
+.de-code{
+    .sidebar {
+        position: unset;
+        left: unset;
+        margin-bottom: 10px;
+
+        .project{
+            &:hover{
+                height:140vh;
+            }
         }
     }
 }
