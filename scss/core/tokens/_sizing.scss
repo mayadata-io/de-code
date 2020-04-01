@@ -1,0 +1,53 @@
+// stylelint-disable declaration-no-important
+
+// Width and height
+
+@each $prop, $abbrev in (width: w, height: h) {
+  @each $size, $length in $sizes {
+    .#{$abbrev}-#{$size} { #{$prop}: $length !important; }
+  }
+}
+
+//Widths
+
+.mw-100 { max-width: 100% !important; }
+.mh-100 { max-height: 100% !important; }
+
+.w-auto{
+  width: auto;
+}
+
+@each $size, $value in $widths {
+  .w-#{$size} {
+    width: 1rem * $value !important;
+  }
+}
+
+// Maya icon sizes
+
+.dci {
+  vertical-align: middle;
+  font-size: 1em;
+}
+
+@each $size, $value in $icon-size {
+  .dci-#{$size} {
+    font-size: 1em * $value !important;
+  }
+}
+
+.de-code{
+  @each $size, $value in $widths {
+    .w-#{$size} {
+      width: 1rem * $value !important;
+      background-color: $blue-800;
+      height: 25px;
+      margin-bottom: 5px;
+    }
+  }
+  .w-auto{
+    background-color: $blue-800;
+    height: 25px;
+  }
+  margin-bottom: 10px;
+}
