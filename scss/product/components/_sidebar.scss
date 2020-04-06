@@ -410,17 +410,3 @@
         }
     }
 }
-
-.de-code{
-    .sidebar {
-        position: unset;
-        left: unset;
-        margin-bottom: 10px;
-
-        .project{
-            &:hover{
-                height:140vh;
-            }
-        }
-    }
-}
