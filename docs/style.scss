@@ -84,3 +84,13 @@
     vertical-align: middle;
   }
 }
+
+//Displaying component preview outside playground
+
+// Dropdown
+.de-code{
+  margin-bottom: 130px;
+  .dropdown-menu {
+    display: block !important;
+  }
+}
