@@ -35,20 +35,3 @@
     font-size: 1em * $value !important;
   }
 }
-
-.de-code{
-  @each $size, $value in $widths {
-    .w-#{$size} {
-      width: 1rem * $value !important;
-      background-color: $gray-100;
-      height: 25px;
-      margin-bottom: 5px;
-    }
-  }
-  .w-auto{
-    background-color: $gray-100;
-    height: 25px;
-  }
-  margin-bottom: 10px;
-  font-size: 13px;
-}
