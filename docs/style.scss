@@ -102,3 +102,11 @@
     background: $unhealthy-gradiant;
   }
 }
+
+// Modal
+
+.de-code{
+  .modal {
+    position: unset !important;
+  }
+}
