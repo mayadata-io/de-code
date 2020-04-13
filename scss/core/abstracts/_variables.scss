@@ -331,6 +331,7 @@ $btn-link-disabled-color:     $gray-600 !default;
 
 $btn-block-spacing-y:         .5rem !default;
 
+$btn-github:$gray-800;
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius:           $border-radius !default;
 $btn-border-radius-lg:        $border-radius-lg !default;
@@ -640,6 +641,8 @@ $card-spacer-x:                     1.25rem !default;
 $card-border-width:                 $border-width !default;
 $card-border-radius:                $border-radius !default;
 $card-border-color:                 $gray-000 !default;
+$card-group-border-color:           $gray-100 !default;
+$card-deck-border-color:           $gray-100 !default;   
 $card-box-shadow:                   0 0 5px 0 $gray-000;
 $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width}) !default;
 $card-cap-bg:                       $blue-700 !default;
@@ -654,6 +657,15 @@ $card-columns-count:                3 !default;
 $card-columns-gap:                  1.25rem !default;
 $card-columns-margin:               $card-spacer-y !default;
 
+
+//Icon background gradiant
+
+$healthy-gradiant: linear-gradient(90deg, $green-500 0%, $green-300 100%);
+$unhealthy-gradiant: linear-gradient(90deg, $red-500 0%, $red-300 100%);
+
+//box-shadow
+$grid-shadow-color: rgba($gray-700,0.1);
+$grid-shadow: 0 0 5px 0 $grid-shadow-color;
 
 // Tooltips
 
@@ -905,6 +917,8 @@ $kbd-bg:                            $gray-900 !default;
 $pre-color:                         $gray-900 !default;
 $pre-scrollable-max-height:         340px !default;
 
+// Code Block 
+$active-code-block-shadow:$violet-400;
 
 // Printing
 $print-page-size:                   a3 !default;
