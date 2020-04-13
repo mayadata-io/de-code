@@ -30,6 +30,11 @@
       @include border-bottom-radius($card-border-radius);
     }
   }
+  &.card-clickable {
+    border: 1px solid $blue-100;
+    flex: none !important;
+    cursor: pointer;
+  }
 }
 
 .card-body {
@@ -160,12 +165,6 @@
     }
   }
 
-  .card-clickable {
-    border: 1px solid $blue-100;
-    flex: none !important;
-    cursor: pointer;
-  }
-  
   @include media-breakpoint-up(sm) {
     flex-flow: row wrap;
     margin-right: -$card-deck-margin;
