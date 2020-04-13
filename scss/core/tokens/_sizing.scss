@@ -25,11 +25,6 @@
 
 // Maya icon sizes
 
-.dci {
-  vertical-align: middle;
-  font-size: 1em;
-}
-
 @each $size, $value in $icon-size {
   .dci-#{$size} {
     font-size: 1em * $value !important;

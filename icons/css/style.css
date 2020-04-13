@@ -20,6 +20,8 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  vertical-align: middle;
+  font-size: 1em;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
