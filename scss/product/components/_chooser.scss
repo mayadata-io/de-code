@@ -70,11 +70,11 @@
   
     }
 
-    &.disabled{
+    &.disabled {
+      opacity: 0.6;
       pointer-events: none;
-      opacity: .5;
+      background: $gray-000;
     }
-
   } 
   &.chooser-card-wide{
     .chooser-card-item{
