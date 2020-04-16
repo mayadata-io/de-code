@@ -1,0 +1,55 @@
+---
+name: Progress Indicator
+menu: Components
+
+---
+import { Playground, PropsTable } from 'docz'
+
+# Progress Indiacator
+
+## Progress Bar
+
+<div class="de-code row">
+<div class="col-2"><b>Default:</b></div>
+<div class="col-10">
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuemin="0"
+        aria-valuemax="100"></div>
+    </div>
+</div>
+
+<div class="col-2"><b>Success:</b></div>
+<div class="col-10">
+    <div class="progress progress-success">
+        <div class="progress-bar" role="progressbar" aria-valuemin="0"
+        aria-valuemax="100"></div>
+    </div>
+</div>
+
+<div class="explanation">
+    <ul>
+        <li>We use the <mark>.progress</mark> as a wrapper to indicate the max value of the progress bar.</li>
+        <li>We use the inner <mark>.progress-bar</mark> to indicate the progress so far.
+        The <mark>.progress-bar</mark> requires an inline style, utility class, or custom CSS to set their width.
+        The <mark>.progress-bar</mark> also requires some <mark>role</mark> and <mark>aria</mark> attributes to make it accessible.</li>
+    </ul>
+</div>
+
+</div>
+
+
+<Playground>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuemin="0"
+        aria-valuemax="100"></div>
+    </div>
+</Playground>
+
+### Progress Bar Success
+
+<Playground>
+    <div class="progress progress-success">
+        <div class="progress-bar" role="progressbar" aria-valuemin="0"
+        aria-valuemax="100"></div>
+    </div>
+</Playground>

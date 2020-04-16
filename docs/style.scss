@@ -102,3 +102,24 @@
     background: $unhealthy-gradiant;
   }
 }
+
+.de-code{
+  margin-bottom: 30px;
+  .progress{
+    margin-bottom: 20px;
+    .progress-bar{
+      width: 50%;
+    }
+    &.progress-success {  
+      .progress-bar {
+        width: 75%;
+      }
+    }
+  }
+  .explanation{
+    margin-top: 30px;
+  }
+}
+mark{
+  background-color: $yellow-100;
+}

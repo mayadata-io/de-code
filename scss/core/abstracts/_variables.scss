@@ -810,15 +810,16 @@ $banner-padding-x:                  1.25rem !default;
 
 // Progress bars
 
-$progress-height:                   1rem !default;
-$progress-font-size:                ($font-size-base * .75) !default;
-$progress-bg:                       $gray-200 !default;
-$progress-border-radius:            $border-radius !default;
-$progress-box-shadow:               inset 0 .1rem .1rem rgba($black, .1) !default;
-$progress-bar-color:                $white !default;
-$progress-bar-bg:                   theme-color("primary") !default;
-$progress-bar-animation-timing:     1s linear infinite !default;
-$progress-bar-transition:           width .6s ease !default;
+$progress-height: 8px !default;
+$progress-font-size: ($font-size-base * 0.75) !default;
+$progress-bg: $white !default;
+$progress-border: 1px solid $primary;
+$progress-border-radius: 0 !default;
+$progress-box-shadow: inset 0 0.1rem 0.1rem rgba($black, 0.1) !default;
+$progress-bar-color: $white !default;
+$progress-bar-bg: theme-color('primary') !default;
+$progress-bar-animation-timing: 1s linear infinite !default;
+$progress-bar-transition: width 0.6s ease !default;
 
 // List group
 
