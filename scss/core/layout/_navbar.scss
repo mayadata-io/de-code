@@ -100,7 +100,7 @@
   flex-basis: 100%;
   flex-grow: 1;
   // For always expanded or extra full navbars, ensure content aligns itself
-  // properly vertically. Can be easily overridden with flex utilities.
+  // properly vertically. Can be easily overridden with flex tokens.
   align-items: center;
 }
 
