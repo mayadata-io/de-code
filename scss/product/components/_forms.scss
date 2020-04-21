@@ -424,12 +424,6 @@ select.form-control-lg {
   display: inline-block;
 }
 
-.switch-label {
-  &.active{
-  color: $gray-400;
-}
-}
-
 /* Hide default HTML checkbox */
 .switch input {
   opacity: 0;
@@ -444,7 +438,7 @@ select.form-control-lg {
   cursor: pointer;
   width: 55px;
   height: 30px;
-  background-color: $primary;
+  background-color: $gray-100;
   margin: 0 10px;
   vertical-align: middle;
   -webkit-transition: .4s;
@@ -463,6 +457,14 @@ select.form-control-lg {
   vertical-align: middle;
   -webkit-transition: .4s;
   transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: $primary;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px $primary;
 }
 
 input:checked + .slider:before {
