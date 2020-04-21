@@ -48,6 +48,7 @@
     opacity: 1;
     cursor: not-allowed;
   }
+
 }
 
 select.form-control {
@@ -166,6 +167,11 @@ select.form-control-lg {
 
 .form-group {
   margin-bottom: $form-group-margin-bottom;
+
+  // Turn off spinners for contact number input
+  &.hide-spinner{
+    @include input-number-spinner-off;
+  }
 }
 
 .form-text {
