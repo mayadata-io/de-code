@@ -87,6 +87,7 @@
 
 // Sidebar
 .de-code{
+  margin-bottom: 130px;
   .sidebar {
       position: unset;
       left: unset;
@@ -104,4 +105,34 @@
         border-radius: 0px !important;
       }
   }
+  
+  // Dropdown
+  .dropdown-menu {
+      display: block !important;
+    }
+  
+  .status-square {
+    min-height: 40px;
+    min-width: 40px;
+    border-radius: 4px;
+    box-shadow: $grid-shadow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+      &.icon-healthy {
+        background: $healthy-gradiant;
+      }
+
+      &.icon-unhealthy {
+        background: $unhealthy-gradiant;
+      }
+    }
 }
+// Modal
+.react-live{
+  .modal {
+    position: unset !important;
+  }
+}
+

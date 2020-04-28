@@ -1,58 +1,91 @@
-.tab-chooser {
+.chooser-card {
   display: flex;
   flex-wrap: wrap;
   height: 100%;
   list-style: none;
   padding: 0;
-}
 
-.tab-chooser-item {
-  background-color: $tab-chooser-item-background;
-  border: $border-width solid $gray-100;
-  border-radius: 4px;
-  cursor: pointer;
-  display: block;
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
-  margin: 4px;
-  text-align: center;
-  width: $tab-chooser-item-width;
+  .chooser-card-item {
+    background-color: $chooser-card-item-background;
+    border: $border-width solid $gray-100;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    margin: 4px;
+    text-align: center;
+    width: $chooser-card-item-width;
+  
+    .chooser-card-head {
+      font-size: 16px;
+      padding: 8px 6px;
 
-  &:first-child {
-    margin-left: 0;
-  }
-
-  &:hover {
-    background-color: $gray-000;
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
-  }
-
-  &.active {
-    background: $tab-chooser-item-background-active;
-    border-color: $primary;
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
-
-    .tab-chooser-label {
-      border-color: $tab-chooser-item-label-border-color-active;
-      color: $tab-chooser-item-label-color-active;
+      .chooser-card-logo{
+        img {
+          height: 2.5rem;
+          width: 2.5rem;
+        }
+      }
+  
     }
+    
+    .chooser-card-body{
+      border-top: $chooser-card-item-body-border;
+      overflow: hidden;
+      padding: 6px;
+      text-overflow: ellipsis;
+
+      .chooser-card-label{
+        font-size: 12px;
+        color: $chooser-card-item-label-color;
+        padding: 0;
+        padding-bottom: 6px;
+      }
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  
+    &:hover {
+      background-color: $gray-000;
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0);
+    }
+  
+    &.active {
+      background: $chooser-card-item-background-active;
+      border-color: $primary;
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0);
+
+      .chooser-card-body{
+        border-top: $chooser-card-item-body-border-color-active;
+
+        .chooser-card-label {  
+          color: $chooser-card-item-label-color-active;  
+        }
+      }
+  
+    }
+
+    &.disabled {
+      opacity: 0.6;
+      pointer-events: none;
+      background: $gray-000;
+    }
+  } 
+  &.chooser-card-wide{
+    .chooser-card-item{
+       width: 300px;
+    
+      .chooser-card-body{
+        .chooser-card-label{
+          font-size:14px;
+        }
+      }
+     
+   }
   }
-}
-
-.tab-chooser-logo {
-  padding: 8px 4px;
-
-  img {
-    height: 2.5rem;
-    width: 2.5rem;
-  }
-}
-
-.tab-chooser-label {
-  border-top: $tab-chooser-item-label-border;
-  overflow: hidden;
-  padding: 4px;
-  text-overflow: ellipsis;
 }
