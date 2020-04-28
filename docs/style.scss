@@ -85,21 +85,33 @@
   }
 }
 
-.status-square {
-  min-height: 40px;
-  min-width: 40px;
-  border-radius: 4px;
-  box-shadow: $grid-shadow;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  &.icon-healthy {
-    background: $healthy-gradiant;
+//Displaying component preview outside playground
+
+// Dropdown
+.de-code{
+  margin-bottom: 130px;
+
+  .dropdown-menu {
+    display: block !important;
   }
-
-  &.icon-unhealthy {
-    background: $unhealthy-gradiant;
+  
+  .status-square {
+    min-height: 40px;
+    min-width: 40px;
+    border-radius: 4px;
+    box-shadow: $grid-shadow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    &.icon-healthy {
+      background: $healthy-gradiant;
+    }
+  
+    &.icon-unhealthy {
+      background: $unhealthy-gradiant;
+    }
   }
 }
 
@@ -120,4 +132,51 @@
   .width-label{
     font-size: 13px;
   }
+}
+
+// Width
+.de-code{
+  margin-bottom: 30px;
+  @each $size, $value in $widths {
+    .w-#{$size} {
+      width: 1rem * $value !important;
+      background-color: $gray-100;
+      height: 25px;
+      margin-bottom: 5px;
+    }
+  }
+  .w-auto{
+    background-color: $gray-100;
+    height: 25px;
+  }
+  .width-label{
+    font-size: 13px;
+  }
+  
+ // Progress bars
+.progress{
+   margin-bottom: 20px;
+    .progress-bar{
+      width: 50%;
+    }
+    &.progress-success {  
+      .progress-bar {
+        width: 75%;
+      }
+    }
+  }
+  .explanation{
+    margin-top: 30px;
+  }
+}
+
+// Modal
+.react-live{
+  .modal {
+    position: unset !important;
+  }
+}
+
+mark{
+  background-color: $yellow-100;
 }

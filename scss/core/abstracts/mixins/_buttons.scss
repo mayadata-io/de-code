@@ -48,7 +48,7 @@
       @if $enable-shadows {
         box-shadow: $btn-active-box-shadow, 0 0 0 $btn-focus-width rgba($border, .5);
       } @else {
-        box-shadow: 0 0 0 $btn-focus-width rgba($border, .5);
+        box-shadow: 0 0 0 $btn-focus-width rgba($border, .5);	
       }
     }
   }
