@@ -915,3 +915,37 @@ $active-code-block-shadow:$violet-400;
 // Printing
 $print-page-size:                   a3 !default;
 $print-body-min-width:              map-get($grid-breakpoints, "lg") !default;
+
+// Widths
+
+$widths: (
+  "xxs" : 0.25,
+  "xs"  : 0.5,
+  "sm"  : 0.75,
+  "md"  : 1,
+  "lg"  : 1.5,
+  "xl"  :  2,
+  "2xl" :  3,
+  "3xl" :  4,
+  "4xl" :  6,
+  "5xl" :  8,
+  "6xl" :  12,
+  "7xl" :  16,
+  "8xl" :  24,
+  "9xl" :  32,
+  "10xl":  40,
+  "11xl":  48,
+);
+
+// Icon sizes
+
+$icon-size: (
+  "sm" : 0.875,
+  "lg" : 1.33,
+  "2x" : 2,
+  "3x" : 3,
+  "4x" : 4,
+  "5x" : 5,
+  "6x" : 6,
+  "7x" : 7,
+);
