@@ -58,6 +58,7 @@
 
 .custom-control-label {
   margin-bottom: 0;
+  vertical-align: middle;
 
   // Background-color and (when enabled) gradient
   &::before {

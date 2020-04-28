@@ -1,37 +1,57 @@
 @keyframes progress-bar-stripes {
-  from { background-position: $progress-height 0; }
-  to { background-position: 0 0; }
+  from {
+    background-position: $progress-height 0;
+  }
+
+  to {
+    background-position: 0 0;
+  }
 }
+
 
 .progress {
-  background-color: $white;
-  border: 1px solid $blue-500;
-  border-radius: 0;
+  background-color: $progress-bg;
+  border: $progress-border;
+  border-radius: $progress-border-radius;
   display: flex;
-  height: 8px;
-  font-size: .65625rem;
+  height: $progress-height;
+  overflow: hidden; // force rounded corners by cropping it
+  font-size: $progress-font-size;
+
+  .progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $progress-bar-color;
+    background-color: $progress-bar-bg;
+    -webkit-transition-property: width;
+    -webkit-transition-duration: 2s;
+    transition-property: width;
+    transition-duration: 2s;
+    -webkit-transition-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+    transition-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+  }
+  
 }
 
-.progress-bar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: $progress-bar-color;
-  background-color: $progress-bar-bg;
-  -webkit-transition-property: width;
-  -webkit-transition-duration: 2s;
-  transition-property: width;
-  transition-duration: 2s;
-  -webkit-transition-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
-  transition-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
-  width: 40%; // for display purpose only
+.donut {
+  position: sticky;
 }
 
-.progress-bar-striped {
-  @include gradient-striped();
-  background-size: $progress-height $progress-height;
+.donut-segment {
+  animation-name: fill-in;
+  animation-fill-mode: forwards;
+  animation-duration: 5000ms;
+  /*   opacity: 0; */
 }
 
-.progress-bar-animated {
-  animation: progress-bar-stripes $progress-bar-animation-timing;
+@keyframes fill-in {
+  from {
+    /*     opacity: 0; */
+    stroke-dashoffset: 0;
+  }
+
+  to {
+    /*     opacity: 1; */
+  }
 }

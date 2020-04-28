@@ -5,26 +5,44 @@ menu: Components
 ---
 import { Playground, PropsTable } from 'docz'
 
-# Inputs
+# Forms
 
-## Text
 <Playground>
-<div class="form-group">
-   <label for="exampleInputEmail1" class="form-control-label">Email address</label>
-   <input class="form-control" placeholder="Name"/>
-</div>
+<form>
+    <div class="form-group">
+        <label class="form-control-label">
+            Text
+        </label>
+        <input type="text" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label class="form-control-label">
+            Password
+        </label>
+        <input type="password" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label class="form-control-label">
+            Email
+        </label>
+        <input type="email" class="form-control" />
+        <span class="small"><i>eg. abc@gmaill.com</i></span>
+    </div>
+    <div class="form-group hide-spinner">
+        <label class="form-control-label">
+            Phone Number
+        </label>
+        <input type="number" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Textarea</label>
+        <textarea class="form-control" placeholder="Please enter your comments" rows="3"></textarea>
+    </div>
+    <button class="btn btn-primary" data-dismiss="modal">
+        Submit
+    </button>
+</form>
 </Playground>
-
-### Sizes
-<div class="form-group">
-   <input class="form-control form-control-sm" placeholder="form-control-sm"/>
-</div>
-<div class="form-group">
-   <input class="form-control" placeholder="form-control"/>
-</div>
-<div class="form-group">
-   <input class="form-control form-control-lg" placeholder="form-control-lg"/>
-</div>
 
 ### Advanced
 #### Search input field
@@ -34,6 +52,33 @@ import { Playground, PropsTable } from 'docz'
     </div>
     <input class="form-control" placeholder="Find an application"/>
   </div>
+</Playground>
+
+## Sizes
+Set heights using classes like .form-control-lg and .form-control-sm.
+
+<Playground>
+<div class="form-group">
+   <input class="form-control form-control-sm" placeholder="form-control-sm"/>
+</div>
+<div class="form-group">
+   <input class="form-control" placeholder="form-control"/>
+</div>
+<div class="form-group">
+   <input class="form-control form-control-lg" placeholder="form-control-lg"/>
+</div>
+</Playground>
+
+## Select
+<Playground>
+<div class="form-group">
+  <label for="exampleFormControlSelect1">Example select</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+    </select>
+</div>
 </Playground>
 
 ## Checkbox
@@ -73,6 +118,17 @@ A Counter is a Form Element containing a label and a number Input that can be in
       <option value="TB">TB</option>
     </select>
 </div>
+</Playground>
+
+## Toggle switch input
+
+<Playground>
+
+<label class="switch">
+  <input type="checkbox"/>
+  <span class="slider round"></span>
+</label>
+
 </Playground>
 
 ### Sizes
@@ -125,4 +181,13 @@ A Segment Control is a horizontal control made of multiple segments. It provides
 		<label class="segmented-control__label" for="option-5">Monthly</label>
 	</li>
 </ul>
+</Playground>
+
+## Inline forms
+Use the .form-inline class to display a series of labels, form controls, and buttons on a single horizontal row. Form controls within inline forms vary slightly from their default states.
+<Playground>
+<form class="form-inline">
+  <label>Name</label>
+  <input type="text" class="form-control" />
+</form>
 </Playground>
