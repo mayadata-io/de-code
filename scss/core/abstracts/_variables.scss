@@ -669,19 +669,12 @@ $grid-shadow: 0 0 5px 0 $grid-shadow-color;
 
 // Tooltips
 
-$tooltip-font-size:           $font-size-sm !default;
-$tooltip-max-width:           200px !default;
-$tooltip-color:               $white !default;
-$tooltip-bg:                  $black !default;
-$tooltip-border-radius:        $border-radius !default;
-$tooltip-opacity:             .9 !default;
-$tooltip-padding-y:           .25rem !default;
-$tooltip-padding-x:           .5rem !default;
-$tooltip-margin:              0 !default;
-
-$tooltip-arrow-width:         .8rem !default;
-$tooltip-arrow-height:        .4rem !default;
-$tooltip-arrow-color:         $tooltip-bg !default;
+$tooltip-width: 80px !default;
+$tooltip-width-md: 200px !default;
+$tooltip-width-lg: 400px !default;
+$tooltip-color: $white !default;
+$tooltip-bg: $gray-900 !default;
+$tooltip-opacity: 0.9 !default;
 
 
 // Popovers
