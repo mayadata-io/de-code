@@ -88,7 +88,8 @@
 		"../../../scss/product/components/_modal.scss",
 		"../../../scss/product/components/_tooltip.scss",
 		"../../../scss/product/components/_popover.scss",
-		"../../../scss/product/components/_carousel.scss"
+		"../../../scss/product/components/_carousel.scss",
+		"../../../scss/product/components/_sidebar.scss"
 	],
 	"sourcesContent": [
 		"/*\n * De-code-product\n * https://styleguide.mayadata.io\n *\n */\n\n/// Main scss files, include product styles.\n@import \"../../scss/core.scss\";\n@import \"../../scss/product.scss\";\n",

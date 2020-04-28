@@ -105,6 +105,9 @@
       .sidebar-header .dropright .btn-icon{
         border-radius: 0px !important;
       }
+      .dropdown-menu {
+        display: none !important;
+    }
   }
   
   // Dropdown
@@ -112,26 +115,26 @@
       display: block !important;
     }
   
-  .status-square {
-    min-height: 40px;
-    min-width: 40px;
-    border-radius: 4px;
-    box-shadow: $grid-shadow;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-      &.icon-healthy {
-        background: $healthy-gradiant;
+    .status-square {
+      min-height: 40px;
+      min-width: 40px;
+      border-radius: 4px;
+      box-shadow: $grid-shadow;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+        &.icon-healthy {
+          background: $healthy-gradiant;
+        }
+
+        &.icon-unhealthy {
+          background: $unhealthy-gradiant;
+        }
       }
 
-      &.icon-unhealthy {
-        background: $unhealthy-gradiant;
-      }
-    }
-  
-// Width
-  @each $size, $value in $widths {
+//Width
+    @each $size, $value in $widths {
       .w-#{$size} {
         width: 1rem * $value !important;
         background-color: $gray-100;
@@ -146,18 +149,18 @@
     .width-label{
       font-size: 13px;
     }
-
-  // Progress bars
+    
+// Progress indicator
     .progress{
-      margin-bottom: 20px;
-      .progress-bar{
-        width: 50%;
-      }
+    margin-bottom: 20px;
+    .progress-bar{
+      width: 50%;
+    }
     }
     .explanation{
       margin-top: 30px;
     }
- }
+}
 
 // Modal
 .react-live{
