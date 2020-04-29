@@ -81,6 +81,7 @@
 		"../../../scss/product/components/_jumbotron.scss",
 		"../../../scss/product/components/_alert.scss",
 		"../../../scss/product/components/_progress.scss",
+		"../../../scss/product/components/_loader.scss",
 		"../../../scss/product/components/_media.scss",
 		"../../../scss/product/components/_list-group.scss",
 		"../../../scss/product/components/_close.scss",
