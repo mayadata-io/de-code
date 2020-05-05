@@ -1,87 +1,100 @@
 /**LOADER**/
 .loading-container {
-    border-radius: 4%;
-    padding: 20px;
-    width: 100px;
-  }
-  
-  .loader {
-    border: $loader-border;
-    border-radius: 50%;
-    border-top: $loader-border-top;
-    width: $loader-width;
-    height: $loader-height;
-    -webkit-animation: spin 1s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;
-    animation: spin 1s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;
-  
-    &.loader-pause {
-      animation: none;
-    }
-  
-    &.loader-xl {
-      border: 6px solid $gray-000;
-      border-top: 6px solid $primary;
-      width: 84px;
-      height: 84px;
-    }
-  }
-  .iframe-loader {
-    position: absolute;
-    left: 50%;
-    top: 40%;
-  }
-  @-webkit-keyframes spin {
-    0% {
-      -webkit-transform: rotate(0deg);
-    }
-  
-    100% {
-      -webkit-transform: rotate(360deg);
-    }
-  }
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  .loading-overlay {
-    position: absolute;
-    top: 50vh;
-    left: 0;
-    right: 0;
-    z-index: 13;
-  }
-  
-  // Loader icon
-  .mi-spin {
-    -webkit-animation: mi-spin 2s infinite linear;
-    animation: mi-spin 2s infinite linear;
-    display: inline-block;
-  }
-  @-webkit-keyframes mi-spin {
-    0% {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      -webkit-transform: rotate(359deg);
-      transform: rotate(359deg);
-    }
-  }
-  @keyframes mi-spin {
-    0% {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      -webkit-transform: rotate(359deg);
-      transform: rotate(359deg);
-    }
-  }
+	border-radius: 4%;
+	padding: 20px;
+	width: 100px;
+}
+
+.inline-loading-container {
+	display: inline-flex;
+	justify-content: center;
+	padding: 0 20px;
+}
+
+.loader {
+	border: $loader-border;
+	border-radius: 50%;
+	border-top: $loader-border-top;
+	width: $loader-width;
+	height: $loader-height;
+	-webkit-animation: spin 1s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;
+	animation: spin 1s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;
+
+	&.loader-pause {
+		animation: none;
+	}
+
+	&.loader-xl {
+		border: 6px solid $gray-000;
+		border-top: 6px solid $primary;
+		width: 84px;
+		height: 84px;
+	}
+
+	// Inline loader
+	&.inline {
+		width: 1.5rem;
+		height: 1.5rem;
+		display: inline-block;
+	}
+}
+.iframe-loader {
+	position: absolute;
+	left: 50%;
+	top: 40%;
+}
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.loading-overlay {
+	position: absolute;
+	top: 50vh;
+	left: 0;
+	right: 0;
+	z-index: 13;
+}
+
+// Loader icon
+.mi-spin {
+	-webkit-animation: mi-spin 2s infinite linear;
+	animation: mi-spin 2s infinite linear;
+	display: inline-block;
+}
+@-webkit-keyframes mi-spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(359deg);
+		transform: rotate(359deg);
+	}
+}
+@keyframes mi-spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(359deg);
+		transform: rotate(359deg);
+	}
+}
