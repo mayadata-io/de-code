@@ -12,3 +12,12 @@
 @import "spacing";
 @import "text";
 @import "visibility";
+
+// Disabled
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
