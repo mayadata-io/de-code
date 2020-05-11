@@ -1,0 +1,2127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="420px" height="220px" enable-background="new 0 0 367.54 207.01" version="1.1" viewBox="0 0 367.54 207.01" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{clip-path:url(#hi);}
+	.st2{fill:none;stroke:#B6B5B5;stroke-miterlimit:10;}
+	.st3{clip-path:url(#bd);}
+	.st4{clip-path:url(#ah);}
+	.st5{fill:#EBF4FB;}
+	.st6{clip-path:url(#l);}
+	.st7{clip-path:url(#pl);}
+	.st8{clip-path:url(#op);}
+	.st9{clip-path:url(#nt);}
+	.st10{opacity:0.61;fill:#EBF4FB;enable-background:new    ;}
+	.st11{clip-path:url(#mx);}
+	.st12{clip-path:url(#mb);}
+	.st13{clip-path:url(#le);}
+	.st14{clip-path:url(#ki);}
+	.st15{clip-path:url(#jm);}
+	.st16{clip-path:url(#iq);}
+	.st17{clip-path:url(#hu);}
+	.st18{fill:none;stroke:#8790B5;stroke-miterlimit:10;}
+	.st19{clip-path:url(#gx);}
+	.st20{clip-path:url(#gb);}
+	.st21{clip-path:url(#ff);}
+	.st22{fill:none;stroke:#969EBE;stroke-miterlimit:10;}
+	.st23{clip-path:url(#ej);}
+	.st24{clip-path:url(#dn);}
+	.st25{clip-path:url(#cq);}
+	.st26{opacity:0.3;fill:none;stroke:#8790B5;stroke-miterlimit:10;enable-background:new    ;}
+	.st27{clip-path:url(#bu);}
+	.st28{clip-path:url(#bj);}
+	.st29{fill:none;stroke:#8790B5;stroke-width:4;stroke-miterlimit:10;}
+	.st30{clip-path:url(#bh);}
+	.st31{clip-path:url(#bf);}
+	.st32{fill:none;stroke:#868FB4;stroke-width:2;stroke-miterlimit:10;}
+	.st33{clip-path:url(#bc);}
+	.st34{clip-path:url(#ba);}
+	.st35{clip-path:url(#ay);}
+	.st36{clip-path:url(#aw);}
+	.st37{clip-path:url(#au);}
+	.st38{clip-path:url(#ar);}
+	.st39{clip-path:url(#ap);}
+	.st40{clip-path:url(#an);}
+	.st41{clip-path:url(#al);}
+	.st42{clip-path:url(#aj);}
+	.st43{clip-path:url(#ag);}
+	.st44{clip-path:url(#ae);}
+	.st45{clip-path:url(#ac);}
+	.st46{clip-path:url(#aa);}
+	.st47{clip-path:url(#y);}
+	.st48{clip-path:url(#v);}
+	.st49{clip-path:url(#t);}
+	.st50{clip-path:url(#r);}
+	.st51{clip-path:url(#p);}
+	.st52{clip-path:url(#n);}
+	.st53{clip-path:url(#k);}
+	.st54{clip-path:url(#i);}
+	.st55{clip-path:url(#g);}
+	.st56{fill:none;stroke:#868FB4;stroke-miterlimit:10;}
+	.st57{clip-path:url(#e);}
+	.st58{clip-path:url(#c);}
+	.st59{clip-path:url(#pv);}
+	.st60{clip-path:url(#pt);}
+	.st61{clip-path:url(#pr);}
+	.st62{clip-path:url(#pp);}
+	.st63{clip-path:url(#pn);}
+	.st64{clip-path:url(#pk);}
+	.st65{clip-path:url(#pi);}
+	.st66{clip-path:url(#pg);}
+	.st67{clip-path:url(#pe);}
+	.st68{clip-path:url(#pc);}
+	.st69{clip-path:url(#oz);}
+	.st70{clip-path:url(#ox);}
+	.st71{clip-path:url(#ov);}
+	.st72{clip-path:url(#ot);}
+	.st73{clip-path:url(#or);}
+	.st74{clip-path:url(#oo);}
+	.st75{clip-path:url(#om);}
+	.st76{clip-path:url(#ok);}
+	.st77{clip-path:url(#oi);}
+	.st78{clip-path:url(#og);}
+	.st79{clip-path:url(#od);}
+	.st80{clip-path:url(#ob);}
+	.st81{clip-path:url(#nz);}
+	.st82{clip-path:url(#nx);}
+	.st83{clip-path:url(#nv);}
+	.st84{fill:#868FB4;}
+	.st85{clip-path:url(#ns);}
+	.st86{clip-path:url(#nq);}
+	.st87{clip-path:url(#no);}
+	.st88{clip-path:url(#nm);}
+	.st89{clip-path:url(#nk);}
+	.st90{clip-path:url(#nh);}
+	.st91{fill:#D8D8D8;}
+	.st92{clip-path:url(#nf);}
+	.st93{clip-path:url(#nd);}
+	.st94{fill:none;stroke:#979797;stroke-width:2;stroke-miterlimit:10;}
+	.st95{clip-path:url(#nb);}
+	.st96{clip-path:url(#mz);}
+	.st97{clip-path:url(#mw);}
+	.st98{clip-path:url(#mu);}
+	.st99{clip-path:url(#ms);}
+	.st100{clip-path:url(#mq);}
+	.st101{clip-path:url(#mo);}
+	.st102{clip-path:url(#ml);}
+	.st103{clip-path:url(#mj);}
+	.st104{clip-path:url(#mh);}
+	.st105{clip-path:url(#mf);}
+	.st106{clip-path:url(#md);}
+	.st107{clip-path:url(#ma);}
+	.st108{clip-path:url(#ly);}
+	.st109{clip-path:url(#lw);}
+	.st110{clip-path:url(#lu);}
+	.st111{clip-path:url(#ls);}
+	.st112{clip-path:url(#lo);}
+	.st113{clip-path:url(#lm);}
+	.st114{clip-path:url(#lk);}
+	.st115{clip-path:url(#li);}
+	.st116{clip-path:url(#lg);}
+	.st117{clip-path:url(#ld);}
+	.st118{clip-path:url(#lb);}
+	.st119{clip-path:url(#kz);}
+	.st120{clip-path:url(#kx);}
+	.st121{clip-path:url(#kv);}
+	.st122{clip-path:url(#ks);}
+	.st123{clip-path:url(#kq);}
+	.st124{clip-path:url(#ko);}
+	.st125{clip-path:url(#km);}
+	.st126{clip-path:url(#kk);}
+	.st127{clip-path:url(#kh);}
+	.st128{clip-path:url(#kf);}
+	.st129{clip-path:url(#kd);}
+	.st130{clip-path:url(#kb);}
+	.st131{clip-path:url(#jz);}
+	.st132{clip-path:url(#jw);}
+	.st133{clip-path:url(#ju);}
+	.st134{clip-path:url(#js);}
+	.st135{clip-path:url(#jq);}
+	.st136{clip-path:url(#jo);}
+	.st137{clip-path:url(#jl);}
+	.st138{clip-path:url(#jj);}
+	.st139{clip-path:url(#jh);}
+	.st140{clip-path:url(#jf);}
+	.st141{clip-path:url(#jd);}
+	.st142{clip-path:url(#ja);}
+	.st143{clip-path:url(#iy);}
+	.st144{clip-path:url(#iw);}
+	.st145{clip-path:url(#iu);}
+	.st146{clip-path:url(#is);}
+	.st147{clip-path:url(#ip);}
+	.st148{clip-path:url(#in);}
+	.st149{clip-path:url(#il);}
+	.st150{clip-path:url(#ij);}
+	.st151{clip-path:url(#ih);}
+	.st152{clip-path:url(#ie);}
+	.st153{clip-path:url(#ic);}
+	.st154{clip-path:url(#ia);}
+	.st155{clip-path:url(#hy);}
+	.st156{clip-path:url(#hw);}
+	.st157{clip-path:url(#ht);}
+	.st158{clip-path:url(#hr);}
+	.st159{clip-path:url(#hp);}
+	.st160{clip-path:url(#hn);}
+	.st161{clip-path:url(#hl);}
+	.st162{clip-path:url(#hh);}
+	.st163{clip-path:url(#hf);}
+	.st164{clip-path:url(#hd);}
+	.st165{clip-path:url(#hb);}
+	.st166{clip-path:url(#gz);}
+	.st167{clip-path:url(#gw);}
+	.st168{clip-path:url(#gu);}
+	.st169{clip-path:url(#gs);}
+	.st170{clip-path:url(#gq);}
+	.st171{clip-path:url(#go);}
+	.st172{clip-path:url(#gl);}
+	.st173{clip-path:url(#gj);}
+	.st174{clip-path:url(#gh);}
+	.st175{clip-path:url(#gf);}
+	.st176{clip-path:url(#gd);}
+	.st177{clip-path:url(#ga);}
+	.st178{clip-path:url(#fy);}
+	.st179{clip-path:url(#fw);}
+	.st180{clip-path:url(#fu);}
+	.st181{clip-path:url(#fs);}
+	.st182{clip-path:url(#fp);}
+	.st183{clip-path:url(#fn);}
+	.st184{clip-path:url(#fl);}
+	.st185{clip-path:url(#fj);}
+	.st186{clip-path:url(#fh);}
+	.st187{clip-path:url(#fe);}
+	.st188{clip-path:url(#fc);}
+	.st189{clip-path:url(#fa);}
+	.st190{clip-path:url(#ey);}
+	.st191{clip-path:url(#ew);}
+	.st192{clip-path:url(#et);}
+	.st193{clip-path:url(#er);}
+	.st194{clip-path:url(#ep);}
+	.st195{clip-path:url(#en);}
+	.st196{clip-path:url(#el);}
+	.st197{clip-path:url(#ei);}
+	.st198{clip-path:url(#eg);}
+	.st199{clip-path:url(#ee);}
+	.st200{clip-path:url(#ec);}
+	.st201{clip-path:url(#ea);}
+	.st202{clip-path:url(#dx);}
+	.st203{clip-path:url(#dv);}
+	.st204{clip-path:url(#dt);}
+	.st205{clip-path:url(#dr);}
+	.st206{clip-path:url(#dp);}
+	.st207{clip-path:url(#dm);}
+	.st208{clip-path:url(#dk);}
+	.st209{clip-path:url(#di);}
+	.st210{clip-path:url(#dg);}
+	.st211{clip-path:url(#de);}
+	.st212{clip-path:url(#da);}
+	.st213{clip-path:url(#cy);}
+	.st214{clip-path:url(#cw);}
+	.st215{clip-path:url(#cu);}
+	.st216{clip-path:url(#cs);}
+	.st217{clip-path:url(#cp);}
+	.st218{clip-path:url(#cn);}
+	.st219{clip-path:url(#cl);}
+	.st220{clip-path:url(#cj);}
+	.st221{clip-path:url(#ch);}
+	.st222{clip-path:url(#ce);}
+	.st223{clip-path:url(#cc);}
+	.st224{clip-path:url(#ca);}
+	.st225{clip-path:url(#by);}
+	.st226{clip-path:url(#bw);}
+	.st227{clip-path:url(#bt);}
+	.st228{clip-path:url(#br);}
+	.st229{clip-path:url(#bp);}
+	.st230{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st231{clip-path:url(#bn);}
+	.st232{clip-path:url(#bl);}
+</style>
+	<rect class="st0" x="10.1" y="12.28" width="346" height="181"/>
+		<defs>
+			<rect id="lp" x="10.1" y="12.28" width="346" height="181"/>
+		</defs>
+		<clipPath id="hi">
+			<use xlink:href="#lp"/>
+		</clipPath>
+		<g class="st1">
+			<line class="st2" x1="43" x2="31.47" y1="174.66" y2="174.66"/>
+			<line class="st2" x1="246.44" x2="234.91" y1="174.66" y2="174.66"/>
+		</g>
+		<defs>
+			<path id="db" d="m46.8 32.19s-5.9-4.92 0-8.65h74.59s5.08 4.47 0 7.13h-17.35s-4.16 3 0.12 6.59h11.33s3.58 2.2 0.35 5h-14.23s-4.5 3.24-2.19 6h12.68s4 3.13 1 6.94h-73.69s-6.82-5 0-9h8.55s0.81-8.09 10.87-7.28c0 0 4.73-4.24-0.81-6.69l-11.22-0.04z"/>
+		</defs>
+		<clipPath id="bd">
+			<use xlink:href="#db"/>
+		</clipPath>
+		<g class="st3">
+				<defs>
+					<rect id="as" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="ah">
+					<use xlink:href="#as"/>
+				</clipPath>
+				<g class="st4">
+					<rect class="st5" x="31.38" y="18.54" width="97.27" height="41.64"/>
+				</g>
+		</g>
+		<defs>
+			<path id="w" d="m71.99 107.85s-12.59-10.5 0-18.48h159.24s10.86 9.55 0 15.23h-37s-8.89 6.42 0.24 14.07h24.2s7.65 4.69 0.74 10.61h-30.4s-9.62 6.92-4.69 12.84h27.16s8.64 6.67 2.22 14.81h-157.49s-14.57-10.61 0-19.25h18.26s1.73-17.28 23.21-15.55c0 0 10.08-9.05-1.75-14.28h-23.94z"/>
+		</defs>
+		<clipPath id="l">
+			<use xlink:href="#w"/>
+		</clipPath>
+		<g class="st6">
+				<defs>
+					<rect id="a" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="pl">
+					<use xlink:href="#a"/>
+				</clipPath>
+				<g class="st7">
+					<rect class="st5" x="44.73" y="84.37" width="196.32" height="77.56"/>
+				</g>
+		</g>
+		<defs>
+			<path id="pa" d="m141.58 95.01s-5.46-4.92 0-8.65h69.06s4.71 4.47 0 7.13h-16.06s-3.86 3 0.1 6.59h10.5s3.31 2.2 0.32 5h-13.17s-4.18 3.24-2 6h11.77s3.75 3.13 1 6.94h-68.3s-6.31-5 0-9h7.93s0.75-8.09 10.06-7.28c0 0 4.37-4.24-0.76-6.69l-10.45-0.04z"/>
+		</defs>
+		<clipPath id="op">
+			<use xlink:href="#pa"/>
+		</clipPath>
+		<g class="st8">
+				<defs>
+					<rect id="oe" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="nt">
+					<use xlink:href="#oe"/>
+				</clipPath>
+				<g class="st9">
+					<rect class="st10" x="126.93" y="81.33" width="90.8" height="41.64"/>
+				</g>
+		</g>
+		<defs>
+			<path id="ni" d="m63 38.94s-4.45-4 0-7h56.29s3.84 3.64 0 5.81h-13.09s-3.14 2.45 0.09 5.37h8.55c1.17 0.66 1.58 2.14 0.92 3.31-0.17 0.29-0.39 0.55-0.66 0.75h-10.73s-3.41 2.63-1.66 4.9h9.6s3.05 2.54 0.78 5.65h-55.67s-5.15-4.05 0-7.35h6.46s0.61-6.6 8.2-5.94c0 0 3.56-3.45-0.62-5.45l-8.46-0.05z"/>
+		</defs>
+		<clipPath id="mx">
+			<use xlink:href="#ni"/>
+		</clipPath>
+		<g class="st11">
+				<defs>
+					<rect id="mm" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="mb">
+					<use xlink:href="#mm"/>
+				</clipPath>
+				<g class="st12">
+					<rect class="st10" x="50.13" y="26.89" width="75.87" height="35.8"/>
+				</g>
+		</g>
+		<defs>
+			<path id="lq" d="m272.35 58.61s-4.05-3.38 0-6h51.24s3.5 3.07 0 4.9h-11.91s-2.86 2.07 0.08 4.53h7.78s2.47 1.51 0.24 3.41h-9.77s-3.1 2.23-1.51 4.14h8.74s2.78 2.14 0.71 4.76h-50.68s-4.69-3.41 0-6.19h5.88s0.55-5.57 7.46-5c0 0 3.25-2.91-0.56-4.59l-7.7 0.04z"/>
+		</defs>
+		<clipPath id="le">
+			<use xlink:href="#lq"/>
+		</clipPath>
+		<g class="st13">
+				<defs>
+					<rect id="kt" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="ki">
+					<use xlink:href="#kt"/>
+				</clipPath>
+				<g class="st14">
+					<rect class="st5" x="260.18" y="47.66" width="69.96" height="31.74"/>
+				</g>
+		</g>
+		<defs>
+			<path id="jx" d="m187.74 46.66s-1.77-1.48 0-2.6h22.44s1.53 1.34 0 2.14h-5.22c-0.55 0.34-0.73 1.06-0.39 1.61 0.1 0.16 0.23 0.3 0.39 0.39h3.41c0.43 0.21 0.61 0.73 0.4 1.16-0.07 0.14-0.17 0.25-0.29 0.34h-4.28s-1.36 1-0.66 1.81h3.82c0.66 0.46 0.82 1.37 0.35 2.03-0.01 0.02-0.02 0.03-0.03 0.05h-22.16s-2-1.49 0-2.71h2.58s0.25-2.43 3.27-2.19c0 0 1.42-1.28-0.24-2l-3.39-0.03z"/>
+		</defs>
+		<clipPath id="jm">
+			<use xlink:href="#jx"/>
+		</clipPath>
+		<g class="st15">
+				<defs>
+					<rect id="jb" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="iq">
+					<use xlink:href="#jb"/>
+				</clipPath>
+				<g class="st16">
+					<rect class="st5" x="179.61" y="39.06" width="36.25" height="19.52"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="if" x="10.1" y="12.28" width="346" height="181"/>
+		</defs>
+		<clipPath id="hu">
+			<use xlink:href="#if"/>
+		</clipPath>
+		<g class="st17">
+			<line class="st18" x1="74.87" x2="68.44" y1="79.16" y2="79.16"/>
+			<line class="st18" x1="66.45" x2="64.83" y1="79.16" y2="79.16"/>
+			<line class="st18" x1="62.32" x2="61.36" y1="79.16" y2="79.16"/>
+			<line class="st18" x1="182.75" x2="176.32" y1="52.16" y2="52.16"/>
+			<line class="st18" x1="174.33" x2="172.71" y1="52.16" y2="52.16"/>
+			<line class="st18" x1="170.2" x2="169.24" y1="52.16" y2="52.16"/>
+			<line class="st2" x1="273" x2="256.73" y1="96.16" y2="96.16"/>
+			<line class="st2" x1="292.61" x2="276.33" y1="34.16" y2="34.16"/>
+			<line class="st2" x1="255.08" x2="252.36" y1="96.16" y2="96.16"/>
+			<line class="st2" x1="103.67" x2="87.39" y1="124.16" y2="124.16"/>
+			<line class="st2" x1="85.04" x2="82.32" y1="124.16" y2="124.16"/>
+		</g>
+		<defs>
+			<path id="hj" d="m52.32 52.13c0.35 2.14-1.1 4.15-3.24 4.5s-4.15-1.1-4.5-3.24 1.1-4.15 3.24-4.5 4.15 1.1 4.5 3.24z"/>
+		</defs>
+		<clipPath id="gx">
+			<use xlink:href="#hj"/>
+		</clipPath>
+		<g class="st19">
+				<defs>
+					<rect id="gm" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="gb">
+					<use xlink:href="#gm"/>
+				</clipPath>
+				<g class="st20">
+					<rect class="st0" x="39.53" y="43.84" width="17.84" height="17.85"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="fq" x="10.1" y="12.28" width="346" height="181"/>
+		</defs>
+		<clipPath id="ff">
+			<use xlink:href="#fq"/>
+		</clipPath>
+		<g class="st21">
+			<path class="st22" d="m52.32 52.13c0.35 2.14-1.1 4.15-3.24 4.5s-4.15-1.1-4.5-3.24 1.1-4.15 3.24-4.5 4.15 1.1 4.5 3.24z"/>
+		</g>
+		<defs>
+			<path id="eu" d="m308.1 62.18c0.35 2.14-1.1 4.15-3.24 4.5s-4.15-1.1-4.5-3.24 1.1-4.15 3.24-4.5c2.13-0.35 4.14 1.09 4.5 3.22v0.02z"/>
+		</defs>
+		<clipPath id="ej">
+			<use xlink:href="#eu"/>
+		</clipPath>
+		<g class="st23">
+				<defs>
+					<rect id="dy" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="dn">
+					<use xlink:href="#dy"/>
+				</clipPath>
+				<g class="st24">
+					<rect class="st0" x="295.33" y="53.89" width="17.84" height="17.85"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="dc" x="10.1" y="12.28" width="346" height="181"/>
+		</defs>
+		<clipPath id="cq">
+			<use xlink:href="#dc"/>
+		</clipPath>
+		<g class="st25">
+			<path class="st22" d="m308.1 62.18c0.35 2.14-1.1 4.15-3.24 4.5s-4.15-1.1-4.5-3.24 1.1-4.15 3.24-4.5c2.13-0.35 4.14 1.09 4.5 3.22v0.02z"/>
+			<path class="st22" d="m79.96 110.91c0.35 2.14-1.1 4.15-3.24 4.5s-4.15-1.1-4.5-3.24 1.1-4.15 3.24-4.5 4.16 1.1 4.5 3.24z"/>
+			<path class="st26" d="m229.62 79.16c0.2 1.09-0.52 2.13-1.61 2.33s-2.13-0.52-2.33-1.61 0.52-2.13 1.61-2.33c0.03 0 0.05-0.01 0.08-0.01 1.07-0.16 2.06 0.56 2.25 1.62z"/>
+			<path class="st2" d="m189.87 65.56c0.2 1.09-0.52 2.13-1.61 2.33s-2.13-0.52-2.33-1.61 0.52-2.13 1.61-2.33c0.03 0 0.05-0.01 0.08-0.01 1.07-0.16 2.06 0.56 2.25 1.62z"/>
+		</g>
+		<defs>
+			<polygon id="cf" points="116.84 84.78 120.11 85.54 120.02 85.9 116.76 85.15 116.01 88.41 115.65 88.32 116.4 85.06 113.13 84.31 113.22 83.95 116.48 84.7 117.24 81.44 117.6 81.52"/>
+		</defs>
+		<clipPath id="bu">
+			<use xlink:href="#cf"/>
+		</clipPath>
+		<g class="st27">
+				<defs>
+					<rect id="bk" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="bj">
+					<use xlink:href="#bk"/>
+				</clipPath>
+				<g class="st28">
+					<polygon class="st29" points="116.84 84.78 120.11 85.54 120.02 85.9 116.76 85.15 116.01 88.41 115.65 88.32 116.4 85.06 113.13 84.31 113.22 83.95 116.48 84.7 117.24 81.44 117.6 81.52"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="bi" x="87.99" y="127.2" width="3.18" height="48.09"/>
+		</defs>
+		<clipPath id="bh">
+			<use xlink:href="#bi"/>
+		</clipPath>
+		<g class="st30">
+				<defs>
+					<rect id="bg" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="bf">
+					<use xlink:href="#bg"/>
+				</clipPath>
+				<g class="st31">
+					<rect class="st32" x="87.99" y="127.2" width="3.18" height="48.09"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="be" x="166.61" y="127.2" width="3.37" height="48.09"/>
+		</defs>
+		<clipPath id="bc">
+			<use xlink:href="#be"/>
+		</clipPath>
+		<g class="st33">
+				<defs>
+					<rect id="bb" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="ba">
+					<use xlink:href="#bb"/>
+				</clipPath>
+				<g class="st34">
+					<rect class="st32" x="166.61" y="127.2" width="3.37" height="48.09"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="az" x="77.66" y="130.36" width="99.29" height="8.73"/>
+		</defs>
+		<clipPath id="ay">
+			<use xlink:href="#az"/>
+		</clipPath>
+		<g class="st35">
+				<defs>
+					<rect id="ax" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="aw">
+					<use xlink:href="#ax"/>
+				</clipPath>
+				<g class="st36">
+					<rect class="st0" x="77.66" y="130.36" width="99.29" height="8.73"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="av" x="77.66" y="130.36" width="99.29" height="8.73"/>
+		</defs>
+		<clipPath id="au">
+			<use xlink:href="#av"/>
+		</clipPath>
+		<g class="st37">
+				<defs>
+					<rect id="at" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="ar">
+					<use xlink:href="#at"/>
+				</clipPath>
+				<g class="st38">
+					<rect class="st32" x="77.66" y="130.36" width="99.29" height="8.73"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="aq" x="77.66" y="140.25" width="99.29" height="8.73"/>
+		</defs>
+		<clipPath id="ap">
+			<use xlink:href="#aq"/>
+		</clipPath>
+		<g class="st39">
+				<defs>
+					<rect id="ao" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="an">
+					<use xlink:href="#ao"/>
+				</clipPath>
+				<g class="st40">
+					<rect class="st0" x="77.66" y="140.25" width="99.29" height="8.73"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="am" x="77.66" y="140.25" width="99.29" height="8.73"/>
+		</defs>
+		<clipPath id="al">
+			<use xlink:href="#am"/>
+		</clipPath>
+		<g class="st41">
+				<defs>
+					<rect id="ak" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="aj">
+					<use xlink:href="#ak"/>
+				</clipPath>
+				<g class="st42">
+					<rect class="st32" x="77.66" y="140.25" width="99.29" height="8.73"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="ai" x="77.66" y="155.07" width="99.29" height="3.73"/>
+		</defs>
+		<clipPath id="ag">
+			<use xlink:href="#ai"/>
+		</clipPath>
+		<g class="st43">
+				<defs>
+					<rect id="af" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="ae">
+					<use xlink:href="#af"/>
+				</clipPath>
+				<g class="st44">
+					<rect class="st0" x="77.66" y="155.07" width="99.29" height="3.73"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="ad" x="77.66" y="155.07" width="99.29" height="3.73"/>
+		</defs>
+		<clipPath id="ac">
+			<use xlink:href="#ad"/>
+		</clipPath>
+		<g class="st45">
+				<defs>
+					<rect id="ab" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="aa">
+					<use xlink:href="#ab"/>
+				</clipPath>
+				<g class="st46">
+					<rect class="st32" x="77.66" y="155.07" width="99.29" height="3.73"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="z" x="85.61" y="158.65" width="7.94" height="2.38"/>
+		</defs>
+		<clipPath id="y">
+			<use xlink:href="#z"/>
+		</clipPath>
+		<g class="st47">
+				<defs>
+					<rect id="x" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="v">
+					<use xlink:href="#x"/>
+				</clipPath>
+				<g class="st48">
+					<rect class="st0" x="85.61" y="158.65" width="7.94" height="2.38"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="u" x="85.61" y="158.65" width="7.94" height="2.38"/>
+		</defs>
+		<clipPath id="t">
+			<use xlink:href="#u"/>
+		</clipPath>
+		<g class="st49">
+				<defs>
+					<rect id="s" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="r">
+					<use xlink:href="#s"/>
+				</clipPath>
+				<g class="st50">
+					<rect class="st32" x="85.61" y="158.65" width="7.94" height="2.38"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="q" x="164.09" y="158.65" width="8.42" height="2.38"/>
+		</defs>
+		<clipPath id="p">
+			<use xlink:href="#q"/>
+		</clipPath>
+		<g class="st51">
+				<defs>
+					<rect id="o" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="n">
+					<use xlink:href="#o"/>
+				</clipPath>
+				<g class="st52">
+					<rect class="st0" x="164.09" y="158.65" width="8.42" height="2.38"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="m" x="164.09" y="158.65" width="8.42" height="2.38"/>
+		</defs>
+		<clipPath id="k">
+			<use xlink:href="#m"/>
+		</clipPath>
+		<g class="st53">
+				<defs>
+					<rect id="j" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="i">
+					<use xlink:href="#j"/>
+				</clipPath>
+				<g class="st54">
+					<rect class="st32" x="164.09" y="158.65" width="8.42" height="2.38"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="h" x="10.1" y="12.28" width="346" height="181"/>
+		</defs>
+		<clipPath id="g">
+			<use xlink:href="#h"/>
+		</clipPath>
+		<g class="st55">
+			<circle class="st56" cx="89.58" cy="135.06" r="1.59"/>
+			<ellipse class="st56" cx="168.3" cy="135.06" rx="1.68" ry="1.59"/>
+			<circle class="st56" cx="89.58" cy="144.62" r="1.59"/>
+			<ellipse class="st56" cx="168.3" cy="144.62" rx="1.68" ry="1.59"/>
+		</g>
+		<defs>
+			<rect id="f" x="244.79" y="65.37" width="3.61" height="41.22"/>
+		</defs>
+		<clipPath id="e">
+			<use xlink:href="#f"/>
+		</clipPath>
+		<g class="st57">
+				<defs>
+					<rect id="d" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="c">
+					<use xlink:href="#d"/>
+				</clipPath>
+				<g class="st58">
+					<rect class="st0" x="244.79" y="65.37" width="3.61" height="41.22"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="b" x="244.79" y="65.37" width="3.61" height="41.22"/>
+		</defs>
+		<clipPath id="pv">
+			<use xlink:href="#b"/>
+		</clipPath>
+		<g class="st59">
+				<defs>
+					<rect id="pu" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="pt">
+					<use xlink:href="#pu"/>
+				</clipPath>
+				<g class="st60">
+					<rect class="st32" x="244.79" y="65.37" width="3.61" height="41.22"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="ps" x="243.04" y="106.59" width="7.12" height="2.13"/>
+		</defs>
+		<clipPath id="pr">
+			<use xlink:href="#ps"/>
+		</clipPath>
+		<g class="st61">
+				<defs>
+					<rect id="pq" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="pp">
+					<use xlink:href="#pq"/>
+				</clipPath>
+				<g class="st62">
+					<rect class="st0" x="243.04" y="106.59" width="7.12" height="2.13"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="po" x="243.04" y="106.59" width="7.12" height="2.13"/>
+		</defs>
+		<clipPath id="pn">
+			<use xlink:href="#po"/>
+		</clipPath>
+		<g class="st63">
+				<defs>
+					<rect id="pm" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="pk">
+					<use xlink:href="#pm"/>
+				</clipPath>
+				<g class="st64">
+					<rect class="st32" x="243.04" y="106.59" width="7.12" height="2.13"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="pj" x="243.04" y="63.89" width="7.12" height="2.13"/>
+		</defs>
+		<clipPath id="pi">
+			<use xlink:href="#pj"/>
+		</clipPath>
+		<g class="st65">
+				<defs>
+					<rect id="ph" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="pg">
+					<use xlink:href="#ph"/>
+				</clipPath>
+				<g class="st66">
+					<rect class="st0" x="243.04" y="63.89" width="7.12" height="2.13"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="pf" x="243.04" y="63.89" width="7.12" height="2.13"/>
+		</defs>
+		<clipPath id="pe">
+			<use xlink:href="#pf"/>
+		</clipPath>
+		<g class="st67">
+				<defs>
+					<rect id="pd" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="pc">
+					<use xlink:href="#pd"/>
+				</clipPath>
+				<g class="st68">
+					<rect class="st32" x="243.04" y="63.89" width="7.12" height="2.13"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="pb" x="241" y="39.36" width="11.19" height="3.34"/>
+		</defs>
+		<clipPath id="oz">
+			<use xlink:href="#pb"/>
+		</clipPath>
+		<g class="st69">
+				<defs>
+					<rect id="oy" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="ox">
+					<use xlink:href="#oy"/>
+				</clipPath>
+				<g class="st70">
+					<rect class="st0" x="241" y="39.36" width="11.19" height="3.34"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="ow" x="241" y="39.36" width="11.19" height="3.34"/>
+		</defs>
+		<clipPath id="ov">
+			<use xlink:href="#ow"/>
+		</clipPath>
+		<g class="st71">
+				<defs>
+					<rect id="ou" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="ot">
+					<use xlink:href="#ou"/>
+				</clipPath>
+				<g class="st72">
+					<rect class="st32" x="241" y="39.36" width="11.19" height="3.34"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="os" x="241.39" y="61.76" width="10.41" height="2.13"/>
+		</defs>
+		<clipPath id="or">
+			<use xlink:href="#os"/>
+		</clipPath>
+		<g class="st73">
+				<defs>
+					<rect id="oq" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="oo">
+					<use xlink:href="#oq"/>
+				</clipPath>
+				<g class="st74">
+					<rect class="st0" x="241.39" y="61.76" width="10.41" height="2.13"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="on" x="241.39" y="61.76" width="10.41" height="2.13"/>
+		</defs>
+		<clipPath id="om">
+			<use xlink:href="#on"/>
+		</clipPath>
+		<g class="st75">
+				<defs>
+					<rect id="ol" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="ok">
+					<use xlink:href="#ol"/>
+				</clipPath>
+				<g class="st76">
+					<rect class="st32" x="241.39" y="61.76" width="10.41" height="2.13"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="oj" x="236.05" y="41.86" width="21.09" height="2.13"/>
+		</defs>
+		<clipPath id="oi">
+			<use xlink:href="#oj"/>
+		</clipPath>
+		<g class="st77">
+				<defs>
+					<rect id="oh" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="og">
+					<use xlink:href="#oh"/>
+				</clipPath>
+				<g class="st78">
+					<rect class="st0" x="236.05" y="41.86" width="21.09" height="2.13"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="of" x="236.05" y="41.86" width="21.09" height="2.13"/>
+		</defs>
+		<clipPath id="od">
+			<use xlink:href="#of"/>
+		</clipPath>
+		<g class="st79">
+				<defs>
+					<rect id="oc" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="ob">
+					<use xlink:href="#oc"/>
+				</clipPath>
+				<g class="st80">
+					<rect class="st32" x="236.05" y="41.86" width="21.09" height="2.13"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="oa" x="10.1" y="12.28" width="346" height="181"/>
+		</defs>
+		<clipPath id="nz">
+			<use xlink:href="#oa"/>
+		</clipPath>
+		<g class="st81">
+			<line class="st2" x1="52.91" x2="196.99" y1="175.6" y2="175.6"/>
+			<line class="st2" x1="294.45" x2="334.6" y1="175.28" y2="175.28"/>
+		</g>
+		<defs>
+				<rect id="ny" transform="matrix(.3256 -.9455 .9455 .3256 29.238 376.16)" x="272.37" y="167.39" width="11.86" height=".4"/>
+		</defs>
+		<clipPath id="nx">
+			<use xlink:href="#ny"/>
+		</clipPath>
+		<g class="st82">
+				<defs>
+					<rect id="nw" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="nv">
+					<use xlink:href="#nw"/>
+				</clipPath>
+				<g class="st83">
+						<rect class="st84" transform="matrix(.3281 -.9446 .9446 .3281 30.413 376.94)" x="269.2" y="161.86" width="21.98" height="10.46"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="nu" transform="matrix(.3256 -.9455 .9455 .3256 48.571 370.44)" x="277.74" y="150.97" width="12.43" height=".4"/>
+		</defs>
+		<clipPath id="ns">
+			<use xlink:href="#nu"/>
+		</clipPath>
+		<g class="st85">
+				<defs>
+					<rect id="nr" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="nq">
+					<use xlink:href="#nr"/>
+				</clipPath>
+				<g class="st86">
+						<rect class="st32" transform="matrix(.3256 -.9455 .9455 .3256 48.571 370.44)" x="277.74" y="150.97" width="12.43" height=".4"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="np" transform="matrix(.8988 -.4384 .4384 .8988 -44.471 141.73)" x="284.52" y="161.08" width=".4" height="12.21"/>
+		</defs>
+		<clipPath id="no">
+			<use xlink:href="#np"/>
+		</clipPath>
+		<g class="st87">
+				<defs>
+					<rect id="nn" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="nm">
+					<use xlink:href="#nn"/>
+				</clipPath>
+				<g class="st88">
+						<rect class="st84" transform="matrix(.8988 -.4384 .4384 .8988 -44.471 141.73)" x="279.52" y="156.08" width="10.4" height="22.21"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="nl" transform="matrix(.8988 -.4384 .4384 .8988 -38.374 136.8)" x="276.88" y="145.23" width=".4" height="12.56"/>
+		</defs>
+		<clipPath id="nk">
+			<use xlink:href="#nl"/>
+		</clipPath>
+		<g class="st89">
+				<defs>
+					<rect id="nj" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="nh">
+					<use xlink:href="#nj"/>
+				</clipPath>
+				<g class="st90">
+						<rect class="st91" transform="matrix(.8988 -.4384 .4384 .8988 -38.374 136.8)" x="276.88" y="145.23" width=".4" height="12.56"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="ng" transform="matrix(.8988 -.4384 .4384 .8988 -38.374 136.8)" x="276.88" y="145.23" width=".4" height="12.56"/>
+		</defs>
+		<clipPath id="nf">
+			<use xlink:href="#ng"/>
+		</clipPath>
+		<g class="st92">
+				<defs>
+					<rect id="ne" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="nd">
+					<use xlink:href="#ne"/>
+				</clipPath>
+				<g class="st93">
+						<rect class="st94" transform="matrix(.8988 -.4384 .4384 .8988 -38.374 136.8)" x="276.88" y="145.23" width=".4" height="12.56"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="nc" transform="matrix(.8192 -.5736 .5736 .8192 -36.375 193.13)" x="281.93" y="154.05" width="12.3" height=".4"/>
+		</defs>
+		<clipPath id="nb">
+			<use xlink:href="#nc"/>
+		</clipPath>
+		<g class="st95">
+				<defs>
+					<rect id="na" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="mz">
+					<use xlink:href="#na"/>
+				</clipPath>
+				<g class="st96">
+						<rect class="st32" transform="matrix(.8192 -.5736 .5736 .8192 -36.375 193.13)" x="281.93" y="154.05" width="12.3" height=".4"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="my" transform="matrix(.8211 -.5708 .5708 .8211 -45.377 185.71)" x="267.49" y="165.05" width="12.19" height=".4"/>
+		</defs>
+		<clipPath id="mw">
+			<use xlink:href="#my"/>
+		</clipPath>
+		<g class="st97">
+				<defs>
+					<rect id="mv" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="mu">
+					<use xlink:href="#mv"/>
+				</clipPath>
+				<g class="st98">
+						<rect class="st84" transform="matrix(.8192 -.5736 .5736 .8192 -44.631 186.8)" x="262.8" y="158.97" width="22.21" height="10.4"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="mt" transform="matrix(.6293 -.7771 .7771 .6293 -12.154 279.26)" x="280.56" y="152.17" width="12.21" height=".4"/>
+		</defs>
+		<clipPath id="ms">
+			<use xlink:href="#mt"/>
+		</clipPath>
+		<g class="st99">
+				<defs>
+					<rect id="mr" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="mq">
+					<use xlink:href="#mr"/>
+				</clipPath>
+				<g class="st100">
+						<rect class="st32" transform="matrix(.6293 -.7771 .7771 .6293 -12.154 279.26)" x="280.56" y="152.17" width="12.21" height=".4"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="mp" transform="matrix(.6293 -.7771 .7771 .6293 -26.758 275.76)" x="269.41" y="165.73" width="12.56" height=".4"/>
+		</defs>
+		<clipPath id="mo">
+			<use xlink:href="#mp"/>
+		</clipPath>
+		<g class="st101">
+				<defs>
+					<rect id="mn" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="ml">
+					<use xlink:href="#mn"/>
+				</clipPath>
+				<g class="st102">
+						<rect class="st32" transform="matrix(.6293 -.7771 .7771 .6293 -26.758 275.76)" x="269.41" y="165.73" width="12.56" height=".4"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="mk" transform="matrix(.9877 -.1564 .1564 .9877 -20.155 45.542)" x="279.05" y="144.74" width=".4" height="12.15"/>
+		</defs>
+		<clipPath id="mj">
+			<use xlink:href="#mk"/>
+		</clipPath>
+		<g class="st103">
+				<defs>
+					<rect id="mi" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="mh">
+					<use xlink:href="#mi"/>
+				</clipPath>
+				<g class="st104">
+						<rect class="st91" transform="matrix(.9877 -.1564 .1564 .9877 -20.155 45.542)" x="279.05" y="144.74" width=".4" height="12.15"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="mg" transform="matrix(.9877 -.1564 .1564 .9877 -20.155 45.542)" x="279.05" y="144.74" width=".4" height="12.15"/>
+		</defs>
+		<clipPath id="mf">
+			<use xlink:href="#mg"/>
+		</clipPath>
+		<g class="st105">
+				<defs>
+					<rect id="me" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="md">
+					<use xlink:href="#me"/>
+				</clipPath>
+				<g class="st106">
+						<rect class="st32" transform="matrix(.9877 -.1564 .1564 .9877 -20.155 45.542)" x="279.05" y="144.74" width=".4" height="12.15"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="mc" transform="matrix(.9877 -.1564 .1564 .9877 -22.802 46.178)" x="281.77" y="161.71" width=".4" height="12.49"/>
+		</defs>
+		<clipPath id="ma">
+			<use xlink:href="#mc"/>
+		</clipPath>
+		<g class="st107">
+				<defs>
+					<rect id="lz" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="ly">
+					<use xlink:href="#lz"/>
+				</clipPath>
+				<g class="st108">
+						<rect class="st84" transform="matrix(.9877 -.1564 .1564 .9877 -22.802 46.178)" x="276.77" y="156.71" width="10.4" height="22.49"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="lx" transform="matrix(.9507 -.3102 .3102 .9507 -36.602 92.522)" x="266.49" y="161.14" width="12.2" height=".4"/>
+		</defs>
+		<clipPath id="lw">
+			<use xlink:href="#lx"/>
+		</clipPath>
+		<g class="st109">
+				<defs>
+					<rect id="lv" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="lu">
+					<use xlink:href="#lv"/>
+				</clipPath>
+				<g class="st110">
+						<rect class="st91" transform="matrix(.9507 -.3102 .3102 .9507 -36.602 92.522)" x="266.49" y="161.14" width="12.2" height=".4"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="lt" transform="matrix(.9507 -.3102 .3102 .9507 -36.602 92.522)" x="266.49" y="161.14" width="12.2" height=".4"/>
+		</defs>
+		<clipPath id="ls">
+			<use xlink:href="#lt"/>
+		</clipPath>
+		<g class="st111">
+				<defs>
+					<rect id="lr" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="lo">
+					<use xlink:href="#lr"/>
+				</clipPath>
+				<g class="st112">
+						<rect class="st32" transform="matrix(.9511 -.309 .309 .9511 -36.637 92.192)" x="266.62" y="161.56" width="12.21" height=".4"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="ln" transform="matrix(.9511 -.309 .309 .9511 -34.16 97.054)" x="283.03" y="156.16" width="12.56" height=".4"/>
+		</defs>
+		<clipPath id="lm">
+			<use xlink:href="#ln"/>
+		</clipPath>
+		<g class="st113">
+				<defs>
+					<rect id="ll" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="lk">
+					<use xlink:href="#ll"/>
+				</clipPath>
+				<g class="st114">
+						<rect class="st32" transform="matrix(.9511 -.309 .309 .9511 -34.16 97.054)" x="283.03" y="156.16" width="12.56" height=".4"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="lj" transform="matrix(.5 -.866 .866 .5 2.2332 331.99)" x="288.42" y="158.07" width=".4" height="11.97"/>
+		</defs>
+		<clipPath id="li">
+			<use xlink:href="#lj"/>
+		</clipPath>
+		<g class="st115">
+				<defs>
+					<rect id="lh" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="lg">
+					<use xlink:href="#lh"/>
+				</clipPath>
+				<g class="st116">
+						<rect class="st84" transform="matrix(.5 -.866 .866 .5 2.2332 331.99)" x="283.42" y="153.07" width="10.4" height="21.97"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="lf" transform="matrix(.5 -.866 .866 .5 2.2408 314.72)" x="273.48" y="149.22" width=".4" height="12.4"/>
+		</defs>
+		<clipPath id="ld">
+			<use xlink:href="#lf"/>
+		</clipPath>
+		<g class="st117">
+				<defs>
+					<rect id="lc" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="lb">
+					<use xlink:href="#lc"/>
+				</clipPath>
+				<g class="st118">
+						<rect class="st32" transform="matrix(.5 -.866 .866 .5 2.2408 314.72)" x="273.48" y="149.22" width=".4" height="12.4"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="la" transform="matrix(.7193 -.6947 .6947 .7193 -34.603 245.93)" x="286.85" y="159.94" width=".4" height="11.7"/>
+		</defs>
+		<clipPath id="kz">
+			<use xlink:href="#la"/>
+		</clipPath>
+		<g class="st119">
+				<defs>
+					<rect id="ky" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="kx">
+					<use xlink:href="#ky"/>
+				</clipPath>
+				<g class="st120">
+						<rect class="st32" transform="matrix(.7193 -.6947 .6947 .7193 -34.603 245.93)" x="286.85" y="159.94" width=".4" height="11.7"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="kw" transform="matrix(.7193 -.6947 .6947 .7193 -29.377 234.2)" x="274.94" y="147.32" width=".4" height="12.26"/>
+		</defs>
+		<clipPath id="kv">
+			<use xlink:href="#kw"/>
+		</clipPath>
+		<g class="st121">
+				<defs>
+					<rect id="ku" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="ks">
+					<use xlink:href="#ku"/>
+				</clipPath>
+				<g class="st122">
+						<rect class="st32" transform="matrix(.7193 -.6947 .6947 .7193 -29.377 234.2)" x="274.94" y="147.32" width=".4" height="12.26"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="kr" transform="matrix(.2589 -.9659 .9659 .2589 59.918 399.93)" x="290.38" y="154.79" width=".4" height="12.26"/>
+		</defs>
+		<clipPath id="kq">
+			<use xlink:href="#kr"/>
+		</clipPath>
+		<g class="st123">
+				<defs>
+					<rect id="kp" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="ko">
+					<use xlink:href="#kp"/>
+				</clipPath>
+				<g class="st124">
+						<rect class="st32" transform="matrix(.2588 -.9659 .9659 .2588 58.31 399.75)" x="289.44" y="155.78" width=".4" height="12.21"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="kn" transform="matrix(.2589 -.9659 .9659 .2589 51.787 380.51)" x="273.66" y="150.24" width=".4" height="12.53"/>
+		</defs>
+		<clipPath id="km">
+			<use xlink:href="#kn"/>
+		</clipPath>
+		<g class="st125">
+				<defs>
+					<rect id="kl" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="kk">
+					<use xlink:href="#kl"/>
+				</clipPath>
+				<g class="st126">
+						<rect class="st32" transform="matrix(.2588 -.9659 .9659 .2588 50.267 380.32)" x="272.76" y="151.17" width=".4" height="12.48"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="kj" transform="matrix(.3256 -.9455 .9455 .3256 -13.925 315.43)" x="208.22" y="167.28" width="11.86" height=".4"/>
+		</defs>
+		<clipPath id="kh">
+			<use xlink:href="#kj"/>
+		</clipPath>
+		<g class="st127">
+				<defs>
+					<rect id="kg" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="kf">
+					<use xlink:href="#kg"/>
+				</clipPath>
+				<g class="st128">
+						<rect class="st84" transform="matrix(.3256 -.9455 .9455 .3256 -13.925 315.43)" x="203.22" y="162.28" width="21.86" height="10.4"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="ke" transform="matrix(.3256 -.9455 .9455 .3256 5.4209 309.7)" x="213.59" y="150.85" width="12.43" height=".4"/>
+		</defs>
+		<clipPath id="kd">
+			<use xlink:href="#ke"/>
+		</clipPath>
+		<g class="st129">
+				<defs>
+					<rect id="kc" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="kb">
+					<use xlink:href="#kc"/>
+				</clipPath>
+				<g class="st130">
+						<rect class="st32" transform="matrix(.3256 -.9455 .9455 .3256 5.4209 309.7)" x="213.59" y="150.85" width="12.43" height=".4"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="ka" transform="matrix(.8988 -.4384 .4384 .8988 -50.92 113.6)" x="220.36" y="160.97" width=".4" height="12.21"/>
+		</defs>
+		<clipPath id="jz">
+			<use xlink:href="#ka"/>
+		</clipPath>
+		<g class="st131">
+				<defs>
+					<rect id="jy" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="jw">
+					<use xlink:href="#jy"/>
+				</clipPath>
+				<g class="st132">
+						<rect class="st84" transform="matrix(.8988 -.4384 .4384 .8988 -50.92 113.6)" x="215.36" y="155.97" width="10.4" height="22.21"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="jv" transform="matrix(.8988 -.4384 .4384 .8988 -44.82 108.66)" x="212.72" y="145.12" width=".4" height="12.56"/>
+		</defs>
+		<clipPath id="ju">
+			<use xlink:href="#jv"/>
+		</clipPath>
+		<g class="st133">
+				<defs>
+					<rect id="jt" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="js">
+					<use xlink:href="#jt"/>
+				</clipPath>
+				<g class="st134">
+						<rect class="st32" transform="matrix(.8988 -.4384 .4384 .8988 -44.82 108.66)" x="212.72" y="145.12" width=".4" height="12.56"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="jr" transform="matrix(.8192 -.5736 .5736 .8192 -47.91 156.32)" x="217.78" y="153.93" width="12.3" height=".4"/>
+		</defs>
+		<clipPath id="jq">
+			<use xlink:href="#jr"/>
+		</clipPath>
+		<g class="st135">
+				<defs>
+					<rect id="jp" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="jo">
+					<use xlink:href="#jp"/>
+				</clipPath>
+				<g class="st136">
+						<rect class="st32" transform="matrix(.8192 -.5736 .5736 .8192 -47.91 156.32)" x="217.78" y="153.93" width="12.3" height=".4"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="jn" transform="matrix(.8192 -.5736 .5736 .8192 -56.171 149.98)" x="203.64" y="163.86" width="12.21" height=".4"/>
+		</defs>
+		<clipPath id="jl">
+			<use xlink:href="#jn"/>
+		</clipPath>
+		<g class="st137">
+				<defs>
+					<rect id="jk" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="jj">
+					<use xlink:href="#jk"/>
+				</clipPath>
+				<g class="st138">
+						<rect class="st84" transform="matrix(.8192 -.5736 .5736 .8192 -56.171 149.98)" x="198.64" y="158.86" width="22.21" height="10.4"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="ji" transform="matrix(.6293 -.7771 .7771 .6293 -35.85 229.37)" x="216.41" y="152.06" width="12.21" height=".4"/>
+		</defs>
+		<clipPath id="jh">
+			<use xlink:href="#ji"/>
+		</clipPath>
+		<g class="st139">
+				<defs>
+					<rect id="jg" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="jf">
+					<use xlink:href="#jg"/>
+				</clipPath>
+				<g class="st140">
+						<rect class="st32" transform="matrix(.6293 -.7771 .7771 .6293 -35.85 229.37)" x="216.41" y="152.06" width="12.21" height=".4"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="je" transform="matrix(.6293 -.7771 .7771 .6293 -50.46 225.86)" x="205.26" y="165.63" width="12.56" height=".4"/>
+		</defs>
+		<clipPath id="jd">
+			<use xlink:href="#je"/>
+		</clipPath>
+		<g class="st141">
+				<defs>
+					<rect id="jc" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="ja">
+					<use xlink:href="#jc"/>
+				</clipPath>
+				<g class="st142">
+						<rect class="st32" transform="matrix(.6293 -.7771 .7771 .6293 -50.46 225.86)" x="205.26" y="165.63" width="12.56" height=".4"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="iz" transform="matrix(.9877 -.1564 .1564 .9877 -20.929 35.504)" x="214.9" y="144.64" width=".4" height="12.15"/>
+		</defs>
+		<clipPath id="iy">
+			<use xlink:href="#iz"/>
+		</clipPath>
+		<g class="st143">
+				<defs>
+					<rect id="ix" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="iw">
+					<use xlink:href="#ix"/>
+				</clipPath>
+				<g class="st144">
+						<rect class="st91" transform="matrix(.9877 -.1564 .1564 .9877 -20.929 35.504)" x="214.9" y="144.64" width=".4" height="12.15"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="iv" transform="matrix(.9877 -.1564 .1564 .9877 -20.929 35.504)" x="214.9" y="144.64" width=".4" height="12.15"/>
+		</defs>
+		<clipPath id="iu">
+			<use xlink:href="#iv"/>
+		</clipPath>
+		<g class="st145">
+				<defs>
+					<rect id="it" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="is">
+					<use xlink:href="#it"/>
+				</clipPath>
+				<g class="st146">
+						<rect class="st32" transform="matrix(.9877 -.1564 .1564 .9877 -20.929 35.504)" x="214.9" y="144.64" width=".4" height="12.15"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="ir" transform="matrix(.9877 -.1564 .1564 .9877 -23.574 36.138)" x="217.6" y="161.59" width=".4" height="12.49"/>
+		</defs>
+		<clipPath id="ip">
+			<use xlink:href="#ir"/>
+		</clipPath>
+		<g class="st147">
+				<defs>
+					<rect id="io" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="in">
+					<use xlink:href="#io"/>
+				</clipPath>
+				<g class="st148">
+						<rect class="st84" transform="matrix(.9877 -.1564 .1564 .9877 -23.574 36.138)" x="212.6" y="156.59" width="10.4" height="22.49"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="im" transform="matrix(.9507 -.3102 .3102 .9507 -39.75 72.636)" x="202.39" y="161.09" width="12.2" height=".4"/>
+		</defs>
+		<clipPath id="il">
+			<use xlink:href="#im"/>
+		</clipPath>
+		<g class="st149">
+				<defs>
+					<rect id="ik" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="ij">
+					<use xlink:href="#ik"/>
+				</clipPath>
+				<g class="st150">
+						<rect class="st91" transform="matrix(.9507 -.3102 .3102 .9507 -39.75 72.636)" x="202.39" y="161.09" width="12.2" height=".4"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="ii" transform="matrix(.9507 -.3102 .3102 .9507 -39.75 72.636)" x="202.39" y="161.09" width="12.2" height=".4"/>
+		</defs>
+		<clipPath id="ih">
+			<use xlink:href="#ii"/>
+		</clipPath>
+		<g class="st151">
+				<defs>
+					<rect id="ig" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="ie">
+					<use xlink:href="#ig"/>
+				</clipPath>
+				<g class="st152">
+						<rect class="st32" transform="matrix(.9511 -.309 .309 .9511 -39.744 72.359)" x="202.45" y="161.45" width="12.21" height=".4"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="id" transform="matrix(.9511 -.309 .309 .9511 -37.268 77.226)" x="218.88" y="156.06" width="12.56" height=".4"/>
+		</defs>
+		<clipPath id="ic">
+			<use xlink:href="#id"/>
+		</clipPath>
+		<g class="st153">
+				<defs>
+					<rect id="ib" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="ia">
+					<use xlink:href="#ib"/>
+				</clipPath>
+				<g class="st154">
+						<rect class="st32" transform="matrix(.9511 -.309 .309 .9511 -37.268 77.226)" x="218.88" y="156.06" width="12.56" height=".4"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="hz" transform="matrix(.5 -.866 .866 .5 -29.757 276.37)" x="224.27" y="157.97" width=".4" height="11.97"/>
+		</defs>
+		<clipPath id="hy">
+			<use xlink:href="#hz"/>
+		</clipPath>
+		<g class="st155">
+				<defs>
+					<rect id="hx" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="hw">
+					<use xlink:href="#hx"/>
+				</clipPath>
+				<g class="st156">
+						<rect class="st84" transform="matrix(.5 -.866 .866 .5 -29.757 276.37)" x="219.27" y="152.97" width="10.4" height="21.97"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="hv" transform="matrix(.5 -.866 .866 .5 -29.75 259.12)" x="209.33" y="149.12" width=".4" height="12.4"/>
+		</defs>
+		<clipPath id="ht">
+			<use xlink:href="#hv"/>
+		</clipPath>
+		<g class="st157">
+				<defs>
+					<rect id="hs" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="hr">
+					<use xlink:href="#hs"/>
+				</clipPath>
+				<g class="st158">
+						<rect class="st32" transform="matrix(.5 -.866 .866 .5 -29.75 259.12)" x="209.33" y="149.12" width=".4" height="12.4"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="hq" transform="matrix(.7193 -.6947 .6947 .7193 -52.526 201.33)" x="222.7" y="159.82" width=".4" height="11.7"/>
+		</defs>
+		<clipPath id="hp">
+			<use xlink:href="#hq"/>
+		</clipPath>
+		<g class="st159">
+				<defs>
+					<rect id="ho" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="hn">
+					<use xlink:href="#ho"/>
+				</clipPath>
+				<g class="st160">
+						<rect class="st32" transform="matrix(.7193 -.6947 .6947 .7193 -52.526 201.33)" x="222.7" y="159.82" width=".4" height="11.7"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="hm" transform="matrix(.7193 -.6947 .6947 .7193 -47.307 189.6)" x="210.78" y="147.21" width=".4" height="12.26"/>
+		</defs>
+		<clipPath id="hl">
+			<use xlink:href="#hm"/>
+		</clipPath>
+		<g class="st161">
+				<defs>
+					<rect id="hk" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="hh">
+					<use xlink:href="#hk"/>
+				</clipPath>
+				<g class="st162">
+						<rect class="st32" transform="matrix(.7193 -.6947 .6947 .7193 -47.307 189.6)" x="210.78" y="147.21" width=".4" height="12.26"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="hg" transform="matrix(.2588 -.9659 .9659 .2588 10.874 337.7)" x="225.29" y="155.66" width=".4" height="12.21"/>
+		</defs>
+		<clipPath id="hf">
+			<use xlink:href="#hg"/>
+		</clipPath>
+		<g class="st163">
+				<defs>
+					<rect id="he" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="hd">
+					<use xlink:href="#he"/>
+				</clipPath>
+				<g class="st164">
+						<rect class="st32" transform="matrix(.2588 -.9659 .9659 .2588 10.874 337.7)" x="225.29" y="155.66" width=".4" height="12.21"/>
+				</g>
+		</g>
+		<defs>
+				<rect id="hc" transform="matrix(.2588 -.9659 .9659 .2588 2.8199 318.28)" x="208.6" y="151.06" width=".4" height="12.48"/>
+		</defs>
+		<clipPath id="hb">
+			<use xlink:href="#hc"/>
+		</clipPath>
+		<g class="st165">
+				<defs>
+					<rect id="ha" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="gz">
+					<use xlink:href="#ha"/>
+				</clipPath>
+				<g class="st166">
+						<rect class="st32" transform="matrix(.2588 -.9659 .9659 .2588 2.8199 318.28)" x="208.6" y="151.06" width=".4" height="12.48"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="gy" x="202.18" y="158.87" width="12.2" height=".4"/>
+		</defs>
+		<clipPath id="gw">
+			<use xlink:href="#gy"/>
+		</clipPath>
+		<g class="st167">
+				<defs>
+					<rect id="gv" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="gu">
+					<use xlink:href="#gv"/>
+				</clipPath>
+				<g class="st168">
+					<rect class="st32" x="202.18" y="158.87" width="12.2" height=".4"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="gt" x="219.18" y="158.84" width="12.78" height=".4"/>
+		</defs>
+		<clipPath id="gs">
+			<use xlink:href="#gt"/>
+		</clipPath>
+		<g class="st169">
+				<defs>
+					<rect id="gr" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="gq">
+					<use xlink:href="#gr"/>
+				</clipPath>
+				<g class="st170">
+					<rect class="st32" x="219.18" y="158.84" width="12.78" height=".4"/>
+				</g>
+		</g>
+		<defs>
+			<path id="gp" d="m281.47 173.91c8.04-0.18 14.41-6.85 14.23-14.89s-6.85-14.41-14.89-14.23c-7.91 0.18-14.23 6.64-14.23 14.55 0.1 8.14 6.76 14.66 14.89 14.57zm11.79-2.77c-3.17 3.18-5.17 3.43-11.48 3.5s-9 0.18-12.37-3.22c-6.82-6.51-7.08-17.31-0.57-24.13s17.31-7.08 24.13-0.57 7.08 17.31 0.57 24.13c-0.08 0.09-0.18 0.19-0.28 0.29z"/>
+		</defs>
+		<clipPath id="go">
+			<use xlink:href="#gp"/>
+		</clipPath>
+		<g class="st171">
+				<defs>
+					<rect id="gn" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="gl">
+					<use xlink:href="#gn"/>
+				</clipPath>
+				<g class="st172">
+					<rect class="st0" x="259.6" y="137.48" width="43.74" height="42.19"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="gk" x="10.1" y="12.28" width="346" height="181"/>
+		</defs>
+		<clipPath id="gj">
+			<use xlink:href="#gk"/>
+		</clipPath>
+		<g class="st173">
+			<path class="st56" d="m281.47 173.91c8.04-0.18 14.41-6.85 14.23-14.89s-6.85-14.41-14.89-14.23c-7.91 0.18-14.23 6.64-14.23 14.55 0.1 8.14 6.76 14.66 14.89 14.57zm11.79-2.77c-3.17 3.18-5.17 3.43-11.48 3.5s-9 0.18-12.37-3.22c-6.82-6.51-7.08-17.31-0.57-24.13s17.31-7.08 24.13-0.57 7.08 17.31 0.57 24.13c-0.08 0.09-0.18 0.19-0.28 0.29z"/>
+		</g>
+		<defs>
+			<rect id="gi" x="266.33" y="158.98" width="12.2" height=".4"/>
+		</defs>
+		<clipPath id="gh">
+			<use xlink:href="#gi"/>
+		</clipPath>
+		<g class="st174">
+				<defs>
+					<rect id="gg" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="gf">
+					<use xlink:href="#gg"/>
+				</clipPath>
+				<g class="st175">
+					<rect class="st32" x="266.33" y="158.98" width="12.2" height=".4"/>
+				</g>
+		</g>
+		<defs>
+			<path id="ge" d="m216.99 173.91c8.04-0.18 14.41-6.85 14.23-14.89s-6.85-14.41-14.89-14.23c-7.91 0.18-14.23 6.64-14.23 14.55 0.1 8.14 6.76 14.66 14.89 14.57zm11.8-2.77c-3.18 3.18-0.28 3.37-11.48 3.5s-9 0.18-12.38-3.23c-6.82-6.51-7.06-17.32-0.55-24.13 6.51-6.82 17.32-7.06 24.13-0.55 6.82 6.51 7.06 17.32 0.55 24.13-0.08 0.09-0.17 0.18-0.27 0.28z"/>
+		</defs>
+		<clipPath id="gd">
+			<use xlink:href="#ge"/>
+		</clipPath>
+		<g class="st176">
+				<defs>
+					<rect id="gc" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="ga">
+					<use xlink:href="#gc"/>
+				</clipPath>
+				<g class="st177">
+					<rect class="st0" x="195.13" y="137.48" width="43.74" height="42.21"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="fz" x="10.1" y="12.28" width="346" height="181"/>
+		</defs>
+		<clipPath id="fy">
+			<use xlink:href="#fz"/>
+		</clipPath>
+		<g class="st178">
+			<path class="st56" d="m216.99 173.91c8.04-0.18 14.41-6.85 14.23-14.89s-6.85-14.41-14.89-14.23c-7.91 0.18-14.23 6.64-14.23 14.55 0.1 8.14 6.76 14.66 14.89 14.57zm11.8-2.77c-3.18 3.18-0.28 3.37-11.48 3.5s-9 0.18-12.38-3.23c-6.82-6.51-7.06-17.32-0.55-24.13 6.51-6.82 17.32-7.06 24.13-0.55 6.82 6.51 7.06 17.32 0.55 24.13-0.08 0.09-0.17 0.18-0.27 0.28z"/>
+		</g>
+		<defs>
+			<path id="fx" d="m264.29 136.36h-38.68l19 14.32c2.34-1.5 5.42-1.08 7.27 1l12.41-15.32zm14.12 20.85-11-20.71-14.31 17.65c0.07 0.35 0.11 0.7 0.11 1.06 0.01 0.08 0.01 0.15 0 0.23l25.2 1.77zm-8.88-23.36v1.39l11.79 22.17h0.11v0.63l-0.75-0.06-1.44 0.77-0.48-0.9-25.66-1.78c-0.62 3.01-3.56 4.94-6.57 4.33-2.49-0.51-4.32-2.65-4.43-5.19 0-0.96 0.26-1.9 0.75-2.72l-19.22-14.48-5.47 21.92-2.43-0.6 6.23-25v-0.51h0.14l0.06-0.22 0.42 0.1 1.34-4.66-3.19-0.85c-0.38 0.32-0.85 0.5-1.35 0.5-1.1-0.01-2-0.91-1.99-2.01s0.91-2 2.01-1.99c1.02 0.01 1.87 0.78 1.98 1.79l5 1.33-0.47 1.77-0.23-0.06-1.23 4.3h41.85v-2.09h3.25l-0.02 2.12z"/>
+		</defs>
+		<clipPath id="fw">
+			<use xlink:href="#fx"/>
+		</clipPath>
+		<g class="st179">
+				<defs>
+					<rect id="fv" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="fu">
+					<use xlink:href="#fv"/>
+				</clipPath>
+				<g class="st180">
+					<rect class="st0" x="210.73" y="119.75" width="75.74" height="45.89"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="ft" x="10.1" y="12.28" width="346" height="181"/>
+		</defs>
+		<clipPath id="fs">
+			<use xlink:href="#ft"/>
+		</clipPath>
+		<g class="st181">
+			<path class="st56" d="m264.29 136.36h-38.68l19 14.32c2.34-1.5 5.42-1.08 7.27 1l12.41-15.32zm14.12 20.85-11-20.71-14.31 17.65c0.07 0.35 0.11 0.7 0.11 1.06 0.01 0.08 0.01 0.15 0 0.23l25.2 1.77zm-8.88-23.36v1.39l11.79 22.17h0.11v0.63l-0.75-0.06-1.44 0.77-0.48-0.9-25.66-1.78c-0.62 3.01-3.56 4.94-6.57 4.33-2.49-0.51-4.32-2.65-4.43-5.19 0-0.96 0.26-1.9 0.75-2.72l-19.22-14.48-5.47 21.92-2.43-0.6 6.23-25v-0.51h0.14l0.06-0.22 0.42 0.1 1.34-4.66-3.19-0.85c-0.38 0.32-0.85 0.5-1.35 0.5-1.1-0.01-2-0.91-1.99-2.01s0.91-2 2.01-1.99c1.02 0.01 1.87 0.78 1.98 1.79l5 1.33-0.47 1.77-0.23-0.06-1.23 4.3h41.85v-2.09h3.25l-0.02 2.12z"/>
+		</g>
+		<defs>
+			<path id="fr" d="m252.1 162.01-3.12-4c-0.4 0.17-0.83 0.26-1.26 0.26-1.66-0.03-2.98-1.39-2.95-3.05s1.39-2.98 3.05-2.95c1.64 0.03 2.95 1.36 2.95 3 0 0.6-0.19 1.19-0.53 1.68l3.92 5h1.68v2h-5.07v-2l1.33 0.06z"/>
+		</defs>
+		<clipPath id="fp">
+			<use xlink:href="#fr"/>
+		</clipPath>
+		<g class="st182">
+				<defs>
+					<rect id="fo" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="fn">
+					<use xlink:href="#fo"/>
+				</clipPath>
+				<g class="st183">
+					<rect class="st0" x="239.65" y="147.28" width="21.17" height="21.67"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="fm" x="10.1" y="12.28" width="346" height="181"/>
+		</defs>
+		<clipPath id="fl">
+			<use xlink:href="#fm"/>
+		</clipPath>
+		<g class="st184">
+			<path class="st56" d="m252.1 162.01-3.12-4c-0.4 0.17-0.83 0.26-1.26 0.26-1.66-0.03-2.98-1.39-2.95-3.05s1.39-2.98 3.05-2.95c1.64 0.03 2.95 1.36 2.95 3 0 0.6-0.19 1.19-0.53 1.68l3.92 5h1.68v2h-5.07v-2l1.33 0.06z"/>
+		</g>
+		<defs>
+			<path id="fk" d="m216.72 161.93c1.42-0.03 2.55-1.21 2.52-2.64-0.03-1.42-1.21-2.55-2.64-2.52-1.4 0.03-2.52 1.18-2.52 2.58 0.02 1.44 1.2 2.59 2.64 2.58z"/>
+		</defs>
+		<clipPath id="fj">
+			<use xlink:href="#fk"/>
+		</clipPath>
+		<g class="st185">
+				<defs>
+					<rect id="fi" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="fh">
+					<use xlink:href="#fi"/>
+				</clipPath>
+				<g class="st186">
+					<rect class="st0" x="209.08" y="151.77" width="15.28" height="15.16"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="fg" x="10.1" y="12.28" width="346" height="181"/>
+		</defs>
+		<clipPath id="fe">
+			<use xlink:href="#fg"/>
+		</clipPath>
+		<g class="st187">
+			<ellipse class="st56" cx="216.72" cy="159.35" rx="2.64" ry="2.58"/>
+		</g>
+		<defs>
+			<rect id="fd" x="283.34" y="158.95" width="12.78" height=".4"/>
+		</defs>
+		<clipPath id="fc">
+			<use xlink:href="#fd"/>
+		</clipPath>
+		<g class="st188">
+				<defs>
+					<rect id="fb" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="fa">
+					<use xlink:href="#fb"/>
+				</clipPath>
+				<g class="st189">
+					<rect class="st32" x="283.34" y="158.95" width="12.78" height=".4"/>
+				</g>
+		</g>
+		<defs>
+			<path id="ez" d="m281.18 161.88c1.42-0.03 2.55-1.21 2.52-2.64-0.03-1.42-1.21-2.55-2.64-2.52-1.4 0.03-2.52 1.18-2.52 2.58 0.02 1.44 1.2 2.59 2.64 2.58z"/>
+		</defs>
+		<clipPath id="ey">
+			<use xlink:href="#ez"/>
+		</clipPath>
+		<g class="st190">
+				<defs>
+					<rect id="ex" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="ew">
+					<use xlink:href="#ex"/>
+				</clipPath>
+				<g class="st191">
+					<rect class="st0" x="273.54" y="151.72" width="15.28" height="15.16"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="ev" x="10.1" y="12.28" width="346" height="181"/>
+		</defs>
+		<clipPath id="et">
+			<use xlink:href="#ev"/>
+		</clipPath>
+		<g class="st192">
+			<ellipse class="st56" cx="281.18" cy="159.3" rx="2.64" ry="2.58"/>
+		</g>
+		<defs>
+			<path id="es" d="m259.02 131.79c0.29-2.26 1.33-3.38 3.13-3.38s5.15-0.7 10-2.11c1.07-0.08 2 0.73 2.07 1.8 0.01 0.1 0.01 0.21 0 0.31v3.38h-15.2z"/>
+		</defs>
+		<clipPath id="er">
+			<use xlink:href="#es"/>
+		</clipPath>
+		<g class="st193">
+				<defs>
+					<rect id="eq" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="ep">
+					<use xlink:href="#eq"/>
+				</clipPath>
+				<g class="st194">
+					<rect class="st0" x="254.02" y="121.3" width="25.22" height="15.49"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="eo" x="10.1" y="12.28" width="346" height="181"/>
+		</defs>
+		<clipPath id="en">
+			<use xlink:href="#eo"/>
+		</clipPath>
+		<g class="st195">
+			<path class="st56" d="m259.02 131.79c0.29-2.26 1.33-3.38 3.13-3.38s5.15-0.7 10-2.11c1.07-0.08 2 0.73 2.07 1.8 0.01 0.1 0.01 0.21 0 0.31v3.38h-15.2z"/>
+		</g>
+		<defs>
+			<rect id="em" x="244.79" y="107.66" width="3.61" height="41.22"/>
+		</defs>
+		<clipPath id="el">
+			<use xlink:href="#em"/>
+		</clipPath>
+		<g class="st196">
+				<defs>
+					<rect id="ek" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="ei">
+					<use xlink:href="#ek"/>
+				</clipPath>
+				<g class="st197">
+					<rect class="st0" x="244.79" y="107.66" width="3.61" height="41.22"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="eh" x="244.79" y="107.66" width="3.61" height="41.22"/>
+		</defs>
+		<clipPath id="eg">
+			<use xlink:href="#eh"/>
+		</clipPath>
+		<g class="st198">
+				<defs>
+					<rect id="ef" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="ee">
+					<use xlink:href="#ef"/>
+				</clipPath>
+				<g class="st199">
+					<rect class="st32" x="244.79" y="107.66" width="3.61" height="41.22"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="ed" x="243.04" y="148.88" width="7.12" height="2.13"/>
+		</defs>
+		<clipPath id="ec">
+			<use xlink:href="#ed"/>
+		</clipPath>
+		<g class="st200">
+				<defs>
+					<rect id="eb" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="ea">
+					<use xlink:href="#eb"/>
+				</clipPath>
+				<g class="st201">
+					<rect class="st0" x="243.04" y="148.88" width="7.12" height="2.13"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="dz" x="243.04" y="148.88" width="7.12" height="2.13"/>
+		</defs>
+		<clipPath id="dx">
+			<use xlink:href="#dz"/>
+		</clipPath>
+		<g class="st202">
+				<defs>
+					<rect id="dw" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="dv">
+					<use xlink:href="#dw"/>
+				</clipPath>
+				<g class="st203">
+					<rect class="st32" x="243.04" y="148.88" width="7.12" height="2.13"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="du" x="243.04" y="168.78" width="7.12" height="2.13"/>
+		</defs>
+		<clipPath id="dt">
+			<use xlink:href="#du"/>
+		</clipPath>
+		<g class="st204">
+				<defs>
+					<rect id="ds" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="dr">
+					<use xlink:href="#ds"/>
+				</clipPath>
+				<g class="st205">
+					<rect class="st0" x="243.04" y="168.78" width="7.12" height="2.13"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="dq" x="243.04" y="168.78" width="7.12" height="2.13"/>
+		</defs>
+		<clipPath id="dp">
+			<use xlink:href="#dq"/>
+		</clipPath>
+		<g class="st206">
+				<defs>
+					<rect id="do" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="dm">
+					<use xlink:href="#do"/>
+				</clipPath>
+				<g class="st207">
+					<rect class="st32" x="243.04" y="168.78" width="7.12" height="2.13"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="dl" x="242.31" y="151.01" width="8.58" height="2.13"/>
+		</defs>
+		<clipPath id="dk">
+			<use xlink:href="#dl"/>
+		</clipPath>
+		<g class="st208">
+				<defs>
+					<rect id="dj" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="di">
+					<use xlink:href="#dj"/>
+				</clipPath>
+				<g class="st209">
+					<rect class="st0" x="242.31" y="151.01" width="8.58" height="2.13"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="dh" x="242.31" y="151.01" width="8.58" height="2.13"/>
+		</defs>
+		<clipPath id="dg">
+			<use xlink:href="#dh"/>
+		</clipPath>
+		<g class="st210">
+				<defs>
+					<rect id="df" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="de">
+					<use xlink:href="#df"/>
+				</clipPath>
+				<g class="st211">
+					<rect class="st32" x="242.31" y="151.01" width="8.58" height="2.13"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="dd" x="240.97" y="170.91" width="11.26" height="4.37"/>
+		</defs>
+		<clipPath id="da">
+			<use xlink:href="#dd"/>
+		</clipPath>
+		<g class="st212">
+				<defs>
+					<rect id="cz" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="cy">
+					<use xlink:href="#cz"/>
+				</clipPath>
+				<g class="st213">
+					<rect class="st0" x="240.97" y="170.91" width="11.26" height="4.37"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="cx" x="240.97" y="170.91" width="11.26" height="4.37"/>
+		</defs>
+		<clipPath id="cw">
+			<use xlink:href="#cx"/>
+		</clipPath>
+		<g class="st214">
+				<defs>
+					<rect id="cv" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="cu">
+					<use xlink:href="#cv"/>
+				</clipPath>
+				<g class="st215">
+					<rect class="st32" x="240.97" y="170.91" width="11.26" height="4.37"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="ct" x="243.32" y="153.14" width="6.55" height="15.64"/>
+		</defs>
+		<clipPath id="cs">
+			<use xlink:href="#ct"/>
+		</clipPath>
+		<g class="st216">
+				<defs>
+					<rect id="cr" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="cp">
+					<use xlink:href="#cr"/>
+				</clipPath>
+				<g class="st217">
+					<rect class="st0" x="243.32" y="153.14" width="6.55" height="15.64"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="co" x="243.32" y="153.14" width="6.55" height="15.64"/>
+		</defs>
+		<clipPath id="cn">
+			<use xlink:href="#co"/>
+		</clipPath>
+		<g class="st218">
+				<defs>
+					<rect id="cm" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="cl">
+					<use xlink:href="#cm"/>
+				</clipPath>
+				<g class="st219">
+					<rect class="st32" x="243.32" y="153.14" width="6.55" height="15.64"/>
+				</g>
+		</g>
+		<defs>
+			<path id="ck" d="m246.6 39.36c1.35 0.1 2.53-0.92 2.63-2.27s-0.92-2.53-2.27-2.63-2.53 0.92-2.63 2.27c0 0.06-0.01 0.12-0.01 0.18-0.04 1.3 0.98 2.4 2.28 2.45z"/>
+		</defs>
+		<clipPath id="cj">
+			<use xlink:href="#ck"/>
+		</clipPath>
+		<g class="st220">
+				<defs>
+					<rect id="ci" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="ch">
+					<use xlink:href="#ci"/>
+				</clipPath>
+				<g class="st221">
+					<rect class="st0" x="239.32" y="29.46" width="14.55" height="14.9"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="cg" x="10.1" y="12.28" width="346" height="181"/>
+		</defs>
+		<clipPath id="ce">
+			<use xlink:href="#cg"/>
+		</clipPath>
+		<g class="st222">
+			<ellipse class="st56" cx="246.6" cy="36.91" rx="2.28" ry="2.45"/>
+		</g>
+		<defs>
+			<polygon id="cd" points="237.85 43.99 255.68 43.99 251.47 61.76 241.69 61.76"/>
+		</defs>
+		<clipPath id="cc">
+			<use xlink:href="#cd"/>
+		</clipPath>
+		<g class="st223">
+				<defs>
+					<rect id="cb" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="ca">
+					<use xlink:href="#cb"/>
+				</clipPath>
+				<g class="st224">
+					<polygon class="st32" points="237.85 43.99 255.68 43.99 251.47 61.76 241.69 61.76"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="bz" x="246.44" y="44.41" width=".66" height="17.06"/>
+		</defs>
+		<clipPath id="by">
+			<use xlink:href="#bz"/>
+		</clipPath>
+		<g class="st225">
+				<defs>
+					<rect id="bx" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="bw">
+					<use xlink:href="#bx"/>
+				</clipPath>
+				<g class="st226">
+					<rect class="st32" x="246.44" y="44.41" width=".66" height="17.06"/>
+				</g>
+		</g>
+		<defs>
+			<path id="bv" d="m251.1 75.01c2.5 0 5.32 0.86 8.45 2.75 3.36 1.95 7.14 3.06 11.02 3.25-2.27 1.7-5.13 2.42-7.93 2-4.64-0.53-12.62-4.75-12.09-6.36l0.55-1.64z"/>
+		</defs>
+		<clipPath id="bt">
+			<use xlink:href="#bv"/>
+		</clipPath>
+		<g class="st227">
+				<defs>
+					<rect id="bs" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="br">
+					<use xlink:href="#bs"/>
+				</clipPath>
+				<g class="st228">
+					<rect class="st84" x="245.52" y="69.99" width="30.04" height="18.06"/>
+				</g>
+		</g>
+		<defs>
+			<rect id="bq" x="10.1" y="12.28" width="346" height="181"/>
+		</defs>
+		<clipPath id="bp">
+			<use xlink:href="#bq"/>
+		</clipPath>
+		<g class="st229">
+			<path class="st230" d="m244.57 75.1c0.86 0.6 2.19 0.6 4 0"/>
+			<path class="st56" d="m244.54 75.01c0.71 0.87 2.11 1.32 4.2 1.37l-4.2-1.37z"/>
+		</g>
+		<defs>
+			<path id="bo" d="m248.4 74.59c1.95-0.86 4.38-0.86 7.31 0 3.12 0.85 6.42 0.74 9.47-0.32-1.16 2.25-3.24 3.88-5.7 4.48-3.77 1-11.08-0.64-11.08-2.4v-1.76z"/>
+		</defs>
+		<clipPath id="bn">
+			<use xlink:href="#bo"/>
+		</clipPath>
+		<g class="st231">
+				<defs>
+					<rect id="bm" x="10.1" y="12.28" width="346" height="181"/>
+				</defs>
+				<clipPath id="bl">
+					<use xlink:href="#bm"/>
+				</clipPath>
+				<g class="st232">
+					<rect class="st0" x="243.4" y="68.95" width="26.78" height="15.1"/>
+				</g>
+		</g>
+</svg>
