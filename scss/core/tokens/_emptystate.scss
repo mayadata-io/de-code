@@ -1,8 +1,18 @@
-.card_zero_result {
+.blank-slate {
     border-radius: 4px;
     padding: 46px 0;
+
+    .blank-slate-content{
+      text-align: center;
+
+      .blank-slate-content__message {
+        color: $gray-700;
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+      }
+      .blank-slate-content__cta{
+        margin-top: 1.5rem;
+      }
+    }
   }
   
-  .card_zero_result_title {
-    color: $gray-700;
-  }
