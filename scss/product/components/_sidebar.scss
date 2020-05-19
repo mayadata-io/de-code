@@ -91,13 +91,14 @@
     
         .sidebar-header-sub-heading {
             font-size: 16px;
-            display: flex;
+            display: inline-block;
             align-items: center;
             justify-content: space-between;
-            max-width: 160px;
-            white-space: nowrap;
-            text-overflow: ellipsis;
+            max-width: 140px;
+            white-space: normal;
+            word-wrap: break-word;
             overflow: hidden;
+            line-height: 1.4;
         }
     
         .sidebar-header-item-cluster_name {
@@ -122,8 +123,15 @@
                 opacity: 1;
             }
         }
+        .btn-secondary:focus {
+            color: $white !important;
+        }
     }
     .dropdown-menu{
+        .dropdown-item{
+            white-space: normal;
+            word-break: break-word;
+        }
             &.active-clusters{
             transform: none !important;
             background: $blue-900;
@@ -145,6 +153,10 @@
                 font-weight: bold;
                 padding: 0px 10px 10px;
             }
+            .dropdown-menu-no-item{
+                white-space: normal;
+                cursor: default;
+            }
             .sidebar-dropdown-content{
                 display: flex;
                 align-items: center;
@@ -165,9 +177,10 @@
                 align-items: center;
                 justify-content: space-between;
                 max-width: 105px;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                overflow: hidden;
+                white-space: normal;
+                word-wrap: break-word;
+                text-align: left;
+                word-break: break-word;
             }
 
             .dropdown-menu-footer{
@@ -204,7 +217,6 @@
                 height: 22px;
                 width: 22px;
                 color: $white;
-                margin: 0px 12px 0px 0px;
             }
         }
         i {
@@ -235,6 +247,15 @@
             color: $sidebar-items-color;
             text-decoration: none;
             padding: 3px 10px;
+
+            .ember-basic-dropdown-trigger{
+                width: 100%;
+            }
+            .profile-name{
+                flex-grow: 1;
+                white-space: normal;
+                word-break: break-word;
+            }
         }
         .link-text {
             font-size: 14px;
@@ -346,6 +367,7 @@
 
 .sidebar-cluster{
     display: flex;
+    height: inherit;
 
     .sidebar-header{
         margin: 16px 5px;
@@ -359,7 +381,7 @@
         width: 20%;
         background: $blue-800;
         border-right: 1px solid $white;
-        height:110vh;
+        height: inherit;
     
         .sidebar-logo{
             padding: 20px 7px;
@@ -369,10 +391,19 @@
             .sidebar-header-content{
                 display: none;
             }
+            .btn-flat{
+                display: none;
+            }
+        }
+        .profile-name{
+            white-space: unset !important;
+        }
+        .sidebar-header-sub-heading {
+            max-width: 108px;
         }
         .sidebar-item{
             .active{
-                background-color: $blue-800;
+                background-color: inherit;
             }
         }
         .link-text{
@@ -391,6 +422,12 @@
                 .sidebar-header-content{
                     display: unset;
                 }
+                .btn-flat{
+                    display: unset;
+                }
+            }
+            .profile-name{
+                white-space: normal !important;
             }
             .link-text{
                 visibility: visible;
@@ -409,11 +446,18 @@
         background: $sidebar-background-color;
         overflow-x: hidden;
     
-        .btn-icon{
+        .btn-flat{
             background: transparent;
             padding: 0px;
             color: $white;
             float: left;
+            border: 0px;
+            &:focus{
+                color: $white !important;
+            }
+            &:hover{
+                color: $white;
+            }
         }
         .sidebar-logo {
             padding: 20px 10px;
@@ -425,11 +469,17 @@
             }
         }
         .sidebar-header-sub-heading {
+            font-size: 16px;
             max-width: 108px !important;
             display: inline-block !important;
-            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 140px;
+            white-space: normal;
+            word-wrap: break-word;
+            overflow: hidden;
+            line-height: 1.4;
         }
-        
         .sidebar-body{
             &:first-child {
                 flex: 1 1 100%;
