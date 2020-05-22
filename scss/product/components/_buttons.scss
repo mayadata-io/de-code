@@ -43,8 +43,7 @@
     background-image: none;
     @include box-shadow($input-btn-focus-box-shadow, $btn-active-box-shadow);
   }
-
-  i{
+  .btn-i{
     font-size: 1.3rem;
     vertical-align: middle;
     margin-right: 0.2em;
@@ -81,13 +80,13 @@ fieldset[disabled] a.btn {
       }
       @if $color == "secondary" {
         color: color-yiq($value);
-        &:focus,
-        &.focus{
-          color: color-yiq($value) !important;
-        }
         &:hover,
         &.hover{
           color: darken(color-yiq($value), 7.5%);
+        }
+        &:focus,
+        &.focus{
+          color: color-yiq($value) !important;
         }
       }
     }
@@ -201,7 +200,8 @@ fieldset[disabled] a.btn {
   color: $gray-600;
   text-align: center;
   border-radius: 50% !important;
-  padding: 0.4em 0.5em !important;
+  padding: 8px 10px !important;
+  font-size: 14px;
   
     @include hover {
       background-color: $gray-000;  
@@ -216,18 +216,9 @@ fieldset[disabled] a.btn {
       box-shadow: 0 0 0 .1rem $blue-200;
     }
     
-    + .btn-md{
-      width: 34px;
-      padding: 0.42em 0.5em !important;
-    }
-    + .btn-lg{
-      width: 42px;
-      padding: 0.42em 0.5em !important;
-    }
-    
-  i{
+  .btn-i{
     display: block;
-    margin-right: 0;
+    margin-right: 0 !important;
   }
 
 }
@@ -238,17 +229,23 @@ fieldset[disabled] a.btn {
 
 .btn-lg {
   @include button-size($input-btn-padding-y-lg, $input-btn-padding-x-lg, $font-size-lg, $input-btn-line-height-lg, $btn-border-radius-lg);
-  i{
-    font-size: 1.6rem;
+  .btn-i{
+    font-size: 1.6rem !important;
     vertical-align: middle;
     margin-right: 0.2em;
+  }
+  &.btn-icon{
+    padding: 10px 12px !important;
   }
 }
 
 .btn-sm {
   @include button-size($input-btn-padding-y-sm, $input-btn-padding-x-sm, $font-size-sm, $input-btn-line-height-sm, $btn-border-radius-sm);
-  i{
-    font-size: 1rem;
+  .btn-i{
+    font-size: 1rem !important;
+  }
+  &.btn-icon{
+    padding: 6px 8px !important;
   }
 }
 
@@ -276,17 +273,6 @@ input[type="reset"],
 input[type="button"] {
   &.btn-block {
     width: 100%;
-  }
-}
-
-//Login button
-.btn-login {
-  background-color: $aqua-500;
-  color: $white;
-
-  .btn-login-text {
-    vertical-align: middle;
-    margin-left: 8px;
   }
 }
 
