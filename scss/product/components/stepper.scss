@@ -121,3 +121,73 @@
   width: 60px;
   height: 60px;
 }
+
+/* Numeic stepper */
+
+.stepper-numeric{
+  display:table;
+	width:100%;
+  margin:0 auto;
+  .step{
+    display:table-cell;
+    position:relative;
+    padding:24px;
+    &:first-child{
+      padding-left: 0;
+      .step-bar-left{
+        display:none;
+      }
+    }
+    &:last-child{
+      padding-right: 0;
+      .step-bar-right{
+        display:none;
+      }
+    }
+    .step-bar-left:not(:first-child){
+      margin-right: 5px;
+    }
+    .step-bar-right:not(:first-child){
+      margin-left: 5px;
+    }
+
+    .step-circle {
+      width:20px;
+      height:20px;
+      margin:0 auto;
+      background-color:$gray-100;
+      border-radius: 50%;
+      text-align: center;
+      line-height:20px;
+      font-size: 12px;
+      font-weight: 600;
+      color: $white;
+    }
+    .step-bar-left, .step-bar-right{
+      position:absolute;
+      top:32px;
+      height:3px;
+      border-top:3px solid $gray-100;
+    }
+    .step-bar-right {
+      right:0;
+      left:50%;
+    }
+    .step-bar-left {
+      left:0;
+      right:50%;
+    }
+    &.visited{
+      .step-circle{
+        background-color: $blue-900;
+      }
+      .step-bar-left,.step-bar-right{
+        border-top:3px solid $blue-900;
+      }
+    }
+    .step-title {
+      margin-top:16px;
+      text-align: center;
+    }
+  }
+}
