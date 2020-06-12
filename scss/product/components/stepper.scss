@@ -146,9 +146,11 @@
     }
     .step-bar-left:not(:first-child){
       margin-right: 5px;
+      z-index: 1;
     }
     .step-bar-right:not(:first-child){
       margin-left: 5px;
+      z-index: 1;
     }
 
     .step-circle {
@@ -162,6 +164,8 @@
       font-size: 12px;
       font-weight: 600;
       color: $white;
+      position: relative;
+      z-index: 2;
     }
     .step-bar-left, .step-bar-right{
       position:absolute;
@@ -182,6 +186,14 @@
         background-color: $blue-900;
       }
       .step-bar-left,.step-bar-right{
+        border-top:3px solid $blue-900;
+      }
+    }
+    &.active{
+      .step-circle{
+        background-color: $blue-900;
+      }
+      .step-bar-left{
         border-top:3px solid $blue-900;
       }
     }

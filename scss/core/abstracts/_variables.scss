@@ -235,10 +235,17 @@ $metadata-title-font-style:         italic !default;
 
 // stepper
 
-$line-color:                       $gray-200 !default;
-$stepper-title-font-size:          14px !default;
-$stepper-value-font-size:          18px !default;
-$stepper-title-font-style:         italic !default;
+$line-color: $gray-200 !default;
+$stepper-title-font-size: 14px !default;
+$stepper-value-font-size: 18px !default;
+$stepper-title-font-style: italic !default;
+$stepper-step-current-color: $primary !default;
+$stepper-step-visited-color: $blue-900 !default;
+$stepper-step-unvisited-color: $gray-100 !default;
+$stepper-step-error-color: $danger !default;
+$stepper-step-name-color: $primary !default;
+$stepper-step-unvisited-name-color: $gray-700 !default;
+$stepper-linear-step-current-color: $green-500 !default;
 
 
 //Chooser cards
