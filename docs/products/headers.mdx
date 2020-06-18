@@ -7,7 +7,7 @@ import { Playground, PropsTable } from 'docz'
 
 # Headers
 ## Page Header
-### Example one
+### Example One
 
 <Playground>
   <div class="outlet-header">
@@ -19,7 +19,7 @@ import { Playground, PropsTable } from 'docz'
   </div>
 </Playground>
 
-### Example two
+### Example Two
 ##### Page header with an global level action button
 
 <Playground>
@@ -37,7 +37,32 @@ import { Playground, PropsTable } from 'docz'
   </div>
 </Playground>
 
-### Example three
+### Example Three
+##### Page header with global action butons, both primary and secondary
+
+<Playground>
+<div class="outlet-header__top-bar">
+    <div class="outlet-header__top-bar-title">
+      <span>
+        Pool Management
+      </span>
+    </div>
+    <div class="outlet-header__actions ml-auto">
+      <button class="btn btn-primary btn-flat">
+        Activity
+      </button>
+    </div>
+    <div class="outlet-header__actions">
+      <div class="ember-view">    
+      <button class="btn btn-primary" title="Create a new pool">
+        Create a new pool
+      </button>
+    </div>
+    </div>
+</div>
+</Playground>
+
+### Example Four
 ##### Page header with back button
 
 
@@ -55,7 +80,7 @@ import { Playground, PropsTable } from 'docz'
   </div>
 </Playground>
 
-### Example four
+### Example Five
 ##### Page header with a back navigation button
 
 
@@ -63,7 +88,7 @@ import { Playground, PropsTable } from 'docz'
   <div class="outlet-header">
     <div class="outlet-header-navigation">
       <button class="outlet-header-navigation_button">
-        <span class="fa fa-arrow-left outlet-header-navigation_icon"></span>
+        <span class="dci dci-arrow-left-curve outlet-header-navigation_icon"></span>
         <span>Back</span>
       </button>
     </div>
@@ -79,8 +104,9 @@ import { Playground, PropsTable } from 'docz'
   </div>
 </Playground>
 
+## Section Header
 
-### Example five
+### Example Six
 ##### Section header
 <Playground>
   <div class="section-header">
@@ -108,7 +134,7 @@ import { Playground, PropsTable } from 'docz'
   </div>
 </Playground>
 
-### Example six
+### Example Seven
 ##### Page header, section header and contents
 <Playground>
   <div class="outlet-header">
@@ -147,7 +173,7 @@ import { Playground, PropsTable } from 'docz'
   </div>
 </Playground>
 
-### Example seven
+### Example Eight
 ##### Metadata bar
 
 
@@ -172,7 +198,7 @@ import { Playground, PropsTable } from 'docz'
   </div>
 </Playground>
 
-### Example eight
+### Example Nine
 ##### Page header , Metadata bar 
 
 
@@ -180,7 +206,7 @@ import { Playground, PropsTable } from 'docz'
     <div class="outlet-header">
       <div class="outlet-header-navigation">
     <button class="outlet-header-navigation_button">
-      <span class="fa fa-arrow-left outlet-header-navigation_icon" />
+      <span class="dci dci-arrow-left-curve outlet-header-navigation_icon" />
       <span>Back</span>
     </button>
   </div>
@@ -218,7 +244,7 @@ import { Playground, PropsTable } from 'docz'
   </div>
 </Playground>
 
-### Example nine
+### Example ten
 ##### Page header , Metadata bar, Table contents 
 
 
@@ -322,7 +348,7 @@ import { Playground, PropsTable } from 'docz'
 </Playground>
 
 
-### Example Ten
+### Example Eleven
 ##### Page header, Bredcrumbs, Metadata bar, Table contents 
 
 
@@ -330,7 +356,7 @@ import { Playground, PropsTable } from 'docz'
 <div class="outlet-header">
   <div class="outlet-header__top-bar">
     <div class="outlet-header__top-bar-title">
-      <span>Application Overview</span>
+      <span>Application</span>
     </div>
   </div>
   <div class="outlet-header-meta-block">
@@ -341,32 +367,39 @@ import { Playground, PropsTable } from 'docz'
   <div class="outlet-header-bar">
     <div class="outlet-header-meta-bar_item">
       <div class="outlet-header-meta-bar_title">
-        <span>Type</span>
+        <span>Name</span>
       </div>
       <div class="outlet-header-meta-bar_value">
-        <a href="/"><span>statefulset</span></a>
+        <span>dmaas-manager</span>
     </div>
     </div>
     <div class="outlet-header-meta-bar_item">
       <div class="outlet-header-meta-bar_title">
-        <span>Kind</span>
+        <span>Type</span>
       </div>
       <div class="outlet-header-meta-bar_value">
-        <span>ns-elasticsearch</span>
+        <span>Deployment</span>
       </div>
   </div>
       <div class="outlet-header-meta-bar_item">
       <div class="outlet-header-meta-bar_title">
-        <span>Replica</span>
+        <span>Namespace</span>
       </div>
       <div class="outlet-header-meta-bar_value">
-        <span>3</span>
+        <span>default</span>
       </div>
   </div>
   </div>
+  <section class="content-section">
+  <div class="mb-4">
+    <nav class="nav nav-segmented">
+     
+    </nav>
+  </div>
+  </section>
   <div class="section-header">
   <div class="section-header_title">
-    <span class="section-header_title__text">Volumes in statefulset</span>
+    <span class="section-header_title__text">Volume</span>
   </div>
   <div class="section-header-controls">
     <div class="section-header-controls_item">
@@ -375,77 +408,71 @@ import { Playground, PropsTable } from 'docz'
         <input class="form-control" placeholder="search" />
       </div>
     </div>
-    <div class="section-header-controls_item">
-      <button class="btn btn-secondary">
-        <span class="fa fa-edit" />
-      </button>
-    </div>
-    <div class="section-header-controls_item">
-      <button class="btn btn-secondary">
-        <span class="fa fa-filter" />
-      </button>
-    </div>
-    <div class="section-header-controls_item ml-auto">
-      <button class="btn btn-primary">Primary action</button>
-    </div>
   </div>
 </div>
+<section class="content-section">
+  <div class="mb-4">
+    <nav class="nav nav-segmented">
+    <a href="" class="nav-link active">Volumes</a>
+    <a href="" class="nav-link">DMaaS</a>
+    <a href="" class="nav-link ember-view">Analytics</a>  
+    </nav>
+  </div>
+</section>
   <table class="table table-hover">
   <thead>
+      <tr>
+        <th scope="col">
+          Name
+        </th>
+        <th scope="col">
+          Status
+        </th>
+        <th scope="col">
+          Capacity
+        </th>
+        <th scope="col">
+          Replicas
+        </th>
+        <th scope="col">
+          CAS type
+        </th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
     <tr>
-      <th scope="col">Name</th>
-      <th scope="col">Status</th>
-      <th scope="col">K8s version</th>
-      <th scope="col">Nodes</th>
-      <th scope="col" />
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Dev-cluster-yg238</td>
-      <td>
-        <span class="badge badge-gradient-success badge-pill">Active</span>
-      </td>
-      <td>v1.10.11-gke.1</td>
-      <td>12</td>
-      <td />
-    </tr>
-    <tr>
-      <td>Testing-cluster-tr33d</td>
-      <td>
-        <span class="badge badge-gradient-danger badge-pill">Inactive</span>
-      </td>
-      <td>v1.10</td>
-      <td>3</td>
-      <td />
-    </tr>
-    <tr>
-      <td>Staging-setup-df12s</td>
-      <td>
-        <span class="badge badge-gradient-warning badge-pill">Degrated</span>
-      </td>
-      <td>v1.10.11</td>
-      <td>6</td>
-      <td />
-    </tr>
-    <tr>
-      <td>Monitor-cluster-8hjq7</td>
-      <td>
-        <span class="badge badge-gradient-success badge-pill">Active</span>
-      </td>
-      <td>v1.13.2</td>
-      <td>12</td>
-      <td />
-    </tr>
-    <tr>
-      <td>Asia-scope-72dr4</td>
-      <td>
-        <span class="badge badge-gradient-danger badge-pill">Offline</span>
-      </td>
-      <td>v1.10.13</td>
-      <td>12</td>
-      <td />
-    </tr>
-  </tbody>
+        <td>minio-pv-claim</td>
+        <td>
+          <span>     
+              <span class="cluster-name text-capitalize">
+                <span class="badge badge-pill badge-gradient-success">
+                  Healthy
+                </span>
+              </span>
+          </span>
+        </td>
+        <td>30G</td>
+        <td>3</td>
+        <td>cStor</td>
+        <td>
+          <div class="table-action">
+            <div class="table-action_item">
+              <div class="table-action_link">
+                <i class="dci dci-frequency dci-1x"></i>
+              </div>
+            </div>
+            <div class="table-action_item">
+              <div class="table-action_link">
+                <i class="dci dci-tree-network dci-1x"></i>
+              </div>
+            </div>
+              <div class="table-action_item">
+                <div class="table-action_link">
+                  <i class="dci dci-logs dci-1x"></i>
+                </div>
+              </div>
+          </div>
+        </td>
+      </tr>
 </table>
 </Playground>

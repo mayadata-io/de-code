@@ -1,5 +1,5 @@
 .outlet-header {
-  margin: 24px 0;
+  margin: 20px 0;
 }
 
 .outlet-header-bar {
@@ -37,7 +37,8 @@
   }
 
   .outlet-header-navigation_icon {
-    padding-right: 6px;
+    padding-right: 4px;
+    font-size: 22px;
   }
 }
 
@@ -95,11 +96,24 @@
   margin-bottom: 16px;
 
   .section-header_title {
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 
     .section-header_title__text {
       font-size: 18px;
     }
+    .section-header_back-button {
+      color: $primary;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
+  .section-header_back-button {
+    &:after {
+      content: '';
+      margin: 0 8px 0 4px;
+      border: 1px solid $body-color;
+      vertical-align: middle;
+   }
   }
 
   .section-header-controls {
