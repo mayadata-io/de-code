@@ -1,0 +1,37 @@
+---
+name: Code Block
+menu: Components
+
+---
+import { Playground, PropsTable } from 'docz'
+import CodeMirror from '../../resources/images/code-mirror.png'
+
+# Code-block
+
+### Type 1
+
+<Playground>
+ <div class="code-wrapper">
+    <div title="copy to clipboard" class="copy-btn" type="button">  
+        <div class="code-hovered_hidden">
+            <div class="copy-label">
+                <span class="badge badge-light">
+                    Copy to clipboard
+                </span>
+            </div>
+        </div>
+        <div class="text-code">
+            <textarea class="form-control copy-block-text">
+            kubectl apply -f https://director.mayadatastaging.io/v3/scripts/F5860EE2F6343464C7A6:1577750400000:y6RnH9nxIlsc1cNK043JnYOuq4.yaml
+            </textarea>
+        </div>
+    </div>
+</div>
+</Playground>
+
+### Type 2: The styling is taken from code-mirror
+
+
+<div class="code-wrap">
+    <img class="mw-100" src={CodeMirror}/>
+</div>
