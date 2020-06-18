@@ -257,26 +257,35 @@ $chooser-card-item-label-color-active:        $primary !default;
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
 
-$table-cell-padding:          .75rem !default;
-$table-cell-padding-sm:       .3rem !default;
+$table-cell-padding: 0.75rem !default;
+$table-cell-padding-sm: 0.3rem !default;
 
-$table-bg:                    transparent !default;
-$table-accent-bg:             rgba($black, .05) !default;
-$table-hover-bg:              rgba($black, .075) !default;
-$table-active-bg:             $table-hover-bg !default;
+$table-box-shadow: 0 0 0 2px $gray-100;
+$table-bg: $white !default;
+$table-accent-bg: rgba($black, 0.05) !default;
+$table-hover-bg: $gray-000 !default;
+$table-active-bg: $table-hover-bg !default;
 
-$table-border-width:          $border-width !default;
-$table-border-color:          $gray-300 !default;
+$table-border-width: $border-width !default;
+$table-border-color: $gray-100 !default;
 
-$table-head-bg:               $gray-200 !default;
-$table-head-color:            $gray-700 !default;
+$table-head-bg: $gray-100 !default;
+$table-head-color: $gray-700 !default;
+$table-body-color: $gray-700;
+$table-dark-bg: $gray-900 !default;
+$table-dark-accent-bg: rgba($white, 0.05) !default;
+$table-dark-hover-bg: rgba($white, 0.075) !default;
+$table-dark-border-color: lighten($gray-900, 7.5%) !default;
+$table-dark-color: $body-bg !default;
+$table-column-truncate-width: 240px !default;
+$table-nested-color-bg: $gray-000;
 
-$table-dark-bg:               $gray-900 !default;
-$table-dark-accent-bg:        rgba($white, .05) !default;
-$table-dark-hover-bg:         rgba($white, .075) !default;
-$table-dark-border-color:     lighten($gray-900, 7.5%) !default;
-$table-dark-color:            $body-bg !default;
+$table-row-selected-bg-color: rgba($blue-000, 0.7) !default;
+$table-row-selected-border-color: $blue-100 !default;
 
+//resoucre-dial colors
+
+$text-green: #06a678;
 
 // Buttons + Forms
 //

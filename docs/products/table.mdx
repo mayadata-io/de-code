@@ -22,7 +22,6 @@ import openshift from '../../resources/images/clusters/openshift.png'
         <th scope="col">Status</th>
         <th scope="col">K8s version</th>
         <th scope="col">Nodes</th>
-        <th scope="col"></th>
       </tr>
     </thead>
     <tbody>
@@ -33,7 +32,6 @@ import openshift from '../../resources/images/clusters/openshift.png'
         <td><span class="badge badge-gradient-success badge-pill">Active</span></td>
         <td>v1.10.11-gke.1</td>
         <td>12</td>
-        <td></td>
       </tr>
       <tr>
         <td>
@@ -42,7 +40,6 @@ import openshift from '../../resources/images/clusters/openshift.png'
         <td><span class="badge badge-gradient-danger badge-pill">Inactive</span></td>
         <td>v1.10</td>
         <td>3</td>
-        <td></td>
       </tr>
       <tr>
         <td>
@@ -51,7 +48,6 @@ import openshift from '../../resources/images/clusters/openshift.png'
         <td><span class="badge badge-gradient-warning badge-pill">Degrated</span></td>
         <td>v1.10.11</td>
         <td>6</td>
-        <td></td>
       </tr>
       <tr>
         <td>
@@ -60,7 +56,6 @@ import openshift from '../../resources/images/clusters/openshift.png'
         <td><span class="badge badge-gradient-success badge-pill">Active</span></td>
         <td>v1.13.2</td>
         <td>12</td>
-        <td></td>
       </tr>
       <tr>
         <td>
@@ -69,7 +64,6 @@ import openshift from '../../resources/images/clusters/openshift.png'
         <td><span class="badge badge-gradient-danger badge-pill">Offline</span></td>
         <td>v1.10.13</td>
         <td>12</td>
-        <td></td>
       </tr>
     </tbody>
   </table>
@@ -84,7 +78,6 @@ import openshift from '../../resources/images/clusters/openshift.png'
         <th scope="col">Status</th>
         <th scope="col">K8s version</th>
         <th scope="col">Nodes</th>
-        <th scope="col"></th>
       </tr>
     </thead>
     <tbody>
@@ -98,7 +91,6 @@ import openshift from '../../resources/images/clusters/openshift.png'
         <td><span class="badge badge-gradient-success badge-pill">Active</span></td>
         <td>v1.10.11-gke.1</td>
         <td>12</td>
-        <td></td>
       </tr>
       <tr>
         <td>
@@ -110,7 +102,6 @@ import openshift from '../../resources/images/clusters/openshift.png'
         <td><span class="badge badge-gradient-danger badge-pill">Inactive</span></td>
         <td>v1.10</td>
         <td>3</td>
-        <td></td>
       </tr>
       <tr>
         <td>
@@ -122,7 +113,6 @@ import openshift from '../../resources/images/clusters/openshift.png'
         <td><span class="badge badge-gradient-warning badge-pill">Degrated</span></td>
         <td>v1.10.11</td>
         <td>6</td>
-        <td></td>
       </tr>
       <tr>
         <td>
@@ -134,7 +124,6 @@ import openshift from '../../resources/images/clusters/openshift.png'
         <td><span class="badge badge-gradient-success badge-pill">Active</span></td>
         <td>v1.13.2</td>
         <td>12</td>
-        <td></td>
       </tr>
       <tr>
         <td>
@@ -146,7 +135,6 @@ import openshift from '../../resources/images/clusters/openshift.png'
         <td><span class="badge badge-gradient-danger badge-pill">Offline</span></td>
         <td>v1.10.13</td>
         <td>12</td>
-        <td></td>
       </tr>
     </tbody>
   </table>
@@ -154,6 +142,103 @@ import openshift from '../../resources/images/clusters/openshift.png'
 
 ## Table with actions
 <Playground>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Status</th>
+        <th scope="col">K8s version</th>
+        <th scope="col">Nodes</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Asia-scope-72dr4
+        </td>
+        <td><span class="badge badge-gradient-danger badge-pill">Offline</span></td>
+        <td>v1.10.13</td>
+        <td>12</td>
+        <td>
+          <div class="table-action">
+            <div class="table-action_item">
+              <div class="table-action_link">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="table-action_item">
+              <div class="table-action_link">
+                <i class="fa fa-area-chart" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="table-action_item">
+              <div class="table-action_link">
+                <i class="fa fa-trash"></i>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</Playground>
+
+## Table with header
+
+<div>
+<ul>
+  <li>View By</li>
+  <li>Search</li>
+  <li>Filter</li>
+  <li>Toggle column</li>
+</ul>
+</div>
+
+<Playground>
+    <div class="section-header">
+      <div class="section-header_title">
+        <span class="section-header_title__text">
+          Table Header
+        </span>
+      </div>
+      <div class="section-header-controls">
+        <div class="section-header-controls_item">
+          View by:
+        </div>
+        <div class="section-header-controls_item">
+          <button class="btn btn-inverse active">
+            Option A
+          </button>
+        </div>
+        <div class="section-header-controls_item">
+          <button
+            class="btn btn-inverse">
+            Option B
+          </button>
+        </div>
+        <div class="section-header-controls_item">
+        <input placeholder="Search..." class="form-control input-search" type="text" />
+        </div>
+          <div class="section-header-controls_item">
+            <div class="section-header-controls_item">
+              <button class="btn btn-toggle">
+              <span class="dci dci-filter button-icon-inline"></span>
+                Filter
+                <span class="dci dci-chevron-down"></span>
+              </button>
+            </div>
+          </div>
+          <div class="section-header-controls_item ml-auto">
+          <div class="section-header-controls_item">
+              <button class="btn btn-toggle">
+                Toggle Columns
+                <span class="dci dci-chevron-down button-icon-inline"></span>
+              </button>
+          </div>
+        </div>
+      </div>
+    </div>
   <table class="table table-hover">
     <thead>
       <tr>
