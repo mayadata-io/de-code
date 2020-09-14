@@ -48,7 +48,7 @@
     }
   
     &:hover {
-      background-color: $gray-000;
+      background-color: $gray-100;
       -webkit-filter: grayscale(0);
       filter: grayscale(0);
     }
@@ -72,7 +72,7 @@
     &.disabled {
       opacity: 0.6;
       pointer-events: none;
-      background: $gray-000;
+      background: $gray-100;
     }
   } 
   &.chooser-card-wide{

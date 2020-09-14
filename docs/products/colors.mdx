@@ -2,7 +2,7 @@
 name: Colors
 menu: Foundation
 ---
-import { blue, gray, green, yellow, red, orange, cyan, purple, violet, pink, aqua} from '../utils/colors.js'
+import { blue, gray, skyblue, green, orange, red, yellow, amber, purple, darkgreen} from '../utils/colors.js'
 import ColorBlock from './components/colorblock.js'
 
 # Colors
@@ -14,16 +14,24 @@ import ColorBlock from './components/colorblock.js'
 
 ## Secondary
 <div class="row">
-  <div class="col-sm-3 color-base-block bg-aqua"></div>
+  <div class="col-sm-3 color-base-block bg-blue"></div>
   <div class="col-sm-3 color-base-block bg-success"></div>
-  <div class="col-sm-3 color-base-block bg-warning"></div>
+  <div class="col-sm-3 color-base-block bg-orange"></div>
   <div class="col-sm-3 color-base-block bg-danger"></div>
+  <div class="col-sm-3 color-base-block bg-gray"></div>
+  <div class="col-sm-3 color-base-block bg-skyblue"></div>
+  <div class="col-sm-3 color-base-block bg-blue-outline"></div>
+  <div class="col-sm-3 color-base-block bg-warning"></div>
+  <div class="col-sm-3 color-base-block bg-secondary"></div>
+  <div class="col-sm-3 color-base-block bg-inactive"></div>
   <div class="col-sm-3 color-base-block bg-info"></div>
   <div class="col-sm-3 color-base-block bg-purple"></div>
-  <div class="col-sm-3 color-base-block bg-pink"></div>
+  <div class="col-sm-3 color-base-block bg-error"></div>
+  <div class="col-sm-3 color-base-block bg-link"></div>
+  <div class="col-sm-3 color-base-block bg-amber"></div>
 </div>
 
-## Palattes
+## Palettes
 
 <div class="row">
   <div class="col-sm-3">
@@ -33,30 +41,27 @@ import ColorBlock from './components/colorblock.js'
     <ColorBlock name={blue} />
   </div>
   <div class="col-sm-3">
-    <ColorBlock name={violet} />
-  </div>
-  <div class="col-sm-3">
-    <ColorBlock name={purple} />
+    <ColorBlock name={skyblue} />
   </div>
   <div class="col-sm-3">
     <ColorBlock name={green} />
   </div>
   <div class="col-sm-3">
-    <ColorBlock name={yellow} />
+    <ColorBlock name={orange} />
   </div>
   <div class="col-sm-3">
     <ColorBlock name={red} />
   </div>
   <div class="col-sm-3">
-    <ColorBlock name={orange} />
+    <ColorBlock name={yellow} />
   </div>
   <div class="col-sm-3">
-    <ColorBlock name={pink} />
+    <ColorBlock name={amber} />
   </div>
   <div class="col-sm-3">
-    <ColorBlock name={cyan} />
+    <ColorBlock name={purple} />
   </div>
   <div class="col-sm-3">
-    <ColorBlock name={aqua} />
+    <ColorBlock name={darkgreen} />
   </div>
 </div>

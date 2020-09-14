@@ -213,7 +213,7 @@ select.form-control-lg {
     // Bring the hover, focused, and "active" buttons to the front to overlay
     // the borders properly
     @include hover {
-      background: $gray-000;
+      background: $gray-100;
       z-index: 1;
       color: $gray-300;
     }

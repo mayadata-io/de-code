@@ -12,8 +12,8 @@
 
   &.stepper-step_mark {
     .stepper-step_mark__name {
-      background-color: $gray-700;
-      border-color: $gray-700;
+      background-color: $gray-600;
+      border-color: $gray-600;
     }
   }
 
@@ -27,7 +27,7 @@
       background-color: $primary;
     }
     .circle-active {
-      border: 1px solid $blue-900;
+      border: 1px solid $blue-600;
     }
   }
 
@@ -39,22 +39,22 @@
     }
 
     .circle {
-      background-color: $red-500;
+      // background-color: $red-500;
     }
 
     .circle-active {
-      border: 1px solid $blue-900;
+      border: 1px solid $blue-600;
     }
   }
 
   .stepper-step-visited {
 
     .circle {
-      background-color: $blue-900;
+      background-color: $blue-600;
     }
 
     .stepper-step_mark__line {
-      background-color: $blue-900;
+      background-color: $blue-600;
     }
     .circle-active {
       border: none;
@@ -103,7 +103,7 @@
     margin: 8px 0;
     height: 30px;
     width: 30px;
-    border: 1px solid $blue-900;
+    border: 1px solid $blue-600;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,10 +179,10 @@
     }
     &.visited{
       .step-circle{
-        background-color: $blue-900;
+        background-color: $blue-600;
       }
       .step-bar-left,.step-bar-right{
-        border-top:3px solid $blue-900;
+        border-top:3px solid $blue-600;
       }
     }
     .step-title {
