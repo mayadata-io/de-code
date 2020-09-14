@@ -110,7 +110,7 @@ fieldset[disabled] a.btn {
 @each $color, $value in $theme-colors {
   .btn-outline-#{$color} {
     @if $color == "light" {
-      @include button-outline-variant($value, $gray-900);
+      @include button-outline-variant($value, $gray-600);
     } @else {
       @include button-outline-variant($value, $white);
     }
@@ -170,10 +170,10 @@ fieldset[disabled] a.btn {
   font-weight: normal;
   background: none;
   &:hover{
-    background: $gray-000;
+    background: $gray-100;
   }
   &.active{
-    background: $gray-000;
+    background: $gray-100;
     box-shadow: none !important;
   }
   &:focus{
@@ -204,14 +204,14 @@ fieldset[disabled] a.btn {
   padding: 0.4em 0.5em !important;
   
     @include hover {
-      background-color: $gray-000;  
+      background-color: $gray-100;  
       border-color: transparent;
-      color: $gray-800;
+      color: $gray-600;
     }
 
     &.focus,
     &:focus {
-      background-color: $blue-000;
+      background-color: $blue-100;
       border-color: transparent;
       box-shadow: 0 0 0 .1rem $blue-200;
     }
@@ -281,7 +281,7 @@ input[type="button"] {
 
 //Login button
 .btn-login {
-  background-color: $aqua-500;
+  // background-color: $aqua-500;
   color: $white;
 
   .btn-login-text {
@@ -293,7 +293,7 @@ input[type="button"] {
 //Login button for agents: Google and Gthub
   
   .btn-google {
-    color: $gray-700;
+    color: $gray-600;
     background-color: $white;
     border-color: $gray-100;
     width: 100%;
@@ -311,7 +311,7 @@ input[type="button"] {
   .btn-login-text {
     vertical-align: middle;
     margin-left: 8px;
-    color: $gray-700;
+    color: $gray-600;
   }
 
   img {
@@ -350,12 +350,12 @@ input[type="button"] {
 
 // Highlight button
 .btn-highlight{
-  background: $gray-000;
-  border: 1px solid $gray-000;
+  background: $gray-100;
+  border: 1px solid $gray-100;
   border-radius: 4px;
   color: $primary;
   
   &:hover{
-    background: $blue-000;
+    background: $blue-100;
   }
 }

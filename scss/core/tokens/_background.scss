@@ -11,29 +11,14 @@
 @each $color, $value in $blues {
   @include bg-variant(".bg-blue-#{$color}", $value);
 }
-@each $color, $value in $violets {
-  @include bg-variant(".bg-violet-#{$color}", $value);
-}
-@each $color, $value in $pinks {
-  @include bg-variant(".bg-pink-#{$color}", $value);
-}
-@each $color, $value in $aquas {
-  @include bg-variant(".bg-aqua-#{$color}", $value);
-}
 @each $color, $value in $greens {
   @include bg-variant(".bg-green-#{$color}", $value);
 }
 @each $color, $value in $reds {
   @include bg-variant(".bg-red-#{$color}", $value);
 }
-@each $color, $value in $yellows {
-  @include bg-variant(".bg-yellow-#{$color}", $value);
-}
-@each $color, $value in $cyans {
-  @include bg-variant(".bg-cyan-#{$color}", $value);
-}
-@each $color, $value in $purples {
-  @include bg-variant(".bg-purple-#{$color}", $value);
+@each $color, $value in $skyblues {
+  @include bg-variant(".bg-skyblue-#{$color}", $value);
 }
 @each $color, $value in $oranges {
   @include bg-variant(".bg-orange-#{$color}", $value);

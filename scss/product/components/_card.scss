@@ -156,7 +156,7 @@
       color: $gray-500;
     }
     &:hover {
-      box-shadow: 2px 2px 20px 0 $gray-000;
+      box-shadow: 2px 2px 20px 0 $gray-100;
     }
   }
 
@@ -198,11 +198,11 @@
 
     .sub-heading {
       font-size: 12px;
-      color: $gray-700;
+      color: $gray-600;
     }
 
     .heading {
-      color: $gray-700;
+      color: $gray-600;
     }
 
     span {
@@ -216,7 +216,7 @@
     }
 
     &:hover {
-      box-shadow: 2px 2px 20px 0 $gray-000;
+      box-shadow: 2px 2px 20px 0 $gray-100;
     }
 
     &:last-child {
