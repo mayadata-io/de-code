@@ -43,7 +43,7 @@ export const yellow = [
   {'name':'yellow', 'hax':'#DDC557', 'rgb':''},
 ];
 export const amber = [
-  {'name':'amber', 'hax':'#FFA539', 'rgb':''},
+  {'name':'amber', 'hax':'#FFB039', 'rgb':''},
 ];
 export const purple = [
   {'name':'purple', 'hax':'#322E7A', 'rgb':''},
