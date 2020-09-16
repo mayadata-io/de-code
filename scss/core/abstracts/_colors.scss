@@ -33,10 +33,12 @@ $orange-300: #E86C47 !default;
 $gray-100: #F4F4F4 !default;
 $gray-200: #EFF2F5 !default;
 $gray-300: #E8EAE9 !default;
-$gray-400: #D9DEEB !default;
-$gray-500: #9397AD !default;
-$gray-600: #5C698C !default;
-$gray-700: #24292E !default;
+$gray-400: #E1E9EC !default;
+$gray-500: #D9DEEB !default;
+$gray-600: #9B9CB8 !default;
+$gray-700: #9397AD !default;
+$gray-800: #5C698C !default;
+$gray-900: #24292E !default;
 
 
 // Sky-blue color variations
@@ -64,7 +66,7 @@ $white: #FFFFFF !default;
 
 // Amber
 
-$amber: #FFA539;
+$amber: #FFB039;
 
 // Dark green
 
@@ -169,6 +171,8 @@ $grays: map-merge((
   "500": $gray-500,
   "600": $gray-600,
   "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
 ), $grays);
 
 $skyblues: () !default;

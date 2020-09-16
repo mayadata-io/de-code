@@ -12,10 +12,12 @@ export const gray = [
   {'name':'gray-100', 'hax':'#F4F4F4', 'rgb':''},
   {'name':'gray-200', 'hax':'#EFF2F5', 'rgb':''},
   {'name':'gray-300', 'hax':'#E8EAE9', 'rgb':''},
-  {'name':'gray-400', 'hax':'#D9DEEB', 'rgb':''},
-  {'name':'gray-500', 'hax':'#9397AD', 'rgb':''},
-  {'name':'gray-600', 'hax':'#5C698C', 'rgb':''},
-  {'name':'gray-700', 'hax':'#24292E', 'rgb':''},
+  {'name':'gray-400', 'hax':'#E1E9EC', 'rgb':''},
+  {'name':'gray-500', 'hax':'#D9DEEB', 'rgb':''},
+  {'name':'gray-600', 'hax':'#9B9CB8', 'rgb':''},
+  {'name':'gray-700', 'hax':'#9397AD', 'rgb':''},
+  {'name':'gray-800', 'hax':'#5C698C', 'rgb':''},
+  {'name':'gray-900', 'hax':'#24292E', 'rgb':''},
 ];
 export const skyblue = [
   {'name':'skyblue-100', 'hax':'#F8FBFD', 'rgb':''},
