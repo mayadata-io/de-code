@@ -7,6 +7,16 @@
   background-color: button-color($background, base);
   color: color-yiq(button-color($background, base));
 
+  @if $background == primary {
+    box-shadow: 4px 8px 20px rgba(100, 114, 188, 0.28);
+  }
+  @else if $background == secondary {
+    box-shadow: 10px 5px 21px rgba(145, 150, 211, 0.19);
+  }
+  @else if $background == orange {
+    box-shadow: 10px 5px 21px rgba(145, 150, 211, 0.19);
+  }
+
   @include hover {
     background-color: button-color($background, dark);
     color: color-yiq(button-color($background, dark));

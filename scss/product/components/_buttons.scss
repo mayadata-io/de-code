@@ -56,20 +56,9 @@ fieldset[disabled] a.btn {
 
 @each $color, $value in $button-colors {
   .btn-#{$color} {
-    // background-color: map-get(map-get($button-colors, $color), base);
-    // background-color: button-color($color, base);
-    // background-color: clr(primary, base);
+
     @include button-variant($color);
 
-    @if $color == "primary" {
-      box-shadow: 4px 8px 20px rgba(100, 114, 188, 0.28);
-    }
-    @if $color == "secondary" {
-      box-shadow: 10px 5px 21px rgba(145, 150, 211, 0.19);
-    }
-    @if $color == "orange" {
-      box-shadow: 4px 8px 20px rgba(144, 49, 20, 0.18);
-    }
   }
 
   // Outline button
