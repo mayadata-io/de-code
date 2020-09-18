@@ -340,7 +340,6 @@ $btn-link-disabled-color:     $gray-600 !default;
 
 $btn-block-spacing-y:         .5rem !default;
 
-$btn-github:$gray-600;
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius:           0.5rem !default;
 $btn-border-radius-lg:        0.75rem !default;
@@ -350,7 +349,7 @@ $btn-transition:              color .15s ease-in-out, background-color .15s ease
 $btn-github:$gray-600;
 
 $btn-login-icon-background: $white;
-$google-button-background: $skyblue-100;
+$google-button-background: $skyblue-200;
 $github-button-background: $gray-900;
 $github-button-color: $white;
 
