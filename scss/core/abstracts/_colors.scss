@@ -140,34 +140,6 @@ $theme-colors: map-merge((
   "darkgreen": $darkgreen
 ), $theme-colors);
 
-// $button-colors: () !default;
-// $primary: () !default;
-// $secondary: () !default;
-// $orange: () !default;
-// $green: () !default;
-// $button-colors: (
-//   $primary: map-merge((
-//     "base": $primary,
-//     "light": $blue-200,
-//     "dark": $blue-600,
-//   ), $primary),
-//   $secondary: map-merge((
-//     "base": $secondary,
-//     "light": $blue,
-//     "dark": $blue-200,
-//   ), $secondary),
-//   $orange: map-merge((
-//     "base": $orange,
-//     "light": $orange-100,
-//     "dark": $orange-300,
-//   ), $orange),
-//   $green: map-merge((
-//     "base": $green,
-//     "light": $green-100,
-//     "dark": $green-300,
-//   ), $green),
-// );
-
 $button-colors: () !default;
 $button-colors: (
   primary: (
