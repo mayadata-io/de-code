@@ -80,10 +80,9 @@ $yellow: #DDC557;
 $blue:    $blue-400 !default;
 $green:   $green-200 !default;
 $orange:  $orange-200 !default;
-$gray:    $gray-500 !default;
+$gray:    $gray-800 !default;
 $skyblue: $skyblue-400 !default;
-$red: $red-200 !default;
-
+$red: $red-100 !default;
 
 $colors: () !default;
 $colors: map-merge((
@@ -103,40 +102,95 @@ $colors: map-merge((
 
 // Theme colors
 $primary: $blue-400 !default;
-$success: $green !default;
-$danger: $red-100 !default;
-$warning: $yellow !default;
-$secondary: $orange-100 !default;
-$inactive: $gray-400 !default;
-$info: $darkgreen !default;
+$secondary: $white !default;
 $orange: $orange !default;
+$green: $green !default;
 $skyblue: $skyblue-100 !default;
 $blue-outline:   $blue-100 !default;
+$danger: $red !default;
+$success: $green !default;
+$gray: $gray !default;
 $error: $red-200 !default;
+$warning: $yellow !default;
+$inactive: $gray-400 !default;
+$info: $darkgreen !default;
+$purple: $purple !default;
 $link: $blue-500 !default;
 
 //Color maps
 $theme-colors: () !default;
 $theme-colors: map-merge((
   "primary":    $primary,
-  "blue":       $blue,
-  "success":    $success,
-  "orange":     $orange,
-  "danger":     $danger,
-  "gray" :      $gray,
+  "secondary":  $secondary,
+  "orange": $orange,
+  "green": $green,
   "skyblue":    $skyblue,
   "blue-outline": $blue-outline,
+  "danger":     $danger,
+  "success":    $success,
+  "gray" :      $gray,
+  "error": $error,
   "warning": $warning,
-  "secondary": $secondary,
   "inactive": $inactive,
   "info": $info,
   "purple": $purple,
-  "error": $error,
   "link": $link,
   "amber": $amber,
-"darkgreen": $darkgreen,
-"yellow": $yellow
+  "yellow": $yellow,
+  "darkgreen": $darkgreen
 ), $theme-colors);
+
+// $button-colors: () !default;
+// $primary: () !default;
+// $secondary: () !default;
+// $orange: () !default;
+// $green: () !default;
+// $button-colors: (
+//   $primary: map-merge((
+//     "base": $primary,
+//     "light": $blue-200,
+//     "dark": $blue-600,
+//   ), $primary),
+//   $secondary: map-merge((
+//     "base": $secondary,
+//     "light": $blue,
+//     "dark": $blue-200,
+//   ), $secondary),
+//   $orange: map-merge((
+//     "base": $orange,
+//     "light": $orange-100,
+//     "dark": $orange-300,
+//   ), $orange),
+//   $green: map-merge((
+//     "base": $green,
+//     "light": $green-100,
+//     "dark": $green-300,
+//   ), $green),
+// );
+
+$button-colors: () !default;
+$button-colors: (
+  primary: (
+    base: $primary,
+    light: $blue-200,
+    dark: $blue-600,
+  ),
+  secondary: (
+    base: $secondary,
+    light:$blue-200,
+    dark: $blue,
+  ),
+  orange: (
+    base: $orange,
+    light: $orange-100,
+    dark: $orange-300,
+  ),
+  green: (
+    base: $green,
+    light: $green-100,
+    dark: $green-300,
+  ),
+);
 
 $blues: () !default;
 $blues: map-merge((
