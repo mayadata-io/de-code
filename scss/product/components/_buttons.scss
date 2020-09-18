@@ -12,7 +12,7 @@
   vertical-align: middle;
   user-select: none;
   border: $input-btn-border-width solid transparent;
-  @include button-size($input-btn-padding-y, $input-btn-padding-x, $font-size-base, $input-btn-line-height, $btn-border-radius);
+  @include button-size($input-btn-padding-y, $input-btn-padding-x, $font-size-base, $input-btn-line-height, $btn-border-radius, $btn-min-width);
   @include transition($btn-transition);
 
   // Share hover and focus styles
@@ -22,13 +22,11 @@
   &:focus,
   &.focus {
     outline: 0 !important;
-    box-shadow: $input-btn-focus-box-shadow;
   }
 
   // Disabled comes first so active can properly restyle
   &.disabled,
   &:disabled {
-    opacity: .65;
     cursor: not-allowed;
     @include box-shadow(none);
   }
@@ -36,12 +34,6 @@
   // Opinionated: add "hand" cursor to non-disabled .btn elements
   &:not(:disabled):not(.disabled) {
     cursor: pointer;
-  }
-
-  &:not([disabled]):not(.disabled):active,
-  &:not([disabled]):not(.disabled).active {
-    background-image: none;
-    @include box-shadow($input-btn-focus-box-shadow, $btn-active-box-shadow);
   }
 
   i{
@@ -62,73 +54,39 @@ fieldset[disabled] a.btn {
 // Alternate buttons
 //
 
-@each $color, $value in $theme-colors {
+@each $color, $value in $button-colors {
   .btn-#{$color} {
-    @include button-variant($value, $value);
 
-    //Flat buttons
-    &.btn-flat {
-      @include button-flat-variant($value);
-      border: none;
-      box-shadow: none;
-      &:hover,
-      &.hover{
-        color: darken($value, 7.5%);
-      }
-      &:focus,
-      &.focus{
-        color: $value !important;
-      }
-      @if $color == "secondary" {
-        color: color-yiq($value);
-        &:focus,
-        &.focus{
-          color: color-yiq($value) !important;
-        }
-        &:hover,
-        &.hover{
-          color: darken(color-yiq($value), 7.5%);
-        }
-      }
-    }
+    @include button-variant($color);
 
-    //Disabled button
-    &.btn-disabled {
-      @include button-disabled-variant($value);
-      cursor: not-allowed !important;
-      @if $color == "secondary" {
-        color: $gray-300;
-        &:focus,
-        &.focus{
-          color: $gray-300 !important;
-        }
-      }
-    }
   }
-}
 
-@each $color, $value in $theme-colors {
+  // Outline button
   .btn-outline-#{$color} {
-    @if $color == "light" {
-      @include button-outline-variant($value, $gray-600);
-    } @else {
-      @include button-outline-variant($value, $white);
-    }
-    @if $color == "secondary" {
-      color: color-yiq($value);
-    }
+    @include button-outline-variant($color);
+  }
 
-    &:hover {
-      @if $color == "secondary" {
-        color: color-yiq($value);
-      }
-    }
+}
+
+
+//
+// Button Sizes
+//
+
+.btn-lg {
+  @include button-size($input-btn-padding-y-lg, $input-btn-padding-x-lg, $font-size-lg, $input-btn-line-height-lg, $btn-border-radius-lg, $btn-min-width-lg);
+  i{
+    font-size: 1.6rem;
+    vertical-align: middle;
+    margin-right: 0.2em;
   }
 }
 
-// Button pills
-.btn-pill {
-  border-radius: 100px;
+.btn-sm {
+  @include button-size($input-btn-padding-y-sm, $input-btn-padding-x-sm, $font-size-sm, $input-btn-line-height-sm, $btn-border-radius-sm, $btn-min-width-sm);
+  i{
+    font-size: 1rem;
+  }
 }
 
 //
@@ -140,6 +98,7 @@ fieldset[disabled] a.btn {
   font-weight: $font-weight-normal;
   color: $link-color;
   background-color: transparent;
+  min-width: unset;
 
   @include hover {
     color: $link-hover-color;
@@ -164,98 +123,6 @@ fieldset[disabled] a.btn {
   // No need for an active state here
 }
 
-// Inverse button
-.btn-inverse{
-  // color: $blue-600;
-  font-weight: normal;
-  background: none;
-  &:hover{
-    background: $gray-100;
-  }
-  &.active{
-    background: $gray-100;
-    box-shadow: none !important;
-  }
-  &:focus{
-    box-shadow: none !important;
-  }
-}
- //Toggle button
- .btn-toggle{
-  font-weight: normal;
-  background: none;
-  &.active{
-    color: $blue-600;
-    background: none;
-    box-shadow: none !important;
-  }
-}
-
-//
-// Floating buttons
-//
-
-
-.btn-icon {
-  background-color: transparent;
-  color: $gray-600;
-  text-align: center;
-  border-radius: 50% !important;
-  padding: 0.4em 0.5em !important;
-  
-    @include hover {
-      background-color: $gray-100;  
-      border-color: transparent;
-      color: $gray-600;
-    }
-
-    &.focus,
-    &:focus {
-      background-color: $blue-100;
-      border-color: transparent;
-      box-shadow: 0 0 0 .1rem $blue-200;
-    }
-    
-    + .btn-md{
-      width: 34px;
-      padding: 0.42em 0.5em !important;
-    }
-    + .btn-lg{
-      width: 42px;
-      padding: 0.42em 0.5em !important;
-    }
-    
-  i{
-    display: block;
-    margin-right: 0;
-  }
-
-}
-
-//
-// Button Sizes
-//
-
-.btn-lg {
-  @include button-size($input-btn-padding-y-lg, $input-btn-padding-x-lg, $font-size-lg, $input-btn-line-height-lg, $btn-border-radius-lg);
-  i{
-    font-size: 1.6rem;
-    vertical-align: middle;
-    margin-right: 0.2em;
-  }
-}
-
-.btn-sm {
-  @include button-size($input-btn-padding-y-sm, $input-btn-padding-x-sm, $font-size-sm, $input-btn-line-height-sm, $btn-border-radius-sm);
-  i{
-    font-size: 1rem;
-  }
-}
-
-.btn-wide{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
 //
 // Block button
 //
@@ -265,9 +132,98 @@ fieldset[disabled] a.btn {
   width: 100%;
 }
 
+//
+// Floating buttons
+//
+
+
+.btn-icon {
+  background-color: transparent;
+  color: $gray-800;
+  text-align: center;
+  border-radius: 50% !important;
+  padding: 0.7em 0.85em;
+  min-width: unset !important;
+  
+    @include hover {
+      background-color: $gray-100;  
+      border-color: transparent;
+    }
+
+    &.focus,
+    &:focus {
+      background-color: $blue-100;
+      border-color: transparent;
+      box-shadow: 0 0 0 .1rem $blue-200;
+    }
+    
+  i{
+    display: block;
+    margin-right: 0;
+  }
+
+}
+
 // Vertically space out multiple block buttons
 .btn-block + .btn-block {
   margin-top: $btn-block-spacing-y;
+}
+
+//Login button for agents: Google and Gthub
+.btn-login {
+  transition-duration: 0.1s;
+  transition-property: box-shadow, transform;
+  -webkit-transition-duration: 0.1s;
+  -webkit-transition-property: box-shadow, transform;
+  border: 1px solid $outline-color;
+  display: flex;
+  border-radius: 4px;
+  font-size: $font-size-lg;
+  // Avoid using mixin so we can pass custom focus shadow properly
+  &:hover {
+    box-shadow: 4px 8px 20px rgba(100, 114, 188, 0.28);
+  }
+  &:active, &:focus {
+    box-shadow: none;
+  }
+  .btn-login-text {
+    vertical-align: middle;
+    flex-grow: 1;
+    padding: 0.6rem 0.7rem;
+  }
+
+  & img {
+    width: 28px;
+  }
+  .btn-login-icon{
+    background: $btn-login-icon-background;
+    padding: 0.52rem 0.6rem;
+    vertical-align: middle;
+    border-radius: 4px 0px 0px 4px;
+  }
+}
+
+.btn-github {
+  background-color: $github-button-background;
+  width: 100%;
+  padding: 0;
+  border-color: $github-button-background !important;
+  color: $github-button-color;
+  filter: unset;
+  .btn-login-icon{
+    border-right: 1px solid $github-button-background;
+  }
+}
+
+.btn-google {
+  color: $heading-color;
+  background: $google-button-background;
+  width: 100%;
+  padding: 0;
+  filter: unset;
+  .btn-login-icon{
+    border-right: 1px solid $outline-color;
+  }
 }
 
 // Specificity overrides
@@ -276,86 +232,5 @@ input[type="reset"],
 input[type="button"] {
   &.btn-block {
     width: 100%;
-  }
-}
-
-//Login button
-.btn-login {
-  // background-color: $aqua-500;
-  color: $white;
-
-  .btn-login-text {
-    vertical-align: middle;
-    margin-left: 8px;
-  }
-}
-
-//Login button for agents: Google and Gthub
-  
-  .btn-google {
-    color: $gray-600;
-    background-color: $white;
-    border-color: $gray-100;
-    width: 100%;
-    -webkit-transition-duration: 0.1s;
-    transition-duration: 0.1s;
-    -webkit-transition-property: box-shadow, transform;
-    transition-property: box-shadow, transform;
-
-  &:hover {
-    box-shadow: 0 3px 8px 0 $gray-200;
-    -webkit-transform: scale(1.01);
-    transform: scale(1.01);
-  }
-
-  .btn-login-text {
-    vertical-align: middle;
-    margin-left: 8px;
-    color: $gray-600;
-  }
-
-  img {
-    float: left;
-    margin-top: 4px;
-  }
-
-  }
-  .btn-github {
-    color: $white;
-    background-color: $btn-github;
-    width: 100%;
-    -webkit-transition-duration: 0.1s;
-    transition-duration: 0.1s;
-    -webkit-transition-property: box-shadow, transform;
-    transition-property: box-shadow, transform;
-
-  &:hover {
-    box-shadow: 0 3px 8px 0 $gray-200;
-    -webkit-transform: scale(1.01);
-    transform: scale(1.01);
-  }
-
-  .btn-login-text {
-    vertical-align: middle;
-    margin-left: 8px;
-    color: $white;
-  }
-
-  img {
-    float: left;
-    margin-top: 4px;
-  }
-
-  }
-
-// Highlight button
-.btn-highlight{
-  background: $gray-100;
-  border: 1px solid $gray-100;
-  border-radius: 4px;
-  color: $primary;
-  
-  &:hover{
-    background: $blue-100;
   }
 }

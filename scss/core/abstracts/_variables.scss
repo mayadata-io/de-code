@@ -16,10 +16,10 @@
 $theme-color-interval:      8% !default;
 
 // The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
-$yiq-contrasted-threshold: 150 !default;
+$yiq-contrasted-threshold: 170 !default;
 
 // Customize the light and dark text colors for use in our YIQ color contrast function.
-$yiq-text-dark: $gray-600 !default;
+$yiq-text-dark: $purple !default;
 $yiq-text-light: $white !default;
 $black: #000;
 // Options
@@ -221,6 +221,8 @@ $mark-bg:                     #fcf8e3 !default;
 
 $hr-margin-y:                 $spacer !default;
 
+$heading-color: $purple;
+
 // Headers
 
 $header-top-bar-title:      $gray-600 !default;
@@ -282,25 +284,29 @@ $table-dark-color:            $body-bg !default;
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$input-btn-padding-y:         .375rem !default;
-$input-btn-padding-x:         .75rem !default;
+$input-btn-padding-y:         .75rem !default;
+$input-btn-padding-x:         1rem !default;
 $input-btn-line-height:       $line-height-base !default;
+
 
 $input-btn-focus-width:       .1rem !default;
 $input-btn-focus-color:       $component-active-bg !default;
 $input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
 
-$input-btn-padding-y-sm:      .25rem !default;
-$input-btn-padding-x-sm:      .5rem !default;
+$input-btn-padding-y-sm:      .5rem !default;
+$input-btn-padding-x-sm:      0.75rem !default;
 $input-btn-line-height-sm:    $line-height-sm !default;
 
-$input-btn-padding-y-lg:      .5rem !default;
-$input-btn-padding-x-lg:      1rem !default;
+$input-btn-padding-y-lg:      1.2rem !default;
+$input-btn-padding-x-lg:      1.5rem !default;
 $input-btn-line-height-lg:    $line-height-lg !default;
 
 $input-btn-border-width:      $border-width !default;
-
-
+$btn-secondary-color: $purple !default;
+$btn-disabled-background: $gray-400 !default;
+$btn-disabled-color: $gray-600 !default;
+$btn-outline-primary-color: $purple !default;
+$outline-color: $blue-100;
 // Buttons
 //
 // For each of Bootstrap's buttons, define text, background, and border color.
@@ -308,18 +314,21 @@ $input-btn-border-width:      $border-width !default;
 $btn-padding-y:               $input-btn-padding-y !default;
 $btn-padding-x:               $input-btn-padding-x !default;
 $btn-line-height:             $input-btn-line-height !default;
+$btn-min-width:               225px !default;
 
 $btn-padding-y-sm:            $input-btn-padding-y-sm !default;
 $btn-padding-x-sm:            $input-btn-padding-x-sm !default;
 $btn-line-height-sm:          $input-btn-line-height-sm !default;
+$btn-min-width-sm:            145px !default;
 
 $btn-padding-y-lg:            $input-btn-padding-y-lg !default;
 $btn-padding-x-lg:            $input-btn-padding-x-lg !default;
 $btn-line-height-lg:          $input-btn-line-height-lg !default;
+$btn-min-width-lg:            300px !default; 
 
 $btn-border-width:            $input-btn-border-width !default;
 
-$btn-font-weight:             $font-weight-semi-bold !default;
+$btn-font-weight:             $font-weight-normal !default;
 $btn-box-shadow:              0 1px 0 0 rgba(33,37,54,.1)!default;
 
 $btn-focus-width:             $input-btn-focus-width !default;
@@ -331,14 +340,18 @@ $btn-link-disabled-color:     $gray-600 !default;
 
 $btn-block-spacing-y:         .5rem !default;
 
-$btn-github:$gray-600;
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius:           $border-radius !default;
-$btn-border-radius-lg:        $border-radius-lg !default;
-$btn-border-radius-sm:        $border-radius-sm !default;
+$btn-border-radius:           0.5rem !default;
+$btn-border-radius-lg:        0.75rem !default;
+$btn-border-radius-sm:        0.3rem !default;
 
 $btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 $btn-github:$gray-600;
+
+$btn-login-icon-background: $white;
+$google-button-background: $skyblue-200;
+$github-button-background: $gray-900;
+$github-button-color: $white;
 
 // Forms
 

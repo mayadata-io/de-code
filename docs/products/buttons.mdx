@@ -15,38 +15,24 @@ import google from '../../resources/images/workloads/google.svg'
 <Playground>
   <button class="btn btn-primary mr-2">Primary</button>
   <button class="btn btn-secondary mr-2">Secondary</button>
-  <button class="btn btn-danger">Danger</button>
+  <button class="btn btn-orange mr-2">Orange</button>
+  <button class="btn btn-green mt-2">Green</button>
 </Playground>
 
 ### Outline
 <Playground>
   <button class="btn btn-outline-primary mr-2">Primary</button>
-  <button class="btn btn-outline-secondary mr-2">Secondary</button>
-  <button class="btn btn-outline-danger">Danger</button>
+  <button class="btn btn-outline-secondary">Secondary</button>
 </Playground>
 
-### Flat
+### Disabled state
 <Playground>
-  <button class="btn btn-primary btn-flat mr-2">Primary</button>
-  <button class="btn btn-secondary btn-flat mr-2">Secondary</button>
-  <button class="btn btn-danger btn-flat">Danger</button>
-</Playground>
-
-### Disabled
-<Playground>
-  <button class="btn btn-primary btn-disabled mr-2">Primary</button>
-  <button class="btn btn-secondary btn-disabled mr-2">Secondary</button>
-  <button class="btn btn-danger btn-disabled">Danger</button>
-</Playground>
-
-### Pill
-<Playground>
-  <button class="btn btn-primary btn-pill mr-2">Primary</button>
-  <button class="btn btn-secondary btn-pill mr-2">Secondary</button>
-  <button class="btn btn-danger btn-pill mr-2">Danger</button>
-  <button class="btn btn-outline-primary btn-pill mr-2">Primary</button>
-  <button class="btn btn-outline-secondary btn-pill mr-2">Secondary</button>
-  <button class="btn btn-outline-danger btn-pill">Danger</button>
+  <button class="btn btn-primary disabled mr-2">Primary</button>
+  <button class="btn btn-secondary mr-2" disabled>Secondary</button>
+  <button class="btn btn-orange disabled">Orange</button>
+  <button class="btn btn-green disabled mt-2 mr-2">Green</button>
+  <button class="btn btn-outline-primary disabled mr-2">Primary</button>
+  <button class="btn btn-outline-secondary" disabled>Secondary</button>
 </Playground>
 
 ## Special Buttons
@@ -54,16 +40,6 @@ import google from '../../resources/images/workloads/google.svg'
 ### Link
 <Playground>
    <button class="btn btn-link">Button</button>
-</Playground>
-
-### Highlight
-<Playground>
-   <button class="btn btn-highlight">Button</button>
-</Playground>
-
-### Inverse
-<Playground>
-   <button class="btn btn-inverse">Inverse</button>
 </Playground>
 
 ### Icon buttons
@@ -87,18 +63,18 @@ import google from '../../resources/images/workloads/google.svg'
 
 ### Google
 <Playground>
-   <button class="btn btn-google btn-lg">
-    <img src={google}/>
-    <span class="btn-login-text">Google</span>
+  <button class="btn btn-login btn-google">
+    <span class="btn-login-icon"><img src={google}/></span>
+    <span class="btn-login-text">Sign up with Google</span>
   </button>
 </Playground>
 
 ### GitHub
 <Playground>
-   <button class="btn btn-github btn-lg">
-    <img src={github}/>
-    <span>GitHub</span>
-   </button>
+   <button class="btn btn-login btn-github">
+    <span class="btn-login-icon"><img src={github}/></span>
+    <span class="btn-login-text">Sign up with GitHub</span>
+  </button>
 </Playground>
 
 ## Sizes
@@ -116,11 +92,6 @@ import google from '../../resources/images/workloads/google.svg'
 ### Large:
 <Playground>
    <button class="btn btn-primary btn-lg">Button</button>
-</Playground>
-
-### Wide:
-<Playground>
-   <button class="btn btn-primary btn-wide">Button</button><br/>
 </Playground>
 
 ### Block:
