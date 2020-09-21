@@ -52,7 +52,7 @@
 
 .nav-segmented {
   .nav-link {
-    box-shadow: $segment-control-color-box-shadow;
+    border: $segment-control-border;
     color: $segment-control-color;
     cursor: pointer;
     display: block;

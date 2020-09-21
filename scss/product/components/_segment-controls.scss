@@ -3,6 +3,7 @@
 
 .segmented-control {
   display: table;
+  table-layout: fixed; // displays equal width table cells
   width: 100%;
   padding: 0;
 }
@@ -20,7 +21,7 @@
 }
 
 .segmented-control__label {
-  box-shadow: $segment-control-color-box-shadow;
+  border: $segment-control-border;
   color: $segment-control-color;
   display: block;
   margin: 0 -1px -1px 0; /* -1px margin removes double-thickness borders between items */
@@ -38,9 +39,15 @@
 }
 .segmented-control__label:hover {
   background: $segment-control-color-hover-bg;
+  color: $segment-control-hover-color;
+  box-shadow: $segment-control-color-hover-box-shadow;
+  border-radius: $segment-control-active-hover-border-radius;
+  border: $segment-control-hover-border;
 }
 
 .segmented-control__input:checked + .segmented-control__label {
   background: $segment-control-color-active-color-bg;
   color: $segment-control-color-active-color;
+  border-radius: $segment-control-active-hover-border-radius;
+  border: $segment-control-active-border;
 }
