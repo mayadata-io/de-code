@@ -955,3 +955,13 @@ $icon-size: (
   "6x" : 6,
   "7x" : 7,
 );
+
+
+// Avatar
+$progress-avatar-width: 1px;
+$animationTime: 1.5s;
+$progress-avatar-border-color: $skyblue-200;
+$progress-avatar-label-color: $purple;
+$progress-avatar-size: 2rem;
+
+$progress-steps: 10; //this needs to be even.
