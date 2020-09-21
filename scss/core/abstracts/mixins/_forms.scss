@@ -12,16 +12,8 @@
 // contrast against a dark gray background.
 @mixin form-control-focus() {
   &:focus {
-    color: $input-focus-color;
-    background-color: $input-focus-bg;
+    border: $input-border-width solid $input-focus-border-color;
     outline: 0;
-    // Avoid using mixin so we can pass custom focus shadow properly
-    @if $enable-shadows {
-      box-shadow: $input-focus-box-shadow;
-    } @else {
-      box-shadow: none;
-    //Remove the glowing box shadow
-    }
   }
 }
 
@@ -58,7 +50,6 @@
 
       &:focus {
         border-color: $color;
-        box-shadow: 0 0 0 $input-focus-width rgba($color, .25);
       }
 
       ~ .#{$state}-feedback,
