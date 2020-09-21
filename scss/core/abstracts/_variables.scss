@@ -746,6 +746,9 @@ $badge-padding-y:                   .4em !default;
 $badge-padding-x:                   1em !default;
 $badge-border-radius:               10rem !default;
 
+$badge-notification-border: 2px solid $red-100 !default;
+$badge-notification-color: $red-100 !default;
+$badge-notification-size: 22px;
 
 // Modals
 
