@@ -10,38 +10,13 @@ import { Playground, PropsTable } from 'docz'
 ### Default badge
 
 <Playground>
-<span class="badge badge-primary">Primary</span>
-<span class="badge badge-secondary">Secondary</span>
-<span class="badge badge-success">Success</span>
-<span class="badge badge-danger">Danger</span>
-<span class="badge badge-warning">Warning</span>
+<span class="badge badge-primary mr-2">Primary</span>
+<span class="badge badge-secondary mr-2">Secondary</span>
+<span class="badge badge-success mr-2">Success</span>
+<span class="badge badge-danger mr-2">Danger</span>
+<span class="badge badge-warning mr-2">Warning</span>
+<span class="badge badge-inactive mr-2">Inactive</span>
 <span class="badge badge-info">Info</span>
-<span class="badge badge-light">Light</span>
-<span class="badge badge-dark">Dark</span>
-</Playground>
-
-### Gradient badge
-
-<Playground>
-<span class="badge badge-pill badge-gradient-primary">Primary</span>
-<span class="badge badge-pill badge-gradient-secondary">Secondary</span>
-<span class="badge badge-pill badge-gradient-success">Success</span>
-<span class="badge badge-pill badge-gradient-danger">Danger</span>
-<span class="badge badge-pill badge-gradient-warning">Warning</span>
-<span class="badge badge-pill badge-gradient-info">Info</span>
-</Playground>
-
-### Pill badge
-
-<Playground>
-<span class="badge badge-pill badge-primary">Primary</span>
-<span class="badge badge-pill badge-secondary">Secondary</span>
-<span class="badge badge-pill badge-success">Success</span>
-<span class="badge badge-pill badge-danger">Danger</span>
-<span class="badge badge-pill badge-warning">Warning</span>
-<span class="badge badge-pill badge-info">Info</span>
-<span class="badge badge-pill badge-light">Light</span>
-<span class="badge badge-pill badge-dark">Dark</span>
 </Playground>
 
 ### Circle badge
@@ -68,7 +43,11 @@ import { Playground, PropsTable } from 'docz'
   <span class="badge-label">label</span>
 </div>
 <div class="badge-circle-wrapper">
-  <span class="badge-circle badge-light"></span>
+  <span class="badge-circle badge-inactive"></span>
+  <span class="badge-label">label</span>
+</div>
+<div class="badge-circle-wrapper">
+  <span class="badge-circle badge-info"></span>
   <span class="badge-label">label</span>
 </div>
 </Playground>

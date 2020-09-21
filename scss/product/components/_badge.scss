@@ -26,16 +26,6 @@
   top: -1px;
 }
 
-// Pill badges
-//
-// Make them extra rounded with a modifier to replace v3's badges.
-
-.badge-pill {
-  padding-right: $badge-pill-padding-x;
-  padding-left: $badge-pill-padding-x;
-  @include border-radius($badge-pill-border-radius);
-}
-
 // Colors
 //
 // Contextual variations (linked badges get darker on :hover).
@@ -43,14 +33,18 @@
 @each $color, $value in $theme-colors {
   .badge-#{$color} {
     @include badge-variant($value);
-  }
-}
 
-// Gradient badges
+    @if $color == "secondary" {
+      border: 2px solid $orange-100;
+      color:  $orange-100;
+    }
 
-@each $color, $value in $theme-colors {
-  .badge-gradient-#{$color} {
-    @include badge-gradient-variant($color);
+    &.badge-circle {
+      background: $value;
+      @if $color == "secondary" {
+        background:  $orange-100;
+      }
+    }
   }
 }
 
