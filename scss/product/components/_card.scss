@@ -30,6 +30,14 @@
       @include border-bottom-radius($card-border-radius);
     }
   }
+  &.card-clickable {
+    flex: none !important;
+    cursor: pointer;
+
+    &:hover{
+      border: $card-border;
+    }
+  }
 }
 
 .card-body {
