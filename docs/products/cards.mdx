@@ -12,8 +12,8 @@ import Shape from '../../resources/images/icons/Shape.svg'
 ### Example
 #### Card with no contents.
 <Playground>
-  <div class="card">
-    <div class="card-body">
+  <div className="card">
+    <div className="card-body">
       Card body
     </div>
   </div>
@@ -22,28 +22,28 @@ import Shape from '../../resources/images/icons/Shape.svg'
 ### Example two
 #### Card with section header
 <Playground>
-  <div class="card">
-    <div class="card-body">
-      <div class="section-header">
-        <div class="section-header_title">
-          <span class="section-header_title__text">Volumes</span>
+  <div className="card">
+    <div className="card-body">
+      <div className="section-header">
+        <div className="section-header_title">
+          <span className="section-header_title__text">Volumes</span>
         </div>
-        <div class="section-header-controls">
-          <div class="section-header-controls_item">
-            <input class="form-control" placeholder="Find an application" />
+        <div className="section-header-controls">
+          <div className="section-header-controls_item">
+            <input className="form-control" placeholder="Find an application" />
           </div>
-          <div class="section-header-controls_item">
-            <button class="btn btn-icon">
-              <span class="fa fa-edit" />
+          <div className="section-header-controls_item">
+            <button className="btn btn-icon">
+              <span className="fa fa-edit" />
             </button>
           </div>
-          <div class="section-header-controls_item">
-            <button class="btn btn-icon">
-              <span class="fa fa-filter" />
+          <div className="section-header-controls_item">
+            <button className="btn btn-icon">
+              <span className="fa fa-filter" />
             </button>
           </div>
-          <div class="section-header-controls_item ml-auto">
-            <button class="btn btn-primary">Primary action</button>
+          <div className="section-header-controls_item ml-auto">
+            <button className="btn btn-primary">Primary action</button>
           </div>
         </div>
       </div>
@@ -54,32 +54,32 @@ import Shape from '../../resources/images/icons/Shape.svg'
 ### Example three
 #### Card with section header and content
 <Playground>
-  <div class="card">
-    <div class="card-body">
-      <div class="section-header">
-        <div class="section-header_title">
-          <span class="section-header_title__text">Volumes</span>
+  <div className="card">
+    <div className="card-body">
+      <div className="section-header">
+        <div className="section-header_title">
+          <span className="section-header_title__text">Volumes</span>
         </div>
-        <div class="section-header-controls">
-          <div class="section-header-controls_item">
-            <input class="form-control" placeholder="Find an application" />
+        <div className="section-header-controls">
+          <div className="section-header-controls_item">
+            <input className="form-control" placeholder="Find an application" />
           </div>
-          <div class="section-header-controls_item">
-            <button class="btn btn-icon">
-              <span class="fa fa-edit" />
+          <div className="section-header-controls_item">
+            <button className="btn btn-icon">
+              <span className="fa fa-edit" />
             </button>
           </div>
-          <div class="section-header-controls_item">
-            <button class="btn btn-icon">
-              <span class="fa fa-filter" />
+          <div className="section-header-controls_item">
+            <button className="btn btn-icon">
+              <span className="fa fa-filter" />
             </button>
           </div>
-          <div class="section-header-controls_item ml-auto">
-            <button class="btn btn-primary">Primary action</button>
+          <div className="section-header-controls_item ml-auto">
+            <button className="btn btn-primary">Primary action</button>
           </div>
         </div>
       </div>
-      <table class="table table-hover">
+      <table className="table table-hover">
         <thead>
           <tr>
             <th scope="col">Name</th>
@@ -93,7 +93,7 @@ import Shape from '../../resources/images/icons/Shape.svg'
           <tr>
             <td>Dev-cluster-yg238</td>
             <td>
-              <span class="badge badge-success">Active</span>
+              <span className="badge badge-success">Active</span>
             </td>
             <td>v1.10.11-gke.1</td>
             <td>12</td>
@@ -102,7 +102,7 @@ import Shape from '../../resources/images/icons/Shape.svg'
           <tr>
             <td>Testing-cluster-tr33d</td>
             <td>
-              <span class="badge badge-inactive">Inactive</span>
+              <span className="badge badge-inactive">Inactive</span>
             </td>
             <td>v1.10</td>
             <td>3</td>
@@ -111,7 +111,7 @@ import Shape from '../../resources/images/icons/Shape.svg'
           <tr>
             <td>Staging-setup-df12s</td>
             <td>
-              <span class="badge badge-warning">Degraded</span>
+              <span className="badge badge-warning">Degraded</span>
             </td>
             <td>v1.10.11</td>
             <td>6</td>
@@ -120,7 +120,7 @@ import Shape from '../../resources/images/icons/Shape.svg'
           <tr>
             <td>Monitor-cluster-8hjq7</td>
             <td>
-              <span class="badge badge-success">Active</span>
+              <span className="badge badge-success">Active</span>
             </td>
             <td>v1.13.2</td>
             <td>12</td>
@@ -129,7 +129,7 @@ import Shape from '../../resources/images/icons/Shape.svg'
           <tr>
             <td>Asia-scope-72dr4</td>
             <td>
-              <span class="badge badge-danger">Offline</span>
+              <span className="badge badge-danger">Offline</span>
             </td>
             <td>v1.10.13</td>
             <td>12</td>
@@ -142,10 +142,10 @@ import Shape from '../../resources/images/icons/Shape.svg'
 </Playground>
 
 ### Clickable card
-Adding class 'card-clickable' along with class 'card' makes it clickable
+Adding className 'card-clickable' along with className 'card' makes it clickable
 <Playground>
-<div class="card card-clickable">
-    <div class="card-body">
+<div className="card card-clickable">
+    <div className="card-body">
       Card body
     </div>
   </div>
@@ -156,46 +156,46 @@ Adding class 'card-clickable' along with class 'card' makes it clickable
 ##### Use card groups to render cards as a single, attached element with equal width and height columns.
 
 <Playground>
-<div class="d-flex flex-row flex-wrap card-group">
-    <div class="card col-4 p-3">
-        <div class="card-body p-0 d-flex align-items-center">
-          <div class="status-square icon-healthy">
+<div className="d-flex flex-row flex-wrap card-group">
+    <div className="card col-4 p-3">
+        <div className="card-body p-0 d-flex align-items-center">
+          <div className="status-square icon-healthy">
             <img src={openebs}/>
           </div>  
-          <div class="pl-3">
-              <div class="d-flex flex-row align-items-center">
-                  <h3 class="heading pr-2">1</h3>
+          <div className="pl-3">
+              <div className="d-flex flex-row align-items-center">
+                  <h3 className="heading pr-2">1</h3>
                   <span>out of 2</span>
               </div>
-              <p class="sub-heading mb-0">MALFUNCTIONING OPENEBS COMPONENTS</p>
+              <p className="sub-heading mb-0">MALFUNCTIONING OPENEBS COMPONENTS</p>
           </div>
         </div>
     </div>
-    <div class="card col-4 p-3">
-        <div class="card-body p-0 d-flex align-items-center">
-          <div class="status-square icon-healthy">
+    <div className="card col-4 p-3">
+        <div className="card-body p-0 d-flex align-items-center">
+          <div className="status-square icon-healthy">
             <img src={disks}/>
           </div>  
-          <div class="pl-3">
-              <div class="d-flex flex-row align-items-center">
-                  <h3 class="heading pr-2">0</h3>
+          <div className="pl-3">
+              <div className="d-flex flex-row align-items-center">
+                  <h3 className="heading pr-2">0</h3>
                   <span>out of 0</span>
               </div>
-              <p class="sub-heading mb-0">VOLUMES NEED YOUR ATTENTION</p>
+              <p className="sub-heading mb-0">VOLUMES NEED YOUR ATTENTION</p>
           </div>
         </div>
     </div>
-    <div class="card col-4 p-3">
-        <div class="card-body p-0 d-flex align-items-center">
-          <div class="status-square icon-healthy">
+    <div className="card col-4 p-3">
+        <div className="card-body p-0 d-flex align-items-center">
+          <div className="status-square icon-healthy">
             <img src={Shape}/>
           </div>  
-          <div class="pl-3">
-              <div class="d-flex flex-row align-items-center">
-                  <h3 class="heading pr-2">0</h3>
+          <div className="pl-3">
+              <div className="d-flex flex-row align-items-center">
+                  <h3 className="heading pr-2">0</h3>
                   <span>out of 24</span>
               </div>
-              <p class="sub-heading mb-0">MALFUNCTIONING DO COMPONENTS</p>
+              <p className="sub-heading mb-0">MALFUNCTIONING DO COMPONENTS</p>
           </div>
         </div>
     </div>
@@ -208,43 +208,43 @@ Adding class 'card-clickable' along with class 'card' makes it clickable
 ##### Need a set of equal width and height cards that aren’t attached to one another? Use card decks.
 
 <Playground>
-<div class="d-flex flex-row align-items-center justify-content-between flex-wrap card-deck">
-    <div class="card col p-4">
-        <div class="card-body p-0">
-            <div class="d-flex flex-row align-items-center">
-                <h3 class="pr-2 text-primary">0 Bytes</h3>
+<div className="d-flex flex-row align-items-center justify-content-between flex-wrap card-deck">
+    <div className="card col p-4">
+        <div className="card-body p-0">
+            <div className="d-flex flex-row align-items-center">
+                <h3 className="pr-2 text-primary">0 Bytes</h3>
             </div>
-            <p class="sub-heading mb-0">Total Capacity</p>
+            <p className="sub-heading mb-0">Total Capacity</p>
         </div>
     </div>
-    <div class="card col p-4">
-        <div class="card-body p-0">
-            <div class="d-flex flex-row align-items-center">
-                <h3 class="pr-2 text-info">0</h3>
+    <div className="card col p-4">
+        <div className="card-body p-0">
+            <div className="d-flex flex-row align-items-center">
+                <h3 className="pr-2 text-info">0</h3>
             </div>
-            <p class="sub-heading mb-0">Total Volumes</p>
+            <p className="sub-heading mb-0">Total Volumes</p>
         </div>
     </div>
-    <div class="card col p-4">
-        <div class="card-body p-0">
-            <div class="d-flex flex-row align-items-center text-secondary">
-                <h3 class="pr-2 text-success">
+    <div className="card col p-4">
+        <div className="card-body p-0">
+            <div className="d-flex flex-row align-items-center text-secondary">
+                <h3 className="pr-2 text-success">
                     0
                 </h3>
                 <span>out of 2</span>
             </div>
-            <p class="sub-heading mb-0">Healthy Volumes</p>
+            <p className="sub-heading mb-0">Healthy Volumes</p>
         </div>
     </div>
-    <div class="card col p-4">
-        <div class="card-body p-0">
-            <div class="d-flex flex-row align-items-center text-secondary">
-                <h3 class="pr-2 text-danger">
+    <div className="card col p-4">
+        <div className="card-body p-0">
+            <div className="d-flex flex-row align-items-center text-secondary">
+                <h3 className="pr-2 text-danger">
                     0
                 </h3>
                <span>out of 4</span>
             </div>
-            <p class="sub-heading mb-0">Unhealthy Volumes</p>
+            <p className="sub-heading mb-0">Unhealthy Volumes</p>
         </div>
     </div>
 </div>

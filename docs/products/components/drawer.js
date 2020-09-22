@@ -32,7 +32,7 @@ class Drawer extends Component  {
                   <div className="drawer-header">
                     <span className="drawer-header__title">Title goes here</span>
                     {isClosable &&
-                      <button className="btn btn-light ml-auto" onClick={this.toggleDrawer}>
+                      <button className="btn btn-icon ml-auto" onClick={this.toggleDrawer}>
                         <i className="fa fa-times" aria-hidden="true"></i>
                       </button>
                     }
@@ -45,7 +45,7 @@ class Drawer extends Component  {
                       <li className="list-group-item">Porta ac consectetur ac</li>
                       <li className="list-group-item">Vestibulum at eros</li>
                     </ul>
-                    <table class="table table-hover">
+                    <table className="table table-hover">
   <thead>
     <tr>
       <th scope="col">Name</th>
@@ -59,7 +59,7 @@ class Drawer extends Component  {
     <tr>
       <td>Dev-cluster-yg238</td>
       <td>
-        <span class="badge badge-gradient-success badge-pill">Active</span>
+        <span className="badge badge-success">Active</span>
       </td>
       <td>v1.10.11-gke.1</td>
       <td>12</td>
@@ -68,7 +68,7 @@ class Drawer extends Component  {
     <tr>
       <td>Testing-cluster-tr33d</td>
       <td>
-        <span class="badge badge-gradient-danger badge-pill">Inactive</span>
+        <span className="badge badge-inactive">Inactive</span>
       </td>
       <td>v1.10</td>
       <td>3</td>
@@ -77,7 +77,7 @@ class Drawer extends Component  {
     <tr>
       <td>Staging-setup-df12s</td>
       <td>
-        <span class="badge badge-gradient-warning badge-pill">Degrated</span>
+        <span className="badge badge-warning">Degrated</span>
       </td>
       <td>v1.10.11</td>
       <td>6</td>
@@ -86,7 +86,7 @@ class Drawer extends Component  {
     <tr>
       <td>Monitor-cluster-8hjq7</td>
       <td>
-        <span class="badge badge-gradient-success badge-pill">Active</span>
+        <span className="badge badge-success">Active</span>
       </td>
       <td>v1.13.2</td>
       <td>12</td>
@@ -95,7 +95,7 @@ class Drawer extends Component  {
     <tr>
       <td>Asia-scope-72dr4</td>
       <td>
-        <span class="badge badge-gradient-danger badge-pill">Offline</span>
+        <span className="badge badge-danger">Offline</span>
       </td>
       <td>v1.10.13</td>
       <td>12</td>

@@ -7,7 +7,6 @@
     "build:css": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 index.scss -o css/"
   },
   "dependencies": {
-    "de-code-marketing": "^1.1.0",
     "de-code-product": "^1.1.0"
   },
   "author": "MayaData, Inc.",
