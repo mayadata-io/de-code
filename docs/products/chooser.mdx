@@ -23,15 +23,15 @@ Tab Chooser are selector component, it can be used to create a choose compoent w
 Tab Chooser can be used to create a cluster location and cloud provider selector.
 <Playground>
   <ul class="chooser-card">
-    <li class="chooser-card-item active">
+    <li class="chooser-card-item">
       <div class="chooser-card-head">
         <div class="chooser-card-logo">
-          <img src={openshift} />
+          <img src={gke} />
         </div>
       </div>
       <div class="chooser-card-body">
         <div class="chooser-card-label">
-        OpenShift
+        GKE
         </div>
       </div>  
     </li>
@@ -102,7 +102,7 @@ Tab Chooser can be used to create a cluster location and cloud provider selector
 
 <Playground>
 <ul class="chooser-card chooser-card-wide">
-  <li class="chooser-card-item active">
+  <li class="chooser-card-item">
       <div class="chooser-card-head">
         <div class="chooser-card-logo">
           <img src={gke} />
@@ -115,7 +115,7 @@ Tab Chooser can be used to create a cluster location and cloud provider selector
         <span>Setup chaos for specific application</span>
       </div>    
   </li>
-  <li class="chooser-card-item disabled">
+  <li class="chooser-card-item">
       <div class="chooser-card-head">
         <div class="chooser-card-logo">
           <img src={eks} />
@@ -128,5 +128,40 @@ Tab Chooser can be used to create a cluster location and cloud provider selector
         <span>Setup chaos for infrastructure component</span>
       </div>  
   </li>
+</ul>
+</Playground>
+
+## Chooser card states
+
+<Playground>
+<h5>Active:</h5>
+<ul class="chooser-card">
+  <li class="chooser-card-item active">
+      <div class="chooser-card-head">
+        <div class="chooser-card-logo">
+          <img src={gke} />
+        </div>
+      </div>
+      <div class="chooser-card-body">
+        <div class="chooser-card-label">
+        GKE
+        </div>
+      </div>  
+    </li>
+</ul>
+<h5>Disabled:</h5>
+<ul class="chooser-card">
+    <li class="chooser-card-item disabled">
+      <div class="chooser-card-head">
+        <div class="chooser-card-logo">
+          <img src={gke} />
+        </div>
+      </div>
+      <div class="chooser-card-body">
+        <div class="chooser-card-label">
+        GKE
+        </div>
+      </div>  
+    </li>
 </ul>
 </Playground>
