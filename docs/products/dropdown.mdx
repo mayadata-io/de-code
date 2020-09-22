@@ -13,9 +13,9 @@ Dropdowns are toggleable, contextual overlays for displaying lists of links
 
 <div class="de-code">
     <div class="d-flex align-items-center dropdown"> 
-        <button class="btn btn-secondary btn-flat" role="button">Dropdown Button<i class="dci dci-chevron-down"></i></button>
+        <button class="btn dropdown-btn" role="button">Dropdown Button<i class="dci dci-chevron-down"></i></button>
         <ui class="dropdown-menu">
-            <li class="dropdown-item" role="button">Option 1</li>
+            <li class="dropdown-item active" role="button">Option 1</li>
             <li class="dropdown-item" role="button">Option 2</li>
             <li class="dropdown-item" role="button">Option 3</li>
         </ui>
@@ -24,7 +24,7 @@ Dropdowns are toggleable, contextual overlays for displaying lists of links
 
 <Playground>
 <div class="d-flex align-items-center dropdown"> 
-    <button class="btn btn-secondary btn-flat" role="button">Dropdown Button<i class="dci dci-chevron-down"></i></button>
+    <button class="btn dropdown-btn" role="button">Dropdown Button<i class="dci dci-chevron-down"></i></button>
     <ui class="dropdown-menu">
         <li class="dropdown-item" role="button">Option 1</li>
         <li class="dropdown-item" role="button">Option 2</li>
@@ -39,23 +39,33 @@ By default, a dropdown menu is automatically positioned 100% from the top and al
 of its parent. Add .dropdown-menu-right to a .dropdown-menu to right align the dropdown menu.
 
 <div class="de-code">
-    <div class="btn-group"> 
-        <button class="btn btn-secondary btn-flat" role="button" data-toggle="dropdown">Dropdown Button<i class="dci dci-chevron-down"></i></button>
+    <div class="btn-group dropdown"> 
+        <button class="btn dropdown-btn" role="button" data-toggle="dropdown">Dropdown Button<i class="dci dci-chevron-down"></i></button>
         <div class="dropdown-menu dropdown-menu-right">
             <button class="dropdown-item" role="button">Option 1</button>
             <button class="dropdown-item" role="button">Option 2</button>
-            <button class="dropdown-item" role="button">Option 3</button>
+            <button class="dropdown-item disabled" role="button">Option 3</button>
+            <hr/>
+            <div class="button-group">
+                <button class="btn btn-primary btn-sm">Add Project</button>
+                <button class="btn btn-outline-primary btn-sm">Manage Projects</button>
+            </div>
         </div>
     </div>
 </div>
 
 <Playground>
-<div class="btn-group"> 
-    <button class="btn btn-secondary btn-flat" role="button" data-toggle="dropdown">Dropdown Button<i class="dci dci-chevron-down"></i></button>
+<div class="btn-group dropdown"> 
+    <button class="btn dropdown-btn" role="button" data-toggle="dropdown">Dropdown Button<i class="dci dci-chevron-down"></i></button>
     <div class="dropdown-menu dropdown-menu-right">
         <button class="dropdown-item" role="button">Option 1</button>
         <button class="dropdown-item" role="button">Option 2</button>
         <button class="dropdown-item" role="button">Option 3</button>
+        <hr/>
+        <div class="button-group">
+            <button class="btn btn-primary btn-sm">Add Project</button>
+            <button class="btn btn-outline-primary btn-sm">Manage Projects</button>
+        </div>
     </div>
 </div>
 </Playground>

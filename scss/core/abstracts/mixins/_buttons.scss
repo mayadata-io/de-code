@@ -6,6 +6,7 @@
 @mixin button-variant($background){
   background-color: button-color($background, base);
   color: color-yiq(button-color($background, base));
+  border: 2px solid button-color($background, base);
 
   @if $background == primary {
     box-shadow: 4px 8px 20px rgba(100, 114, 188, 0.28);

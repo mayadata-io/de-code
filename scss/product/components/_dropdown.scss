@@ -1,6 +1,12 @@
 // The dropdown wrapper (`<div>`)
 .dropdown {
   position: relative;
+
+  .dropdown-btn{
+    color: $purple;
+    min-width: unset;
+    background: transparent;
+  }
 }
 
 .dropdown-toggle {
@@ -18,7 +24,7 @@
   float: left;
   min-width: $dropdown-min-width;
   padding: $dropdown-padding-y 0;
-  margin: $dropdown-spacer 0 0; // override default ul
+  margin: $dropdown-spacer 0rem 1rem 0rem; // override default ul
   font-size: $font-size-base; // Redeclare because nesting can cause inheritance issues
   color: $body-color;
   text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
@@ -36,11 +42,17 @@
           align-items: center;
           line-height: 24px;
       }
+      
+      hr{
+        margin: 0.2rem 0.8rem 0.8rem;
+      }
       .button-group{
-          padding: 0 15px 10px 0;
+          padding: 0 15px 10px 15px;
           .btn{
+            display: block;
+            margin: 0.25rem auto;
               +.btn{
-                  margin-left: 10px;
+                  margin-top: 8px;
               }
           }
       }
@@ -76,6 +88,7 @@
       width: 100%; // For `<button>`s
       padding: $dropdown-item-padding-y $dropdown-item-padding-x;
       clear: both;
+      font-size: $font-size-sm;
       font-weight: $font-weight-normal;
       color: $dropdown-link-color;
       text-align: inherit; // For `<button>`s
@@ -86,9 +99,12 @@
       @include hover-focus {
         color: $dropdown-link-hover-color;
         text-decoration: none;
+        outline: none;
         @include gradient-bg($dropdown-link-hover-bg);
       }
-    
+      &:not(:disabled):not(.disabled):hover,&:not(:disabled):not(.disabled):active{
+        box-shadow: $dropdown-link-hover-box-shadow;
+      }
       &.active,
       &:active {
         color: $dropdown-link-active-color;
@@ -100,6 +116,7 @@
       &:disabled {
         color: $dropdown-link-disabled-color;
         background-color: transparent;
+        cursor: not-allowed;
         // Remove CSS gradients if they're enabled
         @if $enable-gradients {
           background-image: none;
