@@ -21,6 +21,7 @@
   @include hover {
     background-color: button-color($background, dark);
     color: color-yiq(button-color($background, dark));
+    border-color: button-color($background, dark);
   }
 
   &:focus, 
@@ -34,6 +35,7 @@
   &:disabled {
     background-color: $btn-disabled-background;
     color: $btn-disabled-color;
+    border: transparent;
   }
 
   &.active {
