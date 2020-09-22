@@ -673,9 +673,10 @@ $jumbotron-bg:                      $gray-200 !default;
 
 $card-spacer-y:                     .75rem !default;
 $card-spacer-x:                     1.25rem !default;
-$card-border-width:                 $border-width !default;
-$card-border-radius:                $border-radius !default;
-$card-border-color:                 $gray-100 !default;
+$card-border-width:                 2px !default;
+$card-border-radius:                4px !default;
+$card-border: 2px solid $blue-400 !default;
+$card-border-color:                 rgba(92, 105, 140, 0.15) !default;
 $card-group-border-color:           $gray-100 !default;
 $card-deck-border-color:           $gray-100 !default;   
 $card-box-shadow:                   0 0 5px 0 $gray-100;
