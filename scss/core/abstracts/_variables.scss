@@ -221,8 +221,10 @@ $mark-bg:                     #fcf8e3 !default;
 
 $hr-margin-y:                 $spacer !default;
 
-$heading-color: $purple;
+// Text color variables
 
+$heading-color: $purple;
+$body-text-color: $gray-800;
 // Headers
 
 $header-top-bar-title:      $gray-600 !default;
@@ -764,21 +766,35 @@ $badge-notification-size: 22px;
 
 // Modals
 
-$modal-inner-padding: 20px 20px 25px !default; // Padding applied to the modal body
-$modal-dialog-margin: 10px auto !default;
-$modal-dialog-margin: 30px auto !default;
-$modal-title-line-height: $line-height-base !default;
-$modal-sub-title-color: $gray-600;
-$modal-sub-title-padding: 8px;
+// Padding applied to the modal body
+$modal-header-padding: 45px 24px 0px 24px !default;
+$modal-body-padding: 0px 100px 22px 100px !default;
+$modal-footer-padding: 30px 24px 45px 24px !default;
+
+$modal-dialog-margin: 15% auto !default;
+$modal-dialog-margin-y-sm-up: 30px !default;
+
+$modal-backdrop-bg: rgba($gray-900, 0.55) !default;
+
+$modal-title-line-height: 1.5 !default;
+
+$modal-title-color: $heading-color;
+$modal-sub-title-color: $body-text-color;
+
+$modal-sub-title-padding: 10px;
 $modal-content-bg: $white !default;
-$modal-content-box-shadow-xs: 0 0 1px 0 rgba(9, 30, 66, 0.31),
-    0 4px 8px -2px rgba(9, 30, 66, 0.25) !default;
-$modal-content-box-shadow-sm-up: 0 0 1px 0 rgba(9, 30, 66, 0.31),
-    0 4px 8px -2px rgba(9, 30, 66, 0.25) !default;
-$modal-backdrop-bg: rgba($gray-300, 0.55) !default;
+$modal-content-border-width: 1px !default;
+
+$modal-backdrop-opacity: 0.5 !default;
+$modal-header-border-color: $gray-200 !default;
+$modal-footer-border-color: $modal-header-border-color !default;
+$modal-header-border-width: $modal-content-border-width !default;
+$modal-footer-border-width: $modal-header-border-width !default;
+
 $modal-lg: 800px !default;
 $modal-md: 600px !default;
 $modal-sm: 400px !default;
+
 $modal-transition: transform 0.3s ease-out !default;
 
 // Drawer
