@@ -11,7 +11,7 @@
   background-color: $card-bg;
   background-clip: border-box;
   border: $card-border-width solid $card-border-color;
-  box-shadow: $card-box-shadow;
+  // box-shadow: $card-box-shadow;
   @include border-radius($card-border-radius);
 
   > hr {
@@ -28,6 +28,14 @@
   > .list-group:last-child {
     .list-group-item:last-child {
       @include border-bottom-radius($card-border-radius);
+    }
+  }
+  &.card-clickable {
+    flex: none !important;
+    cursor: pointer;
+
+    &:hover{
+      border: $card-border;
     }
   }
 }
@@ -156,7 +164,8 @@
       color: $gray-500;
     }
     &:hover {
-      box-shadow: 2px 2px 20px 0 $gray-100;
+      border: $card-border;
+      box-sizing: border-box;
     }
   }
 
