@@ -1,7 +1,7 @@
 {
   "name": "de-code",
   "version": "1.0.0",
-  "private": false,
+  "private": true,
   "description": "The design system from MayaData",
   "license": "MIT",
   "author": "hello@mayadata.io",
@@ -9,6 +9,9 @@
     "test": "docs"
   },
   "repository": "",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "start": "yarn run docz:dev",
     "docz:dev": "docz dev",
