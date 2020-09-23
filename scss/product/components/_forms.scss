@@ -328,11 +328,12 @@ select.form-control-lg {
 // Search icon with input
 
 .input-search-icon_wrapper {
+  position: relative;
   .input-search-icon {
-    position: relative;
+    position: absolute;
     float: right;
     right: 8px;
-    top: -36px;
+    top: 5px;
     width: 18px;
     height: 32px;
     background: $input-search-icon-bg;

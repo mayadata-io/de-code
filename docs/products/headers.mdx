@@ -10,9 +10,9 @@ import { Playground, PropsTable } from 'docz'
 ### Example one
 
 <Playground>
-  <div class="outlet-header">
-    <div class="outlet-header__top-bar">
-      <div class="outlet-header__top-bar-title">
+  <div className="outlet-header">
+    <div className="outlet-header__top-bar">
+      <div className="outlet-header__top-bar-title">
         <span>Clusters</span>
       </div>
     </div>
@@ -23,14 +23,14 @@ import { Playground, PropsTable } from 'docz'
 ##### Page header with an global level action button
 
 <Playground>
-  <div class="outlet-header">
-    <div class="outlet-header__top-bar">
-      <div class="outlet-header__top-bar-title">
+  <div className="outlet-header">
+    <div className="outlet-header__top-bar">
+      <div className="outlet-header__top-bar-title">
         <span>Clusters</span>
       </div>
-      <div class="outlet-header__actions ml-auto">
+      <div className="outlet-header__actions ml-auto">
         <div>
-          <button class="btn btn-primary" title="Import new cluster">Connect a new Cluster</button>
+          <button className="btn btn-primary" title="Import new cluster">Connect a new Cluster</button>
         </div>
       </div>
     </div>
@@ -42,15 +42,15 @@ import { Playground, PropsTable } from 'docz'
 
 
 <Playground>
-  <div class="outlet-header">
-    <div class="outlet-header__top-bar">
-      <div class="outlet-header__top-bar-title">
+  <div className="outlet-header">
+    <div className="outlet-header__top-bar">
+      <div className="outlet-header__top-bar-title">
         <span>Overview</span>
       </div>
     </div>
-    <div class="outlet-header-meta-block">
-      <span class="outlet-header-meta-block_content">Dev-cluster-23u72</span>
-      <span class="badge badge-gradient-success badge-pill">Active</span>
+    <div className="outlet-header-meta-block">
+      <span className="outlet-header-meta-block_content">Dev-cluster-23u72</span>
+      <span className="badge badge-success">Active</span>
     </div>
   </div>
 </Playground>
@@ -60,21 +60,21 @@ import { Playground, PropsTable } from 'docz'
 
 
 <Playground>
-  <div class="outlet-header">
-    <div class="outlet-header-navigation">
-      <button class="outlet-header-navigation_button">
-        <span class="fa fa-arrow-left outlet-header-navigation_icon"></span>
+  <div className="outlet-header">
+    <div className="outlet-header-navigation">
+      <button className="outlet-header-navigation_button">
+        <span className="fa fa-arrow-left outlet-header-navigation_icon"></span>
         <span>Back</span>
       </button>
     </div>
-    <div class="outlet-header__top-bar">
-      <div class="outlet-header__top-bar-title">
+    <div className="outlet-header__top-bar">
+      <div className="outlet-header__top-bar-title">
         <span>Overview</span>
       </div>
     </div>
-    <div class="outlet-header-meta-block">
-      <span class="outlet-header-meta-block_content">Dev-cluster-23u72</span>
-      <span class="badge badge-gradient-success badge-pill">Active</span>
+    <div className="outlet-header-meta-block">
+      <span className="outlet-header-meta-block_content">Dev-cluster-23u72</span>
+      <span className="badge badge-success">Active</span>
     </div>
   </div>
 </Playground>
@@ -83,26 +83,26 @@ import { Playground, PropsTable } from 'docz'
 ### Example five
 ##### Section header
 <Playground>
-  <div class="section-header">
-    <div class="section-header_title">
-      <span class="section-header_title__text">Volumes</span>
+  <div className="section-header">
+    <div className="section-header_title">
+      <span className="section-header_title__text">Volumes</span>
     </div>
-    <div class="section-header-controls">
-      <div class="section-header-controls_item">
-        <div class="input-search-icon_wrapper">
-          <div class="input-search-icon">
+    <div className="section-header-controls">
+      <div className="section-header-controls_item">
+        <div className="input-search-icon_wrapper">
+          <input className="form-control" placeholder="Find an application"/>
+          <div className="input-search-icon">
           </div>
-          <input class="form-control" placeholder="Find an application"/>
         </div>
       </div>
-      <div class="section-header-controls_item">
-        <button class="btn btn-secondary"><span class="fa fa-edit"></span></button>
+      <div className="section-header-controls_item">
+        <button className="btn btn-icon"><span className="fa fa-edit"></span></button>
       </div>
-      <div class="section-header-controls_item">
-        <button class="btn btn-secondary"><span class="fa fa-filter"></span></button>
+      <div className="section-header-controls_item">
+        <button className="btn btn-icon"><span className="fa fa-filter"></span></button>
       </div>
-      <div class="section-header-controls_item ml-auto">
-        <button class="btn btn-primary">Primary action</button>
+      <div className="section-header-controls_item ml-auto">
+        <button className="btn btn-primary">Primary action</button>
       </div>
     </div>
   </div>
@@ -111,37 +111,37 @@ import { Playground, PropsTable } from 'docz'
 ### Example six
 ##### Page header, section header and contents
 <Playground>
-  <div class="outlet-header">
-    <div class="outlet-header__top-bar">
-      <div class="outlet-header__top-bar-title">
+  <div className="outlet-header">
+    <div className="outlet-header__top-bar">
+      <div className="outlet-header__top-bar-title">
         <span>Overview</span>
       </div>
     </div>
-    <div class="outlet-header-meta-block">
-      <span class="outlet-header-meta-block_content">Dev-cluster-23u72</span>
-      <span class="badge badge-gradient-success badge-pill">Active</span>
+    <div className="outlet-header-meta-block">
+      <span className="outlet-header-meta-block_content">Dev-cluster-23u72</span>
+      <span className="badge badge-success">Active</span>
     </div>
   </div>
-  <div class="section-header">
-    <div class="section-header_title">
-      <span class="section-header_title__text">Volumes</span>
+  <div className="section-header">
+    <div className="section-header_title">
+      <span className="section-header_title__text">Volumes</span>
     </div>
-    <div class="section-header-controls">
-      <div class="section-header-controls_item">
-        <div class="input-search-icon_wrapper">
-          <div class="input-search-icon">
+    <div className="section-header-controls">
+      <div className="section-header-controls_item">
+        <div className="input-search-icon_wrapper">
+          <div className="input-search-icon">
           </div>
-          <input class="form-control" placeholder="Find an application"/>
+          <input className="form-control" placeholder="Find an application"/>
         </div>
       </div>
-      <div class="section-header-controls_item">
-        <button class="btn btn-secondary"><span class="fa fa-edit"></span></button>
+      <div className="section-header-controls_item">
+        <button className="btn btn-icon"><span className="fa fa-edit"></span></button>
       </div>
-      <div class="section-header-controls_item">
-        <button class="btn btn-secondary"><span class="fa fa-filter"></span></button>
+      <div className="section-header-controls_item">
+        <button className="btn btn-icon"><span className="fa fa-filter"></span></button>
       </div>
-      <div class="section-header-controls_item ml-auto">
-        <button class="btn btn-primary">Primary action</button>
+      <div className="section-header-controls_item ml-auto">
+        <button className="btn btn-primary">Primary action</button>
       </div>
     </div>
   </div>
@@ -152,20 +152,20 @@ import { Playground, PropsTable } from 'docz'
 
 
 <Playground>
- <div class="outlet-header-bar">
-    <div class="outlet-header-meta-bar_item">
-      <div class="outlet-header-meta-bar_title">
+ <div className="outlet-header-bar">
+    <div className="outlet-header-meta-bar_item">
+      <div className="outlet-header-meta-bar_title">
         <span>Schedule</span>
       </div>
-      <div class="outlet-header-meta-bar_value">
+      <div className="outlet-header-meta-bar_value">
         <span>SCH-1</span>
     </div>
     </div>
-    <div class="outlet-header-meta-bar_item">
-      <div class="outlet-header-meta-bar_title">
+    <div className="outlet-header-meta-bar_item">
+      <div className="outlet-header-meta-bar_title">
         <span>Cluster</span>
       </div>
-      <div class="outlet-header-meta-bar_value">
+      <div className="outlet-header-meta-bar_value">
         <span>WhiteWeather</span>
       </div>
   </div>
@@ -177,41 +177,41 @@ import { Playground, PropsTable } from 'docz'
 
 
 <Playground>
-    <div class="outlet-header">
-      <div class="outlet-header-navigation">
-    <button class="outlet-header-navigation_button">
-      <span class="fa fa-arrow-left outlet-header-navigation_icon" />
+    <div className="outlet-header">
+      <div className="outlet-header-navigation">
+    <button className="outlet-header-navigation_button">
+      <span className="fa fa-arrow-left outlet-header-navigation_icon" />
       <span>Back</span>
     </button>
   </div>
-    <div class="outlet-header__top-bar">
-      <div class="outlet-header__top-bar-title">
+    <div className="outlet-header__top-bar">
+      <div className="outlet-header__top-bar-title">
         <span>DMaaS</span>
       </div>
     </div>
   </div>
-  <div class="outlet-header-bar">
-    <div class="outlet-header-meta-bar_item">
-      <div class="outlet-header-meta-bar_title">
+  <div className="outlet-header-bar">
+    <div className="outlet-header-meta-bar_item">
+      <div className="outlet-header-meta-bar_title">
         <span>Schedule</span>
       </div>
-      <div class="outlet-header-meta-bar_value">
+      <div className="outlet-header-meta-bar_value">
         <span>SCH-1</span>
     </div>
     </div>
-    <div class="outlet-header-meta-bar_item">
-      <div class="outlet-header-meta-bar_title">
+    <div className="outlet-header-meta-bar_item">
+      <div className="outlet-header-meta-bar_title">
         <span>Cluster</span>
       </div>
-      <div class="outlet-header-meta-bar_value">
+      <div className="outlet-header-meta-bar_value">
         <span>WhiteWeather</span>
       </div>
   </div>
-      <div class="outlet-header-meta-bar_item">
-      <div class="outlet-header-meta-bar_title">
+      <div className="outlet-header-meta-bar_item">
+      <div className="outlet-header-meta-bar_title">
         <span>Application</span>
       </div>
-      <div class="outlet-header-meta-bar_value">
+      <div className="outlet-header-meta-bar_value">
         <span>Redis</span>
       </div>
   </div>
@@ -223,45 +223,45 @@ import { Playground, PropsTable } from 'docz'
 
 
 <Playground>
-    <div class="outlet-header">
-    <div class="outlet-header__top-bar">
-      <div class="outlet-header__top-bar-title">
+    <div className="outlet-header">
+    <div className="outlet-header__top-bar">
+      <div className="outlet-header__top-bar-title">
         <span>DMaaS</span>
       </div>
     </div>
   </div>
-  <div class="outlet-header-bar">
-    <div class="outlet-header-meta-bar_item">
-      <div class="outlet-header-meta-bar_title">
+  <div className="outlet-header-bar">
+    <div className="outlet-header-meta-bar_item">
+      <div className="outlet-header-meta-bar_title">
         <span>Schedule</span>
       </div>
-      <div class="outlet-header-meta-bar_value">
+      <div className="outlet-header-meta-bar_value">
         <span>SCH-1</span>
     </div>
     </div>
-    <div class="outlet-header-meta-bar_item">
-      <div class="outlet-header-meta-bar_title">
+    <div className="outlet-header-meta-bar_item">
+      <div className="outlet-header-meta-bar_title">
         <span>Cluster</span>
       </div>
-      <div class="outlet-header-meta-bar_value">
+      <div className="outlet-header-meta-bar_value">
         <span>WhiteWeather</span>
       </div>
   </div>
-      <div class="outlet-header-meta-bar_item">
-      <div class="outlet-header-meta-bar_title">
+      <div className="outlet-header-meta-bar_item">
+      <div className="outlet-header-meta-bar_title">
         <span>Application</span>
       </div>
-      <div class="outlet-header-meta-bar_value">
+      <div className="outlet-header-meta-bar_value">
         <span>Redis</span>
       </div>
   </div>
   </div>
-    <div class="section-header">
-  <div class="section-header_title">
-    <span class="section-header_title__text">List of Backups</span>
+    <div className="section-header">
+  <div className="section-header_title">
+    <span className="section-header_title__text">List of Backups</span>
   </div>
   </div>
-  <table class="table table-hover">
+  <table className="table table-hover">
   <thead>
     <tr>
       <th scope="col">Name</th>
@@ -275,7 +275,7 @@ import { Playground, PropsTable } from 'docz'
     <tr>
       <td>Dev-cluster-yg238</td>
       <td>
-        <span class="badge badge-gradient-success badge-pill">Active</span>
+        <span className="badge badge-success">Active</span>
       </td>
       <td>v1.10.11-gke.1</td>
       <td>12</td>
@@ -284,7 +284,7 @@ import { Playground, PropsTable } from 'docz'
     <tr>
       <td>Testing-cluster-tr33d</td>
       <td>
-        <span class="badge badge-gradient-danger badge-pill">Inactive</span>
+        <span className="badge badge-inactive">Inactive</span>
       </td>
       <td>v1.10</td>
       <td>3</td>
@@ -293,7 +293,7 @@ import { Playground, PropsTable } from 'docz'
     <tr>
       <td>Staging-setup-df12s</td>
       <td>
-        <span class="badge badge-gradient-warning badge-pill">Degrated</span>
+        <span className="badge badge-warning">Degrated</span>
       </td>
       <td>v1.10.11</td>
       <td>6</td>
@@ -302,7 +302,7 @@ import { Playground, PropsTable } from 'docz'
     <tr>
       <td>Monitor-cluster-8hjq7</td>
       <td>
-        <span class="badge badge-gradient-success badge-pill">Active</span>
+        <span className="badge badge-success">Active</span>
       </td>
       <td>v1.13.2</td>
       <td>12</td>
@@ -311,7 +311,7 @@ import { Playground, PropsTable } from 'docz'
     <tr>
       <td>Asia-scope-72dr4</td>
       <td>
-        <span class="badge badge-gradient-danger badge-pill">Offline</span>
+        <span className="badge badge-danger">Offline</span>
       </td>
       <td>v1.10.13</td>
       <td>12</td>
@@ -327,70 +327,70 @@ import { Playground, PropsTable } from 'docz'
 
 
 <Playground>
-<div class="outlet-header">
-  <div class="outlet-header__top-bar">
-    <div class="outlet-header__top-bar-title">
+<div className="outlet-header">
+  <div className="outlet-header__top-bar">
+    <div className="outlet-header__top-bar-title">
       <span>Application Overview</span>
     </div>
   </div>
-  <div class="outlet-header-meta-block">
-    <span class="outlet-header-meta-block_content">Dev-cluster-23u72</span>
-    <span class="badge badge-gradient-success badge-pill">Active</span>
+  <div className="outlet-header-meta-block">
+    <span className="outlet-header-meta-block_content">Dev-cluster-23u72</span>
+    <span className="badge badge-success">Active</span>
   </div>
 </div>
-  <div class="outlet-header-bar">
-    <div class="outlet-header-meta-bar_item">
-      <div class="outlet-header-meta-bar_title">
+  <div className="outlet-header-bar">
+    <div className="outlet-header-meta-bar_item">
+      <div className="outlet-header-meta-bar_title">
         <span>Type</span>
       </div>
-      <div class="outlet-header-meta-bar_value">
+      <div className="outlet-header-meta-bar_value">
         <a href="/"><span>statefulset</span></a>
     </div>
     </div>
-    <div class="outlet-header-meta-bar_item">
-      <div class="outlet-header-meta-bar_title">
+    <div className="outlet-header-meta-bar_item">
+      <div className="outlet-header-meta-bar_title">
         <span>Kind</span>
       </div>
-      <div class="outlet-header-meta-bar_value">
+      <div className="outlet-header-meta-bar_value">
         <span>ns-elasticsearch</span>
       </div>
   </div>
-      <div class="outlet-header-meta-bar_item">
-      <div class="outlet-header-meta-bar_title">
+      <div className="outlet-header-meta-bar_item">
+      <div className="outlet-header-meta-bar_title">
         <span>Replica</span>
       </div>
-      <div class="outlet-header-meta-bar_value">
+      <div className="outlet-header-meta-bar_value">
         <span>3</span>
       </div>
   </div>
   </div>
-  <div class="section-header">
-  <div class="section-header_title">
-    <span class="section-header_title__text">Volumes in statefulset</span>
+  <div className="section-header">
+  <div className="section-header_title">
+    <span className="section-header_title__text">Volumes in statefulset</span>
   </div>
-  <div class="section-header-controls">
-    <div class="section-header-controls_item">
-      <div class="input-search-icon_wrapper">
-        <div class="input-search-icon" />
-        <input class="form-control" placeholder="search" />
+  <div className="section-header-controls">
+    <div className="section-header-controls_item">
+      <div className="input-search-icon_wrapper">
+        <div className="input-search-icon" />
+        <input className="form-control" placeholder="search" />
       </div>
     </div>
-    <div class="section-header-controls_item">
-      <button class="btn btn-secondary">
-        <span class="fa fa-edit" />
+    <div className="section-header-controls_item">
+      <button className="btn btn-icon">
+        <span className="fa fa-edit" />
       </button>
     </div>
-    <div class="section-header-controls_item">
-      <button class="btn btn-secondary">
-        <span class="fa fa-filter" />
+    <div className="section-header-controls_item">
+      <button className="btn btn-icon">
+        <span className="fa fa-filter" />
       </button>
     </div>
-    <div class="section-header-controls_item ml-auto">
-      <button class="btn btn-primary">Primary action</button>
+    <div className="section-header-controls_item ml-auto">
+      <button className="btn btn-primary">Primary action</button>
     </div>
   </div>
 </div>
-  <table class="table table-hover">
+  <table className="table table-hover">
   <thead>
     <tr>
       <th scope="col">Name</th>
@@ -404,7 +404,7 @@ import { Playground, PropsTable } from 'docz'
     <tr>
       <td>Dev-cluster-yg238</td>
       <td>
-        <span class="badge badge-gradient-success badge-pill">Active</span>
+        <span className="badge badge-success">Active</span>
       </td>
       <td>v1.10.11-gke.1</td>
       <td>12</td>
@@ -413,7 +413,7 @@ import { Playground, PropsTable } from 'docz'
     <tr>
       <td>Testing-cluster-tr33d</td>
       <td>
-        <span class="badge badge-gradient-danger badge-pill">Inactive</span>
+        <span className="badge badge-inactive">Inactive</span>
       </td>
       <td>v1.10</td>
       <td>3</td>
@@ -422,7 +422,7 @@ import { Playground, PropsTable } from 'docz'
     <tr>
       <td>Staging-setup-df12s</td>
       <td>
-        <span class="badge badge-gradient-warning badge-pill">Degrated</span>
+        <span className="badge badge-warning">Degrated</span>
       </td>
       <td>v1.10.11</td>
       <td>6</td>
@@ -431,7 +431,7 @@ import { Playground, PropsTable } from 'docz'
     <tr>
       <td>Monitor-cluster-8hjq7</td>
       <td>
-        <span class="badge badge-gradient-success badge-pill">Active</span>
+        <span className="badge badge-success">Active</span>
       </td>
       <td>v1.13.2</td>
       <td>12</td>
@@ -440,7 +440,7 @@ import { Playground, PropsTable } from 'docz'
     <tr>
       <td>Asia-scope-72dr4</td>
       <td>
-        <span class="badge badge-gradient-danger badge-pill">Offline</span>
+        <span className="badge badge-danger">Offline</span>
       </td>
       <td>v1.10.13</td>
       <td>12</td>

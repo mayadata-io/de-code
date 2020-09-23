@@ -15,7 +15,7 @@ import openshift from '../../resources/images/clusters/openshift.png'
 
 ## Default table
 <Playground>
-  <table class="table table-hover">
+  <table className="table table-hover">
     <thead>
       <tr>
         <th scope="col">Name</th>
@@ -30,7 +30,7 @@ import openshift from '../../resources/images/clusters/openshift.png'
         <td>
           Dev-cluster-yg238
         </td>
-        <td><span class="badge badge-gradient-success badge-pill">Active</span></td>
+        <td><span className="badge badge-success">Active</span></td>
         <td>v1.10.11-gke.1</td>
         <td>12</td>
         <td></td>
@@ -39,7 +39,7 @@ import openshift from '../../resources/images/clusters/openshift.png'
         <td>
           Testing-cluster-tr33d
         </td>
-        <td><span class="badge badge-gradient-danger badge-pill">Inactive</span></td>
+        <td><span className="badge badge-danger">Inactive</span></td>
         <td>v1.10</td>
         <td>3</td>
         <td></td>
@@ -48,7 +48,7 @@ import openshift from '../../resources/images/clusters/openshift.png'
         <td>
           Staging-setup-df12s
         </td>
-        <td><span class="badge badge-gradient-warning badge-pill">Degrated</span></td>
+        <td><span className="badge badge-warning">Degrated</span></td>
         <td>v1.10.11</td>
         <td>6</td>
         <td></td>
@@ -57,7 +57,7 @@ import openshift from '../../resources/images/clusters/openshift.png'
         <td>
           Monitor-cluster-8hjq7
         </td>
-        <td><span class="badge badge-gradient-success badge-pill">Active</span></td>
+        <td><span className="badge badge-success">Active</span></td>
         <td>v1.13.2</td>
         <td>12</td>
         <td></td>
@@ -66,7 +66,7 @@ import openshift from '../../resources/images/clusters/openshift.png'
         <td>
           Asia-scope-72dr4
         </td>
-        <td><span class="badge badge-gradient-danger badge-pill">Offline</span></td>
+        <td><span className="badge badge-danger">Offline</span></td>
         <td>v1.10.13</td>
         <td>12</td>
         <td></td>
@@ -77,7 +77,7 @@ import openshift from '../../resources/images/clusters/openshift.png'
 
 ## Table with avatar
 <Playground>
-  <table class="table table-hover">
+  <table className="table table-hover">
     <thead>
       <tr>
         <th scope="col">Name</th>
@@ -90,60 +90,60 @@ import openshift from '../../resources/images/clusters/openshift.png'
     <tbody>
       <tr>
         <td>
-          <div class="table-avatar">
-            <div><img class="table-avatar-image" src={gke} /></div>
-            <span class="table-avatar-label">Dev-cluster-yg238</span>
+          <div className="table-avatar">
+            <div><img className="table-avatar-image" src={gke} /></div>
+            <span className="table-avatar-label">Dev-cluster-yg238</span>
           </div>
         </td>
-        <td><span class="badge badge-gradient-success badge-pill">Active</span></td>
+        <td><span className="badge badge-success">Active</span></td>
         <td>v1.10.11-gke.1</td>
         <td>12</td>
         <td></td>
       </tr>
       <tr>
         <td>
-          <div class="table-avatar">
-            <div><img class="table-avatar-image" src={azure} /></div>
-            <span class="table-avatar-label">Testing-cluster-tr33d</span>
+          <div className="table-avatar">
+            <div><img className="table-avatar-image" src={azure} /></div>
+            <span className="table-avatar-label">Testing-cluster-tr33d</span>
           </div>
         </td>
-        <td><span class="badge badge-gradient-danger badge-pill">Inactive</span></td>
+        <td><span className="badge badge-danger">Inactive</span></td>
         <td>v1.10</td>
         <td>3</td>
         <td></td>
       </tr>
       <tr>
         <td>
-          <div class="table-avatar">
-            <div><img class="table-avatar-image" src={minikube} /></div>
-            <span class="table-avatar-label">Staging-setup-df12s</span>
+          <div className="table-avatar">
+            <div><img className="table-avatar-image" src={minikube} /></div>
+            <span className="table-avatar-label">Staging-setup-df12s</span>
           </div>
         </td>
-        <td><span class="badge badge-gradient-warning badge-pill">Degrated</span></td>
+        <td><span className="badge badge-warning">Degrated</span></td>
         <td>v1.10.11</td>
         <td>6</td>
         <td></td>
       </tr>
       <tr>
         <td>
-          <div class="table-avatar">
-            <div><img class="table-avatar-image" src={digitalocean} /></div>
-            <span class="table-avatar-label">Monitor-cluster-8hjq7</span>
+          <div className="table-avatar">
+            <div><img className="table-avatar-image" src={digitalocean} /></div>
+            <span className="table-avatar-label">Monitor-cluster-8hjq7</span>
           </div>
         </td>
-        <td><span class="badge badge-gradient-success badge-pill">Active</span></td>
+        <td><span className="badge badge-success">Active</span></td>
         <td>v1.13.2</td>
         <td>12</td>
         <td></td>
       </tr>
       <tr>
         <td>
-          <div class="table-avatar">
-            <div><img class="table-avatar-image" src={openshift} /></div>
-            <span class="table-avatar-label">Asia-scope-72dr4</span>
+          <div className="table-avatar">
+            <div><img className="table-avatar-image" src={openshift} /></div>
+            <span className="table-avatar-label">Asia-scope-72dr4</span>
           </div>
         </td>
-        <td><span class="badge badge-gradient-danger badge-pill">Offline</span></td>
+        <td><span className="badge badge-danger">Offline</span></td>
         <td>v1.10.13</td>
         <td>12</td>
         <td></td>
@@ -154,7 +154,7 @@ import openshift from '../../resources/images/clusters/openshift.png'
 
 ## Table with actions
 <Playground>
-  <table class="table table-hover">
+  <table className="table table-hover">
     <thead>
       <tr>
         <th scope="col">Name</th>
@@ -169,24 +169,24 @@ import openshift from '../../resources/images/clusters/openshift.png'
         <td>
           Asia-scope-72dr4
         </td>
-        <td><span class="badge badge-gradient-danger badge-pill">Offline</span></td>
+        <td><span className="badge badge-danger">Offline</span></td>
         <td>v1.10.13</td>
         <td>12</td>
         <td>
-          <div class="table-action">
-            <div class="table-action_item">
-              <div class="table-action_link">
-                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+          <div className="table-action">
+            <div className="table-action_item">
+              <div className="table-action_link">
+                <i className="fa fa-pencil-square-o" aria-hidden="true"></i>
               </div>
             </div>
-            <div class="table-action_item">
-              <div class="table-action_link">
-                <i class="fa fa-area-chart" aria-hidden="true"></i>
+            <div className="table-action_item">
+              <div className="table-action_link">
+                <i className="fa fa-area-chart" aria-hidden="true"></i>
               </div>
             </div>
-            <div class="table-action_item">
-              <div class="table-action_link">
-                <i class="fa fa-trash"></i>
+            <div className="table-action_item">
+              <div className="table-action_link">
+                <i className="fa fa-trash"></i>
               </div>
             </div>
           </div>
