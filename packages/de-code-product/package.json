@@ -1,7 +1,8 @@
 {
   "name": "de-code-product",
   "version": "2.0.0",
-  "description": "De-code product package",
+  "description": "MayaData product design system",
+  "main": "css/index.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 index.scss -o css/"
@@ -10,3 +11,4 @@
   "license": "MIT",
   "gitHead": "a192177f720cb83f9a29ce24e63c25e4d9ed05da"
 }
+

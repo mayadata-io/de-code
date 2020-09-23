@@ -1,7 +1,8 @@
 {
   "name": "@mayadata/de-code",
   "version": "2.0.0",
-  "description": "De-code css package",
+  "description": "MayaData product design system",
+  "main": "css/index.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 index.scss -o css/"
