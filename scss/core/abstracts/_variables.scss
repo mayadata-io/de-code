@@ -75,9 +75,9 @@ $body-color:                $gray-600 !default;
 //
 // Style anchor elements.
 
-$link-color:                theme-color("primary") !default;
+$link-color:                $blue-500 !default;
 $link-decoration:           none !default;
-$link-hover-color:          darken($link-color, 15%) !default;
+$link-hover-color:          $blue-500 !default;
 $link-hover-decoration:     underline !default;
 
 // Paragraphs
@@ -160,8 +160,14 @@ $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
 $font-size-base:              0.875rem !default; // Assumes the browser default, typically `16px`
-$font-size-lg:                ($font-size-base * 1.25) !default;
-$font-size-sm:                ($font-size-base * .9) !default;
+
+$font-size-xxs: 0.625rem !default;
+$font-size-xs: 0.75rem !default;
+$font-size-sm: 0.875rem !default;
+$font-size-md: 1rem !default;
+$font-size-lg: 1.125rem !default;
+$font-size-xl: 1.625rem !default;
+$font-size-xxl: 2rem !default;
 
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
@@ -296,8 +302,8 @@ $table-dark-color:            $body-bg !default;
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$input-btn-padding-y:         .68rem !default;
-$input-btn-padding-x:         1rem !default;
+$input-btn-padding-y:         .55rem !default;
+$input-btn-padding-x:         3rem !default;
 $input-btn-line-height:       $line-height-base !default;
 
 
@@ -306,11 +312,11 @@ $input-btn-focus-color:       $component-active-bg !default;
 $input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
 
 $input-btn-padding-y-sm:      .4rem !default;
-$input-btn-padding-x-sm:      0.75rem !default;
+$input-btn-padding-x-sm:      1.5rem !default;
 $input-btn-line-height-sm:    $line-height-sm !default;
 
 $input-btn-padding-y-lg:      1.1rem !default;
-$input-btn-padding-x-lg:      1.5rem !default;
+$input-btn-padding-x-lg:      2.8rem !default;
 $input-btn-line-height-lg:    $line-height-lg !default;
 
 $input-btn-border-width:      $border-width !default;
@@ -364,6 +370,8 @@ $btn-login-icon-background: $white;
 $google-button-background: $skyblue-200;
 $github-button-background: $gray-900;
 $github-button-color: $white;
+$btn-secondary-flat-color: $dustygray;
+$btn-secondary-flat-hover-color: $blue-500;
 
 // Forms
 

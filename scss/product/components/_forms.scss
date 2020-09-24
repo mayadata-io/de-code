@@ -87,19 +87,8 @@ select.form-control {
   margin-bottom: .25rem
 }
 
-// Errored input
-.form-group{
-  &.error{
-    .form-control{
-      border: $input-border-width solid $form-control-error-color;
-    }
-    .small{
-      color: $form-control-error-color;
-    }
-  }
-}
 
-// Errored input
+// Success input
 .form-group{
   &.success{
     .form-control{
@@ -111,6 +100,17 @@ select.form-control {
   }
 }
 
+// Errored input
+.form-group{
+  &.error{
+    .form-control{
+      border: $input-border-width solid $form-control-error-color;
+    }
+    .small{
+      color: $form-control-error-color;
+    }
+  }
+}
 // For use with horizontal and inline forms, when you need the label (or legend)
 // text to align with the form controls.
 

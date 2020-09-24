@@ -5,14 +5,15 @@
 //
 
 .btn {
-  display: inline-block;
+  display: inline-flex;
   font-weight: $btn-font-weight;
   text-align: center;
   white-space: nowrap;
-  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
   user-select: none;
   border: $input-btn-border-width solid transparent;
-  @include button-size($input-btn-padding-y, $input-btn-padding-x, $font-size-base, $input-btn-line-height, $btn-border-radius, $btn-min-width);
+  @include button-size($input-btn-padding-y, $input-btn-padding-x, $font-size-md, $input-btn-line-height, $btn-border-radius, $btn-min-width);
   @include transition($btn-transition);
 
   // Share hover and focus styles
@@ -37,8 +38,7 @@
   }
 
   i{
-    font-size: 1.3rem;
-    vertical-align: middle;
+    font-size: calc(100% + 0.5rem);
     margin-right: 0.2em;
   }
 }
@@ -56,9 +56,35 @@ fieldset[disabled] a.btn {
 
 @each $color, $value in $button-colors {
   .btn-#{$color} {
-
     @include button-variant($color);
 
+        //Flat buttons
+        &.btn-flat {
+          @include button-flat-variant($color);
+          border: none;
+          box-shadow: none;
+          padding: unset;
+          min-width: unset;
+          vertical-align: unset;
+
+          @if $color == "secondary" {
+            color: $btn-secondary-flat-color;
+            &:hover,
+            &.hover{
+              color: $btn-secondary-flat-hover-color;
+            }
+            &:focus,
+            &.focus{
+              color: $btn-secondary-flat-hover-color;
+            }
+            &:active,
+            &.active{
+              color: $btn-secondary-flat-hover-color;
+              font-weight: bold;
+            }
+          }
+        }
+  
   }
 
   // Outline button
@@ -76,7 +102,7 @@ fieldset[disabled] a.btn {
 .btn-lg {
   @include button-size($input-btn-padding-y-lg, $input-btn-padding-x-lg, $font-size-lg, $input-btn-line-height-lg, $btn-border-radius-lg, $btn-min-width-lg);
   i{
-    font-size: 1.6rem;
+    font-size: calc(100% + 1rem);
     vertical-align: middle;
     margin-right: 0.2em;
   }
@@ -85,7 +111,7 @@ fieldset[disabled] a.btn {
 .btn-sm {
   @include button-size($input-btn-padding-y-sm, $input-btn-padding-x-sm, $font-size-base, $input-btn-line-height-sm, $btn-border-radius-sm, $btn-min-width-sm);
   i{
-    font-size: 1rem;
+    font-size: calc(100% + 0.2rem);
   }
 }
 
@@ -99,21 +125,25 @@ fieldset[disabled] a.btn {
   color: $link-color;
   background-color: transparent;
   min-width: unset;
+  padding: 0 0.1rem;
+  vertical-align: unset;
+  border-radius: unset;
 
   @include hover {
     color: $link-hover-color;
-    text-decoration: none;
     background-color: transparent;
     border-color: transparent;
+    border-radius: unset;
   }
   
   &:hover{
-    text-decoration: underline;
+    border-bottom: 1px solid $link-color;
   }
   &:focus,
   &.focus {
     border-color: transparent;
     box-shadow: none;
+    border-radius: unset;
   }
 
   &:disabled,
@@ -142,19 +172,18 @@ fieldset[disabled] a.btn {
   color: $gray-800;
   text-align: center;
   border-radius: 50% !important;
-  padding: 0.7em 0.85em;
+  padding: 0.5rem;
   min-width: unset !important;
   
     @include hover {
-      background-color: $gray-100;  
+      background-color: $gray-300;  
       border-color: transparent;
     }
 
     &.focus,
     &:focus {
-      background-color: $blue-100;
+      background-color: $gray-300;  
       border-color: transparent;
-      box-shadow: 0 0 0 .1rem $blue-200;
     }
     
   i{
