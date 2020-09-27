@@ -234,3 +234,29 @@ input[type="button"] {
     width: 100%;
   }
 }
+
+//Modal terminal btn icon with white color 
+.modal-content.terminal{
+  .btn-icon {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    border-radius: 50% !important;
+    padding: 0px 5px !important;
+    font-size: 14px;
+    
+      @include hover {
+        background-color: white;  
+        border-color: transparent;
+        color: black;
+      }
+
+      &.focus,
+      &:focus {
+        background-color: white;
+        border-color: transparent;
+        box-shadow: 0 0 0 .1rem white;
+      }
+
+  }
+}

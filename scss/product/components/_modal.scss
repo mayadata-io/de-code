@@ -211,3 +211,16 @@
     max-width: 900px;
   }
 }
+
+//modal with shell terminal
+.modal-content.terminal{
+  background-color: black;
+  .modal-header{
+    background-color: $blue-700;
+  }
+  .modal-title{
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+  }
+}
