@@ -26,7 +26,7 @@
 // Maya icon sizes
 
 @each $size, $value in $icon-size {
-  .dci-#{$size} {
+  .mi-#{$size} {
     font-size: 1em * $value !important;
   }
 }
