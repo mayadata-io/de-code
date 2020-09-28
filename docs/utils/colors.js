@@ -1,4 +1,4 @@
-// blue, gray, skyblue, green, orange, red, yellow, amber, purple, darkgreen, dustygray
+// blue, gray, skyblue, green, orange, red, yellow, amber, purple, darkgreen, dustygray, black
 
 export const blue = [
   {'name':'blue-100', 'hax':'#A3BAE0', 'rgb':''},
@@ -53,4 +53,7 @@ export const darkgreen = [
 ];
 export const dustygray = [
   {'name':'dustygray', 'hax':'#959595', 'rgb':''},
+];
+export const black = [
+  {'name':'black', 'hax':'#000000', 'rgb':''},
 ];
