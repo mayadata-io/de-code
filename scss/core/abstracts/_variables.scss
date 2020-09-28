@@ -238,12 +238,10 @@ $metadata-value-font-size:          18px !default;
 $metadata-title-font-style:         italic !default;
 
 // stepper
-
-$line-color:                       $gray-200 !default;
-$stepper-title-font-size:          14px !default;
-$stepper-value-font-size:          18px !default;
-$stepper-title-font-style:         italic !default;
-
+$stepper-check-color: $gray-300 !default;
+$stepper-active-right-gradient-backgrount: linear-gradient(90deg, $green-200 0%, $gray-300 100%) !default;
+$stepper-active-left-gradient-backgrount: linear-gradient(90deg, $gray-300 0%, $green-200 100%) !default;
+$stepper-active-color: $green-200 !default;
 
 //Chooser cards
 
