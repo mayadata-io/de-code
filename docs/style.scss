@@ -188,3 +188,13 @@
 mark{
   // background-color: $yellow-100;
 }
+
+.modal-content.terminal{
+  .btn-icon{
+    position: unset !important;
+  }
+  .terminal-body{
+    height: 600px;
+    color: white;
+  }
+}
