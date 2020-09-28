@@ -124,7 +124,7 @@
 
 /* Numeic stepper */
 
-.stepper-numeric{
+.stepper-check{
   display:table;
 	width:100%;
   margin:0 auto;
@@ -135,54 +135,94 @@
     &:first-child{
       padding-left: 0;
       .step-bar-left{
-        display:none;
+        margin-right: 14px;
+        background: $stepper-check-color;
+      }
+      .step-bar-right{
+        margin-left: -2px;
       }
     }
     &:last-child{
       padding-right: 0;
+      .step-bar-left{
+        margin-right: 0px;
+      }
       .step-bar-right{
-        display:none;
+        margin-left: 20px;
+        background: $stepper-check-color;
       }
     }
-    .step-bar-left:not(:first-child){
-      margin-right: 5px;
-    }
-    .step-bar-right:not(:first-child){
-      margin-left: 5px;
-    }
-
+    
     .step-circle {
-      width:20px;
-      height:20px;
       margin:0 auto;
-      background-color:$gray-100;
-      border-radius: 50%;
+      color: $stepper-check-color;
       text-align: center;
-      line-height:20px;
-      font-size: 12px;
-      font-weight: 600;
-      color: $white;
+      position: relative;
+      z-index: 2;
     }
     .step-bar-left, .step-bar-right{
       position:absolute;
-      top:32px;
+      top:35px;
       height:3px;
-      border-top:3px solid $gray-100;
+      background: $stepper-check-color;
     }
     .step-bar-right {
       right:0;
       left:50%;
+      margin-left: 5px;
     }
     .step-bar-left {
       left:0;
       right:50%;
+      margin-right: 5px;
     }
-    &.visited{
+    &.active{
       .step-circle{
-        background-color: $blue-600;
+        color: $stepper-active-color;
       }
-      .step-bar-left,.step-bar-right{
-        border-top:3px solid $blue-600;
+      .step-bar-right {
+        background: $stepper-active-right-gradient-backgrount;
+      }
+      .step-bar-left{
+        background: $stepper-active-color;
+      }
+    }
+    &.active:first-child{
+      .step-bar-right {
+        background: $stepper-active-right-gradient-backgrount;
+      }
+      .step-bar-left{
+        background: $stepper-active-left-gradient-backgrount;
+      }
+    }
+    &.active:last-child{
+      .step-bar-right {
+        background: $stepper-active-right-gradient-backgrount;
+      }
+      .step-bar-left{
+        background: $stepper-active-color;
+      }
+    }
+    &.visited:not(:first-child){
+      .step-circle{
+        color: $stepper-active-color;
+      }
+      .step-bar-right {
+        background: $stepper-active-color;
+      }
+      .step-bar-left{
+        background: $stepper-active-color;
+      }
+    }
+    &.visited:first-child{
+      .step-circle{
+        color: $stepper-active-color;
+      }
+      .step-bar-right {
+        background: $stepper-active-color;
+      }
+      .step-bar-left{
+        background: $stepper-active-left-gradient-backgrount;
       }
     }
     .step-title {
