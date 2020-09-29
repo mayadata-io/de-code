@@ -513,11 +513,11 @@ select.form-control-lg {
 }
 
 input:checked + .slider {
-  background-color: $primary;
+  background-color: $green-200;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px $primary;
+  box-shadow: 0 0 1px $green-200;
 }
 
 input:checked + .slider:before {
