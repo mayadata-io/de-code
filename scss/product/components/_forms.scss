@@ -83,7 +83,7 @@ select.form-control {
 
 .form-control-label {
   color: $form-control-lable-text-color;
-  font-size: 12px;
+  font-size: $font-size-sm;
   margin-bottom: .25rem
 }
 
