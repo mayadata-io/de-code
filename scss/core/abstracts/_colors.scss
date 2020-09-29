@@ -75,6 +75,10 @@ $darkgreen: #156649;
 
 $yellow: #DDC557;
 
+// Dusty gray
+
+$dustygray: #959595;
+
 // Black
 
 $black: #000000;
@@ -100,7 +104,8 @@ $colors: map-merge((
   "white":     $white,
   "amber":     $amber,
   "darkgreen": $darkgreen,
-  "yellow": $yellow
+  "yellow": $yellow,
+  "dustygray": $dustygray,
 ), $colors);
 
 // Theme colors
@@ -140,7 +145,9 @@ $theme-colors: map-merge((
   "link": $link,
   "amber": $amber,
   "yellow": $yellow,
-  "darkgreen": $darkgreen
+  "darkgreen": $darkgreen,
+  "dustygray": $dustygray,
+  "black": $black
 ), $theme-colors);
 
 $button-colors: () !default;

@@ -83,8 +83,21 @@ select.form-control {
 
 .form-control-label {
   color: $form-control-lable-text-color;
-  font-size: 12px;
+  font-size: $font-size-sm;
   margin-bottom: .25rem
+}
+
+
+// Success input
+.form-group{
+  &.success{
+    .form-control{
+      border: $input-border-width solid $form-control-success-color;
+    }
+    .small{
+      color: $form-control-success-color;
+    }
+  }
 }
 
 // Errored input
@@ -98,19 +111,6 @@ select.form-control {
     }
   }
 }
-
-// Errored input
-.form-group{
-  &.success{
-    .form-control{
-      border: $input-border-width solid $form-control-success-color;
-    }
-    .small{
-      color: $form-control-success-color;
-    }
-  }
-}
-
 // For use with horizontal and inline forms, when you need the label (or legend)
 // text to align with the form controls.
 
@@ -202,7 +202,7 @@ select.form-control-lg {
   &.hide-spinner{
     @include input-number-spinner-off;
   }
-  small{
+  .small, small{
     font-size: $form-group-font-size;
     color: $form-group-small-color;
   }
@@ -513,11 +513,11 @@ select.form-control-lg {
 }
 
 input:checked + .slider {
-  background-color: $primary;
+  background-color: $green-200;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px $primary;
+  box-shadow: 0 0 1px $green-200;
 }
 
 input:checked + .slider:before {

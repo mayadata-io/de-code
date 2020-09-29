@@ -102,6 +102,18 @@
   }
 }
 
+
+@mixin button-flat-variant($color) {
+  color: button-color($color, base);
+  background-color: transparent !important;
+  box-shadow: none !important;
+  &:focus,
+  &.focus{
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+}
+
 // Button sizes
 @mixin button-size($padding-y, $padding-x, $font-size, $line-height, $border-radius, $min-width) {
   padding: $padding-y $padding-x;

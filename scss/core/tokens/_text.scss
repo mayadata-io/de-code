@@ -50,3 +50,28 @@
 .text-hide {
   @include text-hide();
 }
+
+// Test sizes
+
+// considering 16px as browser font-size
+.text-xxs{
+  font-size: $font-size-xxs;
+}
+.text-xs{
+  font-size: $font-size-xs;
+}
+.text-sm{
+  font-size: $font-size-sm;
+}
+.text-md{
+  font-size: $font-size-md;
+}
+.text-lg{
+  font-size: $font-size-lg;
+}
+.text-xl{
+  font-size: $font-size-xl;
+}
+.text-xxl{
+  font-size: $font-size-xxl;
+}

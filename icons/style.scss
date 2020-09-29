@@ -1,25 +1,21 @@
 @import "variables";
 
 @font-face {
-  font-family: "#{$icomoon-font-family}";
-  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.eot?wmqxly");
-  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.eot?wmqxly#iefix")
-      format("embedded-opentype"),
-    url("#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?wmqxly")
-      format("truetype"),
-    url("#{$icomoon-font-path}/#{$icomoon-font-family}.woff?wmqxly")
-      format("woff"),
-    url("#{$icomoon-font-path}/#{$icomoon-font-family}.svg?wmqxly##{$icomoon-font-family}")
-      format("svg");
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?zflyxd');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?zflyxd#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?zflyxd') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?zflyxd') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?zflyxd##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-.dci {
+.mi {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "#{$icomoon-font-family}" !important;
-  speak: none;
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -31,363 +27,514 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.dci-star {
+.mi-help-circle {
   &:before {
-    content: $dci-star;
+    content: $mi-help-circle; 
   }
 }
-.dci-wave {
+.mi-loader1 {
   &:before {
-    content: $dci-wave;
+    content: $mi-loader1; 
   }
 }
-.dci-link {
+.mi-arrow-left {
   &:before {
-    content: $dci-link;
+    content: $mi-arrow-left; 
   }
 }
-.dci-view {
+.mi-check-list {
   &:before {
-    content: $dci-view;
+    content: $mi-check-list; 
   }
 }
-.dci-table {
+.mi-home {
   &:before {
-    content: $dci-table;
+    content: $mi-home; 
   }
 }
-.dci-add-user {
+.mi-mail {
   &:before {
-    content: $dci-add-user;
+    content: $mi-mail; 
   }
 }
-.dci-share {
+.mi-bell {
   &:before {
-    content: $dci-share;
+    content: $mi-bell; 
   }
 }
-.dci-container {
+.mi-dollar {
   &:before {
-    content: $dci-container;
+    content: $mi-dollar; 
   }
 }
-.dci-filter {
+.mi-eye-off {
   &:before {
-    content: $dci-filter;
+    content: $mi-eye-off; 
   }
 }
-.dci-arrow-up-down {
+.mi-eye {
   &:before {
-    content: $dci-arrow-up-down;
+    content: $mi-eye; 
   }
 }
-.dci-user {
+.mi-star {
   &:before {
-    content: $dci-user;
+    content: $mi-star; 
   }
 }
-.dci-loader {
+.mi-star-filled {
   &:before {
-    content: $dci-loader;
+    content: $mi-star-filled; 
   }
 }
-.dci-hamburger {
+.mi-check-circle {
   &:before {
-    content: $dci-hamburger;
+    content: $mi-check-circle; 
   }
 }
-.dci-circle-add {
+.mi-lock {
   &:before {
-    content: $dci-circle-add;
+    content: $mi-lock; 
   }
 }
-.dci-circle-minus {
+.mi-ellipsis-vertical {
   &:before {
-    content: $dci-circle-minus;
+    content: $mi-ellipsis-vertical; 
   }
 }
-.dci-clock1 {
+.mi-alert-triangle {
   &:before {
-    content: $dci-clock1;
+    content: $mi-alert-triangle; 
   }
 }
-.dci-rocket-share {
+.mi-arrow-left-circle {
   &:before {
-    content: $dci-rocket-share;
+    content: $mi-arrow-left-circle; 
   }
 }
-.dci-settings {
+.mi-chevron-down {
   &:before {
-    content: $dci-settings;
+    content: $mi-chevron-down; 
   }
 }
-.dci-tree-network {
+.mi-database {
   &:before {
-    content: $dci-tree-network;
+    content: $mi-database; 
   }
 }
-.dci-chevrons-right {
+.mi-overview {
   &:before {
-    content: $dci-chevrons-right;
+    content: $mi-overview; 
   }
 }
-.dci-chevrons-left {
+.mi-container-filled {
   &:before {
-    content: $dci-chevrons-left;
+    content: $mi-container-filled; 
   }
 }
-.dci-chevron-right {
+.mi-circle-info {
   &:before {
-    content: $dci-chevron-right;
+    content: $mi-circle-info; 
   }
 }
-.dci-chevron-left {
+.mi-layers {
   &:before {
-    content: $dci-chevron-left;
+    content: $mi-layers; 
   }
 }
-.dci-chevron-up {
+.mi-log-out {
   &:before {
-    content: $dci-chevron-up;
+    content: $mi-log-out; 
   }
 }
-.dci-chevron-down {
+.mi-search {
   &:before {
-    content: $dci-chevron-down;
+    content: $mi-search; 
   }
 }
-.dci-x {
+.mi-sliders {
   &:before {
-    content: $dci-x;
+    content: $mi-sliders; 
   }
 }
-.dci-user-switch {
+.mi-close {
   &:before {
-    content: $dci-user-switch;
+    content: $mi-close; 
   }
 }
-.dci-application {
+.mi-trash {
   &:before {
-    content: $dci-application;
+    content: $mi-trash; 
   }
 }
-.dci-mail {
+.mi-users1 {
   &:before {
-    content: $dci-mail;
+    content: $mi-users1; 
   }
 }
-.dci-check-list {
+.mi-cluster {
   &:before {
-    content: $dci-check-list;
+    content: $mi-cluster; 
   }
 }
-.dci-file {
+.mi-file1 {
   &:before {
-    content: $dci-file;
+    content: $mi-file1; 
   }
 }
-.dci-bell {
+.mi-slack {
   &:before {
-    content: $dci-bell;
+    content: $mi-slack; 
   }
 }
-.dci-play-square {
+.mi-bar-chart {
   &:before {
-    content: $dci-play-square;
+    content: $mi-bar-chart; 
   }
 }
-.dci-logs {
+.mi-cloud-arrow-up {
   &:before {
-    content: $dci-logs;
+    content: $mi-cloud-arrow-up; 
   }
 }
-.dci-dashboard {
+.mi-user {
   &:before {
-    content: $dci-dashboard;
+    content: $mi-user; 
   }
 }
-.dci-search {
+.mi-message-square {
   &:before {
-    content: $dci-search;
+    content: $mi-message-square; 
   }
 }
-.dci-alert-triangle {
+.mi-edit {
   &:before {
-    content: $dci-alert-triangle;
+    content: $mi-edit; 
   }
 }
-.dci-slack {
+.mi-chat {
   &:before {
-    content: $dci-slack;
+    content: $mi-chat; 
   }
 }
-.dci-align-left {
+.mi-plus {
   &:before {
-    content: $dci-align-left;
+    content: $mi-plus; 
   }
 }
-.dci-arrow-right-curve {
+.mi-minus {
   &:before {
-    content: $dci-arrow-right-curve;
+    content: $mi-minus; 
   }
 }
-.dci-arrow-left-curve {
+.mi-downgrade {
   &:before {
-    content: $dci-arrow-left-curve;
+    content: $mi-downgrade; 
   }
 }
-.dci-key {
+.mi-refresh {
   &:before {
-    content: $dci-key;
+    content: $mi-refresh; 
   }
 }
-.dci-cloud-reload {
+.mi-view {
   &:before {
-    content: $dci-cloud-reload;
+    content: $mi-view; 
   }
 }
-.dci-cloud-up-down {
+.mi-share {
   &:before {
-    content: $dci-cloud-up-down;
+    content: $mi-share; 
   }
 }
-.dci-eye {
+.mi-add-user {
   &:before {
-    content: $dci-eye;
+    content: $mi-add-user; 
   }
 }
-.dci-circle-info {
+.mi-table-sort-arrows {
   &:before {
-    content: $dci-circle-info;
+    content: $mi-table-sort-arrows; 
   }
 }
-.dci-check-circle {
+.mi-upgrade {
   &:before {
-    content: $dci-check-circle;
+    content: $mi-upgrade; 
   }
 }
-.dci-id-card {
+.mi-frequency {
   &:before {
-    content: $dci-id-card;
+    content: $mi-frequency; 
   }
 }
-.dci-lightbulb {
+.mi-chart-bar-up {
   &:before {
-    content: $dci-lightbulb;
+    content: $mi-chart-bar-up; 
   }
 }
-.dci-x-circle {
+.mi-clipboard-pen {
   &:before {
-    content: $dci-x-circle;
+    content: $mi-clipboard-pen; 
   }
 }
-.dci-home {
+.mi-hamburger {
   &:before {
-    content: $dci-home;
+    content: $mi-hamburger; 
   }
 }
-.dci-check-square {
+.mi-loader {
   &:before {
-    content: $dci-check-square;
+    content: $mi-loader; 
   }
 }
-.dci-database {
+.mi-filter {
   &:before {
-    content: $dci-database;
+    content: $mi-filter; 
   }
 }
-.dci-form {
+.mi-arrow-up-down {
   &:before {
-    content: $dci-form;
+    content: $mi-arrow-up-down; 
   }
 }
-.dci-litmus {
+.mi-table {
   &:before {
-    content: $dci-litmus;
+    content: $mi-table; 
   }
 }
-.dci-arrow-down-circle {
+.mi-pool-thin {
   &:before {
-    content: $dci-arrow-down-circle;
+    content: $mi-pool-thin; 
   }
 }
-.dci-arrow-up-circle {
+.mi-pool {
   &:before {
-    content: $dci-arrow-up-circle;
+    content: $mi-pool; 
   }
 }
-.dci-arrow-right-circle {
+.mi-wave {
   &:before {
-    content: $dci-arrow-right-circle;
+    content: $mi-wave; 
   }
 }
-.dci-arrow-left-circle {
+.mi-globe {
   &:before {
-    content: $dci-arrow-left-circle;
+    content: $mi-globe; 
   }
 }
-.dci-book {
+.mi-logout {
   &:before {
-    content: $dci-book;
+    content: $mi-logout; 
   }
 }
-.dci-plug-connect {
+.mi-check-circle-fill {
   &:before {
-    content: $dci-plug-connect;
+    content: $mi-check-circle-fill; 
   }
 }
-.dci-ellipsis-horizontal {
+.mi-long-arrow-down {
   &:before {
-    content: $dci-ellipsis-horizontal;
+    content: $mi-long-arrow-down; 
   }
 }
-.dci-ellipsis-vertical {
+.mi-long-arrow-up {
   &:before {
-    content: $dci-ellipsis-vertical;
+    content: $mi-long-arrow-up; 
   }
 }
-.dci-edit {
+.mi-long-arrow-left {
   &:before {
-    content: $dci-edit;
+    content: $mi-long-arrow-left; 
   }
 }
-.dci-clipboard-pen {
+.mi-long-arrow-right {
   &:before {
-    content: $dci-clipboard-pen;
+    content: $mi-long-arrow-right; 
   }
 }
-.dci-trash {
+.mi-link {
   &:before {
-    content: $dci-trash;
+    content: $mi-link; 
   }
 }
-.dci-chart-bar-up {
+.mi-container {
   &:before {
-    content: $dci-chart-bar-up;
+    content: $mi-container; 
   }
 }
-.dci-frequency {
+.mi-circle-add {
   &:before {
-    content: $dci-frequency;
+    content: $mi-circle-add; 
   }
 }
-.dci-cluster {
+.mi-circle-minus {
   &:before {
-    content: $dci-cluster;
+    content: $mi-circle-minus; 
   }
 }
-.dci-clock {
+.mi-rocket-share {
   &:before {
-    content: $dci-clock;
+    content: $mi-rocket-share; 
   }
 }
-.dci-upgrade {
+.mi-settings {
   &:before {
-    content: $dci-upgrade;
+    content: $mi-settings; 
   }
 }
-.dci-disable {
+.mi-tree-network {
   &:before {
-    content: $dci-disable;
+    content: $mi-tree-network; 
   }
 }
+.mi-chevrons-right {
+  &:before {
+    content: $mi-chevrons-right; 
+  }
+}
+.mi-chevrons-left {
+  &:before {
+    content: $mi-chevrons-left; 
+  }
+}
+.mi-chevron-right {
+  &:before {
+    content: $mi-chevron-right; 
+  }
+}
+.mi-chevron-left {
+  &:before {
+    content: $mi-chevron-left; 
+  }
+}
+.mi-chevron-up {
+  &:before {
+    content: $mi-chevron-up; 
+  }
+}
+.mi-user-switch {
+  &:before {
+    content: $mi-user-switch; 
+  }
+}
+.mi-application {
+  &:before {
+    content: $mi-application; 
+  }
+}
+.mi-file {
+  &:before {
+    content: $mi-file; 
+  }
+}
+.mi-play-square {
+  &:before {
+    content: $mi-play-square; 
+  }
+}
+.mi-logs {
+  &:before {
+    content: $mi-logs; 
+  }
+}
+.mi-align-left {
+  &:before {
+    content: $mi-align-left; 
+  }
+}
+.mi-arrow-right-curve {
+  &:before {
+    content: $mi-arrow-right-curve; 
+  }
+}
+.mi-arrow-left-curve {
+  &:before {
+    content: $mi-arrow-left-curve; 
+  }
+}
+.mi-key {
+  &:before {
+    content: $mi-key; 
+  }
+}
+.mi-cloud-reload {
+  &:before {
+    content: $mi-cloud-reload; 
+  }
+}
+.mi-cloud-up-down {
+  &:before {
+    content: $mi-cloud-up-down; 
+  }
+}
+.mi-id-card {
+  &:before {
+    content: $mi-id-card; 
+  }
+}
+.mi-lightbulb {
+  &:before {
+    content: $mi-lightbulb; 
+  }
+}
+.mi-x-circle {
+  &:before {
+    content: $mi-x-circle; 
+  }
+}
+.mi-check-square {
+  &:before {
+    content: $mi-check-square; 
+  }
+}
+.mi-form {
+  &:before {
+    content: $mi-form; 
+  }
+}
+.mi-litmus {
+  &:before {
+    content: $mi-litmus; 
+  }
+}
+.mi-arrow-down-circle {
+  &:before {
+    content: $mi-arrow-down-circle; 
+  }
+}
+.mi-arrow-up-circle {
+  &:before {
+    content: $mi-arrow-up-circle; 
+  }
+}
+.mi-arrow-right-circle {
+  &:before {
+    content: $mi-arrow-right-circle; 
+  }
+}
+.mi-book {
+  &:before {
+    content: $mi-book; 
+  }
+}
+.mi-plug-connect {
+  &:before {
+    content: $mi-plug-connect; 
+  }
+}
+.mi-ellipsis-horizontal {
+  &:before {
+    content: $mi-ellipsis-horizontal; 
+  }
+}
+.mi-clock {
+  &:before {
+    content: $mi-clock; 
+  }
+}
+.mi-disable {
+  &:before {
+    content: $mi-disable; 
+  }
+}
+
