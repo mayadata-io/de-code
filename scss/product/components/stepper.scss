@@ -131,24 +131,24 @@
   .step{
     display:table-cell;
     position:relative;
-    padding: 10px 24px;
+    padding: 10px 0px;
     &:first-child{
       padding-left: 0;
       .step-bar-left{
-        margin-right: 14px;
+        margin-right: 10px;
         background: $stepper-check-color;
       }
       .step-bar-right{
-        margin-left: -2px;
+        margin-left: 7px;
       }
     }
     &:last-child{
       padding-right: 0;
       .step-bar-left{
-        margin-right: 0px;
+        margin-right: 6px;
       }
       .step-bar-right{
-        margin-left: 20px;
+        margin-left: 5px;
         background: $stepper-check-color;
       }
     }
@@ -159,11 +159,15 @@
       text-align: center;
       position: relative;
       z-index: 2;
+
+      .mi{
+        font-size: 28px;
+      }
     }
     .step-bar-left, .step-bar-right{
       position:absolute;
-      top:35px;
-      height:3px;
+      top: 23px;
+      height: 2px;
       background: $stepper-check-color;
     }
     .step-bar-right {
@@ -226,7 +230,7 @@
       }
     }
     .step-title {
-      margin-top:16px;
+      margin-top: 5px;
       text-align: center;
     }
   }
