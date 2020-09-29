@@ -1,6 +1,6 @@
 {
   "name": "de-code-product",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "MayaData product design system",
   "main": "css/index.css",
   "scripts": {
