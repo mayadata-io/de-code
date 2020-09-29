@@ -202,7 +202,7 @@ select.form-control-lg {
   &.hide-spinner{
     @include input-number-spinner-off;
   }
-  small{
+  .small, small{
     font-size: $form-group-font-size;
     color: $form-group-small-color;
   }
