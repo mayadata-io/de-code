@@ -21,16 +21,15 @@
     .chooser-card-head {
       font-size: $chooser-card-head-font-size;
       padding: $chooser-card-head-padding;
-
-      .chooser-card-logo{
-        img {
-          height: $chooser-card-logo-size;
-          width: $chooser-card-logo-size;
-        }
-      }
-  
     }
     
+    .chooser-card-logo{
+      height: $chooser-card-logo-size;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     .chooser-card-body{
       border-top: 1px solid rgba($chooser-card-item-body-border, 0.4);
       overflow: hidden;

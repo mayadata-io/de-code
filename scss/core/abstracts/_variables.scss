@@ -252,7 +252,7 @@ $stepper-active-color: $green-200 !default;
 //Chooser cards
 
 $chooser-card-item-border:          $border-width solid $blue-100 !default;
-$chooser-card-item-width:           132px !default;
+$chooser-card-item-width:           138px !default;
 $chooser-card-item-background:      $white !default;
 $chooser-card-item-body-border:     $blue-100 !default;
 $chooser-card-item-label-color:     $purple !default;
@@ -261,12 +261,12 @@ $chooser-card-item-background-active:         $blue-100 !default;
 $chooser-card-item-body-border-color-active: $border-width solid $primary !default;
 $chooser-card-item-label-color-active:        $primary !default;
 $chooser-card-item-box-shadow: 10px 5px 21px rgba(145, 150, 211, 0.19) !default;
-$chooser-card-item-padding: 0 20px 5px 20px !default;
-$chooser-card-logo-size: 3.5rem !default;
+$chooser-card-item-padding: 0 25px 10px 25px !default;
 $chooser-card-item-radius: 8px !default;
-$chooser-card-head-padding: 10px 6px !default;
+$chooser-card-head-padding: 10px 2px !default;
 $chooser-card-head-font-size: 16px !default;
-$chooser-card-label-font-size: 14px !default;
+$chooser-card-label-font-size: 15px !default;
+$chooser-card-logo-size: 3.5rem !default;
 
 $chooser-card-item-hover-border: 2px solid $blue-500 !default;
 $chooser-card-item-active-border: 2px solid $blue-400 !default;
