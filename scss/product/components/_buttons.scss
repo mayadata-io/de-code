@@ -29,6 +29,8 @@
   &.disabled,
   &:disabled {
     cursor: not-allowed;
+    opacity: 1;
+    pointer-events: unset;
     @include box-shadow(none);
   }
 
