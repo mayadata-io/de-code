@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?zflyxd');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?zflyxd#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?zflyxd') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?zflyxd') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?zflyxd##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?yjyuk5');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?yjyuk5#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?yjyuk5') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?yjyuk5') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?yjyuk5##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,6 +27,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.mi-historical-logs {
+  &:before {
+    content: $mi-historical-logs; 
+  }
+}
+.mi-command {
+  &:before {
+    content: $mi-command; 
+  }
+}
+.mi-alert-triangle-filled {
+  &:before {
+    content: $mi-alert-triangle-filled; 
+  }
+}
 .mi-help-circle {
   &:before {
     content: $mi-help-circle; 
@@ -167,9 +182,9 @@
     content: $mi-trash; 
   }
 }
-.mi-users1 {
+.mi-users {
   &:before {
-    content: $mi-users1; 
+    content: $mi-users; 
   }
 }
 .mi-cluster {
@@ -177,9 +192,9 @@
     content: $mi-cluster; 
   }
 }
-.mi-file1 {
+.mi-file {
   &:before {
-    content: $mi-file1; 
+    content: $mi-file; 
   }
 }
 .mi-slack {
@@ -420,11 +435,6 @@
 .mi-application {
   &:before {
     content: $mi-application; 
-  }
-}
-.mi-file {
-  &:before {
-    content: $mi-file; 
   }
 }
 .mi-play-square {
