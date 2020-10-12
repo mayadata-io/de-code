@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'maya-icons';
-  src:  url('fonts/maya-icons.eot?zflyxd');
-  src:  url('fonts/maya-icons.eot?zflyxd#iefix') format('embedded-opentype'),
-    url('fonts/maya-icons.ttf?zflyxd') format('truetype'),
-    url('fonts/maya-icons.woff?zflyxd') format('woff'),
-    url('fonts/maya-icons.svg?zflyxd#maya-icons') format('svg');
+  src:  url('fonts/maya-icons.eot?yjyuk5');
+  src:  url('fonts/maya-icons.eot?yjyuk5#iefix') format('embedded-opentype'),
+    url('fonts/maya-icons.ttf?yjyuk5') format('truetype'),
+    url('fonts/maya-icons.woff?yjyuk5') format('woff'),
+    url('fonts/maya-icons.svg?yjyuk5#maya-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.mi-historical-logs:before {
+  content: "\e903";
+}
+.mi-command:before {
+  content: "\e93b";
+}
+.mi-alert-triangle-filled:before {
+  content: "\e905";
+}
 .mi-help-circle:before {
   content: "\e967";
 }
@@ -109,13 +118,13 @@
 .mi-trash:before {
   content: "\e940";
 }
-.mi-users1:before {
+.mi-users:before {
   content: "\e94d";
 }
 .mi-cluster:before {
   content: "\e951";
 }
-.mi-file1:before {
+.mi-file:before {
   content: "\e952";
 }
 .mi-slack:before {
@@ -261,9 +270,6 @@
 }
 .mi-application:before {
   content: "\e901";
-}
-.mi-file:before {
-  content: "\e903";
 }
 .mi-play-square:before {
   content: "\e906";
