@@ -399,8 +399,11 @@ export const IconLists = [
     label: "disable"
   },
   {
-    name: "mi-ssh",
-    label: "ssh"
+    name: "mi-command",
+    label: "command"
   },
-
+  {
+    name: "mi-historical-logs",
+    label: "historical-logs"
+  },
 ];
