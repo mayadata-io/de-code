@@ -64,6 +64,10 @@ export const IconLists = [
     label: "alert-triangle"
   },
   {
+    name: "mi-alert-triangle-filled",
+    label: "alert-triangle-filled"
+  },
+  {
     name: "mi-arrow-left-circle",
     label: "arrow-left-circle"
   },
@@ -112,16 +116,16 @@ export const IconLists = [
     label: "trash"
   },
   {
-    name: "mi-users1",
-    label: "users1"
+    name: "mi-users",
+    label: "users"
   },
   {
     name: "mi-cluster",
     label: "cluster"
   },
   {
-    name: "mi-file1",
-    label: "file1"
+    name: "mi-file",
+    label: "file"
   },
   {
     name: "mi-slack",
@@ -308,10 +312,6 @@ export const IconLists = [
     label: "application"
   },
   {
-    name: "mi-file",
-    label: "file"
-  },
-  {
     name: "mi-play-square",
     label: "play-square"
   },
@@ -397,5 +397,10 @@ export const IconLists = [
   {
     name: "mi-disable",
     label: "disable"
-  }
+  },
+  {
+    name: "mi-ssh",
+    label: "ssh"
+  },
+
 ];

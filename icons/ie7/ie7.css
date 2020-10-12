@@ -1,3 +1,9 @@
+.mi-ssh {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe93b;');
+}
+.mi-alert-triangle-filled {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe905;');
+}
 .mi-help-circle {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe967;');
 }
@@ -82,13 +88,13 @@
 .mi-trash {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe940;');
 }
-.mi-users1 {
+.mi-users {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe94d;');
 }
 .mi-cluster {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe951;');
 }
-.mi-file1 {
+.mi-file {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe952;');
 }
 .mi-slack {
@@ -234,9 +240,6 @@
 }
 .mi-application {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe901;');
-}
-.mi-file {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe903;');
 }
 .mi-play-square {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe906;');
