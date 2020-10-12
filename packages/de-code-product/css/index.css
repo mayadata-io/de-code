@@ -6667,7 +6667,7 @@ select.form-control:focus::-ms-value {
 .input-group-sm > .input-group-append > .input-group-text,
 .input-group-sm > .input-group-prepend > .btn,
 .input-group-sm > .input-group-append > .btn {
-  padding: 0.4rem 1.5rem;
+  padding: 0.4rem 0.4rem;
   font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 0.2rem;
@@ -6686,7 +6686,7 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 .input-group-lg > .input-group-append > .input-group-text,
 .input-group-lg > .input-group-prepend > .btn,
 .input-group-lg > .input-group-append > .btn {
-  padding: 1.1rem 2.8rem;
+  padding: 1.1rem 1.1rem;
   font-size: 1.125rem;
   line-height: 1.5;
   border-radius: 0.3rem;
@@ -7237,6 +7237,8 @@ input:checked + .slider:before {
 
 .btn.disabled, .btn:disabled {
   cursor: not-allowed;
+  opacity: 1;
+  pointer-events: unset;
   box-shadow: none;
 }
 
@@ -9303,7 +9305,7 @@ tbody.collapse.show {
 .stepper-check .step {
   display: table-cell;
   position: relative;
-  padding: 10px 24px;
+  padding: 10px 0px;
 }
 
 .stepper-check .step:first-child {
@@ -9311,12 +9313,12 @@ tbody.collapse.show {
 }
 
 .stepper-check .step:first-child .step-bar-left {
-  margin-right: 14px;
+  margin-right: 10px;
   background: #E8EAE9;
 }
 
 .stepper-check .step:first-child .step-bar-right {
-  margin-left: -2px;
+  margin-left: 7px;
 }
 
 .stepper-check .step:last-child {
@@ -9324,11 +9326,11 @@ tbody.collapse.show {
 }
 
 .stepper-check .step:last-child .step-bar-left {
-  margin-right: 0px;
+  margin-right: 6px;
 }
 
 .stepper-check .step:last-child .step-bar-right {
-  margin-left: 20px;
+  margin-left: 5px;
   background: #E8EAE9;
 }
 
@@ -9340,10 +9342,14 @@ tbody.collapse.show {
   z-index: 2;
 }
 
+.stepper-check .step .step-circle .mi {
+  font-size: 28px;
+}
+
 .stepper-check .step .step-bar-left, .stepper-check .step .step-bar-right {
   position: absolute;
-  top: 35px;
-  height: 3px;
+  top: 23px;
+  height: 2px;
   background: #E8EAE9;
 }
 
@@ -9412,7 +9418,7 @@ tbody.collapse.show {
 }
 
 .stepper-check .step .step-title {
-  margin-top: 16px;
+  margin-top: 5px;
   text-align: center;
 }
 
@@ -10287,6 +10293,7 @@ button.close {
   position: relative;
   margin: 15% auto;
   pointer-events: none;
+  max-width: 700px;
 }
 
 .modal-dialog.modal-justify-center {
@@ -10409,15 +10416,15 @@ button.close {
   cursor: pointer;
 }
 
-.modal .modal-dialog, .modal-md .modal-dialog {
+.modal.modal-dialog, .modal-md.modal-dialog {
   max-width: 700px;
 }
 
-.modal-sm .modal-dialog {
+.modal-sm.modal-dialog {
   max-width: 550px;
 }
 
-.modal-lg .modal-dialog {
+.modal-lg.modal-dialog {
   max-width: 900px;
 }
 
@@ -11088,20 +11095,22 @@ button.close {
   display: block;
   margin: 10px 20px 10px 0px;
   text-align: center;
-  width: 132px;
+  width: 138px;
   box-shadow: 10px 5px 21px rgba(145, 150, 211, 0.19);
   border-radius: 8px;
-  padding: 0 20px 5px 20px;
+  padding: 0 25px 10px 25px;
 }
 
 .chooser-card .chooser-card-item .chooser-card-head {
   font-size: 16px;
-  padding: 10px 6px;
+  padding: 10px 2px;
 }
 
-.chooser-card .chooser-card-item .chooser-card-head .chooser-card-logo img {
+.chooser-card .chooser-card-item .chooser-card-logo {
   height: 3.5rem;
-  width: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .chooser-card .chooser-card-item .chooser-card-body {
@@ -11112,7 +11121,7 @@ button.close {
 }
 
 .chooser-card .chooser-card-item .chooser-card-body .chooser-card-label {
-  font-size: 14px;
+  font-size: 15px;
   color: #322E7A;
   padding: 0;
 }
