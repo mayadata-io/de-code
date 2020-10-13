@@ -84,7 +84,7 @@ select.form-control {
 .form-control-label {
   color: $form-control-lable-text-color;
   font-size: $font-size-sm;
-  margin-bottom: .25rem
+  margin-bottom: 4px;
 }
 
 
@@ -415,7 +415,7 @@ select.form-control-lg {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 0;
+      margin-bottom: 4px;
     }
     // Inline-block all the things for "inline"
     .form-group {
