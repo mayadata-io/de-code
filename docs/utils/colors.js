@@ -1,12 +1,13 @@
 // blue, gray, skyblue, green, orange, red, yellow, amber, purple, darkgreen, dustygray, black
 
 export const blue = [
-  {'name':'blue-100', 'hax':'#A3BAE0', 'rgb':''},
-  {'name':'blue-200', 'hax':'#6899E7', 'rgb':''},
-  {'name':'blue-300', 'hax':'#4489F7', 'rgb':''},
-  {'name':'blue-400', 'hax':'#276AD4', 'rgb':''},
-  {'name':'blue-500', 'hax':'#1263E4', 'rgb':''},
-  {'name':'blue-600', 'hax':'#0E4FB6', 'rgb':''},
+  {'name':'blue-100', 'hax':'#C3DAFF', 'rgb':''},
+  {'name':'blue-200', 'hax':'#A3BAE0', 'rgb':''},
+  {'name':'blue-300', 'hax':'#6899E7', 'rgb':''},
+  {'name':'blue-400', 'hax':'#4489F7', 'rgb':''},
+  {'name':'blue-500', 'hax':'#276AD4', 'rgb':''},
+  {'name':'blue-600', 'hax':'#1263E4', 'rgb':''},
+  {'name':'blue-700', 'hax':'#0E4FB6', 'rgb':''},
 ];
 export const gray = [
   {'name':'gray-100', 'hax':'#F4F4F4', 'rgb':''},
@@ -39,11 +40,12 @@ export const red = [
   {'name':'red-100', 'hax':'#FF7C86', 'rgb':''},
   {'name':'red-200', 'hax':'#BD1700', 'rgb':''},
 ];
+export const amber = [
+  {'name':'amber-100', 'hax':'#FFE3BA', 'rgb':''},
+  {'name':'amber-200', 'hax':'#FFB039', 'rgb':''},
+];
 export const yellow = [
   {'name':'yellow', 'hax':'#DDC557', 'rgb':''},
-];
-export const amber = [
-  {'name':'amber', 'hax':'#FFB039', 'rgb':''},
 ];
 export const purple = [
   {'name':'purple', 'hax':'#322E7A', 'rgb':''},

@@ -6,12 +6,13 @@
 
 // Blue color variations
 
-$blue-100: #A3BAE0 !default;
-$blue-200: #6899E7 !default;
-$blue-300: #4489F7 !default;
-$blue-400: #276AD4 !default;
-$blue-500: #1263E4 !default;
-$blue-600: #0E4FB6 !default;
+$blue-100: #C3DAFF !default;
+$blue-200: #A3BAE0 !default;
+$blue-300: #6899E7 !default;
+$blue-400: #4489F7 !default;
+$blue-500: #276AD4 !default;
+$blue-600: #1263E4 !default;
+$blue-700: #0E4FB6 !default;
 
 // Green color variations
 
@@ -65,31 +66,33 @@ $white: #FFFFFF !default;
 
 // Amber
 
-$amber: #FFB039;
+$amber-100: #FFE3BA !default;
+$amber-200: #FFB039 !default;
 
 // Dark green
 
-$darkgreen: #156649;
+$darkgreen: #156649 !default;
 
 // Yellow
 
-$yellow: #DDC557;
+$yellow: #DDC557 !default;
 
 // Dusty gray
 
-$dustygray: #959595;
+$dustygray: #959595 !default;
 
 // Black
 
-$black: #000000;
+$black: #000000 !default;
 
 // Base colors
-$blue:    $blue-400 !default;
+$blue:    $blue-500 !default;
 $green:   $green-200 !default;
 $orange:  $orange-200 !default;
 $gray:    $gray-800 !default;
 $skyblue: $skyblue-400 !default;
 $red: $red-100 !default;
+$amber: $amber-200 !default;
 
 $colors: () !default;
 $colors: map-merge((
@@ -109,12 +112,12 @@ $colors: map-merge((
 ), $colors);
 
 // Theme colors
-$primary: $blue-400 !default;
+$primary: $blue-500 !default;
 $secondary: $white !default;
 $orange: $orange !default;
 $green: $green !default;
 $skyblue: $skyblue-100 !default;
-$blue-outline:   $blue-100 !default;
+$blue-outline:   $blue-200 !default;
 $danger: $red !default;
 $success: $green !default;
 $gray: $gray !default;
@@ -123,7 +126,7 @@ $warning: $yellow !default;
 $inactive: $gray-500 !default;
 $info: $darkgreen !default;
 $purple: $purple !default;
-$link: $blue-500 !default;
+$link: $blue-600 !default;
 
 //Color maps
 $theme-colors: () !default;
@@ -154,12 +157,12 @@ $button-colors: () !default;
 $button-colors: (
   primary: (
     base: $primary,
-    light: $blue-200,
-    dark: $blue-600,
+    light: $blue-300,
+    dark: $blue-700,
   ),
   secondary: (
     base: $secondary,
-    light:$blue-200,
+    light:$blue-300,
     dark: $blue,
   ),
   orange: (
@@ -176,7 +179,8 @@ $blues: map-merge((
   "300": $blue-300,
   "400": $blue-400,
   "500": $blue-500,
-  "600": $blue-600
+  "600": $blue-600,
+  "700": $blue-700
 ), $blues);
 
 $greens: () !default;
@@ -219,3 +223,9 @@ $reds: map-merge((
   "100": $red-100,
   "200": $red-200
 ), $reds);
+
+$ambers: () !default;
+$ambers: map-merge((
+  "100": $amber-100,
+  "200": $amber-200
+), $ambers);

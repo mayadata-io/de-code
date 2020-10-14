@@ -23,6 +23,9 @@
 @each $color, $value in $oranges {
   @include bg-variant(".bg-orange-#{$color}", $value);
 }
+@each $color, $value in $ambers {
+  @include bg-variant(".bg-amber-#{$color}", $value);
+}
 
 @if $enable-gradients {
   @each $color, $value in $theme-colors {

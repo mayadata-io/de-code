@@ -75,9 +75,9 @@ $body-color:                $gray-600 !default;
 //
 // Style anchor elements.
 
-$link-color:                $blue-500 !default;
+$link-color:                $blue-600 !default;
 $link-decoration:           none !default;
-$link-hover-color:          $blue-500 !default;
+$link-hover-color:          $blue-600 !default;
 $link-hover-decoration:     underline !default;
 
 // Paragraphs
@@ -251,13 +251,13 @@ $stepper-active-color: $green-200 !default;
 
 //Chooser cards
 
-$chooser-card-item-border:          $border-width solid $blue-100 !default;
+$chooser-card-item-border:          $border-width solid $blue-200 !default;
 $chooser-card-item-width:           138px !default;
 $chooser-card-item-background:      $white !default;
-$chooser-card-item-body-border:     $blue-100 !default;
+$chooser-card-item-body-border:     $blue-200 !default;
 $chooser-card-item-label-color:     $purple !default;
 
-$chooser-card-item-background-active:         $blue-100 !default;
+$chooser-card-item-background-active:         $blue-200 !default;
 $chooser-card-item-body-border-color-active: $border-width solid $primary !default;
 $chooser-card-item-label-color-active:        $primary !default;
 $chooser-card-item-box-shadow: 10px 5px 21px rgba(145, 150, 211, 0.19) !default;
@@ -268,8 +268,8 @@ $chooser-card-head-font-size: 16px !default;
 $chooser-card-label-font-size: 15px !default;
 $chooser-card-logo-size: 3.5rem !default;
 
-$chooser-card-item-hover-border: 2px solid $blue-500 !default;
-$chooser-card-item-active-border: 2px solid $blue-400 !default;
+$chooser-card-item-hover-border: 2px solid $blue-600 !default;
+$chooser-card-item-active-border: 2px solid $blue-500 !default;
 
 // Tables
 //
@@ -322,7 +322,7 @@ $btn-secondary-color: $purple !default;
 $btn-disabled-background: $gray-400 !default;
 $btn-disabled-color: $gray-600 !default;
 $btn-outline-primary-color: $purple !default;
-$outline-color: $blue-100;
+$outline-color: $blue-200;
 // Buttons
 //
 // For each of Bootstrap's buttons, define text, background, and border color.
@@ -369,7 +369,7 @@ $google-button-background: $skyblue-200;
 $github-button-background: $gray-900;
 $github-button-color: $white;
 $btn-secondary-flat-color: $dustygray;
-$btn-secondary-flat-hover-color: $blue-500;
+$btn-secondary-flat-hover-color: $blue-600;
 
 // Forms
 
@@ -402,7 +402,7 @@ $input-border-radius-sm:                $border-radius-sm !default;
 $input-focus-bg:                        $white !default;
 $input-focus-color:                     $input-color !default;
 $input-focus-width:                     $input-btn-focus-width !default;
-$input-focus-border-color:              $blue-400 !default;
+$input-focus-border-color:              $blue-500 !default;
 
 $input-placeholder-color:               $gray-700 !default;
 
@@ -452,7 +452,7 @@ $custom-control-indicator-bg:           $white !default;
 $custom-control-indicator-bg-size:      50% 50% !default;
 $custom-control-indicator-box-shadow:   $input-box-shadow !default;
 
-$custom-control-label-before-border: 2px solid $blue-100;
+$custom-control-label-before-border: 2px solid $blue-200;
 $custom-control-indicator-disabled-bg:          $gray-200 !default;
 $custom-control-label-disabled-color:     $gray-600 !default;
 
@@ -537,7 +537,7 @@ $counter-input-active-box-shadow: 0 0 0 0.1rem $primary, inset 0 3px 5px rgba(56
 $counter-input-select-border-color: 2px solid $gray-200 !default;
 
 // Segment controls
-$segment-control-border:       1px solid $blue-100 !default;
+$segment-control-border:       1px solid $blue-200 !default;
 $segment-control-color:                  $heading-color !default;
 $segment-control-color-hover-bg:         $green-300 !default;
 $segment-control-hover-color:     $white !default;
@@ -596,7 +596,7 @@ $zindex-tooltip:                    1090 !default;
 
 // Navs
 $nav-link-color:                    $gray-600 !default;
-$nav-link-active-color:             $blue-500 !default;
+$nav-link-active-color:             $blue-600 !default;
 $nav-link-active-bg:                $body-bg !default;
 $nav-link-active-border-color:      $blue !default;
 $nav-link-border-width:             2px !default;
@@ -694,13 +694,13 @@ $card-spacer-y:                     .75rem !default;
 $card-spacer-x:                     1.25rem !default;
 $card-border-width:                 2px !default;
 $card-border-radius:                4px !default;
-$card-border:                       2px solid $blue-400 !default;
+$card-border:                       2px solid $blue-500 !default;
 $card-border-color:                 rgba(92, 105, 140, 0.15) !default;
 $card-group-border-color:           $gray-400 !default;
 $card-deck-border-color:           $gray-400 !default;   
 $card-box-shadow:                   0 0 5px 0 $gray-100;
 $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width}) !default;
-$card-cap-bg:                       $blue-600 !default;
+$card-cap-bg:                       $blue-700 !default;
 $card-bg:                           $white !default;
 
 $card-img-overlay-padding:          1.25rem !default;
@@ -777,7 +777,7 @@ $modal-header-padding: 45px 24px 0px 24px !default;
 $modal-body-padding: 0px 100px 22px 100px !default;
 $modal-footer-padding: 30px 24px 45px 24px !default;
 
-$modal-dialog-margin: 15% auto !default;
+$modal-dialog-margin: 8% auto !default;
 $modal-dialog-margin-y-sm-up: 30px !default;
 
 $modal-backdrop-bg: rgba($gray-900, 0.55) !default;
@@ -1027,4 +1027,4 @@ $progress-steps: 10; //this needs to be even.
 
 //modal-terminal
 
-$modal-terminal-headear-background-color: $blue-500;
+$modal-terminal-headear-background-color: $blue-600;
