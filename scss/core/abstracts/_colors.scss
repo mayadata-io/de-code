@@ -127,6 +127,9 @@ $inactive: $gray-500 !default;
 $info: $darkgreen !default;
 $purple: $purple !default;
 $link: $blue-600 !default;
+$offline: $blue-200 !default;
+$disconnected: $gray-700 !default;
+
 
 //Color maps
 $theme-colors: () !default;
@@ -144,6 +147,8 @@ $theme-colors: map-merge((
   "warning": $warning,
   "inactive": $inactive,
   "info": $info,
+  "offline": $offline,
+  "disconnected": $disconnected,
   "purple": $purple,
   "link": $link,
   "amber": $amber,

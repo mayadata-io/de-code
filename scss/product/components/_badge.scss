@@ -46,6 +46,16 @@
       }
     }
   }
+
+  // badge solid varient
+  .badge-solid-#{$color} {
+    @include badge-solid-variant($value);
+
+    @if $color == "secondary" {
+      border: 2px solid $orange-100;
+      background: $orange-100;
+    }
+  }
 }
 
 // Circle badges

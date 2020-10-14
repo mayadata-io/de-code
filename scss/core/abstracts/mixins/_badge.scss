@@ -10,3 +10,9 @@
     }
   }
 }
+
+@mixin badge-solid-variant($color) {
+  color: $white;
+  background: $color;
+  border: 2px solid $color;
+}
