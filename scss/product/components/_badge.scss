@@ -91,3 +91,14 @@
   align-items: center;
   justify-content: center;
 }
+
+// notification with a dot
+ .badge-notification-dot{
+   position: relative;
+   padding:0;
+   .badge-circle{
+     position: absolute;
+     top: 0px;
+     right: 0px;
+   }
+ }
