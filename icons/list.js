@@ -80,10 +80,6 @@ export const IconLists = [
     label: "database"
   },
   {
-    name: "mi-overview",
-    label: "overview"
-  },
-  {
     name: "mi-container-filled",
     label: "container-filled"
   },
