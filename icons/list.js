@@ -108,8 +108,8 @@ export const IconLists = [
     label: "sliders"
   },
   {
-    name: "mi-close",
-    label: "close"
+    name: "mi-x",
+    label: "x"
   },
   {
     name: "mi-trash",
@@ -405,5 +405,13 @@ export const IconLists = [
   {
     name: "mi-historical-logs",
     label: "historical-logs"
+  },
+  {
+    name: "mi-cloud-arrow-up",
+    label: "cloud-arrow-up"
+  },
+  {
+    name: "mi-dashboard",
+    label: "dashboard"
   },
 ];
