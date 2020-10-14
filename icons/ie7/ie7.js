@@ -13,6 +13,7 @@
 		el.innerHTML = '<span style="font-family: \'maya-icons\'">' + entity + '</span>' + html;
 	}
 	var icons = {
+		'mi-container-filled': '&#xe908;',
 		'mi-home': '&#xe964;',
 		'mi-tree-network': '&#xe913;',
 		'mi-dollar': '&#xe92a;',
@@ -38,7 +39,6 @@
 		'mi-chevron-down': '&#xe944;',
 		'mi-database': '&#xe900;',
 		'mi-dashboard': '&#xe902;',
-		'mi-container-filled': '&#xe908;',
 		'mi-circle-info': '&#xe946;',
 		'mi-layers': '&#xe90c;',
 		'mi-log-out': '&#xe916;',
