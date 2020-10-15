@@ -37,8 +37,9 @@ export const orange = [
   {'name':'orange-300', 'hax':'#E86C47', 'rgb':''},
 ];
 export const red = [
+  {'name':'red-100', 'hax':'#FFC2BA', 'rgb':''},
   {'name':'red-100', 'hax':'#FF7C86', 'rgb':''},
-  {'name':'red-200', 'hax':'#BD1700', 'rgb':''},
+  {'name':'red-300', 'hax':'#BD1700', 'rgb':''},
 ];
 export const amber = [
   {'name':'amber-100', 'hax':'#FFE3BA', 'rgb':''},

@@ -51,8 +51,9 @@ $skyblue-400: #6DC2FF !default;
 
 // Red color variations
 
-$red-100: #FF7C86 !default;
-$red-200: #BD1700 !default;
+$red-100: #FFC2BA !default;
+$red-200: #FF7C86 !default;
+$red-300: #BD1700 !default;
 
 
 // Purple
@@ -91,7 +92,7 @@ $green:   $green-200 !default;
 $orange:  $orange-200 !default;
 $gray:    $gray-800 !default;
 $skyblue: $skyblue-400 !default;
-$red: $red-100 !default;
+$red: $red-200 !default;
 $amber: $amber-200 !default;
 
 $colors: () !default;
@@ -121,8 +122,8 @@ $blue-outline:   $blue-200 !default;
 $danger: $red !default;
 $success: $green !default;
 $gray: $gray !default;
-$error: $red-200 !default;
-$warning: $yellow !default;
+$error: $red-300 !default;
+$warning: $amber-200 !default;
 $inactive: $gray-500 !default;
 $info: $darkgreen !default;
 $purple: $purple !default;
@@ -171,6 +172,16 @@ $button-colors: (
     dark: $orange-300,
   ),
 );
+
+$alert-colors: () !default;
+$alert-colors: map-merge((
+  "primary":    $blue-300,
+  "danger":     $red-100,
+  "success":    $green,
+  "light":    $skyblue-200,
+  "info":    $darkgreen,
+  "warning":    $amber-100,
+), $alert-colors);
 
 $blues: () !default;
 $blues: map-merge((
@@ -221,7 +232,8 @@ $skyblues: map-merge((
 $reds: () !default;
 $reds: map-merge((
   "100": $red-100,
-  "200": $red-200
+  "200": $red-200,
+  "300": $red-300
 ), $reds);
 
 $ambers: () !default;
