@@ -1,3 +1,18 @@
+.mi-container-filled {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe908;');
+}
+.mi-home {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe964;');
+}
+.mi-tree-network {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe913;');
+}
+.mi-dollar {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe92a;');
+}
+.mi-cloud-arrow-up {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe958;');
+}
 .mi-historical-logs {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe903;');
 }
@@ -19,17 +34,11 @@
 .mi-check-list {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe94e;');
 }
-.mi-home {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe964;');
-}
 .mi-mail {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe91d;');
 }
 .mi-bell {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe909;');
-}
-.mi-dollar {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe913;');
 }
 .mi-eye-off {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe915;');
@@ -64,11 +73,8 @@
 .mi-database {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe900;');
 }
-.mi-overview {
+.mi-dashboard {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe902;');
-}
-.mi-container-filled {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe908;');
 }
 .mi-circle-info {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe946;');
@@ -85,7 +91,7 @@
 .mi-sliders {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe92c;');
 }
-.mi-close {
+.mi-x {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe936;');
 }
 .mi-trash {
@@ -105,9 +111,6 @@
 }
 .mi-bar-chart {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe957;');
-}
-.mi-cloud-arrow-up {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe958;');
 }
 .mi-user {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe94f;');
@@ -219,9 +222,6 @@
 }
 .mi-settings {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe93a;');
-}
-.mi-tree-network {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe92a;');
 }
 .mi-chevrons-right {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe904;');

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'maya-icons';
-  src:  url('fonts/maya-icons.eot?yjyuk5');
-  src:  url('fonts/maya-icons.eot?yjyuk5#iefix') format('embedded-opentype'),
-    url('fonts/maya-icons.ttf?yjyuk5') format('truetype'),
-    url('fonts/maya-icons.woff?yjyuk5') format('woff'),
-    url('fonts/maya-icons.svg?yjyuk5#maya-icons') format('svg');
+  src:  url('fonts/maya-icons.eot?urctox');
+  src:  url('fonts/maya-icons.eot?urctox#iefix') format('embedded-opentype'),
+    url('fonts/maya-icons.ttf?urctox') format('truetype'),
+    url('fonts/maya-icons.woff?urctox') format('woff'),
+    url('fonts/maya-icons.svg?urctox#maya-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.mi-container-filled:before {
+  content: "\e908";
+}
+.mi-home:before {
+  content: "\e964";
+}
+.mi-tree-network:before {
+  content: "\e913";
+}
+.mi-dollar:before {
+  content: "\e92a";
+}
+.mi-cloud-arrow-up:before {
+  content: "\e958";
+}
 .mi-historical-logs:before {
   content: "\e903";
 }
@@ -46,17 +61,11 @@
 .mi-check-list:before {
   content: "\e94e";
 }
-.mi-home:before {
-  content: "\e964";
-}
 .mi-mail:before {
   content: "\e91d";
 }
 .mi-bell:before {
   content: "\e909";
-}
-.mi-dollar:before {
-  content: "\e913";
 }
 .mi-eye-off:before {
   content: "\e915";
@@ -91,11 +100,8 @@
 .mi-database:before {
   content: "\e900";
 }
-.mi-overview:before {
+.mi-dashboard:before {
   content: "\e902";
-}
-.mi-container-filled:before {
-  content: "\e908";
 }
 .mi-circle-info:before {
   content: "\e946";
@@ -112,7 +118,7 @@
 .mi-sliders:before {
   content: "\e92c";
 }
-.mi-close:before {
+.mi-x:before {
   content: "\e936";
 }
 .mi-trash:before {
@@ -132,9 +138,6 @@
 }
 .mi-bar-chart:before {
   content: "\e957";
-}
-.mi-cloud-arrow-up:before {
-  content: "\e958";
 }
 .mi-user:before {
   content: "\e94f";
@@ -246,9 +249,6 @@
 }
 .mi-settings:before {
   content: "\e93a";
-}
-.mi-tree-network:before {
-  content: "\e92a";
 }
 .mi-chevrons-right:before {
   content: "\e904";

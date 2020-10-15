@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?yjyuk5');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?yjyuk5#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?yjyuk5') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?yjyuk5') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?yjyuk5##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?urctox');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?urctox#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?urctox') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?urctox') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?urctox##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,6 +27,31 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.mi-container-filled {
+  &:before {
+    content: $mi-container-filled; 
+  }
+}
+.mi-home {
+  &:before {
+    content: $mi-home; 
+  }
+}
+.mi-tree-network {
+  &:before {
+    content: $mi-tree-network; 
+  }
+}
+.mi-dollar {
+  &:before {
+    content: $mi-dollar; 
+  }
+}
+.mi-cloud-arrow-up {
+  &:before {
+    content: $mi-cloud-arrow-up; 
+  }
+}
 .mi-historical-logs {
   &:before {
     content: $mi-historical-logs; 
@@ -62,11 +87,6 @@
     content: $mi-check-list; 
   }
 }
-.mi-home {
-  &:before {
-    content: $mi-home; 
-  }
-}
 .mi-mail {
   &:before {
     content: $mi-mail; 
@@ -75,11 +95,6 @@
 .mi-bell {
   &:before {
     content: $mi-bell; 
-  }
-}
-.mi-dollar {
-  &:before {
-    content: $mi-dollar; 
   }
 }
 .mi-eye-off {
@@ -137,14 +152,9 @@
     content: $mi-database; 
   }
 }
-.mi-overview {
+.mi-dashboard {
   &:before {
-    content: $mi-overview; 
-  }
-}
-.mi-container-filled {
-  &:before {
-    content: $mi-container-filled; 
+    content: $mi-dashboard; 
   }
 }
 .mi-circle-info {
@@ -172,9 +182,9 @@
     content: $mi-sliders; 
   }
 }
-.mi-close {
+.mi-x {
   &:before {
-    content: $mi-close; 
+    content: $mi-x; 
   }
 }
 .mi-trash {
@@ -205,11 +215,6 @@
 .mi-bar-chart {
   &:before {
     content: $mi-bar-chart; 
-  }
-}
-.mi-cloud-arrow-up {
-  &:before {
-    content: $mi-cloud-arrow-up; 
   }
 }
 .mi-user {
@@ -395,11 +400,6 @@
 .mi-settings {
   &:before {
     content: $mi-settings; 
-  }
-}
-.mi-tree-network {
-  &:before {
-    content: $mi-tree-network; 
   }
 }
 .mi-chevrons-right {
