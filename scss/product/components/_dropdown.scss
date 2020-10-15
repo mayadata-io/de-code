@@ -31,7 +31,7 @@
   list-style: none;
   background-color: $dropdown-bg;
   background-clip: padding-box;
-  border: $dropdown-border-width solid $dropdown-border-color;
+  border: 0; //removed border as per the new design
   @include border-radius($border-radius);
   @include box-shadow($dropdown-box-shadow);
   
@@ -47,12 +47,12 @@
         margin: 0.2rem 0.8rem 0.8rem;
       }
       .button-group{
-          padding: 0 15px 10px 15px;
+          padding: 0 15px 10px 0;
           .btn{
             display: block;
             margin: 0.25rem auto;
               +.btn{
-                  margin-top: 8px;
+                  margin-top: 10px;
               }
           }
       }

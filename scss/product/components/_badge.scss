@@ -59,20 +59,24 @@
   height: 12px;
   width: 12px;
   vertical-align: middle;
+  &.circle-small{
+    height: 8px;
+    width: 8px;
+  }
 }
 .badge-label {
   margin-left: 4px;
   vertical-align: middle;
 }
-.badge-circle-sm {
+.badge-circle-sm{
   height: 8px;
   width: 8px;
 }
-.badge-circle-md {
+.badge-circle-md{
   height: 12px;
   width: 12px;
 }
-.badge-circle-lg {
+.badge-circle-lg{
   height: 14px;
   width: 14px;
 }
