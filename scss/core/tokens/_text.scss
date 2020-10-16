@@ -6,10 +6,10 @@
 
 // Alignment
 
-.text-justify  {text-align: justify !important;}
-.text-nowrap   {white-space: nowrap !important;}
-.text-truncate {@include text-truncate;}
-.text-wrap{ white-space: normal !important;}
+.text-justify  { text-align: justify !important; }
+.text-nowrap   { white-space: nowrap !important; }
+.text-truncate { @include text-truncate; }
+.text-wrap     { white-space: normal !important; }
 // Responsive alignment
 
 @each $breakpoint in map-keys($grid-breakpoints) {

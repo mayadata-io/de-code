@@ -68,22 +68,22 @@
   margin-left: 4px;
   vertical-align: middle;
 }
-.badge-circle-sm{
+.badge-circle-sm {
   height: 8px;
   width: 8px;
 }
-.badge-circle-md{
+.badge-circle-md {
   height: 12px;
   width: 12px;
 }
-.badge-circle-lg{
+.badge-circle-lg {
   height: 14px;
   width: 14px;
 }
 
 // Badge notification
 
-.badge-notification{
+.badge-notification {
   border-radius: 50%;
   border: $badge-notification-border;
   color: $badge-notification-color;
@@ -97,7 +97,7 @@
 }
 
 // notification with a dot
- .badge-notification-dot{
+ .badge-notification-dot {
    position: relative;
    padding:0;
    .badge-circle{
