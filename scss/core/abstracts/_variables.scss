@@ -275,7 +275,7 @@ $chooser-card-item-active-border: 2px solid $blue-500 !default;
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
 
-$table-cell-padding:          .75rem !default;
+$table-cell-padding:          .85rem 1rem !default;
 $table-cell-padding-sm:       .3rem !default;
 
 $table-bg:                    transparent !default;
@@ -287,13 +287,17 @@ $table-border-width:          $border-width !default;
 $table-border-color:          $gray-300 !default;
 
 $table-head-bg:               $gray-200 !default;
-$table-head-color:            $gray-600 !default;
+$table-head-color:            $purple !default;
 
 $table-dark-bg:               $gray-600 !default;
 $table-dark-accent-bg:        rgba($white, .05) !default;
 $table-dark-hover-bg:         rgba($white, .075) !default;
 $table-dark-border-color:     lighten($gray-600, 7.5%) !default;
 $table-dark-color:            $body-bg !default;
+
+$table-row-color: $skyblue-200 !default;
+$table-thead-bg-color: $blue-100 !default;
+$table-body-color: $gray-800 !default;
 
 
 // Buttons + Forms
@@ -833,6 +837,10 @@ $drawer-sizes: map-merge((
   md: 640px,
   sm: 320px,
 ), $drawer-sizes);
+
+$custom-slider-thumb-background: $orange-200 !default;
+$custom-slider-thumb-color: $white !default;
+$custom-slider-bar-background: $orange-100 !default;
 
 // Alerts
 //

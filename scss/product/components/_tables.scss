@@ -6,26 +6,42 @@
   width: 100%;
   max-width: 100%;
   margin-bottom: $spacer;
+  border-style: hidden;
+  border-radius: $border-radius;
   background-color: $table-bg; // Reset for nesting within parents with `background-color`.
-
-  th,
-  td {
+  thead{
+    background: $table-thead-bg-color;
+    th{
+      border-bottom: 0px;
+      font-size: 14px;
+      color: $purple;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+  }
+  td{
+    font-size:16px;
+    line-height: 24px;
+  }
+  td,
+  th {
     padding: $table-cell-padding;
     vertical-align: middle;
-    border-top: $table-border-width solid $table-border-color;
+    color: $table-body-color;
   }
 
-  thead th {
-    vertical-align: bottom;
-    border-bottom: (2 * $table-border-width) solid $table-border-color;
-  }
+  // thead th {
+  //   vertical-align: middle;
+  //   border-bottom: (2 * $table-border-width) solid $table-border-color;
+  //   border-top: (2 * $table-border-width) solid $table-border-color;
+  //   color: $table-head-color;
+  //   background: transparent;
+  // }
 
-  tbody + tbody {
+  tbody+tbody {
     border-top: (2 * $table-border-width) solid $table-border-color;
-  }
-
-  .table {
-    background-color: $body-bg;
+    color: $table-head-color;
+    background: transparent;
   }
 }
 
@@ -40,8 +56,9 @@
     padding: $table-cell-padding-sm;
   }
 }
-
-
+table tr:nth-child(even) td{
+  background-color: $table-row-color;
+}
 // Bordered version
 //
 // Add borders all around the table and between all the columns.
@@ -78,21 +95,19 @@
 //
 // Placed here since it has to come after the potential zebra striping
 
-.table-hover {
-  tbody tr {
-    @include hover {
-      background-color: $table-hover-bg;
-    }
-  }
-}
+// .table-hover {
+//   tbody tr {
+//     @include hover {
+//       background-color: $table-hover-bg;
+//     }
+//   }
+// }
 
 // Avatar images in td
 .table-avatar {
   display: flex;
   align-items: center;
   .table-avatar-image {
-    border:1px solid $gray-200;
-    border-radius: 50%;
     width: 2.5rem;
     height: 2.5rem;
   }
@@ -103,8 +118,8 @@
     }
   }
   .table-avatar-label {
-    color: $link-color;
-    margin-left: 14px;
+    color: $blue-500;
+    margin-left: 2px;
   }
   .not-a-link-label {
     color: $gray-600;

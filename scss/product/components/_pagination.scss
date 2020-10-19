@@ -46,6 +46,7 @@
     z-index: 1;
     color: $pagination-active-color;
     background-color: $pagination-active-bg;
+    border-radius: 25px;
   }
 
   &.disabled .page-link {

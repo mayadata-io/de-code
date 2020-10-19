@@ -7,6 +7,7 @@ import { Playground, PropsTable } from 'docz'
 import digitalocean from '../../resources/images/clusters/digitalocean.png'
 import azure from '../../resources/images/clusters/azure.png'
 import gke from '../../resources/images/clusters/gke.png'
+import cassandra from '../../resources/images/workloads/cassandra.png'
 import minikube from '../../resources/images/clusters/minikube.png'
 import openshift from '../../resources/images/clusters/openshift.png'
 
@@ -18,138 +19,270 @@ import openshift from '../../resources/images/clusters/openshift.png'
   <table className="table table-hover">
     <thead>
       <tr>
-        <th scope="col">Name</th>
-        <th scope="col">Status</th>
-        <th scope="col">K8s version</th>
-        <th scope="col">Nodes</th>
-        <th scope="col"></th>
+        <th scope="col">Column1</th>
+        <th scope="col">Column2</th>
+        <th scope="col">Column3</th>
+        <th scope="col">Column4</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>
-          Dev-cluster-yg238
+          <div className="table-avatar">
+            <div><img className="table-avatar-image" src={cassandra} /></div>
+            <span className="table-avatar-label btn-link">Link</span>
+          </div>
         </td>
-        <td><span className="badge badge-success">Active</span></td>
-        <td>v1.10.11-gke.1</td>
-        <td>12</td>
-        <td></td>
+        <td>Value A</td>
+        <td>Value B</td>
+        <td><label className="switch">
+            <input type="checkbox" />
+            <span className="slider round" />
+            </label>
+        </td>
       </tr>
       <tr>
         <td>
-          Testing-cluster-tr33d
+          <div className="table-avatar">
+            <div><img className="table-avatar-image" src={cassandra} /></div>
+            <span className="table-avatar-label btn-link">Link</span>
+          </div>        
         </td>
-        <td><span className="badge badge-danger">Inactive</span></td>
-        <td>v1.10</td>
-        <td>3</td>
-        <td></td>
+        <td>Value A</td>
+        <td>Value B</td>
+        <td><label className="switch">
+            <input type="checkbox" />
+            <span className="slider round" />
+            </label>
+        </td>
+        </tr>
+      <tr>
+        <td>
+          <div className="table-avatar">
+            <div><img className="table-avatar-image" src={cassandra} /></div>
+            <span className="table-avatar-label btn-link">Link</span>
+          </div>
+        </td>
+        <td>Value A</td>
+        <td>Value B</td>
+        <td><label className="switch">
+            <input type="checkbox" />
+            <span className="slider round" />
+            </label>
+        </td>
       </tr>
       <tr>
         <td>
-          Staging-setup-df12s
+          <div className="table-avatar">
+            <div><img className="table-avatar-image" src={cassandra} /></div>
+            <span className="table-avatar-label btn-link">Link</span>
+          </div>
         </td>
-        <td><span className="badge badge-warning">Degrated</span></td>
-        <td>v1.10.11</td>
-        <td>6</td>
-        <td></td>
-      </tr>
+        <td>Value A</td>
+        <td>Value B</td>
+        <td><label className="switch">
+            <input type="checkbox" />
+            <span className="slider round" />
+            </label>
+        </td>
+        </tr>
       <tr>
         <td>
-          Monitor-cluster-8hjq7
+          <div className="table-avatar">
+            <div><img className="table-avatar-image" src={cassandra} /></div>
+            <span className="table-avatar-label btn-link">Link</span>
+          </div>
         </td>
-        <td><span className="badge badge-success">Active</span></td>
-        <td>v1.13.2</td>
-        <td>12</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>
-          Asia-scope-72dr4
+        <td>Value A</td>
+        <td>Value B</td>
+        <td><label className="switch">
+            <input type="checkbox" />
+            <span className="slider round" />
+            </label>
         </td>
-        <td><span className="badge badge-danger">Offline</span></td>
-        <td>v1.10.13</td>
-        <td>12</td>
-        <td></td>
-      </tr>
+        </tr>
     </tbody>
   </table>
 </Playground>
 
-## Table with avatar
+## Table with checkbox and badge
 <Playground>
   <table className="table table-hover">
     <thead>
       <tr>
-        <th scope="col">Name</th>
-        <th scope="col">Status</th>
-        <th scope="col">K8s version</th>
-        <th scope="col">Nodes</th>
+        <th scope="col">
+          <div className="custom-control custom-checkbox">
+            <input type="checkbox" className="custom-control-input" id="customCheck1"/>
+            <label className="custom-control-label" htmlFor="customCheck1"></label>
+          </div>
+        </th>
+        <th scope="col">Column1</th>
+        <th scope="col">Column2</th>
+        <th scope="col">Column3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div className="custom-control custom-checkbox">
+            <input type="checkbox" className="custom-control-input" id="customCheck1"/>
+            <label className="custom-control-label" htmlFor="customCheck1"></label>
+          </div>
+        </td>
+        <td>Value A</td>
+        <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm Lorem ipsum dolor sit amet, consectetuer</td>
+        <td><span className="badge badge-success">Active</span></td>
+      </tr>
+      <tr>
+        <td>
+        <div className="custom-control custom-checkbox">
+          <input type="checkbox" className="custom-control-input" id="customCheck1"/>
+          <label className="custom-control-label" htmlFor="customCheck1"></label>
+        </div>        
+        </td>
+        <td>Value A</td>
+        <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm Lorem ipsum dolor sit amet, consectetuer</td>
+        <td><span className="badge badge-warning">Warning</span></td>
+        </tr>
+      <tr>
+        <td>
+        <div className="custom-control custom-checkbox">
+          <input type="checkbox" className="custom-control-input" id="customCheck1"/>
+          <label className="custom-control-label" htmlFor="customCheck1"></label>
+        </div>
+        </td>
+        <td>Value A</td>
+        <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm Lorem ipsum dolor sit amet, consectetuer</td>
+        <td><span className="badge badge-danger">Danger</span></td>
+      </tr>
+      <tr>
+        <td>
+          <div className="custom-control custom-checkbox">
+            <input type="checkbox" className="custom-control-input" id="customCheck1"/>
+            <label className="custom-control-label" htmlFor="customCheck1"></label>
+          </div>
+        </td>
+        <td>Value A</td>
+        <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm Lorem ipsum dolor sit amet, consectetuer</td>
+        <td><span className="badge badge-success">Success</span></td>
+        </tr>
+      <tr>
+        <td>
+          <div className="custom-control custom-checkbox">
+            <input type="checkbox" className="custom-control-input" id="customCheck1"/>
+            <label className="custom-control-label" htmlFor="customCheck1"></label>
+          </div>
+        </td>
+        <td>Value A</td>
+        <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm Lorem ipsum dolor sit amet, consectetuer</td>
+        <td><span className="badge badge-primary">Primary</span></td>
+        </tr>
+    </tbody>
+  </table>
+</Playground>
+
+## Table with dropdown
+<Playground>
+  <table className="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Column1</th>
+        <th scope="col">Column2</th>
+        <th scope="col">Column3</th>
+        <th scope="col">Column4</th>
         <th scope="col"></th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>
-          <div className="table-avatar">
-            <div><img className="table-avatar-image" src={gke} /></div>
-            <span className="table-avatar-label">Dev-cluster-yg238</span>
-          </div>
+          Value A
         </td>
-        <td><span className="badge badge-success">Active</span></td>
-        <td>v1.10.11-gke.1</td>
-        <td>12</td>
-        <td></td>
+        <td>Value B</td>
+        <td>Value C</td>
+        <td><div class="text-success">2/2</div></td>
+        <td><i class="mi mi-lg mi-chevron-down"></i></td>
       </tr>
       <tr>
         <td>
-          <div className="table-avatar">
-            <div><img className="table-avatar-image" src={azure} /></div>
-            <span className="table-avatar-label">Testing-cluster-tr33d</span>
-          </div>
+          Value A
         </td>
-        <td><span className="badge badge-danger">Inactive</span></td>
-        <td>v1.10</td>
-        <td>3</td>
-        <td></td>
+        <td>Value B</td>
+        <td>Value C</td>
+        <td><div class="text-danger">0/1</div></td>
+        <td><i class="mi mi-lg mi-chevron-down"></i></td>
       </tr>
       <tr>
         <td>
-          <div className="table-avatar">
-            <div><img className="table-avatar-image" src={minikube} /></div>
-            <span className="table-avatar-label">Staging-setup-df12s</span>
-          </div>
+          Value A
         </td>
-        <td><span className="badge badge-warning">Degrated</span></td>
-        <td>v1.10.11</td>
-        <td>6</td>
-        <td></td>
+        <td>Value B</td>
+        <td>Value C</td>
+        <td><div class="text-success">2/2</div></td>
+        <td><i class="mi mi-lg mi-chevron-down"></i></td>
       </tr>
       <tr>
         <td>
-          <div className="table-avatar">
-            <div><img className="table-avatar-image" src={digitalocean} /></div>
-            <span className="table-avatar-label">Monitor-cluster-8hjq7</span>
-          </div>
+          Value A
         </td>
-        <td><span className="badge badge-success">Active</span></td>
-        <td>v1.13.2</td>
-        <td>12</td>
-        <td></td>
+        <td>Value B</td>
+        <td>Value C</td>
+        <td><div class="text-warning">7/9</div></td>
+        <td><i class="mi mi-lg mi-chevron-down"></i></td>
       </tr>
       <tr>
         <td>
-          <div className="table-avatar">
-            <div><img className="table-avatar-image" src={openshift} /></div>
-            <span className="table-avatar-label">Asia-scope-72dr4</span>
-          </div>
+          Value A
         </td>
-        <td><span className="badge badge-danger">Offline</span></td>
-        <td>v1.10.13</td>
-        <td>12</td>
-        <td></td>
+        <td>Value B</td>
+        <td>Value C</td>
+        <td><div class="text-success">4/4</div></td>
+        <td><i class="mi mi-lg mi-chevron-down"></i></td>
       </tr>
     </tbody>
   </table>
+  <div class="d-flex align-items-center mt-3 text-gray">
+    <div class="col-4">
+      <div class="d-flex align-items-center dropdown">
+          Components per page
+          <button class="btn btn-link" data-toggle="dropdown">5 <i class="mi mi-chevron-down button-icon-inline"></i></button>
+          <ui class="alerts dropdown-menu">
+              <li class="dropdown-item" role="button">1</li>
+              <li class="dropdown-item" role="button">2</li>
+              <li class="dropdown-item" role="button">3</li>
+              <li class="dropdown-item" role="button">4</li>
+              <li class="dropdown-item" role="button">5</li>
+          </ui>
+      </div>
+    </div>  
+    <div class="col-4">
+    <nav aria-label="...">
+      <ul className="pagination mb-0">
+      <li className="page-item disabled">
+      <a className="page-link" href="#" aria-label="Previous">
+        <span className="fa fa-chevron-left" aria-hidden="true"></span>
+        <span className="sr-only">Previous</span>
+      </a>
+      </li>
+        <li className="page-item active">
+          <a className="page-link" href="#">1 <span className="sr-only">(current)</span></a>
+        </li>
+        <li className="page-item"><a className="page-link" href="#">2</a></li>
+        <li className="page-item"><a className="page-link" href="#">3</a></li>
+        <li className="page-item"><a className="page-link" href="#">4</a></li>
+        <li className="page-item">
+        <a className="page-link" href="#" aria-label="Next">
+          <span className="fa fa-chevron-right" aria-hidden="true"></span>
+          <span className="sr-only">Next</span>
+        </a>
+      </li>
+      </ul>
+    </nav>
+    </div>
+    <div class="col-4 text-right">
+      1-5/19 components
+    </div>
+  </div>
 </Playground>
 
 ## Table with actions

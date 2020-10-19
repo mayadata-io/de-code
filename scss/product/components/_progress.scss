@@ -55,3 +55,27 @@
     /*     opacity: 1; */
   }
 }
+
+.custom-slider-thumb {
+  appearance: none;
+  width: 30px;
+  top: -6px;
+  height: 25px;
+  position: absolute;
+  background: $custom-slider-thumb-background;
+  color: $custom-slider-thumb-color;
+  padding-top: 5px;
+  text-align: center;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.custom-slider-bar {
+display: block;
+position: relative;
+width: 100%;
+height: 15px;
+padding: 0;
+background: linear-gradient(90.01deg, $custom-slider-bar-background 20.16%, rgba(53, 222, 161, 0.78) 64.5%, rgba(75, 202, 156, 0) 100.12%);
+border-radius: 8.5px;
+box-sizing: content-box;
+}
