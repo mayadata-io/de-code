@@ -234,3 +234,34 @@ table tr:nth-child(even) td{
     }
   }
 }
+
+ //  nested table:- 
+.nested-table {
+  .no-padding {
+    padding: 0;
+  }
+
+  .table {
+    margin-bottom: 0;
+    background: $nested-table-background;
+    box-shadow: $nested-table-shadow;
+    border-radius: 0;
+
+    thead {
+      background: $nested-table-background;
+      th {
+        border-bottom: 0px;
+        font-size: 14px;
+        color: $purple;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+      tbody {
+        td {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}

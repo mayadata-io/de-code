@@ -285,46 +285,233 @@ import openshift from '../../resources/images/clusters/openshift.png'
   </div>
 </Playground>
 
-## Table with actions
+## Table with nested sub table
 <Playground>
   <table className="table table-hover">
     <thead>
       <tr>
-        <th scope="col">Name</th>
-        <th scope="col">Status</th>
-        <th scope="col">K8s version</th>
-        <th scope="col">Nodes</th>
+        <th scope="col">Column1</th>
+        <th scope="col">Column2</th>
+        <th scope="col">Column3</th>
+        <th scope="col">Column4</th>
         <th scope="col"></th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>
-          Asia-scope-72dr4
+          Value A
         </td>
-        <td><span className="badge badge-danger">Offline</span></td>
-        <td>v1.10.13</td>
-        <td>12</td>
+        <td>Value B</td>
+        <td>Value C</td>
+        <td><div class="text-success">2/2</div></td>
+        <td><i class="mi mi-lg mi-chevron-down"></i></td>
+      </tr>
+      <tr>
         <td>
-          <div className="table-action">
-            <div className="table-action_item">
-              <div className="table-action_link">
-                <i className="fa fa-pencil-square-o" aria-hidden="true"></i>
-              </div>
-            </div>
-            <div className="table-action_item">
-              <div className="table-action_link">
-                <i className="fa fa-area-chart" aria-hidden="true"></i>
-              </div>
-            </div>
-            <div className="table-action_item">
-              <div className="table-action_link">
-                <i className="fa fa-trash"></i>
-              </div>
-            </div>
-          </div>
+          Value A
         </td>
+        <td>Value B</td>
+        <td>Value C</td>
+        <td><div class="text-danger">0/1</div></td>
+        <td><i class="mi mi-lg mi-chevron-up"></i></td>
+      </tr>
+      <tr class="nested-table">
+        <td class="no-padding" colspan="5">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>
+                Column1-1
+              </th>
+              <th>
+                Column2-2
+              </th>
+              <th>
+                Column3-3
+              </th>
+              <th>
+                Column4-4
+              </th>
+              <th>
+                Column5-5
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>
+              Value A-A
+            </td>
+            <td>
+              Value B-B
+            </td>
+            <td>
+                1/1
+            </td>
+            <td>
+              <span>
+                <span class="cluster-name">
+                  <span class="badge badge-success">
+                    Succeeded
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td>
+            <span class="table-action_link" tooltip-position="right" tooltip="Logs" data-ember-action="" data-ember-action-753="753">
+              <i class="mi mi-logs mi-1x"></i>
+            </span>
+            </td>
+          </tr>
+                    <tr>
+            <td>
+              Value A-A
+            </td>
+            <td>
+              Value B-B
+            </td>
+            <td>
+                1/1
+            </td>
+            <td>
+              <span>
+                <span class="cluster-name">
+                  <span class="badge badge-success">
+                    Succeeded
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td>
+            <span class="table-action_link" tooltip-position="right" tooltip="Logs" data-ember-action="" data-ember-action-753="753">
+              <i class="mi mi-logs mi-1x"></i>
+            </span>
+            </td>
+          </tr>
+                    <tr>
+            <td>
+              Value A-A
+            </td>
+            <td>
+              Value B-B
+            </td>
+            <td>
+                1/1
+            </td>
+            <td>
+              <span>
+                <span class="cluster-name">
+                  <span class="badge badge-success">
+                    Succeeded
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td>
+            <span class="table-action_link" tooltip-position="right" tooltip="Logs" data-ember-action="" data-ember-action-753="753">
+              <i class="mi mi-logs mi-1x"></i>
+            </span>
+            </td>
+          </tr>
+                    <tr>
+            <td>
+              Value A-A
+            </td>
+            <td>
+              Value B-B
+            </td>
+            <td>
+                1/1
+            </td>
+            <td>
+              <span>
+                <span class="cluster-name">
+                  <span class="badge badge-success">
+                    Succeeded
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td>
+            <span class="table-action_link" tooltip-position="right" tooltip="Logs" data-ember-action="" data-ember-action-753="753">
+              <i class="mi mi-logs mi-1x"></i>
+            </span>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Value A
+        </td>
+        <td>Value B</td>
+        <td>Value C</td>
+        <td><div class="text-success">2/2</div></td>
+        <td><i class="mi mi-lg mi-chevron-down"></i></td>
+      </tr>
+      <tr>
+        <td>
+          Value A
+        </td>
+        <td>Value B</td>
+        <td>Value C</td>
+        <td><div class="text-warning">7/9</div></td>
+        <td><i class="mi mi-lg mi-chevron-down"></i></td>
+      </tr>
+      <tr>
+        <td>
+          Value A
+        </td>
+        <td>Value B</td>
+        <td>Value C</td>
+        <td><div class="text-success">4/4</div></td>
+        <td><i class="mi mi-lg mi-chevron-down"></i></td>
       </tr>
     </tbody>
   </table>
+  <div class="d-flex align-items-center mt-3 text-gray">
+    <div class="col-4">
+      <div class="d-flex align-items-center dropdown">
+          Components per page
+          <button class="btn btn-link" data-toggle="dropdown">5 <i class="mi mi-chevron-down button-icon-inline"></i></button>
+          <ui class="alerts dropdown-menu">
+              <li class="dropdown-item" role="button">1</li>
+              <li class="dropdown-item" role="button">2</li>
+              <li class="dropdown-item" role="button">3</li>
+              <li class="dropdown-item" role="button">4</li>
+              <li class="dropdown-item" role="button">5</li>
+          </ui>
+      </div>
+    </div>  
+    <div class="col-4">
+    <nav aria-label="...">
+      <ul className="pagination mb-0">
+      <li className="page-item disabled">
+      <a className="page-link" href="#" aria-label="Previous">
+        <span className="fa fa-chevron-left" aria-hidden="true"></span>
+        <span className="sr-only">Previous</span>
+      </a>
+      </li>
+        <li className="page-item active">
+          <a className="page-link" href="#">1 <span className="sr-only">(current)</span></a>
+        </li>
+        <li className="page-item"><a className="page-link" href="#">2</a></li>
+        <li className="page-item"><a className="page-link" href="#">3</a></li>
+        <li className="page-item"><a className="page-link" href="#">4</a></li>
+        <li className="page-item">
+        <a className="page-link" href="#" aria-label="Next">
+          <span className="fa fa-chevron-right" aria-hidden="true"></span>
+          <span className="sr-only">Next</span>
+        </a>
+      </li>
+      </ul>
+    </nav>
+    </div>
+    <div class="col-4 text-right">
+      1-5/19 components
+    </div>
+  </div>
 </Playground>

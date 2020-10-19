@@ -47,6 +47,10 @@
     color: $pagination-active-color;
     background-color: $pagination-active-bg;
     border-radius: 25px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding-top: 5px;
   }
 
   &.disabled .page-link {
