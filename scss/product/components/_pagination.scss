@@ -19,6 +19,8 @@
     color: $pagination-hover-color;
     text-decoration: none;
     background-color: $pagination-hover-bg;
+    border-radius: 25px;
+    text-align: center;
     -webkit-transition: $transition-base; /* Safari */
     transition: $transition-base;
   }
@@ -47,10 +49,7 @@
     color: $pagination-active-color;
     background-color: $pagination-active-bg;
     border-radius: 25px;
-    width: 25px;
-    height: 25px;
     text-align: center;
-    padding-top: 5px;
   }
 
   &.disabled .page-link {

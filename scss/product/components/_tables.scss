@@ -14,7 +14,7 @@
     th{
       border-bottom: 0px;
       font-size: 14px;
-      color: $purple;
+      color: $table-head-color;
       font-weight: bold;
       text-transform: capitalize;
     }
@@ -29,14 +29,6 @@
     vertical-align: middle;
     color: $table-body-color;
   }
-
-  // thead th {
-  //   vertical-align: middle;
-  //   border-bottom: (2 * $table-border-width) solid $table-border-color;
-  //   border-top: (2 * $table-border-width) solid $table-border-color;
-  //   color: $table-head-color;
-  //   background: transparent;
-  // }
 
   tbody+tbody {
     border-top: (2 * $table-border-width) solid $table-border-color;
@@ -91,18 +83,6 @@ table tr:nth-child(even) td{
 }
 
 
-// Hover effect
-//
-// Placed here since it has to come after the potential zebra striping
-
-// .table-hover {
-//   tbody tr {
-//     @include hover {
-//       background-color: $table-hover-bg;
-//     }
-//   }
-// }
-
 // Avatar images in td
 .table-avatar {
   display: flex;
@@ -118,7 +98,7 @@ table tr:nth-child(even) td{
     }
   }
   .table-avatar-label {
-    color: $blue-500;
+    color: $table-avatar-label-color;
     margin-left: 2px;
   }
   .not-a-link-label {
@@ -252,7 +232,7 @@ table tr:nth-child(even) td{
       th {
         border-bottom: 0px;
         font-size: 14px;
-        color: $purple;
+        color: $table-head-color;
         font-weight: bold;
         text-transform: capitalize;
       }
