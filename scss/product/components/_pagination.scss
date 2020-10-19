@@ -19,7 +19,7 @@
     color: $pagination-hover-color;
     text-decoration: none;
     background-color: $pagination-hover-bg;
-    border-radius: 50px;
+    border-radius: 50%;
     text-align: center;
     -webkit-transition: $transition-base; /* Safari */
     transition: $transition-base;
@@ -48,7 +48,7 @@
     z-index: 1;
     color: $pagination-active-color;
     background-color: $pagination-active-bg;
-    border-radius: 50px;
+    border-radius: 50%;
     text-align: center;
   }
 
