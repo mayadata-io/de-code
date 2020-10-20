@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'maya-icons';
-  src:  url('fonts/maya-icons.eot?urctox');
-  src:  url('fonts/maya-icons.eot?urctox#iefix') format('embedded-opentype'),
-    url('fonts/maya-icons.ttf?urctox') format('truetype'),
-    url('fonts/maya-icons.woff?urctox') format('woff'),
-    url('fonts/maya-icons.svg?urctox#maya-icons') format('svg');
+  src:  url('fonts/maya-icons.eot?u1tkhg');
+  src:  url('fonts/maya-icons.eot?u1tkhg#iefix') format('embedded-opentype'),
+    url('fonts/maya-icons.ttf?u1tkhg') format('truetype'),
+    url('fonts/maya-icons.woff?u1tkhg') format('woff'),
+    url('fonts/maya-icons.svg?u1tkhg#maya-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.mi-container:before {
+  content: "\e961";
+}
+.mi-circle-info-filled:before {
+  content: "\e968";
+}
+.mi-x-circle-filled:before {
+  content: "\e969";
+}
 .mi-container-filled:before {
   content: "\e908";
 }
@@ -234,9 +243,6 @@
 }
 .mi-link:before {
   content: "\e947";
-}
-.mi-container:before {
-  content: "\e961";
 }
 .mi-circle-add:before {
   content: "\e90b";
