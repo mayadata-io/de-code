@@ -19,6 +19,7 @@
     color: $pagination-hover-color;
     text-decoration: none;
     background-color: $pagination-hover-bg;
+    padding: $pagination-padding-y $pagination-padding-x;
     border-radius: 50%;
     text-align: center;
     -webkit-transition: $transition-base; /* Safari */
@@ -48,7 +49,7 @@
     z-index: 1;
     color: $pagination-active-color;
     background-color: $pagination-active-bg;
-    border-radius: 50;
+    border-radius: 50%;
     text-align: center;
   }
 
@@ -70,5 +71,5 @@
 }
 
 .pagination-sm {
-  @include pagination-size($pagination-padding-y, $pagination-padding-x, $font-size-sm, $line-height-sm, $border-radius-sm);
+  @include pagination-size($pagination-padding-y-sm, $pagination-padding-x-sm, $font-size-sm, $line-height-sm, $border-radius-sm);
 }
