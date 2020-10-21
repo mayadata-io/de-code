@@ -1,9 +1,9 @@
 .popover {
   position: absolute;
-  top: 0;
-  left: 0;
+  left: 5%;
   z-index: $zindex-popover;
   display: block;
+  min-width: $popover-max-width;
   max-width: $popover-max-width;
   // Our parent element can be arbitrary since tooltips are by default inserted as a sibling of their target element.
   // So reset our font and text properties to avoid inheriting weird values.
