@@ -155,6 +155,10 @@
   -ms-word-break: break-word;
   word-break: break-word;
   text-align: center;
+
+  form, .form-control, .form-group, .custom-control{
+    text-align: unset;
+  }
 }
 // Footer (for actions)
 .modal-footer {
