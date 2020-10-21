@@ -410,4 +410,12 @@ export const IconLists = [
     name: "mi-dashboard",
     label: "dashboard"
   },
+  {
+    name: "mi-x-circle-filled",
+    label: "x-circle-filled"
+  },
+  {
+    name: "mi-circle-info-filled",
+    label: "circle-info-filled"
+  },
 ];
