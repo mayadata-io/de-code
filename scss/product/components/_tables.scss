@@ -11,6 +11,12 @@
   background-color: $table-bg; // Reset for nesting within parents with `background-color`.
   thead{
     background: $table-thead-bg-color;
+    th:first-child{
+      border-top-left-radius:8px;
+    }
+    th:last-child{
+      border-top-right-radius:8px;
+    }
     th{
       border-bottom: 0px;
       font-size: 14px;
