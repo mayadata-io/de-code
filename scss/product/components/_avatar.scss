@@ -219,3 +219,20 @@ Due to the split circle of progress-left and progress right, we must use the ani
     }
 	}
 }
+
+
+//avatar groups
+
+.avatar-group{
+  display: flex;
+  align-items: center;
+  .avatar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:2px solid $avatar-group-avatar-border;
+		position: relative;
+		margin-left: -7px;
+		@include avatar-z-index(30);
+  }
+}

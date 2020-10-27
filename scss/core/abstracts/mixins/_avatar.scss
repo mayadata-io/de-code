@@ -1,3 +1,12 @@
 @mixin progress-avatar-variant($color) {
     border: 1px solid $color;
 }
+@mixin avatar-z-index($count: 30){
+   $target: 1; //setting target  1  as default;
+   $index: $count; // 
+   @while $index > 0 {
+      &:nth-child(#{$target}){ z-index: #{$index}; }
+      $target: $target + 1;
+      $index: $index - 1; 
+   }
+}
