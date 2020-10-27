@@ -604,6 +604,7 @@ $zindex-drawer:                     1060 !default;
 $zindex-modal:                      1070 !default;
 $zindex-popover:                    1080 !default;
 $zindex-tooltip:                    1090 !default;
+$zindex-alert:                      1100 !default;
 
 // Navs
 $nav-link-color:                    $gray-600 !default;
@@ -860,6 +861,11 @@ $alert-border-radius:               $border-radius !default;
 $alert-link-font-weight:            bold !default;
 $alert-border-width:                $border-width !default;
 $alert-font-size:                   $font-size-base !default;
+
+$alert-pagetop-box-shadow:          4px 8px 20px rgba(100, 114, 188, 0.28);
+$alert-pagetop-padding-y:           0.95rem;
+$alert-pagetop-padding-x:           $alert-padding-x;
+$alert-pagetop-font-size:           $font-size-md !default;
 
 // Banners
 $banner-padding:                    16px;
