@@ -2,7 +2,7 @@
     border: 1px solid $color;
 }
 @mixin avatar-z-index($count: 30){
-   $target: 1; //setting target  0  as default;
+   $target: 1; //setting target  1  as default;
    $index: $count; // 
    @while $index > 0 {
       &:nth-child(#{$target}){ z-index: #{$index}; }
