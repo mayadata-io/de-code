@@ -36,6 +36,7 @@
     background-color: $btn-disabled-background;
     color: $btn-disabled-color;
     border: transparent;
+    border: $input-btn-border-width solid $btn-disabled-background;
   }
 
   &.active {
