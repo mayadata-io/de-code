@@ -154,7 +154,9 @@
     .sub-heading {
       font-size: 12px;
     }
-
+    &.active{
+      background-color: $skyblue-200;
+    }
     a {
       color: inherit;
       text-decoration: none;
@@ -186,7 +188,6 @@
     }
   }
 }
-
 
 //
 // Card groups
