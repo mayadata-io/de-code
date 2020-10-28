@@ -65,7 +65,7 @@
 }
 //alert for displaying on top of the page.
 .pagetop-alert{
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 240px; //as per the design the alert wont cover the whole section
