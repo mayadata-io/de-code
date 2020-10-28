@@ -139,9 +139,9 @@
 
 .modal-sub-title {
   font-size: 18px;
-  padding-top: $modal-sub-title-padding;
   color: $modal-sub-title-color;
   text-align: center;
+  line-height: 1.5;
 }
 // Modal body
 // Where all modal content resides (sibling of .modal-header and .modal-footer)

@@ -785,8 +785,8 @@ $badge-notification-size: 22px;
 
 // Padding applied to the modal body
 $modal-header-padding: 45px 24px 0px 24px !default;
-$modal-body-padding: 0px 100px 22px 100px !default;
-$modal-footer-padding: 30px 24px 45px 24px !default;
+$modal-body-padding: 15px 100px 22px 100px !default;
+$modal-footer-padding: 15px 24px 45px 24px !default;
 
 $modal-dialog-margin: 8% auto !default;
 $modal-dialog-margin-y-sm-up: 30px !default;
@@ -798,7 +798,6 @@ $modal-title-line-height: 1.5 !default;
 $modal-title-color: $heading-color;
 $modal-sub-title-color: $body-text-color;
 
-$modal-sub-title-padding: 10px;
 $modal-content-bg: $white !default;
 $modal-content-border-width: 1px !default;
 
