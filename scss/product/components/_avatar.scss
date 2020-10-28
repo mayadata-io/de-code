@@ -30,6 +30,12 @@
 .avatar-square{
 	border-radius: 0;
 	background: transparent;
+	&.avatar-curved{
+		border-radius: 4px;
+	}
+	&.avatar-w_shadow{
+		box-shadow: $avatar-box-shadow;
+	}
 }
 
 .avatar-sm {
@@ -42,7 +48,7 @@
 .avatar-md {
 	width: 2.3rem;
 	height: 2.3rem;
-	line-height: 2.5rem;
+	line-height: 2.3rem;
 	font-size: 1rem;
 }
 
@@ -227,6 +233,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   display: flex;
   align-items: center;
   .avatar{
+		cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
