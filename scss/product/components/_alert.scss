@@ -9,7 +9,13 @@
   font-size: $alert-font-size;
   text-align: center;
   @include border-radius($alert-border-radius);
-
+  //alerts with shadow
+  &.shadow{
+    padding: $alert-pagetop-padding-y $alert-pagetop-padding-x;
+    border-radius: 0;
+    box-shadow: $alert-pagetop-box-shadow;
+    font-size: $alert-pagetop-font-size;
+  }
   .mi{
     vertical-align: middle;
     margin-right: 12px;
@@ -68,12 +74,6 @@
   position: fixed;
   top: 0;
   right: 0;
-  left: 240px; //as per the design the alert wont cover the whole section
+  left: 246px; //as per the design the alert wont cover the whole section
   z-index: $zindex-alert;
-  .alert{
-    padding: $alert-pagetop-padding-y $alert-pagetop-padding-x;
-    border-radius: 0;
-    box-shadow: $alert-pagetop-box-shadow;
-    font-size: $alert-pagetop-font-size;
-  }
 }
