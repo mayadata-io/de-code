@@ -382,6 +382,9 @@ $github-button-color: $white;
 $btn-secondary-flat-color: $dustygray;
 $btn-secondary-flat-hover-color: $blue-600;
 
+$btn-icon-square-border: 2px solid $blue-100;
+$btn-icon-square-boxshadow: 10px 5px 21px rgba(145, 150, 211, 0.19);
+$btn-icon-square-background: $skyblue-200;
 // Forms
 
 $input-padding-y:                       0.55rem !default;
@@ -747,7 +750,7 @@ $tooltip-opacity: 0.9 !default;
 // Popovers
 
 $popover-font-size:                 $font-size-sm !default;
-$popover-bg:                        $white !default;
+$popover-bg:                        $purple !default;
 $popover-max-width:                 350px !default;
 $popover-border-width:              $border-width !default;
 $popover-border-color:              rgba($black, .2) !default;
@@ -768,8 +771,8 @@ $popover-arrow-height:              .5rem !default;
 $popover-arrow-color:               $popover-bg !default;
 
 $popover-arrow-outer-color:         fade-in($popover-border-color, .05) !default;
-
-
+$popover-small-size:                130px;
+$popover-arrow-width-small:         4px;
 // Badges
 
 $badge-font-size:                   12px !default;
@@ -1040,7 +1043,7 @@ $progress-avatar-label-color: $purple;
 $progress-avatar-size: 2rem;
 $avatar-group-avatar-border:white;
 $progress-steps: 10; //this needs to be even.
-
+$avatar-box-shadow: 0px 1px 15px rgba($blue-700, .11);
 //modal-terminal
 
 $modal-terminal-headear-background-color: $blue-600;
