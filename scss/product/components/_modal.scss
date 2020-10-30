@@ -81,7 +81,9 @@
 }
 // Actual modal
 .modal-content {
-  max-height: 100vh;
+  // for avoiding overflow of modal
+  // as we are calling 8% margin for modal container we cant have height more than 84vh
+  max-height: 85vh; 
   position: relative;
   display: flex;
   flex-direction: column; // counteract the pointer-events: none; in the .modal-dialog
