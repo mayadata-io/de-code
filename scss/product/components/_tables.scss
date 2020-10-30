@@ -54,8 +54,12 @@
     padding: $table-cell-padding-sm;
   }
 }
-table tr:nth-child(even) td{
-  background-color: $table-row-color;
+table{
+  &:not(.bg-transparent){ // .bg-transparent Add this class to get transparent bg tables
+    tr:nth-child(even) td{
+    background-color: $table-row-color;
+    }
+  }
 }
 // Bordered version
 //
