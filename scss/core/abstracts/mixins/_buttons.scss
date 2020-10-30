@@ -35,13 +35,13 @@
   &:disabled {
     background-color: $btn-disabled-background;
     color: $btn-disabled-color;
-    border: transparent;
     border: $input-btn-border-width solid $btn-disabled-background;
   }
 
   &.active {
     background-color: button-color($background, light);
     color: color-yiq(button-color($background, light));
+    border: $input-btn-border-width solid button-color($background, light);
     @include box-shadow(none);
   }
   
