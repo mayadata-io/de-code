@@ -10,7 +10,6 @@
   margin: $paginnation-margin-y $paginnation-margin-x;
   line-height: $pagination-line-height;
   color: $pagination-color;
-  background-color: $pagination-bg;
   -webkit-transition: $transition-base; /* Safari */
   transition: $transition-base;
   @include border-radius($border-radius);
