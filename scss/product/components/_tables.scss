@@ -223,6 +223,7 @@ table tr:nth-child(even) td{
 
  //  nested table:- 
 .nested-table {
+  border-top: 1px solid $nested-table-head-border-color;
   .no-padding {
     padding: 0;
   }
@@ -231,11 +232,14 @@ table tr:nth-child(even) td{
     box-shadow: $nested-table-shadow;
     border-radius: 0;
     thead {
+      tr{
+        border-bottom: 1px solid $nested-table-head-border-color;
+      }
       th {
         border-bottom: 0px;
         font-size: 14px;
         color: $table-head-color;
-        background-color: $nested-table-background;
+        background-color: $nested-table-head-background;
         font-weight: bold;
         text-transform: capitalize;
       }
@@ -244,7 +248,7 @@ table tr:nth-child(even) td{
       td {
         font-size: 16px;
         line-height: 24px;
-        background-color: $nested-table-background;
+        background-color: $nested-table-row-background;
       }
     }
   }
