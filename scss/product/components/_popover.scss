@@ -204,6 +204,7 @@
   	min-width: $popover-small-size;
   }
   &.pos-bottom{
+    left: auto;
   	top: calc(100% + 5px);
     &:before{
       bottom: 100%;
@@ -212,6 +213,7 @@
     }
   }
   &.pos-top{
+    left: auto;
     bottom: calc(100% + 5px);
     &:before{
       top: 100%;
@@ -220,6 +222,7 @@
     }
   }
   &.pos-left{
+    left: auto;
     right: calc(100% + 5px);
     &:before{
       top: 50%;
