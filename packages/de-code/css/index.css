@@ -10794,7 +10794,7 @@ button.close {
 }
 
 .modal-content {
-  max-height: 100vh;
+  max-height: 84vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -11033,7 +11033,8 @@ button.close {
 
 .popover {
   position: absolute;
-  left: 5%;
+  top: unset;
+  left: -45%;
   z-index: 1080;
   display: block;
   min-width: 350px;
@@ -11205,6 +11206,10 @@ button.close {
   border-left-color: #322E7A;
 }
 
+.popover.left {
+  left: 6%;
+}
+
 .popover-header {
   padding: 0.5rem 0.75rem;
   margin-bottom: 0;
@@ -11236,6 +11241,7 @@ button.close {
 }
 
 .popover.pos-bottom {
+  left: auto;
   top: calc(100% + 5px);
 }
 
@@ -11246,6 +11252,7 @@ button.close {
 }
 
 .popover.pos-top {
+  left: auto;
   bottom: calc(100% + 5px);
 }
 
@@ -11256,6 +11263,7 @@ button.close {
 }
 
 .popover.pos-left {
+  left: auto;
   right: calc(100% + 5px);
 }
 
