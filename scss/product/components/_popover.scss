@@ -1,6 +1,7 @@
 .popover {
   position: absolute;
-  left: 5%;
+  top: unset;
+  left: -45%;
   z-index: $zindex-popover;
   display: block;
   min-width: $popover-max-width;
@@ -168,6 +169,9 @@
       @extend .bs-popover-left;
     }
   }
+  &.left{	
+    left: 6%;	
+  }
 }
 
 
@@ -200,6 +204,7 @@
   	min-width: $popover-small-size;
   }
   &.pos-bottom{
+    left: auto;
   	top: calc(100% + 5px);
     &:before{
       bottom: 100%;
@@ -208,6 +213,7 @@
     }
   }
   &.pos-top{
+    left: auto;
     bottom: calc(100% + 5px);
     &:before{
       top: 100%;
@@ -216,6 +222,7 @@
     }
   }
   &.pos-left{
+    left: auto;
     right: calc(100% + 5px);
     &:before{
       top: 50%;
