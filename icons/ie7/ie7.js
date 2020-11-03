@@ -13,6 +13,7 @@
 		el.innerHTML = '<span style="font-family: \'maya-icons\'">' + entity + '</span>' + html;
 	}
 	var icons = {
+		'mi-copy': '&#xe96a;',
 		'mi-container': '&#xe961;',
 		'mi-circle-info-filled': '&#xe968;',
 		'mi-x-circle-filled': '&#xe969;',
