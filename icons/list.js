@@ -418,4 +418,8 @@ export const IconLists = [
     name: "mi-circle-info-filled",
     label: "circle-info-filled"
   },
+  {
+    name: "mi-copy",
+    label: "copy"
+  }
 ];
