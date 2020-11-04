@@ -86,6 +86,9 @@ $dustygray: #959595 !default;
 
 $black: #000000 !default;
 
+// Teal
+$teal: #24A4B1 !default;
+
 // Base colors
 $blue:    $blue-500 !default;
 $green:   $green-200 !default;
@@ -130,7 +133,7 @@ $purple: $purple !default;
 $link: $blue-600 !default;
 $offline: $blue-200 !default;
 $disconnected: $gray-700 !default;
-
+$lightblue: $blue-300 !default;
 
 //Color maps
 $theme-colors: () !default;
@@ -156,7 +159,9 @@ $theme-colors: map-merge((
   "yellow": $yellow,
   "darkgreen": $darkgreen,
   "dustygray": $dustygray,
-  "black": $black
+  "black": $black,
+  "teal": $teal,
+  "lightblue": $lightblue
 ), $theme-colors);
 
 $button-colors: () !default;
