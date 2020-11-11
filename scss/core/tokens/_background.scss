@@ -40,3 +40,7 @@
 .bg-transparent {
   background-color: transparent !important;
 }
+
+.bg-mixed-gradient-blue{
+  @include gradient-y(#68A2FF,#3C70C3,0%,102.41%,93.27deg);
+}
