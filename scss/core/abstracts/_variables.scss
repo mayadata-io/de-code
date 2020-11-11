@@ -731,6 +731,8 @@ $card-columns-count:                3 !default;
 $card-columns-gap:                  1.25rem !default;
 $card-columns-margin:               $card-spacer-y !default;
 
+$card-gradient-blue-light : #68A2FF;
+$card-gradient-blue-dark  : #3C70C3;
 
 //Icon background gradiant
 
@@ -1053,3 +1055,7 @@ $avatar-box-shadow: 0px 1px 15px rgba($blue-700, .11);
 //modal-terminal
 
 $modal-terminal-headear-background-color: $blue-600;
+
+$stepper-numbered-nav-color: $skyblue-300;
+$stepper-numbered-dull-color: #A4C7FF;
+$stepper-numbered-finished-icon-bg-green: radial-gradient(at center, $green 40%, transparent 40%);
