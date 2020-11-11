@@ -153,6 +153,11 @@ fieldset[disabled] a.btn {
     color: $btn-link-disabled-color;
   }
   // No need for an active state here
+
+  &.link-underline{
+    border-bottom: 1px solid;
+    height: 25px;
+  }
 }
 
 //
