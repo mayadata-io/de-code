@@ -80,7 +80,9 @@
 .text-xxxl{
   font-size: $font-size-xxxl !important;
 }
-
+.text-inherit{
+  font-size: inherit !important;
+}
 //line height
 .line-height-normal{
   line-height: normal;
