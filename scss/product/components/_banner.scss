@@ -54,7 +54,7 @@
 //
 // Generate contextual modifier classes for colorizing the banner.
 @each $color,
-$value in $theme-colors {
+$value in $alert-colors {
     .banner-#{$color} {
       @if $color != 'link'{
         @include banner-variant($value);
