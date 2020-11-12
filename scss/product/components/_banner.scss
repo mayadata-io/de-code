@@ -12,7 +12,8 @@
     max-height: 52px;
     text-overflow: ellipsis;
     overflow: hidden;
-    padding: $banner-padding;
+    padding: $banner-padding-y $banner-padding-x;
+    margin-bottom: $banner-margin-bottom;
 }
 .banner-text{
     font-weight: $banner-font-weight;
@@ -20,7 +21,6 @@
     white-space: nowrap;
     flex: 0 1 auto;
     overflow: hidden;
-
 }
 
 // Provide class for links that match banner
@@ -33,13 +33,16 @@
 //
 // Expand the right padding and account for the close button's positioning.
 .banner-dismissible {
-    padding-right: ($close-font-size + $banner-padding-x * 2); // Adjust close link position
+    padding-right: ($banner-close-icon + $banner-padding-x * 2); // Adjust close link position
     .close {
+        cursor: pointer;
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        right: ($banner-close-icon + $banner-padding-x);
         padding: $alert-padding-y $alert-padding-x;
         color: inherit;
+        font-size: $banner-close-icon;
     }
 }
 
@@ -50,6 +53,8 @@
 @each $color,
 $value in $theme-colors {
     .banner-#{$color} {
+      @if $color != 'link'{
         @include banner-variant($value);
+      }
     }
 }
