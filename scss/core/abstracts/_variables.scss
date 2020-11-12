@@ -876,11 +876,12 @@ $alert-pagetop-padding-x:           $alert-padding-x;
 $alert-pagetop-font-size:           $font-size-md !default;
 
 // Banners
-$banner-padding:                    16px;
-$banner-link-font-weight:           $font-weight-bold !default;
-$banner-font-weight:                500;
+$banner-padding-y:                  0.75rem !default;
 $banner-padding-x:                  1.25rem !default;
-
+$banner-link-font-weight:           $font-weight-bold !default;
+$banner-font-weight:                500 !default;
+$banner-margin-bottom:              1rem !default;
+$banner-close-icon:                 1.5rem !default;
 
 // Progress bars
 
