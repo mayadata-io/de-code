@@ -43,6 +43,9 @@
         padding: $alert-padding-y $alert-padding-x;
         color: inherit;
         font-size: $banner-close-icon;
+        @include hover-focus {
+            color:inherit;
+        }
     }
 }
 
