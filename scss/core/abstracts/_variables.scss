@@ -166,8 +166,9 @@ $font-size-xs: 0.75rem !default;
 $font-size-sm: 0.875rem !default;
 $font-size-md: 1rem !default;
 $font-size-lg: 1.125rem !default;
-$font-size-xl: 1.625rem !default;
-$font-size-xxl: 2rem !default;
+$font-size-xl: 1.375rem !default;
+$font-size-xxl: 1.625rem !default;
+$font-size-xxxl: 2rem !default;
 
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
@@ -730,6 +731,8 @@ $card-columns-count:                3 !default;
 $card-columns-gap:                  1.25rem !default;
 $card-columns-margin:               $card-spacer-y !default;
 
+$card-gradient-blue-light : #68A2FF;
+$card-gradient-blue-dark  : #3C70C3;
 
 //Icon background gradiant
 
@@ -873,11 +876,12 @@ $alert-pagetop-padding-x:           $alert-padding-x;
 $alert-pagetop-font-size:           $font-size-md !default;
 
 // Banners
-$banner-padding:                    16px;
-$banner-link-font-weight:           $font-weight-bold !default;
-$banner-font-weight:                500;
+$banner-padding-y:                  0.75rem !default;
 $banner-padding-x:                  1.25rem !default;
-
+$banner-link-font-weight:           $font-weight-bold !default;
+$banner-font-weight:                500 !default;
+$banner-margin-bottom:              1rem !default;
+$banner-close-icon:                 1.5rem !default;
 
 // Progress bars
 
@@ -1048,7 +1052,11 @@ $avatar-box-shadow: 0px 1px 15px rgba($blue-700, .11);
 
 $modal-terminal-headear-background-color: $blue-600;
 
+$stepper-numbered-nav-color: $skyblue-300;
+$stepper-numbered-dull-color: #A4C7FF;
+$stepper-numbered-finished-icon-bg-green: radial-gradient(at center, $green 40%, transparent 40%);
 
 // Divider
 
 $divider-border-color: $blue-100 !default;
+

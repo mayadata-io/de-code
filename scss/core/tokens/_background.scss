@@ -40,3 +40,7 @@
 .bg-transparent {
   background-color: transparent !important;
 }
+
+.bg-mixed-gradient-blue{
+  @include gradient-y($card-gradient-blue-light,$card-gradient-blue-dark,0%,102.41%,93.27deg);
+}

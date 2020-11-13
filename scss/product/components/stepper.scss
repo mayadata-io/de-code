@@ -235,3 +235,41 @@
     }
   }
 }
+
+.stepper{
+  &.numbered{
+    display: flex;
+    justify-content: space-between;
+    color: $stepper-numbered-nav-color;
+    font-size: .7rem;
+    text-align: left;
+    margin: 10px 0 0;
+    .nav-item {
+      display: flex;
+      align-items: center;
+      +.nav-item{
+        margin-left: .6rem;
+      }
+    }
+    .circle{
+      width: 17px;
+      height: 17px;
+      margin: 0;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      background: $stepper-numbered-dull-color;
+      color: white;
+      line-height: normal;
+    }
+    .finished{
+        color: white;
+        .mi{
+          font-size: 17px;
+          background-image: $stepper-numbered-finished-icon-bg-green;
+        }
+    }
+  }
+}
