@@ -1,6 +1,6 @@
 {
   "name": "@mayadata/de-code",
-  "version": "2.1.6",
+  "version": "2.1.7",
   "description": "MayaData product design system",
   "main": "css/index.css",
   "scripts": {
@@ -8,7 +8,7 @@
     "build:css": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 index.scss -o css/"
   },
   "dependencies": {
-    "de-code-product": "^2.1.6"
+    "de-code-product": "^2.1.7"
   },
   "author": "MayaData, Inc.",
   "license": "MIT",
