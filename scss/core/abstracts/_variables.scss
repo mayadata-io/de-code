@@ -913,18 +913,13 @@ $list-group-item-padding-x:         1.25rem !default;
 
 $list-group-hover-bg:               $gray-100 !default;
 $list-group-active-color:           $component-active-color !default;
-$list-group-active-bg:              $component-active-bg !default;
+$list-group-active-bg:              $green-200 !default;
 $list-group-active-border-color:    $list-group-active-bg !default;
 
 $list-group-disabled-color:         $gray-600 !default;
 $list-group-disabled-bg:            $list-group-bg !default;
-
-$list-group-action-color:           $gray-600 !default;
-$list-group-action-hover-color:     $list-group-action-color !default;
-
-$list-group-action-active-color:    $body-color !default;
-$list-group-action-active-bg:       $gray-200 !default;
-
+$numeric-list-icon-background-color: $red-100 !default;
+$numeric-list-icon-color: $purple !default;
 
 // Image thumbnails
 
@@ -1052,3 +1047,8 @@ $avatar-box-shadow: 0px 1px 15px rgba($blue-700, .11);
 //modal-terminal
 
 $modal-terminal-headear-background-color: $blue-600;
+
+
+// Divider
+
+$divider-border-color: $blue-100 !default;
