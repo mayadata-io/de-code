@@ -2457,6 +2457,11 @@ button.bg-amber-200:hover {
   background-color: transparent !important;
 }
 
+.bg-mixed-gradient-blue {
+  background-image: linear-gradient(93.27deg, #68A2FF 0%, #3C70C3 102.41%);
+  background-repeat: repeat-x;
+}
+
 .border {
   border: 1px solid #E8EAE9 !important;
 }
@@ -5341,11 +5346,19 @@ a.text-lightblue:focus, a.text-lightblue:hover {
 }
 
 .text-xl {
-  font-size: 1.625rem !important;
+  font-size: 1.375rem !important;
 }
 
 .text-xxl {
+  font-size: 1.625rem !important;
+}
+
+.text-xxxl {
   font-size: 2rem !important;
+}
+
+.text-inherit {
+  font-size: inherit !important;
 }
 
 .line-height-normal {
@@ -5921,7 +5934,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
   max-height: 52px;
   text-overflow: ellipsis;
   overflow: hidden;
-  padding: 16px;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .banner-text {
@@ -5937,20 +5951,27 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .banner-dismissible {
-  padding-right: 3.8125rem;
+  padding-right: 4rem;
 }
 
 .banner-dismissible .close {
+  cursor: pointer;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2.75rem;
   padding: 0.75rem 1.25rem;
+  color: inherit;
+  font-size: 1.5rem;
+}
+
+.banner-dismissible .close:focus, .banner-dismissible .close:hover {
   color: inherit;
 }
 
 .banner-primary {
   color: #FFFFFF;
-  background-color: #276AD4;
+  background-color: #6899E7;
 }
 
 .banner-primary .banner-link {
@@ -5960,97 +5981,22 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .banner-primary[href]:focus, .banner-primary[href]:hover {
   color: #FFFFFF;
   text-decoration: none;
-  background-color: #1f54a9;
-}
-
-.banner-secondary {
-  color: #322E7A;
-  background-color: #FFFFFF;
-}
-
-.banner-secondary .banner-link {
-  color: #322E7A;
-}
-
-.banner-secondary[href]:focus, .banner-secondary[href]:hover {
-  color: #322E7A;
-  text-decoration: none;
-  background-color: #e6e6e6;
-}
-
-.banner-orange {
-  color: #FFFFFF;
-  background-color: #FA8B6A;
-}
-
-.banner-orange .banner-link {
-  color: #FFFFFF;
-}
-
-.banner-orange[href]:focus, .banner-orange[href]:hover {
-  color: #FFFFFF;
-  text-decoration: none;
-  background-color: #f86539;
-}
-
-.banner-green {
-  color: #FFFFFF;
-  background-color: #4BCA9C;
-}
-
-.banner-green .banner-link {
-  color: #FFFFFF;
-}
-
-.banner-green[href]:focus, .banner-green[href]:hover {
-  color: #FFFFFF;
-  text-decoration: none;
-  background-color: #33af82;
-}
-
-.banner-skyblue {
-  color: #322E7A;
-  background-color: #6DC2FF;
-}
-
-.banner-skyblue .banner-link {
-  color: #322E7A;
-}
-
-.banner-skyblue[href]:focus, .banner-skyblue[href]:hover {
-  color: #322E7A;
-  text-decoration: none;
-  background-color: #3aadff;
-}
-
-.banner-blue-outline {
-  color: #322E7A;
-  background-color: #A3BAE0;
-}
-
-.banner-blue-outline .banner-link {
-  color: #322E7A;
-}
-
-.banner-blue-outline[href]:focus, .banner-blue-outline[href]:hover {
-  color: #322E7A;
-  text-decoration: none;
-  background-color: #7d9dd3;
+  background-color: #3c7be0;
 }
 
 .banner-danger {
-  color: #FFFFFF;
-  background-color: #FF7C86;
+  color: #322E7A;
+  background-color: #FFC2BA;
 }
 
 .banner-danger .banner-link {
-  color: #FFFFFF;
+  color: #322E7A;
 }
 
 .banner-danger[href]:focus, .banner-danger[href]:hover {
-  color: #FFFFFF;
+  color: #322E7A;
   text-decoration: none;
-  background-color: #ff4957;
+  background-color: #ff9587;
 }
 
 .banner-success {
@@ -6068,64 +6014,19 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background-color: #33af82;
 }
 
-.banner-gray {
-  color: #FFFFFF;
-  background-color: #5C698C;
-}
-
-.banner-gray .banner-link {
-  color: #FFFFFF;
-}
-
-.banner-gray[href]:focus, .banner-gray[href]:hover {
-  color: #FFFFFF;
-  text-decoration: none;
-  background-color: #48526d;
-}
-
-.banner-error {
-  color: #FFFFFF;
-  background-color: #BD1700;
-}
-
-.banner-error .banner-link {
-  color: #FFFFFF;
-}
-
-.banner-error[href]:focus, .banner-error[href]:hover {
-  color: #FFFFFF;
-  text-decoration: none;
-  background-color: #8a1100;
-}
-
-.banner-warning {
+.banner-light {
   color: #322E7A;
-  background-color: #DDC557;
+  background-color: #F4F9FD;
 }
 
-.banner-warning .banner-link {
+.banner-light .banner-link {
   color: #322E7A;
 }
 
-.banner-warning[href]:focus, .banner-warning[href]:hover {
+.banner-light[href]:focus, .banner-light[href]:hover {
   color: #322E7A;
   text-decoration: none;
-  background-color: #d4b62d;
-}
-
-.banner-inactive {
-  color: #322E7A;
-  background-color: #D9DEEB;
-}
-
-.banner-inactive .banner-link {
-  color: #322E7A;
-}
-
-.banner-inactive[href]:focus, .banner-inactive[href]:hover {
-  color: #322E7A;
-  text-decoration: none;
-  background-color: #b8c1d9;
+  background-color: #c9e1f5;
 }
 
 .banner-info {
@@ -6143,169 +6044,19 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background-color: #0c3c2b;
 }
 
-.banner-offline {
+.banner-warning {
   color: #322E7A;
-  background-color: #A3BAE0;
+  background-color: #FFE3BA;
 }
 
-.banner-offline .banner-link {
-  color: #322E7A;
-}
-
-.banner-offline[href]:focus, .banner-offline[href]:hover {
-  color: #322E7A;
-  text-decoration: none;
-  background-color: #7d9dd3;
-}
-
-.banner-disconnected {
-  color: #FFFFFF;
-  background-color: #9397AD;
-}
-
-.banner-disconnected .banner-link {
-  color: #FFFFFF;
-}
-
-.banner-disconnected[href]:focus, .banner-disconnected[href]:hover {
-  color: #FFFFFF;
-  text-decoration: none;
-  background-color: #767b97;
-}
-
-.banner-purple {
-  color: #FFFFFF;
-  background-color: #322E7A;
-}
-
-.banner-purple .banner-link {
-  color: #FFFFFF;
-}
-
-.banner-purple[href]:focus, .banner-purple[href]:hover {
-  color: #FFFFFF;
-  text-decoration: none;
-  background-color: #232055;
-}
-
-.banner-link {
-  color: #FFFFFF;
-  background-color: #1263E4;
-}
-
-.banner-link .banner-link {
-  color: #FFFFFF;
-}
-
-.banner-link[href]:focus, .banner-link[href]:hover {
-  color: #FFFFFF;
-  text-decoration: none;
-  background-color: #0e4eb5;
-}
-
-.banner-amber {
-  color: #322E7A;
-  background-color: #FFB039;
-}
-
-.banner-amber .banner-link {
+.banner-warning .banner-link {
   color: #322E7A;
 }
 
-.banner-amber[href]:focus, .banner-amber[href]:hover {
+.banner-warning[href]:focus, .banner-warning[href]:hover {
   color: #322E7A;
   text-decoration: none;
-  background-color: #ff9c06;
-}
-
-.banner-yellow {
-  color: #322E7A;
-  background-color: #DDC557;
-}
-
-.banner-yellow .banner-link {
-  color: #322E7A;
-}
-
-.banner-yellow[href]:focus, .banner-yellow[href]:hover {
-  color: #322E7A;
-  text-decoration: none;
-  background-color: #d4b62d;
-}
-
-.banner-darkgreen {
-  color: #FFFFFF;
-  background-color: #156649;
-}
-
-.banner-darkgreen .banner-link {
-  color: #FFFFFF;
-}
-
-.banner-darkgreen[href]:focus, .banner-darkgreen[href]:hover {
-  color: #FFFFFF;
-  text-decoration: none;
-  background-color: #0c3c2b;
-}
-
-.banner-dustygray {
-  color: #FFFFFF;
-  background-color: #959595;
-}
-
-.banner-dustygray .banner-link {
-  color: #FFFFFF;
-}
-
-.banner-dustygray[href]:focus, .banner-dustygray[href]:hover {
-  color: #FFFFFF;
-  text-decoration: none;
-  background-color: #7c7c7c;
-}
-
-.banner-black {
-  color: #FFFFFF;
-  background-color: #000000;
-}
-
-.banner-black .banner-link {
-  color: #FFFFFF;
-}
-
-.banner-black[href]:focus, .banner-black[href]:hover {
-  color: #FFFFFF;
-  text-decoration: none;
-  background-color: black;
-}
-
-.banner-teal {
-  color: #FFFFFF;
-  background-color: #24A4B1;
-}
-
-.banner-teal .banner-link {
-  color: #FFFFFF;
-}
-
-.banner-teal[href]:focus, .banner-teal[href]:hover {
-  color: #FFFFFF;
-  text-decoration: none;
-  background-color: #1b7d87;
-}
-
-.banner-lightblue {
-  color: #FFFFFF;
-  background-color: #6899E7;
-}
-
-.banner-lightblue .banner-link {
-  color: #FFFFFF;
-}
-
-.banner-lightblue[href]:focus, .banner-lightblue[href]:hover {
-  color: #FFFFFF;
-  text-decoration: none;
-  background-color: #3c7be0;
+  background-color: #ffce87;
 }
 
 .img-fluid {
@@ -7071,6 +6822,7 @@ table:not(.bg-transparent) tr:nth-child(even) td {
   background-color: #FFFFFF;
   background-clip: padding-box;
   border: 1px solid #A3BAE0;
+  box-shadow: none;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -8121,6 +7873,11 @@ fieldset[disabled] a.btn {
 
 .btn-link:disabled, .btn-link.disabled {
   color: #9B9CB8;
+}
+
+.btn-link.link-underline {
+  border-bottom: 1px solid;
+  height: 25px;
 }
 
 .btn-block {
@@ -10220,6 +9977,47 @@ tbody.collapse.show {
   text-align: center;
 }
 
+.stepper.numbered {
+  display: flex;
+  justify-content: space-between;
+  color: #E6F4FB;
+  font-size: .7rem;
+  text-align: left;
+  margin: 10px 0 0;
+}
+
+.stepper.numbered .nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.stepper.numbered .nav-item + .nav-item {
+  margin-left: .6rem;
+}
+
+.stepper.numbered .circle {
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  background: #A4C7FF;
+  color: white;
+  line-height: normal;
+}
+
+.stepper.numbered .finished {
+  color: white;
+}
+
+.stepper.numbered .finished .mi {
+  font-size: 17px;
+  background-image: radial-gradient(at center, #4BCA9C 40%, transparent 40%);
+}
+
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
@@ -10455,23 +10253,6 @@ tbody.collapse.show {
   margin-bottom: 0;
 }
 
-.list-group-item-action {
-  width: 100%;
-  color: #9B9CB8;
-  text-align: inherit;
-}
-
-.list-group-item-action:focus, .list-group-item-action:hover {
-  color: #9B9CB8;
-  text-decoration: none;
-  background-color: #F4F4F4;
-}
-
-.list-group-item-action:active {
-  color: #9B9CB8;
-  background-color: #EFF2F5;
-}
-
 .list-group-item {
   position: relative;
   display: block;
@@ -10493,7 +10274,6 @@ tbody.collapse.show {
 }
 
 .list-group-item:focus, .list-group-item:hover {
-  z-index: 1;
   text-decoration: none;
 }
 
@@ -10505,8 +10285,8 @@ tbody.collapse.show {
 .list-group-item.active {
   z-index: 2;
   color: #FFFFFF;
-  background-color: #276AD4;
-  border-color: #276AD4;
+  background-color: #4BCA9C;
+  border-color: #4BCA9C;
 }
 
 .list-group-flush .list-group-item {
@@ -10907,6 +10687,28 @@ tbody.collapse.show {
   border-color: #365078;
 }
 
+.numeric-list .list-group-item {
+  display: flex;
+  border: none;
+}
+
+.list-icon {
+  background: #FFC2BA;
+  color: #322E7A;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
 .close {
   float: right;
   font-size: 1.3125rem;
@@ -11120,15 +10922,15 @@ button.close {
 }
 
 .modal.modal-dialog, .modal-md.modal-dialog {
-  max-width: 700px;
+  width: 700px;
 }
 
 .modal-sm.modal-dialog {
-  max-width: 550px;
+  width: 550px;
 }
 
 .modal-lg.modal-dialog {
-  max-width: 900px;
+  width: 900px;
 }
 
 .modal-content.terminal {
@@ -11813,7 +11615,8 @@ button.close {
 }
 
 .section-header .section-header_title .section-header_title__text {
-  font-size: 18px;
+  font-size: 1.375rem;
+  font-weight: 700;
 }
 
 .section-header .section-header-controls {
