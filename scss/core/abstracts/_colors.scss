@@ -7,7 +7,7 @@
 // Blue color variations
 
 $blue-100: #C3DAFF !default;
-$blue-200: #A3BAE0 !default;
+$blue-200: #A4C7FF !default;
 $blue-300: #6899E7 !default;
 $blue-400: #4489F7 !default;
 $blue-500: #276AD4 !default;
@@ -89,6 +89,10 @@ $black: #000000 !default;
 // Teal
 $teal: #24A4B1 !default;
 
+// Dodger Blue
+
+$dodger-blue: #A3BAE0 !default;
+
 // Base colors
 $blue:    $blue-500 !default;
 $green:   $green-200 !default;
@@ -113,6 +117,7 @@ $colors: map-merge((
   "darkgreen": $darkgreen,
   "yellow": $yellow,
   "dustygray": $dustygray,
+  "dodger-blue":$dodger-blue
 ), $colors);
 
 // Theme colors
@@ -121,7 +126,7 @@ $secondary: $white !default;
 $orange: $orange !default;
 $green: $green !default;
 $skyblue: $skyblue-100 !default;
-$blue-outline:   $blue-200 !default;
+$blue-outline:   $dodger-blue !default;
 $danger: $red !default;
 $success: $green !default;
 $gray: $gray !default;
@@ -131,7 +136,7 @@ $inactive: $gray-500 !default;
 $info: $darkgreen !default;
 $purple: $purple !default;
 $link: $blue-600 !default;
-$offline: $blue-200 !default;
+$offline: $dodger-blue !default;
 $disconnected: $gray-700 !default;
 $lightblue: $blue-300 !default;
 
@@ -161,7 +166,8 @@ $theme-colors: map-merge((
   "dustygray": $dustygray,
   "black": $black,
   "teal": $teal,
-  "lightblue": $lightblue
+  "lightblue": $lightblue,
+  "dodger-blue":$dodger-blue
 ), $theme-colors);
 
 $button-colors: () !default;
