@@ -240,7 +240,7 @@ $header-top-bar-title:      $purple !default;
 
 // Metadata
 
-$metadata-line-color:               $blue-200 !default;
+$metadata-line-color:               $dodger-blue !default;
 $metadata-title-font-size:          14px !default;
 $metadata-value-font-size:          18px !default;
 $metadata-title-font-style:         italic !default;
@@ -253,13 +253,13 @@ $stepper-active-color: $green-200 !default;
 
 //Chooser cards
 
-$chooser-card-item-border:          $border-width solid $blue-200 !default;
+$chooser-card-item-border:          $border-width solid $dodger-blue !default;
 $chooser-card-item-width:           138px !default;
 $chooser-card-item-background:      $white !default;
-$chooser-card-item-body-border:     $blue-200 !default;
+$chooser-card-item-body-border:     $dodger-blue !default;
 $chooser-card-item-label-color:     $purple !default;
 
-$chooser-card-item-background-active:         $blue-200 !default;
+$chooser-card-item-background-active:         $dodger-blue !default;
 $chooser-card-item-body-border-color-active: $border-width solid $primary !default;
 $chooser-card-item-label-color-active:        $primary !default;
 $chooser-card-item-box-shadow: 10px 5px 21px rgba(145, 150, 211, 0.19) !default;
@@ -337,7 +337,7 @@ $btn-secondary-color: $purple !default;
 $btn-disabled-background: $gray-400 !default;
 $btn-disabled-color: $gray-600 !default;
 $btn-outline-primary-color: $purple !default;
-$outline-color: $blue-200;
+$outline-color: $dodger-blue;
 // Buttons
 //
 // For each of Bootstrap's buttons, define text, background, and border color.
@@ -409,7 +409,7 @@ $input-disabled-border:                 1px solid $gray-600 !default;
 $input-disabled-color:                  $gray-600 !default;
 
 $input-color:                           $purple !default;
-$input-border-color:                    $blue-200 !default;
+$input-border-color:                    $dodger-blue !default;
 $input-border-width:                    1px !default;
 $input-box-shadow:                      inset 0 0 0 2px $gray-200 !default;
 
@@ -471,7 +471,7 @@ $custom-control-indicator-bg:           $white !default;
 $custom-control-indicator-bg-size:      50% 50% !default;
 $custom-control-indicator-box-shadow:   $input-box-shadow !default;
 
-$custom-control-label-before-border: 2px solid $blue-200;
+$custom-control-label-before-border: 2px solid $dodger-blue;
 $custom-control-indicator-disabled-bg:          $gray-200 !default;
 $custom-control-label-disabled-color:     $gray-600 !default;
 
@@ -556,7 +556,7 @@ $counter-input-active-box-shadow: 0 0 0 0.1rem $primary, inset 0 3px 5px rgba(56
 $counter-input-select-border-color: 2px solid $gray-200 !default;
 
 // Segment controls
-$segment-control-border:       1px solid $blue-200 !default;
+$segment-control-border:       1px solid $dodger-blue !default;
 $segment-control-color:                  $heading-color !default;
 $segment-control-color-hover-bg:         $green-300 !default;
 $segment-control-hover-color:     $white !default;
@@ -597,7 +597,7 @@ $dropdown-link-disabled-color:      $gray-600 !default;
 $dropdown-item-padding-y:           .5rem !default;
 $dropdown-item-padding-x:           1.2rem !default;
 $dropdown-header-color:             $gray-600 !default;
-$dropdown-highlighted-text-bg:      $blue-200 !default;
+$dropdown-highlighted-text-bg:      $dodger-blue !default;
 
 // Z-index master list
 //

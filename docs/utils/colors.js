@@ -2,7 +2,7 @@
 
 export const blue = [
   {'name':'blue-100', 'hax':'#C3DAFF', 'rgb':''},
-  {'name':'blue-200', 'hax':'#A3BAE0', 'rgb':''},
+  {'name':'blue-200', 'hax':'#A4C7FF', 'rgb':''},
   {'name':'blue-300', 'hax':'#6899E7', 'rgb':''},
   {'name':'blue-400', 'hax':'#4489F7', 'rgb':''},
   {'name':'blue-500', 'hax':'#276AD4', 'rgb':''},
@@ -62,4 +62,7 @@ export const black = [
 ];
 export const teal = [
   {'name':'teal', 'hax':'#24A4B1', 'rgb':''},
+];
+export const dodgerblue = [
+  {'name':'dodger-blue', 'hax':'#A3BAE0', 'rgb':''},
 ];
