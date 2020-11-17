@@ -756,7 +756,8 @@ $tooltip-opacity: 0.9 !default;
 // Popovers
 
 $popover-font-size:                 $font-size-sm !default;
-$popover-bg:                        $purple !default;
+$popover-bg:                        $white !default;
+$popover-color:                     $gray-800 !default;
 $popover-max-width:                 350px !default;
 $popover-border-width:              $border-width !default;
 $popover-border-color:              rgba($black, .2) !default;
