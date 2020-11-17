@@ -756,7 +756,8 @@ $tooltip-opacity: 0.9 !default;
 // Popovers
 
 $popover-font-size:                 $font-size-sm !default;
-$popover-bg:                        $purple !default;
+$popover-bg:                        $white !default;
+$popover-color:                     $gray-800 !default;
 $popover-max-width:                 350px !default;
 $popover-border-width:              $border-width !default;
 $popover-border-color:              rgba($black, .2) !default;
@@ -801,7 +802,7 @@ $modal-footer-padding: 10px 24px 45px 24px !default;
 $modal-dialog-margin: 8% auto !default;
 $modal-dialog-margin-y-sm-up: 30px !default;
 
-$modal-backdrop-bg: rgba($gray-900, 0.55) !default;
+$modal-backdrop-bg: rgba(41, 73, 123, 0.3) !default;
 
 $modal-title-line-height: 1.5 !default;
 

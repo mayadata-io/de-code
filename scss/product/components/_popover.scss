@@ -14,6 +14,7 @@
   word-wrap: break-word;
   background-color: $popover-bg;
   background-clip: padding-box;
+  color: $popover-color;
   @include border-radius($border-radius-lg);
   @include box-shadow($popover-box-shadow);
 
@@ -194,8 +195,6 @@
 }
 
 .popover {
-  color: white;
-  background-color: $purple;
   text-align: center;
   padding: 10px;
   &.popover-small{
@@ -254,4 +253,9 @@
       font-size: 12px;
   		text-decoration: underline;
     }
+}
+
+.popover-purple{
+  color: white;
+  background-color: $purple;
 }
