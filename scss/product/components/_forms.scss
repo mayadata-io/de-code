@@ -492,7 +492,7 @@ select.form-control-lg {
   cursor: pointer;
   width: 55px;
   height: 30px;
-  background-color: $gray-100;
+  background-color: $gray-400;
   margin: 0 10px;
   vertical-align: middle;
   -webkit-transition: .4s;
@@ -502,8 +502,8 @@ select.form-control-lg {
 .slider:before {
   position: absolute;
   content: "";
-  height: 25px;
-  width: 25px;
+  height: 26px;
+  width: 26px;
   left: 2px;
   top: 2px;
   bottom: 0;
