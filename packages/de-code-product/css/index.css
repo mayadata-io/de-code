@@ -6809,7 +6809,7 @@ table:not(.bg-transparent) tr:nth-child(even) td {
   width: 100%;
   overflow: auto;
   position: relative;
-  z-index: 1020;
+  z-index: 10;
 }
 
 .scrollable-table > table {
@@ -6822,7 +6822,7 @@ table:not(.bg-transparent) tr:nth-child(even) td {
 
 .scrollable-table > table > * > tr > th:first-child {
   position: sticky;
-  z-index: 1020;
+  z-index: 10;
   left: 0;
   white-space: normal;
   min-width: 200px;
@@ -6831,7 +6831,7 @@ table:not(.bg-transparent) tr:nth-child(even) td {
 
 .scrollable-table > table > * > tr > th:last-child {
   position: sticky;
-  z-index: 1020;
+  z-index: 10;
   right: 0;
   white-space: normal;
   min-width: 50px;
@@ -6840,7 +6840,7 @@ table:not(.bg-transparent) tr:nth-child(even) td {
 
 .scrollable-table > table > * > tr > td:first-child {
   position: sticky;
-  z-index: 1020;
+  z-index: 10;
   left: 0;
   white-space: normal;
   background-color: #FFFFFF;
@@ -6851,7 +6851,7 @@ table:not(.bg-transparent) tr:nth-child(even) td {
 
 .scrollable-table > table > * > tr > td:last-child {
   position: sticky;
-  z-index: 1020;
+  z-index: 10;
   right: 0;
   white-space: normal;
   background-color: #FFFFFF;
@@ -9204,14 +9204,14 @@ tbody.collapse.show {
 
 .badge {
   display: inline-block;
-  padding: 0.4em 1em;
+  padding: 0.33em 1em;
   font-size: 12px;
   font-weight: bold;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: 10rem;
+  border-radius: 11px;
 }
 
 .badge:empty {
