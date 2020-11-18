@@ -613,7 +613,7 @@ $zindex-modal:                      1070 !default;
 $zindex-popover:                    1080 !default;
 $zindex-tooltip:                    1090 !default;
 $zindex-alert:                      1100 !default;
-
+$zindex-table:                      10 !default; //for scrollable table
 // Navs
 $nav-link-color:                    $gray-600 !default;
 $nav-link-active-color:             $blue-600 !default;

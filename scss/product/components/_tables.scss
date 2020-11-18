@@ -264,7 +264,7 @@ table{
   width: 100%;
   overflow: auto;
   position: relative;
-  z-index: $zindex-sticky;
+  z-index: $zindex-table;
   >table {
     position: relative;
     >* {
@@ -272,7 +272,7 @@ table{
         >th {
           &:first-child {
             position: sticky;
-            z-index: $zindex-sticky;
+            z-index: $zindex-table;
             left:0;
             white-space: normal;
             min-width: 200px;
@@ -280,7 +280,7 @@ table{
           }
           &:last-child {
             position: sticky;
-            z-index: $zindex-sticky;
+            z-index: $zindex-table;
             right:0;
             white-space: normal;
             min-width: 50px;
@@ -291,7 +291,7 @@ table{
         >td {
           &:first-child {
             position: sticky;
-            z-index: $zindex-sticky;
+            z-index: $zindex-table;
             left:0;
             white-space: normal;
             background-color: $white;
@@ -301,7 +301,7 @@ table{
           }
           &:last-child {
             position: sticky;
-            z-index: $zindex-sticky;
+            z-index: $zindex-table;
             right:0;
             white-space: normal;
             background-color: $white;
