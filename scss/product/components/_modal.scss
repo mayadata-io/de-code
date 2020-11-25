@@ -64,7 +64,6 @@
   position: relative;
   margin: $modal-dialog-margin; // allow clicks to pass through for custom click handling to close modal
   pointer-events: none;
-  max-width: 700px;
 
   &.modal-justify-center {
     display: flex;
