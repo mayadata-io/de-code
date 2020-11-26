@@ -120,7 +120,7 @@ $colors: map-merge((
   "darkgreen": $darkgreen,
   "yellow": $yellow,
   "dustygray": $dustygray,
-  "dodger-blue":$dodger-blue
+  "dodger-blue":$dodger-blue,
 ), $colors);
 
 // Theme colors
@@ -170,7 +170,8 @@ $theme-colors: map-merge((
   "black": $black,
   "teal": $teal,
   "lightblue": $lightblue,
-  "dodger-blue":$dodger-blue
+  "dodger-blue":$dodger-blue,
+  "terminal-blue":$terminal-blue
 ), $theme-colors);
 
 $button-colors: () !default;
