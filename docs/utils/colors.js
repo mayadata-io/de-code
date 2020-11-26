@@ -1,4 +1,4 @@
-// blue, gray, skyblue, green, orange, red, yellow, amber, purple, darkgreen, dustygray, black, teal
+// blue, gray, skyblue, green, orange, red, yellow, amber, purple, darkgreen, dustygray, black, teal, dodgerblue, terminalblue
 
 export const blue = [
   {'name':'blue-100', 'hax':'#C3DAFF', 'rgb':''},
