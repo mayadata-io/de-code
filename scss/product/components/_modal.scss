@@ -230,3 +230,20 @@
     font-weight: normal;
   }
 }
+
+.modal-xl {
+  width: 975px;
+  height: 590px;
+}
+
+.modal-xl-header {
+  border-radius: 4px 4px 0 0;
+  height: 50px;
+  background-color: $terminal-blue !important;
+}
+
+.modal-xl-footer {
+  border-radius: 0px 0px 4px 4px;
+  height:50px;
+  background-color: $terminal-blue !important;
+}
