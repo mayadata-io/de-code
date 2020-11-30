@@ -131,6 +131,12 @@ table{
 
 .table-action_link {
   cursor: pointer;
+  color: $table-action_link-color;
+  &.disabled{
+    color: $table-action_link-disabled-color;
+    opacity: 1;
+    pointer-events: unset;
+  }
 }
 
 // Table backgrounds
