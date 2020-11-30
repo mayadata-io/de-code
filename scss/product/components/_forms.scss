@@ -490,8 +490,8 @@ select.form-control-lg {
   position: relative;
   display: inline-block;
   cursor: pointer;
-  width: 55px;
-  height: 30px;
+  width: 40px;
+  height: 20px;
   background-color: $gray-400;
   margin: 0 10px;
   vertical-align: middle;
@@ -502,8 +502,8 @@ select.form-control-lg {
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
+  height: 16px;
+  width: 16px;
   left: 2px;
   top: 2px;
   bottom: 0;

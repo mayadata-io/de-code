@@ -198,6 +198,7 @@
   text-align: center;
   padding: 10px;
   &.popover-small{
+    font-size: 12px;
     width: $popover-small-size;
     max-width: $popover-small-size;
   	min-width: $popover-small-size;
