@@ -35,7 +35,7 @@
   .stepper-step-error {
 
     .stepper-step_mark__line {
-      background-color: $gray-100;
+      background-color: $gray-400;
     }
 
     .circle {
@@ -64,11 +64,11 @@
   .stepper-step-unvisited {
 
     .stepper-step_mark__circle {
-      background-color: $gray-100;
+      background-color: $gray-400;
     }
 
     .stepper-step_mark__line {
-      background-color: $gray-100;
+      background-color: $gray-400;
     }
     .circle-active {
       border: none;
@@ -83,15 +83,15 @@
   }
 
   .stepper-step_mark__line {
-    background-color: $gray-100;
+    background-color: $gray-400;
     height: 6px;
     width: -webkit-fill-available;
     width: -moz-available;
-    margin-top: 16px;
+    margin-top: 20px;
   }
 
   .circle {
-    background-color: $gray-100;
+    background-color: $gray-400;
     border-radius: 50%;
     margin: 8px 0;
     height: 24px;
