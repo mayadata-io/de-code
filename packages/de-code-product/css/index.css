@@ -7564,6 +7564,7 @@ input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
+  left: -4px;
 }
 
 /* Rounded sliders */
@@ -9909,7 +9910,7 @@ tbody.collapse.show {
 }
 
 .stepper .stepper-step-error .stepper-step_mark__line {
-  background-color: #F4F4F4;
+  background-color: #E1E9EC;
 }
 
 .stepper .stepper-step-error .circle-active {
@@ -9929,11 +9930,11 @@ tbody.collapse.show {
 }
 
 .stepper .stepper-step-unvisited .stepper-step_mark__circle {
-  background-color: #F4F4F4;
+  background-color: #E1E9EC;
 }
 
 .stepper .stepper-step-unvisited .stepper-step_mark__line {
-  background-color: #F4F4F4;
+  background-color: #E1E9EC;
 }
 
 .stepper .stepper-step-unvisited .circle-active {
@@ -9948,15 +9949,15 @@ tbody.collapse.show {
 }
 
 .stepper .stepper-step_mark__line {
-  background-color: #F4F4F4;
+  background-color: #E1E9EC;
   height: 6px;
   width: -webkit-fill-available;
   width: -moz-available;
-  margin-top: 16px;
+  margin-top: 20px;
 }
 
 .stepper .circle {
-  background-color: #F4F4F4;
+  background-color: #E1E9EC;
   border-radius: 50%;
   margin: 8px 0;
   height: 24px;
@@ -10962,6 +10963,7 @@ button.close {
   position: relative;
   margin: 8% auto;
   pointer-events: none;
+  width: 700px;
 }
 
 .modal-dialog.modal-justify-center {
