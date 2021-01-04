@@ -990,6 +990,11 @@ $close-text-shadow:                 0 1px 0 $white !default;
 $code-font-size:                    87.5% !default;
 $code-color:                        $orange !default;
 
+$code-bg: $gray-100 !default;
+
+$copy-block-text-background-color: $purple;
+$copy-block-text-color: $white;
+
 $kbd-padding-y:                     .2rem !default;
 $kbd-padding-x:                     .4rem !default;
 $kbd-font-size:                     $code-font-size !default;

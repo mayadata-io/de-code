@@ -1,0 +1,34 @@
+---
+name: Code Block
+menu: Components
+
+---
+import { Playground, PropsTable } from 'docz'
+import CodeMirror from '../../resources/images/code-mirror.png'
+
+# Code-block
+
+### Type 1
+
+<Playground>
+
+<div className="code-wrapper">
+    <div title="copy to clipboard" className="copy-btn ember-view" type="button">
+        <div className="copy-label">
+            <span className="mi mi-copy text-white"></span>
+        </div>
+        <div className="text-code">
+            <div className="copy-block-text">
+                kubectl apply -f https://stage-dev.mayadatastaging.io/v3/scripts/22CDBFEB5A373AAA3485:1609372800000:sD7nRiATupnBxk03VQB3X9j9QIU.yaml
+            </div>
+        </div>
+    </div>
+</div>
+
+</Playground>
+
+### Type 2: The styling is taken from code-mirror
+
+<div class="code-wrap">
+    <img class="mw-100" src={CodeMirror}/>
+</div>
