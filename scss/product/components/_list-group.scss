@@ -11,31 +11,6 @@
   margin-bottom: 0;
 }
 
-
-// Interactive list items
-//
-// Use anchor or button elements instead of `li`s or `div`s to create interactive
-// list items. Includes an extra `.active` modifier class for selected items.
-
-.list-group-item-action {
-  width: 100%; // For `<button>`s (anchors become 100% by default though)
-  color: $list-group-action-color;
-  text-align: inherit; // For `<button>`s (anchors inherit)
-
-  // Hover state
-  @include hover-focus {
-    color: $list-group-action-hover-color;
-    text-decoration: none;
-    background-color: $list-group-hover-bg;
-  }
-
-  &:active {
-    color: $list-group-action-active-color;
-    background-color: $list-group-action-active-bg;
-  }
-}
-
-
 // Individual list items
 //
 // Use on `li`s or `div`s within the `.list-group` parent.
@@ -59,7 +34,6 @@
   }
 
   @include hover-focus {
-    z-index: 1; // Place hover/active items above their siblings for proper border styling
     text-decoration: none;
   }
 
@@ -88,7 +62,7 @@
   .list-group-item {
     border-right: 0;
     border-left: 0;
-    @include border-radius(0);
+    border-radius: 0;
   }
 
   &:first-child {
@@ -112,4 +86,28 @@
 
 @each $color, $value in $theme-colors {
   @include list-group-item-variant($color, theme-color-level($color, -9), theme-color-level($color, 6));
+}
+
+.numeric-list{
+  .list-group-item{
+    display: flex;
+    border: none;
+  }
+}
+// numeric list icon
+.list-icon{
+    background: $numeric-list-icon-background-color;
+    color: $numeric-list-icon-color;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    margin-right: 12px;
 }

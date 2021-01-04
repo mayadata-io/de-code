@@ -8,50 +8,55 @@ import { Playground, PropsTable } from 'docz'
 # Modals
 
 <Playground>
-<div class="modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span class="dci dci-x float-right"></span>
+<div className="modal" tabIndex="-1" role="dialog">
+  <div className="modal-md modal-dialog" role="document">
+    <div className="modal-content">
+      <div className="modal-header">
+        <button type="button" className="btn btn-icon" data-dismiss="modal" aria-label="Close">
+          <i className="mi mi-x"></i>
         </button>
+        <h5 className="modal-title">Modal title</h5>
       </div>
-      <div class="modal-body">
-        <p>Modal body text goes here.</p>
+      <div className="modal-body">
+      <div className="col-12 modal-sub-title">
+        Modal subtitle
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary btn-flat mr-2">Button</button>
-        <button type="submit" class="btn btn-primary">Button</button>
+      </div>
+      <div className="modal-footer">
+        <button type="button" className="btn btn-primary">Button</button>
+        <button type="submit" className="btn btn-secondary btn-flat mt-4">Button</button>
       </div>
     </div>
   </div>
 </div>
+
 </Playground>
 
 ## Sizes
 
-By default modal width is "medium". For small modal use class "modal-sm" and 
-for large modal use class "modal-lg" along with modal class.
+By default modal width is "medium". For small modal use className "modal-sm" and 
+for large modal use className "modal-lg" along with modal className.
 
 ### Small
 
 <Playground>
-<div class="modal modal-sm" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span class="dci dci-x float-right"></span>
+<div className="modal" tabIndex="-1" role="dialog">
+  <div className="modal-sm modal-dialog" role="document">
+    <div className="modal-content">
+      <div className="modal-header">
+        <button type="button" className="btn btn-icon" data-dismiss="modal" aria-label="Close">
+          <i className="mi mi-x"></i>
         </button>
+        <h5 className="modal-title">Modal title</h5>
       </div>
-      <div class="modal-body">
-        <p>Modal body text goes here.</p>
+      <div className="modal-body">
+      <div className="col-12 modal-sub-title">
+        Modal subtitle
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary btn-flat mr-2">Button</button>
-        <button type="submit" class="btn btn-primary">Button</button>
+      </div>
+      <div className="modal-footer">
+        <button type="button" className="btn btn-primary">Button</button>
+        <button type="submit" className="btn btn-secondary btn-flat mt-4">Button</button>
       </div>
     </div>
   </div>
@@ -61,23 +66,48 @@ for large modal use class "modal-lg" along with modal class.
 ### Large
 
 <Playground>
-<div class="modal modal-lg" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span class="dci dci-x float-right"></span>
+<div className="modal" tabIndex="-1" role="dialog">
+  <div className="modal-lg modal-dialog" role="document">
+    <div className="modal-content">
+      <div className="modal-header">
+        <button type="button" className="btn btn-icon" data-dismiss="modal" aria-label="Close">
+          <i className="mi mi-x"></i>
         </button>
+        <h5 className="modal-title">Modal title</h5>
       </div>
-      <div class="modal-body">
-        <p>Modal body text goes here.</p>
+      <div className="modal-body">
+      <div className="col-12 modal-sub-title">
+        Modal subtitle
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary btn-flat mr-2">Button</button>
-        <button type="submit" class="btn btn-primary">Button</button>
+      </div>
+      <div className="modal-footer">
+        <button type="button" className="btn btn-primary">Button</button>
+        <button type="submit" className="btn btn-secondary btn-flat mt-4">Button</button>
       </div>
     </div>
   </div>
 </div>
 </Playground>
+
+### Terminal-modal
+
+<Playground>
+<div className="modal" tabIndex="-1" role="dialog">
+  <div className="modal-md modal-dialog" role="document">
+    <div className="modal-content terminal">
+      <div className="modal-header d-flex justify-content-between pt-3 pl-3 pr-3 pb-3">
+        <p className="modal-title">Modal title</p>
+        <button type="button" className="btn btn-icon p-0" data-dismiss="modal" aria-label="Close">
+          <i className="dci dci-x"></i>
+        </button>
+      </div>
+      <div className="modal-body p-0 d-flex justify-content-start">
+        <div class="terminal-body p-2">
+          Terminal related Iframe or JSON data can be displayed here 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</Playground>
+

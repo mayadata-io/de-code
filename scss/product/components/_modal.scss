@@ -5,6 +5,7 @@
 
 .modal-overlay {
   background-color: $modal-backdrop-bg;
+  backdrop-filter: blur(2.5px); // Blurs the background
   min-height: 100%;
   min-width: 100%;
   position: fixed;
@@ -20,12 +21,6 @@
   &.modal-open {
     opacity: 1;
     transition: opacity 0.25s ease-in-out;
-    overflow: hidden; // Kill the scroll on the body
-
-    .modal {
-      overflow-x: hidden;
-      overflow-y: auto;
-    }
 
     .modal-container {
       max-height: 100%;
@@ -33,17 +28,18 @@
     }
   }
 }
-
-
+// Kill the scroll on the body
+.modal-open {
+  overflow: hidden;
+}
 // Container that the modal scrolls within
 .modal {
   position: fixed;
-  max-width: $modal-md;
-  margin: auto;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  display: none;
   overflow: hidden; // Prevent Chrome on Windows from adding a focus outline. For details, see
   // https://github.com/twbs/bootstrap/pull/10951.
   outline: 0; // We deliberately don't use `-webkit-overflow-scrolling: touch;` due to a
@@ -51,116 +47,204 @@
   // See also https://github.com/twbs/bootstrap/issues/17695
   // When fading in the modal, animate it to slide down
   &.fade .modal-dialog {
-    @include transition($modal-transition);
     transform: translate(0, -25%);
   }
 
   &.show .modal-dialog {
     transform: translate(0, 0);
   }
+}
 
-  .modal-dialog {
-    position: relative;
-    width: auto;
-    margin: $modal-dialog-margin; // allow clicks to pass through for custom click handling to close modal
-    pointer-events: none;
-  }
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+// Shell div to position the modal with bottom padding
+.modal-dialog {
+  position: relative;
+  margin: $modal-dialog-margin; // allow clicks to pass through for custom click handling to close modal
+  pointer-events: none;
+  width: 700px;
 
-  // Actual modal
-  .modal-content {
-    max-height: 100vh;
-    position: relative;
+  &.modal-justify-center {
     display: flex;
-    flex-direction: column; // counteract the pointer-events: none; in the .modal-dialog
-    pointer-events: auto;
-    background-color: $modal-content-bg;
-    background-clip: padding-box;
-    @include border-radius($border-radius-lg);
-    @include box-shadow($modal-content-box-shadow-xs); // Remove focus outline from opened modal
-    outline: 0;
-    padding: $modal-inner-padding;
-    margin: 1%;
+    min-height: 100vh;
+    align-items: center;
+    margin: 0 auto;
   }
-
-  // Modal header
-  // Top section of the modal w/ title and dismiss
-
-    .modal-header {
-      justify-content: space-between; // Put modal header elements (title and dismiss) on opposite ends
-      &.modal-header-no-bg{
-        padding:32px 32px 0;
-        background: transparent;
-      }
-      .close {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-      }
-
-      .close:hover {
-        cursor: pointer;
-      }
-
-      // Title text within header
-    .modal-title {
-      margin-bottom: 0;
-      line-height: $modal-title-line-height;
-      font-size: 18px;
-      margin-right: 20px;
-    }
-
-    .modal-sub-title {
-      font-size: 15px;
-      padding-top: $modal-sub-title-padding;
-      color: $modal-sub-title-color;
-      margin-right: 20px;
+  &.modal-full-width{
+    .modal-content{
+      width: 100%;
     }
   }
 
-  // Modal body
-  // Where all modal content resides (sibling of .modal-header and .modal-footer)
+}
+// Actual modal
+.modal-content {
+  // for avoiding overflow of modal
+  // as we are calling 8% margin for modal container we cant have height more than 84vh
+  max-height: 84vh; 
+  position: relative;
+  display: flex;
+  flex-direction: column; // counteract the pointer-events: none; in the .modal-dialog
+  pointer-events: auto;
+  background-color: $modal-content-bg;
+  background-clip: padding-box;
+  outline: 0;
+  box-shadow: -4px 2px 27px 11px rgba(36, 65, 122, 0.03);
+  border-radius: 8px;
+}
+// Modal background
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $zindex-modal-backdrop;
+  background-color: $modal-backdrop-bg; // Fade for backdrop
 
-  .modal-body {
-    overflow: auto;
-    position: relative; // Enable `flex-grow: 1` so that the body take up as much space as possible
-    // when should there be a fixed height on `.modal-dialog`.
-    flex: 1 1 auto;
-    padding: 32px;
-    -ms-word-break: break-word;
-    word-break: break-word;
+  &.fade {
+    opacity: 0;
   }
 
-  // Footer (for actions)
-  .modal-footer {
-    display: flex;
-    align-items: center; // vertically center
-    justify-content: flex-end; // Center align buttons with flex property because text-align doesn't work on flex items
+  &.show {
+    opacity: $modal-backdrop-opacity;
+  }
+}
+// Modal header
+// Top section of the modal w/ title and dismiss
 
-    > :not(:first-child) {
-      margin-left: 0.25rem;
-    }
-
-    > :not(:last-child) {
-      margin-right: 0.25rem;
-    }
+.modal-header {
+  display: block;
+  padding: $modal-header-padding;
+  border-bottom: 0px;
+  .btn-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
   }
 }
 
-// Sizes
-.modal{
-  &.modal-sm{
-    max-width: $modal-sm;
+.modal-header-border {
+  border-bottom: $modal-header-border-width solid $modal-header-border-color;
+}
+// Title text within header
+.modal-title {
+  margin-bottom: 0;
+  line-height: $modal-title-line-height;
+  font-size: 26px;
+  font-weight: 600;
+  color: $modal-title-color;
+  text-align: center;
+}
+
+.modal-sub-title {
+  font-size: 18px;
+  color: $modal-sub-title-color;
+  text-align: center;
+  line-height: 1.5;
+}
+// Modal body
+// Where all modal content resides (sibling of .modal-header and .modal-footer)
+
+.modal-body {
+  overflow: auto;
+  position: relative; // Enable `flex-grow: 1` so that the body take up as much space as possible
+  // when should there be a fixed height on `.modal-dialog`.
+  flex: 1 1 auto;
+  padding: $modal-body-padding;
+  -ms-word-break: break-word;
+  word-break: break-word;
+  text-align: center;
+
+  form, .form-control, .form-group, .custom-control{
+    text-align: left;
+  }
+}
+// Footer (for actions)
+.modal-footer {
+  display: block;
+  padding: $modal-footer-padding;
+  border-top: 0px;
+  margin: auto;
+
+  > :not(:first-child) {
+    margin-left: 0.25rem;
+  }
+
+  > :not(:last-child) {
+    margin-right: 0.25rem;
+  }
+  .btn{
+    display: block;
     margin: auto;
   }
-  &.modal-lg{
-    max-width: $modal-lg;
-    margin:auto;
+}
+
+.modal-footer-border {
+  border-top: $modal-footer-border-width solid $modal-footer-border-color;
+}
+// Measure scrollbar width for padding body during modal show/hide
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+.modal-pointer{
+  cursor:pointer;
+}
+
+
+// Sizes
+
+
+.modal, .modal-md{
+  &.modal-dialog {
+    width: 700px;
+  }
+}
+.modal-sm{
+  &.modal-dialog{
+    width: 550px;
   }
 }
 
-// Popover inside model
-.modal-popover {
-  top: 68%;
-  left: 104%;
-  width: 276px;
+.modal-lg{
+  &.modal-dialog{
+    width: 900px;
+  }
+}
+
+//modal with shell terminal
+.modal-content.terminal{
+  background-color: $black;
+  .modal-header{
+    background-color: $modal-terminal-headear-background-color;
+  }
+  .modal-title{
+    color: $white;
+    font-size: 14px;
+    font-weight: normal;
+  }
+}
+
+.modal-xl {
+  width: 975px;
+  height: 590px;
+}
+
+.modal-xl-header {
+  border-radius: 4px 4px 0 0;
+  height: 50px;
+  background-color: $terminal-blue !important;
+}
+
+.modal-xl-footer {
+  border-radius: 0px 0px 4px 4px;
+  height:50px;
+  background-color: $terminal-blue !important;
 }

@@ -12,7 +12,8 @@
   color: $input-color;
   background-color: $input-bg;
   background-clip: padding-box;
-  border: 0;
+  border: $input-border-width solid $input-border-color;
+  box-shadow: none; //required for handling firefox required input issue
   // Note: This has no effect on <select>s in some browsers, due to the limited stylability of `<select>`s in CSS.
   @if $enable-rounded {
     // Manually use the if/else instead of the mixin to account for iOS override
@@ -21,13 +22,17 @@
     // Otherwise undo the iOS default
     border-radius: 0;
   }
-  @include box-shadow($input-box-shadow);
   @include transition($input-transition);
   // Unstyle the caret on `<select>`s in IE10+.
   &::-ms-expand {
     background-color: transparent;
     border: 0;
   }
+
+  @include hover {
+    border: $input-border-width solid $input-focus-border-color;
+  }
+
   // Customize the `:focus` state to imitate native WebKit styles.
   @include form-control-focus();
   // Placeholder
@@ -47,14 +52,13 @@
     // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655.
     opacity: 1;
     cursor: not-allowed;
+    border: $input-disabled-border;
+    color: $input-disabled-color;
   }
 
 }
 
 select.form-control {
-  &:not([size]):not([multiple]) {
-    height: $input-height;
-  }
 
   &:focus::-ms-value {
     // Suppress the nested default white text on blue background highlight given to
@@ -80,6 +84,33 @@ select.form-control {
 
 .form-control-label {
   color: $form-control-lable-text-color;
+  font-size: $font-size-sm;
+  margin-bottom: 4px;
+}
+
+
+// Success input
+.form-group{
+  &.success{
+    .form-control{
+      border: $input-border-width solid $form-control-success-color;
+    }
+    .small{
+      color: $form-control-success-color;
+    }
+  }
+}
+
+// Errored input
+.form-group{
+  &.error{
+    .form-control{
+      border: $input-border-width solid $form-control-error-color;
+    }
+    .small{
+      color: $form-control-error-color;
+    }
+  }
 }
 // For use with horizontal and inline forms, when you need the label (or legend)
 // text to align with the form controls.
@@ -172,6 +203,10 @@ select.form-control-lg {
   &.hide-spinner{
     @include input-number-spinner-off;
   }
+  .small, small{
+    font-size: $form-group-font-size;
+    color: $form-group-small-color;
+  }
 }
 
 .form-text {
@@ -202,20 +237,23 @@ select.form-control-lg {
   display: inline-flex;
   justify-content: center;
   vertical-align: middle; // match .btn alignment given font-size hack above
-  border: 2px solid $gray-200;
+  border: $counter-input-border;
   border-radius: 4px;
 
   > .btn {
     position: relative;
     flex: 1 1 auto;
     background: $white;
-    color: $gray-200;
+    color: $counter-input-btn-color;
+    min-width: unset;
+    border-radius: 4px;
+    padding: 0.35rem 0.5rem;
     // Bring the hover, focused, and "active" buttons to the front to overlay
     // the borders properly
     @include hover {
-      background: $gray-000;
+      background: $counter-input-hover-background-color;
       z-index: 1;
-      color: $gray-300;
+      color: $counter-input-hover-color;
     }
 
     &.active,
@@ -230,9 +268,15 @@ select.form-control-lg {
     margin-left: -$btn-border-width;
   }
   // Reset rounded corners
-  > .btn:not(:last-child):not(.dropdown-toggle),
-  > .btn-group:not(:last-child) > .btn {
+
+  > .btn:first-child,
+  > .btn-group:first-child > .btn{
     @include border-right-radius(0);
+  }
+
+  > .btn:last-child:not(.dropdown-toggle),
+  > .btn-group:last-child > .btn{
+    @include border-left-radius(0);
   }
 
   > .btn:not(:first-child),
@@ -240,11 +284,18 @@ select.form-control-lg {
     @include border-left-radius(0);
   }
 
+  .btn:not([disabled]):not(.disabled).active, .btn:not([disabled]):not(.disabled):active,
+  .btn:not([disabled]):not(.disabled).focus, .btn:not([disabled]):not(.disabled):focus {
+    background-image: none;
+    background: $counter-input-active-background-color;
+    box-shadow: $counter-input-active-box-shadow;
+  }
   .form-control {
     box-shadow: none;
     text-align: center;
     @include border-right-radius(0);
     @include border-left-radius(0);
+    border: 0px;
   }
 
   // turn off the number input spinners
@@ -253,7 +304,7 @@ select.form-control-lg {
   .counter-input-select {
     -moz-appearance: none;
     -webkit-appearance: none;
-    border-left: 2px solid $gray-200;
+    border-left: $counter-input-select-border-color;
     min-width: 50px;
     //https://stackoverflow.com/a/60236111
     text-align: center;
@@ -266,7 +317,6 @@ select.form-control-lg {
 
 .chooser-input-lg {
   .form-control {
-    padding: $input-padding-y-lg $input-padding-x-lg;
     font-size: $font-size-lg;
     line-height: $input-line-height-lg;
   }
@@ -279,18 +329,22 @@ select.form-control-lg {
 // Search icon with input
 
 .input-search-icon_wrapper {
+  position: relative;
   .input-search-icon {
     position: absolute;
-    left: 36px;
+    float: right;
+    right: 8px;
+    top: 5px;
     width: 18px;
     height: 32px;
     background: $input-search-icon-bg;
     background-position-y: center;
     background-repeat: no-repeat;
   }
-
-  input {
-    padding-left: 30px;
+  &.error{
+    .form-control {
+      border: $input-border-width solid $form-control-error-color;
+    }
   }
 }
 // Checkboxes and radios
@@ -362,7 +416,7 @@ select.form-control-lg {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 0;
+      margin-bottom: 4px;
     }
     // Inline-block all the things for "inline"
     .form-group {
@@ -436,9 +490,9 @@ select.form-control-lg {
   position: relative;
   display: inline-block;
   cursor: pointer;
-  width: 55px;
-  height: 30px;
-  background-color: $gray-100;
+  width: 40px;
+  height: 20px;
+  background-color: $gray-400;
   margin: 0 10px;
   vertical-align: middle;
   -webkit-transition: .4s;
@@ -448,8 +502,8 @@ select.form-control-lg {
 .slider:before {
   position: absolute;
   content: "";
-  height: 25px;
-  width: 25px;
+  height: 16px;
+  width: 16px;
   left: 2px;
   top: 2px;
   bottom: 0;
@@ -460,17 +514,18 @@ select.form-control-lg {
 }
 
 input:checked + .slider {
-  background-color: $primary;
+  background-color: $green-200;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px $primary;
+  box-shadow: 0 0 1px $green-200;
 }
 
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
+  left: -4px;
 }
 
 /* Rounded sliders */
@@ -480,5 +535,28 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+
+// dropdown input field
+.input-field{
+  &_wrapper{
+    position: relative; 
+  }
+  &_dropdown{
+    position: absolute;
+    float: right;
+    right: 27px;
+    top: 9px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    &_content{
+      align-items: center;
+      cursor: pointer;
+      color: $form-dropdown-input-content-color;
+      font-size: 14px;
+      display: flex;
+    }
+  }
 }
 

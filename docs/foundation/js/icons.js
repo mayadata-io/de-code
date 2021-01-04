@@ -20,7 +20,7 @@ class Icons extends React.Component {
         <div className="d-flex flex-wrap">
           {IconLists.map(icon => (
             <div className="icon-box-content">
-              <span className={`dci mr-3 ${icon.name}`} key={icon.name} />
+              <span className={`mi mr-3 ${icon.name}`} key={icon.name} />
               <span>{icon.label}</span>
             </div>
           ))}

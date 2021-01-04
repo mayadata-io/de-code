@@ -1,9 +1,10 @@
 .popover {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: unset;
+  left: -45%;
   z-index: $zindex-popover;
   display: block;
+  min-width: $popover-max-width;
   max-width: $popover-max-width;
   // Our parent element can be arbitrary since tooltips are by default inserted as a sibling of their target element.
   // So reset our font and text properties to avoid inheriting weird values.
@@ -13,6 +14,7 @@
   word-wrap: break-word;
   background-color: $popover-bg;
   background-clip: padding-box;
+  color: $popover-color;
   @include border-radius($border-radius-lg);
   @include box-shadow($popover-box-shadow);
 
@@ -168,6 +170,9 @@
       @extend .bs-popover-left;
     }
   }
+  &.left{	
+    left: 6%;	
+  }
 }
 
 
@@ -187,4 +192,71 @@
 .popover-body {
   padding: $popover-body-padding-y $popover-body-padding-x;
   color: $popover-body-color;
+}
+
+.popover {
+  text-align: center;
+  padding: 10px;
+  &.popover-small{
+    font-size: 12px;
+    width: $popover-small-size;
+    max-width: $popover-small-size;
+  	min-width: $popover-small-size;
+  }
+  &.pos-bottom{
+    left: auto;
+  	top: calc(100% + 5px);
+    &:before{
+      bottom: 100%;
+      left: 50%;
+      border-bottom-color: $purple;
+    }
+  }
+  &.pos-top{
+    left: auto;
+    bottom: calc(100% + 5px);
+    &:before{
+      top: 100%;
+      left: 50%;
+      border-top-color: $purple;
+    }
+  }
+  &.pos-left{
+    left: auto;
+    right: calc(100% + 5px);
+    &:before{
+      top: 50%;
+      left: 100%;
+      border-left-color: $purple;
+    }
+  }
+  &.pos-right{
+    left: calc(100% + 5px);
+    &:before{
+      top: 50%;
+      right: 100%;
+      border-right-color: $purple;
+    }
+  }
+  &.align-center{  
+  	left: 50%;
+    transform: translateX(-50%);
+  }
+  &.text-small{
+    font-size:12px;    
+  }
+  	&:before {
+  		content: "";
+  		position: absolute;
+  		border: $popover-arrow-width-small solid transparent;
+  	}
+    .btn{
+      font-size: 12px;
+  		text-decoration: underline;
+    }
+}
+
+.popover-purple{
+  color: white;
+  background-color: $purple;
 }

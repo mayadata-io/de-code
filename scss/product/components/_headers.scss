@@ -95,10 +95,25 @@
   margin-bottom: 16px;
 
   .section-header_title {
+    display: flex;
+    align-items: center;
     margin-bottom: 4px;
-
+    color: $purple;
+    .section-header_back-button{
+        color: $purple;
+        cursor: pointer;
+        .mi{
+          padding-right: .5rem;
+          border-right : 2px solid $gray-700;
+          font-size: 22px;
+        }
+        ~.section-header_title__text{
+          margin-left: 1rem;
+        }
+      }
     .section-header_title__text {
-      font-size: 18px;
+      font-size:  $font-size-xl;
+      font-weight: $font-weight-bold;
     }
   }
 

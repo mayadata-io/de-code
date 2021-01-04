@@ -1,7 +1,7 @@
 {
   "name": "de-code",
   "version": "1.0.0",
-  "private": false,
+  "private": true,
   "description": "The design system from MayaData",
   "license": "MIT",
   "author": "hello@mayadata.io",
@@ -9,12 +9,15 @@
     "test": "docs"
   },
   "repository": "",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "start" : "yarn run docz:dev",
+    "start": "yarn run docz:dev",
     "docz:dev": "docz dev",
     "docz:build": "docz build",
     "build:css": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 index.scss -o css/",
-    "build:icon": "yarn run clean:icon && mkdirp packages/de-code-icons/fonts && mkdirp packages/de-code-icons/css && cp icons/fonts/* packages/de-code-icons/fonts/ && cp icons/css/style.css packages/de-code-icons/css/de-code-icons.css",
+    "build:icon": "yarn run clean:icon && mkdirp packages/de-code-icons/fonts && cp icons/fonts/* packages/de-code-icons/fonts/ && cp icons/css/style.css packages/de-code-icons/de-code-icons.css",
     "build:pkg": "lerna run build:css && yarn run build:icon",
     "clean": "rm -rf node_modules dist temp",
     "clean:icon": "mkdirp tmp && mv packages/de-code-icons/*.json packages/de-code-icons/*.md tmp && rm -rf packages/de-code-icons/ && mkdirp packages/de-code-icons && mv tmp/* packages/de-code-icons/ && rm -rf tmp",
@@ -32,6 +35,6 @@
     "npm-run-all": "^4.1.5"
   },
   "engines": {
-    "node": "^4.5 || 6.* || >= 7.*"
+    "node": "^4.5 || 6.* || 7.* || >= 8.*"
   }
 }

@@ -9,17 +9,17 @@ import { Playground, PropsTable } from 'docz'
 
 ## Progress Bar
 
-<div class="de-code">
-    <div class="progress">
-        <div class="progress-bar" role="progressbar" aria-valuemin="0"
+<div className="de-code">
+    <div className="progress">
+        <div className="progress-bar" role="progressbar" aria-valuemin="0"
         aria-valuemax="100"></div>
     </div>
 
-<div class="explanation">
+<div className="explanation">
     <ul>
         <li>We use the <mark>.progress</mark> as a wrapper to indicate the max value of the progress bar.</li>
         <li>We use the inner <mark>.progress-bar</mark> to indicate the progress so far.
-        The <mark>.progress-bar</mark> requires an inline style, utility class, or custom CSS to set their width.
+        The <mark>.progress-bar</mark> requires an inline style, utility className, or custom CSS to set their width.
         The <mark>.progress-bar</mark> also requires some <mark>role</mark> and <mark>aria</mark> attributes to make it accessible.</li>
     </ul>
 </div>
@@ -29,8 +29,8 @@ import { Playground, PropsTable } from 'docz'
 ### Progress Bar Default
 
 <Playground>
-    <div class="progress">
-        <div class="progress-bar" role="progressbar" aria-valuemin="0"
+    <div className="progress">
+        <div className="progress-bar" role="progressbar" aria-valuemin="0"
         aria-valuemax="100"></div>
     </div>
 </Playground>
@@ -38,12 +38,20 @@ import { Playground, PropsTable } from 'docz'
 ### Donut Progress Bar
 
 <Playground>
-    <svg width="25px" height="25px" viewBox="0 0 42 42" class="donut" data-toggle="tooltip" data-placement="right" title="">
-        <circle class="donut-segment" data-per="100" cx="21" cy="21" r="15.91549430918954"
-            fill="transparent" stroke="#ce4b99" stroke-width="10" stroke-dasharray="40 60" stroke-dashoffset="25">
+    <svg width="25px" height="25px" viewBox="0 0 42 42" className="donut" data-toggle="tooltip" data-placement="right" title="">
+        <circle className="donut-segment" data-per="100" cx="21" cy="21" r="15.91549430918954"
+            fill="transparent" stroke="#ce4b99" strokeWidth="10" strokeDasharray="40 60" strokeDashoffset="25">
         </circle>
-        <circle class="donut-segment" data-per="100" cx="21" cy="21" r="15.91549430918954"
-            fill="transparent" stroke="#b1c94e" stroke-width="10" stroke-dasharray="20 80" stroke-dashoffset="85">
+        <circle className="donut-segment" data-per="100" cx="21" cy="21" r="15.91549430918954"
+            fill="transparent" stroke="#b1c94e" strokeWidth="10" strokeDasharray="20 80" strokeDashoffset="85">
         </circle>
     </svg>
+</Playground>
+
+### Slider progress bar
+
+<Playground>
+    <div class="custom-slider-bar">
+    <div class="custom-slider-thumb slider-handle-tooltip">1</div>
+    </div>
 </Playground>

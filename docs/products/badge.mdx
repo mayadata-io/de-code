@@ -10,94 +10,113 @@ import { Playground, PropsTable } from 'docz'
 ### Default badge
 
 <Playground>
-<span class="badge badge-primary">Primary</span>
-<span class="badge badge-secondary">Secondary</span>
-<span class="badge badge-success">Success</span>
-<span class="badge badge-danger">Danger</span>
-<span class="badge badge-warning">Warning</span>
-<span class="badge badge-info">Info</span>
-<span class="badge badge-light">Light</span>
-<span class="badge badge-dark">Dark</span>
+<span className="badge badge-primary mr-2">Primary</span>
+<span className="badge badge-secondary mr-2">Secondary</span>
+<span className="badge badge-success mr-2">Success</span>
+<span className="badge badge-danger mr-2">Danger</span>
+<span className="badge badge-warning mr-2">Warning</span>
+<span className="badge badge-inactive mr-2">Inactive</span>
+<span className="badge badge-info mr-2">Info</span>
+<span className="badge badge-offline mr-2">Offline</span>
+<span className="badge badge-disconnected">Disconnected</span>
 </Playground>
 
-### Gradient badge
+### Solid badge
 
 <Playground>
-<span class="badge badge-pill badge-gradient-primary">Primary</span>
-<span class="badge badge-pill badge-gradient-secondary">Secondary</span>
-<span class="badge badge-pill badge-gradient-success">Success</span>
-<span class="badge badge-pill badge-gradient-danger">Danger</span>
-<span class="badge badge-pill badge-gradient-warning">Warning</span>
-<span class="badge badge-pill badge-gradient-info">Info</span>
+<span className="badge badge-solid-primary mr-2">Primary</span>
+<span className="badge badge-solid-secondary mr-2">Secondary</span>
+<span className="badge badge-solid-success mr-2">Success</span>
+<span className="badge badge-solid-danger mr-2">Danger</span>
+<span className="badge badge-solid-warning mr-2">Warning</span>
+<span className="badge badge-solid-inactive mr-2">Inactive</span>
+<span className="badge badge-solid-info mr-2">Info</span>
+<span className="badge badge-solid-offline mr-2">Offline</span>
+<span className="badge badge-solid-disconnected">Disconnected</span>
 </Playground>
 
-### Pill badge
-
+### Badge notification
 <Playground>
-<span class="badge badge-pill badge-primary">Primary</span>
-<span class="badge badge-pill badge-secondary">Secondary</span>
-<span class="badge badge-pill badge-success">Success</span>
-<span class="badge badge-pill badge-danger">Danger</span>
-<span class="badge badge-pill badge-warning">Warning</span>
-<span class="badge badge-pill badge-info">Info</span>
-<span class="badge badge-pill badge-light">Light</span>
-<span class="badge badge-pill badge-dark">Dark</span>
+<span className="badge badge-notification mr-2">1</span>
+<span className="badge badge-notification mr-2">22</span>
+<span className="badge badge-notification mr-2">53</span>
+</Playground>
+
+
+### Badge notification with icon
+<Playground>
+  <span className="badge badge-icon-notification">
+    <span className="badge-circle badge-circle-sm badge-danger"/>
+    <i className="mi mi-bell" aria-hidden="true" /> 
+  </span>
 </Playground>
 
 ### Circle badge
 
 <Playground>
-<div class="badge-circle-wrapper">
-  <span class="badge-circle badge-success"></span>
-  <span class="badge-label">label</span>
+<div className="badge-circle-wrapper">
+  <span className="badge-circle badge-success"></span>
+  <span className="badge-label">label</span>
 </div>
-<div class="badge-circle-wrapper">
-  <span class="badge-circle badge-danger"></span>
-  <span class="badge-label">label</span>
+<div className="badge-circle-wrapper">
+  <span className="badge-circle badge-danger"></span>
+  <span className="badge-label">label</span>
 </div>
-<div class="badge-circle-wrapper">
-  <span class="badge-circle badge-warning"></span>
-  <span class="badge-label">label</span>
+<div className="badge-circle-wrapper">
+  <span className="badge-circle badge-warning"></span>
+  <span className="badge-label">label</span>
 </div>
-<div class="badge-circle-wrapper">
-  <span class="badge-circle badge-primary"></span>
-  <span class="badge-label">label</span>
+<div className="badge-circle-wrapper">
+  <span className="badge-circle badge-primary"></span>
+  <span className="badge-label">label</span>
 </div>
-<div class="badge-circle-wrapper">
-  <span class="badge-circle badge-secondary"></span>
-  <span class="badge-label">label</span>
+<div className="badge-circle-wrapper">
+  <span className="badge-circle badge-secondary"></span>
+  <span className="badge-label">label</span>
 </div>
-<div class="badge-circle-wrapper">
-  <span class="badge-circle badge-light"></span>
-  <span class="badge-label">label</span>
+<div className="badge-circle-wrapper">
+  <span className="badge-circle badge-inactive"></span>
+  <span className="badge-label">label</span>
+</div>
+<div className="badge-circle-wrapper">
+  <span className="badge-circle badge-offline"></span>
+  <span className="badge-label">label</span>
+</div>
+<div className="badge-circle-wrapper">
+  <span className="badge-circle badge-disconnected"></span>
+  <span className="badge-label">label</span>
+</div>
+<div className="badge-circle-wrapper">
+  <span className="badge-circle badge-info"></span>
+  <span className="badge-label">label</span>
 </div>
 </Playground>
 
 ### Circle badge - sizes
 <Playground>
-<div class="d-flex align-items-center">
+<div className="d-flex align-items-center">
 
-  <div class="pr-4">
+  <div className="pr-4">
   sm
-  <div class="badge-circle-wrapper">
-    <span class="badge-circle badge-circle-sm badge-success"></span>
-    <span class="badge-label">label</span>
+  <div className="badge-circle-wrapper">
+    <span className="badge-circle badge-circle-sm badge-success"></span>
+    <span className="badge-label">label</span>
   </div>
   </div>
 
-<div class="pr-4">
+<div className="pr-4">
   md
-  <div class="badge-circle-wrapper">
-    <span class="badge-circle badge-circle-md badge-success"></span>
-    <span class="badge-label">label</span>
+  <div className="badge-circle-wrapper">
+    <span className="badge-circle badge-circle-md badge-success"></span>
+    <span className="badge-label">label</span>
   </div>
 </div>
 
-  <div class="pr-4">
+  <div className="pr-4">
     lg
-    <div class="badge-circle-wrapper">
-      <span class="badge-circle badge-circle-lg badge-success"></span>
-      <span class="badge-label">label</span>
+    <div className="badge-circle-wrapper">
+      <span className="badge-circle badge-circle-lg badge-success"></span>
+      <span className="badge-label">label</span>
     </div>
   </div>
 
