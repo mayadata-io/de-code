@@ -1,0 +1,17 @@
+.blank-slate {
+    border-radius: 4px;
+    padding: 46px 0;
+
+    .blank-slate-content{
+      text-align: center;
+
+      .blank-slate-content__message {
+        color: $gray-800;
+        margin: 0.5rem 0;
+      }
+      .blank-slate-content__cta{
+        margin-top: 1.5rem;
+      }
+    }
+}
+  
