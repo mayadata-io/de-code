@@ -1,6 +1,6 @@
 ---
 name: Header
-menu: Product
+menu: Components
 ---
 
 import { Playground, PropsTable } from 'docz'
@@ -10,9 +10,9 @@ import { Playground, PropsTable } from 'docz'
 ### Example one
 
 <Playground>
-  <div class="outlet-header">
-    <div class="outlet-header__top-bar">
-      <div class="outlet-header__top-bar-title">
+  <div className="outlet-header">
+    <div className="outlet-header__top-bar">
+      <div className="outlet-header__top-bar-title">
         <span>Clusters</span>
       </div>
     </div>
@@ -23,14 +23,14 @@ import { Playground, PropsTable } from 'docz'
 ##### Page header with an global level action button
 
 <Playground>
-  <div class="outlet-header">
-    <div class="outlet-header__top-bar">
-      <div class="outlet-header__top-bar-title">
+  <div className="outlet-header">
+    <div className="outlet-header__top-bar">
+      <div className="outlet-header__top-bar-title">
         <span>Clusters</span>
       </div>
-      <div class="outlet-header__actions ml-auto">
+      <div className="outlet-header__actions ml-auto">
         <div>
-          <button class="btn btn-primary" title="Import new cluster">Connect a new Cluster</button>
+          <button className="btn btn-primary" title="Import new cluster">Connect a new Cluster</button>
         </div>
       </div>
     </div>
@@ -38,21 +38,28 @@ import { Playground, PropsTable } from 'docz'
 </Playground>
 
 ### Example three
-##### Page header with back button
-
+##### Page header with global action buttons, both primary and secondary
 
 <Playground>
-  <div class="outlet-header">
-    <div class="outlet-header__top-bar">
-      <div class="outlet-header__top-bar-title">
-        <span>Overview</span>
-      </div>
+<div className="outlet-header__top-bar">
+    <div className="outlet-header__top-bar-title">
+      <span>
+        Pool Management
+      </span>
     </div>
-    <div class="outlet-header-meta-block">
-      <span class="outlet-header-meta-block_content">Dev-cluster-23u72</span>
-      <span class="badge badge-gradient-success badge-pill">Active</span>
+    <div className="outlet-header__actions ml-auto">
+      <button className="btn btn-primary btn-flat">
+        Activity
+      </button>
     </div>
-  </div>
+    <div className="outlet-header__actions">
+      <div className="ember-view">    
+      <button className="btn btn-primary" title="Create a new pool">
+        Create a new pool
+      </button>
+    </div>
+    </div>
+</div>
 </Playground>
 
 ### Example four
@@ -60,208 +67,254 @@ import { Playground, PropsTable } from 'docz'
 
 
 <Playground>
-  <div class="outlet-header">
-    <div class="outlet-header-navigation">
-      <button class="outlet-header-navigation_button">
-        <span class="fa fa-arrow-left outlet-header-navigation_icon"></span>
-        <span>Back</span>
-      </button>
-    </div>
-    <div class="outlet-header__top-bar">
-      <div class="outlet-header__top-bar-title">
-        <span>Overview</span>
+  <div className="outlet-header">
+    <div className="outlet-header__top-bar">
+      <div className="outlet-header__top-bar-title">
+        <span>Volumes</span>
       </div>
     </div>
-    <div class="outlet-header-meta-block">
-      <span class="outlet-header-meta-block_content">Dev-cluster-23u72</span>
-      <span class="badge badge-gradient-success badge-pill">Active</span>
+    <div className="outlet-header-meta-block">
+      <span className="outlet-header-meta-block_content">new-cluster-vskwj </span>
+      <span className="badge badge-success">Active</span>
     </div>
   </div>
+  <div className="outlet-header-navigation">
+    <button className="outlet-header-navigation_button">
+        <span className="mi mi-arrow-left-circle mi-2x outlet-header-navigation_icon"></span>
+    </button>
+    <span className="font-weight-bold text-size-lg">
+        <span className="pr-1">|</span>kubera-demo-minio-pv-claim
+    </span>
+    <span className="pl-1">
+      <span className="ember-view">
+          <span className="cluster-name">
+            <span className="badge badge-secondary">
+              Bound
+            </span>
+          </span>
+      </span>
+    </span>
+  </div>
+  <div className="outlet-header-bar">
+  <div className="outlet-header-meta-bar_item">
+    <div className="outlet-header-meta-bar_title">
+      <span>
+        Application
+      </span>
+    </div>
+    <div className="outlet-header-meta-bar_value">
+      <span>
+        kubera-demo-minio
+      </span>
+    </div>
+  </div>
+  <div className="outlet-header-meta-bar_item">
+    <div className="outlet-header-meta-bar_title">
+      <span>
+        Namespace
+      </span>
+    </div>
+    <div className="outlet-header-meta-bar_value">
+      <span>
+        default
+      </span>
+    </div>
+  </div>
+  <div className="outlet-header-meta-bar_item">
+    <div className="outlet-header-meta-bar_title">
+      <span>
+        Total Capacity
+      </span>
+    </div>
+    <div className="outlet-header-meta-bar_value">
+      <span>
+        5.368 GB
+      </span>
+    </div>
+  </div>
+   <div className="outlet-header-meta-bar_item">
+    <div className="outlet-header-meta-bar_title">
+        <span>
+        CAS Type
+        </span>
+    </div>
+    <div className="outlet-header-meta-bar_value">
+        <span>
+        LocalPV Hostpath
+        </span>
+    </div>
+    </div>
+     <div className="outlet-header-meta-bar_item">
+    <div className="outlet-header-meta-bar_title">
+        <span>
+        Reclaim Policy
+        </span>
+    </div>
+    <div className="outlet-header-meta-bar_value">
+        <span>
+        Delete
+        </span>
+    </div>
+    </div>
+     <div className="outlet-header-meta-bar_item">
+    <div className="outlet-header-meta-bar_title">
+        <span>
+        Provisioner
+        </span>
+    </div>
+    <div className="outlet-header-meta-bar_value">
+        <span>
+        openebs.io/local
+        </span>
+    </div>
+    </div>
+</div>
 </Playground>
 
 
 ### Example five
 ##### Section header
 <Playground>
-  <div class="section-header">
-    <div class="section-header_title">
-      <span class="section-header_title__text">Volumes</span>
+  <div className="section-header">
+    <div className="section-header_title">
+      <span className="section-header_title__text">Volumes</span>
     </div>
-    <div class="section-header-controls">
-      <div class="section-header-controls_item">
-        <div class="input-search-icon_wrapper">
-          <div class="input-search-icon">
+    <div className="section-header-controls">
+      <div className="section-header-controls_item">
+        <div className="input-search-icon_wrapper">
+          <input className="form-control" placeholder="Find an application"/>
+          <div className="input-search-icon">
           </div>
-          <input class="form-control" placeholder="Find an application"/>
         </div>
       </div>
-      <div class="section-header-controls_item">
-        <button class="btn btn-secondary"><span class="fa fa-edit"></span></button>
+      <div className="section-header-controls_item">
+        <button className="btn btn-icon"><span className="fa fa-edit"></span></button>
       </div>
-      <div class="section-header-controls_item">
-        <button class="btn btn-secondary"><span class="fa fa-filter"></span></button>
+      <div className="section-header-controls_item">
+        <button className="btn btn-icon"><span className="fa fa-filter"></span></button>
       </div>
-      <div class="section-header-controls_item ml-auto">
-        <button class="btn btn-primary">Primary action</button>
+      <div className="section-header-controls_item ml-auto">
+        <button className="btn btn-primary">Primary action</button>
       </div>
     </div>
   </div>
 </Playground>
 
+
 ### Example six
-##### Page header, section header and contents
+##### Metadata bar
+
 <Playground>
-  <div class="outlet-header">
-    <div class="outlet-header__top-bar">
-      <div class="outlet-header__top-bar-title">
-        <span>Overview</span>
+ <div className="outlet-header-bar">
+    <div className="outlet-header-meta-bar_item">
+      <div className="outlet-header-meta-bar_title">
+        <span>Schedule</span>
       </div>
+      <div className="outlet-header-meta-bar_value">
+        <span>SCH-1</span>
     </div>
-    <div class="outlet-header-meta-block">
-      <span class="outlet-header-meta-block_content">Dev-cluster-23u72</span>
-      <span class="badge badge-gradient-success badge-pill">Active</span>
     </div>
+    <div className="outlet-header-meta-bar_item">
+      <div className="outlet-header-meta-bar_title">
+        <span>Cluster</span>
+      </div>
+      <div className="outlet-header-meta-bar_value">
+        <span>WhiteWeather</span>
+      </div>
   </div>
-  <div class="section-header">
-    <div class="section-header_title">
-      <span class="section-header_title__text">Volumes</span>
-    </div>
-    <div class="section-header-controls">
-      <div class="section-header-controls_item">
-        <div class="input-search-icon_wrapper">
-          <div class="input-search-icon">
-          </div>
-          <input class="form-control" placeholder="Find an application"/>
-        </div>
-      </div>
-      <div class="section-header-controls_item">
-        <button class="btn btn-secondary"><span class="fa fa-edit"></span></button>
-      </div>
-      <div class="section-header-controls_item">
-        <button class="btn btn-secondary"><span class="fa fa-filter"></span></button>
-      </div>
-      <div class="section-header-controls_item ml-auto">
-        <button class="btn btn-primary">Primary action</button>
-      </div>
-    </div>
   </div>
 </Playground>
 
 ### Example seven
-##### Metadata bar
+##### Page header , Metadata bar 
 
 
 <Playground>
- <div class="outlet-header-bar">
-    <div class="outlet-header-meta-bar_item">
-      <div class="outlet-header-meta-bar_title">
+    <div className="outlet-header">
+      <div className="outlet-header-navigation">
+    <button className="outlet-header-navigation_button">
+      <span className="fa fa-arrow-left outlet-header-navigation_icon" />
+      <span>Back</span>
+    </button>
+  </div>
+    <div className="outlet-header__top-bar">
+      <div className="outlet-header__top-bar-title">
+        <span>DMaaS</span>
+      </div>
+    </div>
+  </div>
+  <div className="outlet-header-bar">
+    <div className="outlet-header-meta-bar_item">
+      <div className="outlet-header-meta-bar_title">
         <span>Schedule</span>
       </div>
-      <div class="outlet-header-meta-bar_value">
+      <div className="outlet-header-meta-bar_value">
         <span>SCH-1</span>
     </div>
     </div>
-    <div class="outlet-header-meta-bar_item">
-      <div class="outlet-header-meta-bar_title">
+    <div className="outlet-header-meta-bar_item">
+      <div className="outlet-header-meta-bar_title">
         <span>Cluster</span>
       </div>
-      <div class="outlet-header-meta-bar_value">
+      <div className="outlet-header-meta-bar_value">
         <span>WhiteWeather</span>
+      </div>
+  </div>
+      <div className="outlet-header-meta-bar_item">
+      <div className="outlet-header-meta-bar_title">
+        <span>Application</span>
+      </div>
+      <div className="outlet-header-meta-bar_value">
+        <span>Redis</span>
       </div>
   </div>
   </div>
 </Playground>
 
 ### Example eight
-##### Page header , Metadata bar 
-
-
-<Playground>
-    <div class="outlet-header">
-      <div class="outlet-header-navigation">
-    <button class="outlet-header-navigation_button">
-      <span class="fa fa-arrow-left outlet-header-navigation_icon" />
-      <span>Back</span>
-    </button>
-  </div>
-    <div class="outlet-header__top-bar">
-      <div class="outlet-header__top-bar-title">
-        <span>DMaaS</span>
-      </div>
-    </div>
-  </div>
-  <div class="outlet-header-bar">
-    <div class="outlet-header-meta-bar_item">
-      <div class="outlet-header-meta-bar_title">
-        <span>Schedule</span>
-      </div>
-      <div class="outlet-header-meta-bar_value">
-        <span>SCH-1</span>
-    </div>
-    </div>
-    <div class="outlet-header-meta-bar_item">
-      <div class="outlet-header-meta-bar_title">
-        <span>Cluster</span>
-      </div>
-      <div class="outlet-header-meta-bar_value">
-        <span>WhiteWeather</span>
-      </div>
-  </div>
-      <div class="outlet-header-meta-bar_item">
-      <div class="outlet-header-meta-bar_title">
-        <span>Application</span>
-      </div>
-      <div class="outlet-header-meta-bar_value">
-        <span>Redis</span>
-      </div>
-  </div>
-  </div>
-</Playground>
-
-### Example nine
 ##### Page header , Metadata bar, Table contents 
 
 
 <Playground>
-    <div class="outlet-header">
-    <div class="outlet-header__top-bar">
-      <div class="outlet-header__top-bar-title">
+    <div className="outlet-header">
+    <div className="outlet-header__top-bar">
+      <div className="outlet-header__top-bar-title">
         <span>DMaaS</span>
       </div>
     </div>
   </div>
-  <div class="outlet-header-bar">
-    <div class="outlet-header-meta-bar_item">
-      <div class="outlet-header-meta-bar_title">
+  <div className="outlet-header-bar">
+    <div className="outlet-header-meta-bar_item">
+      <div className="outlet-header-meta-bar_title">
         <span>Schedule</span>
       </div>
-      <div class="outlet-header-meta-bar_value">
+      <div className="outlet-header-meta-bar_value">
         <span>SCH-1</span>
     </div>
     </div>
-    <div class="outlet-header-meta-bar_item">
-      <div class="outlet-header-meta-bar_title">
+    <div className="outlet-header-meta-bar_item">
+      <div className="outlet-header-meta-bar_title">
         <span>Cluster</span>
       </div>
-      <div class="outlet-header-meta-bar_value">
+      <div className="outlet-header-meta-bar_value">
         <span>WhiteWeather</span>
       </div>
   </div>
-      <div class="outlet-header-meta-bar_item">
-      <div class="outlet-header-meta-bar_title">
+      <div className="outlet-header-meta-bar_item">
+      <div className="outlet-header-meta-bar_title">
         <span>Application</span>
       </div>
-      <div class="outlet-header-meta-bar_value">
+      <div className="outlet-header-meta-bar_value">
         <span>Redis</span>
       </div>
   </div>
   </div>
-    <div class="section-header">
-  <div class="section-header_title">
-    <span class="section-header_title__text">List of Backups</span>
+    <div className="section-header">
+  <div className="section-header_title">
+    <span className="section-header_title__text">List of Backups</span>
   </div>
   </div>
-  <table class="table table-hover">
+  <table className="table table-hover">
   <thead>
     <tr>
       <th scope="col">Name</th>
@@ -275,7 +328,7 @@ import { Playground, PropsTable } from 'docz'
     <tr>
       <td>Dev-cluster-yg238</td>
       <td>
-        <span class="badge badge-gradient-success badge-pill">Active</span>
+        <span className="badge badge-success">Active</span>
       </td>
       <td>v1.10.11-gke.1</td>
       <td>12</td>
@@ -284,7 +337,7 @@ import { Playground, PropsTable } from 'docz'
     <tr>
       <td>Testing-cluster-tr33d</td>
       <td>
-        <span class="badge badge-gradient-danger badge-pill">Inactive</span>
+        <span className="badge badge-inactive">Inactive</span>
       </td>
       <td>v1.10</td>
       <td>3</td>
@@ -293,7 +346,7 @@ import { Playground, PropsTable } from 'docz'
     <tr>
       <td>Staging-setup-df12s</td>
       <td>
-        <span class="badge badge-gradient-warning badge-pill">Degrated</span>
+        <span className="badge badge-warning">Degrated</span>
       </td>
       <td>v1.10.11</td>
       <td>6</td>
@@ -302,7 +355,7 @@ import { Playground, PropsTable } from 'docz'
     <tr>
       <td>Monitor-cluster-8hjq7</td>
       <td>
-        <span class="badge badge-gradient-success badge-pill">Active</span>
+        <span className="badge badge-success">Active</span>
       </td>
       <td>v1.13.2</td>
       <td>12</td>
@@ -311,7 +364,7 @@ import { Playground, PropsTable } from 'docz'
     <tr>
       <td>Asia-scope-72dr4</td>
       <td>
-        <span class="badge badge-gradient-danger badge-pill">Offline</span>
+        <span className="badge badge-danger">Offline</span>
       </td>
       <td>v1.10.13</td>
       <td>12</td>
@@ -322,130 +375,127 @@ import { Playground, PropsTable } from 'docz'
 </Playground>
 
 
-### Example Ten
-##### Page header, Bredcrumbs, Metadata bar, Table contents 
+### Example nine
+##### Page header, navigation, Metadata bar, Table contents 
 
 
 <Playground>
-<div class="outlet-header">
-  <div class="outlet-header__top-bar">
-    <div class="outlet-header__top-bar-title">
-      <span>Application Overview</span>
+<div className="outlet-header">
+  <div className="outlet-header__top-bar">
+    <div className="outlet-header__top-bar-title">
+      <span>Application</span>
     </div>
   </div>
-  <div class="outlet-header-meta-block">
-    <span class="outlet-header-meta-block_content">Dev-cluster-23u72</span>
-    <span class="badge badge-gradient-success badge-pill">Active</span>
-  </div>
 </div>
-  <div class="outlet-header-bar">
-    <div class="outlet-header-meta-bar_item">
-      <div class="outlet-header-meta-bar_title">
+  <div className="outlet-header-bar">
+    <div className="outlet-header-meta-bar_item">
+      <div className="outlet-header-meta-bar_title">
+        <span>Name</span>
+      </div>
+      <div className="outlet-header-meta-bar_value">
+        <span>dmaas-manager</span>
+    </div>
+    </div>
+    <div className="outlet-header-meta-bar_item">
+      <div className="outlet-header-meta-bar_title">
         <span>Type</span>
       </div>
-      <div class="outlet-header-meta-bar_value">
-        <a href="/"><span>statefulset</span></a>
-    </div>
-    </div>
-    <div class="outlet-header-meta-bar_item">
-      <div class="outlet-header-meta-bar_title">
-        <span>Kind</span>
-      </div>
-      <div class="outlet-header-meta-bar_value">
-        <span>ns-elasticsearch</span>
+      <div className="outlet-header-meta-bar_value">
+        <span>Deployment</span>
       </div>
   </div>
-      <div class="outlet-header-meta-bar_item">
-      <div class="outlet-header-meta-bar_title">
-        <span>Replica</span>
+      <div className="outlet-header-meta-bar_item">
+      <div className="outlet-header-meta-bar_title">
+        <span>Namespace</span>
       </div>
-      <div class="outlet-header-meta-bar_value">
-        <span>3</span>
+      <div className="outlet-header-meta-bar_value">
+        <span>default</span>
       </div>
   </div>
   </div>
-  <div class="section-header">
-  <div class="section-header_title">
-    <span class="section-header_title__text">Volumes in statefulset</span>
+  <section className="content-section">
+  <div className="mb-4">
+    <nav className="nav nav-segmented">
+     
+    </nav>
   </div>
-  <div class="section-header-controls">
-    <div class="section-header-controls_item">
-      <div class="input-search-icon_wrapper">
-        <div class="input-search-icon" />
-        <input class="form-control" placeholder="search" />
+  </section>
+<section className="content-section">
+  <div className="mb-4">
+    <nav className="nav nav-segmented">
+    <a href="" className="nav-link active">Volumes</a>
+    <a href="" className="nav-link">DMaaS</a>
+    <a href="" className="nav-link ember-view">Analytics</a>  
+    </nav>
+  </div>
+</section>
+  <div className="section-header">
+  <div className="section-header_title">
+    <span className="section-header_title__text">Volume</span>
+  </div>
+  <div className="section-header-controls">
+    <div className="section-header-controls_item">
+      <div className="input-search-icon_wrapper">
+        <div className="input-search-icon" />
+        <input className="form-control" placeholder="search" />
       </div>
-    </div>
-    <div class="section-header-controls_item">
-      <button class="btn btn-secondary">
-        <span class="fa fa-edit" />
-      </button>
-    </div>
-    <div class="section-header-controls_item">
-      <button class="btn btn-secondary">
-        <span class="fa fa-filter" />
-      </button>
-    </div>
-    <div class="section-header-controls_item ml-auto">
-      <button class="btn btn-primary">Primary action</button>
     </div>
   </div>
 </div>
-  <table class="table table-hover">
+  <table className="table table-hover">
   <thead>
+      <tr>
+        <th scope="col">
+          Name
+        </th>
+        <th scope="col">
+          Status
+        </th>
+        <th scope="col">
+          Capacity
+        </th>
+        <th scope="col">
+          Replicas
+        </th>
+        <th scope="col">
+          CAS type
+        </th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
     <tr>
-      <th scope="col">Name</th>
-      <th scope="col">Status</th>
-      <th scope="col">K8s version</th>
-      <th scope="col">Nodes</th>
-      <th scope="col" />
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Dev-cluster-yg238</td>
-      <td>
-        <span class="badge badge-gradient-success badge-pill">Active</span>
-      </td>
-      <td>v1.10.11-gke.1</td>
-      <td>12</td>
-      <td />
-    </tr>
-    <tr>
-      <td>Testing-cluster-tr33d</td>
-      <td>
-        <span class="badge badge-gradient-danger badge-pill">Inactive</span>
-      </td>
-      <td>v1.10</td>
-      <td>3</td>
-      <td />
-    </tr>
-    <tr>
-      <td>Staging-setup-df12s</td>
-      <td>
-        <span class="badge badge-gradient-warning badge-pill">Degrated</span>
-      </td>
-      <td>v1.10.11</td>
-      <td>6</td>
-      <td />
-    </tr>
-    <tr>
-      <td>Monitor-cluster-8hjq7</td>
-      <td>
-        <span class="badge badge-gradient-success badge-pill">Active</span>
-      </td>
-      <td>v1.13.2</td>
-      <td>12</td>
-      <td />
-    </tr>
-    <tr>
-      <td>Asia-scope-72dr4</td>
-      <td>
-        <span class="badge badge-gradient-danger badge-pill">Offline</span>
-      </td>
-      <td>v1.10.13</td>
-      <td>12</td>
-      <td />
-    </tr>
-  </tbody>
+        <td>minio-pv-claim</td>
+        <td>
+          <span>     
+              <span className="cluster-name text-capitalize">
+                <span className="badge badge-success">
+                  Healthy
+                </span>
+              </span>
+          </span>
+        </td>
+        <td>30G</td>
+        <td>3</td>
+        <td>cStor</td>
+        <td>
+          <div className="table-action">
+            <div className="table-action_item">
+              <div className="table-action_link">
+                <i className="mi mi-frequency mi-1x"></i>
+              </div>
+            </div>
+            <div className="table-action_item">
+              <div className="table-action_link">
+                <i className="mi mi-tree-network mi-1x"></i>
+              </div>
+            </div>
+              <div className="table-action_item">
+                <div className="table-action_link">
+                  <i className="mi mi-logs mi-1x"></i>
+                </div>
+              </div>
+          </div>
+        </td>
+      </tr>
 </table>
 </Playground>

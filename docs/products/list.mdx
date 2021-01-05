@@ -1,8 +1,41 @@
 ---
 name: Lists
-menu: Product
+menu: Components
 
 ---
 import { Playground, PropsTable } from 'docz'
 
 # Lists
+
+<Playground>
+<ul class="list-group">
+    <li class="list-group-item">List item 1</li>
+    <li class="list-group-item active">List item 2</li>
+    <li class="list-group-item">List item 3</li>
+    <li class="list-group-item">List item 4</li>
+</ul>
+</Playground>
+
+### Flush list items
+* Remove borders and border-radius to keep list group items edge-to-edge. Most
+* Useful within other components (e.g., cards).
+
+<Playground>
+<ul class="list-group list-group-flush">
+    <li class="list-group-item">List item 1</li>
+    <li class="list-group-item">List item 2</li>
+    <li class="list-group-item">List item 3</li>
+    <li class="list-group-item">List item 4</li>
+</ul>
+</Playground>
+
+### Numeric list items
+
+<Playground>
+<ul class="list-group numeric-list">
+    <li class="list-group-item"><span class="list-icon">1</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+    <li class="list-group-item"><span class="list-icon">2</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+    <li class="list-group-item"><span class="list-icon">3</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+    <li class="list-group-item"><span class="list-icon">4</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+</ul>
+</Playground>

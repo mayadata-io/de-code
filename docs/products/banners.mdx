@@ -1,8 +1,33 @@
 ---
 name: Banners
-menu: Product
+menu: Components
 
 ---
 import { Playground, PropsTable } from 'docz'
 
 # Banners
+## Banner variations
+<Playground>
+<div className="banner banner-primary banner-dismissible" role="banner">
+  This is a primary banner with <a href="#" className="ml-1 banner-link">an example link</a>. Give it a click if you like.
+  <button className="close">
+    <span className="mi mi-x"></span>
+  </button>
+</div>
+<div className="banner banner-success" role="banner">
+  <i class="mi mi-lg mi-check-circle-fill"></i>
+  This is a success banner with <a href="#" className="ml-1 banner-link">an example link</a>. Give it a click if you like.
+</div>
+<div className="banner banner-danger" role="banner">
+  <i class="mi mi-2x mi-banner-triangle-filled"></i>
+  This is a danger banner with <a href="#" className="ml-1 banner-link">an example link</a>. Give it a click if you like.
+</div>
+<div className="banner banner-warning" role="banner">
+  <i class="mi mi-2x mi-banner-triangle-filled text-amber"></i>
+  This is a warning banner with <a href="#" className="ml-1 banner-link">an example link</a>. Give it a click if you like.
+</div>
+<div className="banner banner-info" role="banner">
+  <i class="mi mi-lg mi-circle-info"></i>
+  This is a info banner with <a href="#" className="ml-1 banner-link">an example link</a>. Give it a click if you like.
+</div>
+</Playground>

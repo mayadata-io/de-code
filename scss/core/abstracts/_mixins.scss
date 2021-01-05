@@ -2,11 +2,10 @@
 //
 // Used in conjunction with global variables to enable certain theme features.
 
-// Utilities
+// tokens
 @import "mixins/breakpoints";
 @import "mixins/hover";
 @import "mixins/image";
-@import "mixins/badge";
 @import "mixins/resize";
 @import "mixins/screen-reader";
 @import "mixins/size";
@@ -18,6 +17,8 @@
 
 // // Com
 @import "mixins/alert";
+@import "mixins/avatar";
+@import "mixins/badge";
 @import "mixins/banner";
 @import "mixins/buttons";
 @import "mixins/caret";

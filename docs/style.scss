@@ -30,9 +30,17 @@
 }
 .body {
   font-size: 14px !important;
+  background: #F9FDFF;
 }
 .css-8rimd0 {
   font-size: 14px !important;
+}
+
+.text-dark{
+  color: $gray-900;
+}
+.text-light{
+  color: $gray-200;
 }
 
 .logobox {
@@ -47,7 +55,7 @@
   align-items: center;
   background: $gray-100;
   .logobox-header-title {
-    color: $gray-900;
+    color: $gray-600;
     padding-left: 8px !important;
   }
 }
@@ -75,12 +83,124 @@
   flex: 1 1 auto !important;
 }
 .icon-box-content {
-  background: $gray-000;
+  background: $gray-100;
   padding: 14px 18px;
   margin: 4px;
   border-radius: 4px;
   min-width: 202px;
+  font-size: 1rem;
   span {
     vertical-align: middle;
   }
+}
+
+
+//Displaying component preview outside playground
+
+// Dropdown
+.de-code{
+  margin-bottom: 130px;
+
+  .dropdown-menu {
+    display: block !important;
+  }
+  
+  .status-square {
+    min-height: 40px;
+    min-width: 40px;
+    border-radius: 4px;
+    box-shadow: $grid-shadow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    &.icon-healthy {
+      background: $healthy-gradiant;
+    }
+  
+    &.icon-unhealthy {
+      background: $unhealthy-gradiant;
+    }
+  }
+}
+
+// Width
+.de-code{
+  @each $size, $value in $widths {
+    .w-#{$size} {
+      width: 1rem * $value !important;
+      background-color: $gray-100;
+      height: 25px;
+      margin-bottom: 5px;
+    }
+  }
+  .w-auto{
+    background-color: $gray-100;
+    height: 25px;
+  }
+  .width-label{
+    font-size: 13px;
+  }
+}
+
+// Width
+.de-code{
+  margin-bottom: 30px;
+  @each $size, $value in $widths {
+    .w-#{$size} {
+      width: 1rem * $value !important;
+      background-color: $gray-100;
+      height: 25px;
+      margin-bottom: 5px;
+    }
+  }
+  .w-auto{
+    background-color: $gray-100;
+    height: 25px;
+  }
+  .width-label{
+    font-size: 13px;
+  }
+  
+ // Progress bars
+.progress{
+   margin-bottom: 20px;
+    .progress-bar{
+      width: 50%;
+    }
+    &.progress-success {  
+      .progress-bar {
+        width: 75%;
+      }
+    }
+  }
+  .explanation{
+    margin-top: 30px;
+  }
+}
+
+// Modal
+.react-live{
+  .modal {
+    position: unset !important;
+    display: unset;
+  }
+}
+
+mark{
+  // background-color: $yellow-100;
+}
+
+.modal-content.terminal{
+  .btn-icon{
+    position: unset !important;
+  }
+  .terminal-body{
+    height: 600px;
+    color: white;
+  }
+}
+
+.divider{
+  border-top: 1px solid $divider-border-color;
 }

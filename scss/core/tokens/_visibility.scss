@@ -1,0 +1,11 @@
+//
+// Visibility tokens
+//
+
+.visible {
+  @include invisible(visible);
+}
+
+.invisible {
+  @include invisible(hidden);
+}

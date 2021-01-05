@@ -5,31 +5,32 @@
 //
 
 .btn {
-  display: inline-block;
+  display: inline-flex;
   font-weight: $btn-font-weight;
   text-align: center;
   white-space: nowrap;
-  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
   user-select: none;
-  border: $btn-border-width solid transparent;
-  @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius);
+  border: $input-btn-border-width solid transparent;
+  @include button-size($input-btn-padding-y, $input-btn-padding-x, $font-size-md, $input-btn-line-height, $btn-border-radius, $btn-min-width);
   @include transition($btn-transition);
 
   // Share hover and focus styles
   @include hover-focus {
     text-decoration: none;
   }
-
   &:focus,
   &.focus {
-    outline: 0;
-    box-shadow: $btn-focus-box-shadow;
+    outline: 0 !important;
   }
 
   // Disabled comes first so active can properly restyle
   &.disabled,
   &:disabled {
-    opacity: $btn-disabled-opacity;
+    cursor: not-allowed;
+    opacity: 1;
+    pointer-events: unset;
     @include box-shadow(none);
   }
 
@@ -38,20 +39,15 @@
     cursor: pointer;
   }
 
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active {
-    background-image: none;
-    @include box-shadow($btn-active-box-shadow);
-
-    &:focus {
-      @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
-    }
+  i{
+    font-size: calc(100% + 0.5rem);
+    margin-right: 0.2em;
   }
 }
 
 // Future-proof disabling of clicks on `<a>` elements
 a.btn.disabled,
-fieldset:disabled a.btn {
+fieldset[disabled] a.btn {
   pointer-events: none;
 }
 
@@ -60,18 +56,66 @@ fieldset:disabled a.btn {
 // Alternate buttons
 //
 
-@each $color, $value in $theme-colors {
+@each $color, $value in $button-colors {
   .btn-#{$color} {
-    @include button-variant($value, $value);
-  }
-}
+    @include button-variant($color);
 
-@each $color, $value in $theme-colors {
+        //Flat buttons
+        &.btn-flat {
+          @include button-flat-variant($color);
+          border: none;
+          box-shadow: none;
+          padding: unset;
+          min-width: unset;
+          vertical-align: unset;
+
+          @if $color == "secondary" {
+            color: $btn-secondary-flat-color;
+            &:hover,
+            &.hover{
+              color: $btn-secondary-flat-hover-color;
+            }
+            &:focus,
+            &.focus{
+              color: $btn-secondary-flat-hover-color;
+            }
+            &:active,
+            &.active{
+              color: $btn-secondary-flat-hover-color;
+              font-weight: bold;
+            }
+          }
+        }
+  
+  }
+
+  // Outline button
   .btn-outline-#{$color} {
-    @include button-outline-variant($value);
+    @include button-outline-variant($color);
+  }
+
+}
+
+
+//
+// Button Sizes
+//
+
+.btn-lg {
+  @include button-size($input-btn-padding-y-lg, $input-btn-padding-x-lg, $font-size-lg, $input-btn-line-height-lg, $btn-border-radius-lg, $btn-min-width-lg);
+  i{
+    font-size: calc(100% + 1rem);
+    vertical-align: middle;
+    margin-right: 0.2em;
   }
 }
 
+.btn-sm {
+  @include button-size($input-btn-padding-y-sm, $input-btn-padding-x-sm, $font-size-base, $input-btn-line-height-sm, $btn-border-radius-sm, $btn-min-width-sm);
+  i{
+    font-size: calc(100% + 0.2rem);
+  }
+}
 
 //
 // Link buttons
@@ -82,42 +126,39 @@ fieldset:disabled a.btn {
   font-weight: $font-weight-normal;
   color: $link-color;
   background-color: transparent;
-
+  min-width: unset;
+  padding: 0 0.1rem;
+  vertical-align: unset;
+  border-radius: unset;
+  border-bottom: 1px solid transparent;
   @include hover {
     color: $link-hover-color;
-    text-decoration: $link-hover-decoration;
     background-color: transparent;
     border-color: transparent;
+    border-radius: unset;
   }
-
+  
+  &:hover{
+    border-bottom: 1px solid $link-color;
+  }
   &:focus,
   &.focus {
-    text-decoration: $link-hover-decoration;
     border-color: transparent;
     box-shadow: none;
+    border-radius: unset;
   }
 
   &:disabled,
   &.disabled {
     color: $btn-link-disabled-color;
   }
-
   // No need for an active state here
+
+  &.link-underline{
+    border-bottom: 1px solid;
+    height: 25px;
+  }
 }
-
-
-//
-// Button Sizes
-//
-
-.btn-lg {
-  @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-lg, $btn-line-height-lg, $btn-border-radius-lg);
-}
-
-.btn-sm {
-  @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
-}
-
 
 //
 // Block button
@@ -126,10 +167,107 @@ fieldset:disabled a.btn {
 .btn-block {
   display: block;
   width: 100%;
+}
 
-  // Vertically space out multiple block buttons
-  + .btn-block {
-    margin-top: $btn-block-spacing-y;
+//
+// Floating buttons
+//
+
+
+.btn-icon {
+  background-color: transparent;
+  color: $gray-800;
+  text-align: center;
+  border-radius: 50% !important;
+  padding: 0.5rem;
+  min-width: unset !important;
+	&.btn-square{
+		padding: 0 !important;
+		border: $btn-icon-square-border;
+		border-radius: 4px !important;
+		background: $btn-icon-square-background !important;
+		&:hover{
+      border: $btn-icon-square-border;
+			box-shadow: $btn-icon-square-boxshadow;
+		}
+	}
+    @include hover {
+      background-color: $gray-300;  
+      border-color: transparent;
+    }
+
+    &.focus,
+    &:focus {
+      background-color: $gray-300;  
+      border-color: transparent;
+    }
+    
+  i{
+    display: block;
+    margin-right: 0;
+  }
+
+}
+
+// Vertically space out multiple block buttons
+.btn-block + .btn-block {
+  margin-top: $btn-block-spacing-y;
+}
+
+//Login button for agents: Google and Gthub
+.btn-login {
+  transition-duration: 0.1s;
+  transition-property: box-shadow, transform;
+  -webkit-transition-duration: 0.1s;
+  -webkit-transition-property: box-shadow, transform;
+  border: 1px solid $outline-color;
+  display: flex;
+  border-radius: 4px;
+  font-size: $font-size-lg;
+  // Avoid using mixin so we can pass custom focus shadow properly
+  &:hover {
+    box-shadow: 4px 8px 20px rgba(100, 114, 188, 0.28);
+  }
+  &:active, &:focus {
+    box-shadow: none;
+  }
+  .btn-login-text {
+    vertical-align: middle;
+    flex-grow: 1;
+    padding: 0.6rem 0.7rem;
+  }
+
+  & img {
+    width: 28px;
+  }
+  .btn-login-icon{
+    background: $btn-login-icon-background;
+    padding: 0.525rem 0.6rem;
+    vertical-align: middle;
+    border-radius: 3px 0px 0px 3px;
+  }
+}
+
+.btn-github {
+  background-color: $github-button-background;
+  width: 100%;
+  padding: 0;
+  border-color: $github-button-background !important;
+  color: $github-button-color;
+  filter: unset;
+  .btn-login-icon{
+    border-right: 1px solid $github-button-background;
+  }
+}
+
+.btn-google {
+  color: $heading-color;
+  background: $google-button-background;
+  width: 100%;
+  padding: 0;
+  filter: unset;
+  .btn-login-icon{
+    border-right: 1px solid $outline-color;
   }
 }
 
@@ -139,5 +277,40 @@ input[type="reset"],
 input[type="button"] {
   &.btn-block {
     width: 100%;
+  }
+}
+
+//Modal terminal btn icon with white color 
+.modal-content.terminal{
+  .btn-icon {
+    background-color: transparent;
+    color: $white;
+    text-align: center;
+    border-radius: 50% !important;
+    padding: 0px 5px !important;
+    font-size: 14px;
+    
+      @include hover {
+        background-color: $white;  
+        border-color: transparent;
+        color: $black;
+      }
+
+      &.focus,
+      &:focus {
+        background-color: $white;
+        border-color: transparent;
+        box-shadow: 0 0 0 .1rem $white;
+      }
+
+  }
+}
+//icon size for square button 
+.btn{
+  &.btn-square{
+    .mi{
+      font-size: 2em;
+      margin-right: 0;
+    }
   }
 }

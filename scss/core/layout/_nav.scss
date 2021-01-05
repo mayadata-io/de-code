@@ -29,20 +29,24 @@
 //
 
 .nav-default {
-  border-bottom: 1px solid $gray-100;
+  border-bottom: 1px solid $gray-300;
 
   .nav-link {
-    color: $gray-700;
+    color: $gray-800;
     cursor: pointer;
     font-size: 16px;
     height: 30px;
     line-height: 20px;
     margin-right: 22px;
-    padding: 0;
+    padding: 0 2px;
   }
 
   .nav-link.active {
-    border-bottom: 2px solid $primary;
+    border-bottom: 2px solid $nav-link-active-color;
+    color: $nav-link-active-color;
+  }
+  .nav-link:hover {
+    border-bottom: 2px solid $nav-link-active-color;
     color: $nav-link-active-color;
   }
 }
@@ -52,7 +56,7 @@
 
 .nav-segmented {
   .nav-link {
-    box-shadow: $segment-control-color-box-shadow;
+    border: $segment-control-border;
     color: $segment-control-color;
     cursor: pointer;
     display: block;
@@ -61,12 +65,17 @@
 
     &:hover {
       background: $segment-control-color-hover-bg;
+      color: $segment-control-hover-color;
+      box-shadow: $segment-control-color-hover-box-shadow;
+      border-radius: $segment-control-active-hover-border-radius
     }
   }
 
   .nav-link.active {
     background: $segment-control-color-active-color-bg;
     color: $segment-control-color-active-color;
+    border: 1px solid $segment-control-color-active-color-bg;
+    border-radius: $segment-control-active-hover-border-radius
   }
 
   .nav-link:first-child {

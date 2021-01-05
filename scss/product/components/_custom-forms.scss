@@ -14,25 +14,14 @@
   padding-left: $custom-control-gutter;
 }
 
-.custom-control-inline {
-  display: inline-flex;
-  margin-right: $custom-control-spacer-x;
-}
-
 .custom-control-input {
-  position: absolute;
   z-index: -1; // Put the input behind the label so it doesn't overlay text
   opacity: 0;
 
   &:checked ~ .custom-control-label::before {
     color: $custom-control-indicator-checked-color;
     @include gradient-bg($custom-control-indicator-checked-bg);
-    @include box-shadow($custom-control-indicator-checked-box-shadow);
-  }
-
-  &:focus ~ .custom-control-label::before {
-    // the mixin is not used here to make sure there is feedback
-    box-shadow: $custom-control-indicator-focus-box-shadow;
+    border: 2px solid $custom-control-indicator-checked-bg;
   }
 
   &:active ~ .custom-control-label::before {
@@ -71,13 +60,13 @@
     content: "";
     user-select: none;
     background-color: $custom-control-indicator-bg;
-    @include box-shadow($custom-control-indicator-box-shadow);
+    border: $custom-control-label-before-border;
   }
 
   // Foreground (icon)
   &::after {
     position: absolute;
-    top: (($line-height-base - $custom-control-indicator-size) / 2);
+    top: (($line-height-base - $custom-control-indicator-size) / 2) ;
     left: 0;
     display: block;
     width: $custom-control-indicator-size;
@@ -95,6 +84,7 @@
 // Tweak just a few things for checkboxes.
 
 .custom-checkbox {
+  padding-left: $custom-checkbox-padding-left;
   .custom-control-label::before {
     @include border-radius($custom-checkbox-indicator-border-radius);
   }
@@ -133,16 +123,41 @@
 // Tweak just a few things for radios.
 
 .custom-radio {
+  display: block;
+  position: relative;
+  padding-left: $custom-radio-padding-left;
+  margin-bottom: $custom-radio-margin-bottom;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  .custom-control-label{
+    cursor: pointer;
+  }
   .custom-control-label::before {
     border-radius: $custom-radio-indicator-border-radius;
+    position: absolute;
+    top: 1px;
+    left: 0;
+    background-color: $white;
+  }
+  .custom-control-label::after {
+    border-radius: $custom-radio-custom-control-label-border-radius;
+    width: $custom-radio-custom-control-label-width;
+    height: $custom-radio-custom-control-label-border-height;
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    content: " ";
+    display: block;
   }
 
   .custom-control-input:checked ~ .custom-control-label {
     &::before {
-      @include gradient-bg($custom-control-indicator-checked-bg);
+      background: $white;
     }
     &::after {
-      background-image: $custom-radio-indicator-icon-checked;
+      background: $green;
     }
   }
 
@@ -150,6 +165,11 @@
     &:checked ~ .custom-control-label::before {
       background-color: $custom-control-indicator-checked-disabled-bg;
     }
+  }
+
+  .custom-control-input {
+    position: absolute;
+    opacity: 0;
   }
 }
 

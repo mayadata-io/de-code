@@ -27,15 +27,15 @@
 	}
 }
 
-.avatar-status {
-	position: absolute;
-	right: -2px;
-	bottom: -2px;
-	width: .75rem;
-	height: .75rem;
-	border: 2px solid #fff;
-	background: $gray-600;
-	border-radius: 50%;
+.avatar-square{
+	border-radius: 0;
+	background: transparent;
+	&.avatar-curved{
+		border-radius: 4px;
+	}
+	&.avatar-w_shadow{
+		box-shadow: $avatar-box-shadow;
+	}
 }
 
 .avatar-sm {
@@ -46,9 +46,9 @@
 }
 
 .avatar-md {
-	width: 2.5rem;
-	height: 2.5rem;
-	line-height: 2.5rem;
+	width: 2.3rem;
+	height: 2.3rem;
+	line-height: 2.3rem;
 	font-size: 1rem;
 }
 
@@ -73,37 +73,173 @@
 	font-size: 2rem;
 }
 
-.avatar-placeholder {
-	background: $gray-400 url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="134" height="134" viewBox="0 0 134 134"><path fill="' + $gray-600 + '" d="M65.92 66.34h2.16c14.802.42 30.928 6.062 29.283 20.35l-1.618 13.32c-.844 6.815-5.208 7.828-13.972 7.866H52.23c-8.764-.038-13.13-1.05-13.973-7.865l-1.62-13.32C34.994 72.4 51.12 66.76 65.92 66.34zM49.432 43.934c0-9.82 7.99-17.81 17.807-17.81 9.82 0 17.81 7.99 17.81 17.81 0 9.82-7.99 17.807-17.81 17.807-9.82 0-17.808-7.987-17.808-17.806z"/></svg>') no-repeat center/80%;
-}
+@each $vendor, $color in $colors {
+	.avatar-#{$vendor} {
+		background-color: $color;
+		color: color-yiq($color);
 
-.avatar-list {
-	margin: 0 0 -.5rem;
-	padding: 0;
-	font-size: 0;
-
-	.avatar {
-		margin-bottom: .5rem;
-
-		&:not(:last-child) {
-			margin-right: .5rem;
+		// Adding progress color indicator for progress avatar
+		&.progress-avatar{
+			.progress-avatar-bar {
+				@include progress-avatar-variant($color);
+			}
 		}
 	}
 }
 
-.avatar-list-stacked {
-	.avatar {
-		margin-right: -.8em !important;
-	}
 
-	.avatar {
-		box-shadow: 0 0 0 2px #fff;
+// Progress avatar
+
+.progress-avatar {
+  width: $progress-avatar-size;
+  height: $progress-avatar-size;
+  background: none;
+  margin: 0 auto;
+  box-shadow: none;
+  position: relative;
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: $progress-avatar-width solid $progress-avatar-border-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  > span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+  .progress-avatar-left {
+    left: 0;
+  }
+  .progress-avatar-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: $progress-avatar-width;
+    border-style: solid;
+    position: absolute;
+	top: 0;
+  }
+  .progress-avatar-left .progress-avatar-bar {
+    left: 100%;
+    border-top-right-radius: ($progress-avatar-size/2);;
+    border-bottom-right-radius: ($progress-avatar-size/2);;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+    //animation: loading-2 1.5s linear forwards 1.8s;
+  }
+  .progress-avatar-right {
+    right: 0;
+    .progress-avatar-bar {
+      left: -100%;
+      border-top-left-radius: ($progress-avatar-size/2);;
+      border-bottom-left-radius: ($progress-avatar-size/2);;
+      border-right: 0;
+      -webkit-transform-origin: center right;
+      transform-origin: center right;
+      //animation: loading-1 1.8s linear forwards;
+    }
+  }
+  .progress-avatar-value {
+    display: flex;
+    border-radius: 50%;
+    font-size: 36px;
+    text-align: center;
+    line-height: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    //font-family: $work-sans;
+    font-weight: 300;
+    div {
+      margin-top: 10px;
+    }
+    span {
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+  }
+  .avatar-label{
+	top: 3px;
+	right: 3px;
+	bottom: 3px;
+	left: 3px;
+	width: auto;
+	height: auto;
+	position: absolute;
+	line-height: 25px;
+	background: $progress-avatar-border-color;
+	color: $progress-avatar-label-color;
+	border-radius: 50%;
+  }
+}
+
+/* This for loop creates the 	necessary css animation names 
+Due to the split circle of progress-left and progress right, we must use the animations on each side. 
+*/
+@for $i from 1 through $progress-steps {
+	$stepName: ($i*(100 / $progress-steps));
+
+	//animation only the left side if below 50%
+	@if $i <= ($progress-steps/2) { 
+		.progress-avatar[data-percentage="#{$stepName}"] {
+			.progress-avatar-right .progress-avatar-bar {
+				 animation: loading-#{$i} $animationTime linear forwards;
+			}
+			.progress-avatar-left .progress-avatar-bar {animation: 0;}
+		}
+	}
+	//animation only the right side if above 50%
+	@if $i > ($progress-steps/2)  {  
+		.progress-avatar[data-percentage="#{$stepName}"] {
+			.progress-avatar-right .progress-avatar-bar {
+				animation: loading-#{($progress-steps/2)} $animationTime linear forwards; //set the animation to longest animation
+			}
+			.progress-avatar-left .progress-avatar-bar {
+      animation: loading-#{$i - ($progress-steps/2)} $animationTime linear forwards $animationTime;
+    }
+		}
 	}
 }
 
-@each $vendor, $color in $colors {
-	.avatar-#{$vendor} {
-		background-color: mix($color, #fff, 30%);
-		color: $color;
+//animation
+@for $i from 1 through ($progress-steps/2) { 
+	$degrees: (180/($progress-steps/2));
+	$degrees: ($degrees*$i);
+	@keyframes loading-#{$i}{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate($degrees);
+			transform: rotate(#{$degrees}deg);
+    }
 	}
+}
+
+
+//avatar groups
+
+.avatar-group{
+  display: flex;
+  align-items: center;
+  .avatar{
+		cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:2px solid $avatar-group-avatar-border;
+		position: relative;
+		margin-left: -7px;
+		@include avatar-z-index(30);
+  }
 }

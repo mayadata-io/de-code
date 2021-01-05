@@ -68,6 +68,13 @@
   @return map-get($colors, $key);
 }
 
+// Getting darker and lighter variations of button colors
+@function button-color($color-name, $color-variant) {
+  // map inception
+  $color: map-get(map-get($button-colors, $color-name), $color-variant);
+  @return $color;
+}
+
 @function theme-color($key: "primary") {
   @return map-get($theme-colors, $key);
 }

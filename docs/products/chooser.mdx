@@ -1,74 +1,167 @@
 ---
-name: Chooser
-menu: Product
+name: Chooser card
+menu: Components
 ---
 
 import { Playground, PropsTable } from 'docz'
-import openshift from '../../resources/images/clusters/openshift.png'
-import gcp from '../../resources/images/clusters/gcp.png'
-import ibm from '../../resources/images/clusters/ibm.png'
-import icp from '../../resources/images/clusters/icp.png'
-import iks from '../../resources/images/clusters/iks.png'
-import stackpointcloud from '../../resources/images/clusters/stackpointcloud.png'
-import onpremise from '../../resources/images/clusters/onpremise.png'
-import packet from '../../resources/images/clusters/packet.png'
+import openshift from '../../resources/images/clusters/openshift.svg'
+import gcp from '../../resources/images/clusters/gcp.svg'
+import aks from '../../resources/images/clusters/aks.svg'
+import icp from '../../resources/images/clusters/icp.svg'
+import iks from '../../resources/images/clusters/iks.svg'
+import minikube from '../../resources/images/clusters/minikube.svg'
+import other from '../../resources/images/clusters/other.svg'
+import packet from '../../resources/images/clusters/packet.svg'
+import gke from '../../resources/images/clusters/gke.svg'
+import eks from '../../resources/images/clusters/eks.svg'
 
 
-# Chooser
+# Chooser card
 
-## Tab chooser
 
 Tab Chooser are selector component, it can be used to create a choose compoent with a label and logo.
 Tab Chooser can be used to create a cluster location and cloud provider selector.
 <Playground>
-  <ul class="tab-chooser">
-    <li class="tab-chooser-item active">
-      <div class="tab-chooser-logo">
-        <img class="" src={openshift} />
+  <ul className="chooser-card">
+    <li className="chooser-card-item">
+      <div className="chooser-card-head">
+        <div className="chooser-card-logo">
+          <img src={gke} />
+        </div>
       </div>
-      <div class="tab-chooser-label">
-        OpenShift
-      </div>
+      <div className="chooser-card-body">
+        <div className="chooser-card-label">
+        GKE
+        </div>
+      </div>  
     </li>
-    <li class="tab-chooser-item">
-      <div class="tab-chooser-logo">
-        <img class="" src={gcp} />
+    <li className="chooser-card-item">
+      <div className="chooser-card-head">
+        <div className="chooser-card-logo">
+          <img src={gcp} />
+        </div>
       </div>
-      <div class="tab-chooser-label">
+      <div className="chooser-card-body">
+        <div className="chooser-card-label">
         GCP
+        </div>
       </div>
     </li>
-    <li class="tab-chooser-item">
-      <div class="tab-chooser-logo">
-        <img class="" src={ibm} />
+    <li className="chooser-card-item">
+      <div className="chooser-card-head">
+        <div className="chooser-card-logo">
+          <img src={aks} />
+        </div>
       </div>
-      <div class="tab-chooser-label">
+      <div className="chooser-card-body">
+        <div className="chooser-card-label">
         ICP
+        </div>
       </div>
     </li>
-    <li class="tab-chooser-item">
-      <div class="tab-chooser-logo">
-        <img class="" src={iks} />
+    <li className="chooser-card-item">
+      <div className="chooser-card-head">
+        <div className="chooser-card-logo">
+          <img src={iks} />
+        </div>
       </div>
-      <div class="tab-chooser-label">
+      <div className="chooser-card-body">
+        <div className="chooser-card-label">
         IKS
+        </div>
       </div>
     </li>
-    <li class="tab-chooser-item">
-      <div class="tab-chooser-logo">
-        <img class="" src={packet} />
+    <li className="chooser-card-item">
+      <div className="chooser-card-head">
+        <div className="chooser-card-logo">
+          <img src={packet} />
+        </div>
       </div>
-      <div class="tab-chooser-label">
+      <div className="chooser-card-body">
+        <div className="chooser-card-label">
         Packet
+        </div>
       </div>
     </li>
-    <li class="tab-chooser-item">
-      <div class="tab-chooser-logo">
-        <img class="" src={onpremise} />
+    <li className="chooser-card-item">
+      <div className="chooser-card-head">
+        <div className="chooser-card-logo">
+          <img src={other} />
+        </div>
       </div>
-      <div class="tab-chooser-label">
-        On-prem
+      <div className="chooser-card-body">
+        <div className="chooser-card-label">
+        Not listed
+        </div>
       </div>
     </li>
   </ul>
+</Playground>
+
+## Chooser card - Wide
+
+<Playground>
+<ul className="chooser-card chooser-card-wide">
+  <li className="chooser-card-item">
+      <div className="chooser-card-head">
+        <div className="chooser-card-logo">
+          <img src={gke} />
+        </div>
+      </div>
+      <div className="chooser-card-body">
+        <div className="chooser-card-label chooser-card-head">
+          Application
+        </div> 
+        <span>Setup chaos for specific application</span>
+      </div>    
+  </li>
+  <li className="chooser-card-item">
+      <div className="chooser-card-head">
+        <div className="chooser-card-logo">
+          <img src={eks} />
+        </div>
+      </div>
+      <div className="chooser-card-body">
+        <div className="chooser-card-label chooser-card-head">
+          Infra
+        </div> 
+        <span>Setup chaos for infrastructure component</span>
+      </div>  
+  </li>
+</ul>
+</Playground>
+
+## Chooser card states
+
+<Playground>
+<h5>Active:</h5>
+<ul className="chooser-card">
+  <li className="chooser-card-item active">
+      <div className="chooser-card-head">
+        <div className="chooser-card-logo">
+          <img src={gke} />
+        </div>
+      </div>
+      <div className="chooser-card-body">
+        <div className="chooser-card-label">
+        GKE
+        </div>
+      </div>  
+    </li>
+</ul>
+<h5>Disabled:</h5>
+<ul className="chooser-card">
+    <li className="chooser-card-item disabled">
+      <div className="chooser-card-head">
+        <div className="chooser-card-logo">
+          <img src={gke} />
+        </div>
+      </div>
+      <div className="chooser-card-body">
+        <div className="chooser-card-label">
+        GKE
+        </div>
+      </div>  
+    </li>
+</ul>
 </Playground>

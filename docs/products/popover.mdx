@@ -1,8 +1,37 @@
 ---
 name: Popover
-menu: Product
+menu: Components
 
 ---
 import { Playground, PropsTable } from 'docz'
 
 # Popovers
+
+<Playground>
+<div className="popover left mr-4" role="tooltip">
+    <h3 className="popover-header">Popover Header</h3>
+    <div className="popover-body">
+      Popover Body
+    </div>
+</div>
+</Playground>
+
+# Popover purple
+
+<Playground>
+<div className="popover left popover-purple mr-4" role="tooltip">
+    <h3 className="popover-header">Popover Header</h3>
+    <div className="popover-body">
+      Popover Body
+    </div>
+</div>
+</Playground>
+
+# Popover Small
+<Playground>
+  <div className="popover popover-small pos-left mr-4" role="tooltip">
+      <div>Richard Henson</div>
+      <div className="small">(Administartor)</div>
+      <button className="btn btn-primary btn-flat text-white">View Profile</button>
+  </div>
+</Playground>

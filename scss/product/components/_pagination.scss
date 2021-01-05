@@ -10,7 +10,6 @@
   margin: $paginnation-margin-y $paginnation-margin-x;
   line-height: $pagination-line-height;
   color: $pagination-color;
-  background-color: $pagination-bg;
   -webkit-transition: $transition-base; /* Safari */
   transition: $transition-base;
   @include border-radius($border-radius);
@@ -19,6 +18,9 @@
     color: $pagination-hover-color;
     text-decoration: none;
     background-color: $pagination-hover-bg;
+    padding: $pagination-padding-y $pagination-padding-x;
+    border-radius: 50%;
+    text-align: center;
     -webkit-transition: $transition-base; /* Safari */
     transition: $transition-base;
   }
@@ -46,6 +48,8 @@
     z-index: 1;
     color: $pagination-active-color;
     background-color: $pagination-active-bg;
+    border-radius: 50%;
+    text-align: center;
   }
 
   &.disabled .page-link {

@@ -54,3 +54,64 @@ pre {
   max-height: $pre-scrollable-max-height;
   overflow-y: scroll;
 }
+
+
+
+.code-ray {
+  padding: 10px 15px;
+}
+
+.code-wrapper {
+  position: relative;
+  border-radius: 4px;
+  background: $code-bg;
+  cursor: pointer;
+
+  .copy-btn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+}
+
+.active-code-block {
+  box-shadow: 0 0 0 2px $active-code-block-shadow;
+  transition: box-shadow 0.2s ease-out;
+}
+
+.copy-block-text {
+  background-color: $copy-block-text-background-color;
+  color: $copy-block-text-color;
+  font-size: 14px;
+  word-break: break-word;
+  padding: 32px 20px 25px;
+  max-height: 200px;
+  cursor: pointer;
+  resize: none;
+  border-radius: 4px;
+}
+
+.code-hovered_hidden {
+  transition: opacity 300ms ease;
+  opacity: 0;
+}
+
+.code-hovered_visible {
+  transition: opacity 300ms ease;
+  opacity: 10;
+}
+
+/*Copy to clip*/
+.copy-label {
+  position: absolute;
+  right: 8px;
+  top: 10px;
+  font-size: 24px !important;
+}
+
+.btn-clipboard {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+} 

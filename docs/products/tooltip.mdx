@@ -1,8 +1,26 @@
 ---
 name: Tooltips
-menu: Product
+menu: Components
 
 ---
 import { Playground, PropsTable } from 'docz'
 
 # Tooltips
+<Playground>
+<div tooltip="tooltip text">Text</div>
+</Playground>
+
+## Tooltip positions
+<Playground>
+<div tooltip="tooltip text" tooltip-position="top">Top</div>
+<div tooltip="tooltip text" tooltip-position="right">Right</div>
+<div tooltip="tooltip text" tooltip-position="bottom">Bottom</div>
+<div tooltip="tooltip text" tooltip-position="left">Left</div>
+</Playground>
+
+## Tooltip widths
+<Playground>
+<div tooltip="tooltip text">Default</div>
+<div tooltip="tooltip text" tooltip-width="md">Medium</div>
+<div tooltip="tooltip text" tooltip-width="lg">Large</div>
+</Playground>

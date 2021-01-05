@@ -1,0 +1,67 @@
+---
+name: Empty State
+menu: Blocks
+
+---
+import { Playground, PropsTable } from 'docz'
+import emptyState from '../../resources/images/illustrations/no-results.svg'
+
+# Empty State
+
+## With illustration
+
+<Playground>
+    <div class="blank-slate">
+        <div class="blank-slate-content">
+            <div class="blank-slate-content__illustration">
+                <img class="img-fluid" src={emptyState}/>
+            </div>
+            <div class="blank-slate-content__message">
+                No Results Found
+            </div>
+        </div>
+    </div>
+</Playground>
+
+## Without illustration
+<Playground>
+    <div class="blank-slate">
+        <div class="blank-slate-content">
+            <div class="blank-slate-content__message">
+                No Results Found
+            </div>
+        </div>
+    </div>
+</Playground>
+
+## With call-to-action button
+<Playground>
+    <div class="blank-slate">
+        <div class="blank-slate-content">
+            <div class="blank-slate-content__illustration">
+                <img class="img-fluid" src={emptyState}/>
+            </div>
+            <div class="blank-slate-content__message">
+                No Results Found
+            </div>
+            <div class="blank-slate-content__cta">
+                <button class="btn btn-primary">Click Now</button>
+            </div>
+        </div>
+    </div>
+</Playground>
+
+## Without call-to-action button
+
+<Playground>
+    <div class="blank-slate">
+        <div class="blank-slate-content">
+            <div class="blank-slate-content__illustration">
+                <img class="img-fluid" src={emptyState}/>
+            </div>
+            <div class="blank-slate-content__message">
+                No Results Found
+            </div>
+        </div>
+    </div>
+</Playground>

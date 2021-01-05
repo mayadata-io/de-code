@@ -1,8 +1,71 @@
 ---
 name: Dropdown
-menu: Product
+menu: Components
 
 ---
 import { Playground, PropsTable } from 'docz'
 
-# Dropdown menu
+# Dropdowns
+
+Dropdowns are toggleable, contextual overlays for displaying lists of links
+
+## Dropdown Button
+
+<div className="de-code">
+    <div className="d-flex align-items-center dropdown"> 
+        <button className="btn dropdown-btn" role="button">Dropdown Button<i className="mi mi-chevron-down"></i></button>
+        <ul className="dropdown-menu">
+            <li className="dropdown-item active" role="button">Option 1</li>
+            <li className="dropdown-item" role="button">Option 2</li>
+            <li className="dropdown-item" role="button">Option 3</li>
+        </ul>
+    </div>
+</div>
+
+<Playground>
+<div className="d-flex align-items-center dropdown"> 
+    <button className="btn dropdown-btn" role="button">Dropdown Button<i className="mi mi-chevron-down"></i></button>
+    <ul className="dropdown-menu">
+        <li className="dropdown-item" role="button">Option 1</li>
+        <li className="dropdown-item" role="button">Option 2</li>
+        <li className="dropdown-item" role="button">Option 3</li>
+    </ul>
+</div>
+</Playground>
+
+## Menu alignment - Right
+
+By default, a dropdown menu is automatically positioned 100% from the top and along the left side
+of its parent. Add .dropdown-menu-right to a .dropdown-menu to right align the dropdown menu.
+
+<div className="de-code">
+    <div className="btn-group dropdown"> 
+        <button className="btn dropdown-btn" role="button" data-toggle="dropdown">Dropdown Button<i className="mi mi-chevron-down"></i></button>
+        <div className="dropdown-menu dropdown-menu-right">
+            <button className="dropdown-item" role="button">Option 1</button>
+            <button className="dropdown-item" role="button">Option 2</button>
+            <button className="dropdown-item disabled" role="button">Option 3</button>
+            <hr/>
+            <div className="button-group">
+                <button className="btn btn-primary btn-sm">Add Project</button>
+                <button className="btn btn-outline-primary btn-sm">Manage Projects</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<Playground>
+<div className="btn-group dropdown"> 
+    <button className="btn dropdown-btn" role="button" data-toggle="dropdown">Dropdown Button<i className="mi mi-chevron-down"></i></button>
+    <div className="dropdown-menu dropdown-menu-right">
+        <button className="dropdown-item" role="button">Option 1</button>
+        <button className="dropdown-item" role="button">Option 2</button>
+        <button className="dropdown-item" role="button">Option 3</button>
+        <hr/>
+        <div className="button-group">
+            <button className="btn btn-primary btn-sm">Add Project</button>
+            <button className="btn btn-outline-primary btn-sm">Manage Projects</button>
+        </div>
+    </div>
+</div>
+</Playground>
