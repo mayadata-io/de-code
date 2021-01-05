@@ -30,9 +30,17 @@
 }
 .body {
   font-size: 14px !important;
+  background: #F9FDFF;
 }
 .css-8rimd0 {
   font-size: 14px !important;
+}
+
+.text-dark{
+  color: $gray-900;
+}
+.text-light{
+  color: $gray-200;
 }
 
 .logobox {
@@ -47,7 +55,7 @@
   align-items: center;
   background: $gray-100;
   .logobox-header-title {
-    color: $gray-900;
+    color: $gray-600;
     padding-left: 8px !important;
   }
 }
@@ -75,11 +83,12 @@
   flex: 1 1 auto !important;
 }
 .icon-box-content {
-  background: $gray-000;
+  background: $gray-100;
   padding: 14px 18px;
   margin: 4px;
   border-radius: 4px;
   min-width: 202px;
+  font-size: 1rem;
   span {
     vertical-align: middle;
   }
@@ -174,9 +183,24 @@
 .react-live{
   .modal {
     position: unset !important;
+    display: unset;
   }
 }
 
 mark{
-  background-color: $yellow-100;
+  // background-color: $yellow-100;
+}
+
+.modal-content.terminal{
+  .btn-icon{
+    position: unset !important;
+  }
+  .terminal-body{
+    height: 600px;
+    color: white;
+  }
+}
+
+.divider{
+  border-top: 1px solid $divider-border-color;
 }

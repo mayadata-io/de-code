@@ -2,212 +2,234 @@
 // Color system
 //
 
-// stylelint-disable
-// Gray palettes
-$white:    #FFFFFF !default;
-$gray-000: #EFEFF2 !default;
-$gray-100: #D1D2D9 !default;
-$gray-200: #B5B5C0 !default;
-$gray-300: #999AA7 !default;
-$gray-400: #7D7E8D !default;
-$gray-500: #626372 !default;
-$gray-600: #4D4E5A !default;
-$gray-700: #383842 !default;
-$gray-800: #23232A !default;
-$gray-900: #0F0F11 !default;
+// Color palettes
 
-// blue palette
-$blue-000: #E6EDFF !default;
-$blue-100: #B8CFFF !default;
-$blue-200: #8AB1FF !default;
-$blue-300: #5C95FF !default;
-$blue-400: #2E7BFF !default;
-$blue-500: #0063FF !default;
-$blue-600: #004ED6 !default;
-$blue-700: #003AAC !default;
-$blue-800: #002883 !default;
-$blue-900: #001959 !default;
+// Blue color variations
 
-// Aqua palette
-$aqua-000: #E6FCFF !default;
-$aqua-100: #B8F3FF !default;
-$aqua-200: #8AE6FF !default;
-$aqua-300: #5CD6FF !default;
-$aqua-400: #2EC2FF !default;
-$aqua-500: #00ABFF !default;
-$aqua-600: #008CD6 !default;
-$aqua-700: #006EAC !default;
-$aqua-800: #005183 !default;
-$aqua-900: #003659 !default;
+$blue-100: #C3DAFF !default;
+$blue-200: #A4C7FF !default;
+$blue-300: #6899E7 !default;
+$blue-400: #4489F7 !default;
+$blue-500: #276AD4 !default;
+$blue-600: #1263E4 !default;
+$blue-700: #0E4FB6 !default;
 
-// red palette
-$red-000: #FFE6E6 !default;
-$red-100: #FFB8BD !default;
-$red-200: #FF8C98 !default;
-$red-300: #FB6977 !default;
-$red-400: #EC4C5B !default;
-$red-500: #D83544 !default;
-$red-600: #B72A34 !default;
-$red-700: #962026 !default;
-$red-800: #73171A !default;
-$red-900: #500F0F !default;
+// Green color variations
 
-// green palette
-$green-000: #E6FEF5 !default;
-$green-100: #B8F8E0 !default;
-$green-200: #8AEDCA !default;
-$green-300: #5CDBB1 !default;
-$green-400: #2EC396 !default;
-$green-500: #03A678 !default;
-$green-600: #008D69 !default;
-$green-700: #007458 !default;
-$green-800: #005A45 !default;
-$green-900: #003E31 !default;
+$green-100: #35DEA1 !default;
+$green-200: #4BCA9C !default;
+$green-300: #28B481 !default;
 
-// yellow palette
-$yellow-000: #FFFEE6 !default;
-$yellow-100: #FFF8B8 !default;
-$yellow-200: #FFEF8A !default;
-$yellow-300: #FFE25C !default;
-$yellow-400: #FFD12E !default;
-$yellow-500: #F8BB00 !default;
-$yellow-600: #D3A300 !default;
-$yellow-700: #AC8900 !default;
-$yellow-800: #836C00 !default;
-$yellow-900: #594D00 !default;
 
-// orange palette
-$orange-000: #FFEEE6 !default;
-$orange-100: #FFD2B8 !default;
-$orange-200: #FFB78A !default;
-$orange-300: #FF9D5C !default;
-$orange-400: #FF852E !default;
-$orange-500: #F26D00 !default;
-$orange-600: #CE5F00 !default;
-$orange-700: #A95000 !default;
-$orange-800: #834000 !default;
-$orange-900: #592E00 !default;
+// Orange color variations
 
-// cyan palette
-$cyan-000: #E6FFFF !default;
-$cyan-100: #B8FFFF !default;
-$cyan-200: #8AFFFF !default;
-$cyan-300: #5CFFFF !default;
-$cyan-400: #33F6FB !default;
-$cyan-500: #1BE0E6 !default;
-$cyan-600: #14BBC4 !default;
-$cyan-700: #0D96A0 !default;
-$cyan-800: #08717B !default;
-$cyan-900: #054C56 !default;
+$orange-100: #F9BAA8 !default;
+$orange-200: #FA8B6A !default;
+$orange-300: #E86C47 !default;
 
-// purple palette
-$purple-000: #FCE6FF !default;
-$purple-100: #F5B8FF !default;
-$purple-200: #EA8AFF !default;
-$purple-300: #DD5CFF !default;
-$purple-400: #CB2EFF !default;
-$purple-500: #B602FF !default;
-$purple-600: #9F00D6 !default;
-$purple-700: #8500AC !default;
-$purple-800: #690083 !default;
-$purple-900: #4B0059 !default;
 
-// violet palette
-$violet-000: #E6E6FF !default;
-$violet-100: #BEB8FF !default;
-$violet-200: #9B8AFF !default;
-$violet-300: #7E62FF !default;
-$violet-400: #6647FF !default;
-$violet-500: #5333FF !default;
-$violet-600: #4728D6 !default;
-$violet-700: #3B1EAC !default;
-$violet-800: #2E1583 !default;
-$violet-900: #200D59 !default;
+// Gray color variations
 
-// pink palette
-$pink-000: #FFE6F3 !default;
-$pink-100: #FFB8DC !default;
-$pink-200: #FF8AC4 !default;
-$pink-300: #FF5CAD !default;
-$pink-400: #F92E94 !default;
-$pink-500: #E3147C !default;
-$pink-600: #C10E64 !default;
-$pink-700: #9E094E !default;
-$pink-800: #7A0538 !default;
-$pink-900: #550225 !default;
+$gray-100: #F4F4F4 !default;
+$gray-200: #EFF2F5 !default;
+$gray-300: #E8EAE9 !default;
+$gray-400: #E1E9EC !default;
+$gray-500: #D9DEEB !default;
+$gray-600: #9B9CB8 !default;
+$gray-700: #9397AD !default;
+$gray-800: #5C698C !default;
+$gray-900: #24292E !default;
 
+
+// Sky-blue color variations
+
+$skyblue-100: #F8FBFD !default;
+$skyblue-200: #F4F9FD !default;
+$skyblue-300: #E6F4FB !default;
+$skyblue-400: #6DC2FF !default;
+
+
+// Red color variations
+
+$red-100: #FFC2BA !default;
+$red-200: #FF7C86 !default;
+$red-300: #BD1700 !default;
+
+
+// Purple
+
+$purple: #322E7A !default;
+
+
+// White
+
+$white: #FFFFFF !default;
+
+// Amber
+
+$amber-100: #FFE3BA !default;
+$amber-200: #FFB039 !default;
+
+// Dark green
+
+$darkgreen: #156649 !default;
+
+// Yellow
+
+$yellow: #DDC557 !default;
+
+// Dusty gray
+
+$dustygray: #959595 !default;
+
+// Black
+
+$black: #000000 !default;
+
+// Teal
+$teal: #24A4B1 !default;
+
+// Dodger Blue
+
+$dodger-blue: #A3BAE0 !default;
+
+// Color used in terminal header and footers
+$terminal-blue: #3D51AD !default;
 
 // Base colors
 $blue:    $blue-500 !default;
-$violet:  $violet-500 !default;
-$indigo:  #6610f2 !default;
-$purple:  $purple-500 !default;
-$pink:    $pink-500 !default;
-$aqua:    $aqua-500 !default;
-$red:     $red-500 !default;
-$orange:  $orange-500 !default;
-$yellow:  $yellow-500 !default;
-$green:   $green-500 !default;
-$teal:    #20c997 !default;
-$teal-blue:#084766;
-$cyan:    $cyan-600 !default;
-$black:   $gray-700 !default;
+$green:   $green-200 !default;
+$orange:  $orange-200 !default;
+$gray:    $gray-800 !default;
+$skyblue: $skyblue-400 !default;
+$red: $red-200 !default;
+$amber: $amber-200 !default;
 
 $colors: () !default;
 $colors: map-merge((
 
   "blue":       $blue,
-  "violet":     $violet,
-  "indigo":     $indigo,
-  "purple":     $purple,
-  "aqua":       $aqua,
-  "pink":       $pink,
-  "red":        $red,
+  "green":     $green,
   "orange":     $orange,
-  "yellow":     $yellow,
-  "green":      $green,
-  "teal-blue":  $teal-blue,
-  "teal":       $teal,
-  "cyan":       $cyan,
-  "white":      $white,
-  "light":      $gray-100,
-  "gray":       $gray-600,
-  "gray-dark":  $gray-800
+  "gray":     $gray,
+  "skyblue":       $skyblue,
+  "red":       $red,
+  "purple":        $purple,
+  "white":     $white,
+  "amber":     $amber,
+  "darkgreen": $darkgreen,
+  "yellow": $yellow,
+  "dustygray": $dustygray,
+  "dodger-blue":$dodger-blue,
 ), $colors);
 
 // Theme colors
-$primary:       $blue !default;
-$secondary:     $gray-100 !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
-$light:         $gray-000 !default;
-$dark:          $gray-800 !default;
+$primary: $blue-500 !default;
+$secondary: $white !default;
+$orange: $orange !default;
+$green: $green !default;
+$skyblue: $skyblue-100 !default;
+$blue-outline:   $dodger-blue !default;
+$danger: $red !default;
+$success: $green !default;
+$gray: $gray !default;
+$error: $red-300 !default;
+$warning: $yellow !default;
+$inactive: $gray-500 !default;
+$info: $darkgreen !default;
+$purple: $purple !default;
+$link: $blue-600 !default;
+$offline: $dodger-blue !default;
+$disconnected: $gray-700 !default;
+$lightblue: $blue-300 !default;
 
 //Color maps
 $theme-colors: () !default;
 $theme-colors: map-merge((
   "primary":    $primary,
   "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
+  "orange": $orange,
+  "green": $green,
+  "skyblue":    $skyblue,
+  "blue-outline": $blue-outline,
   "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark,
-  "white":      $white,
-  "orange":     $orange,
-  "purple":     $purple,
-  "violet":     $violet,
-  "pink":       $pink,
-  "aqua":       $aqua,
-
+  "success":    $success,
+  "gray" :      $gray,
+  "error": $error,
+  "warning": $warning,
+  "inactive": $inactive,
+  "info": $info,
+  "offline": $offline,
+  "disconnected": $disconnected,
+  "purple": $purple,
+  "link": $link,
+  "amber": $amber,
+  "yellow": $yellow,
+  "darkgreen": $darkgreen,
+  "dustygray": $dustygray,
+  "black": $black,
+  "teal": $teal,
+  "lightblue": $lightblue,
+  "dodger-blue":$dodger-blue,
+  "terminal-blue":$terminal-blue
 ), $theme-colors);
+
+$button-colors: () !default;
+$button-colors: (
+  primary: (
+    base: $primary,
+    light: $blue-300,
+    dark: $blue-700,
+  ),
+  secondary: (
+    base: $secondary,
+    light:$blue-300,
+    dark: $blue,
+  ),
+  orange: (
+    base: $orange,
+    light: $orange-100,
+    dark: $orange-300,
+  ),
+);
+
+$alert-colors: () !default;
+$alert-colors: map-merge((
+  "primary":    $blue-300,
+  "danger":     $red-100,
+  "success":    $green,
+  "light":    $skyblue-200,
+  "info":    $darkgreen,
+  "warning":    $amber-100,
+), $alert-colors);
+
+$blues: () !default;
+$blues: map-merge((
+  "100": $blue-100,
+  "200": $blue-200,
+  "300": $blue-300,
+  "400": $blue-400,
+  "500": $blue-500,
+  "600": $blue-600,
+  "700": $blue-700
+), $blues);
+
+$greens: () !default;
+$greens: map-merge((
+  "100": $green-100,
+  "200": $green-200,
+  "300": $green-300
+), $greens);
+
+$oranges: () !default;
+$oranges: map-merge((
+  "100": $orange-100,
+  "200": $orange-200,
+  "300": $orange-300
+), $oranges);
 
 $grays: () !default;
 $grays: map-merge((
-  "000": $gray-000,
   "100": $gray-100,
   "200": $gray-200,
   "300": $gray-300,
@@ -219,143 +241,23 @@ $grays: map-merge((
   "900": $gray-900
 ), $grays);
 
-$blues: () !default;
-$blues: map-merge((
-  "000": $blue-000,
-  "100": $blue-100,
-  "200": $blue-200,
-  "300": $blue-300,
-  "400": $blue-400,
-  "500": $blue-500,
-  "600": $blue-600,
-  "700": $blue-700,
-  "800": $blue-800,
-  "900": $blue-900
-), $blues);
-
-$violets: () !default;
-$violets: map-merge((
-  "000": $violet-000,
-  "100": $violet-100,
-  "200": $violet-200,
-  "300": $violet-300,
-  "400": $violet-400,
-  "500": $violet-500,
-  "600": $violet-600,
-  "700": $violet-700,
-  "800": $violet-800,
-  "900": $violet-900
-), $violets);
-
-$greens: () !default;
-$greens: map-merge((
-  "000": $green-000,
-  "100": $green-100,
-  "200": $green-200,
-  "300": $green-300,
-  "400": $green-400,
-  "500": $green-500,
-  "600": $green-600,
-  "700": $green-700,
-  "800": $green-800,
-  "900": $green-900
-), $greens);
+$skyblues: () !default;
+$skyblues: map-merge((
+  "100": $skyblue-100,
+  "200": $skyblue-200,
+  "300": $skyblue-300,
+  "400": $skyblue-400
+), $skyblues);
 
 $reds: () !default;
 $reds: map-merge((
-  "000": $red-000,
   "100": $red-100,
   "200": $red-200,
-  "300": $red-300,
-  "400": $red-400,
-  "500": $red-500,
-  "600": $red-600,
-  "700": $red-700,
-  "800": $red-800,
-  "900": $red-900
+  "300": $red-300
 ), $reds);
 
-$yellows: () !default;
-$yellows: map-merge((
-  "000": $yellow-000,
-  "100": $yellow-100,
-  "200": $yellow-200,
-  "300": $yellow-300,
-  "400": $yellow-400,
-  "500": $yellow-500,
-  "600": $yellow-600,
-  "700": $yellow-700,
-  "800": $yellow-800,
-  "900": $yellow-900
-), $yellows);
-
-$cyans: () !default;
-$cyans: map-merge((
-  "000": $cyan-000,
-  "100": $cyan-100,
-  "200": $cyan-200,
-  "300": $cyan-300,
-  "400": $cyan-400,
-  "500": $cyan-500,
-  "600": $cyan-600,
-  "700": $cyan-700,
-  "800": $cyan-800,
-  "900": $cyan-900
-), $cyans);
-
-$aquas: () !default;
-$aquas: map-merge((
-  "000": $aqua-000,
-  "100": $aqua-100,
-  "200": $aqua-200,
-  "300": $aqua-300,
-  "400": $aqua-400,
-  "500": $aqua-500,
-  "600": $aqua-600,
-  "700": $aqua-700,
-  "800": $aqua-800,
-  "900": $aqua-900
-), $aquas);
-
-$purples: () !default;
-$purples: map-merge((
-  "000": $purple-000,
-  "100": $purple-100,
-  "200": $purple-200,
-  "300": $purple-300,
-  "400": $purple-400,
-  "500": $purple-500,
-  "600": $purple-600,
-  "700": $purple-700,
-  "800": $purple-800,
-  "900": $purple-900
-), $purples);
-
-$pinks: () !default;
-$pinks: map-merge((
-  "000": $pink-000,
-  "100": $pink-100,
-  "200": $pink-200,
-  "300": $pink-300,
-  "400": $pink-400,
-  "500": $pink-500,
-  "600": $pink-600,
-  "700": $pink-700,
-  "800": $pink-800,
-  "900": $pink-900
-), $pinks);
-
-$oranges: () !default;
-$oranges: map-merge((
-  "000": $orange-000,
-  "100": $orange-100,
-  "200": $orange-200,
-  "300": $orange-300,
-  "400": $orange-400,
-  "500": $orange-500,
-  "600": $orange-600,
-  "700": $orange-700,
-  "800": $orange-800,
-  "900": $orange-900
-), $oranges);
-
+$ambers: () !default;
+$ambers: map-merge((
+  "100": $amber-100,
+  "200": $amber-200
+), $ambers);

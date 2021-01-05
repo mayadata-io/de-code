@@ -26,16 +26,6 @@
   top: -1px;
 }
 
-// Pill badges
-//
-// Make them extra rounded with a modifier to replace v3's badges.
-
-.badge-pill {
-  padding-right: $badge-pill-padding-x;
-  padding-left: $badge-pill-padding-x;
-  @include border-radius($badge-pill-border-radius);
-}
-
 // Colors
 //
 // Contextual variations (linked badges get darker on :hover).
@@ -43,14 +33,28 @@
 @each $color, $value in $theme-colors {
   .badge-#{$color} {
     @include badge-variant($value);
+
+    @if $color == "secondary" {
+      border: 2px solid $orange-100;
+      color:  $orange-100;
+    }
+
+    &.badge-circle {
+      background: $value;
+      @if $color == "secondary" {
+        background:  $orange-100;
+      }
+    }
   }
-}
 
-// Gradient badges
+  // badge solid varient
+  .badge-solid-#{$color} {
+    @include badge-solid-variant($value);
 
-@each $color, $value in $theme-colors {
-  .badge-gradient-#{$color} {
-    @include badge-gradient-variant($color);
+    @if $color == "secondary" {
+      border: 2px solid $orange-100;
+      background: $orange-100;
+    }
   }
 }
 
@@ -82,3 +86,32 @@
   height: 14px;
   width: 14px;
 }
+
+// Badge notification
+
+.badge-notification {
+  border-radius: 50%;
+  border: $badge-notification-border;
+  color: $badge-notification-color;
+  font-size: 10px;
+  width: $badge-notification-size;
+  height: $badge-notification-size;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// notification with a dot
+ .badge-icon-notification {
+   position: relative;
+   padding:0;
+   .badge-circle{
+     position: absolute;
+     top: 0px;
+     right: 1px;
+   }
+   .mi{
+     font-size:18px;
+   }
+ }

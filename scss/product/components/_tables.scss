@@ -6,26 +6,40 @@
   width: 100%;
   max-width: 100%;
   margin-bottom: $spacer;
+  border-style: hidden;
+  border-radius: $border-radius;
   background-color: $table-bg; // Reset for nesting within parents with `background-color`.
-
-  th,
-  td {
+  thead{
+    th:first-child{
+      border-top-left-radius:8px;
+    }
+    th:last-child{
+      border-top-right-radius:8px;
+    }
+    th{
+      border-bottom: 0px;
+      font-size: 14px;
+      color: $table-head-color;
+      font-weight: bold;
+      text-transform: capitalize;
+      background: $table-thead-bg-color;
+    }
+  }
+  td{
+    font-size:16px;
+    line-height: 24px;
+  }
+  td,
+  th {
     padding: $table-cell-padding;
     vertical-align: middle;
-    border-top: $table-border-width solid $table-border-color;
+    color: $table-body-color;
   }
 
-  thead th {
-    vertical-align: bottom;
-    border-bottom: (2 * $table-border-width) solid $table-border-color;
-  }
-
-  tbody + tbody {
+  tbody+tbody {
     border-top: (2 * $table-border-width) solid $table-border-color;
-  }
-
-  .table {
-    background-color: $body-bg;
+    color: $table-head-color;
+    background: transparent;
   }
 }
 
@@ -40,8 +54,13 @@
     padding: $table-cell-padding-sm;
   }
 }
-
-
+table{
+  &:not(.bg-transparent){ // .bg-transparent Add this class to get transparent bg tables
+    tr:nth-child(even) td{
+    background-color: $table-row-color;
+    }
+  }
+}
 // Bordered version
 //
 // Add borders all around the table and between all the columns.
@@ -74,25 +93,11 @@
 }
 
 
-// Hover effect
-//
-// Placed here since it has to come after the potential zebra striping
-
-.table-hover {
-  tbody tr {
-    @include hover {
-      background-color: $table-hover-bg;
-    }
-  }
-}
-
 // Avatar images in td
 .table-avatar {
   display: flex;
   align-items: center;
   .table-avatar-image {
-    border:1px solid $gray-200;
-    border-radius: 50%;
     width: 2.5rem;
     height: 2.5rem;
   }
@@ -103,14 +108,14 @@
     }
   }
   .table-avatar-label {
-    color: $link-color;
-    margin-left: 14px;
+    color: $table-avatar-label-color;
+    margin-left: 2px;
   }
   .not-a-link-label {
-    color: $gray-700;
+    color: $gray-600;
 
     &:hover {
-      color: $gray-700 !important;
+      color: $gray-600 !important;
     }
   }
 }
@@ -126,6 +131,12 @@
 
 .table-action_link {
   cursor: pointer;
+  color: $table-action_link-color;
+  &.disabled{
+    color: $table-action_link-disabled-color;
+    opacity: 1;
+    pointer-events: unset;
+  }
 }
 
 // Table backgrounds
@@ -214,6 +225,96 @@
         // Prevent double border on horizontal scroll due to use of `display: block;`
         > .table-bordered {
           border: 0;
+        }
+      }
+    }
+  }
+}
+
+ //  nested table:- 
+.nested-table {
+  border-top: 1px solid $nested-table-head-border-color;
+  .no-padding {
+    padding: 0;
+  }
+  .table {
+    margin-bottom: 0;
+    box-shadow: $nested-table-shadow;
+    border-radius: 0;
+    thead {
+      tr{
+        border-bottom: 1px solid $nested-table-head-border-color;
+      }
+      th {
+        border-bottom: 0px;
+        font-size: 14px;
+        color: $table-head-color;
+        background-color: $nested-table-head-background;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+    }
+    tbody {
+      td {
+        font-size: 16px;
+        line-height: 24px;
+        background-color: $nested-table-row-background;
+      }
+    }
+  }
+}
+
+//scrollable table
+
+.scrollable-table {
+  width: 100%;
+  overflow: auto;
+  position: relative;
+  z-index: $zindex-table;
+  >table {
+    position: relative;
+    >* {
+      >tr {
+        >th {
+          &:first-child {
+            position: sticky;
+            z-index: $zindex-table;
+            left:0;
+            white-space: normal;
+            min-width: 200px;
+            background-color: $table-thead-bg-color;
+          }
+          &:last-child {
+            position: sticky;
+            z-index: $zindex-table;
+            right:0;
+            white-space: normal;
+            min-width: 50px;
+            background-color: $table-thead-bg-color;
+          }
+          white-space: nowrap;
+        }
+        >td {
+          &:first-child {
+            position: sticky;
+            z-index: $zindex-table;
+            left:0;
+            white-space: normal;
+            background-color: $white;
+            min-width: 200px;
+            word-break: break-all;
+            background-clip: padding-box;
+          }
+          &:last-child {
+            position: sticky;
+            z-index: $zindex-table;
+            right:0;
+            white-space: normal;
+            background-color: $white;
+            min-width: 50px;
+            background-clip: padding-box;
+            box-shadow: -2px 0 5px -2px rgba(56,56,66,0.25);
+          }
         }
       }
     }

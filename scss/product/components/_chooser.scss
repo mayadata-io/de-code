@@ -11,33 +11,33 @@
     border-radius: 4px;
     cursor: pointer;
     display: block;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
-    margin: 4px;
+    margin: 10px 20px 10px 0px;
     text-align: center;
     width: $chooser-card-item-width;
-  
-    .chooser-card-head {
-      font-size: 16px;
-      padding: 8px 6px;
+    box-shadow: $chooser-card-item-box-shadow;
+    border-radius: $chooser-card-item-radius;
+    padding: $chooser-card-item-padding;
 
-      .chooser-card-logo{
-        img {
-          height: 2.5rem;
-          width: 2.5rem;
-        }
-      }
-  
+    .chooser-card-head {
+      font-size: $chooser-card-head-font-size;
+      padding: $chooser-card-head-padding;
     }
     
+    .chooser-card-logo{
+      height: $chooser-card-logo-size;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     .chooser-card-body{
-      border-top: $chooser-card-item-body-border;
+      border-top: 1px solid rgba($chooser-card-item-body-border, 0.4);
       overflow: hidden;
-      padding: 6px;
+      padding: 10px 0px;
       text-overflow: ellipsis;
 
       .chooser-card-label{
-        font-size: 12px;
+        font-size: $chooser-card-label-font-size;
         color: $chooser-card-item-label-color;
         padding: 0;
       }
@@ -48,31 +48,46 @@
     }
   
     &:hover {
-      background-color: $gray-000;
-      -webkit-filter: grayscale(0);
-      filter: grayscale(0);
+      border-radius: $chooser-card-item-radius;
+      position: relative;
+      box-shadow: $chooser-card-item-box-shadow;
+
+      &::after{
+        content: '';
+        position: absolute;
+        width: calc(100% + 2px);
+        height: calc(100% + 2px);
+        left: 0;
+        top: 0;
+        border: $chooser-card-item-hover-border;
+        box-sizing: border-box;
+        filter: blur(1px);
+        border-radius: $chooser-card-item-radius;
+      }
     }
   
-    &.active {
-      background: $chooser-card-item-background-active;
-      border-color: $primary;
-      -webkit-filter: grayscale(0);
-      filter: grayscale(0);
+    &.active, &:active {
+      border: $chooser-card-item-active-border;
+      box-sizing: border-box;
+      box-shadow: $chooser-card-item-box-shadow;
 
-      .chooser-card-body{
-        border-top: $chooser-card-item-body-border-color-active;
-
-        .chooser-card-label {  
-          color: $chooser-card-item-label-color-active;  
+      &:hover {
+        position: relative;
+  
+        &::after{
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: none; // Hides hover effect for active element
         }
       }
-  
     }
 
     &.disabled {
       opacity: 0.6;
       pointer-events: none;
-      background: $gray-000;
+      background: $gray-300;
     }
   } 
   &.chooser-card-wide{

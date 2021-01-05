@@ -55,112 +55,152 @@ import magento from '../../resources/images/workloads/magento.png'
 
 ## Avatar variations
 
+### Avatars
+<Playground>
+<span className="avatar avatar-blue mr-2">N</span>
+<span className="avatar avatar-green mr-2">R</span>
+<span className="avatar avatar-orange mr-2">P</span>
+<span className="avatar avatar-red">D</span>
+</Playground>
+
+### Avatar Groups
+<Playground>
+<div className="avatar-group">
+  <span className="avatar avatar-blue">N</span>
+  <span className="avatar avatar-green">R</span>
+  <span className="avatar avatar-orange">P</span>
+  <span className="avatar avatar-red">D</span>
+  <span className="avatar">+3</span>
+</div>
+</Playground>
+
+
+### Avatar progress
+<Playground>
+
+<span className="avatar avatar-purple progress-avatar mr-2" data-percentage="20">
+    <span className="progress-avatar-left">
+        <span className="progress-avatar-bar"></span>
+    </span>
+    <span className="progress-avatar-right">
+        <span className="progress-avatar-bar"></span>
+    </span>
+    <span className="avatar-label">A</span>
+</span>
+
+<span className="avatar avatar-yellow progress-avatar mr-2" data-percentage="40">
+    <span className="progress-avatar-left">
+        <span className="progress-avatar-bar"></span>
+    </span>
+    <span className="progress-avatar-right">
+        <span className="progress-avatar-bar"></span>
+    </span>
+    <span className="avatar-label">B</span>
+</span>
+
+<span className="avatar avatar-green progress-avatar mr-2" data-percentage="60">
+    <span className="progress-avatar-left">
+        <span className="progress-avatar-bar"></span>
+    </span>
+    <span className="progress-avatar-right">
+        <span className="progress-avatar-bar"></span>
+    </span>
+    <span className="avatar-label">C</span>
+</span>
+
+<span className="avatar avatar-red progress-avatar" data-percentage="80">
+    <span className="progress-avatar-left">
+        <span className="progress-avatar-bar"></span>
+    </span>
+    <span className="progress-avatar-right">
+        <span className="progress-avatar-bar"></span>
+    </span>
+    <span className="avatar-label">D</span>
+</span>
+	
+		
+</Playground>
+
 ### Sizes
 <Playground>
-<img class="avatar avatar-sm" src="https://avatars2.githubusercontent.com/u/18216179?s=460&v=4"/>
-<img class="avatar avatar-md" src="https://avatars1.githubusercontent.com/u/12488783?s=400&v=4"/>
-<img class="avatar avatar-lg" src="https://avatars2.githubusercontent.com/u/7765078?s=400&v=4"/>
-<img class="avatar avatar-xl" src="https://avatars2.githubusercontent.com/u/26892096?s=400&v=4"/>
-<img class="avatar avatar-xxl" src="https://avatars3.githubusercontent.com/u/1729024?s=400&v=4"/>
-</Playground>
-
-### Avatar placeholder
-<Playground>
-<span class="avatar">RB</span>
-<span class="avatar">KH</span>
-<span class="avatar">BK</span>
-<span class="avatar avatar-placeholder"></span>
-<span class="avatar"></span>
-</Playground>
-
-#### Avatar placeholder with themes
-<Playground>
-<span class="avatar avatar-blue">NG</span>
-<span class="avatar avatar avatar-azure">AM</span>
-<span class="avatar avatar-indigo">RB</span>
-<span class="avatar avatar-purple">PR</span>
-<span class="avatar avatar-pink">WH</span>
-<span class="avatar avatar-red">MR</span>
-<span class="avatar avatar-orange">DB</span>
-<span class="avatar avatar-yellow">PP</span>
-<span class="avatar avatar-lime">JR</span>
-<span class="avatar avatar-green">RB</span>
-<span class="avatar avatar-teal">KH</span>
-<span class="avatar avatar-cyan">BK</span>
-<span class="avatar avatar-gray">CA</span>
-<span class="avatar avatar-gray-dark">CW</span>
+<img className="avatar avatar-sm" src="https://avatars2.githubusercontent.com/u/18216179?s=460&v=4"/>
+<img className="avatar avatar-md" src="https://avatars1.githubusercontent.com/u/12488783?s=400&v=4"/>
+<img className="avatar avatar-lg" src="https://avatars2.githubusercontent.com/u/7765078?s=400&v=4"/>
+<img className="avatar avatar-xl" src="https://avatars2.githubusercontent.com/u/26892096?s=400&v=4"/>
+<img className="avatar avatar-xxl" src="https://avatars3.githubusercontent.com/u/1729024?s=400&v=4"/>
 </Playground>
 
 ## Examples
 
 ### Cluster locations
 <Playground>
-<img class="avatar avatar-md" src={digitalocean}/>
-<img class="avatar avatar-md" src={azure}/>
-<img class="avatar avatar-md" src={gke}/>
-<img class="avatar avatar-md" src={minikube}/>
-<img class="avatar avatar-md" src={openshift}/>
-<img class="avatar avatar-md" src={aks}/>
-<img class="avatar avatar-md" src={aws}/>
-<img class="avatar avatar-md" src={eks}/>
-<img class="avatar avatar-md" src={gcp}/>
-<img class="avatar avatar-md" src={ibm}/>
-<img class="avatar avatar-md" src={icp}/>
-<img class="avatar avatar-md" src={iks}/>
-<img class="avatar avatar-md" src={minishift}/>
-<img class="avatar avatar-md" src={packet}/>
-<img class="avatar avatar-md" src={stackpointcloud}/>
-<img class="avatar avatar-md" src={onpremise}/>
+<img className="avatar avatar-md" src={digitalocean}/>
+<img className="avatar avatar-md" src={azure}/>
+<img className="avatar avatar-md" src={gke}/>
+<img className="avatar avatar-md" src={minikube}/>
+<img className="avatar avatar-md" src={openshift}/>
+<img className="avatar avatar-md" src={aks}/>
+<img className="avatar avatar-md" src={aws}/>
+<img className="avatar avatar-md" src={eks}/>
+<img className="avatar avatar-md" src={gcp}/>
+<img className="avatar avatar-md" src={ibm}/>
+<img className="avatar avatar-md" src={icp}/>
+<img className="avatar avatar-md" src={iks}/>
+<img className="avatar avatar-md" src={minishift}/>
+<img className="avatar avatar-md" src={packet}/>
+<img className="avatar avatar-md" src={stackpointcloud}/>
+<img className="avatar avatar-md" src={onpremise}/>
 </Playground>
 
 ### OpenEBS workloads
 <Playground>
-<img class="avatar avatar-md" src={cassandra}/>
-<img class="avatar avatar-md" src={cockroachDB}/>
-<img class="avatar avatar-md" src={couchbase}/>
-<img class="avatar avatar-md" src={elastic}/>
-<img class="avatar avatar-md" src={galera}/>
-<img class="avatar avatar-md" src={gitlab}/>
-<img class="avatar avatar-md" src={jenkins}/>
-<img class="avatar avatar-md" src={kafka}/>
-<img class="avatar avatar-md" src={minio}/>
-<img class="avatar avatar-md" src={mongoDB}/>
-<img class="avatar avatar-md" src={percona}/>
-<img class="avatar avatar-md" src={postgreSQL}/>
-<img class="avatar avatar-md" src={prometheus}/>
-<img class="avatar avatar-md" src={rabbitMQ}/>
-<img class="avatar avatar-md" src={redis}/>
-<img class="avatar avatar-md" src={mysql}/>
-<img class="avatar avatar-md" src={wordpress}/>
-<img class="avatar avatar-md" src={grafana}/>
-<img class="avatar avatar-md" src={consul}/>
-<img class="avatar avatar-md" src={nomad}/>
-<img class="avatar avatar-md" src={packer}/>
-<img class="avatar avatar-md" src={teraform}/>
-<img class="avatar avatar-md" src={vault}/>
-<img class="avatar avatar-md" src={bamboo}/>
-<img class="avatar avatar-md" src={magento}/>
-<img class="avatar avatar-md" src={kibana}/>
+<img className="avatar avatar-md" src={cassandra}/>
+<img className="avatar avatar-md" src={cockroachDB}/>
+<img className="avatar avatar-md" src={couchbase}/>
+<img className="avatar avatar-md" src={elastic}/>
+<img className="avatar avatar-md" src={galera}/>
+<img className="avatar avatar-md" src={gitlab}/>
+<img className="avatar avatar-md" src={jenkins}/>
+<img className="avatar avatar-md" src={kafka}/>
+<img className="avatar avatar-md" src={minio}/>
+<img className="avatar avatar-md" src={mongoDB}/>
+<img className="avatar avatar-md" src={percona}/>
+<img className="avatar avatar-md" src={postgreSQL}/>
+<img className="avatar avatar-md" src={prometheus}/>
+<img className="avatar avatar-md" src={rabbitMQ}/>
+<img className="avatar avatar-md" src={redis}/>
+<img className="avatar avatar-md" src={mysql}/>
+<img className="avatar avatar-md" src={wordpress}/>
+<img className="avatar avatar-md" src={grafana}/>
+<img className="avatar avatar-md" src={consul}/>
+<img className="avatar avatar-md" src={nomad}/>
+<img className="avatar avatar-md" src={packer}/>
+<img className="avatar avatar-md" src={teraform}/>
+<img className="avatar avatar-md" src={vault}/>
+<img className="avatar avatar-md" src={bamboo}/>
+<img className="avatar avatar-md" src={magento}/>
+<img className="avatar avatar-md" src={kibana}/>
 
-<img class="avatar avatar-md" src={defaultworkload}/>
+<img className="avatar avatar-md" src={defaultworkload}/>
 </Playground>
 
 ## Types of avatar
 
 ### Square avatar
 <Playground>
-<span class="avatar avatar-square avatar-blue avatar-md mr-2">GS</span>
-<img class="avatar avatar-square avatar-md" src={packet} />
+<span className="avatar avatar-square avatar-white avatar-curved avatar-w_shadow avatar-md mr-2">GS</span>
+<span className="avatar avatar-square avatar-blue avatar-md mr-2">GS</span>
+<img className="avatar avatar-square avatar-md" src={packet} />
 </Playground>
 
 ### Table avatar
 <Playground>
 <td>
-    <div class="table-avatar">
+    <div className="table-avatar">
         <div>
-            <img class="avatar avatar-md" src={gke}/>        
+            <img className="avatar avatar-md" src={gke}/>        
         </div>
-        <span class="table-avatar-label"> Cluster name</span>
+        <span className="table-avatar-label"> Cluster name</span>
     </div>
 </td>
 </Playground>

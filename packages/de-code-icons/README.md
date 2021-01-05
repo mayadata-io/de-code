@@ -13,12 +13,12 @@ Use this command to install _de-code-icons_.
 In order to use _de-code-icons_, import _de-code-icons.css_ in your project.
 
 ```
- `./node_modules/de-code-icons/css/de-code-icons.css`
+ `./node_modules/de-code-icons/de-code-icons.css`
 ```
 
 Example:
 
 ```
-<i class="dci dci-upload"></i>
-<i class="dci dci-user"></i>
+<i class="mi mi-home"></i>
+<i class="mi mi-container-filled"></i>
 ```
