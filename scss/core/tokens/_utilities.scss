@@ -12,3 +12,16 @@
 @import "spacing";
 @import "text";
 @import "visibility";
+
+// Disabled
+
+.disabled {
+    opacity: 0.3;
+    pointer-events: none !important;
+}
+
+// Pointer
+
+.pointer{
+    cursor: pointer;
+} 
